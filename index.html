@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    
+    <!-- SEO Meta Tags -->
+    <title>PrzeglądAI - Twój przewodnik w świecie AI | Newsletter</title>
+    <meta name="description" content="Otrzymuj wartościowe, przefiltrowane materiały związane z AI. Uniknij FOMO w dynamicznym świecie AI. Newsletter kuratorowany przez Engineering Managera dla profesjonalistów IT." />
+    <meta name="keywords" content="AI, Newsletter, Sztuczna Inteligencja, IT, Engineering Manager, Software Engineering, Programowanie, LLM, GPT, Artificial Intelligence, News, Wiadomości" />
+    <meta name="author" content="Jakub Prądzyński" />
+    <link rel="canonical" href="https://przegladai.news" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://przegladai.news" />
+    <meta property="og:title" content="PrzeglądAI - Twój przewodnik w świecie AI | Newsletter" />
+    <meta property="og:description" content="Otrzymuj wartościowe, przefiltrowane materiały związane z AI - nowości, praktyki, narzędzia, finanse i wiele innych." />
+    <meta property="og:image" content="https://jakubpradzynski.pl/images/me.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://przegladai.news" />
+    <meta property="twitter:title" content="PrzeglądAI - Twój przewodnik w świecie AI | Newsletter" />
+    <meta property="twitter:description" content="Otrzymuj wartościowe, przefiltrowane materiały związane z AI - nowości, praktyki, narzędzia, finanse i wiele innych." />
+    <meta property="twitter:image" content="https://jakubpradzynski.pl/images/me.jpg" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JG207WGLXB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JG207WGLXB');
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            animation: {
+              blob: "blob 7s infinite",
+            },
+            keyframes: {
+              blob: {
+                "0%": {
+                  transform: "translate(0px, 0px) scale(1)",
+                },
+                "33%": {
+                  transform: "translate(30px, -50px) scale(1.1)",
+                },
+                "66%": {
+                  transform: "translate(-20px, 20px) scale(0.9)",
+                },
+                "100%": {
+                  transform: "translate(0px, 0px) scale(1)",
+                },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
+    <!-- Structured Data for AI/Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "PrzeglądAI - Twój przewodnik w świecie AI | Newsletter",
+      "url": "https://przegladai.news",
+      "description": "Newsletter o tematyce AI dla branży IT (i nie tylko).",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Jakub Prądzyński",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://jakubpradzynski.pl/images/me.jpg"
+        }
+      },
+      "potentialAction": {
+        "@type": "SubscribeAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://przegladai.news/#subscribe"
+        }
+      }
+    }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
