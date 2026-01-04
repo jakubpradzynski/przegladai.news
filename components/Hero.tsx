@@ -40,14 +40,13 @@ export const Hero: React.FC<HeroProps> = ({ onSubscribeClick }) => {
                 </button>
               </div>
               
-              <a 
-                href="#archive" 
+              <button
                 onClick={scrollToArchive}
-                className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors pl-1 group"
+                className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors pl-1 group bg-transparent border-none cursor-pointer"
               >
                 Zobacz poprzednie wydania
                 <ArrowDown size={16} className="ml-1 transition-transform group-hover:translate-y-1" />
-              </a>
+              </button>
             </div>
 
             <div className="space-y-4 text-sm text-gray-500 bg-gray-50 p-5 rounded-xl border border-gray-100">

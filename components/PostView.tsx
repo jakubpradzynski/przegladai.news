@@ -1,7 +1,44 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BLOG_POSTS } from '../constants';
 import { ArrowLeft, Clock, Calendar, Share2 } from 'lucide-react';
+
+const IframeResizer: React.FC<{ src: string; title: string }> = ({ src, title }) => {
+  const [height, setHeight] = useState('100vh');
+
+  const handleLoad = (e: React.SyntheticEvent<HTMLIFrameElement, Event>) => {
+    const iframe = e.target as HTMLIFrameElement;
+    if (iframe.contentWindow) {
+      try {
+        const doc = iframe.contentWindow.document;
+        // Obserwuj zmiany w DOM iframe'a
+        const resizeObserver = new ResizeObserver(() => {
+          if (iframe.contentWindow?.document.body) {
+            setHeight(`${iframe.contentWindow.document.body.scrollHeight}px`);
+          }
+        });
+        
+        resizeObserver.observe(doc.body);
+        
+        // Ustaw początkową wysokość
+        setHeight(`${doc.body.scrollHeight}px`);
+      } catch (error) {
+        console.warn('Cannot access iframe content for resizing (CORS policy?)', error);
+      }
+    }
+  };
+
+  return (
+    <iframe
+      src={src}
+      className="w-full border-none transition-all duration-200"
+      style={{ height, overflow: 'hidden' }}
+      title={title}
+      onLoad={handleLoad}
+      scrolling="no"
+    />
+  );
+};
 
 export const PostView: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -36,8 +73,8 @@ export const PostView: React.FC = () => {
   // Renderowanie dla wydania opartego na pliku HTML (newsletter)
   if (post.htmlUrl) {
     return (
-      <div className="flex flex-col h-[calc(100vh-64px)] bg-gray-50">
-        <div className="bg-white border-b border-gray-200 px-4 py-3 flex items-center shadow-sm flex-shrink-0 z-10">
+      <div className="flex flex-col min-h-screen bg-gray-50">
+        <div className="bg-white border-b border-gray-200 px-4 py-3 flex items-center shadow-sm flex-shrink-0 z-10 sticky top-0">
           <button 
             onClick={handleBack} 
             className="flex-shrink-0 flex items-center text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
@@ -58,12 +95,8 @@ export const PostView: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex-grow w-full h-full overflow-hidden">
-           <iframe 
-             src={post.htmlUrl} 
-             className="w-full h-full border-none" 
-             title={post.title}
-           />
+        <div className="flex-grow w-full">
+           <IframeResizer src={post.htmlUrl} title={post.title} />
         </div>
       </div>
     );

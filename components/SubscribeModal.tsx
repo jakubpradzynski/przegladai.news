@@ -794,7 +794,7 @@ const MAILERLITE_HTML = `
 
                   
 
-                  <p>Twoje dane będą przetwarzane jedynie do celów związanych z wysyłką newslettera.<a href="https://ai.studio/#archive"><br></a></p>
+                  <p>Twoje dane będą przetwarzane jedynie do celów związanych z wysyłką newslettera.</p>
 
 
                   
