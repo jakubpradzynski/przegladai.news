@@ -11,6 +11,12 @@ const IframeResizer: React.FC<{ src: string; title: string }> = ({ src, title })
     if (iframe.contentWindow) {
       try {
         const doc = iframe.contentWindow.document;
+
+        // Otwieraj wszystkie linki w nowej karcie
+        const base = doc.createElement('base');
+        base.target = '_blank';
+        doc.head.appendChild(base);
+
         // Obserwuj zmiany w DOM iframe'a
         const resizeObserver = new ResizeObserver(() => {
           if (iframe.contentWindow?.document.body) {
