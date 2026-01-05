@@ -1,0 +1,18 @@
+# PrzeglądAI - Twój przewodnik w świecie AI
+
+## O nas
+PrzeglądAI to newsletter skupiający się na dostarczaniu wyselekcjonowanych informacji ze świata sztucznej inteligencji. Naszym celem jest pomoc specjalistom IT, managerom oraz entuzjastom technologii w byciu na bieżąco z dynamicznie zmieniającą się branżą AI.
+
+## Zawartość
+Na naszej stronie znajdziesz:
+- Archiwum wydań newslettera
+- Wyselekcjonowane newsy ze świata AI
+- Analizy i raporty dotyczące narzędzi AI
+- Informacje o wydarzeniach i konferencjach
+
+## Wydania
+- **Wydanie #1**: "hiszpański Jesus AI i miliardowe zakupy Zuckerberga w Chinach" (04-01-2025) - https://przegladai.news/wydanie-1-hiszpanski-jesus-ai-i-miliardowe-zakupy-zuckerberga-w-chinach
+
+## Kontakt
+Strona internetowa: https://przegladai.news
+Autor: Jakub Prądzyński (https://jakubpradzynski.pl)

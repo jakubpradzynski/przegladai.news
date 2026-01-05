@@ -3,58 +3,44 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { BLOG_POSTS } from '../constants';
 import { ArrowLeft, Clock, Calendar, Share2 } from 'lucide-react';
 
-const IframeResizer: React.FC<{ src: string; title: string }> = ({ src, title }) => {
-  const [height, setHeight] = useState('100vh');
-
-  const handleLoad = (e: React.SyntheticEvent<HTMLIFrameElement, Event>) => {
-    const iframe = e.target as HTMLIFrameElement;
-    if (iframe.contentWindow) {
-      try {
-        const doc = iframe.contentWindow.document;
-
-        // Otwieraj wszystkie linki w nowej karcie
-        const base = doc.createElement('base');
-        base.target = '_blank';
-        doc.head.appendChild(base);
-
-        // Obserwuj zmiany w DOM iframe'a
-        const resizeObserver = new ResizeObserver(() => {
-          if (iframe.contentWindow?.document.body) {
-            setHeight(`${iframe.contentWindow.document.body.scrollHeight}px`);
-          }
-        });
-        
-        resizeObserver.observe(doc.body);
-        
-        // Ustaw początkową wysokość
-        setHeight(`${doc.body.scrollHeight}px`);
-      } catch (error) {
-        console.warn('Cannot access iframe content for resizing (CORS policy?)', error);
-      }
-    }
-  };
-
-  return (
-    <iframe
-      src={src}
-      className="w-full border-none transition-all duration-200"
-      style={{ height, overflow: 'hidden' }}
-      title={title}
-      onLoad={handleLoad}
-      scrolling="no"
-    />
-  );
-};
-
 export const PostView: React.FC = () => {
+
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
+  const [htmlContent, setHtmlContent] = useState<string | null>(null);
+  const shadowRootRef = React.useRef<HTMLDivElement>(null);
   
   const post = BLOG_POSTS.find(p => p.slug === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+    
+    if (post?.htmlUrl) {
+      fetch(post.htmlUrl)
+        .then(res => res.text())
+        .then(html => {
+          setHtmlContent(html);
+        })
+        .catch(err => console.error('Failed to load HTML content:', err));
+    }
+  }, [slug, post]);
+
+  useEffect(() => {
+    if (htmlContent && shadowRootRef.current) {
+      if (!shadowRootRef.current.shadowRoot) {
+        shadowRootRef.current.attachShadow({ mode: 'open' });
+      }
+      
+      const shadow = shadowRootRef.current.shadowRoot;
+      if (shadow) {
+        shadow.innerHTML = htmlContent;
+        
+        // Opcjonalnie: upewnij się, że linki otwierają się w nowej karcie
+        const links = shadow.querySelectorAll('a');
+        links.forEach(link => link.setAttribute('target', '_blank'));
+      }
+    }
+  }, [htmlContent]);
 
   const handleBack = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -101,8 +87,18 @@ export const PostView: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex-grow w-full">
-           <IframeResizer src={post.htmlUrl} title={post.title} />
+        <div className="flex-grow w-full max-w-full bg-white shadow-sm overflow-hidden">
+           {htmlContent ? (
+             <div 
+               ref={shadowRootRef}
+               className="newsletter-content"
+               style={{ width: '100%', display: 'block' }}
+             />
+           ) : (
+             <div className="flex justify-center items-center p-12">
+               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+             </div>
+           )}
         </div>
       </div>
     );
