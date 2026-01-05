@@ -43,17 +43,12 @@ async function generateStaticPaths() {
   const indexContent = fs.readFileSync(indexPath, 'utf-8');
 
   for (const slug of slugs) {
-    const dirPath = path.resolve(distPath, slug);
-
-    // Stwórz katalog dla sluga
-    if (!fs.existsSync(dirPath)) {
-      fs.mkdirSync(dirPath, { recursive: true });
-    }
-
-    // Skopiuj index.html do katalogu sluga
-    // Dzięki temu /slug/ zadziała i zwróci 200 OK
-    fs.writeFileSync(path.join(dirPath, 'index.html'), indexContent);
-    console.log(`Wygenerowano: ${slug}/index.html`);
+    // Tworzymy plik .html o nazwie sluga bezpośrednio w dist
+    // Dzięki temu /slug (bez slasha) zadziała na GH Pages i zwróci ten plik bez przekierowania
+    const filePath = path.resolve(distPath, `${slug}.html`);
+    
+    fs.writeFileSync(filePath, indexContent);
+    console.log(`Wygenerowano: ${slug}.html`);
   }
 
   console.log('Zakończono generowanie statycznych ścieżek.');
