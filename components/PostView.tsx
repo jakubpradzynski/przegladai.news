@@ -15,6 +15,18 @@ export const PostView: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     
+    if (post) {
+      // Google Analytics tracking for issue view
+      if (typeof (window as any).gtag === 'function') {
+        (window as any).gtag('event', 'issue_view', {
+          event_category: 'Issue',
+          event_label: post.title,
+          issue_slug: post.slug,
+          issue_id: post.id
+        });
+      }
+    }
+
     if (post?.htmlUrl) {
       fetch(post.htmlUrl)
         .then(res => res.text())
@@ -37,10 +49,24 @@ export const PostView: React.FC = () => {
         
         // Opcjonalnie: upewnij się, że linki otwierają się w nowej karcie
         const links = shadow.querySelectorAll('a');
-        links.forEach(link => link.setAttribute('target', '_blank'));
+        links.forEach(link => {
+          link.setAttribute('target', '_blank');
+
+          // Google Analytics tracking for link clicks in issue preview
+          link.addEventListener('click', () => {
+            if (typeof (window as any).gtag === 'function') {
+              (window as any).gtag('event', 'issue_link_click', {
+                event_category: 'Issue Link',
+                event_label: link.href,
+                issue_slug: post?.slug,
+                link_url: link.href
+              });
+            }
+          });
+        });
       }
     }
-  }, [htmlContent]);
+  }, [htmlContent, post]);
 
   const handleBack = (e: React.MouseEvent) => {
     e.preventDefault();
