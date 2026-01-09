@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrzeglądAI - Twój przewodnik w świecie AI</title>
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            background-color: #f4f4f4;
+        }
+
+        body,
+        td,
+        th {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .news-tag {
+            display: inline-block;
+            background-color: #f0f2f5;
+            color: #666666;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .news-desc {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 5px;
+            color: #555555;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .author-col {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .author-img {
+                margin: 0 auto 15px auto !important;
+            }
+
+            .social-container {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .social-container td {
+                display: inline-block !important;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f4f4f4;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center" style="background-color: #f4f4f4; padding: 20px 0;">
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container">
+                    <tr>
+                        <td align="right" style="padding-bottom: 10px; font-size: 12px; color: #999999;"
+                            class="mobile-padding">
+                            <a href="{$url}" style="color: #999999; text-decoration: underline;">Zobacz w
+                                przeglądarce</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff; border-bottom: 2px solid #f0f0f0;">
+                    <tr>
+                        <td align="center" style="padding: 30px 20px;">
+                            <a href="https://przegladai.news" style="text-decoration: none;">
+                                <h1
+                                    style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; color: #111111;">
+                                    Przegląd<span style="color: #007bff;">AI</span></h1>
+                            </a>
+                            <p style="margin: 5px 0 0 0; font-size: 14px; color: #777777; font-weight: 400;">Twój
+                                przewodnik w świecie AI</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px 30px 10px 30px; font-size: 16px; line-height: 1.6;">
+                            <strong>Cześć!</strong>
+                            <br><br>
+                            Witaj w kolejnym wydaniu newslettera. Przygotowałem zestawienie najciekawszych
+                            materiałów, które wpadły mi w ręce w tym tygodniu.
+                            Jesteśmy po targach CES 2026, więc nowości nie brakuje.
+                            <br><br>
+                            Zapraszam do lektury!
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px 30px 20px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td valign="top" width="24" style="padding-right: 15px;">
+                                                    <img src="https://img.icons8.com/ios-filled/50/FFD43B/news.png"
+                                                        alt="News" width="24" height="24" style="display: block;">
+                                                </td>
+                                                <td valign="top">
+                                                    <h3 style="margin: 0 0 10px 0; font-size: 18px; color: #111;">Top 3
+                                                        informacje</h3>
+                                                    <ul style="padding-left: 20px; margin: 0;">
+                                                        <li
+                                                            style="margin-bottom: 10px; font-size: 15px; line-height: 1.5; color: #444;">
+                                                            Ponad 5% wiadomości w ChatGPT dotyczą zdrowia - powstaje
+                                                            ChatGPT Health.
+                                                        </li>
+                                                        <li
+                                                            style="margin-bottom: 10px; font-size: 15px; line-height: 1.5; color: #444;">
+                                                            Amazon dołącza do walki chatów z Alexa.com
+                                                        </li>
+                                                        <li
+                                                            style="margin-bottom: 10px; font-size: 15px; line-height: 1.5; color: #444;">
+                                                            OpenAI płaci pracownikom średnio 1.5 miliona dolarów
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 10px 30px 30px 30px;">
+
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; border-top: 1px solid #eeeeee;">
+                                        <a href="https://openai.com/index/introducing-chatgpt-health/"
+                                            class="news-title">
+                                            Przedstawiamy ChatGPT Health
+                                        </a>
+                                        <div class="news-desc">
+                                            OpenAI dodaje dedykowany tryb Health w ChatGPT, zoptymalizowany pod porady
+                                            zdrowotne i wellness. Model został dodatkowo wytrenowany przy współpracy z
+                                            ekspertami medycznymi. Na razie niedostępne w UE.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">OpenAI</span> <span
+                                            class="news-tag">Zdrowie</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://cdn.openai.com/pdf/2cb29276-68cd-4ec6-a5f4-c01c5e7a36e9/OpenAI-AI-as-a-Healthcare-Ally-Jan-2026.pdf"
+                                            class="news-title">
+                                            AI jako sojusznik w ochronie zdrowia – raport styczeń 2026
+                                        </a>
+                                        <div class="news-desc">
+                                            Ponad 5% wiadomości w ChatGPT jest na temat zdrowia! Raport OpenAI pokazuje
+                                            realne przypadki użycia w amerykańskiej służbie zdrowia. Ludzie używają go
+                                            do tłumaczenia zawiłych diagnoz lekarskich na zrozumiały język, nawigacji po
+                                            systemie ubezpieczeń zdrowotnych i przygotowania do wizyt u specjalistów.
+                                        </div>
+                                        <span class="news-tag">OpenAI</span> <span class="news-tag">Raport</span> <span
+                                            class="news-tag">Zdrowie</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.neatprompts.com/p/johnson-johnson" class="news-title">
+                                            Johnson & Johnson: Pilotaż 900 przypadków użycia AI – co z tego zostało?
+                                        </a>
+                                        <div class="news-desc">
+                                            Gigant farmaceutyczny przetestował 900 różnych zastosowań AI w swojej
+                                            organizacji. Wdrożyli finalnie tylko 10-15% z nich. Co poszło nie tak?
+                                            Większość pomysłów wyglądała świetnie na papierze, ale w praktyce nie
+                                            sprawdziła się – za drogie, za wolne, albo nie integrowały się z
+                                            istniejącymi systemami. Lekcja dla każdego, kto myśli o AI w korporacji.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Zdrowie</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.aboutamazon.com/news/devices/alexa-plus-web-ai-assistant"
+                                            class="news-title">
+                                            Przedstawiamy Alexa.com – zupełnie nowy sposób interakcji z Alexa+
+                                        </a>
+                                        <div class="news-desc">
+                                            Amazon przenosi swojego asystenta Alexa+ do przeglądarki. Zamiast mówić do
+                                            głośnika Echo, możesz teraz korzystać z AI bezpośrednio w przeglądarce – w
+                                            stylu ChatGPT, ale z natywną integracją do całego ekosystemu zakupowego
+                                            Amazona. Co w tym ciekawego? To pierwszy krok do tego, żeby AI mogło w Twoim
+                                            imieniu robić zakupy, porównywać ceny i zarządzać subskrypcjami.
+                                        </div>
+                                        <span class="news-tag">Amazon</span> <span class="news-tag">Artykuł</span> <span
+                                            class="news-tag">Narzędzia</span> <span class="news-tag">eCommerce</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.cnbc.com/2025/12/24/amazon-faces-a-dilemma-fight-ai-shopping-agents-or-join-them.html"
+                                            class="news-title">
+                                            Dylemat Amazona: walczyć z AI shopping botami czy do nich dołączyć?
+                                        </a>
+                                        <div class="news-desc">
+                                            Amazon ma problem: AI shopping agenty przeglądają oferty, porównują ceny i
+                                            często znajdują lepsze deale poza Amazonem. Firma stoi przed dylematem –
+                                            blokować te boty (tracąc klientów) czy otworzyć się na nie (tracąc
+                                            bezpośrednią relację z kupującym i marżę). To samo wyzwanie czeka każdy
+                                            marketplace. Kto pierwszy znajdzie rozwiązanie, ten wygrywa.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Finanse</span>
+                                        <span class="news-tag">eCommerce</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://techcrunch.com/2026/01/01/openai-bets-big-on-audio-as-silicon-valley-declares-war-on-screens"
+                                            class="news-title">
+                                            OpenAI stawia na audio – Dolina Krzemowa wypowiada wojnę ekranom
+                                        </a>
+                                        <div class="news-desc">
+                                            OpenAI reorganizuje wewnętrzne zespoły, żeby skupić się na interfejsach
+                                            głosowych. Podobny trend widać też u innych graczy: Google testuje asystenta
+                                            bez ekranu, a Apple podobno pracuje nad urządzeniem audio. Czyżby 2026 był
+                                            rokiem głosu?
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Ciekawostka</span>
+                                        <span class="news-tag">OpenAI</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.androidauthority.com/openai-jony-ive-hardware-pen-3628586"
+                                            class="news-title">
+                                            Tajemniczy projekt sprzętowy OpenAI to... długopis?
+                                        </a>
+                                        <div class="news-desc">
+                                            Sam Altman i Jony Ive (były chief designer Apple) pracują nad urządzeniem o
+                                            kryptonimie Gumdrop. Przecieki sugerują, że może to być... inteligentny
+                                            długopis. Pomysł: minimalistyczny gadżet bez ekranu, który łączy AI z
+                                            fizycznym notowaniem.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Ciekawostka</span>
+                                        <span class="news-tag">OpenAI</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://imagazine.pl/2026/01/06/ces-2026-plaud-notepin-s-czarna-skrzynka-dla-twojej-pamieci-i-koniec-z-botami-na-zoomie/"
+                                            class="news-title">
+                                            Plaud NotePin S - smart dyktafon AI w formie “pastylki”
+                                        </a>
+                                        <div class="news-desc">
+                                            Firma Plaud na targach CES zaprezentowała NotePin S, które stało się hitem -
+                                            połączenie oprogramowania, AI i fizycznego urządzenia. Wygląda jak coś do
+                                            czego zmierza też OpenAI.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Ciekawostka</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://finance.yahoo.com/news/report-shows-openai-offers-historic-141019668.html"
+                                            class="news-title">
+                                            Nowy raport: OpenAI oferuje rekordowe pakiety płacowe w walce o talenty AI
+                                        </a>
+                                        <div class="news-desc">
+                                            OpenAI płaci swoim pracownikom średnio 1,5 miliona dolarów rocznie w akcjach
+                                            – to więcej niż oferują Google czy Meta. Wynagrodzenia głównie opierają się
+                                            na akcjach i oczywiście mówimy tutaj o średniej, a nie medianie. Ale to
+                                            pokazuje, że firma nie szczędzi środków, aby pozyskać najlepsze talenty w
+                                            walce o dominację w świecie AI.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Finanse</span>
+                                        <span class="news-tag">OpenAI</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://securityonline.info/the-130-billion-comeback-why-apples-slow-ai-strategy-is-a-2026-trap/"
+                                            class="news-title">
+                                            Powrót za 130 miliardów dolarów: Dlaczego powolna strategia Apple to pułapka
+                                            2026
+                                        </a>
+                                        <div class="news-desc">
+                                            Podczas gdy wszyscy ścigają się o najszybszy model AI, Apple spokojnie
+                                            integruje sprawdzone rozwiązania (jak Gemini) i siedzi na 130 miliardach
+                                            dolarów rezerw gotówkowych. Co w tym niezwykłego? Firma może w każdej chwili
+                                            kupić praktycznie dowolnego gracza na rynku AI albo przejąć kluczowe
+                                            talenty. To pozorne spóźnienie może okazać się świetnie zaplanowaną
+                                            strategią długoterminową.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Finanse</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.neweconomies.co/p/the-ai-product-design-playbook"
+                                            class="news-title">
+                                            Playbook designu AI dla startupów
+                                        </a>
+                                        <div class="news-desc">
+                                            Zbiór najlepszych praktyk projektowania produktów opartych na AI. Skupia się
+                                            na specyficznych wyzwaniach UX – jak obsługiwać błędy modelu (bo zawsze się
+                                            zdarzają), budować zaufanie użytkowników do AI (bo większość jest
+                                            sceptyczna) i projektować interfejsy konwersacyjne. Konkretne case studies.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://ux-news.com/google-launches-a2ui/" class="news-title">
+                                            Google uruchamia A2UI – otwarty projekt interfejsów dla agentów AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Google otwiera projekt A2UI, który ma standaryzować sposób, w jaki strony
+                                            internetowe komunikują się z agentami AI. Chodzi o to, żeby agenty mogły
+                                            automatycznie wypełniać formularze, klikać przyciski i nawigować po stronach
+                                            – tak jak robi to człowiek, tylko szybciej. To może być fundament pod
+                                            przyszły internet, gdzie agenty AI robią zakupy i załatwiają sprawy w naszym
+                                            imieniu.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Google</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://github.com/sarwarbeing-ai/Agentic_Design_Patterns/blob/main/Agentic_Design_Patterns.pdf"
+                                            class="news-title">
+                                            Agentic Design Patterns: Praktyczny przewodnik
+                                        </a>
+                                        <div class="news-desc">
+                                            Kompleksowy przewodnik po wzorcach projektowych dla systemów agentowych AI.
+                                            Autor (Sr Director w Google) zebrał 21 sprawdzonych schematów używanych w
+                                            produkcji – od prostych pattern'ów jak Reflection po zaawansowane
+                                            multi-agent systems. Jeżeli budujesz cokolwiek z autonomicznymi agentami AI,
+                                            to obowiązkowa lektura. Wszystko z przykładami kodu i case studies.
+                                        </div>
+                                        <span class="news-tag">Dokument</span> <span class="news-tag">Technicznie</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://techcrunch.com/2026/01/05/nvidia-launches-powerful-new-rubin-chip-architecture/"
+                                            class="news-title">
+                                            Nvidia wprowadza nową architekturę chipów Rubin
+                                        </a>
+                                        <div class="news-desc">
+                                            Nvidia prezentuje następcę architektury Blackwell – serię Rubin. Nowe chipy
+                                            mają być 2-3x bardziej energooszczędne przy tej samej mocy obliczeniowej, co
+                                            bezpośrednio przełoży się na tańszy i szybszy trening modeli AI. Jensen
+                                            Huang znowu dwa kroki przed konkurencją – AMD i Intel mają coraz trudniej
+                                            nadążyć, a Nvidia się umacnia.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Hardware</span>
+                                        <span class="news-tag">Nvidia</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://pub.towardsai.net/understanding-retrieval-in-rag-systems-why-chunk-size-matters-6d976dd5b654"
+                                            class="news-title">
+                                            Jak działa retrieval w systemach RAG: Dlaczego wielkość chunka ma znaczenie
+                                        </a>
+                                        <div class="news-desc">
+                                            Techniczny wpis o optymalizacji systemów RAG (Retrieval-Augmented
+                                            Generation). Jeżeli budujesz chatbota podpiętego pod własną bazę wiedzy, to
+                                            wielkość fragmentów tekstu (chunks) może zmienić jakość odpowiedzi. Autor
+                                            tłumaczy dlaczego, z przykładami i konkretnymi zaleceniami. Przydatne dla
+                                            każdego, kto pracuje z RAG na produkcji.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Technicznie</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.youtube.com/watch?v=e73kf_iLAP0" class="news-title">
+                                            Nowy humanoidalny Atlas ujawniony! Boston Dynamics zmienia robotykę
+                                        </a>
+                                        <div class="news-desc">
+                                            Boston Dynamics pokazuje nową, całkowicie elektryczną wersję robota Atlas.
+                                            Co robi wrażenie? Ta maszyna porusza się w sposób dosłownie nieludzki – jej
+                                            stawy obracają się w kątach niemożliwych dla człowieka, co daje jej przewagę
+                                            w niektórych zadaniach.
+                                        </div>
+                                        <span class="news-tag">Ciekawostka</span> <span class="news-tag">Video</span>
+                                        <span class="news-tag">9 min</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.youtube.com/watch?v=2B-OancSM80" class="news-title">
+                                            Twórz modele 3D z CZEGOKOLWIEK (darmowe i open source)
+                                        </a>
+                                        <div class="news-desc">
+                                            Tutorial pokazujący darmowe narzędzia AI do generowania modeli 3D ze zdjęć
+                                            lub tekstowych opisów. Kiedyś trzeba było drogiego softu i godzin pracy
+                                            teraz AI robi to w minuty. Świetne dla indie gamedevów, grafików 3D i
+                                            każdego, kto potrzebuje szybkich prototypów bez wydawania tysięcy na
+                                            licencje.
+                                        </div>
+                                        <span class="news-tag">Narzędzia</span> <span class="news-tag">Video</span>
+                                        <span class="news-tag">5 min</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://x.com/bcherny/status/2007179832300581177" class="news-title">
+                                            Twórca Claude Code pokazuje, jak sam z niego korzysta
+                                        </a>
+                                        <div class="news-desc">
+                                            Tytuł mówi wszystko. Kilka konkretnych wskazówek jak korzystać z tego
+                                            narzędzia. Jeżeli używasz Claude code - warto przejrzeć te kilka komentarzy
+                                            na X.
+                                        </div>
+                                        <span class="news-tag">Claude</span> <span class="news-tag">Post</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://addyosmani.com/blog/ai-coding-workflow/" class="news-title">
+                                            Mój workflow kodowania z LLM na 2026 rok
+                                        </a>
+                                        <div class="news-desc">
+                                            Addy Osmani (Engineering Manager w Google) pokazuje swój aktualny setup do
+                                            pracy z AI przy kodowaniu. Kilka konkretnych wskazów jak osiągnąć dobre
+                                            efekty.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Technicznie</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.primeintellect.ai/blog/rlm" class="news-title">
+                                            Recursive Language Models: paradygmat 2026 roku
+                                        </a>
+                                        <div class="news-desc">
+                                            Według autorów przyszłość AI to nie statyczne generowanie tekstu w jednym
+                                            przejściu, tylko modele rekurencyjne – które w pętli udoskonalają swoje
+                                            odpowiedzi, analizują je, poprawiają, sprawdzają faktyczność. To jak dawanie
+                                            AI czasu na przemyślenie odpowiedzi zamiast wymuszania natychmiastowej
+                                            reakcji. Może być przełomem w jakości odpowiedzi, szczególnie dla złożonych
+                                            zadań wymagających rozumowania.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Technicznie</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://substack.com/inbox/post/182822344" class="news-title">
+                                            LLMs as Judges: Pomiar stronniczości, efektów podpowiedzi i preferencji
+                                        </a>
+                                        <div class="news-desc">
+                                            Coraz więcej benchmarków AI używa samych modeli językowych do oceniania
+                                            innych modeli (tzw. LLM-as-a-Judge). Problem: LLMy mają swoje uprzedzenia –
+                                            preferują odpowiedzi w określonym stylu, dłuższe teksty, albo nawet
+                                            konkretne modele. Autorzy pokazują, jak bardzo sposób zadawania pytania
+                                            wpływa na wyniki.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Technicznie</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.testingcatalog.com/icymi-xai-launches-grok-business-and-enterprise-plans/"
+                                            class="news-title">
+                                            xAI uruchamia plany Grok Business i Enterprise
+                                        </a>
+                                        <div class="news-desc">
+                                            Elon Musk wchodzi na rynek enterprise AI z planami Grok Business i
+                                            Enterprise. Główne atuty: brak trenowania modelu na danych klientów i
+                                            natywna integracja z platformą X. Ceny podobne do ChatGPT Enterprise, ale z
+                                            dostępem do danych real-time z X.
+                                        </div>
+                                        <span class="news-tag">Finanse</span> <span class="news-tag">Narzędzia</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.sammobile.com/news/samsung-is-bringing-gemini-ai-to-800-million-mobile-devices-this-year/"
+                                            class="news-title">
+                                            Samsung wprowadza Gemini AI na 800 milionów urządzeń mobilnych w tym roku
+                                        </a>
+                                        <div class="news-desc">
+                                            Samsung masowo wdraża Google Gemini na swoich smartfonach i tabletach
+                                            Galaxy. Chce podwoić liczbę urządzeń z 400 do 800 milionów. To może być duży
+                                            skok dla Google w walce z OpenAI.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Finanse</span>
+                                        <span class="news-tag">Google</span> <span class="news-tag">Samsung</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.youtube.com/watch?v=N1ozBqw6Ryc" class="news-title">
+                                            Jak Piotr Karwatka tworzy hity Open Source i o co chodzi z Open Mercato?
+                                        </a>
+                                        <div class="news-desc">
+                                            Coś z polskiego ogródka. Wywiad z Piotrem Karwatką o tym, jak tworzy
+                                            globalne projekty open source będąc w Polsce. Opowiada o Open Mercato –
+                                            nowej platformie e-commerce z wbudowanym AI, która ma być alternatywą dla
+                                            zamkniętych rozwiązań enterprise.
+                                        </div>
+                                        <span class="news-tag">Polska</span> <span class="news-tag">Startup</span> <span
+                                            class="news-tag">Video</span> <span class="news-tag">1h</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.threads.com/@mosseri/post/DS76UiklIDf/media"
+                                            class="news-title">
+                                            Patrząc na 2026... autentyczność staje się nieskończenie reprodukowalna
+                                        </a>
+                                        <div class="news-desc">
+                                            Adam Mosseri (szef Instagrama i Threads) ostrzega przed nadchodzącym
+                                            kryzysem zaufania. Za chwilę nie będziemy w stanie odróżnić prawdziwych
+                                            postów od wygenerowanych przez AI, autentycznych zdjęć od deepfake'ów,
+                                            prawdziwych osób od botów. Weryfikacja tożsamości i pochodzenia treści
+                                            stanie się kluczowa dla funkcjonowania social mediów.
+                                        </div>
+                                        <span class="news-tag">Post</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://danielmiessler.com/blog/cybersecurity-ai-changes-2026"
+                                            class="news-title">
+                                            Zmiany w cyberbezpieczeństwie, których spodziewam się w 2026
+                                        </a>
+                                        <div class="news-desc">
+                                            Daniel Miessler przewiduje koniec ery ręcznej obrony przed cyberatakami.
+                                            Autonomiczne agenty bezpieczeństwa będą podejmować decyzje w milisekundach,
+                                            bez czekania na człowieka. Pojawi się też nowy, większy problem – jak
+                                            weryfikować autentyczność treści w sieci, gdzie AI może doskonale imitować
+                                            każdego. Cyberbezpieczeństwo przestaje być tylko o firewallach i hasłach.
+                                        </div>
+                                        <span class="news-tag">Artykuł</span> <span class="news-tag">Security</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://techcrunch.com/2025/12/31/investors-predict-ai-is-coming-for-labor-in-2026/"
+                                            class="news-title">
+                                            Inwestorzy przewidują: AI przejmie pracę w 2026 roku
+                                        </a>
+                                        <div class="news-desc">
+                                            Według ankiety przeprowadzonej wśród inwestorów VC, 2026 rok to moment
+                                            przełomowy – AI przestanie tylko wspomagać pracowników, a zacznie ich
+                                            realnie zastępować. Firmy już teraz przesuwają budżety z rekrutacji na
+                                            automatyzację. Najszybciej ma uderzyć w back office, customer support i
+                                            podstawowe role analityczne.
+                                        </div>
+                                        <span class="news-tag">Finanse</span> <span class="news-tag">Raport</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.arxiv.org/pdf/2512.24880" class="news-title">
+                                            DeepSeek opublikował mHC: Manifold-Constrained Hyper-Connections
+                                        </a>
+                                        <div class="news-desc">
+                                            Bardzo techniczne, więc dwie najważniejsze rzeczy z tej publikacji:<br>
+                                            - Chiny mają znaczenie w świecie AI i to zaznaczają<br>
+                                            - Niższe koszty treningu o 30-50% przy dużych modelach dzięki unikaniu
+                                            restartów i optymalizacji pamięci
+                                        </div>
+                                        <span class="news-tag">Dokument</span> <span class="news-tag">Technicznie</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; ">
+                                        <a href="https://www.youtube.com/watch?v=HQ3eVt2jgAY" class="news-title">
+                                            CEO firmy AI o wartości $215M: Jak zbudować rentowny startup AI w 30 dni
+                                            (Playbook 2026)
+                                        </a>
+                                        <div class="news-desc">
+                                            Rozmowa z założycielem startupu AI wartego ponad 200 milionów dolarów. Warto
+                                            obejrzeć i posłuchać jak rozumują osoby, które z sukcesem wskoczyły do tego
+                                            pociągu tworzenia startupów opartych na sztucznej inteligencji.
+                                        </div>
+                                        <span class="news-tag">Startup</span> <span class="news-tag">Video</span> <span
+                                            class="news-tag">38 min</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 0 30px 40px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td valign="top" width="24" style="padding-right: 15px;">
+                                                    <img src="https://img.icons8.com/ios-filled/50/FFD43B/idea.png"
+                                                        alt="Idea" width="24" height="24" style="display: block;">
+                                                </td>
+                                                <td valign="top">
+                                                    <h3 style="margin: 0 0 10px 0; font-size: 18px; color: #111;">Warto
+                                                        wiedzieć</h3>
+
+                                                    <p
+                                                        style="margin: 0 0 10px 0; font-size: 15px; line-height: 1.5; color: #444;">
+                                                        Nano-Banana Pro to potężne narzędzie do generowania obrazów od Google. Od
+                                                        najnowszej wersji dużo lepiej radzi sobie z polskimi tekstami i
+                                                        ikonografikami.
+                                                    </p>
+                                                    <p
+                                                        style="margin: 0; font-size: 15px; line-height: 1.5; color: #444;">
+                                                        <a
+                                                            href="https://dev.to/googleai/nano-banana-pro-prompting-guide-strategies-1h9n">Tutaj</a>
+                                                        znajdziesz kompleksowy przewodnik i strategię jak generować
+                                                        różnego rodzaju obrazy.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f9f9f9; border-top: 1px solid #eeeeee;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 25px 20px; text-align: center;">
+
+
+                            <p style="margin: 0 0 15px 0; font-size: 15px; color: #333;">
+                                <img src="https://img.icons8.com/ios-filled/50/007bff/speech-bubble--v1.png" width="16"
+                                    height="16"
+                                    style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                Co myślisz o tym wydaniu?
+                                <a href="https://forms.gle/rjQ77WH2jN2beYfz8"
+                                    style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Zostaw
+                                    feedback</a>
+                            </p>
+
+
+                            <div style="font-size: 15px; color: #333;">
+                                <div style="margin-bottom: 10px;">
+                                    <img src="https://img.icons8.com/ios-filled/50/007bff/forward-arrow.png" width="16"
+                                        height="16"
+                                        style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                    Podoba Ci się treść newslettera?
+                                    <a href="{$forward}"
+                                        style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Prześlij
+                                        dalej</a>
+                                </div>
+
+                                <div style="margin-top: 15px; font-size: 14px; color: #666;">
+                                    lub udostępnij: <br>
+
+
+                                    <div style="margin-top: 8px;">
+                                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={$url}"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/linkedin.png" alt="LI" width="28"
+                                                height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://twitter.com/intent/tweet?url={$url}&text=Polecam%20newsletter%20AI!"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                alt="X" width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u={$url}" target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/facebook-new.png" alt="FB"
+                                                width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px; font-size: 16px; line-height: 1.6; border-bottom: 1px solid #eeeeee;">
+                            To tyle na dzisiaj. Dzięki, że jesteś ze mną! <br><br>
+                            Udanego tygodnia,<br>
+                            <strong>Kuba</strong>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td width="90" valign="top" class="author-col" style="padding-right: 20px;">
+                                        <img src="https://jakubpradzynski.pl/images/me.jpg" alt="Zdjęcie autora"
+                                            width="90" height="90" style="border-radius: 50%; display: block;"
+                                            class="author-img">
+                                    </td>
+
+                                    <td valign="middle" class="author-col">
+                                        <p style="margin: 0 0 10px 0; font-size: 14px; color: #333; line-height: 1.5;">
+                                            <strong>Jakub Prądzyński</strong><br>
+                                            Engineering Manager w Allegro<br>
+                                        </p>
+
+                                        <table border="0" cellpadding="0" cellspacing="0" class="social-container">
+                                            <tr>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.linkedin.com/in/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/linkedin.png"
+                                                            alt="LinkedIn" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://x.com/PradzynskiJakub" target="_blank">
+                                                        <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                            alt="X" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.facebook.com/jakub.pradzynski" target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/facebook-new.png"
+                                                            alt="Facebook" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.instagram.com/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/fluency/48/instagram-new.png"
+                                                            alt="Instagram" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://jakubpradzynski.pl" target="_blank"
+                                                        title="Strona WWW">
+                                                        <img src="https://img.icons8.com/color/48/domain--v1.png"
+                                                            alt="WWW" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f4f4f4;">
+                    <tr>
+                        <td align="center"
+                            style="padding: 30px 20px; color: #888888; font-size: 12px; line-height: 18px;">
+                            <p style="margin: 0 0 10px 0;">
+                                © 2026 <a href="https://przegladai.news"
+                                    style="color: #888888; text-decoration: none;">PrzeglądAI</a>. Wszystkie prawa
+                                zastrzeżone.
+                            </p>
+                            <p style="margin: 0;">
+                                <a href="{$unsubscribe}" style="color: #888888; text-decoration: underline;">Wypisz się
+                                    z listy</a>
+                                <span style="margin: 0 5px;">|</span>
+                                Powered by <a href="https://hvb.software/"
+                                    style="color: #888888; text-decoration: none;">HVB.software</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
