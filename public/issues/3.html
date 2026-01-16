@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrzeglądAI - Twój przewodnik w świecie AI</title>
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            background-color: #f4f4f4;
+        }
+
+        body,
+        td,
+        th {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .news-tag {
+            display: inline-block;
+            background-color: #f0f2f5;
+            color: #666666;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            margin-top: 8px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        .tag-news {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+        }
+
+        .tag-tech {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .tag-pl {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .news-desc {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 5px;
+            color: #555555;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .author-col {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .author-img {
+                margin: 0 auto 15px auto !important;
+            }
+
+            .social-container {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .social-container td {
+                display: inline-block !important;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f4f4f4;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center" style="background-color: #f4f4f4; padding: 20px 0;">
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container">
+                    <tr>
+                        <td align="right" style="padding-bottom: 10px; font-size: 12px; color: #999999;"
+                            class="mobile-padding">
+                            <a href="{$url}" style="color: #999999; text-decoration: underline;">Zobacz w
+                                przeglądarce</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff; border-bottom: 2px solid #f0f0f0;">
+                    <tr>
+                        <td align="center" style="padding: 30px 20px;">
+                            <a href="https://przegladai.news" style="text-decoration: none;">
+                                <h1
+                                    style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; color: #111111;">
+                                    Przegląd<span style="color: #007bff;">AI</span></h1>
+                            </a>
+                            <p style="margin: 5px 0 0 0; font-size: 14px; color: #777777; font-weight: 400;">Twój
+                                przewodnik w świecie AI</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px 30px 10px 30px; font-size: 16px; line-height: 1.6;">
+                            <strong>Cześć!</strong>
+                            <br><br>
+                            Witaj w kolejnym wydaniu newslettera. W ostatnich dniach Google zaprezentował
+                            wiele interesujących projektów i zaczął rok z przytupem. Walka o pozycje z OpenAI trwa.
+                            <br><br>
+                            Materiałów jest sporo, dlatego zmieniłem trochę kolejność postów według tagów.
+                            Na początku są głównie nowości i ogłoszenia np. nowe narzędzia czy ogłoszenia firm.
+                            Potem są materiały dla osób pracujących bliżej technologii (developerów, PMów itp.).
+                            Na końcu są wszystkiego rodzaju materiały, które dla jednych mogą być ciekawostką, dla
+                            innych inspiracją albo po prostu informacją ze świata AI. Jeśli chcesz, możesz zostawić
+                            feedback odpowiadając na tego maila.
+                            <br><br>
+                            Zapraszam do lektury!
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px 30px 20px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td valign="top" width="24" style="padding-right: 15px;">
+                                                    <img src="https://img.icons8.com/ios-filled/50/FFD43B/news.png"
+                                                        alt="News" width="24" height="24" style="display: block;">
+                                                </td>
+                                                <td valign="top">
+                                                    <h3 style="margin: 0 0 10px 0; font-size: 18px; color: #111;">Top 3
+                                                        informacje</h3>
+                                                    <ul style="padding-left: 20px; margin: 0;">
+                                                        <li
+                                                            style="margin-bottom: 10px; font-size: 15px; line-height: 1.5; color: #444;">
+                                                            Apple będzie zasilane Gemini. Dokładając do tego
+                                                            współpracę z Samsungiem, AI od Google'a zgarnia około połowę
+                                                            rynku urządzeń mobilnych.
+                                                        </li>
+                                                        <li
+                                                            style="margin-bottom: 10px; font-size: 15px; line-height: 1.5; color: #444;">
+                                                            AI zaczyna odnawiać recepty w ramach pilotażowego programu w
+                                                            stanie Utah.
+                                                        </li>
+                                                        <li
+                                                            style="margin-bottom: 10px; font-size: 15px; line-height: 1.5; color: #444;">
+                                                            Moc obliczeniowa AI podwaja się co 7 miesięcy, ale
+                                                            potrzebuje... energii atomowej.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 10px 30px 30px 30px;">
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; border-top: 1px solid #eeeeee;">
+                                        <a href="https://blog.google/company-news/inside-google/company-announcements/joint-statement-google-apple/"
+                                            class="news-title">
+                                            Wspólne oświadczenie Google i Apple
+                                        </a>
+                                        <div class="news-desc">
+                                            Apple w końcu zdecydowało - ich funkcjonalności AI będą opierały się na
+                                            modelach Gemini. Wielki sukces dla Google w walce o pozycje z OpenAI. Firma
+                                            Apple twierdzi, że modele AI będą uruchamiane na ich urządzeniach i
+                                            zachowają ich standardy prywatności.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.google/company-news/inside-google/message-ceo/nrf-2026-remarks/"
+                                            class="news-title">
+                                            Google publikuje Universal Commerce Protocol, którym chce zdobyć rynek
+                                            handlu, rezerwacji i transakcji w świecie AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Google prezentuje UCP – otwarty standard dla Agentic Commerce. Protokół ma
+                                            umożliwić agentom AI (różnych firm) dokonywanie zakupów, rezerwacji i
+                                            transakcji w ustandaryzowany sposób, bez konieczności budowania osobnych
+                                            integracji dla każdego sklepu. Bezpośrednia konkurencja dla Agentic Commerce
+                                            Protocol od OpenAI.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence/"
+                                            class="news-title">
+                                            Google wprowadza do AI “Personal Intelligence” czyli wspierane danymi o
+                                            Tobie z innych aplikacji jak YouTube czy Zdjęcia
+                                        </a>
+                                        <div class="news-desc">
+                                            Gemini będzie mógł wykorzystać teraz wszystko to, co firma zbierała na
+                                            użytkowników przez lata: zdjęcia, oglądane filmy na YT, pliki, maile,
+                                            spotkania w kalendarzu. Nawet generyczne prompty będą mogły być
+                                            spersonalizowane pod Ciebie. Koszt? Wystarczy dać dostęp do danych….
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/"
+                                            class="news-title">
+                                            Gmail uruchamia funkcje AI, takie jak AI Overviews i inne, możliwe dzięki
+                                            Gemini 3
+                                        </a>
+                                        <div class="news-desc">
+                                            Google zmienia implementację funkcji AI w Gmail odchodząc od ogólnego chatu
+                                            na rzecz bardziej wyspecyfikowanych funkcjonalności jak AI Overviews do
+                                            podsumowywania wątków i odpowiadania na pytania o zawartość skrzynki, oraz
+                                            ulepszone Help Me Write. Czy za tym pójdą inne narzędzia i odejdziemy od
+                                            generycznych czatów?
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.google/innovation-and-ai/technology/ai/veo-3-1-ingredients-to-video/"
+                                            class="news-title">
+                                            Veo 3.1: Większa spójność, kreatywność i kontrola
+                                        </a>
+                                        <div class="news-desc">
+                                            Generowanie video staje się bardziej ekspresyjne, dzięki ulepszeniom, które
+                                            pomagają tworzyć bardziej zabawne, kreatywne i wysokiej jakości filmy oparte
+                                            na dostarczanych obrazach, stworzone specjalnie z myślą o formacie mobilnym.
+                                            Nowe możliwości zarówno dla początkujących twórców jak i profesjonalistów.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://codewiki.google/" class="news-title">
+                                            Zawsze aktualna dokumentacja? Brzmi dobrze. Google Ci taką wygeneruje.
+                                        </a>
+                                        <div class="news-desc">
+                                            Google uruchamia Code Wiki czyli narzędzie, które ma za pomocą Gemini
+                                            generować zawsze aktualną dokumentację kodu. Odwieczny problem rozwiązany?
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.testingcatalog.com/allianz-partners-with-anthropic-to-scale-responsible-ai-in-insurance/"
+                                            class="news-title">
+                                            Allianz nawiązuje partnerstwo z Anthropic, aby skalować AI w ubezpieczeniach
+                                        </a>
+                                        <div class="news-desc">
+                                            Allianz integruje modele Claude w swoich procesach ubezpieczeniowych (ocena
+                                            roszczeń, obsługa klienta). Partnerstwo kładzie nacisk na odpowiedzialne AI
+                                            i zgodność z regulacjami, co jest kluczowe w tak wrażliwej branży.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://x.com/thegarrettscott/status/2009704424470708258"
+                                            class="news-title">
+                                            Wprowadzenie “Do Anything Agents”
+                                        </a>
+                                        <div class="news-desc">
+                                            Do Anything Agents – autonomiczne agenty zdolne do długoterminowej pracy
+                                            (tygodnie/miesiące). Posiadają własne adresy e-mail i mogą wchodzić w
+                                            interakcje z dowolnymi narzędziami webowymi, zarządzając całymi projektami.
+                                            Widzisz ich zastosowanie dla siebie?
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://claude.com/blog/cowork-research-preview" class="news-title">
+                                            Cowork: Claude Code nie tylko dla developerów
+                                        </a>
+                                        <div class="news-desc">
+                                            Claude Code cieszy się bardzo dużą popularnością wśród developerów. Teraz
+                                            udostępnia “Cowork”, czyli agenta AI z mocą Claude Code, który potrafi
+                                            zrobić na Twoim komputerze… wszystko? A do tego możesz go kontrolować.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://about.ads.microsoft.com/en/blog/post/january-2026/conversations-that-convert-copilot-checkout-and-brand-agents"
+                                            class="news-title">
+                                            Konwersacje, które konwertują: Copilot Checkout i Brand Agents
+                                        </a>
+                                        <div class="news-desc">
+                                            Microsoft wprowadza Copilot Checkout i Brand Agents. To nowe funkcje
+                                            pozwalające markom na tworzenie własnych agentów AI w ekosystemie Copilot,
+                                            które mogą prowadzić klienta od rozmowy aż do zakupu w jednym miejscu.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://pap-mediaroom.pl/biznes-i-finanse/future-tech-poland-15-mld-zl-z-bgk-i-efi-dla-polskich-firm-technologicznych-z"
+                                            class="news-title">
+                                            Future Tech Poland: 1,5 mld zł z BGK i EFI dla polskich firm
+                                            technologicznych
+                                        </a>
+                                        <div class="news-desc">
+                                            Startuje fundusz Future Tech Poland z budżetem 1,5 mld zł (BGK + EFI). Cel:
+                                            finansowanie polskich startupów technologicznych (w tym deeptech/AI), aby
+                                            zatrzymać innowacje w kraju i pomóc im w ekspansji zagranicznej.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                        <span class="news-tag tag-pl">Polska</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://addyosmani.com/blog/coding-agents-manager/" class="news-title">
+                                            Twoi agenci AI do kodowania potrzebują menedżera
+                                        </a>
+                                        <div class="news-desc">
+                                            Addy Osmani (Google) argumentuje, że programiści przyszłości staną się
+                                            bardziej osobami zarządzającymi a umiejętności jak delegowanie, weryfikacja,
+                                            jasne instrukcje stają się kluczowe dla efektywnego kodowania z pomocą AI.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://davekiss.com/blog/the-1000-commits-problem/"
+                                            class="news-title">
+                                            Problem 1000 commitów
+                                        </a>
+                                        <div class="news-desc">
+                                            AI pozwala generować kod w zawrotnym tempie (np. 1000 commitów w krótkim
+                                            czasie), ale nasze procesy review i CI/CD nie są na to gotowe. Autor opisuje
+                                            buga w Claude Code, który wynikał właśnie z tego, że prędkość silnika
+                                            wzrosła, ale hamulce zostały te same.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"
+                                            class="news-title">
+                                            Jak ewaluować agentów AI by Anthropic?
+                                        </a>
+                                        <div class="news-desc">
+                                            Techniczny wpis od Anthropic o tym, jak testować agentów AI. Tradycyjne
+                                            metody (pojedyncze sprawdzenie wyjścia) nie działają przy wieloetapowych
+                                            zadaniach. Artykuł proponuje framework do ewaluacji całych trajektorii
+                                            działań agenta.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://martinfowler.com/fragments/2026-01-08.html" class="news-title">
+                                            Przemyślenia Martina Fowlera na temat raportu od Anthropic i nie tylko
+                                        </a>
+                                        <div class="news-desc">
+                                            Martin Fowler komentuje raport Anthropic o tym, jak AI zmienia pracę
+                                            programistów (używane głównie do debugowania i rozumienia kodu). Wspomina
+                                            też o TDD (Test Driven Development) jako kluczowym mechanizmie kontroli nad
+                                            kodem generowanym przez AI.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://cursor.com/blog/agent-best-practices" class="news-title">
+                                            Najlepsze praktyki dla kodowania z agentami
+                                        </a>
+                                        <div class="news-desc">
+                                            Oficjalny poradnik od twórców Cursor. Jak zarządzać kontekstem, kiedy
+                                            startować nową konwersację, a kiedy kontynuować. Kluczowe rady dla
+                                            programistów chcących efektywnie współpracować z agentami w IDE.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.ashpreetbedi.com/articles/evals-not-enough"
+                                            class="news-title">
+                                            Ewaluacje AI nie dadzą ci działającego produktu
+                                        </a>
+                                        <div class="news-desc">
+                                            Krytyczne spojrzenie na obecne podejście do ewaluacji (benchmarków) modeli
+                                            AI. Autor argumentuje, że świetne wyniki w tabelkach nie przekładają się na
+                                            działający produkt, bo rzeczywistość (timeouty, błędne API, dziwne dane)
+                                            weryfikuje agentów znacznie brutalniej.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.artificialintelligencemadesimple.com/p/how-openai-builds-amazing-products"
+                                            class="news-title">
+                                            Jak OpenAI buduje niesamowite produkty
+                                        </a>
+                                        <div class="news-desc">
+                                            Analiza procesu produktowego w OpenAI. Jak firma balansuje między
+                                            wypuszczaniem tylko modeli a budowaniem kompletnych produktów? Kluczem jest
+                                            unikanie pułapki dodawania AI do wszystkiego na rzecz rozwiązywania realnych
+                                            problemów.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://rlancemartin.github.io/2026/01/09/agent_design"
+                                            class="news-title">
+                                            Wzorce projektowe agentów
+                                        </a>
+                                        <div class="news-desc">
+                                            Przegląd wzorców architektonicznych dla agentów AI. Autor omawia techniki
+                                            takie jak Give Agents A Computer (daj agentom dostęp do OS) czy
+                                            hierarchiczne przestrzenie akcji, które pozwalają budować bardziej
+                                            autonomiczne i sprawcze systemy.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://x.com/Saboo_Shubham_/status/2008742211194913117"
+                                            class="news-title">
+                                            Nowoczesny PM AI w erze Agentów AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Post od PMa z Googl’a o tym jak rola Product Managera ewoluuje. Zamiast
+                                            tłumaczyć potrzeby klientów inżynierom, PM staje się osobą formułującą
+                                            intencje dla agentów AI. Jeśli agent potrafi zamienić specyfikację w kod w
+                                            godzinę, to sama specyfikacja staje się de facto produktem.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.politico.com/news/2026/01/06/artificial-intelligence-prescribing-medications-utah-00709122"
+                                            class="news-title">
+                                            Sztuczna inteligencja zaczyna przepisywać leki w Utah
+                                        </a>
+                                        <div class="news-desc">
+                                            Utah uruchamia w USA program pilotażowy, w którym AI (od startupu Doctronic)
+                                            odnawia recepty dla pacjentów z chorobami przewlekłymi. To test zaufania do
+                                            AI w medycynie i potencjalny przełom w odciążaniu lekarzy.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://techcrunch.com/2026/01/08/governments-grapple-with-the-flood-of-non-consensual-nudity-on-x/"
+                                            class="news-title">
+                                            Rządy zmagają się z zalewem nagości na X generowanej AI
+                                        </a>
+                                        <div class="news-desc">
+                                            X mierzy się z falą generowanych przez AI (Grok) nagich zdjęć kobiet bez ich
+                                            zgody. Komisja Europejska i regulatorzy z całego świata żądają wyjaśnień i
+                                            grożą konsekwencjami, co stawia pod znakiem zapytania skuteczność obecnych
+                                            zabezpieczeń AI.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://the-decoder.com/tailwinds-shattered-business-model-is-a-grim-warning-for-every-business-relying-on-site-visits-in-the-ai-era/"
+                                            class="news-title">
+                                            Zniszczony model biznesowy Tailwind to ponure ostrzeżenie dla biznesów
+                                            opartych na ruchu z sieci
+                                        </a>
+                                        <div class="news-desc">
+                                            Twórcy Tailwind CSS notują 80% spadek przychodów, mimo że framework jest
+                                            popularniejszy niż kiedykolwiek. Powód? Asystenci AI piszą kod za
+                                            programistów, więc ci nie odwiedzają już strony dokumentacji (i nie widzą
+                                            reklam płatnych szablonów). Na szczęście na ratunek przyszło wsparcie z
+                                            innych firm.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.linkedin.com/posts/jakubpradzynski_ai-it-stackoverflow-activity-7416078072191315968-3Yzv"
+                                            class="news-title">
+                                            Jak Stack Overflow poradziło sobie w erze AI? Najwyraźniej bardzo dobrze!
+                                        </a>
+                                        <div class="news-desc">
+                                            Ruch na forum Stack Overflow drastycznie spadł przez ChatGPT, ale firma
+                                            podwoiła przychody. Jak? Sprzedając swoją bazę wiedzy gigantom AI oraz
+                                            oferując wersję Enterprise (Stack Internal) dla firm. Dobry przykład pivotu
+                                            w erze AI.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://post.substack.com/p/the-ai-revolution-is-here-will-the"
+                                            class="news-title">
+                                            Rewolucja AI nadeszła. Czy gospodarka przetrwa transformację?
+                                        </a>
+                                        <div class="news-desc">
+                                            Człowiek, który przewidział krach w 2008 roku, współzałożyciel Anthropic i
+                                            czołowy podcaster zajmujący się sztuczną inteligencją omawiają przyszłość
+                                            sztucznej inteligencji. Dłuższy artykuł, ale w zacnym gronie, warty
+                                            przeczytania. Polecam przynajmniej spojrzeć na konkretne pytania, wybrać
+                                            najbardziej interesujące i je przeczytać.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://techcrunch.com/2026/01/09/meta-signs-deals-with-three-nuclear-companies-for-6-plus-gw-of-power/"
+                                            class="news-title">
+                                            Meta podpisuje umowy z trzema firmami nuklearnymi na ponad 6 GW mocy
+                                        </a>
+                                        <div class="news-desc">
+                                            Meta zabezpiecza ogromne zasoby energii nuklearnej (6 GW) dla swoich centrów
+                                            danych AI. Umowy obejmują zarówno tradycyjne elektrownie, jak i małe
+                                            reaktory modułowe (SMR), co pokazuje skalę zapotrzebowania energetycznego
+                                            gigantów AI.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.anthropic.com/news/healthcare-life-sciences"
+                                            class="news-title">
+                                            Rozwój Claude w opiece zdrowotnej i naukach przyrodniczych
+                                        </a>
+                                        <div class="news-desc">
+                                            Anthropic ogłasza nowe funkcje Claude dedykowane branży medycznej. Model ma
+                                            pomagać w analizie dokumentacji klinicznej, ale z zachowaniem
+                                            rygorystycznych standardów bezpieczeństwa.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://epoch.ai/data-insights/ai-chip-production" class="news-title">
+                                            Globalna moc obliczeniowa AI podwaja się co 7 miesięcy
+                                        </a>
+                                        <div class="news-desc">
+                                            Raport Epoch AI pokazuje wykładniczy wzrost mocy obliczeniowej dedykowanej
+                                            AI. Podwajanie się potencjału co 7 miesięcy to tempo znacznie szybsze niż
+                                            historyczne prawo Moore'a, napędzane wyścigiem zbrojeń w hardware.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.theguardian.com/technology/2026/jan/11/google-ai-overviews-health-guardian-investigation"
+                                            class="news-title">
+                                            Google usuwa niektóre podsumowania AI po narażeniu zdrowia użytkowników
+                                        </a>
+                                        <div class="news-desc">
+                                            Po śledztwie Guardiana, Google usunęło AI Overviews dla zapytań medycznych.
+                                            AI podawało błędne normy badań krwi, co mogło wprowadzać pacjentów w błąd co
+                                            do ich stanu zdrowia. Przypomnienie o ryzyku halucynacji w krytycznych
+                                            dziedzinach.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.youtube.com/watch?v=k-xtmISBCNE" class="news-title">
+                                            CEO Nvidii o modelach rozumowania, robotyce i narracji o bańce AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Jensen Huang w wywiadzie dla No Priors. Warto, jeżeli ktoś chciałby poznać
+                                            perspektywę osoby, której firma w dużej mierze napędza rozwój AI.
+                                        </div>
+                                        <span class="news-tag">1h 16 min</span>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 0 30px 40px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td valign="top" width="24" style="padding-right: 15px;">
+                                                    <img src="https://img.icons8.com/ios-filled/50/FFD43B/idea.png"
+                                                        alt="Idea" width="24" height="24" style="display: block;">
+                                                </td>
+                                                <td valign="top">
+                                                    <h3 style="margin: 0 0 10px 0; font-size: 18px; color: #111;">Warto
+                                                        wiedzieć</h3>
+
+                                                    <p
+                                                        style="margin: 0 0 10px 0; font-size: 15px; line-height: 1.5; color: #444;">
+                                                        Chcesz budować umiejętności w zakresie sztucznej inteligencji?
+                                                        Od kogo lepiej się uczyć niż od lidera branży? <a
+                                                            href="https://www.skills.google/?locale=pl">Google
+                                                            Skills</a> to platforma, która zawiera masę szkoleń czy
+                                                        certifikatów mogących pomóc Ci podnieść Twoje kompetencje.
+                                                    </p>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f9f9f9; border-top: 1px solid #eeeeee;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 25px 20px; text-align: center;">
+
+
+                            <p style="margin: 0 0 15px 0; font-size: 15px; color: #333;">
+                                <img src="https://img.icons8.com/ios-filled/50/007bff/speech-bubble--v1.png" width="16"
+                                    height="16"
+                                    style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                Co myślisz o tym wydaniu?
+                                <a href="https://forms.gle/rjQ77WH2jN2beYfz8"
+                                    style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Zostaw
+                                    feedback</a>
+                            </p>
+
+
+                            <div style="font-size: 15px; color: #333;">
+                                <div style="margin-bottom: 10px;">
+                                    <img src="https://img.icons8.com/ios-filled/50/007bff/forward-arrow.png" width="16"
+                                        height="16"
+                                        style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                    Podoba Ci się treść newslettera?
+                                    <a href="{$forward}"
+                                        style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Prześlij
+                                        dalej</a>
+                                </div>
+
+                                <div style="margin-top: 15px; font-size: 14px; color: #666;">
+                                    lub udostępnij: <br>
+
+
+                                    <div style="margin-top: 8px;">
+                                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={$url}"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/linkedin.png" alt="LI" width="28"
+                                                height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://twitter.com/intent/tweet?url={$url}&text=Polecam%20newsletter%20AI!"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                alt="X" width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u={$url}" target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/facebook-new.png" alt="FB"
+                                                width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px; font-size: 16px; line-height: 1.6; border-bottom: 1px solid #eeeeee;">
+                            To tyle na dzisiaj. Dzięki, że jesteś ze mną! <br><br>
+                            Udanego tygodnia,<br>
+                            <strong>Kuba</strong>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td width="90" valign="top" class="author-col" style="padding-right: 20px;">
+                                        <img src="https://jakubpradzynski.pl/images/me.jpg" alt="Zdjęcie autora"
+                                            width="90" height="90" style="border-radius: 50%; display: block;"
+                                            class="author-img">
+                                    </td>
+
+                                    <td valign="middle" class="author-col">
+                                        <p style="margin: 0 0 10px 0; font-size: 14px; color: #333; line-height: 1.5;">
+                                            <strong>Jakub Prądzyński</strong><br>
+                                            Engineering Manager w Allegro<br>
+                                        </p>
+
+                                        <table border="0" cellpadding="0" cellspacing="0" class="social-container">
+                                            <tr>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.linkedin.com/in/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/linkedin.png"
+                                                            alt="LinkedIn" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://x.com/PradzynskiJakub" target="_blank">
+                                                        <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                            alt="X" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.facebook.com/jakub.pradzynski" target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/facebook-new.png"
+                                                            alt="Facebook" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.instagram.com/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/fluency/48/instagram-new.png"
+                                                            alt="Instagram" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://jakubpradzynski.pl" target="_blank"
+                                                        title="Strona WWW">
+                                                        <img src="https://img.icons8.com/color/48/domain--v1.png"
+                                                            alt="WWW" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f4f4f4;">
+                    <tr>
+                        <td align="center"
+                            style="padding: 30px 20px; color: #888888; font-size: 12px; line-height: 18px;">
+                            <p style="margin: 0 0 10px 0;">
+                                © 2026 <a href="https://przegladai.news"
+                                    style="color: #888888; text-decoration: none;">PrzeglądAI</a>. Wszystkie prawa
+                                zastrzeżone.
+                            </p>
+                            <p style="margin: 0;">
+                                <a href="{$unsubscribe}" style="color: #888888; text-decoration: underline;">Wypisz się
+                                    z listy</a>
+                                <span style="margin: 0 5px;">|</span>
+                                Powered by <a href="https://hvb.software/"
+                                    style="color: #888888; text-decoration: none;">HVB.software</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

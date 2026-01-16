@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '3',
+    slug: 'wydanie-3-google-robi-1-krok-do-tylu-i-5-do-przodu',
+    title: 'Wydanie #3: Google robi 1 krok do tyłu i 5 do przodu',
+    date: '16-01-2026',
+    htmlUrl: '/issues/3.html'
+  },
+  {
     id: '2',
     slug: 'wydanie-2-nowosci-z-targow-ces-i-tryb-health-w-chatgpt',
     title: 'Wydanie #2: nowości z targów CES i tryb Health w ChatGPT',
