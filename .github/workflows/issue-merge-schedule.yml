@@ -1,0 +1,24 @@
+name: Issue Merge Schedule
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+  schedule:
+    # co godzinę
+    - cron: '0 7 * * 5'
+
+jobs:
+  merge_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: gr2m/merge-schedule-action@v2
+        with:
+          merge_method: squash  # merge, squash lub rebase
+          time_zone: 'Europe/Warsaw'  # CET/CEST
+          require_statuses_success: 'true'  # wymaga zielonych checków
+          automerge_fail_label: 'merge-schedule-failed'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
