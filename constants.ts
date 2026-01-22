@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '4',
+    slug: 'wydanie-4-reklamy-w-chatgpt-weryfikacja-wieku-i-spadek-ruchu-z-google',
+    title: 'Wydanie #4: reklamy w ChatGPT, weryfikacja wieku i spadek ruchu z Google',
+    date: '23-01-2026',
+    htmlUrl: '/issues/4.html'
+  },
+  {
     id: '3',
     slug: 'wydanie-3-google-robi-1-krok-do-tylu-i-5-do-przodu',
     title: 'Wydanie #3: Google robi 1 krok do tyłu i 5 do przodu',
