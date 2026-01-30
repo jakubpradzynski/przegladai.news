@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '5',
+    slug: 'wydanie-5-album-muzyczny-od-elevenlabs-gemini-w-chrome-i-jak-mala-wyspa-zarabia-miliony-na-ai',
+    title: 'Wydanie #5: album muzyczny od ElevenLabs, Gemini w Chrome i jak mała wyspa zarabia miliony na AI',
+    date: '30-01-2026',
+    htmlUrl: '/issues/5.html'
+  },
+  {
     id: '4',
     slug: 'wydanie-4-reklamy-w-chatgpt-weryfikacja-wieku-i-spadek-ruchu-z-google',
     title: 'Wydanie #4: reklamy w ChatGPT, weryfikacja wieku i spadek ruchu z Google',
