@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '6',
+    slug: 'wydanie-6-agentowe-narzedzia-od-openai-i-jak-ai-wplywa-na-nasze-umiejetnosci',
+    title: 'Wydanie #6: agentowe narzędzia od OpenAI i jak AI wpływa na nasze umiejętności',
+    date: '06-02-2026',
+    htmlUrl: '/issues/6.html'
+  },
+  {
     id: '5',
     slug: 'wydanie-5-album-muzyczny-od-elevenlabs-gemini-w-chrome-i-jak-mala-wyspa-zarabia-miliony-na-ai',
     title: 'Wydanie #5: album muzyczny od ElevenLabs, Gemini w Chrome i jak mała wyspa zarabia miliony na AI',

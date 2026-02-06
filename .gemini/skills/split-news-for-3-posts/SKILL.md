@@ -7,7 +7,10 @@ description: Dzieli newsy z ostatniego wydania newslettera na 3 części i przyg
 # Kroki
 
 1. Wczytaj plik `/public/issues/{latest}.md`, gdzie `{latest}` to najwyższy numer.
-2. Wydziel z niego linki, tytuły i opisy wszystkich newsów i podziel na 3 równe części (zgodnie z kolejnością).
+2. Wydziel z niego linki, tytuły i opisy wszystkich newsów i podziel na 3 części zgodnie z tagami:
+    - Newsy z tagiem "Nowości i ogłoszenia" idą do pierwszej części
+    - Newsy z tagiem "Bliżej technologii" idą do drugiej części
+    - Pozostałe newsy idą do trzeciej części
 3. Dla każdej części przygotuj post na social media.
 4. Zapisz wyniki w pliku `/public/posts/issue_{latest}_posts.md`.
 
@@ -21,7 +24,7 @@ description: Dzieli newsy z ostatniego wydania newslettera na 3 części i przyg
 Każdy post mam mieć format:
 
 ```
-1/3 newsów z #5 wydania newslettera #PrzeglądAI:
+1/3 newsów z #{latest} wydania newslettera #PrzeglądAI:
 
 🔹 {Tytuł PL}: {link}
 
