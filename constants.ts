@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '7',
+    slug: 'wydanie-7-ai-podczas-super-bowl-rada-przyszlosci-i-agentic-engineering',
+    title: 'Wydanie #7: AI podczas Super Bowl, Rada Przyszłości i agentic engineering',
+    date: '13-02-2026',
+    htmlUrl: '/issues/7.html'
+  },
+  {
     id: '6',
     slug: 'wydanie-6-agentowe-narzedzia-od-openai-i-jak-ai-wplywa-na-nasze-umiejetnosci',
     title: 'Wydanie #6: agentowe narzędzia od OpenAI i jak AI wpływa na nasze umiejętności',
