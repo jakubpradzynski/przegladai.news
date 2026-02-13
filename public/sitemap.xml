@@ -42,4 +42,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://przegladai.news/wydanie-7-ai-podczas-super-bowl-rada-przyszlosci-i-agentic-engineering</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

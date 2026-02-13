@@ -24,7 +24,7 @@ description: Dzieli newsy z ostatniego wydania newslettera na 3 części i przyg
 Każdy post mam mieć format:
 
 ```
-1/3 newsów z #{latest} wydania newslettera #PrzeglądAI:
+1/3 paczek newsów z #{latest} wydania newslettera #PrzeglądAI:
 
 🔹 {Tytuł PL}: {link}
 
