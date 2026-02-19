@@ -18,6 +18,7 @@ Na naszej stronie znajdziesz:
 - **Wydanie #5**: "album muzyczny od ElevenLabs, Gemini w Chrome i jak mała wyspa zarabia miliony na AI" (30-01-2025) - https://przegladai.news/wydanie-5-album-muzyczny-od-elevenlabs-gemini-w-chrome-i-jak-mala-wyspa-zarabia-miliony-na-ai
 - **Wydanie #6**: "agentowe narzędzia od OpenAI i jak AI wpływa na nasze umiejętności" (06-02-2026) - https://przegladai.news/wydanie-6-agentowe-narzedzia-od-openai-i-jak-ai-wplywa-na-nasze-umiejetnosci
 - **Wydanie #7**: "AI podczas Super Bowl, Rada Przyszłości i agentic engineering" (13-02-2026) - https://przegladai.news/wydanie-7-ai-podczas-super-bowl-rada-przyszlosci-i-agentic-engineering
+- **Wydanie #8**: "AI gasi pożary i acqui-hire w praktyce" (20-02-2026) - https://przegladai.news/wydanie-8-ai-gasi-pozary-i-acqui-hire-w-praktyce
 
 ## Kontakt
 Strona internetowa: https://przegladai.news
