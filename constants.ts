@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '8',
+    slug: 'wydanie-8-ai-gasi-pozary-i-acqui-hire-w-praktyce',
+    title: 'Wydanie #8: AI gasi pożary i acqui-hire w praktyce',
+    date: '20-02-2026',
+    htmlUrl: '/issues/8.html'
+  },
+  {
     id: '7',
     slug: 'wydanie-7-ai-podczas-super-bowl-rada-przyszlosci-i-agentic-engineering',
     title: 'Wydanie #7: AI podczas Super Bowl, Rada Przyszłości i agentic engineering',
