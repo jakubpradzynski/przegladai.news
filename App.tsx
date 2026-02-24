@@ -36,11 +36,25 @@ const HomePage: React.FC<HomePageProps> = ({ onSubscribeClick }) => {
   );
 };
 
+const PixelTracker: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Meta Pixel PageView tracking
+    if (typeof (window as any).fbq === 'function') {
+      (window as any).fbq('track', 'PageView');
+    }
+  }, [location.pathname]);
+
+  return null;
+};
+
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <Router>
+      <PixelTracker />
       <div className="min-h-screen bg-white flex flex-col font-sans selection:bg-blue-100 selection:text-blue-900">
         <Navbar onSubscribeClick={() => setIsModalOpen(true)} />
         <SubscribeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
