@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrzeglądAI - Twój przewodnik w świecie AI</title>
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            background-color: #f4f4f4;
+        }
+
+        body,
+        td,
+        th {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .news-tag {
+            display: inline-block;
+            background-color: #f0f2f5;
+            color: #666666;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            margin-top: 8px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        .tag-news {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+        }
+
+        .tag-tech {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .tag-pl {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .news-desc {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 5px;
+            color: #555555;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .author-col {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .author-img {
+                margin: 0 auto 15px auto !important;
+            }
+
+            .social-container {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .social-container td {
+                display: inline-block !important;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f4f4f4;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center" style="background-color: #f4f4f4; padding: 20px 0;">
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container">
+                    <tr>
+                        <td align="right" style="padding-bottom: 10px; font-size: 12px; color: #999999;"
+                            class="mobile-padding">
+                            <a href="{$url}" style="color: #999999; text-decoration: underline;">Zobacz w
+                                przeglądarce</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff; border-bottom: 2px solid #f0f0f0;">
+                    <tr>
+                        <td align="center" style="padding: 30px 20px;">
+                            <a href="https://przegladai.news" style="text-decoration: none;">
+                                <h1
+                                    style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; color: #111111;">
+                                    Przegląd<span style="color: #007bff;">AI</span></h1>
+                            </a>
+                            <p style="margin: 5px 0 0 0; font-size: 14px; color: #777777; font-weight: 400;">Twój
+                                przewodnik w świecie AI</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px 30px 10px 30px; font-size: 16px; line-height: 1.6;">
+                            <strong>Cześć!</strong>
+                            <br><br>
+                            Witaj w kolejnym wydaniu newslettera. Przygotowałem dla Ciebie zestawienie najciekawszych
+                            materiałów, które wpadły mi w ręce w tym tygodniu.
+                            <br><br>
+                            Zapraszam do lektury!
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px 30px 20px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td valign="top" width="24" style="padding-right: 15px;">
+                                                    <img src="https://img.icons8.com/ios-filled/50/FFD43B/news.png"
+                                                        alt="News" width="24" height="24" style="display: block;">
+                                                </td>
+                                                <td valign="top">
+                                                    <h3 style="margin: 0 0 10px 0; font-size: 18px; color: #111;">Top 3
+                                                        informacje</h3>
+                                                    <ul style="padding-left: 20px; margin: 0;">
+                                                        <li
+                                                            style="margin-bottom: 10px; font-size: 15px; line-height: 1.5; color: #444;">
+                                                            Claude Code może teraz być sterowany z poziomu telefonu</li>
+                                                        <li
+                                                            style="margin-bottom: 10px; font-size: 15px; line-height: 1.5; color: #444;">
+                                                            Pierwsze dane z USA (wysoki wzrost PKB i spadek liczby
+                                                            zatrudnionych) wskazują na rosnącą produktywność dzięki AI
+                                                        </li>
+                                                        <li
+                                                            style="margin-bottom: 10px; font-size: 15px; line-height: 1.5; color: #444;">
+                                                            ElevenLabs jako pierwsza firma wdraża ubezpieczenia agentów
+                                                            głosowych AI</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 10px 30px 30px 30px;">
+
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; border-top: 1px solid #eeeeee;">
+                                        <a href="https://cursor.com/blog/agent-computer-use" class="news-title">
+                                            Agenty Cursor teraz mają własne komputery w chmurze
+                                        </a>
+                                        <div class="news-desc">
+                                            Cursor ogłasza, że agenty mogą teraz uruchamiać się w izolowanych maszynach
+                                            wirtualnych w chmurze, gdzie samodzielnie testują napisany kod, przeglądają
+                                            strony, manipulują aplikacjami i klikają w UI. Zamiast po prostu generować
+                                            kod i kończyć, agent może wygenerować nagrania wideo przedstawiające
+                                            stworzoną funkcjonalność. Ponad 30% PR-ów w Cursor jest teraz tworzonych
+                                            przez takie autonomiczne agenty chmurowe. Możesz uruchomić je z web, mobile,
+                                            desktopa, Slacka czy GitHuba.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.anthropic.com/news/claude-code-security"
+                                            class="news-title">
+                                            Claude Code Security: AI do wykrywania luk w kodzie
+                                        </a>
+                                        <div class="news-desc">
+                                            Anthropic udostępnia Claude Code Security – nową funkcję wbudowaną w Claude
+                                            Code, która skanuje repozytoria kodu w poszukiwaniu luk bezpieczeństwa i
+                                            proponuje konkretne łatki dla zespołów security. Tradycyjne narzędzia do
+                                            analizy kodu szukają znanych wzorców – Claude potrafi znajdować subtelne,
+                                            kontekstowe podatności. To ogłoszenie mocno zatrzęsło cenami akcji spółek z
+                                            tego sektora.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://x.com/claudeai/status/2026418433911603668" class="news-title">
+                                            Claude Code: Remote Control
+                                        </a>
+                                        <div class="news-desc">
+                                            Claude ogłasza funkcję zdalnej kontroli, dla już uruchomionej sesji. Możesz
+                                            rozpocząć zadanie w terminalu i kontynuować je na telefonie, gdy np. idziesz
+                                            na spacer lub bierzesz udział w spotkaniu. Claude działa na Twoim
+                                            komputerze, a Ty możesz kontrolować sesję z aplikacji mobilnej Claude.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://claude.com/blog/cowork-plugins-across-enterprise"
+                                            class="news-title">
+                                            Claude Cowork dla całego przedsiębiorstwa – pluginy i marketplace
+                                        </a>
+                                        <div class="news-desc">
+                                            Anthropic wprowadza zestaw znaczących aktualizacji dla Claude Cowork w
+                                            środowiskach enterprise. Administratorzy mogą teraz tworzyć pluginy z
+                                            szablonów lub od zera (z pomocą Claude), zarządzać nimi z nowego panelu
+                                            „Customize" i dystrybuować przez prywatne marketplace. Pluginy zamieniają
+                                            Claude w wyspecjalizowanych agentów dla każdego działu.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://elevenlabs.io/blog/aiuc-announcement" class="news-title">
+                                            ElevenLabs jako pierwsza firma ubezpiecza swoich agentów AI
+                                        </a>
+                                        <div class="news-desc">
+                                            ElevenLabs stał się pierwszą firmą na świecie, która uzyskała certyfikat
+                                            AIUC-1 i związane z nim ubezpieczenie dla agentów AI. W praktyce oznacza to,
+                                            że przedsiębiorstwa mogą teraz ubezpieczyć się od ryzyk wynikających z
+                                            błędów agentów głosowych, np. podania nieprawdziwej informacji klientowi.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.notion.com/releases/2026-02-24" class="news-title">
+                                            Notion 3.3: Własne agenty AI dla każdego zespołu
+                                        </a>
+                                        <div class="news-desc">
+                                            Notion wypuścił wersję 3.3 z długo wyczekiwaną funkcją Custom Agents. Teraz
+                                            możesz stworzyć agenta (dosłownie opisując, co ma robić w naturalnym
+                                            języku), dać mu dostęp do Notion, Slacka, maila, kalendarza i narzędzi przez
+                                            MCP – i ustawić go, by działał autonomicznie 24 godziny na dobę 7 dni w
+                                            tygodniu.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://openai.com/index/frontier-alliance-partners/"
+                                            class="news-title">
+                                            OpenAI buduje partnerstwa konsultingowe wokół platformy Frontier
+                                        </a>
+                                        <div class="news-desc">
+                                            OpenAI ogłasza partnerstwa z czterema największymi firmami konsultingowymi:
+                                            BCG, McKinsey, Accenture i Capgemini. Celem jest Frontier Alliance – program
+                                            pomagający przedsiębiorstwom przejść od pilotów AI do pełnoskalowych wdrożeń
+                                            produkcyjnych. Partnerzy inwestują w dedykowane grupy praktyki i zespoły
+                                            certyfikowane w technologii OpenAI. BCG i McKinsey skupiają się na
+                                            strategii, Accenture i Capgemini – na technicznej integracji end-to-end.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://the-decoder.com/perplexity-pulls-advertising-from-its-search-engine-calling-itself-an-accuracy-business/"
+                                            class="news-title">
+                                            Perplexity rezygnuje z reklam – stawia na subskrypcje
+                                        </a>
+                                        <div class="news-desc">
+                                            Perplexity AI porzuca model reklamowy w swojej wyszukiwarce, twierdząc, że
+                                            reklamy podważały zaufanie użytkowników do odpowiedzi. Firma określa siebie
+                                            mianem „biznesu dokładności" i stawia na subskrypcje. Przy ponad 100 mln
+                                            użytkowników i wycenie 18 mld dolarów, Perplexity wyraźnie się pozycjonuje
+                                            wśród innych firm AI.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://redditinc.com/news/in-case-you-saw-it-we-are-testing-a-new-shopping-product-experience-in-search"
+                                            class="news-title">
+                                            Reddit testuje AI‑powered zakupy w wyszukiwarce
+                                        </a>
+                                        <div class="news-desc">
+                                            Reddit zaczął testować nowe doświadczenie zakupowe w swojej wyszukiwarce.
+                                            Gdy użytkownik pyta o produkty (np. „najlepsze słuchawki z ANC"), AI
+                                            analizuje rekomendacje ze społeczności i wyświetla karuzele z produktami –
+                                            zdjęciami, cenami i linkami do zakupu. Test obejmuje na razie elektronikę
+                                            wśród małej grupy użytkowników w USA. Ciekawe wykorzystanie rekomendacji
+                                            społecznych do e-commerce.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.theverge.com/tech/882921/samsung-is-adding-perplexity-to-galaxy-ai"
+                                            class="news-title">
+                                            Samsung dodaje Perplexity do Galaxy AI – multi-agentowy ekosystem
+                                        </a>
+                                        <div class="news-desc">
+                                            Samsung zapowiedział, że użytkownicy Galaxy S26 będą mogli wywoływać
+                                            Perplexity mówiąc „Hey, Plex" – podobnie jak Gemini czy Bixby. To część
+                                            większej strategii budowania multi-agentowego ekosystemu w Galaxy AI.
+                                            Perplexity dostanie dostęp do Samsung Notes, Clock, Gallery, Reminder i
+                                            kalendarza. Samsung stawia na to, że użytkownicy będą mieli silne
+                                            preferencje co do swojego AI asystenta – i daje im wybór.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163"
+                                            class="news-title">
+                                            AI jako wampir energetyczny – uwaga na wypalenie
+                                        </a>
+                                        <div class="news-desc">
+                                            Steve Yegge - opisuje zjawisko, które sam doświadcza po intensywnej pracy z
+                                            Claude Code: drastyczne zmęczenie pomimo (a może właśnie dlatego) ogromnego
+                                            wzrostu produktywności. AI eliminuje nudę, ale zostawia czysty strumień
+                                            trudnych decyzji. To co wygląda jak supermoc, okazuje się energetycznym
+                                            wampirem: każda godzina z AI to skoncentrowany intelektualny wysiłek bez
+                                            przerw poznawczych.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://mitsloan.mit.edu/ideas-made-to-matter/agentic-ai-explained"
+                                            class="news-title">
+                                            Agentowe AI – co to właściwie jest i jak działa?
+                                        </a>
+                                        <div class="news-desc">
+                                            MIT Sloan wyjaśnia, czym jest agentowe AI i jak różni się od generatywnej
+                                            AI, którą znamy. O ile generatywna AI tworzy treści na żądanie, to agenty AI
+                                            działają autonomicznie – planują, podejmują decyzje i wykonują zadania
+                                            wieloetapowe, korzystając z API, narzędzi zewnętrznych i uprawnień
+                                            systemowych. Artykuł omawia zastosowania biznesowe (od logistyki po
+                                            e-commerce), ryzyka związane z wdrożeniami oraz kluczowe różnice między
+                                            agentem a systemem agentowym.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.decodingai.com/p/generate-synthetic-datasets-for-ai-evals"
+                                            class="news-title">
+                                            Jak generować syntetyczne datasety do ewaluacji agentów AI?
+                                        </a>
+                                        <div class="news-desc">
+                                            Zanim twój agent AI trafi na produkcję, potrzebujesz porządnego zestawu
+                                            danych do ewaluacji – ale skąd wziąć dane, gdy nie masz użytkowników? Paul
+                                            Iusztin opisuje 5 strategii tworzenia syntetycznych danych wejściowych.
+                                            Kluczowa zasada: generujesz tylko inputy, resztę (ślady, decyzje, outputy)
+                                            produkuje prawdziwy system agenta. To sprawia, że dane syntetyczne są
+                                            prawidłowym substytutem produkcji.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.cjroth.com/blog/2026-02-18-building-an-elite-engineering-culture"
+                                            class="news-title">
+                                            Jak zbudować kulturę inżynieryjną z AI w centrum?
+                                        </a>
+                                        <div class="news-desc">
+                                            Dane są jasne: w zespołach o wysokim wdrożeniu AI liczba zamykanych zadań
+                                            rośnie o 21%, a liczba merge'owanych PR – o 98%. Artykuł opisuje konkretne
+                                            praktyki najlepszych zespołów: spec-driven development, stacked PRs,
+                                            AGENTS.md, agent-friendly architecture i mierzenie cycle time zamiast story
+                                            points.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://ngrok.com/blog/bmo-self-improving-coding-agent"
+                                            class="news-title">
+                                            Lekcje z budowania samo-doskonalącego się agenta programistycznego
+                                        </a>
+                                        <div class="news-desc">
+                                            Joel Hans z ngrok przez dwa tygodnie budował i uczył agenta
+                                            programistycznego, który miał się sam doskonalić. Efektem jest szczera
+                                            analiza tego, czego nauczył się o LLM-ach. Najważniejsze odkrycia: LLM-y
+                                            dobrze się doskonalą, ale nie mogą tego robić równolegle; „wiedzieć coś" to
+                                            zupełnie inne od „robić coś"; instynkt odraczania decyzji jest realny i
+                                            trudno go wyeliminować; telemetria to nieodzowny bohater self-improvementu.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.langchain.com/agent-observability-powers-agent-evaluation/"
+                                            class="news-title">
+                                            Obserwowalność agentów = klucz do ich ewaluacji
+                                        </a>
+                                        <div class="news-desc">
+                                            Nie możesz budować niezawodnych agentów bez rozumienia, jak myślą – i nie
+                                            możesz walidować poprawek bez systematycznej ewaluacji. LangChain opisuje,
+                                            dlaczego obserwabilność agentów różni się fundamentalnie od tradycyjnego
+                                            monitoringu software. Artykuł wyjaśnia, jak dane z produkcji stają się
+                                            najcenniejszymi przypadkami testowymi i jak łączyć ewaluację offline z oceną
+                                            online.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://developers.openai.com/cookbook/examples/prompt_caching_201"
+                                            class="news-title">
+                                            Prompt caching 201 – jak zoptymalizować koszty i latencję API
+                                        </a>
+                                        <div class="news-desc">
+                                            Jeśli używasz API OpenAI w projektach z dużą liczbą zapytań, ten poradnik
+                                            jest dla Ciebie. Prompt caching pozwala znacznie obniżyć koszty i zmniejszyć
+                                            opóźnienia przez ponowne wykorzystanie raz obliczonych prefixów promptów.
+                                            Opisane są tu techniki zaawansowane: jak mierzyć hit rate, jak stabilizować
+                                            prefixes, dlaczego kolejność narzędzi w toolach ma znaczenie, oraz jak
+                                            używać parametru prompt_cache_key.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://addyosmani.com/blog/agents-md/" class="news-title">
+                                            Przestań używać /init do tworzenia AGENTS.md – robisz to źle
+                                        </a>
+                                        <div class="news-desc">
+                                            Addy Osmani analizuje dwa nowe badania i dochodzi do nieoczywistego wniosku:
+                                            auto-generowane pliki AGENTS.md pogarszają skuteczność agentów i zwiększają
+                                            koszty o ponad 20%. Dlaczego? Bo agent może sam znaleźć w kodzie wszystko,
+                                            co w nim napisałeś – duplikujesz więc informacje i dodajesz szum. Pliki
+                                            pisane ręcznie, zawierające prawdziwe pułapki, nieoczywiste tooling gotchas
+                                            i specyficzne konwencje – pomagają. Reszta to szum. Prawidłowy model
+                                            mentalny: AGENTS.md to lista rzeczy w kodzie, których jeszcze nie
+                                            naprawiłeś.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://piotrminkowski.com/2026/02/17/create-apps-with-claude-code-on-ollama/"
+                                            class="news-title">
+                                            Tworzenie aplikacji z Claude Code na Ollama bez opłat za API
+                                        </a>
+                                        <div class="news-desc">
+                                            Piotr Minkowski pokazuje, jak uruchomić Claude Code lokalnie przez Ollama –
+                                            bez płatnego dostępu do API Anthropica. Okazuje się to możliwe dzięki temu,
+                                            że Ollama obsługuje teraz Anthropic Messages API. Dla developerów chcących
+                                            eksperymentować z agentowym kodowaniem bez rachunku za API – idealne
+                                            rozwiązanie.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.youtube.com/watch?v=lSzwO3-xYSM" class="news-title">
+                                            RAGi, tagi i inne dragi – uzależnienie od metryk, które nic nie mówią
+                                        </a>
+                                        <div class="news-desc">
+                                            Inez Okulska opowiada o bardzo realnym problemie w projektach AI: metrykach
+                                            ewaluacyjne, które wyglądają dobrze na papierze, ale nic nie mówią o
+                                            rzeczywistej jakości systemu. Prelekcja skupia się na systemach RAG i tym,
+                                            jak łatwo wpaść w pułapkę optymalizowania pod liczby, które nie korelują z
+                                            satysfakcją użytkownika. Jeśli budujesz lub oceniasz systemy AI – ten talk
+                                            jest ważnym przypomnieniem, że nie wszystko co mierzalne jest wartościowe.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                        <span class="news-tag tag-pl">Polska</span>
+                                        <span class="news-tag">31 min</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.gov.pl/web/cyfryzacja/ai-impact-summit-w-indiach-polski-glos-w-dyskusji-o-globalnej-wspolpracy-w-obszarze-sztucznej-inteligencji"
+                                            class="news-title">
+                                            Polska na szczycie AI w Indiach: wiceminister Rosiński prezentował polskie
+                                            AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Wiceminister cyfryzacji Rafał Rosiński wziął udział w AI Impact Summit 2026
+                                            w Nowym Delhi, gdzie Polska aktywnie angażowała się w dyskusje o globalnej
+                                            współpracy w AI. Podczas spotkań z indyjskim Ministrem ds. Elektroniki,
+                                            omówiono synergie między misją IndiaAI a polskimi inicjatywami AI i cyber.
+                                            Polska zaprezentowała się jako kraj mający własny model językowy AI dostępny
+                                            przez mObywatel – jeden z niewielu w UE. Wiceminister uczestniczył też w
+                                            posiedzeniu GPAI i panelach o AI jako infrastrukturze krytycznej dla usług
+                                            publicznych.
+                                        </div>
+                                        <span class="news-tag tag-pl">Polska</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://theaiinnovator.com/ai-productivity-is-finally-showing-up-in-economic-data/"
+                                            class="news-title">
+                                            AI w gospodarce – pierwsze twarde dane z USA
+                                        </a>
+                                        <div class="news-desc">
+                                            Zaktualizowane dane Biura Statystyki Pracy USA pokazują: wzrost PKB utrzymał
+                                            się na wysokim poziomie (3,7% w Q4), ale liczba zatrudnionych została
+                                            zrewidowana w dół o 403 tys. osób. To kombinacja, którą ekonomiści
+                                            rozpoznają jako sygnał rosnącej produktywności. Erik Brynjolfsson ze
+                                            Stanforda szacuje, że wydajność USA może rosnąć w tempie 2,7% rocznie –
+                                            prawie dwukrotnie więcej niż przez ostatnią dekadę.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://sherwood.news/tech/report-amazons-ai-bots-have-been-behind-multiple-aws-outages/"
+                                            class="news-title">
+                                            Agenty AI Amazona wywołały awarie AWS
+                                        </a>
+                                        <div class="news-desc">
+                                            Według Financial Times, agent AI w firmie Amazon – Kiro – był odpowiedzialny
+                                            za 13-godzinną awarię AWS w grudniu 2025 roku. Kiro „postanowił" usunąć i
+                                            odtworzyć środowisko, co doprowadziło do przerwy w działaniu AWS Cost
+                                            Explorer w dwóch regionach Chin. Amazon twierdzi, że to „błąd kontroli
+                                            dostępu użytkownika", a nie problem z Kiro. Jednak FT podaje, że to nie
+                                            jedyna taka sytuacja w ostatnich miesiącach. W firmie istnieje wewnętrzny
+                                            target: 80% deweloperów ma używać AI do kodowania przynajmniej raz w
+                                            tygodniu. Autonomia ma swoje koszty.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.anthropic.com/research/AI-fluency-index"
+                                            class="news-title">
+                                            Anthropic mierzy biegłość użytkowników w pracy z AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Anthropic opublikował pierwszą edycję AI Fluency Index – mierzącego 11
+                                            obserwowalnych zachowań w rozmowach użytkowników Claude.ai. Analiza 9 830
+                                            konwersacji z jednego tygodnia w styczniu 2026 roku pokazuje, że biegłość w
+                                            AI silnie koreluje z iteracją i dopracowywaniem odpowiedzi – a użytkownicy
+                                            piszący kod stają się bardziej dyrektywni i mniej skłonni do oceny wyników.
+                                            Ciekawa baza do śledzenia, jak ludzkość uczy się pracy z AI.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://the-decoder.com/anthropic-refuses-pentagon-demand-to-loosen-military-ai-restrictions-faces-defense-production-act-threat/"
+                                            class="news-title">
+                                            Anthropic odmawia Pentagonowi i ryzykuje Ustawą o Produkcji Obronnej
+                                        </a>
+                                        <div class="news-desc">
+                                            Anthropic nie zamierza usuwać ograniczeń uniemożliwiających używanie Claude
+                                            do sterowania autonomiczną bronią i nadzoru. Pentagon grozi teraz użyciem
+                                            Defense Production Act – prawa, które zmusiłoby firmę do współpracy – lub
+                                            klasyfikacją Anthropic jako ryzyka dla łańcucha dostaw obronnych. Według
+                                            ekspertów ds. prawa kontraktów rządowych byłoby to bezprecedensowe i wywoła
+                                            lawinę procesów sądowych. Tymczasem Google, xAI i OpenAI negocjują z
+                                            Pentagonem kontrakty na systemy bojowe, w tym roje dronów i cyberataki.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks"
+                                            class="news-title">
+                                            Anthropic wskazuje chińskie firmy AI, które kradną możliwości Claude'a
+                                        </a>
+                                        <div class="news-desc">
+                                            Anthropic ujawnia szczegóły trzech kampanii „distillation attacks" –
+                                            procesów, w których zagraniczne laboratoria AI masowo odpytywały Claude'a
+                                            przez fałszywe konta, by wyekstrahować jego możliwości i wytrenować swoje
+                                            modele. Wśród zidentyfikowanych sprawców są DeepSeek, Moonshot AI i MiniMax.
+                                            Anthropic wyjaśnia, dlaczego to poważny problem bezpieczeństwa narodowego
+                                            oraz opisuje jak te kampanie wykryła i jak się przed nimi broni.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://9to5mac.com/2026/02/20/apple-researchers-develop-on-device-ai-agent-that-interacts-with-apps-for-you/"
+                                            class="news-title">
+                                            Apple Ferret-UI Lite: agent AI działający na urządzeniu, który obsługuje
+                                            aplikacje
+                                        </a>
+                                        <div class="news-desc">
+                                            Badacze Apple zaprezentowali Ferret-UI Lite – model o zaledwie 3 miliardach
+                                            parametrów, który potrafi autonomicznie pracować z interfejsami aplikacji
+                                            mobilnych. Model działa całkowicie na urządzeniu, bez chmury, co oznacza
+                                            pełną prywatność danych. To może być fundament przyszłego Siri, który
+                                            naprawdę wykona zadania w aplikacjach zamiast po prostu otwierać skróty.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises/"
+                                            class="news-title">
+                                            Canva osiąga 4 mld dolarów przychodu – LLM-y kierują do niej ruch
+                                        </a>
+                                        <div class="news-desc">
+                                            Canva zamknęła 2025 rok z 4 mld dolarów ARR i 265 mln miesięcznych aktywnych
+                                            użytkowników (+20%). Znaczna część wzrostu pochodzi z AI – firma była jedną
+                                            z 10 najczęściej linkowanych domen przez ChatGPT. Canva przebudowuje swoją
+                                            tożsamość: nie jest już „platformą designu z narzędziami AI", lecz
+                                            „platformą AI z narzędziami do designu".
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.neatprompts.com/p/citigroup" class="news-title">
+                                            Citigroup i AI: jak wielki bank przebudował się od podstaw
+                                        </a>
+                                        <div class="news-desc">
+                                            Citigroup to przykład na to, że wdrożenie AI w skali enterprise wymaga
+                                            najpierw naprawienia fundamentów. Po skandalach regulacyjnych (kara 400 mln
+                                            dol.) i błędach operacyjnych (przelew 900 mln dol. „pomyłkowo"), CEO Jane
+                                            Fraser zaczęła od uproszczenia struktury, wycofania się z 14 rynków i
+                                            usunięcia ponad 2000 legacy aplikacji. Dziś Citigroup ma ponad 70% wskaźnik
+                                            adopcji AI wśród pracowników. Artykuł pokazuje szczegółowo, jak bank
+                                            przeskoczył z dysfunkcji do lidera AI.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.anthropic.com/research/persona-selection-model"
+                                            class="news-title">
+                                            Dlaczego modele AI zachowują się jak ludzie? Nowa teoria Anthropic
+                                        </a>
+                                        <div class="news-desc">
+                                            Anthropic formułuje nową teorię wyjaśniającą, dlaczego asystenci AI
+                                            sprawiają wrażenie zaskakująco ludzkich. „Persona selection model" (PSM)
+                                            wskazuje, że podczas pretrainingu model uczy się symulować tysiące ludzkich
+                                            postaci – prawdziwych ludzi, fikcyjnych bohaterów, narratorów. Gdy potem
+                                            staje się asystentem, wybiera tę personę, która pasuje do kontekstu rozmowy.
+                                            Innymi słowy: rozmawiasz nie z AI samo w sobie, lecz z postacią w
+                                            opowiadaniu wygenerowanym przez AI. To może wyjaśniać zarówno empatię
+                                            modeli, jak i przypadki, gdy Claude „twierdził", że dostarczy pizzę
+                                            osobiście.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.404media.co/meta-director-of-ai-safety-allows-ai-agent-to-accidentally-delete-her-inbox/"
+                                            class="news-title">
+                                            Dyrektorka AI Safety w Meta prawie straciła całą skrzynkę pocztową przez
+                                            agenta AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Szefowa bezpieczeństwa i alignmentu w Meta Superintelligence Labs musiała w
+                                            pośpiechu zatrzymać agenta AI, który właśnie kasował jej skrzynkę odbiorczą.
+                                            Sama przyznała, że to był „błąd nowicjusza" – zbyt szerokie uprawnienia
+                                            nadane agentowi bez odpowiednich zabezpieczeń. To nie jest historia o tym,
+                                            że AI jest zła. To historia o tym, że nawet eksperci od bezpieczeństwa AI
+                                            robią te same błędy, przed którymi ostrzegają innych. Najlepsze podsumowanie
+                                            aktualnego stanu agentów AI w praktyce.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.irregular.com/publications/vibe-password-generation"
+                                            class="news-title">
+                                            Hasła generowane przez LLM są słabe – nowe badania
+                                        </a>
+                                        <div class="news-desc">
+                                            Wyglądają na silne, ale są fundamentalnie niepewne. Nowe badania firmy
+                                            Irregular pokazują, że hasła generowane bezpośrednio przez modele językowe
+                                            (GPT, Claude, Gemini) mają przewidywalne wzorce, powtarzają się między
+                                            sesjami i mają znacznie niższe faktyczne entropie niż sugeruje ich wygląd.
+                                            Rekomendacja jest jednoznaczna: nie używaj LLM do generowania haseł.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes"
+                                            class="news-title">
+                                            Jak zhakować ChatGPT i Google AI? Jeden artykuł na blogu wystarczył
+                                        </a>
+                                        <div class="news-desc">
+                                            Dziennikarz BBC znalazł sposób, by sprawić, że ChatGPT i Google AI
+                                            twierdziły, iż jest on światowym rekordzistą w jedzeniu hot dogów. Brzmi
+                                            niegroźnie, ale mechanizm, który za tym stoi, jest poważny: wystarczy
+                                            odpowiednio napisany artykuł gdzieś w sieci, by zmanipulować odpowiedzi
+                                            największych chatbotów dla setek tysięcy użytkowników. Ta technika –
+                                            przypominająca klasyczny SEO poisoning – jest już stosowana na masową skalę
+                                            do promocji firm, szerzenia dezinformacji i manipulowania wynikami.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 0 30px 40px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td valign="top" width="24" style="padding-right: 15px;">
+                                                    <img src="https://img.icons8.com/ios-filled/50/FFD43B/idea.png"
+                                                        alt="Idea" width="24" height="24" style="display: block;">
+                                                </td>
+                                                <td valign="top">
+                                                    <h3 style="margin: 0 0 10px 0; font-size: 18px; color: #111;">Warto
+                                                        wiedzieć</h3>
+                                                    <p
+                                                        style="margin: 0 0 10px 0; font-size: 15px; line-height: 1.5; color: #444;">
+                                                        Coursera razem z Google uruchomiła <a
+                                                            href="https://www.coursera.org/google-certificates/google-ai">Certyfikat
+                                                            zawodowy Google AI</a>. Kurs możesz przejść za darmo, a w
+                                                        ramach niego otrzymasz 3 miesiące bezpłatnego dostępdu do Google
+                                                        AI Pro (<a
+                                                            href="https://www.pepper.pl/promocje/3-miesiace-bezplatnego-dostepu-do-google-ai-pro-2-tb-gemini-3-pro-za-posrednictwem-google-one-coursera-nowi-i-obecni-uzytkownicy-1229323">szczegóły</a>).
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f9f9f9; border-top: 1px solid #eeeeee;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 25px 20px; text-align: center;">
+
+
+                            <p style="margin: 0 0 15px 0; font-size: 15px; color: #333;">
+                                <img src="https://img.icons8.com/ios-filled/50/007bff/speech-bubble--v1.png" width="16"
+                                    height="16"
+                                    style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                Co myślisz o tym wydaniu?
+                                <a href="https://forms.gle/rjQ77WH2jN2beYfz8"
+                                    style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Zostaw
+                                    feedback</a>
+                            </p>
+
+
+                            <div style="font-size: 15px; color: #333;">
+                                <div style="margin-bottom: 10px;">
+                                    <img src="https://img.icons8.com/ios-filled/50/007bff/forward-arrow.png" width="16"
+                                        height="16"
+                                        style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                    Podoba Ci się treść newslettera?
+                                    <a href="{$forward}"
+                                        style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Prześlij
+                                        dalej</a>
+                                </div>
+
+                                <div style="margin-top: 15px; font-size: 14px; color: #666;">
+                                    lub udostępnij: <br>
+
+
+                                    <div style="margin-top: 8px;">
+                                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={$url}"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/linkedin.png" alt="LI" width="28"
+                                                height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://twitter.com/intent/tweet?url={$url}&text=Polecam%20newsletter%20AI!"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                alt="X" width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u={$url}" target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/facebook-new.png" alt="FB"
+                                                width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px; font-size: 16px; line-height: 1.6; border-bottom: 1px solid #eeeeee;">
+                            To tyle na dzisiaj. Dzięki, że jesteś ze mną! <br><br>
+                            Udanego tygodnia,<br>
+                            <strong>Kuba</strong>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td width="90" valign="top" class="author-col" style="padding-right: 20px;">
+                                        <img src="https://jakubpradzynski.pl/images/me.jpg" alt="Zdjęcie autora"
+                                            width="90" height="90" style="border-radius: 50%; display: block;"
+                                            class="author-img">
+                                    </td>
+
+                                    <td valign="middle" class="author-col">
+                                        <p style="margin: 0 0 10px 0; font-size: 14px; color: #333; line-height: 1.5;">
+                                            <strong>Jakub Prądzyński</strong><br>
+                                            Engineering Manager w Allegro<br>
+                                        </p>
+
+                                        <table border="0" cellpadding="0" cellspacing="0" class="social-container">
+                                            <tr>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.linkedin.com/in/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/linkedin.png"
+                                                            alt="LinkedIn" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://x.com/PradzynskiJakub" target="_blank">
+                                                        <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                            alt="X" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.facebook.com/jakub.pradzynski" target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/facebook-new.png"
+                                                            alt="Facebook" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.instagram.com/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/fluency/48/instagram-new.png"
+                                                            alt="Instagram" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://jakubpradzynski.pl" target="_blank"
+                                                        title="Strona WWW">
+                                                        <img src="https://img.icons8.com/color/48/domain--v1.png"
+                                                            alt="WWW" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f4f4f4;">
+                    <tr>
+                        <td align="center"
+                            style="padding: 30px 20px; color: #888888; font-size: 12px; line-height: 18px;">
+                            <p style="margin: 0 0 10px 0;">
+                                © 2026 <a href="https://przegladai.news"
+                                    style="color: #888888; text-decoration: none;">PrzeglądAI</a>. Wszystkie prawa
+                                zastrzeżone.
+                            </p>
+                            <p style="margin: 0;">
+                                <a href="{$unsubscribe}" style="color: #888888; text-decoration: underline;">Wypisz się
+                                    z listy</a>
+                                <span style="margin: 0 5px;">|</span>
+                                Powered by <a href="https://hvb.software/"
+                                    style="color: #888888; text-decoration: none;">HVB.software</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

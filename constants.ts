@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '9',
+    slug: 'wydanie-9-zdalnie-sterowany-claude-i-awarie-spowodowane-ai',
+    title: 'Wydanie #9: zdalnie sterowany Claude i awarie spowodowane AI',
+    date: '27-02-2026',
+    htmlUrl: '/issues/9.html'
+  },
+  {
     id: '8',
     slug: 'wydanie-8-ai-gasi-pozary-i-acqui-hire-w-praktyce',
     title: 'Wydanie #8: AI gasi pożary i acqui-hire w praktyce',
