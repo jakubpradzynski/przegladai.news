@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '11',
+    slug: 'wydanie-11-jetbrains-air-marsz-dziewiatki-i-top-100-aplikacji-genai',
+    title: 'Wydanie #11: JetBrains Air, marsz dziewiątek i top 100 aplikacji GenAI',
+    date: '13-03-2026',
+    htmlUrl: '/issues/11.html'
+  },
+  {
     id: '10',
     slug: 'wydanie-10-nano-banana-2-i-departament-wojny-vs-anthropic',
     title: 'Wydanie #10: Nano Banana 2 i Departament Wojny vs Anthropic',

@@ -66,4 +66,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://przegladai.news/wydanie-11-jetbrains-air-i-marsz-dziewiatki-i-top-100-aplikacji-genai</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
