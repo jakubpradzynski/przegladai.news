@@ -21,7 +21,8 @@ Na naszej stronie znajdziesz:
 - **Wydanie #8**: "AI gasi pożary i acqui-hire w praktyce" (20-02-2026) - https://przegladai.news/wydanie-8-ai-gasi-pozary-i-acqui-hire-w-praktyce
 - **Wydanie #9**: "zdalnie sterowany Claude i awarie spowodowane AI" (27-02-2026) - https://przegladai.news/wydanie-9-zdalnie-sterowany-claude-i-awarie-spowodowane-ai
 - **Wydanie #10**: "Nano Banana 2 i Departament Wojny vs Anthropic" (06-03-2026) - https://przegladai.news/wydanie-10-nano-banana-2-i-departament-wojny-vs-anthropic
-- **Wydanie #11**: "JetBrains Air, marsz dziewiątek i top 100 aplikacji GenAI" (13-03-2026) - https://przegladai.news/wydanie-11-jetbrains-air-i-marsz-dziewiatki-i-top-100-aplikacji-genai
+- **Wydanie #11**: "JetBrains Air, marsz dziewiątek i top 100 aplikacji GenAI" (13-03-2026) - https://przegladai.news/wydanie-11-jetbrains-air-marsz-dziewiatki-i-top-100-aplikacji-genai
+- **Wydanie #12**: "Olaf z Krainy Lodu i AI w Google Maps" (20-03-2026) - https://przegladai.news/wydanie-12-olaf-z-krainy-lodu-i-ai-w-google-maps
 
 ## Kontakt
 Strona internetowa: https://przegladai.news

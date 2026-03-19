@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '12',
+    slug: 'wydanie-12-olaf-z-krainy-lodu-i-ai-w-google-maps',
+    title: "Wydanie #12: Olaf z Krainy Lodu i AI w Google Maps",
+    date: '20-03-2026',
+    htmlUrl: '/issues/12.html'
+  },
+  {
     id: '11',
     slug: 'wydanie-11-jetbrains-air-marsz-dziewiatki-i-top-100-aplikacji-genai',
     title: 'Wydanie #11: JetBrains Air, marsz dziewiątek i top 100 aplikacji GenAI',
