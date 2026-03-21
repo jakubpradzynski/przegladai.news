@@ -25,10 +25,10 @@ export const Author: React.FC = () => {
             
             <div className="text-lg text-gray-600 mb-8 leading-relaxed space-y-4">
               <p>
-                Engineering Manager w Allegro. Pasjonat technologii, który na co dzień łączy świat biznesu z inżynierią oprogramowania. 
+                Na co dzień pracuję jako Engineering Manager w Allegro, gdzie łączę świat biznesu z inżynierią oprogramowania. AI to moja wielka pasja, z którą eksperymentuję na każdym kroku.
               </p>
               <p>
-                W newsletterze "PrzeglądAI" dzielę się wyselekcjonowaną wiedzą, pomagając odnaleźć się w gąszczu informacji o sztucznej inteligencji, bez zbędnego szumu.
+                Stworzyłem "PrzeglądAI", bo wiem, jak trudno nadążyć za pędzącym światem sztucznej inteligencji i jak cenny jest Twój czas. Biorę na siebie research – każdego tygodnia filtruję setki źródeł, by dostarczyć Ci wyselekcjonowaną, praktyczną wiedzę. Ty po prostu czytasz samą esencję.
               </p>
             </div>
 

@@ -737,8 +737,8 @@ const MAILERLITE_HTML = `
 
             <div class="ml-form-embedContent" style=" ">
               
-                <h4>PrzeglądAI.news</h4>
-                <p>Zapisz się i otrzymuj newsy ze świata AI</p>
+                <h4>Dołącz do PrzeglądAI</h4>
+                <p>Oszczędzaj czas, zdobywaj wiedzę i bądź zawsze na bieżąco z AI. Zapisz się i odbierz dostęp do <strong>Todoist Pro na 2 miesiące za darmo!</strong> Link otrzymasz w następnym wydaniu newslettera.</p>
               
             </div>
 

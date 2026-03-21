@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Zap, ArrowDown } from 'lucide-react';
+import { Zap, ArrowDown, Mail, Sparkles, CheckCircle2 } from 'lucide-react';
 
 interface HeroProps {
   onSubscribeClick: () => void;
@@ -23,12 +23,21 @@ export const Hero: React.FC<HeroProps> = ({ onSubscribeClick }) => {
           <div className="max-w-2xl">
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
-              Przegląd<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">AI</span>
+              Bądź na bieżąco z AI.<br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Oszczędź swój czas.</span>
             </h1>
             
-            <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
-              Otrzymuj wartościowe, przefiltrowane materiały związane z AI - nowości, praktyki, narzędzia, finanse i wiele innych. Ja śledzę kilkadziesiąt źródeł (blogów firmowych, osobistych, newsletterów). Ty nie musisz. Możesz śledzić samą esencję i być na bieżąco z tym co dzieje się w świecie AI.
+            <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
+              Zdobądź przewagę w świecie sztucznej inteligencji. Przeszukuję dla Ciebie dziesiątki źródeł, blogów i newsletterów, wybierając tylko to, co naprawdę ważne. Zapisz się i otrzymuj <strong>raz w tygodniu</strong> konkretną wiedzę bez szumu informacyjnego.
             </p>
+
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-xl p-4 mb-8 flex items-start gap-3">
+              <span className="text-2xl flex-shrink-0" role="img" aria-label="gift">🎁</span>
+              <div>
+                <strong className="text-gray-900 block mb-1">Bonus dla czytelników:</strong>
+                <p className="text-gray-700 text-sm">Zapisz się do newslettera i odbierz dostęp do konta <strong>Todoist Pro na 2 miesiące za darmo!</strong> Link otrzymasz w następnym wydaniu newslettera.</p>
+              </div>
+            </div>
 
             <div className="mb-10">
               <div className="flex flex-col sm:flex-row gap-3 mb-4">
@@ -48,52 +57,91 @@ export const Hero: React.FC<HeroProps> = ({ onSubscribeClick }) => {
                 <ArrowDown size={16} className="ml-1 transition-transform group-hover:translate-y-1" />
               </button>
             </div>
-
-            <div className="space-y-4 text-sm text-gray-500 bg-gray-50 p-5 rounded-xl border border-gray-100">
-              <div className="flex items-start">
-                <Zap className="w-5 h-5 text-amber-500 mr-3 flex-shrink-0 mt-0.5" />
-                <p>
-                  <strong className="text-gray-900 block mb-1">Częstotliwość:</strong> 
-                  Celuję w jeden mail tygodniowo, ale nie jest to sztywna reguła. Chcę przede wszystkim zachować jakość newslettera.
-                </p>
-              </div>
-              <div className="flex items-start">
-                <ShieldCheck className="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" />
-                <p>
-                  <strong className="text-gray-900 block mb-1">Perspektywa IT:</strong>
-                  Newsletter jest pisany przez Engineering Managera, więc najlepiej wpisuje się w branże IT, ale każdy znajdzie tu konkretną wiedzę bez szumu informacyjnego.
-                </p>
-              </div>
-            </div>
           </div>
 
           {/* Right Column: Visual/Decoration */}
-          <div className="hidden lg:flex justify-center items-center relative">
-            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-            <div className="absolute top-0 right-20 -mr-20 -mt-20 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-            <div className="absolute -bottom-8 left-20 w-72 h-72 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+          <div className="hidden lg:flex justify-center items-center relative min-h-[500px] w-full">
+            {/* Background Blobs */}
+            <div className="absolute top-1/2 right-1/4 -translate-y-1/2 translate-x-1/4 w-72 h-72 bg-blue-400/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+            <div className="absolute top-1/2 right-1/2 -translate-y-1/2 translate-x-1/2 w-72 h-72 bg-indigo-400/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-1/2 right-1/3 -translate-y-1/2 w-72 h-72 bg-purple-400/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob" style={{ animationDelay: '4s' }}></div>
             
-            <div className="relative bg-white/60 backdrop-blur-xl border border-white/50 p-8 rounded-3xl shadow-2xl max-w-sm transform rotate-3 hover:rotate-0 transition-all duration-500">
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
-                  <Zap size={24} />
+            {/* Main Floating Container */}
+            <div className="relative w-full max-w-sm animate-float">
+              
+              {/* Back Card (Decoration) */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-indigo-100 transform rotate-6 rounded-3xl shadow-lg opacity-70 transition-transform duration-500 hover:rotate-12"></div>
+              
+              {/* Front Card (Newsletter Mockup) */}
+              <div 
+                className="relative bg-white/95 backdrop-blur-xl border border-white p-8 rounded-3xl shadow-2xl transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500 flex flex-col gap-6 cursor-pointer group"
+                onClick={onSubscribeClick}
+              >
+                {/* Header */}
+                <div className="flex items-center justify-between pb-4 border-b border-gray-100">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform">
+                      <Mail size={24} />
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold text-gray-900">Najnowsze wydanie</div>
+                      <div className="text-xs text-gray-500">PrzeglądAI Newsletter</div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <div className="h-2.5 w-24 bg-gray-200 rounded-full mb-2"></div>
-                  <div className="h-2 w-16 bg-gray-100 rounded-full"></div>
+                
+                {/* Body Mockup */}
+                <div className="space-y-4">
+                  <div className="h-4 w-3/4 bg-gray-200 rounded-full"></div>
+                  <div className="space-y-2">
+                    <div className="h-2 w-full bg-gray-100 rounded-full"></div>
+                    <div className="h-2 w-5/6 bg-gray-100 rounded-full"></div>
+                    <div className="h-2 w-4/6 bg-gray-100 rounded-full"></div>
+                  </div>
+                </div>
+
+                {/* Features List */}
+                <div className="bg-gray-50/80 rounded-2xl p-4 space-y-3 border border-gray-100">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 size={18} className="text-blue-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-gray-700 font-medium">Tylko najważniejsze nowości z AI</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 size={18} className="text-blue-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-gray-700 font-medium">Praktyczne narzędzia i zastosowania</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 size={18} className="text-blue-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-gray-700 font-medium">Oszczędność Twojego czasu</span>
+                  </div>
+                </div>
+
+                {/* Call to action text inside the card */}
+                <div className="pt-2 text-center">
+                  <div className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-blue-50 text-blue-700 font-semibold text-sm rounded-xl group-hover:bg-blue-600 group-hover:text-white transition-colors w-full">
+                    Chcę to czytać! <Sparkles size={16} />
+                  </div>
                 </div>
               </div>
-              <div className="space-y-3">
-                <div className="h-2 w-full bg-gray-100 rounded-full"></div>
-                <div className="h-2 w-5/6 bg-gray-100 rounded-full"></div>
-                <div className="h-2 w-4/6 bg-gray-100 rounded-full"></div>
-              </div>
-              <div className="mt-6 pt-6 border-t border-gray-100 flex justify-between items-center">
-                <div className="h-8 w-20 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 text-xs font-bold">
-                  AI NEWS
+
+              {/* Floating notification badges */}
+              <div className="absolute -top-6 -right-8 bg-white px-4 py-3 rounded-2xl shadow-xl border border-gray-100 animate-float" style={{ animationDelay: '1s' }}>
+                <div className="flex items-center gap-2">
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                  </span>
+                  <span className="text-xs font-bold text-gray-800 tracking-wide uppercase">100% Konkretów</span>
                 </div>
-                <div className="text-xs text-gray-400">10 min czytania</div>
               </div>
+
+              <div className="absolute -bottom-6 -left-8 bg-white px-4 py-3 rounded-2xl shadow-xl border border-gray-100 animate-float" style={{ animationDelay: '2s' }}>
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">🎁</span>
+                  <span className="text-xs font-bold text-gray-800">Bonus Todoist Pro</span>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
