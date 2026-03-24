@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Selekcja Artykułów - PrzeglądAI</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 20px; background: #f0f2f5; color: #333; }
+  .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  h1 { margin: 0; color: #1a73e8; }
+  .stats { margin-bottom: 20px; padding: 15px; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; gap: 20px; font-size: 16px; flex-wrap: wrap; }
+  .stat-item { background: #e8f0fe; color: #1a73e8; padding: 10px 15px; border-radius: 6px; font-weight: bold; }
+  table { width: 100%; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); overflow: hidden; border-collapse: collapse; }
+  th, td { padding: 15px; text-align: left; border-bottom: 1px solid #dadce0; vertical-align: top; }
+  th { background: #f8f9fa; font-weight: 600; color: #5f6368; text-transform: uppercase; font-size: 0.85em; letter-spacing: 0.5px; }
+  input, textarea, select { width: 100%; padding: 8px; border: 1px solid #dadce0; border-radius: 4px; font-family: inherit; font-size: 13px; box-sizing: border-box; }
+  textarea { height: 80px; resize: vertical; }
+  select[multiple] { height: 80px; }
+  .link-container { display: flex; flex-direction: column; gap: 8px; }
+  .link-container a { color: #1a73e8; text-decoration: none; font-size: 13px; font-weight: bold; display: inline-flex; align-items: center; gap: 4px; }
+  .link-container a:hover { text-decoration: underline; }
+  button.save-btn { padding: 12px 24px; background: #1a73e8; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; font-weight: bold; }
+  button.save-btn:hover { background: #1557b0; }
+  button.sort-btn { padding: 12px 24px; background: #34a853; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; font-weight: bold; margin-right: 10px; }
+  button.sort-btn:hover { background: #2b8c46; }
+  button.delete-btn { background: #dc3545; color: white; padding: 8px 12px; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: bold; }
+  button.delete-btn:hover { background: #c82333; }
+  .col-link { width: 15%; }
+  .col-title { width: 20%; }
+  .col-desc { width: 35%; }
+  .col-tags { width: 15%; }
+  .col-time { width: 8%; }
+  .col-actions { width: 7%; text-align: center; }
+  .main-container { max-width: 1300px; margin: 0 auto; padding-bottom: 50px; }
+  .tooltip-container { position: relative; display: inline-block; cursor: help; border-bottom: 1px dotted #5f6368; padding-bottom: 2px; }
+  .tooltip-container .tooltip-text { visibility: hidden; width: 220px; background-color: #333; color: #fff; text-align: center; border-radius: 6px; padding: 8px 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -110px; opacity: 0; transition: opacity 0.2s; font-size: 12px; font-weight: normal; line-height: 1.4; text-transform: none; letter-spacing: normal; }
+  .tooltip-container .tooltip-text::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #333 transparent transparent transparent; }
+  .tooltip-container:hover .tooltip-text { visibility: visible; opacity: 1; }
+</style>
+</head>
+<body>
+<div class="main-container">
+  <div class="header">
+    <h1>Selekcja Artykułów (PrzeglądAI)</h1>
+    <div>
+      <button class="sort-btn" onclick="sortArticles()">Sortuj po tagach</button>
+      <button class="save-btn" onclick="saveData()">Zapisz do final_prepared_data.csv</button>
+    </div>
+  </div>
+  <div class="stats" id="stats"></div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th class="col-link">Link</th>
+        <th class="col-title">Tytuł</th>
+        <th class="col-desc">Opis</th>
+        <th class="col-tags"><div class="tooltip-container">Tagi ℹ️<span class="tooltip-text">Użyj Cmd/Ctrl + klik, aby wybrać wiele opcji lub odznaczyć wszystkie</span></div></th>
+        <th class="col-time">Czas</th>
+        <th class="col-actions">Akcje</th>
+      </tr>
+    </thead>
+    <tbody id="articles"></tbody>
+  </table>
+
+  <script>
+    let articles = [];
+    const availableTags = ["Nowości i ogłoszenia", "Bliżej technologii", "Polska"];
+
+    async function loadData() {
+      try {
+        const res = await fetch('/api/data');
+        articles = await res.json();
+        sortArticles();
+      } catch (e) {
+        console.error(e);
+        alert('Nie udało się załadować danych. Upewnij się, że plik prepared_data.csv istnieje.');
+      }
+    }
+
+    function sortArticles() {
+      articles.sort((a, b) => getSortScore(a.Tagi) - getSortScore(b.Tagi));
+      saveTempData();
+      render();
+    }
+
+    function getSortScore(tagsStr) {
+      if (!tagsStr) return 6;
+      const t = tagsStr.toLowerCase();
+      const hasNowosci = t.includes("nowości i ogłoszenia");
+      const hasPolska = t.includes("polska");
+      const hasTechnologia = t.includes("bliżej technologii");
+
+      if (hasNowosci && hasPolska) return 1;
+      if (hasNowosci) return 2;
+      if (hasTechnologia && hasPolska) return 3;
+      if (hasTechnologia) return 4;
+      if (hasPolska) return 5;
+      return 6;
+    }
+
+    function render() {
+      // Statystyki
+      let all = articles.length;
+      let nowosci = 0;
+      let technologia = 0;
+      let bezTagu = 0;
+
+      articles.forEach(a => {
+        const t = (a.Tagi || "").toLowerCase();
+        let tagged = false;
+        if (t.includes("nowości i ogłoszenia")) { nowosci++; tagged = true; }
+        if (t.includes("bliżej technologii")) { technologia++; tagged = true; }
+        if (!t.trim() || (!t.includes("nowości i ogłoszenia") && !t.includes("bliżej technologii") && !t.includes("polska"))) bezTagu++;
+      });
+
+      document.getElementById('stats').innerHTML = `
+        <div class="stat-item">Wszystkie: ${all}</div>
+        <div class="stat-item">Nowości i ogłoszenia: ${nowosci}</div>
+        <div class="stat-item">Bliżej technologii: ${technologia}</div>
+        <div class="stat-item">Bez rozpoznanego tagu: ${bezTagu}</div>
+      `;
+
+      // Renderowanie
+      const container = document.getElementById('articles');
+      container.innerHTML = '';
+      articles.forEach((a, i) => {
+        const tr = document.createElement('tr');
+        
+        // Opcje dla tagów (Multiple Select)
+        const currentTags = (a.Tagi || "").split(',').map(t => t.trim());
+        const optionsHtml = availableTags.map(tag => {
+          const selected = currentTags.includes(tag) ? 'selected' : '';
+          return `<option value="${tag}" ${selected}>${tag}</option>`;
+        }).join('');
+
+        tr.innerHTML = `
+          <td>
+            <div class="link-container">
+              <input type="text" value="${escapeHtml(a.Link)}" onchange="update(${i}, 'Link', this.value)">
+              <a href="${escapeHtml(a.Link)}" target="_blank">🔗 Otwórz w nowej karcie</a>
+            </div>
+          </td>
+          <td>
+            <textarea oninput="autoResize(this)" onchange="update(${i}, 'Tytuł', this.value)">${escapeHtml(a.Tytuł)}</textarea>
+          </td>
+          <td>
+            <textarea oninput="autoResize(this)" onchange="update(${i}, 'Opis', this.value)">${escapeHtml(a.Opis)}</textarea>
+          </td>
+          <td>
+            <select multiple onchange="updateTags(${i}, this)">
+              ${optionsHtml}
+            </select>
+          </td>
+          <td>
+            <input type="text" value="${escapeHtml(a.Czas)}" onchange="update(${i}, 'Czas', this.value)" placeholder="np. 12 min">
+          </td>
+          <td style="text-align: center;">
+            <button class="delete-btn" onclick="removeArticle(${i})">Usuń</button>
+          </td>
+        `;
+        container.appendChild(tr);
+        // Wywołanie autoResize dla nowo dodanych textarea
+        tr.querySelectorAll('textarea').forEach(autoResize);
+      });
+    }
+
+    function autoResize(textarea) {
+      textarea.style.height = 'auto';
+      textarea.style.height = textarea.scrollHeight + 'px';
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    function update(index, field, value) {
+      articles[index][field] = value;
+      saveTempData();
+    }
+
+    function updateTags(index, selectElement) {
+      const selected = Array.from(selectElement.selectedOptions).map(opt => opt.value);
+      // Sortowanie alfabetyczne po wybraniu tagów
+      selected.sort();
+      articles[index]['Tagi'] = selected.join(', ');
+      saveTempData();
+      render();
+    }
+
+    function removeArticle(index) {
+      if (confirm('Czy na pewno chcesz usunąć ten artykuł z listy?')) {
+        articles.splice(index, 1);
+        saveTempData();
+        render();
+      }
+    }
+
+    async function saveTempData() {
+      try {
+        await fetch('/api/temp_save', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(articles)
+        });
+      } catch (e) {
+        console.error('Failed to temp save:', e);
+      }
+    }
+
+    async function saveData() {
+      try {
+        const res = await fetch('/api/save', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(articles)
+        });
+        if (res.ok) {
+          alert('Zapisano pomyślnie do pliku final_prepared_data.csv! Aplikacja zostanie teraz zamknięta.');
+          try {
+            await fetch('/api/shutdown', { method: 'POST' });
+          } catch(e) {} // Ignoruj błąd wyłączenia połączenia
+          document.body.innerHTML = '<div style="display:flex; justify-content:center; align-items:center; height:100vh; flex-direction:column;"><h1>Zapisano dane i wyłączono serwer.</h1><p>Możesz zamknąć tę kartę.</p></div>';
+          setTimeout(() => { window.close(); }, 1000);
+        } else {
+          alert('Wystąpił błąd podczas zapisywania.');
+        }
+      } catch (e) {
+        console.error(e);
+        alert('Wystąpił błąd podczas zapisywania. Sprawdź konsolę.');
+      }
+    }
+
+    loadData();
+  </script>
+</div>
+</body>
+</html>
