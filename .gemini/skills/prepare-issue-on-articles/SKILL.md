@@ -34,7 +34,7 @@ Jesteś asystentem przygotowującym nowe wydanie newslettera PrzeglądAI. Przejd
 ## Krok 5 — Przygotowanie grafiki promocyjnej
 - Użyj narzędzia `mcp_nanobanana_edit_image`, aby zmodyfikować obraz okładki.
 - Jako `file` podaj ŚCIEŻKĘ BAZOWĄ (np. `public/images/issues/wydanie_<ostatni_nr>.jpg`). Sprawdź z jakim rozszerzeniem jest ostatnie zdjęcie (może być .jpg, .jpeg, .png).
-- W argumencie `prompt` musisz BYĆ BARDZO PRECYZYJNY: "Zaktualizuj tekst znajdujący się na samym środku obrazka. Zamień tekst '#<ostatni_nr>: ...' na '#<nowy_nr>: <tytuł, który wybraliście bez członu Wydanie>'. Jest to kluczowe: NIE ZMIENIAJ NIC INNEGO. Tło, kolory, położenie innych napisów i elementów graficznych pozostaje absolutnie BEZ ZMIAN."
+- W argumencie `prompt` musisz BYĆ BARDZO PRECYZYJNY i dodać wymóg rozdzielczości: "Zaktualizuj tekst znajdujący się na samym środku obrazka. Zamień tekst '#<ostatni_nr>: ...' na '#<nowy_nr>: <tytuł, który wybraliście bez członu Wydanie>'. Zmień rozmiar / wygeneruj ten obraz w rozdzielczości 4K (5636x3008). Jest to kluczowe: NIE ZMIENIAJ NIC INNEGO poza tekstem i rozdzielczością. Tło, kolory, położenie innych napisów i elementów graficznych pozostaje absolutnie BEZ ZMIAN."
 - UWAGA: narzędzie generuje plik u siebie, zapytaj użytkownika lub zapisz go we właściwe miejsce (np. narzędzie może samo zrzucić gdzieś plik tymczasowy, użyj `run_shell_command` żeby przenieść to do `public/images/issues/wydanie_<nowy_nr>.jpg`). Właściwie, `mcp_nanobanana_edit_image` może nie zapisywać na dysk od razu w żądane miejsce, więc podążaj za jego wyjściem i upewnij się, że plik trafia do docelowego folderu `public/images/issues/`.
 
 ## Krok 6 — Zakończenie

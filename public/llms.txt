@@ -23,6 +23,7 @@ Na naszej stronie znajdziesz:
 - **Wydanie #10**: "Nano Banana 2 i Departament Wojny vs Anthropic" (06-03-2026) - https://przegladai.news/wydanie-10-nano-banana-2-i-departament-wojny-vs-anthropic
 - **Wydanie #11**: "JetBrains Air, marsz dziewiątek i top 100 aplikacji GenAI" (13-03-2026) - https://przegladai.news/wydanie-11-jetbrains-air-marsz-dziewiatki-i-top-100-aplikacji-genai
 - **Wydanie #12**: "Olaf z Krainy Lodu i AI w Google Maps" (20-03-2026) - https://przegladai.news/wydanie-12-olaf-z-krainy-lodu-i-ai-w-google-maps
+- **Wydanie #13**: "Koniec Sory, atak na LiteLLM i 900 mln dolarów dla Apple" (27-03-2026) - https://przegladai.news/wydanie-13-koniec-sory-atak-na-litellm-i-900-mln-dolarow-dla-apple
 
 ## Kontakt
 Strona internetowa: https://przegladai.news
