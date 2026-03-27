@@ -88,7 +88,7 @@ def update_sitemap(slug, next_friday):
 
 def main():
     if len(sys.argv) < 3:
-        print("Usage: python3 update_configs.py <issue_num> \\"<title>\\"")
+        print('Usage: python3 update_configs.py <issue_num> "<title>"')
         sys.exit(1)
 
     issue_num = sys.argv[1]

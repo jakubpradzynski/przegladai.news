@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '13',
+    slug: 'wydanie-13-koniec-sory-atak-na-litellm-i-900-mln-dolarow-dla-apple',
+    title: 'Wydanie #13: Koniec Sory, atak na LiteLLM i 900 mln dolarów dla Apple',
+    date: '27-03-2026',
+    htmlUrl: '/issues/13.html'
+  },
+  {
     id: '12',
     slug: 'wydanie-12-olaf-z-krainy-lodu-i-ai-w-google-maps',
     title: "Wydanie #12: Olaf z Krainy Lodu i AI w Google Maps",

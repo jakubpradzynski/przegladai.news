@@ -5,9 +5,10 @@
 <title>Selekcja Artykułów - PrzeglądAI</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 20px; background: #f0f2f5; color: #333; }
-  .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  .top-section { position: sticky; top: 0; background: #f0f2f5; z-index: 100; padding-top: 20px; padding-bottom: 10px; margin-top: -20px; box-shadow: 0 4px 6px -4px rgba(0,0,0,0.1); }
+  .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
   h1 { margin: 0; color: #1a73e8; }
-  .stats { margin-bottom: 20px; padding: 15px; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; gap: 20px; font-size: 16px; flex-wrap: wrap; }
+  .stats { margin-bottom: 0px; padding: 15px; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; gap: 20px; font-size: 16px; flex-wrap: wrap; }
   .stat-item { background: #e8f0fe; color: #1a73e8; padding: 10px 15px; border-radius: 6px; font-weight: bold; }
   table { width: 100%; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); overflow: hidden; border-collapse: collapse; }
   th, td { padding: 15px; text-align: left; border-bottom: 1px solid #dadce0; vertical-align: top; }
@@ -39,14 +40,16 @@
 </head>
 <body>
 <div class="main-container">
-  <div class="header">
-    <h1>Selekcja Artykułów (PrzeglądAI)</h1>
-    <div>
-      <button class="sort-btn" onclick="sortArticles()">Sortuj po tagach</button>
-      <button class="save-btn" onclick="saveData()">Zapisz do final_prepared_data.csv</button>
+  <div class="top-section">
+    <div class="header">
+      <h1>Selekcja Artykułów (PrzeglądAI)</h1>
+      <div>
+        <button class="sort-btn" onclick="sortArticles()">Sortuj po tagach</button>
+        <button class="save-btn" onclick="saveData()">Zapisz do final_prepared_data.csv</button>
+      </div>
     </div>
+    <div class="stats" id="stats"></div>
   </div>
-  <div class="stats" id="stats"></div>
   
   <table>
     <thead>
@@ -65,6 +68,36 @@
   <script>
     let articles = [];
     const availableTags = ["Nowości i ogłoszenia", "Bliżej technologii", "Polska"];
+    let activeFilter = 'All';
+
+    function setFilter(filter) {
+      activeFilter = filter;
+      render();
+    }
+
+    function isVisible(a) {
+      if (activeFilter === 'All') return true;
+      const t = (a.Tagi || "").toLowerCase();
+      if (activeFilter === 'Nowości i ogłoszenia') return t.includes("nowości i ogłoszenia");
+      if (activeFilter === 'Bliżej technologii') return t.includes("bliżej technologii");
+      if (activeFilter === 'Polska') return t.includes("polska");
+      if (activeFilter === 'Bez tagu') return !t.trim() || (!t.includes("nowości i ogłoszenia") && !t.includes("bliżej technologii") && !t.includes("polska"));
+      return false;
+    }
+
+    function getPrevVisibleIndex(index) {
+      for (let i = index - 1; i >= 0; i--) {
+        if (isVisible(articles[i])) return i;
+      }
+      return -1;
+    }
+
+    function getNextVisibleIndex(index) {
+      for (let i = index + 1; i < articles.length; i++) {
+        if (isVisible(articles[i])) return i;
+      }
+      return -1;
+    }
 
     async function loadData() {
       try {
@@ -78,7 +111,16 @@
     }
 
     function sortArticles() {
-      articles.sort((a, b) => getSortScore(a.Tagi) - getSortScore(b.Tagi));
+      articles.sort((a, b) => {
+        const scoreDiff = getSortScore(a.Tagi) - getSortScore(b.Tagi);
+        if (scoreDiff !== 0) return scoreDiff;
+        // Drugorzędne sortowanie: alfabetycznie po tytule
+        const titleA = (a.Tytuł || "").toLowerCase();
+        const titleB = (b.Tytuł || "").toLowerCase();
+        if (titleA < titleB) return -1;
+        if (titleA > titleB) return 1;
+        return 0;
+      });
       saveTempData();
       render();
     }
@@ -99,10 +141,15 @@
     }
 
     function render() {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      // Zablokuj wysokość body, aby strona nie "skoczyła" przy czyszczeniu kontenera
+      document.body.style.minHeight = document.documentElement.scrollHeight + 'px';
+
       // Statystyki
       let all = articles.length;
       let nowosci = 0;
       let technologia = 0;
+      let polska = 0;
       let bezTagu = 0;
 
       articles.forEach(a => {
@@ -110,20 +157,24 @@
         let tagged = false;
         if (t.includes("nowości i ogłoszenia")) { nowosci++; tagged = true; }
         if (t.includes("bliżej technologii")) { technologia++; tagged = true; }
+        if (t.includes("polska")) { polska++; tagged = true; }
         if (!t.trim() || (!t.includes("nowości i ogłoszenia") && !t.includes("bliżej technologii") && !t.includes("polska"))) bezTagu++;
       });
 
       document.getElementById('stats').innerHTML = `
-        <div class="stat-item">Wszystkie: ${all}</div>
-        <div class="stat-item">Nowości i ogłoszenia: ${nowosci}</div>
-        <div class="stat-item">Bliżej technologii: ${technologia}</div>
-        <div class="stat-item">Bez rozpoznanego tagu: ${bezTagu}</div>
+        <div class="stat-item ${activeFilter === 'All' ? 'active' : ''}" onclick="setFilter('All')">Wszystkie: ${all}</div>
+        <div class="stat-item ${activeFilter === 'Nowości i ogłoszenia' ? 'active' : ''}" onclick="setFilter('Nowości i ogłoszenia')">Nowości i ogłoszenia: ${nowosci}</div>
+        <div class="stat-item ${activeFilter === 'Bliżej technologii' ? 'active' : ''}" onclick="setFilter('Bliżej technologii')">Bliżej technologii: ${technologia}</div>
+        <div class="stat-item ${activeFilter === 'Polska' ? 'active' : ''}" onclick="setFilter('Polska')">Polska: ${polska}</div>
+        <div class="stat-item ${activeFilter === 'Bez tagu' ? 'active' : ''}" onclick="setFilter('Bez tagu')">Bez rozpoznanego tagu: ${bezTagu}</div>
       `;
 
       // Renderowanie
       const container = document.getElementById('articles');
       container.innerHTML = '';
       articles.forEach((a, i) => {
+        if (!isVisible(a)) return;
+
         const tr = document.createElement('tr');
         
         // Opcje dla tagów (Multiple Select)
@@ -155,12 +206,24 @@
             <input type="text" value="${escapeHtml(a.Czas)}" onchange="update(${i}, 'Czas', this.value)" placeholder="np. 12 min">
           </td>
           <td style="text-align: center;">
-            <button class="delete-btn" onclick="removeArticle(${i})">Usuń</button>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <button class="action-btn up-btn" onclick="moveUp(${i})" ${getPrevVisibleIndex(i) === -1 ? 'disabled' : ''}>⬆️ W górę</button>
+              <button class="action-btn down-btn" onclick="moveDown(${i})" ${getNextVisibleIndex(i) === -1 ? 'disabled' : ''}>⬇️ W dół</button>
+              <button class="delete-btn" onclick="removeArticle(${i})">Usuń</button>
+            </div>
           </td>
         `;
         container.appendChild(tr);
         // Wywołanie autoResize dla nowo dodanych textarea
         tr.querySelectorAll('textarea').forEach(autoResize);
+      });
+
+      // Przywróć scroll i zdejmij blokadę wysokości
+      requestAnimationFrame(() => {
+        window.scrollTo(0, currentScroll);
+        setTimeout(() => {
+          document.body.style.minHeight = '';
+        }, 10);
       });
     }
 
@@ -189,8 +252,28 @@
     }
 
     function removeArticle(index) {
-      if (confirm('Czy na pewno chcesz usunąć ten artykuł z listy?')) {
-        articles.splice(index, 1);
+      articles.splice(index, 1);
+      saveTempData();
+      render();
+    }
+
+    function moveUp(index) {
+      const targetIdx = getPrevVisibleIndex(index);
+      if (targetIdx !== -1) {
+        const temp = articles[index];
+        articles[index] = articles[targetIdx];
+        articles[targetIdx] = temp;
+        saveTempData();
+        render();
+      }
+    }
+
+    function moveDown(index) {
+      const targetIdx = getNextVisibleIndex(index);
+      if (targetIdx !== -1) {
+        const temp = articles[index];
+        articles[index] = articles[targetIdx];
+        articles[targetIdx] = temp;
         saveTempData();
         render();
       }
