@@ -84,4 +84,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://przegladai.news/wydanie-14-polska-ustawa-o-ai-darmowy-claude-max-i-dekada-po-alphago</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

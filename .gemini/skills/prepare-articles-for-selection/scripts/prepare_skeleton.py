@@ -1,10 +1,10 @@
 import sys
 import re
 import os
+import csv
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 
-def clean_url(match):
-    url = match.group(0)
+def clean_url(url):
     try:
         parsed = urlparse(url)
         if not parsed.scheme or not parsed.netloc:
@@ -33,37 +33,42 @@ def clean_url(match):
         ))
         
         return new_url
-    except Exception as e:
+    except Exception:
         return url
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python clear_links.py <input_file>")
+    if len(sys.argv) < 3:
+        print("Usage: python prepare_skeleton.py <input_file> <output_file>")
         sys.exit(1)
         
     input_file = sys.argv[1]
+    output_file = sys.argv[2]
     
     if not os.path.exists(input_file):
         print(f"Error: File '{input_file}' not found.")
         sys.exit(1)
 
-    dirname = os.path.dirname(input_file)
-    basename = os.path.basename(input_file)
-    output_file = os.path.join(dirname, f"cleaned_{basename}")
-    
     try:
         with open(input_file, 'r', encoding='utf-8') as f:
-            content = f.read()
+            lines = f.readlines()
             
-        # Match URLs stopping at space, quotes, or markdown brackets
-        # Using [^\s<>"'\])]+ which means match any character EXCEPT those in the set
+        # Match URLs using same pattern as clear_links.py
         url_pattern = re.compile(r'https?://[^\s<>"\'\]\)]+')
-        cleaned_content = url_pattern.sub(clean_url, content)
         
-        with open(output_file, 'w', encoding='utf-8') as f:
-            f.write(cleaned_content)
-            
-        print(f"Success: Processed file saved as {output_file}")
+        unique_urls = set()
+        for line in lines:
+            matches = url_pattern.findall(line)
+            for match in matches:
+                cleaned = clean_url(match)
+                unique_urls.add(cleaned)
+        
+        with open(output_file, 'w', encoding='utf-8', newline='') as f:
+            writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+            writer.writerow(['Link', 'Tytuł', 'Opis', 'Tagi', 'Czas'])
+            for url in sorted(list(unique_urls)):
+                writer.writerow([url, '', '', '', ''])
+                
+        print(f"Success: Skeleton CSV saved as {output_file} with {len(unique_urls)} unique links.")
     except Exception as e:
         print(f"Error processing file: {e}")
         sys.exit(1)
