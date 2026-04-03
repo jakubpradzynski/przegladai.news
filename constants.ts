@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '14',
+    slug: 'wydanie-14-polska-ustawa-o-ai-darmowy-claude-max-i-dekada-po-alphago',
+    title: 'Wydanie #14: Polska ustawa o AI, darmowy Claude Max i dekada po AlphaGo',
+    date: '03-04-2026',
+    htmlUrl: '/issues/14.html'
+  },
+  {
     id: '13',
     slug: 'wydanie-13-koniec-sory-atak-na-litellm-i-900-mln-dolarow-dla-apple',
     title: 'Wydanie #13: Koniec Sory, atak na LiteLLM i 900 mln dolarów dla Apple',

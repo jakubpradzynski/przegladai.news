@@ -55,13 +55,15 @@ Engineering Manager w Allegro. Łączy świat biznesu z inżynierią oprogramowa
 
 ## 🤖 Jak utworzyć nowe wydanie przy pomocy AI
 
-Cały proces tworzenia nowego wydania został zautomatyzowany za pomocą dedykowanych skilli AI (np. w Gemini CLI). Wystarczy, że będąc w folderze głównym projektu użyjesz kolejno wywołań w czacie z agentem:
+Proces tworzenia nowego wydania został zautomatyzowany za pomocą dedykowanych skilli AI (np. w Gemini CLI) oraz wsparcia narzędzia Antigravity do głębokiej analizy treści.
 
-1. **"Przygotuj artykuły do selekcji"**
-   Agent AI uruchomi pipeline czyszczący linki z `data.csv`, scrapujący treść z sieci i generujący opisy oraz tagi (zapis do `prepared_data.csv`).
-2. **"Uruchom selekcję artykułów"**
-   Zostanie uruchomiony lokalny serwer i interfejs webowy (`http://localhost:8000`). Tam wygodnie przejrzysz, odrzucisz lub edytujesz artykuły i sfinalizujesz wybór do pliku `final_prepared_data.csv` (postępy pracy same się zapisują).
-3. **"Przygotuj wydanie bazując na artykułach"**
-   Agent zaproponuje tytuł, po Twojej akceptacji wygeneruje plik HTML nowego wydania (bazując na szablonie i artykułach z CSV), zaktualizuje konfigurację strony (`constants.ts`, `llms.txt`, `sitemap.xml`), przygotuje wpisy na social media i wygeneruje poprawną okładkę najnowszego numeru za pomocą narzędzia graficznego.
-4. **"Ukończ tworzenie wydania"**
-   Agent wyłączy serwer, posprząta pliki tymczasowe CSV, stworzy nowego brancha, przygotuje commit, wypchnie zmiany i wygeneruje gotowy Pull Request zaplanowany do scalenia na najbliższy piątek.
+1. **Przygotuj artykuły do selekcji**
+   Agent AI wyczyści linki z `data.csv`, usunie duplikaty i wygeneruje szkielet pliku `prepared_data.csv`.
+2. **Uzupełnienie danych w Antigravity**
+   Skopiuj treść `prepared_data.csv` i użyj promptu z pliku `generate_articles_metadata_prompt.md` w narzędziu Antigravity. Pozwoli to na dokładne zescrapowanie treści (w tym z social mediów przez przeglądarkę) i wygenerowanie opisów oraz tagów. Wynik zapisz z powrotem do `prepared_data.csv`.
+3. **Uruchom selekcję artykułów**
+   Zostanie uruchomiony lokalny serwer i interfejs webowy (`http://localhost:8000`). Tam wygodnie przejrzysz, odrzucisz lub edytujesz artykuły i sfinalizujesz wybór do pliku `final_prepared_data.csv`.
+4. **Przygotuj wydanie bazując na artykułach**
+   Agent zaproponuje tytuł, wygeneruje plik HTML nowego wydania, zaktualizuje konfigurację strony (`constants.ts`, `llms.txt`, `sitemap.xml`), przygotuje wpisy na social media i wygeneruje okładkę numeru.
+5. **Ukończ tworzenie wydania**
+   Agent posprząta pliki tymczasowe, stworzy nowego brancha, przygotuje commit i wygeneruje gotowy Pull Request zaplanowany do scalenia na najbliższy piątek.
