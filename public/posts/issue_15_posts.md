@@ -11,7 +11,7 @@ W najnowszym zestawieniu Przeglądu AI można znaleźć linki do ciekawych mater
 
 To tylko kilka z ~30 wyselekcjonowanych publikacji, newsów i technicznych analiz, które trafiły do 15. wydania.
 
-Link do strony z wydaniem znajduje się w opisie profilu. Subskrybuj!
+Link do newslettera z najnowszym wydaniem znajdiesz w opisie profilu. Subskrybuj!
 
 #AI #Technologia #SoftwareEngineering #FutureOfWork #PrzegladAI
 
@@ -41,7 +41,7 @@ Inżynieria i Rozwój:
 Post 4:
 W zestawieniu znajduje się również analiza kosztów Claude Code oraz techniczne omówienie architektury agentów od Anthropic.
 
-Link do strony z wydaniem znajduje się w opisie profilu. Subskrybuj! 4/4
+Link do newslettera z najnowszym wydaniem znajdiesz w opisie profilu. Subskrybuj! 4/4
 
 ---
 
@@ -58,7 +58,7 @@ Co można znaleźć w aktualnym raporcie?
 
 W zestawieniu tradycyjnie znajduje się kilkadziesiąt odnośników do starannie wybranych newsów, artykułów i postów.
 
-Link do strony z wydaniem znajduje się w opisie profilu. Subskrybuj!
+Link do newslettera z najnowszym wydaniem znajdiesz w opisie profilu. Subskrybuj!
 
 #AI #News #IT #SztucznaInteligencja #PrzegladAI
 
