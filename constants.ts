@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '15',
+    slug: 'wydanie-15-projekt-glasswing-agenci-ai-na-gieldzie-i-software-slop',
+    title: 'Wydanie #15: Projekt Glasswing, agenci AI na giełdzie i Software Slop',
+    date: '10-04-2026',
+    htmlUrl: '/issues/15.html'
+  },
+  {
     id: '14',
     slug: 'wydanie-14-polska-ustawa-o-ai-darmowy-claude-max-i-dekada-po-alphago',
     title: 'Wydanie #14: Polska ustawa o AI, darmowy Claude Max i dekada po AlphaGo',

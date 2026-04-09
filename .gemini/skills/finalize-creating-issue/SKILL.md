@@ -28,5 +28,5 @@ Jesteś asystentem finalizującym proces przygotowania wydania newslettera Przeg
 - Ustaw parametry:
   --title "Issue #<numer_issue>"
   --body "/schedule <wygenerowana data>"
-- Komenda mogłaby wyglądać na przykład tak: `gh pr create --title "Issue #<numer_issue>" --body "/schedule 2026-03-27T06:00:00.000Z"`.
+- Komenda mogłaby wyglądać na przykład tak: `gh pr create --title "Issue #<numer_issue>" --body "/schedule 2026-03-27T05:00:00.000Z"`.
 - Zapisz i przekaż użytkownikowi wygenerowany link do nowo utworzonego Pull Request'a.
