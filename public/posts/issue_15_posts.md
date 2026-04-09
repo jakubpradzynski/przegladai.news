@@ -1,27 +1,70 @@
-PrzeglądAI #15: Projekt Glasswing, agenci AI na giełdzie i Software Slop
+# LinkedIn (Profil Prywatny)
 
-W najnowszym wydaniu możecie przeczytać o nowościach takich jak:
-🔹 Projekt Glasswing – inicjatywa bezpieczeństwa prowadzona przez Anthropic
-🔹 Platforma Public uruchamia agentów AI zarządzających handlem na giełdzie
-🔹 Medvi – telemedyczny startup, warty ponad miliard dolarów, mający jedynie dwóch pracowników
+Miliard dolarów wyceny przy zaledwie dwóch pracownikach (przypadek Medvi) to już nie futurystyczna wizja Sama Altmana, a konkretny punkt odniesienia dla rynku w 2026 roku.
 
-Dla osób technicznych:
-🔹 Anatomia agenta kodującego i architektura zarządzanych agentów
-🔹 Czym jest "Software Slop"? 
-🔹 Przetwarzanie 10 milionów tokenów bez użycia RAG i problem obciążenia poznawczego przy agentach
+W najnowszym zestawieniu Przeglądu AI można znaleźć linki do ciekawych materiałów, które w ostatnim tygodniu wpadły mi w ręce:
 
-Oraz:
-🔹 AI Overviews od Google z 10-procentowym marginesem błędu
-🔹 Unia Europejska zakazuje używania AI do generowania oficjalnych wiadomości
-🔹 Ranking "Claudeonomics" – pracownicy Mety mierzą wydajność w zużyciu tokenów
+🔹 Nowe KPI w inżynierii: Meta wdraża "Claudeonomics" – wewnętrzny system oceny wydajności oparty na zużyciu tokenów. To sygnał, jak zmienia się podejście do kosztów i produktywności w big techach.
+🔹 Zagrożenie "Software Slop": Pojawia się nowa definicja długu technicznego – kodu generowanego masowo przez AI bez ludzkiego nadzoru. W zestawieniu znajdują się analizy, jak mierzyć to zjawisko.
+🔹 Autonomia w finansach: Platforma Public udostępnia agentów AI do zarządzania portfelem giełdowym, co przesuwa granicę zaufania do systemów autonomicznych.
+🔹 Skalowanie produktów: Case study Michelle Lim o tym, jak terminal Warp osiągnął 500 tysięcy aktywnych deweloperów tygodniowo.
 
-i wiele więcej!
+To tylko kilka z ~30 wyselekcjonowanych publikacji, newsów i technicznych analiz, które trafiły do 15. wydania.
 
-👉 Sprawdź najnowsze wydanie na stronie https://przegladai.news/wydanie-15-projekt-glasswing-agenci-ai-na-gieldzie-i-software-slop
+Link do strony z wydaniem znajduje się w opisie profilu. Subskrybuj!
 
-#AI #IT #SztucznaInteligencja #Technologia #Innowacje #newsletter
+#AI #Technologia #SoftwareEngineering #FutureOfWork #PrzegladAI
 
 ---
+
+# X (Twitter) – Wątek (Thread)
+
+Post 1:
+Przegląd AI #15: Od miliardowych wycen mikro-zespołów po rankingi zużycia tokenów w Meta.
+
+Krótki przegląd najciekawszych materiałów i newsów z ostatnich 7 dni w świecie technologii. 👇 1/4
+
+[ZAŁĄCZ ZDJĘCIE: wydanie_15.png]
+
+Post 2:
+Biznes i Rynek:
+🔹 Medvi: startup wart $1 mld z 2 pracownikami.
+🔹 Public: agenci AI wchodzą w rolę brokerów giełdowych.
+🔹 UE: oficjalny zakaz używania treści AI w komunikacji urzędowej. 2/4
+
+Post 3:
+Inżynieria i Rozwój:
+🔹 Cursor 3: nowy interfejs zbudowany pod równoległą pracę agentów.
+🔹 Software Slop: jak mierzyć spadek jakości kodu generowanego automatycznie?
+🔹 Gemma 4: nowa generacja otwartych modeli od Google. 3/4
+
+Post 4:
+W zestawieniu znajduje się również analiza kosztów Claude Code oraz techniczne omówienie architektury agentów od Anthropic.
+
+Link do strony z wydaniem znajduje się w opisie profilu. Subskrybuj! 4/4
+
+---
+
+# Facebook (Profil Przegląd AI)
+
+W 15. wydaniu Przeglądu AI znalazło się zestawienie najważniejszych wydarzeń z ubiegłego tygodnia – od regulacji prawnych, przez inżynieryjne "deep dives", aż po głośne newsy rynkowe.
+
+Co można znaleźć w aktualnym raporcie?
+
+🔹 Nowości rynkowe: Przypadek startupu Medvi ($1 mld wyceny, 2 pracowników) oraz wdrożenie agentów giełdowych przez platformę Public.
+🔹 Technologia: Premiera modelu Gemma 4, nowa wersja edytora Cursor oraz analizy dotyczące przetwarzania 10 mln tokenów bez wykorzystania RAG.
+🔹 Wydajność: Raport o "Claudeonomics" w Meta – gdzie wydajność pracowników zaczyna być mierzona zużyciem tokenów AI.
+🔹 Bezpieczeństwo: Inicjatywa Glasswing od Anthropic oraz unijne regulacje dotyczące oficjalnej komunikacji.
+
+W zestawieniu tradycyjnie znajduje się kilkadziesiąt odnośników do starannie wybranych newsów, artykułów i postów.
+
+Link do strony z wydaniem znajduje się w opisie profilu. Subskrybuj!
+
+#AI #News #IT #SztucznaInteligencja #PrzegladAI
+
+---
+
+# Paczki newsów (do późniejszej publikacji)
 
 1/3 paczek newsów z #15 wydania newslettera #PrzeglądAI:
 
@@ -71,6 +114,6 @@ Podoba Ci się ten newsletter? Udostępnij go i zapisz się na listę mailową!
 🔹 Medvi – kontrowersyjny startup telemedyczny napędzany przez AI: https://www.nytimes.com/2026/04/02/technology/ai-billion-dollar-company-medvi.html
 🔹 Meta stworzyła wewnętrzny ranking zużycia tokenów AI przez pracowników: https://newsletter.eng-leadership.com/p/meta-created-an-internal-leaderboard
 🔹 Strategia AI w Bank of America – przegląd wewnętrznych narzędzi: https://www.neatprompts.com/p/bank-of-america
-🔹 UE zakazuje pracownikom używania treści generowanych przez AI w oficjalnej komunikacji: https://www.politico.eu/article/brussels-eu-ban-deepfakes-ai-generation-official-messages/
+🔹 UE zakazuje pracownikom używania treści generowanych przez AI in oficjalnej komunikacji: https://www.politico.eu/article/brussels-eu-ban-deepfakes-ai-generation-official-messages/
 
 Podoba Ci się ten newsletter? Udostępnij go i zapisz się na listę mailową!
