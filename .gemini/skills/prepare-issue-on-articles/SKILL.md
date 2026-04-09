@@ -39,12 +39,7 @@ Jesteś asystentem przygotowującym nowe wydanie newslettera PrzeglądAI. Przejd
     1. **LinkedIn (Profil Prywatny):** Profesjonalna obserwacja rynkowa, lekko napisana, ale merytoryczna. Skup się na zmianach strukturalnych, efektywności i nowych trendach (np. "Claudeonomics", "Software Slop").
     2. **X (Twitter):** Wątek (Thread) w formacie 1/4. Krótkie, techniczne punkty, formuła "signal vs noise". Pierwszy post z grafiką `wydanie_<nr>.png`.
     3. **Facebook (Profil Przegląd AI):** Uporządkowana lista z emoji, informacyjna i rzetelna.
-    4. **Paczki newsów (1/3, 2/3, 3/3):** 3 osobne posty do późniejszej publikacji. Każdy post powinien:
-        - Zawierać profesjonalny, analityczny hook na początku.
-        - Składać się z 3 wybranych newsów/artykułów z danej kategorii (np. Nowości, Inżynieria, Biznes).
-        - Zawierać **szerokie i profesjonalne opisy** każdego newsa, bazujące bezpośrednio na opisach (`news-desc`) z wygenerowanego pliku HTML.
-        - Nie używać pogrubień wewnątrz punktów list.
-        - Kończyć się standardowym CTA: "👉 Link do newslettera z najnowszym wydaniem znajdziesz w opisie profilu. Subskrybuj!".
+    4. **Paczki newsów (1/3, 2/3, 3/3):** Zestawienia linków z krótkimi opisami (tutaj linki bezpośrednie są dopuszczalne, bo to posty pomocnicze).
 
 - Zapisz nowo wygenerowaną zawartość za pomocą `write_file`.
 
