@@ -30,16 +30,19 @@ Jesteś asystentem przygotowującym nowe wydanie newslettera PrzeglądAI. Przejd
 - Wygeneruj nowy zestaw wpisów w pliku `public/posts/issue_<nowy_nr>_posts.md`.
 - **Zasady ogólne:**
     - Ton: Profesjonalny, analityczny i rzetelny (unikanie stylu czysto marketingowego).
-    - Perspektywa: Nie pisz "przygotowałem/liśmy". Pisz o tym, co "można znaleźć w zestawieniu/raporcie", jakie newsy/artykuły/posty są tam dostępne.
-    - Zasięgi: **NIE UMIESZCZAJ bezpośrednich linków** do wydania w głównej treści postów premierowych (LinkedIn, X, FB). Zamiast tego używaj sformułowań typu "👉 Link do newslettera z najnowszym wydaniem znajdziesz w opisie profilu" lub "Link w komentarzu".
-    - Zgodność: Treść musi dokładnie pokrywać się z tym, co trafiło do pliku HTML/CSV (fakty, liczby, nazwy startupów).
-    - Formatowanie: **NIE UŻYWAJ pogrubienia (gwiazdek)** wewnątrz punktów list (np. pisz `🔹 Nowe KPI:`, a nie `🔹 **Nowe KPI:**`).
+    - Perspektywa: Nie pisz "przygotowałem/liśmy". Pisz o tym, co "można znaleźć w zestawieniu/wydaniu", jakie newsy/artykuły/posty są tam dostępne (np. "Te i inne ciekawe linki znajdziesz w <nr>. wydaniu PrzeglądAI").
+    - Zasięgi: **NIE UMIESZCZAJ bezpośrednich linków** do wydania w głównej treści postów premierowych na LinkedIn/Facebook. Zamiast tego używaj sformułowania: "👉 Link do newslettera z najnowszym wydaniem znajdziesz w opisie profilu. Subskrybuj!".
+    - Zgodność: Treść musi dokładnie pokrywać się z opisami (`news-desc`) z pliku HTML.
+    - Formatowanie: **NIE UŻYWAJ pogrubienia (gwiazdek)** wewnątrz punktów list. Używaj emoji `🔹` na początku punktów.
+    - Oznaczenia: Staraj się zamieszczać nazwy firm (np. Anthropic, Google, Meta) oraz autorów (jeśli są dostępni), aby umożliwić późniejsze oznaczenie ich w social mediach.
 
 - **Struktura pliku:**
-    1. **LinkedIn (Profil Prywatny):** Profesjonalna obserwacja rynkowa, lekko napisana, ale merytoryczna. Skup się na zmianach strukturalnych, efektywności i nowych trendach (np. "Claudeonomics", "Software Slop").
-    2. **X (Twitter):** Wątek (Thread) w formacie 1/4. Krótkie, techniczne punkty, formuła "signal vs noise". Pierwszy post z grafiką `wydanie_<nr>.png`.
-    3. **Facebook (Profil Przegląd AI):** Uporządkowana lista z emoji, informacyjna i rzetelna.
-    4. **Paczki newsów (1/3, 2/3, 3/3):** Zestawienia linków z krótkimi opisami (tutaj linki bezpośrednie są dopuszczalne, bo to posty pomocnicze).
+    1. **LinkedIn (Profil Prywatny):** Profesjonalna obserwacja rynkowa, lekko napisana, ale merytoryczna. Skup się na zmianach strukturalnych i nowych trendach.
+    2. **X (Twitter):** Wątek (Thread) w formacie 1/4. Krótkie, techniczne punkty, pierwszy post z grafiką `wydanie_<nr>.png`. Link bezpośredni do strony głównej na końcu: "👉 Subskrybuj: https://przegladai.news/".
+    3. **Facebook (Profil Przegląd AI):** Uporządkowana lista, informacyjna i rzetelna.
+    4. **Paczki newsów (Dzień 1, 2, 3):** Osobne sekcje dla każdego dnia. Każdy dzień powinien zawierać:
+        - Wersję **LinkedIn/Facebook (Post długi)**: 3 szeroko opisane newsy (bazujące na `news-desc`), profesjonalny hook, CTA z "opisem profilu".
+        - Wersję **X / Twitter (Wątek)**: "Wiązanka" postów (1/4, 2/4 itd.), gdzie każdy news to osobny punkt, profesjonalny hook, CTA z linkiem do strony głównej.
 
 - Zapisz nowo wygenerowaną zawartość za pomocą `write_file`.
 
