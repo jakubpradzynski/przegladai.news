@@ -27,9 +27,24 @@ Jesteś asystentem przygotowującym nowe wydanie newslettera PrzeglądAI. Przejd
 - Zaktualizuj plik `public/sitemap.xml`, dodając blok `<url>` dla najnowszego wydania na SAM DOŁ pliku, tuż przed zamykającym tagiem `</urlset>`. Pamiętaj, aby data `<lastmod>` była wpisana w poprawnym formacie `YYYY-MM-DD`. Uruchomienie pomocniczego skryptu aktualizującego wszystko naraz jest mocno rekomendowane, zrób to poleceniem `python3 .gemini/skills/prepare-issue-on-articles/scripts/update_configs.py <nowy_nr> "<tytuł>"`
 
 ## Krok 4 — Utworzenie pliku z postami na Social Media
-- Odczytaj (np. `read_file`) plik `public/posts/issue_<ostatni_nr>_posts.md`, by zobaczyć styl i format. (Szczególnie jak dzielone są newsy na 3 paczki).
-- Wygeneruj nowy zestaw wpisów, uwzględniając najnowszy tytuł, poprawny link do wydania (https://przegladai.news/<twój_slug>) oraz aktualną treść z `final_prepared_data.csv`.
-- Zapisz nowo wygenerowaną zawartość za pomocą `write_file` w pliku `public/posts/issue_<nowy_nr>_posts.md`.
+- Wygeneruj nowy zestaw wpisów w pliku `public/posts/issue_<nowy_nr>_posts.md`.
+- **Zasady ogólne:**
+    - Ton: Profesjonalny, analityczny i rzetelny (unikanie stylu czysto marketingowego).
+    - Perspektywa: Nie pisz "przygotowałem/liśmy". Pisz o tym, co "można znaleźć w zestawieniu/wydaniu", jakie newsy/artykuły/posty są tam dostępne (np. "Te i inne ciekawe linki znajdziesz w <nr>. wydaniu PrzeglądAI").
+    - Zasięgi: **NIE UMIESZCZAJ bezpośrednich linków** do wydania w głównej treści postów premierowych na LinkedIn/Facebook. Zamiast tego używaj sformułowania: "👉 Link do newslettera z najnowszym wydaniem znajdziesz w opisie profilu. Subskrybuj!".
+    - Zgodność: Treść musi dokładnie pokrywać się z opisami (`news-desc`) z pliku HTML.
+    - Formatowanie: **NIE UŻYWAJ pogrubienia (gwiazdek)** wewnątrz punktów list. Używaj emoji `🔹` na początku punktów.
+    - Oznaczenia: Staraj się zamieszczać nazwy firm (np. Anthropic, Google, Meta) oraz autorów (jeśli są dostępni), aby umożliwić późniejsze oznaczenie ich w social mediach.
+
+- **Struktura pliku:**
+    1. **LinkedIn (Profil Prywatny):** Profesjonalna obserwacja rynkowa, lekko napisana, ale merytoryczna. Skup się na zmianach strukturalnych i nowych trendach.
+    2. **X (Twitter):** Wątek (Thread) w formacie 1/4. Krótkie, techniczne punkty, pierwszy post z grafiką `wydanie_<nr>.png`. Link bezpośredni do strony głównej na końcu: "👉 Subskrybuj: https://przegladai.news/".
+    3. **Facebook (Profil Przegląd AI):** Uporządkowana lista, informacyjna i rzetelna.
+    4. **Paczki newsów (Dzień 1, 2, 3):** Osobne sekcje dla każdego dnia. Każdy dzień powinien zawierać:
+        - Wersję **LinkedIn/Facebook (Post długi)**: 3 szeroko opisane newsy (bazujące na `news-desc`), profesjonalny hook, CTA z "opisem profilu".
+        - Wersję **X / Twitter (Wątek)**: "Wiązanka" postów (1/4, 2/4 itd.), gdzie każdy news to osobny punkt, profesjonalny hook, CTA z linkiem do strony głównej.
+
+- Zapisz nowo wygenerowaną zawartość za pomocą `write_file`.
 
 ## Krok 5 — Przygotowanie grafiki promocyjnej
 - Użyj narzędzia `mcp_nanobanana_edit_image`, aby zmodyfikować obraz okładki.

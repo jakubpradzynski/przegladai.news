@@ -25,6 +25,7 @@ Na naszej stronie znajdziesz:
 - **Wydanie #12**: "Olaf z Krainy Lodu i AI w Google Maps" (20-03-2026) - https://przegladai.news/wydanie-12-olaf-z-krainy-lodu-i-ai-w-google-maps
 - **Wydanie #13**: "Koniec Sory, atak na LiteLLM i 900 mln dolarów dla Apple" (27-03-2026) - https://przegladai.news/wydanie-13-koniec-sory-atak-na-litellm-i-900-mln-dolarow-dla-apple
 - **Wydanie #14**: "Polska ustawa o AI, darmowy Claude Max i dekada po AlphaGo" (03-04-2026) - https://przegladai.news/wydanie-14-polska-ustawa-o-ai-darmowy-claude-max-i-dekada-po-alphago
+- **Wydanie #15**: "Projekt Glasswing, agenci AI na giełdzie i Software Slop" (10-04-2026) - https://przegladai.news/wydanie-15-projekt-glasswing-agenci-ai-na-gieldzie-i-software-slop
 
 ## Kontakt
 Strona internetowa: https://przegladai.news

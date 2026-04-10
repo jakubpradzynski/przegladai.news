@@ -6,7 +6,7 @@ def next_friday():
     if days_ahead <= 0:
         days_ahead += 7
     friday = today + datetime.timedelta(days_ahead)
-    print(friday.strftime("%Y-%m-%dT06:00:00.000Z"))
+    print(friday.strftime("%Y-%m-%dT05:00:00.000Z"))
 
 if __name__ == "__main__":
     next_friday()
