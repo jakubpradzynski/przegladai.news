@@ -22,7 +22,7 @@ export const Archive: React.FC = () => {
             Poprzednie wydania
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Każdy numer to skondensowana dawka wiedzy. Przeglądaj archiwum, aby nadrobić zaległości w świecie AI.
+            Każdy numer to wyselekcjonowana przez człowieka, darmowa 10-minutowa pigułka wiedzy. Przeglądaj archiwum, aby śledzić zmiany w branży i czerpać inspiracje.
           </p>
         </div>
 

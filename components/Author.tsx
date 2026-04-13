@@ -25,10 +25,10 @@ export const Author: React.FC = () => {
             
             <div className="text-lg text-gray-600 mb-8 leading-relaxed space-y-4">
               <p>
-                Na co dzień pracuję jako Engineering Manager w Allegro, gdzie łączę świat biznesu z inżynierią oprogramowania. AI to moja wielka pasja, z którą eksperymentuję na każdym kroku.
+                Na co dzień pracuję jako Engineering Manager w Allegro, gdzie łączę świat biznesu z inżynierią oprogramowania. Sztuczna inteligencja to moja pasja, z którą na co dzień eksperymentuję.
               </p>
               <p>
-                Stworzyłem "PrzeglądAI", bo wiem, jak trudno nadążyć za pędzącym światem sztucznej inteligencji i jak cenny jest Twój czas. Biorę na siebie research – każdego tygodnia filtruję setki źródeł, by dostarczyć Ci wyselekcjonowaną, praktyczną wiedzę. Ty po prostu czytasz samą esencję.
+                Stworzyłem "PrzeglądAI", ponieważ doskonale wiem, jak cenny jest czas liderów i specjalistów w branży IT. Biorę na siebie trud researchu – każdego tygodnia <strong>osobiście</strong> filtruję setki źródeł, odrzucając informacyjny szum. Dostarczam Ci esencję: inspiracje, które pomogą rozwinąć Twój biznes, zoptymalizować procesy i dostrzec rynkowe okazje. Ty poświęcasz zaledwie 10 minut na sam konkret.
               </p>
             </div>
 

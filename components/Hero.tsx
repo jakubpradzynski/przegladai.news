@@ -24,11 +24,11 @@ export const Hero: React.FC<HeroProps> = ({ onSubscribeClick }) => {
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
               Bądź na bieżąco z AI.<br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Oszczędź swój czas.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Wyłapuj rynkowe okazje.</span>
             </h1>
             
             <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
-              Zdobądź przewagę w świecie sztucznej inteligencji. Przeszukuję dla Ciebie dziesiątki źródeł, blogów i newsletterów, wybierając tylko to, co naprawdę ważne. Zapisz się i otrzymuj <strong>raz w tygodniu</strong> konkretną wiedzę bez szumu informacyjnego.
+              Darmowy newsletter dla <strong>Managerów, Developerów i Przedsiębiorców (nie tylko) w branży IT</strong>. Nie pozwól, by rynek Cię wyprzedził. Co tydzień otrzymasz wyselekcjonowaną przez człowieka dawkę wiedzy i inspiracji. Wystarczy <strong>10 minut czytania</strong>, by poznać najnowsze narzędzia, zrozumieć trendy i dostrzec szanse na rozwój Twojego biznesu oraz kariery.
             </p>
 
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-xl p-4 mb-8 flex items-start gap-3">
@@ -104,15 +104,15 @@ export const Hero: React.FC<HeroProps> = ({ onSubscribeClick }) => {
                 <div className="bg-gray-50/80 rounded-2xl p-4 space-y-3 border border-gray-100">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 size={18} className="text-blue-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700 font-medium">Tylko najważniejsze nowości z AI</span>
+                    <span className="text-sm text-gray-700 font-medium">Tylko 10 minut czytania tygodniowo</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 size={18} className="text-blue-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700 font-medium">Praktyczne narzędzia i zastosowania</span>
+                    <span className="text-sm text-gray-700 font-medium">Ludzka selekcja treści</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 size={18} className="text-blue-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700 font-medium">Oszczędność Twojego czasu</span>
+                    <span className="text-sm text-gray-700 font-medium">Nowości, technologie, inspiracje</span>
                   </div>
                 </div>
 

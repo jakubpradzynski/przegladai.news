@@ -735,11 +735,11 @@ const MAILERLITE_HTML = `
 
           <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
 
-            <div class="ml-form-embedContent" style=" ">
-              
+            <div className="ml-form-embedContent" style=" ">
+
                 <h4>Dołącz do PrzeglądAI</h4>
-                <p>Oszczędzaj czas, zdobywaj wiedzę i bądź zawsze na bieżąco z AI. Zapisz się i odbierz dostęp do <strong>Todoist Pro na 2 miesiące za darmo!</strong> Link otrzymasz w następnym wydaniu newslettera.</p>
-              
+                <p>Zainwestuj 10 minut tygodniowo, by zdobyć rynkową przewagę. Otrzymuj darmową, ręcznie wyselekcjonowaną wiedzę o AI dla <strong>Managerów, Developerów i Przedsiębiorców (nie tylko) w branży IT</strong>. Zapisz się i odbierz dostęp do <strong>Todoist Pro na 2 miesiące za darmo!</strong> Link powitalny otrzymasz w najbliższym wydaniu newslettera.</p>
+
             </div>
 
             <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2008301/forms/175211433442674141/subscribe" data-code="" method="post" target="_blank">
