@@ -96,4 +96,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://przegladai.news/wydanie-16-lokalne-elevenlabs-m-od-perplexity-i-atak-na-dom-sama-altmana</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

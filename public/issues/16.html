@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrzeglądAI - Twój przewodnik w świecie AI</title>
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            background-color: #f4f4f4;
+        }
+
+        body,
+        td,
+        th {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .news-tag {
+            display: inline-block;
+            background-color: #f0f2f5;
+            color: #666666;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            margin-top: 8px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        .tag-news {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+        }
+
+        .tag-tech {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .tag-pl {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .news-desc {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 5px;
+            color: #555555;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .author-col {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .author-img {
+                margin: 0 auto 15px auto !important;
+            }
+
+            .social-container {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .social-container td {
+                display: inline-block !important;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f4f4f4;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center" style="background-color: #f4f4f4; padding: 20px 0;">
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container">
+                    <tr>
+                        <td align="right" style="padding-bottom: 10px; font-size: 12px; color: #999999;"
+                            class="mobile-padding">
+                            <a href="{$url}" style="color: #999999; text-decoration: underline;">Zobacz w
+                                przeglądarce</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff; border-bottom: 2px solid #f0f0f0;">
+                    <tr>
+                        <td align="center" style="padding: 30px 20px;">
+                            <a href="https://przegladai.news" style="text-decoration: none;">
+                                <h1
+                                    style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; color: #111111;">
+                                    Przegląd<span style="color: #007bff;">AI</span></h1>
+                            </a>
+                            <p style="margin: 5px 0 0 0; font-size: 14px; color: #777777; font-weight: 400;">Twój
+                                przewodnik w świecie AI</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px 30px 10px 30px; font-size: 16px; line-height: 1.6;">
+                            <strong>Cześć!</strong>
+                            <br><br>
+                            Witaj w kolejnym wydaniu newslettera. W tym tygodniu, ze względu na urlop, zestawienie
+                            newsów jest z trochę krótszego okresu, ale nadal dawka wiedzy jest solidna.
+                            Sporo zadziało się na przekroju AI-finanse, np. OpenAI przejęło Hiro a Loveable udostępniło
+                            łatwe dodawanie płatności. Również Perplexity mocno weszło w ten obszar.
+                            Mimo niedeteministyczności AI, widać że obszar finansów jest coraz bardziej otwarty
+                            na integracje.
+                            <br><br>
+                            Zapraszam do lektury!
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px 30px 20px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td valign="top" width="24" style="padding-right: 15px;">
+                                                    <img src="https://img.icons8.com/ios-filled/50/FFD43B/gift.png"
+                                                        alt="Prezent" width="24" height="24" style="display: block;">
+                                                </td>
+                                                <td valign="top">
+                                                    <h3 style="margin: 0 0 10px 0; font-size: 18px; color: #111;">Bonus
+                                                        dla czytelników!</h3>
+                                                    <p
+                                                        style="margin: 0 0 10px 0; font-size: 15px; line-height: 1.5; color: #444;">
+                                                        Wspólnie z Todoist przygotowaliśmy dla Ciebie coś specjalnego.
+                                                        Kliknij <a href="https://get.todoist.io/przegladai"
+                                                            style="color: #007bff; font-weight: bold;">w
+                                                            ten link</a>, aby otrzymać <strong>2 miesiące konta Todoist
+                                                            Pro zupełnie za darmo!</strong>
+                                                    </p>
+                                                    <p
+                                                        style="margin: 0; font-size: 15px; line-height: 1.5; color: #444;">
+                                                        Będzie mi też niezmiernie miło, jeśli wyślesz ten newsletter
+                                                        swoim znajomym i zachęcisz ich do subskrypcji. Z góry dziękuję!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 10px 30px 30px 30px;">
+
+
+
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; border-top: 1px solid #eeeeee;">
+                                        <a href="https://elevenlabs.io/blog/enterprise-voice-ai-deployed-locally"
+                                            class="news-title">
+                                            Modele ElevenLabs debiutują w lokalnych wdrożeniach
+                                        </a>
+                                        <div class="news-desc">
+                                            ElevenLabs rusza z możliwością wdrażania modeli głosowych bezpośrednio na
+                                            serwerach klientów korporacyjnych. Dzięki temu np. duże placówki medyczne
+                                            czy ubezpieczeniowe mogą korzystać z zaawansowanej syntezy mowy, zachowując
+                                            pełną kontrolę nad danymi i spełniając wymogi prywatności.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                        <span class="news-tag tag-pl">Polska</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.youtube.com/watch?v=CnAPjeQt5Jg" class="news-title">
+                                            Claude pracuje bezpośrednio w dokumentach Microsoft Word
+                                        </a>
+                                        <div class="news-desc">
+                                            Film promocyjny przedstawiający nową funkcję asystenta Anthropic. Claude
+                                            współpracuje teraz bezpośrednio z Microsoft Word – czyta komentarze
+                                            użytkowników i edytuje treść dokumentu. Ciekawe, jaką drogę przeszły
+                                            narzędzia biurowe – od Pana Spinacza po asystenta, który naprawdę rozumie
+                                            treść dokumentu.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                        <span class="news-tag">1 min</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.google/innovation-and-ai/products/gemini-app/notebooks-gemini-notebooklm/"
+                                            class="news-title">
+                                            Google wprowadza Notatniki w Gemini – nową przestrzeń do pracy
+                                        </a>
+                                        <div class="news-desc">
+                                            Google ogłosił integrację funkcji Notatniki bezpośrednio z aplikacją Gemini,
+                                            łącząc ją z możliwościami NotebookLM. Dzięki temu użytkownicy otrzymują
+                                            dedykowaną przestrzeń, która ułatwia porządkowanie notatek i podsumowywanie
+                                            materiałów źródłowych przy użyciu ich narzędzi AI.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://x.com/GeminiApp/status/2042272415951253932" class="news-title">
+                                            Interaktywne wizualizacje w Gemini
+                                        </a>
+                                        <div class="news-desc">
+                                            Gemini może teraz przekształcić pytania i złożone koncepcje w
+                                            konfigurowalne, interaktywne wizualizacje bezpośrednio w czacie. Można
+                                            dostosowywać zmienne, obracać modele 3D i eksplorować dane w bardziej
+                                            wizualny sposób.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://the-decoder.com/openai-acquires-ai-finance-startup-hiro-which-built-a-personal-ai-cfo/"
+                                            class="news-title">
+                                            OpenAI przejmuje startup Hiro i jego wirtualnego dyrektora finansowego AI
+                                        </a>
+                                        <div class="news-desc">
+                                            OpenAI oficjalnie przejęło zespół stojący za Hiro, startupem skupiającym się
+                                            na budowaniu osobistych narzędzi doradztwa finansowego w oparciu o sztuczną
+                                            inteligencję. W wyniku przejęcia dotychczasowe usługi Hiro zostaną
+                                            zamknięte, a dane użytkowników usunięte. Zespół Hiro ma wzmocnić kompetencje
+                                            OpenAI, co prawdopodobnie przełoży się na lepsze funkcje finansowe w
+                                            ChatGPT.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.perplexity.ai/pl/hub/blog/plaid-integration-provides-full-view-of-personal-finances"
+                                            class="news-title">
+                                            Perplexity i Plaid łączą siły, aby zarządzać finansami osobistymi za pomocą
+                                            sztucznej inteligencji
+                                        </a>
+                                        <div class="news-desc">
+                                            Perplexity połączyło się z platformą finansową Plaid, dzięki czemu
+                                            użytkownicy mogą bezpiecznie śledzić swój budżet domowy. Integracja dba o
+                                            prywatność, a jednocześnie daje asystentowi AI wystarczający kontekst, by
+                                            podpowiadać, jak lepiej oszczędzać i kontrolować codzienne wydatki.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.perplexity.ai/computer/a/the-billion-dollar-build-ZWzIFW.FTaKdLtufMa0yhw"
+                                            class="news-title">
+                                            Perplexity ogłasza Billion Dollar Build – szansę dla twórców AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Firma Perplexity ogłosiła ośmiotygodniowy konkurs dla architektów
+                                            oprogramowania, którego celem jest zbudowanie rewolucyjnych interakcji wokół
+                                            platformy Perplexity Computer. Zwycięzcy mogą liczyć na wielomilionowe
+                                            inwestycje – Perplexity w ten sposób stawia się jako platforma wspierająca
+                                            niezależnych deweloperów AI.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://techcrunch.com/2026/04/08/poke-makes-ai-agents-as-easy-as-sending-a-text/"
+                                            class="news-title">
+                                            Poke - agenci AI dostępni przez SMS
+                                        </a>
+                                        <div class="news-desc">
+                                            Startup obniża barierę wejścia w świat asystentów AI – oferuje zaawansowaną
+                                            automatyzację prosto przez SMS-y. Nie trzeba instalować żadnej aplikacji,
+                                            wystarczy wysłać wiadomość, żeby zlecić agentowi AI codzienne zadania.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.reddit.com/r/lovable/comments/1skgane/we_just_shipped_payments_inside_lovable_heres_how/"
+                                            class="news-title">
+                                            Łatwe dodawanie płatności w Lovable
+                                        </a>
+                                        <div class="news-desc">
+                                            Można teraz skonfigurować subskrypcje lub jednorazowe płatności bezpośrednio
+                                            w Lovable, a podatek VAT i podatki są automatycznie naliczane w ponad 200
+                                            krajach. Dostępne jest środowisko testowe, w którym możesz zweryfikować
+                                            swoje przepływy przed uruchomieniem, a także możesz zadawać pytania
+                                            dotyczące przychodów, zwrotów i subskrypcji w Lovable bezpośrednio na
+                                            czacie. Ta zmiana upraszcza kolejny kawałek tworzenia oprogramowania –
+                                            płatności. Pytanie, czy bezbłędnie.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.youtube.com/watch?v=Qa0QCMqP9uY" class="news-title">
+                                            Nowoczesna technologia AI/ML w grach
+                                        </a>
+                                        <div class="news-desc">
+                                            Prezentacja inżynierska z konferencji Devoxx Poland szczegółowo opisująca
+                                            ewolucję środowisk uczenia maszynowego stosowanych w silnikach renderujących
+                                            gry. Podczas tej sesji autorzy przyglądają się najczęstszym i najbardziej
+                                            znanym przypadkom użycia AI/ML w praktyce. Wyjaśniają, jakie elementy
+                                            architektoniczne i technologie napędzają dany przypadek użycia, jak ze sobą
+                                            współdziałają i jakie przynoszą rezultaty.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                        <span class="news-tag tag-pl">Polska</span>
+                                        <span class="news-tag">48 min</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://addyosmani.com/blog/agentic-engine-optimization/"
+                                            class="news-title">
+                                            Agentic Engine Optimization (AEO) – jak agenci AI czytają dokumentację
+                                        </a>
+                                        <div class="news-desc">
+                                            Addy Osmani zauważa, że agenci kodujący AI korzystają z dokumentacji
+                                            technicznej zupełnie inaczej niż ludzie. Wraz ze wzrostem udziału zapytań
+                                            pochodzących z modeli językowych tradycyjna optymalizacja staje się
+                                            niewystarczająca. Autor przekonuje, że programiści powinni także projektować
+                                            treści z myślą o maszynach, stosując przejrzystą strukturę i dużą gęstość
+                                            informacji.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://newsletter.eng-leadership.com/p/code-review-is-the-new-bottleneck"
+                                            class="news-title">
+                                            Przegląd kodu staje się nowym wąskim gardłem dla inżynierów oprogramowania
+                                        </a>
+                                        <div class="news-desc">
+                                            Agenci AI generują kod coraz szybciej, ale ktoś musi go sprawdzić – i ten
+                                            ciężar spada na seniorów. Artykuł stawia ważne pytanie: co się stanie, gdy
+                                            pull requesty będą powstawać szybciej, niż ktokolwiek jest w stanie je
+                                            zrecenzować?
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://ngrok.com/blog/ai-gateways-2026" class="news-title">
+                                            Przyszłość systemów AI Gateways w 2026 roku
+                                        </a>
+                                        <div class="news-desc">
+                                            Pojedyncze żądanie użytkownika może teraz wywołać dziesiątki wywołań LLM,
+                                            wywołań narzędzi i wieloetapowych łańcuchów wnioskowania. AI Gateways nie
+                                            tylko kieruje zapytaniami do LLM, ale także zarządza sesjami. Artykuł Ngrok
+                                            odpowiada na pytanie: Czym będą AI Gateways w roku 2026 i czy faktycznie
+                                            potrzebujesz ich już teraz?
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://thenewstack.io/ai-coding-tool-stack/" class="news-title">
+                                            Połączenie narzędzi programistycznych wokół Claude'a, Codexu i Cursora
+                                        </a>
+                                        <div class="news-desc">
+                                            Analiza tego, jak niezależne narzędzia – Claude, Codex i Cursor – zaczynają
+                                            tworzyć spójny ekosystem do kodowania z AI. Artykuł pokazuje, jak integracja
+                                            tych narzędzi zmienia codzienną pracę programistów.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.langchain.com/your-harness-your-memory/"
+                                            class="news-title">
+                                            Twoja uprząż, twoja pamięć – architektura agentów AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Artykuł z bloga LangChain podkreśla ważne założenia przy wyborze struktury
+                                            zarządzania pamięcią dla agenta AI. Zamknięte architektury i zewnętrzne API
+                                            mogą prowadzić do utraty kontroli nad zachowaniem agenta na produkcji.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.youtube.com/watch?v=-8Zy3S6ec0w" class="news-title">
+                                            90% danych przedsiębiorstw jest „ciemnych” — oto jak Google je odblokowuje
+                                        </a>
+                                        <div class="news-desc">
+                                            Dyrektor w Google Cloud wyjaśnia, dlaczego 80–90% danych przedsiębiorstw
+                                            jest „ciemnych” i nietkniętych – i jak Google Cloud tworzy narzędzia, aby w
+                                            końcu je odblokować. Yasmeen opowiada, jak nowy silnik wiedzy BigQuery
+                                            wychwytuje niewidoczny kontekst biznesowy, który analitycy od zawsze nosili
+                                            w głowach, i dlaczego ta warstwa semantyczna stanowi prawdziwe otwarcie dla
+                                            sztucznej inteligencji w przedsiębiorstwach w 2026 roku.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                        <span class="news-tag">49 min</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://claude.com/blog/multi-agent-coordination-patterns"
+                                            class="news-title">
+                                            Pięć wzorców koordynacji wieloagentowej
+                                        </a>
+                                        <div class="news-desc">
+                                            Twórcy Claude dzielą się spostrzeżeniami na temat zarządzania
+                                            współpracującymi agentami AI. Ten post przedstawia wady i zalety pięciu
+                                            wzorców koordynowania wieloma agentami AI np. message bus w oparciu o
+                                            architekturę event-driven.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://newsletter.posthog.com/p/the-golden-rules-of-agent-first-product"
+                                            class="news-title">
+                                            Złote zasady projektowania interfejsów produktów agent-first
+                                        </a>
+                                        <div class="news-desc">
+                                            Zbiór konkretnych wytycznych dla zespołów budujących produkty w podejściu
+                                            agent-first. Artykuł wyjaśnia, jak projektować aplikacje, w których agenci
+                                            AI naturalnie przejmują interakcje z użytkownikiem.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://siecobywatelska.pl/cyfryzacja-w-sluzbie-jawnosci-w-2025-roku/"
+                                            class="news-title">
+                                            Cyfryzacja i przejrzystość pod okiem Watchdog Polska w 2025 roku
+                                        </a>
+                                        <div class="news-desc">
+                                            Organizacja obywatelska Watchdog Polska przedstawia jasne rekomendacje na
+                                            rok 2025 dotyczące równowagi pomiędzy dynamicznym rozwojem systemów AI a
+                                            poszanowaniem praw obywatelskich. Wskazują na ryzyka związane z wdrażaniem
+                                            AI w sektorze publicznym bez wystarczającej przejrzystości i jasno
+                                            określonej odpowiedzialności.
+                                        </div>
+                                        <span class="news-tag tag-pl">Polska</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.youtube.com/watch?v=scAxLh4DYy0" class="news-title">
+                                            Czy kod może być nielegalny? Od exploitów po AI Act
+                                        </a>
+                                        <div class="news-desc">
+                                            Paula Skrzypecka wciąga nas w świat prawnych pułapek, które czyhają na
+                                            twórców oprogramowania – od exploitów po nowe regulacje AI Act. Poznaj
+                                            historie, które pokazują, jak zgrabnie poruszać się w labiryncie przepisów i
+                                            chronić swoją działalność przed konsekwencjami.
+                                        </div>
+                                        <span class="news-tag tag-pl">Polska</span>
+                                        <span class="news-tag">31 min</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://sherwood.news/tech/what-does-delicious-asian-food-seasoning-have-to-do-with-a-potential/"
+                                            class="news-title">
+                                            Co gigant przypraw do żywności ma wspólnego z chipami AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Raport o nieoczywistych powiązaniach w łańcuchu dostaw sprzętu AI. Okazuje
+                                            się, że Ajinomoto, słynna japońska firma spożywcza znana z MSG, produkuje
+                                            folię izolacyjną o kluczowym znaczeniu, stosowaną na całym świecie w
+                                            zaawansowanej produkcji półprzewodników dla procesorów AI.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.growth-memo.com/p/how-consumers-navigate-high-stakes"
+                                            class="news-title">
+                                            Jak konsumenci dokonują zakupów na rynku opartym na sztucznej inteligencji
+                                        </a>
+                                        <div class="news-desc">
+                                            Badanie pokazuje, że kupujący coraz chętniej ufają rekomendacjom AI zamiast
+                                            samodzielnie szukać informacji o produktach. Konsumenci w coraz większym
+                                            stopniu polegają na podsumowaniach z platform takich jak Google AI Mode, co
+                                            oznacza, że coraz rzadziej sami weryfikujemy to, co kupujemy.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://techcrunch.com/2026/04/13/the-largest-orbital-compute-cluster-is-open-for-business/"
+                                            class="news-title">
+                                            Najpotężniejsza orbitalna platforma obliczeniowa otwiera się dla biznesu
+                                        </a>
+                                        <div class="news-desc">
+                                            Firma kosmiczna Kepler uruchomiła na orbicie okołoziemskiej klaster
+                                            obliczeniowy procesorów graficznych. Węzeł serwera umożliwia bezpośrednie
+                                            przetwarzanie danych satelitarnych w przestrzeni kosmicznej, radykalnie
+                                            zmniejszając opóźnienia i ogromne koszty sieciowe związane z transmisjami "w
+                                            dół".
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://searchengineland.com/product-feeds-organic-strategy-ai-search-473793"
+                                            class="news-title">
+                                            Jak optymalizować produkty e-commerce pod wyszukiwanie AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Artykuł o wyzwaniach, przed którymi stoją marketerzy, gdy użytkownicy coraz
+                                            częściej szukają produktów przez asystentów AI. Firmy muszą radykalnie
+                                            dostosować swoje metadane produktów i strategie tagowania organicznego, aby
+                                            uniknąć utraty widoczności na nowoczesnych platformach rekomendacji bez
+                                            polegania wyłącznie na płatnych reklamach.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.rdm.ox.ac.uk/news/new-ai-tool-can-predict-heart-failure-at-least-five-years-before-it-develops"
+                                            class="news-title">
+                                            Pionierskie narzędzie Oxford AI przewiduje niewydolność serca z 5-letnim
+                                            wyprzedzeniem
+                                        </a>
+                                        <div class="news-desc">
+                                            Badacze z Oksfordu opracowali narzędzie AI, które na podstawie obrazowania
+                                            układu krążenia potrafi wykryć wczesne oznaki problemów z sercem.
+                                            Oprogramowanie w sposób nieinwazyjny identyfikuje wczesne objawy
+                                            ostrzegawcze niewydolności serca nawet pięć lat zanim pojawią się widoczne
+                                            objawy.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.nytimes.com/2026/04/09/style/gen-z-ai-gallup-study.html"
+                                            class="news-title">
+                                            Pokolenie Z korzysta ze sztucznej inteligencji, ale według sondaży Gallupa
+                                            traci początkowy entuzjazm
+                                        </a>
+                                        <div class="news-desc">
+                                            Z niedawnego sondażu Instytutu Gallupa wynika, że choć połowa pokolenia Z
+                                            regularnie korzysta ze sztucznej inteligencji, ich ogólny entuzjazm wobec
+                                            tej technologii maleje. Młodzi dorośli wyrażają rosnące obawy dotyczące
+                                            wpływu na rynek pracy i osłabienia krytycznego myślenia, mimo że nadal
+                                            stosują LLM w codziennych zadaniach akademickich lub zawodowych.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://sherwood.news/tech/stanford-ai-report-model-capability-accelerating-china-has-closed-the-gap/"
+                                            class="news-title">
+                                            Raport AI Index: Chiny zamykają lukę technologiczną w modelach generatywnych
+                                        </a>
+                                        <div class="news-desc">
+                                            Najnowszy raport AI Index ze Stanforda pokazuje, że różnice między czołowymi
+                                            modelami AI szybko się zacierają. Chińskie modele doganiają zachodnie
+                                            odpowiedniki pod względem wydajności i możliwości.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.samaltman.com/2279512" class="news-title">
+                                            Sam Altman o przyszłości sztucznej inteligencji i ataku na jego dom
+                                        </a>
+                                        <div class="news-desc">
+                                            Dyrektor generalny OpenAI dzieli się przemyśleniami po niebezpiecznym
+                                            incydencie, podczas którego napastnicy rzucili na jego posesję koktajl
+                                            Molotova. Apeluje o spokojną i merytoryczną dyskusję, zauważając rosnący
+                                            niepokój w społeczeństwie wywołany szybkimi przemianami technologicznymi.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.techzine.eu/news/applications/140342/servicenow-makes-its-entire-portfolio-ai-native-for-every-customer/"
+                                            class="news-title">
+                                            ServiceNow przekształca swoje portfolio korporacyjne w rozwiązania AI-Native
+                                        </a>
+                                        <div class="news-desc">
+                                            ServiceNow przeprojektowuje całą swoją ofertę, wbudowując AI jako natywny
+                                            element każdego produktu. Automatyzacja i analityka generatywna mają
+                                            usprawnić codzienną pracę dużych organizacji korzystających z platformy.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.pymnts.com/artificial-intelligence-2/2026/perplexitys-shift-to-ai-agents-boosts-revenue-50/"
+                                            class="news-title">
+                                            Zwrócenie się firmy Perplexity w stronę agentów AI zwiększa przychody o 50
+                                            procent
+                                        </a>
+                                        <div class="news-desc">
+                                            Przejście od wyszukiwarki AI do autonomicznych agentów okazało się strzałem
+                                            w dziesiątkę pod względem przychodów. Perplexity odnotowało 50-procentowy
+                                            wzrost przychodów – wyraźny sygnał, że firmy są gotowe płacić za agentów AI,
+                                            którzy realnie pomagają w pracy.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f9f9f9; border-top: 1px solid #eeeeee;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 25px 20px; text-align: center;">
+
+
+                            <p style="margin: 0 0 15px 0; font-size: 15px; color: #333;">
+                                <img src="https://img.icons8.com/ios-filled/50/007bff/speech-bubble--v1.png" width="16"
+                                    height="16"
+                                    style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                Co myślisz o tym wydaniu?
+                                <a href="https://forms.gle/rjQ77WH2jN2beYfz8"
+                                    style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Zostaw
+                                    feedback</a>
+                            </p>
+
+
+                            <div style="font-size: 15px; color: #333;">
+                                <div style="margin-bottom: 10px;">
+                                    <img src="https://img.icons8.com/ios-filled/50/007bff/forward-arrow.png" width="16"
+                                        height="16"
+                                        style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                    Podoba Ci się treść newslettera?
+                                    <a href="{$forward}"
+                                        style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Prześlij
+                                        dalej</a>
+                                </div>
+
+                                <div style="margin-top: 15px; font-size: 14px; color: #666;">
+                                    lub udostępnij: <br>
+
+
+                                    <div style="margin-top: 8px;">
+                                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={$url}"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/linkedin.png" alt="LI" width="28"
+                                                height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://twitter.com/intent/tweet?url={$url}&text=Polecam%20newsletter%20AI!"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                alt="X" width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u={$url}" target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/facebook-new.png" alt="FB"
+                                                width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px; font-size: 16px; line-height: 1.6; border-bottom: 1px solid #eeeeee;">
+                            To tyle na dzisiaj. Dzięki, że jesteś ze mną! <br><br>
+                            Udanego tygodnia,<br>
+                            <strong>Kuba</strong>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td width="90" valign="top" class="author-col" style="padding-right: 20px;">
+                                        <img src="https://jakubpradzynski.pl/images/me.jpg" alt="Zdjęcie autora"
+                                            width="90" height="90" style="border-radius: 50%; display: block;"
+                                            class="author-img">
+                                    </td>
+
+                                    <td valign="middle" class="author-col">
+                                        <p style="margin: 0 0 10px 0; font-size: 14px; color: #333; line-height: 1.5;">
+                                            <strong>Jakub Prądzyński</strong><br>
+                                            Engineering Manager w Allegro<br>
+                                        </p>
+
+                                        <table border="0" cellpadding="0" cellspacing="0" class="social-container">
+                                            <tr>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.linkedin.com/in/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/linkedin.png"
+                                                            alt="LinkedIn" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://x.com/PradzynskiJakub" target="_blank">
+                                                        <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                            alt="X" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.facebook.com/jakub.pradzynski" target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/facebook-new.png"
+                                                            alt="Facebook" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.instagram.com/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/fluency/48/instagram-new.png"
+                                                            alt="Instagram" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://jakubpradzynski.pl" target="_blank"
+                                                        title="Strona WWW">
+                                                        <img src="https://img.icons8.com/color/48/domain--v1.png"
+                                                            alt="WWW" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f4f4f4;">
+                    <tr>
+                        <td align="center"
+                            style="padding: 30px 20px; color: #888888; font-size: 12px; line-height: 18px;">
+                            <p style="margin: 0 0 10px 0;">
+                                © 2026 <a href="https://przegladai.news"
+                                    style="color: #888888; text-decoration: none;">PrzeglądAI</a>. Wszystkie prawa
+                                zastrzeżone.
+                            </p>
+                            <p style="margin: 0;">
+                                <a href="{$unsubscribe}" style="color: #888888; text-decoration: underline;">Wypisz się
+                                    z listy</a>
+                                <span style="margin: 0 5px;">|</span>
+                                Powered by <a href="https://hvb.software/"
+                                    style="color: #888888; text-decoration: none;">HVB.software</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
