@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '16',
+    slug: 'wydanie-16-lokalne-elevenlabs-m-od-perplexity-i-atak-na-dom-sama-altmana',
+    title: 'Wydanie #16: Lokalne ElevenLabs, $1M od Perplexity i atak na dom Sama Altmana',
+    date: '17-04-2026',
+    htmlUrl: '/issues/16.html'
+  },
+  {
     id: '15',
     slug: 'wydanie-15-projekt-glasswing-agenci-ai-na-gieldzie-i-software-slop',
     title: 'Wydanie #15: Projekt Glasswing, agenci AI na giełdzie i Software Slop',
