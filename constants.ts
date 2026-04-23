@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '17',
+    slug: 'wydanie-17-apple-bez-tima-cooka-piosenka-ai-numerem-1-i-robot-kontra-dziki-w-warszawie',
+    title: 'Wydanie #17: Apple bez Tima Cooka, piosenka AI numerem 1 i robot kontra dziki w Warszawie',
+    date: '24-04-2026',
+    htmlUrl: '/issues/17.html'
+  },
+  {
     id: '16',
     slug: 'wydanie-16-lokalne-elevenlabs-m-od-perplexity-i-atak-na-dom-sama-altmana',
     title: 'Wydanie #16: Lokalne ElevenLabs, $1M od Perplexity i atak na dom Sama Altmana',
