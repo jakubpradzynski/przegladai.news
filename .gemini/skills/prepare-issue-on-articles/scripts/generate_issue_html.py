@@ -3,12 +3,14 @@ import csv
 import re
 
 def main():
-    if len(sys.argv) < 3:
-        print("Usage: python generate_issue_html.py <prev_issue_file> <new_issue_file>")
+    if len(sys.argv) < 5:
+        print("Usage: python generate_issue_html.py <prev_issue_file> <new_issue_file> \"<title>\" \"<intro_text>\"")
         sys.exit(1)
         
     prev_file = sys.argv[1]
     new_file = sys.argv[2]
+    new_title = sys.argv[3]
+    intro_text = sys.argv[4]
     
     with open('final_prepared_data.csv', 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -28,6 +30,14 @@ def main():
 
     ul_pattern = re.compile(r'(<h3[^>]*>Top 3[^<]*informacje</h3>\s*<ul[^>]*>)(.*?)(</ul>)', re.IGNORECASE | re.DOTALL)
     html = ul_pattern.sub(r'\g<1>\n                                                        ' + top3_html.strip() + r'\n                                                    \g<3>', html)
+
+    # Title update
+    title_pattern = re.compile(r'(<title>)(.*?)(</title>)', re.IGNORECASE | re.DOTALL)
+    html = title_pattern.sub(r'\g<1>' + new_title + r' - PrzeglądAI\n    \g<3>', html)
+
+    # Intro text update
+    intro_pattern = re.compile(r'(<strong>Cześć!</strong>\s*<br><br>\s*)(.*?)(\s*<br><br>\s*Zapraszam do lektury!)', re.IGNORECASE | re.DOTALL)
+    html = intro_pattern.sub(r'\g<1>' + intro_text + r'\g<3>', html)
 
     # Articles
     articles_html = ""

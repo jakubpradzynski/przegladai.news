@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '18',
+    slug: 'wydanie-18-deepseek-v4-anthropic-wyprzeda-openai-i-ai-wykrywa-raka-trzustki',
+    title: 'Wydanie #18: DeepSeek V4, Anthropic wyprzeda OpenAI i AI wykrywa raka trzustki',
+    date: '01-05-2026',
+    htmlUrl: '/issues/18.html'
+  },
+  {
     id: '17',
     slug: 'wydanie-17-apple-bez-tima-cooka-piosenka-ai-numerem-1-i-robot-kontra-dziki-w-warszawie',
     title: 'Wydanie #17: Apple bez Tima Cooka, piosenka AI numerem 1 i robot kontra dziki w Warszawie',
