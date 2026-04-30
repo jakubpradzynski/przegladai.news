@@ -3,8 +3,8 @@ import { BlogPost } from './types';
 export const BLOG_POSTS: BlogPost[] = [
   {
     id: '18',
-    slug: 'wydanie-18-deepseek-v4-anthropic-wyprzeda-openai-i-ai-wykrywa-raka-trzustki',
-    title: 'Wydanie #18: DeepSeek V4, Anthropic wyprzeda OpenAI i AI wykrywa raka trzustki',
+    slug: 'wydanie-18-deepseek-v4-anthropic-wyprzedza-openai-i-ai-wykrywa-raka-trzustki',
+    title: 'Wydanie #18: DeepSeek V4, Anthropic wyprzedza OpenAI i AI wykrywa raka trzustki',
     date: '01-05-2026',
     htmlUrl: '/issues/18.html'
   },
