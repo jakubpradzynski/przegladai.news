@@ -108,4 +108,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://przegladai.news/wydanie-18-deepseek-v4-anthropic-wyprzedza-openai-i-ai-wykrywa-raka-trzustki</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -16,7 +16,8 @@ Jesteś asystentem przygotowującym nowe wydanie newslettera PrzeglądAI. Przejd
 - ZAPYTAJ UŻYTKOWNIKA O AKCEPTACJĘ LUB WERSJĘ TYTUŁU (możesz np. zaproponować 2 warianty). Nie przechodź dalej, dopóki użytkownik nie zaakceptuje lub nie poda swojego tytułu.
 
 ## Krok 2 — Utworzenie pliku HTML
-- Uruchom skrypt w Pythonie (narzędzie `run_shell_command`): `python3 .gemini/skills/prepare-issue-on-articles/scripts/generate_issue_html.py <ostatni_nr> <nowy_nr>`, aby automatycznie wygenerować plik w folderze `public/issues/<nowy_nr>.html`. Skrypt ten pobiera odpowiednio poprzednie wydanie, uaktualnia blok z Top 3 informacjami, a następnie podmienia zawartość sekcji z artykułami.
+- Wygeneruj krótki tekst (2-3 zdania) jako wstęp do wydania, nawiązujący do najważniejszych newsów lub ogólnego tematu bieżącego zestawienia. Tekst ten zastąpi sekcję między "Cześć!" a "Zapraszam do lektury!".
+- Uruchom skrypt w Pythonie (narzędzie `run_shell_command`): `python3 .gemini/skills/prepare-issue-on-articles/scripts/generate_issue_html.py <ostatni_nr> <nowy_nr> "<tytuł>" "<wygenerowany_wstęp>"`, aby automatycznie wygenerować plik w folderze `public/issues/<nowy_nr>.html`. Skrypt ten pobiera odpowiednio poprzednie wydanie, uaktualnia blok z Top 3 informacjami, tytuł w tagu `<title>`, krótki wstęp do newslettera oraz podmienia zawartość sekcji z artykułami.
 - Upewnij się po wykonaniu za pomocą narzędzia sprawdzającego (np. `read_file` pobieżnie), że plik faktycznie się wygenerował.
 
 ## Krok 3 — Aktualizacja plików konfiguracyjnych
@@ -37,12 +38,13 @@ Jesteś asystentem przygotowującym nowe wydanie newslettera PrzeglądAI. Przejd
     - Oznaczenia: Staraj się zamieszczać nazwy firm (np. Anthropic, Google, Meta) oraz autorów (jeśli są dostępni), aby umożliwić późniejsze oznaczenie ich w social mediach.
 
 - **Struktura pliku:**
-    1. **LinkedIn (Profil Prywatny):** Profesjonalna obserwacja rynkowa, lekko napisana, ale merytoryczna. Skup się na zmianach strukturalnych i nowych trendach.
-    2. **X (Twitter):** Wątek (Thread) w formacie 1/4. Krótkie, techniczne punkty, pierwszy post z grafiką `wydanie_<nr>.png`. Link bezpośredni do strony głównej na końcu: "👉 Subskrybuj: https://przegladai.news/".
-    3. **Facebook (Profil Przegląd AI):** Uporządkowana lista, informacyjna i rzetelna.
-    4. **Paczki newsów (Dzień 1, 2, 3):** Osobne sekcje dla każdego dnia. Każdy dzień powinien zawierać:
-        - Wersję **LinkedIn/Facebook (Post długi)**: 3 szeroko opisane newsy (bazujące na `news-desc`), profesjonalny hook, CTA z "opisem profilu".
-        - Wersję **X / Twitter (Wątek)**: "Wiązanka" postów (1/4, 2/4 itd.), gdzie każdy news to osobny punkt, profesjonalny hook, CTA z linkiem do strony głównej.
+    1. **LinkedIn / Facebook:** Jeden wspólny, angażujący post promujący całe wydanie. Napisz go tak, aby brzmiał w 100% naturalnie, jak wpis człowieka dzielącego się swoimi obserwacjami. **Pamiętaj, że newsletter jest kuratorem treści (pośrednikiem)** – zbierasz najlepsze linki i krótko je streszczasz. Używaj formy pojedynczej ("zebrałem", "wyselekcjonowałem"). **Konstrukcja posta:**
+        - Mocny hook (zacznij post od przyciągającego zdania, ale **absolutnie nie pisz wprost słowa "Hook:"**) i **szerszy, bardzo opisowy wstęp skupiony tylko na jednym, głównym temacie** wydania (narracja o konkretnym trendzie/wydarzeniu). **WAŻNE:** Zachowaj spokojny, analityczny ton. Bezwzględnie unikaj emocjonalnych, dramatycznych i typowych dla AI sformułowań (takich jak "prawdziwe trzęsienie ziemi", "rewolucja", "zmieniają zasady gry", "wstrząsnęło rynkiem"). Pisz konkretami.
+        - Płynne przejście do podpunktów bez sztucznych sformułowań typu "Znajdziecie tam linki i omówienia". Użyj czegoś naturalnego, np. "Co jeszcze zebrałem w tym tygodniu?".
+        - Ok. 2-3 krótkich punktów (z emoji `🔹`) dotyczących **INNYCH** tematów niż ten opisany we wstępie (absolutnie nie powtarzaj głównego tematu w podpunktach).
+        - Krótkie zdanie podsumowujące.
+        - Dokładne CTA na końcu: "👉 Link w opisie profilu. Subskrybuj!".
+    2. **X (Twitter):** Jeden bardzo krótki, zwięzły post (pojedynczy, bez wątku). **Maksymalnie 280 znaków.** Szybki hook, 2 krótkie punkty oraz na samym końcu obowiązkowo: "👉 Link w Bio". Nie używaj bezpośrednich linków w treści posta na X. Nie generuj żadnych innych postów.
 
 - Zapisz nowo wygenerowaną zawartość za pomocą `write_file`.
 
