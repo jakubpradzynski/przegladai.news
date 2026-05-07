@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '19',
+    slug: 'wydanie-19-gpt-55-instant-anthropic-w-spacex-i-oscary-bez-ai',
+    title: 'Wydanie #19: GPT-5.5 Instant, Anthropic w SpaceX i Oscary bez AI',
+    date: '08-05-2026',
+    htmlUrl: '/issues/19.html'
+  },
+  {
     id: '18',
     slug: 'wydanie-18-deepseek-v4-anthropic-wyprzedza-openai-i-ai-wykrywa-raka-trzustki',
     title: 'Wydanie #18: DeepSeek V4, Anthropic wyprzedza OpenAI i AI wykrywa raka trzustki',

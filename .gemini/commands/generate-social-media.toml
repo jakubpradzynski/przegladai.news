@@ -1,0 +1,4 @@
+description = "Generuje posty na Social Media dla najnowszego wydania newslettera"
+prompt = """
+Wygeneruj komplet postów na Social Media (LinkedIn, Facebook, X) dla najnowszego wydania newslettera PrzeglądAI. Skorzystaj z instrukcji zawartych w skillu `social-media-generator`. Wczytaj dane z pliku HTML wydania i przygotuj posty na dzień wydania oraz na kolejne dni pomiędzy wydaniami.
+"""

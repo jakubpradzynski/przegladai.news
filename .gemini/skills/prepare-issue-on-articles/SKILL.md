@@ -3,7 +3,7 @@ name: prepare-issue-on-articles
 description: Przygotowuje nowe wydanie newslettera bazując na wyselekcjonowanych artykułach. Reaguje na polecenie takie jak np. "Przygotuj wydanie bazując na artykułach".
 metadata:
   pattern: pipeline
-  steps: "6"
+  steps: "5"
 ---
 
 Jesteś asystentem przygotowującym nowe wydanie newslettera PrzeglądAI. Przejdź po kolei przez wszystkie kroki. Nie pomijaj żadnego.
@@ -27,33 +27,15 @@ Jesteś asystentem przygotowującym nowe wydanie newslettera PrzeglądAI. Przejd
 - Zaktualizuj plik `public/llms.txt`, dodając wpis dla najnowszego wydania w sekcji `## Wydania` NA SAM DOŁ listy. Wpis w postaci: `- **Wydanie #<nr>** ...`.
 - Zaktualizuj plik `public/sitemap.xml`, dodając blok `<url>` dla najnowszego wydania na SAM DOŁ pliku, tuż przed zamykającym tagiem `</urlset>`. Pamiętaj, aby data `<lastmod>` była wpisana w poprawnym formacie `YYYY-MM-DD`. Uruchomienie pomocniczego skryptu aktualizującego wszystko naraz jest mocno rekomendowane, zrób to poleceniem `python3 .gemini/skills/prepare-issue-on-articles/scripts/update_configs.py <nowy_nr> "<tytuł>"`
 
-## Krok 4 — Utworzenie pliku z postami na Social Media
-- Wygeneruj nowy zestaw wpisów w pliku `public/posts/issue_<nowy_nr>_posts.md`.
-- **Zasady ogólne:**
-    - Ton: Profesjonalny, analityczny i rzetelny (unikanie stylu czysto marketingowego).
-    - Perspektywa: Nie pisz "przygotowałem/liśmy". Pisz o tym, co "można znaleźć w zestawieniu/wydaniu", jakie newsy/artykuły/posty są tam dostępne (np. "Te i inne ciekawe linki znajdziesz w <nr>. wydaniu PrzeglądAI").
-    - Zasięgi: **NIE UMIESZCZAJ bezpośrednich linków** do wydania w głównej treści postów premierowych na LinkedIn/Facebook. Zamiast tego używaj sformułowania: "👉 Link do newslettera z najnowszym wydaniem znajdziesz w opisie profilu. Subskrybuj!".
-    - Zgodność: Treść musi dokładnie pokrywać się z opisami (`news-desc`) z pliku HTML.
-    - Formatowanie: **NIE UŻYWAJ pogrubienia (gwiazdek)** wewnątrz punktów list. Używaj emoji `🔹` na początku punktów.
-    - Oznaczenia: Staraj się zamieszczać nazwy firm (np. Anthropic, Google, Meta) oraz autorów (jeśli są dostępni), aby umożliwić późniejsze oznaczenie ich w social mediach.
-
-- **Struktura pliku:**
-    1. **LinkedIn / Facebook:** Jeden wspólny, angażujący post promujący całe wydanie. Napisz go tak, aby brzmiał w 100% naturalnie, jak wpis człowieka dzielącego się swoimi obserwacjami. **Pamiętaj, że newsletter jest kuratorem treści (pośrednikiem)** – zbierasz najlepsze linki i krótko je streszczasz. Używaj formy pojedynczej ("zebrałem", "wyselekcjonowałem"). **Konstrukcja posta:**
-        - Mocny hook (zacznij post od przyciągającego zdania, ale **absolutnie nie pisz wprost słowa "Hook:"**) i **szerszy, bardzo opisowy wstęp skupiony tylko na jednym, głównym temacie** wydania (narracja o konkretnym trendzie/wydarzeniu). **WAŻNE:** Zachowaj spokojny, analityczny ton. Bezwzględnie unikaj emocjonalnych, dramatycznych i typowych dla AI sformułowań (takich jak "prawdziwe trzęsienie ziemi", "rewolucja", "zmieniają zasady gry", "wstrząsnęło rynkiem"). Pisz konkretami.
-        - Płynne przejście do podpunktów bez sztucznych sformułowań typu "Znajdziecie tam linki i omówienia". Użyj czegoś naturalnego, np. "Co jeszcze zebrałem w tym tygodniu?".
-        - Ok. 2-3 krótkich punktów (z emoji `🔹`) dotyczących **INNYCH** tematów niż ten opisany we wstępie (absolutnie nie powtarzaj głównego tematu w podpunktach).
-        - Krótkie zdanie podsumowujące.
-        - Dokładne CTA na końcu: "👉 Link w opisie profilu. Subskrybuj!".
-    2. **X (Twitter):** Jeden bardzo krótki, zwięzły post (pojedynczy, bez wątku). **Maksymalnie 280 znaków.** Szybki hook, 2 krótkie punkty oraz na samym końcu obowiązkowo: "👉 Link w Bio". Nie używaj bezpośrednich linków w treści posta na X. Nie generuj żadnych innych postów.
-
-- Zapisz nowo wygenerowaną zawartość za pomocą `write_file`.
-
-## Krok 5 — Przygotowanie grafiki promocyjnej
+## Krok 4 — Przygotowanie grafiki promocyjnej
 - Użyj narzędzia `mcp_nanobanana_edit_image`, aby zmodyfikować obraz okładki.
 - Jako `file` podaj ŚCIEŻKĘ BAZOWĄ (np. `public/images/issues/wydanie_<ostatni_nr>.jpg`). Sprawdź z jakim rozszerzeniem jest ostatnie zdjęcie (może być .jpg, .jpeg, .png).
 - W argumencie `prompt` musisz BYĆ BARDZO PRECYZYJNY i dodać wymóg rozdzielczości: "Zaktualizuj tekst znajdujący się na samym środku obrazka. Zamień tekst '#<ostatni_nr>: ...' na '#<nowy_nr>: <tytuł, który wybraliście bez członu Wydanie>'. Zmień rozmiar / wygeneruj ten obraz w rozdzielczości 4K (5636x3008). Jest to kluczowe: NIE ZMIENIAJ NIC INNEGO poza tekstem i rozdzielczością. Tło, kolory, położenie innych napisów i elementów graficznych pozostaje absolutnie BEZ ZMIAN."
 - UWAGA: narzędzie generuje plik u siebie, zapytaj użytkownika lub zapisz go we właściwe miejsce (np. narzędzie może samo zrzucić gdzieś plik tymczasowy, użyj `run_shell_command` żeby przenieść to do `public/images/issues/wydanie_<nowy_nr>.jpg`). Właściwie, `mcp_nanobanana_edit_image` może nie zapisywać na dysk od razu w żądane miejsce, więc podążaj za jego wyjściem i upewnij się, że plik trafia do docelowego folderu `public/images/issues/`.
 
-## Krok 6 — Zakończenie
-- Poinformuj użytkownika, że nowa treść (HTML, wpisy na SM, grafika, konfiguracja) jest przygotowana.
-- Przypomnij, że jeśli wszystko wygląda dobrze, następnym krokiem będzie użycie polecenia "Ukończ tworzenie wydania" (uruchomi to kolejny skill).
+## Krok 5 — Zakończenie
+- Poinformuj użytkownika, że nowa treść (HTML, grafika, konfiguracja) jest przygotowana.
+- Przypomnij, że kolejnymi krokami są:
+  1. `/generate-social-media` — wygenerowanie postów na Social Media.
+  2. `/generate-social-media-images` — wygenerowanie grafik do postów na Social Media.
+  3. `/finalize-issue` — ukończenie tworzenia wydania.
