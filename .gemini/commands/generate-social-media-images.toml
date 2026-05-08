@@ -1,0 +1,4 @@
+description = "Generuje grafiki do postów na Social Media dla najnowszego wydania"
+prompt = """
+Wygeneruj grafiki do postów na Social Media dla najnowszego wydania newslettera PrzeglądAI, używając narzędzia nano banana. Skorzystaj z instrukcji zawartych w skillu `social-media-images-generator`. Wczytaj plik z postami (`public/posts/issue_<nr>_posts.md`) i wygeneruj dedykowane grafiki do postów na kolejne dni.
+"""

@@ -1,0 +1,4 @@
+description = "Uruchamia selekcję artykułów"
+prompt = """
+Uruchom lokalny serwer i interfejs webowy (`http://localhost:8000`) pozwalający na wygodne przejrzenie, odrzucanie lub edycję artykułów, w celu sfinalizowania wyboru do pliku `final_prepared_data.csv`. Możesz wykorzystać do tego skill `run-article-selection`. Poinformuj mnie, gdy aplikacja będzie gotowa.
+"""
