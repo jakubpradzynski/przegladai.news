@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '20',
+    slug: 'wydanie-20-googlebook-polska-fabryka-ai-i-case-study-ikea',
+    title: 'Wydanie #20: Googlebook, polska fabryka AI i case study IKEA',
+    date: '15-05-2026',
+    htmlUrl: '/issues/20.html'
+  },
+  {
     id: '19',
     slug: 'wydanie-19-gpt-55-instant-anthropic-w-spacex-i-oscary-bez-ai',
     title: 'Wydanie #19: GPT-5.5 Instant, Anthropic w SpaceX i Oscary bez AI',
