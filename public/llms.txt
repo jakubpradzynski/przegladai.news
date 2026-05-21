@@ -31,6 +31,7 @@ Na naszej stronie znajdziesz:
 - **Wydanie #18**: "DeepSeek V4, Anthropic wyprzedza OpenAI i AI wykrywa raka trzustki" (01-05-2026) - https://przegladai.news/wydanie-18-deepseek-v4-anthropic-wyprzedza-openai-i-ai-wykrywa-raka-trzustki
 - **Wydanie #19**: "GPT-5.5 Instant, Anthropic w SpaceX i Oscary bez AI" (08-05-2026) - https://przegladai.news/wydanie-19-gpt-55-instant-anthropic-w-spacex-i-oscary-bez-ai
 - **Wydanie #20**: "Googlebook, polska fabryka AI i case study IKEA" (15-05-2026) - https://przegladai.news/wydanie-20-googlebook-polska-fabryka-ai-i-case-study-ikea
+- **Wydanie #21**: "Google I/O 2026, Andrej Karpathy w Anthropic i polski Victor za 75 mln USD" (22-05-2026) - https://przegladai.news/wydanie-21-google-io-2026-andrej-karpathy-w-anthropic-i-polski-victor-za-75-mln-usd
 
 ## Kontakt
 Strona internetowa: https://przegladai.news
