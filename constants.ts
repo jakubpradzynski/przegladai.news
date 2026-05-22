@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '21',
+    slug: 'wydanie-21-google-io-2026-andrej-karpathy-w-anthropic-i-polski-victor-za-75-mln-usd',
+    title: 'Wydanie #21: Google I/O 2026, Andrej Karpathy w Anthropic i polski Victor za 75 mln USD',
+    date: '22-05-2026',
+    htmlUrl: '/issues/21.html'
+  },
+  {
     id: '20',
     slug: 'wydanie-20-googlebook-polska-fabryka-ai-i-case-study-ikea',
     title: 'Wydanie #20: Googlebook, polska fabryka AI i case study IKEA',
