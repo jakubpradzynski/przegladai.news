@@ -32,6 +32,7 @@ Na naszej stronie znajdziesz:
 - **Wydanie #19**: "GPT-5.5 Instant, Anthropic w SpaceX i Oscary bez AI" (08-05-2026) - https://przegladai.news/wydanie-19-gpt-55-instant-anthropic-w-spacex-i-oscary-bez-ai
 - **Wydanie #20**: "Googlebook, polska fabryka AI i case study IKEA" (15-05-2026) - https://przegladai.news/wydanie-20-googlebook-polska-fabryka-ai-i-case-study-ikea
 - **Wydanie #21**: "Google I/O 2026, Andrej Karpathy w Anthropic i polski Victor za 75 mln USD" (22-05-2026) - https://przegladai.news/wydanie-21-google-io-2026-andrej-karpathy-w-anthropic-i-polski-victor-za-75-mln-usd
+- **Wydanie #22**: "Robot sprzątający Gatsby, raport Stack Overflow i koszt orkiestracji AI" (29-05-2026) - https://przegladai.news/wydanie-22-robot-sprzatajacy-gatsby-raport-stack-overflow-i-koszt-orkiestracji-ai
 
 ## Kontakt
 Strona internetowa: https://przegladai.news
