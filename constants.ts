@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '22',
+    slug: 'wydanie-22-robot-sprzatajacy-gatsby-raport-stack-overflow-i-koszt-orkiestracji-ai',
+    title: 'Wydanie #22: Robot sprzątający Gatsby, raport Stack Overflow i koszt orkiestracji AI',
+    date: '29-05-2026',
+    htmlUrl: '/issues/22.html'
+  },
+  {
     id: '21',
     slug: 'wydanie-21-google-io-2026-andrej-karpathy-w-anthropic-i-polski-victor-za-75-mln-usd',
     title: 'Wydanie #21: Google I/O 2026, Andrej Karpathy w Anthropic i polski Victor za 75 mln USD',
