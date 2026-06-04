@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '23',
+    slug: 'wydanie-23-buffett-inwestuje-w-google-claude-opus-48-i-elevenlabs-w-warszawie',
+    title: 'Wydanie #23: Buffett inwestuje w Google, Claude Opus 4.8 i ElevenLabs w Warszawie',
+    date: '05-06-2026',
+    htmlUrl: '/issues/23.html'
+  },
+  {
     id: '22',
     slug: 'wydanie-22-robot-sprzatajacy-gatsby-raport-stack-overflow-i-koszt-orkiestracji-ai',
     title: 'Wydanie #22: Robot sprzątający Gatsby, raport Stack Overflow i koszt orkiestracji AI',
