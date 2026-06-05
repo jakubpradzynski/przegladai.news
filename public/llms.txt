@@ -33,6 +33,7 @@ Na naszej stronie znajdziesz:
 - **Wydanie #20**: "Googlebook, polska fabryka AI i case study IKEA" (15-05-2026) - https://przegladai.news/wydanie-20-googlebook-polska-fabryka-ai-i-case-study-ikea
 - **Wydanie #21**: "Google I/O 2026, Andrej Karpathy w Anthropic i polski Victor za 75 mln USD" (22-05-2026) - https://przegladai.news/wydanie-21-google-io-2026-andrej-karpathy-w-anthropic-i-polski-victor-za-75-mln-usd
 - **Wydanie #22**: "Robot sprzątający Gatsby, raport Stack Overflow i koszt orkiestracji AI" (29-05-2026) - https://przegladai.news/wydanie-22-robot-sprzatajacy-gatsby-raport-stack-overflow-i-koszt-orkiestracji-ai
+- **Wydanie #23**: "Buffett inwestuje w Google, Claude Opus 4.8 i ElevenLabs w Warszawie" (05-06-2026) - https://przegladai.news/wydanie-23-buffett-inwestuje-w-google-claude-opus-48-i-elevenlabs-w-warszawie
 
 ## Kontakt
 Strona internetowa: https://przegladai.news
