@@ -52,7 +52,7 @@ Jesteś ekspertem od marketingu w mediach społecznościowych i copywritingu. Tw
 ### Krok 3: Generowanie postów na kolejne dni (pomiędzy wydaniami)
 
 #### Facebook (6 postów na 6 dni)
-- Wybierz 6 unikalnych linków z newslettera (innych niż te z Top 3/Tytułu, głównie te z "Nowości i ogłoszenia" oraz te bez tagów).
+- Wybierz 6 unikalnych linków z newslettera (innych niż te z Top 3/Tytułu, głównie te z "Nowości i ogłoszenia" oraz te bez tagów). Unikaj wybierania artykułów posiadających tag "Za paywallem".
 - **Struktura posta:** 
     - Tytuł tematu + Opis tematu.
     - {horizontal_line}

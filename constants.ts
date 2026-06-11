@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '24',
+    slug: 'wydanie-24-plany-apple-na-ai-z-wwdc26-claude-fable-5-i-sukces-iceye',
+    title: 'Wydanie #24: Plany Apple na AI z WWDC26, Claude Fable 5 i sukces ICEYE',
+    date: '12-06-2026',
+    htmlUrl: '/issues/24.html'
+  },
+  {
     id: '23',
     slug: 'wydanie-23-buffett-inwestuje-w-google-claude-opus-48-i-elevenlabs-w-warszawie',
     title: 'Wydanie #23: Buffett inwestuje w Google, Claude Opus 4.8 i ElevenLabs w Warszawie',
