@@ -76,6 +76,7 @@ Tagi służą do skategoryzowania zawartości pod danym linkiem.
 - `Bliżej technologii`: Materiały techniczne dla ludzi z branży IT (developerów, inżynierów ML, PMów itp.).
 - `Nowości i ogłoszenia`: Informacje o premierach, nowościach w narzędziach, przejęciach firm i ważnych ogłoszeniach w świecie AI.
 - `Polska`: Treść dotyczy bezpośrednio Polski jako kraju, projektów polskiego pochodzenia lub nowości z polskiego rynku.
+- `Za paywallem`: Treści dostępne w całości lub w kluczowej części wyłącznie po opłaceniu subskrypcji (paywall). Tag ten może być łączony z pozostałymi.
 
 ### Czas
 Ma zastosowanie **wyłącznie** dla wideo (np. YouTube, Vimeo) lub materiałów audio.

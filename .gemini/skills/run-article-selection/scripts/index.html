@@ -67,7 +67,7 @@
 
   <script>
     let articles = [];
-    const availableTags = ["Nowości i ogłoszenia", "Bliżej technologii", "Polska"];
+    const availableTags = ["Nowości i ogłoszenia", "Bliżej technologii", "Polska", "Za paywallem"];
     let activeFilter = 'All';
 
     function setFilter(filter) {
@@ -81,7 +81,8 @@
       if (activeFilter === 'Nowości i ogłoszenia') return t.includes("nowości i ogłoszenia");
       if (activeFilter === 'Bliżej technologii') return t.includes("bliżej technologii");
       if (activeFilter === 'Polska') return t.includes("polska");
-      if (activeFilter === 'Bez tagu') return !t.trim() || (!t.includes("nowości i ogłoszenia") && !t.includes("bliżej technologii") && !t.includes("polska"));
+      if (activeFilter === 'Za paywallem') return t.includes("za paywallem");
+      if (activeFilter === 'Bez tagu') return !t.trim() || (!t.includes("nowości i ogłoszenia") && !t.includes("bliżej technologii") && !t.includes("polska") && !t.includes("za paywallem"));
       return false;
     }
 
@@ -150,6 +151,7 @@
       let nowosci = 0;
       let technologia = 0;
       let polska = 0;
+      let paywall = 0;
       let bezTagu = 0;
 
       articles.forEach(a => {
@@ -158,7 +160,8 @@
         if (t.includes("nowości i ogłoszenia")) { nowosci++; tagged = true; }
         if (t.includes("bliżej technologii")) { technologia++; tagged = true; }
         if (t.includes("polska")) { polska++; tagged = true; }
-        if (!t.trim() || (!t.includes("nowości i ogłoszenia") && !t.includes("bliżej technologii") && !t.includes("polska"))) bezTagu++;
+        if (t.includes("za paywallem")) { paywall++; tagged = true; }
+        if (!t.trim() || (!t.includes("nowości i ogłoszenia") && !t.includes("bliżej technologii") && !t.includes("polska") && !t.includes("za paywallem"))) bezTagu++;
       });
 
       document.getElementById('stats').innerHTML = `
@@ -166,6 +169,7 @@
         <div class="stat-item ${activeFilter === 'Nowości i ogłoszenia' ? 'active' : ''}" onclick="setFilter('Nowości i ogłoszenia')">Nowości i ogłoszenia: ${nowosci}</div>
         <div class="stat-item ${activeFilter === 'Bliżej technologii' ? 'active' : ''}" onclick="setFilter('Bliżej technologii')">Bliżej technologii: ${technologia}</div>
         <div class="stat-item ${activeFilter === 'Polska' ? 'active' : ''}" onclick="setFilter('Polska')">Polska: ${polska}</div>
+        <div class="stat-item ${activeFilter === 'Za paywallem' ? 'active' : ''}" onclick="setFilter('Za paywallem')">Za paywallem: ${paywall}</div>
         <div class="stat-item ${activeFilter === 'Bez tagu' ? 'active' : ''}" onclick="setFilter('Bez tagu')">Bez rozpoznanego tagu: ${bezTagu}</div>
       `;
 

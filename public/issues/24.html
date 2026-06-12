@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wydanie #24: Plany Apple na AI z WWDC26, Claude Fable 5 i sukces ICEYE - PrzeglądAI
+    </title>
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            background-color: #f4f4f4;
+        }
+
+        body,
+        td,
+        th {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .news-tag {
+            display: inline-block;
+            background-color: #f0f2f5;
+            color: #666666;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            margin-top: 8px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        .tag-news {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+        }
+
+        .tag-tech {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .tag-paywall {
+            background-color: #f5f5f5;
+            color: #616161;
+        }
+
+        .tag-pl {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .news-desc {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 5px;
+            color: #555555;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .author-col {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .author-img {
+                margin: 0 auto 15px auto !important;
+            }
+
+            .social-container {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .social-container td {
+                display: inline-block !important;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f4f4f4;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center" style="background-color: #f4f4f4; padding: 20px 0;">
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container">
+                    <tr>
+                        <td align="right" style="padding-bottom: 10px; font-size: 12px; color: #999999;"
+                            class="mobile-padding">
+                            <a href="{$url}" style="color: #999999; text-decoration: underline;">Zobacz w
+                                przeglądarce</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff; border-bottom: 2px solid #f0f0f0;">
+                    <tr>
+                        <td align="center" style="padding: 30px 20px;">
+                            <a href="https://przegladai.news" style="text-decoration: none;">
+                                <h1
+                                    style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; color: #111111;">
+                                    Przegląd<span style="color: #007bff;">AI</span></h1>
+                            </a>
+                            <p style="margin: 5px 0 0 0; font-size: 14px; color: #777777; font-weight: 400;">Twój
+                                przewodnik w świecie AI</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px 30px 10px 30px; font-size: 16px; line-height: 1.6;">
+                            <strong>Cześć!</strong>
+                            <br><br>
+                            W tym tygodniu zachęcam do zobaczenia tego co się zadziało na WWDC26. Apple zaprezentowało swój pomysł na wykorzystanie AI - głęboka integracja z systemami operacyjnymi i asystentem Siri, wspierana przez modele Gemini i Private Cloud Compute. Nie jest tajemnicą, że rozwiązania tej firmy są kopiowane szeroko przez rynek, więc warto zobaczyć co planuje Apple.
+                            <br><br>
+                            Zapraszam do lektury!
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px 30px 20px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td valign="top" width="24" style="padding-right: 15px;">
+                                                    <img src="https://img.icons8.com/ios-filled/50/FFD43B/gift.png"
+                                                        alt="Prezent" width="24" height="24" style="display: block;">
+                                                </td>
+                                                <td valign="top">
+                                                    <h3 style="margin: 0 0 10px 0; font-size: 18px; color: #111;">Bonus
+                                                        dla czytelników!</h3>
+                                                    <p
+                                                        style="margin: 0 0 10px 0; font-size: 15px; line-height: 1.5; color: #444;">
+                                                        Wspólnie z Todoist przygotowaliśmy dla Ciebie coś specjalnego.
+                                                        Kliknij <a href="https://get.todoist.io/przegladai"
+                                                            style="color: #007bff; font-weight: bold;">w
+                                                            ten link</a>, aby otrzymać <strong>2 miesiące konta Todoist
+                                                            Pro zupełnie za darmo!</strong>
+                                                    </p>
+                                                    <p
+                                                        style="margin: 0; font-size: 15px; line-height: 1.5; color: #444;">
+                                                        Będzie mi też niezmiernie miło, jeśli wyślesz ten newsletter
+                                                        swoim znajomym i zachęcisz ich do subskrypcji. Z góry dziękuję!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 10px 30px 30px 30px;">
+
+
+
+
+
+
+
+
+                            
+                            
+                            
+                            
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; border-top: 1px solid #eeeeee;">
+                                        <a href="https://www.forbes.pl/life/wydarzenia/iceye-pozyskalo-ponad-miliard-euro-a-do-inwestorow-dolaczyla-nokia/0pvkrvy" class="news-title">
+                                            Kosmiczny sukces polsko-fińskiego ICEYE – runda finansowania wartą ponad miliard euro
+                                        </a>
+                                        <div class="news-desc">
+                                            Polsko-fiński lider rozpoznania satelitarnego ICEYE pozyskał w rundzie serii F kwotę 450 mln euro pod wodzą General Atlantic, co przy transakcjach towarzyszących dało łącznie imponujący miliard euro finansowania i wycenę spółki na poziomie 10 miliardów euro. Kluczowym nowym inwestorem strategicznym została fińska Nokia, której technologie bezpiecznej łączności idealnie uzupełniają oferowane przez ICEYE radarowe zobrazowanie Ziemi w czasie rzeczywistym. Spółka współtworzona przez Rafała Modrzewskiego dostarcza suwerenne systemy satelitarne SAR już do 7 europejskich rządów, w tym Polski, Niemiec oraz Finlandii. Absolutnie sukces na skalę europejską, który udowadnia, że w naszym regionie mogą powstawać globalni czempioni technologiczni o strategicznym znaczeniu dla bezpieczeństwa i obronności. To także dowód na to, że nowoczesne państwo musi budować swoje bezpieczeństwo w oparciu o silne, rodzime partnerstwa komercyjne, a nie tylko o zagraniczne zakupy.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                        <span class="news-tag tag-pl">Polska</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/" class="news-title">
+                                            WWDC26 od Apple pod znakiem AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Podczas tegorocznej konferencji WWDC26 Apple zaprezentowało kompleksowy pakiet nowości programistycznych, w tym wyczekiwane systemy iOS 27, macOS 27 oraz iPadOS 27, zdominowane przez integrację z Siri AI. Oprócz głębokich zmian w warstwie modeli językowych, gigant pokazał także rozbudowane, intuicyjne narzędzia kontroli rodzicielskiej, pozwalające na tworzenie bezpieczniejszego środowiska cyfrowego dla dzieci. Wszystkie te nowości, łączące zaawansowane wnioskowanie lokalne z chmurowym, trafią do rąk deweloperów już dzisiaj, a ogólnodostępna wersja beta pojawi się jesienią. Zamiast silić się na efektowne prezentacje w przeglądarkach, firma konsekwentnie dostarcza funkcje, które przeciętny użytkownik odczuje podczas codziennego korzystania z telefonu.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" class="news-title">
+                                            Anthropic debiutuje z Claude Fable 5 i superbezpiecznym Mythos 5
+                                        </a>
+                                        <div class="news-desc">
+                                            Anthropic zaprezentowało dwa nowe modele z najwyższej półki wydajnościowej – Claude Fable 5 przeznaczony do ogólnego użytku oraz pozbawiony części barier bezpieczeństwa model Mythos 5, stworzony z myślą o cyberdefensorach we współpracy z rządem USA. Oba warianty oferują niespotykaną dotąd autonomię i potężne możliwości programistyczne, radząc sobie m.in. z ekspresowymi, całościowymi migracjami ogromnych baz kodu. Twórcy zdecydowali się na odważny krok obniżenia cen o połowę względem wersji zapowiadanych, ustalając stawki na poziomie 10 dolarów za milion tokenów wejściowych. 
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.aboutamazon.com/news/retail/design-merch-with-ai-alexa-for-shopping" class="news-title">
+                                            Amazon wprowadza projektowanie ubrań z AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Amazon udostępnił nową funkcję w asystencie Alexa for Shopping, która pozwala użytkownikom na samodzielne projektowanie unikalnych nadruków na ubraniach i kubkach przy użyciu generatywnego AI. Wystarczy opisać słownie swój pomysł (np. "buldog francuski w stroju astronauty"), a system w kilka sekund generuje gotową grafikę, dopasowuje jej rozdzielczość i pozwala nanieść ją na wybrany produkt z oferty Merch on Demand. Całość jest w pełni zintegrowana z systemem zamówień Amazona, dzięki czemu spersonalizowany T-shirt czy bluza trafiają do produkcji i zostają dostarczone do klienta w ramach szybkiej wysyłki Prime. Sprytny krok w stronę monetyzacji generatywnego AI w handlu detalicznym, który eliminuje barierę umiejętności graficznych i zamienia luźne, humorystyczne pomysły użytkowników w gotowe, fizyczne produkty w ułamku sekundy.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://x.com/ChatGPTapp/status/2062944254591430917" class="news-title">
+                                            ChatGPT na przeglądarki zyskuje funkcję wysyłania e-maili bezpośrednio z okna edycji
+                                        </a>
+                                        <div class="news-desc">
+                                            OpenAI ogłosiło nową funkcję, która umożliwia użytkownikom wersji webowej wysyłanie wiadomości e-mail bezpośrednio z bloków edycyjnych. Dzięki temu rozwiązaniu nie trzeba już kopiować wygenerowanej i dopracowanej treści maila do zewnętrznego klienta poczty, takiego jak Gmail czy Outlook. Cały proces – od przygotowania szkicu, przez nanoszenie poprawek, aż po ostateczną wysyłkę – odbywa się wewnątrz jednego interfejsu konwersacyjnego. Od jakiegoś czasu pojawiają się przecieki, że OpenAI chce stworzyć z ChatGPT superaplikację — wdrożenie takiej funkcjonalności jest jednym z częstszych przykładów użycia AI wśród ludzi.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/" class="news-title">
+                                            Google wprowadza Gemini 3.5 Live Translate – natychmiastowe tłumaczenie mowy w czasie rzeczywistym
+                                        </a>
+                                        <div class="news-desc">
+                                            Google oficjalnie ogłosiło udostępnienie Gemini 3.5 Live Translate, oferującego naturalne tłumaczenie mowy w czasie zbliżonym do rzeczywistego. Nowa funkcja trafia bezpośrednio do Google AI Studio, Google Translate oraz Google Meet, ułatwiając płynną komunikację głosową między różnymi językami. Technologia opiera się na zaawansowanym przetwarzaniu kontekstu i intonacji, co pozwala na zachowanie naturalnego tonu wypowiedzi i emocji rozmówcy. To świetna innowacja, która realnie przybliża nas do usunięcia barier językowych w codziennej pracy i na spotkaniach biznesowych. Wdrożenie tego rozwiązania bezpośrednio do popularnych narzędzi biurowych Google daje ogromną przewagę nad niszowymi aplikacjami do tłumaczeń, rewolucjonizując współpracę w międzynarodowych zespołach.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.google/innovation-and-ai/products/notebooklm/better-research-notebooklm/" class="news-title">
+                                            Google znacząco ulepsza NotebookLM – teraz z obsługą kodu, nowymi formatami i przeszukiwaniem sieci
+                                        </a>
+                                        <div class="news-desc">
+                                            Google wprowadziło potężną aktualizację do NotebookLM, przenosząc narzędzie na modele Gemini 3.5 oraz Antigravity. Każdy notatnik został wyposażony w bezpieczny komputer w chmurze, dzięki czemu NotebookLM może pisać i uruchamiać kod, aby przeprowadzać zaawansowane analizy danych i tworzyć wykresy. Dodatkowo użytkownicy mogą teraz generować i pobierać pliki w wielu nowych formatach, takich jak raporty PDF, arkusze kalkulacyjne budżetów czy prezentacje. Bardzo przydatną nowością jest też możliwość rozpoczęcia pracy od luźnych pomysłów – AI potrafi samodzielnie przeszukać sieć i pomóc w zbudowaniu bazy wiarygodnych źródeł. Zmienia to aplikację z prostego narzędzia do podsumowywania dokumentów w pełnoprawne środowisko badawczo-analityczne dla profesjonalistów.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://techcrunch.com/2026/06/04/is-silicon-valley-ready-to-put-robots-in-peoples-homes-hello-robot-is/" class="news-title">
+                                            Hello Robot wprowadza Stretch 4 – robotyczny asystent domowy
+                                        </a>
+                                        <div class="news-desc">
+                                            Startup Hello Robot zaprezentował czwartą wersję swojego asystenta domowego Stretch 4, który w przeciwieństwie do humanoidalnych konstrukcji konkurencji, stawia na skrajny minimalizm – teleskopowe ramię z chwytakiem osadzone na mobilnej bazie. Urządzenie zostało zaprojektowane z myślą o pracy w realnych domach, pomagając osobom z niepełnosprawnościami w odzyskiwaniu samodzielności przy prostych, codziennych czynnościach, np. czyszczeniu zębów czy samodzielnym jedzeniu. Strategia firmy opiera się na zbieraniu cennych godzin pracy w rzeczywistych warunkach, co pozwala na gromadzenie unikalnych danych szkoleniowych, których nie da się kupić ani zsyntetyzować w laboratorium. Niezwykle pragmatyczne i poruszające podejście do robotyki, które pokazuje, że prawdziwa wartość sztucznej inteligencji leży w niesieniu realnej pomocy, a nie w budowaniu efektownych, ale niepraktycznych produktów.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://manus.im/blog/manus-shopify-connector" class="news-title">
+                                            Manus wprowadza integrację z Shopify – zarządzaj sklepem za pomocą czatu
+                                        </a>
+                                        <div class="news-desc">
+                                            Platforma Manus ogłosiła oficjalne wdrożenie bezpośredniej integracji z Shopify, co pozwala na budowanie, prowadzenie i rozwijanie e-sklepu w całości z poziomu jednego okna czatu. Od teraz użytkownicy mogą poprosić autonomicznego agenta Manus o stworzenie sklepu od zera, automatyczne zaimportowanie i uporządkowanie katalogu produktów czy zaplanowanie i uruchomienie kampanii marketingowych. Agent potrafi również samodzielnie analizować wyniki sprzedaży, generować raporty finansowe oraz obsługiwać powtarzające się pytania od klientów, komunikując się bezpośrednio z API Shopify. Wkrótce prowadzenie sklepu internetowego może sprowadzać się do nadzorowania wirtualnego menedżera, który wykonuje za nas całą żmudną, codzienną pracę.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://about.fb.com/news/2026/06/meta-business-agent/" class="news-title">
+                                            Meta wprowadza Business Agent – autonomicznego asystenta AI dla firm
+                                        </a>
+                                        <div class="news-desc">
+                                            Meta wprowadza Business Agent – autonomicznego asystenta AI dedykowanego dla firm, który ma działać jak „nieskończony zespół” wspierający obsługę klienta na WhatsAppie, Messengerze oraz Instagramie. Narzędzie potrafi odpowiadać na pytania klientów, rekomendować produkty, rezerwować terminy spotkań, a także zamykać sprzedaż bezpośrednio w komunikatorach. Dzięki integracji z systemami takimi jak Shopify czy Zendesk, agenci zyskują dostęp do danych o zamówieniach w czasie rzeczywistym. To wyraźny sygnał, że Meta chce zmonetyzować swoje potężne kanały komunikacyjne za pomocą praktycznego AI, oferując firmom gotowe i łatwe we wdrożeniu rozwiązanie. Dla wielu e-sklepów może to być szybki sposób na zautomatyzowanie powtarzalnego wsparcia bez konieczności budowania własnej infrastruktury od zera.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://niebezpiecznik.pl/post/najglupszy-atak-roku-instagram-wdrozyl-ai-a-hakerzy-przejmowali-nim-konta-uzytkownikow-wystarczylo-poprosic/" class="news-title">
+                                            Najgłupszy atak roku – jak bot AI na Instagramie oddawał konta hakerom
+                                        </a>
+                                        <div class="news-desc">
+                                            Portal Niebezpiecznik opisuje kuriozalną falę kradzieży cennych kont na Instagramie, do których doszło przez bezmyślne wdrożenie bota wsparcia opartego na sztucznej inteligencji. Atakujący, używając prostych komend społecznościowych, przekonywali bota AI, że są prawowitymi właścicielami profilu, a bot bez oporów zmieniał powiązany e-mail i resetował hasła – omijając przy tym zabezpieczenia dwuskładnikowe (2FA). Co gorsza, ofiary próbujące odzyskać swoje profile odbijały się od zautomatyzowanej ściany, ponieważ na supporcie zabrakło żywych ludzi zdolnych zweryfikować problem. To spektakularna i bolesna lekcja bezpieczeństwa, która dobitnie udowadnia, że wdrażanie AI do krytycznych procesów bez mechanizmów kontroli ("human-in-the-loop") oraz podstawowych bezpieczników to proszenie się o katastrofę.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                        <span class="news-tag tag-pl">Polska</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://viktor.com/blog/how-we-built-viktor-around-prompt-caching" class="news-title">
+                                            Jak zaprojektować silnik agentu pod prompt caching – lekcje z produkcji od Viktor
+                                        </a>
+                                        <div class="news-desc">
+                                            Artykuł od twórców asystenta Viktor w porywający sposób wyjaśnia wyzwania kosztowe i architektoniczne związane z długimi wątkami u autonomicznych agentów. Ponieważ API modeli są bezstanowe, każda kolejna interakcja wymaga ponownego przesyłania całej historii konwersacji wraz z definicjami narzędzi, co przy 40 krokach generuje astronomiczne zużycie tokenów rosnące kwadratowo. Rozwiązaniem jest rygorystyczne zaprojektowanie całego systemu pod kątem prompt cachingu – od rezygnacji z dynamicznych schematów narzędzi w promptach na rzecz biblioteki SDK, po inteligentną agregację wątków w oparciu o czas TTL pamięci podręcznej dostawców. Przydatna lektura dla każdego inżyniera budującego produkcyjne systemy agentowe, udowadniająca, że optymalizacja kosztów o 80% wymaga głębokich zmian w architekturze kodu, a nie tylko kosmetycznych poprawek w promptach.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                        <span class="news-tag tag-pl">Polska</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.allegro.tech/2026/06/spec-driven-development-best-practices.html" class="news-title">
+                                            Spec-Driven Development (SDD) w praktyce – najlepsze praktyki inżynieryjne według Allegro
+                                        </a>
+                                        <div class="news-desc">
+                                            Konrad Piechna z Allegro dzieli się doświadczeniami z wdrażania Spec-Driven Development (SDD) w walce z ograniczeniami dzisiejszych agentów kodujących. Tradycyjne, swobodne rozmowy z LLM-ami (tzw. vibe coding) prowadzą często do długu technicznego, niespójności architektury i utraty kontroli nad intencją kodu. Rozwiązaniem jest SDD, czyli podejście, w którym to szczegółowa specyfikacja techniczna (np. OpenAPI czy schemat bazy) stanowi jedyne źródło prawdy i punkt wyjścia dla pracy modelu AI. Tekst udowadnia, że kluczem do sukcesu nie jest lepszy model, ale rygorystyczny proces inżynieryjny i dokładne definiowanie wymagań przed wygenerowaniem choćby jednej linii kodu.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                        <span class="news-tag tag-pl">Polska</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://stackoverflow.blog/2026/06/10/announcing-stack-overflow-for-agents/" class="news-title">
+                                            Stack Overflow dla Agentów – nadchodzi nowa era współdzielenia wiedzy przez AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Stack Overflow ogłasza uruchomienie platformy "Stack Overflow for Agents" w wersji beta, która ma stać się platformą API-first wymiany wiedzy dla autonomicznych agentów kodujących. Przejście od tradycyjnego programowania do sterowania agentami ujawniło tzw. "Ephemeral Intelligence Gap" – sytuację, w której niezależne boty w kółko rozwiązują te same błędy i kaskadowo marnują kosztowny budżet tokenów, ponieważ ich kontekst jest czyszczony po każdej sesji. Nowy system pozwoli agentom na błyskawiczne przeszukiwanie i publikowanie sprawdzonych rozwiązań w czasie rzeczywistym, z ludzkimi moderatorami w roli ostatecznych weryfikatorów jakości. Niezwykle logiczny ruch ze strony Stack Overflow, który próbuje odzyskać centralne miejsce w ekosystemie programistycznym poprzez dostosowanie swojej bazy wiedzy do maszynowych odbiorców.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.youtube.com/watch?v=pLwB_63yUBY" class="news-title">
+                                            Gemma Playground: Robot Duck – lokalne modele Gemma 4 w robotyce
+                                        </a>
+                                        <div class="news-desc">
+                                            Google przedstawia miniaturowego robota Open Duck Mini działającego całkowicie autonomicznie. Inżynierowie Google pokazali, jak te małe, drukowane w technologii 3D urządzenia uruchamiają najnowszy model AI Gemma 4 w 100% lokalnie na sprzęcie Raspberry Pi 5 oraz NVIDIA Jetson Orin Nano. Dzięki lekkiemu lokalnemu stosowi oprogramowania (m.in. Parakeet do zamiany mowy na tekst oraz Kokoro do syntezy głosu), robot potrafi słuchać, patrzeć i prowadzić płynną konwersację bez dostępu do internetu. Namacalny dowód na to, że zaawansowane możliwości agentyczne schodzą „pod strzechy” i na tanie mikrokontrolery/komputery jednopłytkowe. Tego typu projekty pokazują, że przyszłość robotyki i AI to nie tylko potężne, chmurowe farmy serwerowe, lecz sprytne, lokalne systemy wbudowane, które deweloperzy mogą z powodzeniem replikować we własnym domu.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                        <span class="news-tag">2 min 11 s</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude" class="news-title">
+                                            Jak Anthropic automatyzuje 95% analiz danych wewnątrz firmy za pomocą Claude
+                                        </a>
+                                        <div class="news-desc">
+                                            Zespół Anthropic podzielił się niezwykle ciekawym wglądem w to, jak ich wewnętrzne zespoły korzystają z modeli Claude do analizy danych biznesowych. Okazuje się, że aż 95% zapytań analitycznych w firmie jest obecnie w pełni zautomatyzowanych przez sztuczną inteligencję, osiągając przy tym niemal 95-procentową dokładność. Twórcy Claude otwarcie piszą o pułapkach bezrefleksyjnego dawania AI bezpośredniego dostępu do baz danych bez odpowiedniego kontekstu i mechanizmów weryfikacji, co zazwyczaj kończy się halucynacjami i błędnymi wyliczeniami. Zamiast tego wdrażają oni trójwarstwowy stos agentowy, w którym modele operują na starannie wyselekcjonowanych semantycznie danych i przechodzą automatyczne testy poprawności wygenerowanego kodu SQL. 
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://newsletter.eng-leadership.com/p/how-openai-codex-tech-lead-does-ai" class="news-title">
+                                            Jak lider techniczny projektu OpenAI Codex pracuje ze sztuczną inteligencją
+                                        </a>
+                                        <div class="news-desc">
+                                            Artykuł przybliża inżynieryjną filozofię pracy liderów technicznych OpenAI przy projekcie Codex, skupiającą się na maksymalnej prostocie i zasadzie "zero ręcznie pisanego kodu". Zamiast budować przekombinowane przepływy AI, proces opiera się na rygorystycznym cyklu: precyzyjna specyfikacja wymagań, proste promptowanie oraz drobiazgowa weryfikacja wyników przez człowieka. Taka kultura pracy drastycznie zwiększa produktywność i przesuwa rolę inżyniera z pisarza promptów do architekta systemu kontrolującego jakość. Wgląd w to, jak praca w najnowocześniejszych laboratoriach AI wymusza ewolucję tradycyjnego rzemiosła programistycznego w kierunku zarządzania intencją i walidacji efektów.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://web.archive.org/web/20260607163135/https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/" class="news-title">
+                                            Jak sztuczna inteligencja niszczy moją karierę programistyczną – osobisty esej inżyniera
+                                        </a>
+                                        <div class="news-desc">
+                                            Niezwykle poruszający i szczery wpis programisty z 10-letnim stażem, który opisuje stopniową erozję swojej tożsamości zawodowej pod wpływem upowszechnienia LLM. Autor, specjalizujący się w skomplikowanej domenie systemów płatniczych i księgowych, odkrył, że jego unikalna, gromadzona latami wiedza ekspercka (idempotentność transakcji, uzgadnianie sald) została błyskawicznie zrównana z ziemią przez modele językowe, które bez trudu łączą te same kropki. Co więcej, rewolucja narzędzi do automatycznego kodowania sprawiła, że samo pisanie kodu przestało być wartością, a praca inżyniera sprowadza się do bezdusznego nadzorowania generowanych linijek. Ważny głos w dyskusji o kondycji psychicznej programistów, który pokazuje głęboki egzystencjalny niepokój wywołany poczuciem, że lata ciężkiej nauki tracą jakiekolwiek znaczenie rynkowe w zderzeniu z technologią.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.decodingai.com/p/agentic-harness-system-design" class="news-title">
+                                            Jak zaprojektować architekturę agentów AI – dekonstrukcja systemu „Agentic Harness”
+                                        </a>
+                                        <div class="news-desc">
+                                            Paul Iusztin w technicznym przewodniku analizuje architekturę tzw. „uprzęży agentowej” (agentic harness) – czyli zestawu narzędzi, piaskownic, pamięci i systemów uprawnień otaczających rdzeń modelu LLM. Autor zauważa, że podobnie jak same modele, tak i infrastruktura wokół nich ulega gwałtownej standaryzacji w postaci gotowych frameworków pokroju Pydantic AI czy Claude Code. Deweloperzy stają przed kluczowym dylematem architektonicznym: które elementy systemu budować od zera, które jedynie konfigurować, a które brać wprost z półki, by nie marnować zasobów na przepisywanie gotowych piaskownic i pętli narzędziowych. Jedna z najważniejszych i najbardziej praktycznych lekcji inżynierii systemów AI, jaka ukazała się w ostatnim czasie, pokazująca, że unikalna wartość (tzw. fosa biznesowa) leży w warstwie kontekstu i logiki biznesowej, a nie w samym silniku agenta. 
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://addyosmani.com/blog/loop-engineering/" class="news-title">
+                                            Loop Engineering – dlaczego czas ręcznego promptowania dobiega końca
+                                        </a>
+                                        <div class="news-desc">
+                                            Addy Osmani opisuje koncepcję „Loop Engineering”, która zakłada zastąpienie bezpośredniego promptowania modeli przez programistów projektowaniem pętli, które promptują te modele autonomicznie. Tradycyjne wpisywanie instrukcji odchodzi do lamusa na rzecz pięciu kluczowych modułów architektonicznych, które można znaleźć m.in. w Claude Code czy Codex. W tym podejściu programista definiuje cel nadrzędny, a system AI sam iteruje i testuje rozwiązania aż do uzyskania pożądanego rezultatu. To przesunięcie paradygmatu w inżynierii oprogramowania, które zmienia rolę programisty z „piszącego kod” w „projektanta procesów”. Musimy jednak pamiętać o ryzyku niekontrolowanego zużycia tokenów, które w pętlach autonomicznych może błyskawicznie drenować budżet projektu.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://newsletter.pragmaticengineer.com/p/the-job-market-in-2026-part-2" class="news-title">
+                                            Rynek pracy programistów w 2026 roku – nowa, bardziej wymagająca rzeczywistość
+                                        </a>
+                                        <div class="news-desc">
+                                            Gergely Orosz analizuje kondycję rynku pracy w branży IT w 2026 roku, wskazując na "nową normalność" po okresie pandemii i masowych korekt zatrudnienia. Firmy drastycznie podniosły wymagania wydajnościowe, kładąc nacisk na stabilność i zyskowność, co przełożyło się na trudniejsze negocjacje płacowe oraz wolniejszy rozwój kariery. W architekturze systemów obserwuje się odwrót od skomplikowanych mikroserwisów na rzecz prostszych monolitów oraz szerokie wdrażanie koncepcji "shift left", przenoszącej więcej odpowiedzialności bezpośrednio na programistów. Dzisiejszy rynek premiuje pragmatycznych budowniczych, którzy potrafią dostarczyć realną wartość biznesową przy minimalnych kosztach infrastruktury.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.wsj.com/tech/google-to-pay-spacex-nearly-1-billion-a-month-in-cloud-computing-deal-788d8aaa?st=fnHdHA" class="news-title">
+                                            Google zapłaci SpaceX prawie miliard dolarów miesięcznie za moc obliczeniową AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Według oficjalnych dokumentów giełdowych SpaceX, Google zawarło gigantyczny kontrakt na wynajem mocy obliczeniowej centrów danych od firmy Elona Muska, opiewający na kwotę 920 milionów dolarów miesięcznie. Umowa ma obowiązywać od października 2026 do czerwca 2029 roku i obejmuje dostęp do infrastruktury wyposażonej w co najmniej 110 tysięcy najnowocześniejszych układów graficznych od firmy Nvidia. Ten bezprecedensowy zastrzyk gotówki tworzy dla SpaceX potężne, stałe źródło przychodów w obszarze sztucznej inteligencji bezpośrednio przed planowanym wejściem spółki na giełdę (IPO). SpaceX przestało być jedynie firmą rakietową, a stało się kluczowym, suwerennym graczem na rynku infrastruktury AI.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://x.com/globalmarketss/status/2063297364761227283" class="news-title">
+                                            Agentic AI wywołuje boom na aplikacje mobilne, ale brakuje im zaangażowania użytkowników
+                                        </a>
+                                        <div class="news-desc">
+                                            Liczba nowo wydawanych aplikacji na system iOS wzrosła niemal dwukrotnie od czasu upowszechnienia autonomicznych asystentów programistycznych, jednak liczba programów zdobywających realną popularność pozostaje bez zmian. Analiza 100 tysięcy repozytoriów na GitHubie wykazała, że narzędzia agentowe zwiększyły aktywność programistyczną o 180 procent, ale zysk ten kurczy się do zaledwie 30 procent na etapie faktycznych wdrożeń, z kolei aż 51 procent commitowanego kodu jest generowane z pomocą sztucznej inteligencji. To trzeźwe i ważne badanie, które obnaża kluczowy problem dzisiejszej rewolucji AI – łatwość produkcji nie przekłada się automatycznie na jakość i użyteczność. Choć dzięki sztucznej inteligencji programowanie stało się łatwiejsze i tańsze niż kiedykolwiek, rynek jest obecnie zalewany masowo generowanymi aplikacjami bez unikalnej wartości, które nie są w stanie utrzymać uwagi użytkownika.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.bbc.com/news/articles/crrpggegwe0o" class="news-title">
+                                            Cambridge tworzy pierwszą szczepionkę zaprojektowaną przez AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Naukowcy z Uniwersytetu w Cambridge przeprowadzili pierwsze w historii próby kliniczne na ludziach szczepionki, której kluczowy element – superantygen – został w pełni zaprojektowany przez algorytmy sztucznej inteligencji. Zamiast opierać się na konkretnym, istniejącym szczepie wirusa, AI przeanalizowała sekwencje genetyczne całej rodziny koronawirusów, by stworzyć uniwersalny wzorzec uodparniający organizm na wszelkie przyszłe mutacje i warianty odzwierzęce. To nowatorskie podejście ma pozwolić medycynie wyprzedzić ewolucję patogenów i zapobiegać epidemiom, zanim w ogóle wybuchną, a zespół pracuje już nad podobnymi preparatami przeciwko grypie i wirusowi Ebola. Pokazuje to, że wartość sztucznej inteligencji leży nie tylko w generowaniu tekstów czy obrazków, lecz w zdolności dostrzegania wzorców tam, gdzie ludzki umysł jest bezradny wobec ogromu danych.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.gadgetreview.com/chatgpt-becomes-fastest-app-to-hit-1-billion-users-as-claude-surges-in-ai-race" class="news-title">
+                                            ChatGPT przekracza miliard użytkowników – najszybszy wzrost w historii aplikacji
+                                        </a>
+                                        <div class="news-desc">
+                                            ChatGPT zapisał się na kartach historii jako najszybciej rozwijająca się aplikacja, osiągając w maju kosmiczny próg miliarda aktywnych użytkowników miesięcznie zaledwie trzy lata od swojej premiery. Wynik ten bije na głowę dotychczasowych rekordzistów, takich jak TikTok, Instagram czy YouTube, dowodząc, że sztuczna inteligencja zyskała status codziennej infrastruktury użytkowej. Jednocześnie na horyzoncie wyrasta potężny rywal – Claude od Anthropic, który zanotował imponujący wzrost o 640 procent rok do roku, docierając do 56 milionów użytkowników i zaczynając podbierać czas zaangażowania liderowi. Obie firmy szykują się już do wejścia na giełdę (IPO), wykorzystując te gigantyczne bazy użytkowników i 50 milionów płatnych subskrypcji ChatGPT jako główny argument dla inwestorów. Ta rywalizacja to doskonała wiadomość dla użytkowników, ponieważ realna konkurencja ze strony Claude wymusi na OpenAI dalsze innowacje i zapobiegnie monopolizacji rynku, który stał się fundamentem nowoczesnej pracy.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://foundationinc.co/lab/ai-visibility-off-site-sources/" class="news-title">
+                                            Dlaczego nie zdobędziesz widoczności w AI bez wpływu na zewnętrzne źródła
+                                        </a>
+                                        <div class="news-desc">
+                                            Agencja marketingowa Foundation opublikowała raport analizujący źródła, z których silniki wyszukiwania AI – takie jak Perplexity czy podsumowania Google – czerpią informacje i linki przy odpowiedziach na zapytania biznesowe (B2B). Dane są bezwzględne dla tradycyjnego podejścia do SEO: aż 90% cytowań generowanych przez sztuczną inteligencję pochodzi ze źródeł, których marki same nie kontrolują. AI ufa przede wszystkim niezależnym portalom branżowym, platformom recenzenckim oraz dyskusjom społeczności na Reddicie czy Quorze, traktując własne strony firmowe jako mniej obiektywne. Oznacza to, że nadchodząca era Generative Engine Optimization (GEO) będzie wymagała od nas odejścia od klasycznego pozycjonowania własnej domeny na rzecz szerokiej obecności i budowania reputacji w całej sieci. To bardzo bolesne przebudzenie dla wielu marek, które dotychczas sądziły, że wystarczy dobrze napisać teksty na własnym blogu, by zaistnieć w świecie asystentów AI.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://techxplore.com/news/2026-06-europe-taxis.html" class="news-title">
+                                            Europa otwiera się na autonomiczne taksówki – Unia upraszcza przepisy testowe
+                                        </a>
+                                        <div class="news-desc">
+                                            Podczas gdy robotaksówki przeżywają prawdziwy rozkwit w Chinach i USA, Europa wreszcie przygotowuje się do przyspieszenia własnych wdrożeń dzięki uproszczeniu unijnych przepisów. Nowe unijne ramy prawne mają zlikwidować konieczność uzyskiwania osobnych pozwoleń w każdym państwie członkowskim, co dotychczas drastycznie hamowało rozwój tej technologii na Starym Kontynencie. Pierwsze duże testy ruszają w Londynie, Monachium, Madrycie, Zagrzebiu czy Szwajcarii, a udział w nich biorą tacy giganci jak Waymo, Pony.ai, Uber, Wayve oraz Baidu. To istotny i spóźniony krok dla europejskiej konkurencyjności, ponieważ gromadzenie operacyjnych kilometrów w specyficznych, ciasnych europejskich miastach jest kluczem do stworzenia bezpiecznych modeli autonomicznej jazdy.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.batimes.com.ar/news/argentina/milei-promises-tech-firms-new-laws-and-unregulated-ai-in-argentina.phtml" class="news-title">
+                                            Javier Milei kusi gigantów technologicznych bezregulacyjnym AI w Argentynie
+                                        </a>
+                                        <div class="news-desc">
+                                            Prezydent Argentyny Javier Milei opublikował w Financial Times artykuł, w którym zapowiada stworzenie specjalnych ram prawnych chroniących rozwój sztucznej inteligencji przed „śmiertelną ręką przedwczesnych regulacji”. Jedną z najbardziej nowatorskich propozycji jest wprowadzenie nowej formy prawnej – podmiotu niebędącego człowiekiem („non-human corporation”), czyli spółek zarządzanych w pełni autonomicznie przez roboty lub agenty AI. Milei chce, aby Buenos Aires stało się dla sztucznej inteligencji tym, czym Amsterdam był w XVII wieku dla światowego handlu morskiego. Choć niesie to za sobą ogromne ryzyko prawne i etyczne związane chociażby z odpowiedzialnością za błędy takich spółek, to argentyńska propozycja może stać się realnym klinem wbitym w globalne, coraz bardziej restrykcyjne podejście do nadzoru nad algorytmami.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.cbc.ca/news/politics/carney-ai-strategy-9.7223236" class="news-title">
+                                            Kanada ogłasza wartą 2 miliardy dolarów strategię AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Premier Kanady Mark Carney zaprezentował oficjalną, długofalową strategię rozwoju sztucznej inteligencji, zabezpieczając na jej realizację ponad 2 miliardy dolarów rządowego finansowania. Ambitny plan zakłada m.in. zwiększenie adopcji AI w kanadyjskich firmach z obecnych 12 do aż 60 procent do 2034 roku oraz budowę własnego, suwerennego superkomputera o światowej klasie wydajności. Program kładzie też ogromny nacisk na edukację obywateli, obiecując darmowe szkolenia z zakresu cyfrowego rzemiosła dla miliona studentów oraz stworzenie 250 tysięcy nowych miejsc pracy do 2031 roku. Inicjatywa spotkała się jednak z falą ostrej krytyki ze strony opozycji, która uważa te obietnice za skrajnie nierealistyczne i ostrzega przed masowymi zwolnieniami pracowników w tradycyjnych sektorach gospodarki. To bardzo ciekawy przypadek, w którym państwo próbuje aktywnie sterować rewolucją algorytmiczną za pomocą potężnych subsydiów, zamiast zostawiać wszystko wolnemu rynkowi. Czas pokaże, czy gigantyczne środki publiczne wystarczą, by przekształcić tradycyjną gospodarkę surowcową w nowoczesny, technologiczny hub bez wywoływania kryzysu społecznego.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://openai.com/index/openai-submits-confidential-s-1/" class="news-title">
+                                            OpenAI poufnie składa wniosek S-1 o wejście na giełdę w USA
+                                        </a>
+                                        <div class="news-desc">
+                                            OpenAI oficjalnie poinformowało o poufnym złożeniu projektu formularza rejestracyjnego S-1 do amerykańskiej Komisji Papierów i Giełd (SEC), co stanowi pierwszy krok na drodze do debiutu giełdowego (IPO). Firma zdecydowała się na publiczne ogłoszenie tego faktu, spodziewając się nieuchronnych wycieków informacji do mediów, choć zastrzega, że ostateczny moment wejścia na giełdę nie został jeszcze ustalony. Decyzja ta wiąże się ze skomplikowanym bilansem zysków i strat – bycie spółką prywatną ułatwia realizację ambitnych planów badawczych, jednak status spółki publicznej daje znacznie szybszy dostęp do gigantycznego kapitału. Wejście OpenAI na giełdę to będzie istotny moment w świecie finansów i technologii, który zdefiniuje rynkową wycenę całej branży sztucznej inteligencji na lata i zmusi konkurentów do podjęcia podobnych kroków.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://sherwood.news/tech/robots-small-business/" class="news-title">
+                                            Robot-pracownik w abonamencie – jak automatyzacja ratuje małe firmy przed brakiem rąk do pracy
+                                        </a>
+                                        <div class="news-desc">
+                                            Artykuł opisuje dynamicznie rozwijający się model biznesowy "Robotics-as-a-Service" (RaaS), który pozwala małym i średnim przedsiębiorstwom na wynajem robotów za stałą miesięczną opłatę abonamentową. Zamiast ogromnych, sześciocyfrowych inwestycji początkowych, małe fabryki czy magazyny mogą "zatrudnić" robota pakującego lub spawalniczego już za ułamek kosztów tradycyjnego pracownika, co skutecznie rozwiązuje dotkliwy problem braku wykwalifikowanej kadry fizycznej w USA. Co ważne, technologia ta nie odbiera ludziom pracy, lecz pozwala na przesunięcie pracowników do bardziej wymagających i lepiej płatnych zadań, zwiększając przy tym przepustowość produkcji. To  demokratyzacja zaawansowanej automatyzacji, która dotychczas była zarezerwowana wyłącznie dla gigantycznych korporacji z wielkimi budżetami R&D. 
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://chatgptpro.substack.com/p/hiroki-tomiyasu" class="news-title">
+                                            Rolnik z Hokkaido automatyzuje swoją pracę na roli przy pomocy ChatGPT Pro
+                                        </a>
+                                        <div class="news-desc">
+                                            Wyobraź sobie japońskiego rolnika z Hokkaido, który zarządza stoma hektarami upraw brokułów, dyni i soi, a w wolnym czasie koduje i buduje czujniki IoT wspierane przez ChatGPT Pro. Hiroki Tomiyasu, były urzędnik państwowy bez wykształcenia rolniczego czy inżynieryjnego, traktuje AI jako ultra-utalentowanego inżyniera pracującego ramię w ramię z nim. Za pomocą modeli językowych stworzył m.in. systemy monitorowania pól oparte na danych satelitarnych, sterowniki do szklarni oparte na ESP32 czy narzędzia diagnozujące choroby warzyw na podstawie zdjęć. To niesamowity przykład tego, jak sztuczna inteligencja wyrównuje szanse i daje zwykłym ludziom bez zaplecza programistycznego możliwości, które dotychczas były zarezerwowane dla wielkich korporacji. Takie oddolne, ultrapraktyczne zastosowania technologii fascynują o wiele bardziej niż teoretyczne debaty o AGI.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f9f9f9; border-top: 1px solid #eeeeee;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 25px 20px; text-align: center;">
+
+
+                            <p style="margin: 0 0 15px 0; font-size: 15px; color: #333;">
+                                <img src="https://img.icons8.com/ios-filled/50/007bff/speech-bubble--v1.png" width="16"
+                                    height="16"
+                                    style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                Co myślisz o tym wydaniu?
+                                <a href="https://forms.gle/rjQ77WH2jN2beYfz8"
+                                    style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Zostaw
+                                    feedback</a>
+                            </p>
+
+
+                            <div style="font-size: 15px; color: #333;">
+                                <div style="margin-bottom: 10px;">
+                                    <img src="https://img.icons8.com/ios-filled/50/007bff/forward-arrow.png" width="16"
+                                        height="16"
+                                        style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                    Podoba Ci się treść newslettera?
+                                    <a href="{$forward}"
+                                        style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Prześlij
+                                        dalej</a>
+                                </div>
+
+                                <div style="margin-top: 15px; font-size: 14px; color: #666;">
+                                    lub udostępnij: <br>
+
+
+                                    <div style="margin-top: 8px;">
+                                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={$url}"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/linkedin.png" alt="LI" width="28"
+                                                height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://twitter.com/intent/tweet?url={$url}&text=Polecam%20newsletter%20AI!"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                alt="X" width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u={$url}" target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/facebook-new.png" alt="FB"
+                                                width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px; font-size: 16px; line-height: 1.6; border-bottom: 1px solid #eeeeee;">
+                            To tyle na dzisiaj. Dzięki, że jesteś ze mną! <br><br>
+                            Udanego tygodnia,<br>
+                            <strong>Kuba</strong>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td width="90" valign="top" class="author-col" style="padding-right: 20px;">
+                                        <img src="https://jakubpradzynski.pl/images/me.jpg" alt="Zdjęcie autora"
+                                            width="90" height="90" style="border-radius: 50%; display: block;"
+                                            class="author-img">
+                                    </td>
+
+                                    <td valign="middle" class="author-col">
+                                        <p style="margin: 0 0 10px 0; font-size: 14px; color: #333; line-height: 1.5;">
+                                            <strong>Jakub Prądzyński</strong><br>
+                                            Engineering Manager w Allegro<br>
+                                        </p>
+
+                                        <table border="0" cellpadding="0" cellspacing="0" class="social-container">
+                                            <tr>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.linkedin.com/in/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/linkedin.png"
+                                                            alt="LinkedIn" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://x.com/PradzynskiJakub" target="_blank">
+                                                        <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                            alt="X" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.facebook.com/jakub.pradzynski" target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/facebook-new.png"
+                                                            alt="Facebook" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.instagram.com/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/fluency/48/instagram-new.png"
+                                                            alt="Instagram" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://jakubpradzynski.pl" target="_blank"
+                                                        title="Strona WWW">
+                                                        <img src="https://img.icons8.com/color/48/domain--v1.png"
+                                                            alt="WWW" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f4f4f4;">
+                    <tr>
+                        <td align="center"
+                            style="padding: 30px 20px; color: #888888; font-size: 12px; line-height: 18px;">
+                            <p style="margin: 0 0 10px 0;">
+                                © 2026 <a href="https://przegladai.news"
+                                    style="color: #888888; text-decoration: none;">PrzeglądAI</a>. Wszystkie prawa
+                                zastrzeżone.
+                            </p>
+                            <p style="margin: 0;">
+                                <a href="{$unsubscribe}" style="color: #888888; text-decoration: underline;">Wypisz się
+                                    z listy</a>
+                                <span style="margin: 0 5px;">|</span>
+                                Powered by <a href="https://hvb.software/"
+                                    style="color: #888888; text-decoration: none;">HVB.software</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

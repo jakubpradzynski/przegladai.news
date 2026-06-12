@@ -23,6 +23,15 @@ def main():
     with open(f"public/issues/{prev_file}.html", 'r', encoding='utf-8') as f:
         html = f.read()
 
+    # Wstrzyknięcie stylu dla tagu paywall, jeśli nie istnieje
+    if ".tag-paywall" not in html:
+        css_paywall = """
+        .tag-paywall {
+            background-color: #f5f5f5;
+            color: #616161;
+        }"""
+        html = html.replace('.tag-pl {', css_paywall.strip() + '\n\n        .tag-pl {')
+
     # Top 3 (opcjonalnie)
     top3_html = ""
     for i in range(min(3, len(articles))):
@@ -49,6 +58,7 @@ def main():
             if "nowości" in t.lower(): tag_class += " tag-news"
             elif "bliżej" in t.lower(): tag_class += " tag-tech"
             elif "polska" in t.lower(): tag_class += " tag-pl"
+            elif "paywall" in t.lower(): tag_class += " tag-paywall"
             tags_html += f'<span class="{tag_class}">{t}</span>\n                                        '
             
         if a.get("Czas"):
