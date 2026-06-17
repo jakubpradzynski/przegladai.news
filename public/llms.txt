@@ -35,6 +35,7 @@ Na naszej stronie znajdziesz:
 - **Wydanie #22**: "Robot sprzątający Gatsby, raport Stack Overflow i koszt orkiestracji AI" (29-05-2026) - https://przegladai.news/wydanie-22-robot-sprzatajacy-gatsby-raport-stack-overflow-i-koszt-orkiestracji-ai
 - **Wydanie #23**: "Buffett inwestuje w Google, Claude Opus 4.8 i ElevenLabs w Warszawie" (05-06-2026) - https://przegladai.news/wydanie-23-buffett-inwestuje-w-google-claude-opus-48-i-elevenlabs-w-warszawie
 - **Wydanie #24**: "Plany Apple na AI z WWDC26, Claude Fable 5 i sukces ICEYE" (12-06-2026) - https://przegladai.news/wydanie-24-plany-apple-na-ai-z-wwdc26-claude-fable-5-i-sukces-iceye
+- **Wydanie #25**: "IPO SpaceX, przejęcie Cursora oraz zmiany w Google Polska" (19-06-2026) - https://przegladai.news/wydanie-25-ipo-spacex-przejecie-cursora-oraz-zmiany-w-google-polska
 
 ## Kontakt
 Strona internetowa: https://przegladai.news
