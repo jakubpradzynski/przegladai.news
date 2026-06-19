@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '25',
+    slug: 'wydanie-25-ipo-spacex-przejecie-cursora-oraz-zmiany-w-google-polska',
+    title: 'Wydanie #25: IPO SpaceX, przejęcie Cursora oraz zmiany w Google Polska',
+    date: '19-06-2026',
+    htmlUrl: '/issues/25.html'
+  },
+  {
     id: '24',
     slug: 'wydanie-24-plany-apple-na-ai-z-wwdc26-claude-fable-5-i-sukces-iceye',
     title: 'Wydanie #24: Plany Apple na AI z WWDC26, Claude Fable 5 i sukces ICEYE',
