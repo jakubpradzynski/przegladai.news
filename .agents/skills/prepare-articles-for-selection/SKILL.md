@@ -12,7 +12,7 @@ Twoim zadaniem jest przygotowanie linków do dalszej obróbki w Antigravity.
 
 ## Krok 1 — Przygotowanie szkieletu CSV
 1. Uruchom skrypt `prepare_skeleton.py` (korzystając z `run_shell_command`), aby wyczyścić linki, usunąć duplikaty i stworzyć szkielet CSV (domyślnie z pliku `data.csv` do `prepared_data.csv`):
-   `python3 .gemini/skills/prepare-articles-for-selection/scripts/prepare_skeleton.py data.csv prepared_data.csv`
+   `python3 .agents/skills/prepare-articles-for-selection/scripts/prepare_skeleton.py data.csv prepared_data.csv`
 
 ## Krok 2 — Przygotowanie promptu dla Antigravity
 1. Poinformuj użytkownika, że szkielet pliku `prepared_data.csv` został wygenerowany.

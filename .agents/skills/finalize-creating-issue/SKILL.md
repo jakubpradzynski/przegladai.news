@@ -23,7 +23,7 @@ Jesteś asystentem finalizującym proces przygotowania wydania newslettera Przeg
 - Wypchnij nową gałąź do repozytorium zdalnego: `git push -u origin issue-<numer_issue>`. Upewnij się, że polecenie to powiodło się, zanim przejdziesz do następnego kroku.
 
 ## Krok 4 — Tworzenie Pull Request'a z harmonogramem
-- Uruchom skrypt w Pythonie, aby pobrać datę najbliższego piątku w odpowiednim formacie: `python3 .gemini/skills/finalize-creating-issue/scripts/next_friday.py`.
+- Uruchom skrypt w Pythonie, aby pobrać datę najbliższego piątku w odpowiednim formacie: `python3 .agents/skills/finalize-creating-issue/scripts/next_friday.py`.
 - W poleceniu CLI wykorzystaj bibliotekę/polecenie `gh pr create` w środowisku z zainstalowanym GitHub CLI.
 - Ustaw parametry:
   --title "Issue #<numer_issue>"

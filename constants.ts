@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '26',
+    slug: 'wydanie-26-claude-tag-na-slacku-orkiestrator-z-japonii-i-nowa-era-androida',
+    title: 'Wydanie #26: Claude Tag na Slacku, orkiestrator z Japonii i nowa era Androida',
+    date: '26-06-2026',
+    htmlUrl: '/issues/26.html'
+  },
+  {
     id: '25',
     slug: 'wydanie-25-ipo-spacex-przejecie-cursora-oraz-zmiany-w-google-polska',
     title: 'Wydanie #25: IPO SpaceX, przejęcie Cursora oraz zmiany w Google Polska',
