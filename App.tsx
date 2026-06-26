@@ -1,73 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { Hero } from './components/Hero';
-import { Archive } from './components/Archive';
-import { Author } from './components/Author';
-import { PostView } from './components/PostView';
-import { Footer } from './components/Footer';
-import { Navbar } from './components/Navbar';
-import { SubscribeModal } from './components/SubscribeModal';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
 
-interface HomePageProps {
-  onSubscribeClick: () => void;
-}
+const SUBSTACK_BASE = 'https://przegladai.substack.com';
 
-const HomePage: React.FC<HomePageProps> = ({ onSubscribeClick }) => {
-  const location = useLocation();
-
+const RootRedirect: React.FC = () => {
   useEffect(() => {
-    if (location.state && (location.state as any).scrollTo === 'archive') {
-      const element = document.getElementById('archive');
-      if (element) {
-        // Niewielkie opóźnienie, aby upewnić się, że DOM jest gotowy
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
-    }
-  }, [location]);
-
-  return (
-    <>
-      <Hero onSubscribeClick={onSubscribeClick} />
-      <Archive />
-      <Author />
-    </>
-  );
+    window.location.replace(SUBSTACK_BASE + '/');
+  }, []);
+  return null;
 };
 
-const PixelTracker: React.FC = () => {
-  const location = useLocation();
-
+const SlugRedirect: React.FC = () => {
+  const { slug } = useParams<{ slug: string }>();
   useEffect(() => {
-    // Meta Pixel PageView tracking
-    if (typeof (window as any).fbq === 'function') {
-      (window as any).fbq('track', 'PageView');
-    }
-  }, [location.pathname]);
-
+    window.location.replace(`${SUBSTACK_BASE}/p/${slug}`);
+  }, [slug]);
   return null;
 };
 
 const App: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <Router>
-      <PixelTracker />
-      <div className="min-h-screen bg-white flex flex-col font-sans selection:bg-blue-100 selection:text-blue-900">
-        <Navbar onSubscribeClick={() => setIsModalOpen(true)} />
-        <SubscribeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-        
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<HomePage onSubscribeClick={() => setIsModalOpen(true)} />} />
-            <Route path="/:slug" element={<PostView />} />
-          </Routes>
-        </main>
-
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<RootRedirect />} />
+        <Route path="/:slug" element={<SlugRedirect />} />
+      </Routes>
     </Router>
   );
 };
