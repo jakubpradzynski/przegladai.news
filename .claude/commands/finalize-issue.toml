@@ -1,0 +1,4 @@
+description = "Ukończ tworzenie wydania"
+prompt = """
+Ukończ tworzenie wydania zgodnie ze skillem `finalize-creating-issue`. Posprzątaj pliki tymczasowe, stwórz nowego brancha, przygotuj commit i wygeneruj gotowy Pull Request zaplanowany do scalenia na najbliższy piątek.
+"""

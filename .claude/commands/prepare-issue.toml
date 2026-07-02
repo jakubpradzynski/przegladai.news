@@ -1,0 +1,4 @@
+description = "Przygotowuje wydanie bazując na artykułach"
+prompt = """
+Przygotuj wydanie bazując na pliku `final_prepared_data.csv`. Zaproponuj tytuł, wygeneruj plik HTML nowego wydania, zaktualizuj konfigurację strony (`constants.ts`, `llms.txt`, `sitemap.xml`) i wygeneruj okładkę numeru. Skorzystaj z instrukcji zaszytych w skillu `prepare-issue-on-articles`.
+"""
