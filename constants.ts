@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '27',
+    slug: 'wydanie-27-claude-sonnet-5-drozejace-macbooki-i-ford-znow-zatrudnia-ludzi',
+    title: 'Wydanie #27: Claude Sonnet 5, drożejące MacBooki i Ford znów zatrudnia ludzi',
+    date: '03-07-2026',
+    htmlUrl: '/issues/27.html'
+  },
+  {
     id: '26',
     slug: 'wydanie-26-claude-tag-na-slacku-orkiestrator-z-japonii-i-nowa-era-androida',
     title: 'Wydanie #26: Claude Tag na Slacku, orkiestrator z Japonii i nowa era Androida',

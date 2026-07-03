@@ -1,0 +1,7 @@
+description = "Przygotowuje artykuły do selekcji i wyświetla instrukcje dla Antigravity"
+prompt = """
+Wyczyść linki z pliku `data.csv`, usuń duplikaty i wygeneruj szkielet pliku `prepared_data.csv`, korzystając ze skryptu `prepare_skeleton.py` lub skilla `prepare-articles-for-selection`.
+
+Następnie, wypisz dokładnie następujące polecenie dla mnie:
+"Uruchom Antigravity z promptem 'generate_articles_metadata_prompt.md', modelem Opus i wsazaniem pliku 'prepared_data.csv'"
+"""
