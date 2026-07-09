@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '28',
+    slug: 'wydanie-28-spacexai-5-openai-dla-rzadu-usa-i-kariera-w-it-w-erze-agentow',
+    title: 'Wydanie #28: SpaceXAI, 5% OpenAI dla rządu USA i kariera w IT w erze agentów',
+    date: '10-07-2026',
+    htmlUrl: '/issues/28.html'
+  },
+  {
     id: '27',
     slug: 'wydanie-27-claude-sonnet-5-drozejace-macbooki-i-ford-znow-zatrudnia-ludzi',
     title: 'Wydanie #27: Claude Sonnet 5, drożejące MacBooki i Ford znów zatrudnia ludzi',
