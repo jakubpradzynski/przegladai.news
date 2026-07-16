@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '29',
+    slug: 'wydanie-29-apple-pozywa-openai-niebezpieczenstwo-grog-cli-i-codex-micro',
+    title: 'Wydanie #29: Apple pozywa OpenAI, (nie)bezpieczeństwo Grog CLI i Codex Micro',
+    date: '17-07-2026',
+    htmlUrl: '/issues/29.html'
+  },
+  {
     id: '28',
     slug: 'wydanie-28-spacexai-5-openai-dla-rzadu-usa-i-kariera-w-it-w-erze-agentow',
     title: 'Wydanie #28: SpaceXAI, 5% OpenAI dla rządu USA i kariera w IT w erze agentów',
