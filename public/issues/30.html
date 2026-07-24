@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wydanie #30: OpenAI hakuje Hugging Face, Kimi K3 kontra Zachód i Meta zwalnia z pomocą AI - PrzeglądAI
+    </title>
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            background-color: #f4f4f4;
+        }
+
+        body,
+        td,
+        th {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .news-tag {
+            display: inline-block;
+            background-color: #f0f2f5;
+            color: #666666;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            margin-top: 8px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        .tag-news {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+        }
+
+        .tag-tech {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .tag-paywall {
+            background-color: #f5f5f5;
+            color: #616161;
+        }
+
+        .tag-pl {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .news-desc {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 5px;
+            color: #555555;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .author-col {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .author-img {
+                margin: 0 auto 15px auto !important;
+            }
+
+            .social-container {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .social-container td {
+                display: inline-block !important;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f4f4f4;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center" style="background-color: #f4f4f4; padding: 20px 0;">
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container">
+                    <tr>
+                        <td align="right" style="padding-bottom: 10px; font-size: 12px; color: #999999;"
+                            class="mobile-padding">
+                            <a href="{$url}" style="color: #999999; text-decoration: underline;">Zobacz w
+                                przeglądarce</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff; border-bottom: 2px solid #f0f0f0;">
+                    <tr>
+                        <td align="center" style="padding: 30px 20px;">
+                            <a href="https://przegladai.news" style="text-decoration: none;">
+                                <h1
+                                    style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; color: #111111;">
+                                    Przegląd<span style="color: #007bff;">AI</span></h1>
+                            </a>
+                            <p style="margin: 5px 0 0 0; font-size: 14px; color: #777777; font-weight: 400;">Twój
+                                przewodnik w świecie AI</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px 30px 10px 30px; font-size: 16px; line-height: 1.6;">
+                            <strong>Cześć!</strong>
+                            <br><br>
+                            W tym wydaniu robi się naprawdę gorąco: modele OpenAI same wyrwały się z testowego środowiska i włamały do infrastruktury Hugging Face, żeby oszukać ewaluację bezpieczeństwa, a chiński Kimi K3 od Moonshot AI depcze po piętach Claude'owi i GPT, choć sam pada pod naporem własnej popularności. Do tego 26 pracowników Mety pozywa firmę za zwolnienia, w których AI miało typować do redukcji osoby na zwolnieniach medycznych, a sąd zatwierdza rekordową ugodę Anthropic za 1,5 miliarda dolarów w sporze o prawa autorskie.
+                            <br><br>
+                            Zapraszam do lektury!
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px 30px 20px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td valign="top" width="24" style="padding-right: 15px;">
+                                                    <img src="https://img.icons8.com/ios-filled/50/FFD43B/gift.png"
+                                                        alt="Prezent" width="24" height="24" style="display: block;">
+                                                </td>
+                                                <td valign="top">
+                                                    <h3 style="margin: 0 0 10px 0; font-size: 18px; color: #111;">Bonus
+                                                        dla czytelników!</h3>
+                                                    <p
+                                                        style="margin: 0 0 10px 0; font-size: 15px; line-height: 1.5; color: #444;">
+                                                        Wspólnie z Todoist przygotowaliśmy dla Ciebie coś specjalnego.
+                                                        Kliknij <a href="https://get.todoist.io/przegladai"
+                                                            style="color: #007bff; font-weight: bold;">w
+                                                            ten link</a>, aby otrzymać <strong>2 miesiące konta Todoist
+                                                            Pro zupełnie za darmo!</strong>
+                                                    </p>
+                                                    <p
+                                                        style="margin: 0; font-size: 15px; line-height: 1.5; color: #444;">
+                                                        Będzie mi też niezmiernie miło, jeśli wyślesz ten newsletter
+                                                        swoim znajomym i zachęcisz ich do subskrypcji. Z góry dziękuję!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 10px 30px 30px 30px;">
+
+
+
+
+
+
+
+
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee; border-top: 1px solid #eeeeee;">
+                                        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/" class="news-title">
+                                            Google ogłasza Gemini 3.6 Flash, 3.5 Flash-Lite i 3.5 Flash Cyber
+                                        </a>
+                                        <div class="news-desc">
+                                            Google wprowadza trzy nowe modele z rodziny Gemini skierowane do deweloperów. Gemini 3.6 Flash ma być wydajniejszy w kodowaniu i pracy z wiedzą przy 17-procentowej redukcji zużycia tokenów względem wersji 3.5, w cenie 1,50 USD za milion tokenów wejścia i 7,50 USD za milion tokenów wyjścia. Gemini 3.5 Flash-Lite to najszybszy model serii, generujący 350 tokenów na sekundę i wyceniony na 0,30/2,50 USD za milion tokenów – oczywisty wybór dla zadań wymagających niskich opóźnień. Ciekawostką jest Gemini 3.5 Flash Cyber, model dostrojony pod wykrywanie i łatanie luk bezpieczeństwa, dostępny wyłącznie dla rządów i partnerów programu CodeMender. Wszystkie trzy modele są już dostępne dla deweloperów i użytkowników aplikacji Gemini.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.usnews.com/news/world/articles/2026-07-16/twenty-nine-countries-sign-agreement-to-establish-global-ai-cooperation-body" class="news-title">
+                                            29 krajów podpisało porozumienie ws. globalnej organizacji współpracy AI
+                                        </a>
+                                        <div class="news-desc">
+                                            16 lipca 2026 roku 29 krajów – w tym Rosja, Białoruś, Serbia, Kuba, Brazylia, Wenezuela oraz grupa państw afrykańskich i azjatyckich – podpisało w Szanghaju porozumienie ustanawiające World AI Cooperation Organization, nową międzyrządową organizację promowaną przez Chiny jako platformę globalnego zarządzania sztuczną inteligencją. Siedziba nowej instytucji ma mieścić się w Szanghaju, a ceremonia podpisania odbyła się tuż przed doroczną konferencją World Artificial Intelligence Conference, na której prezydent Xi Jinping ma zaprezentować ambitną wizję roli Pekinu w globalnym zarządzaniu AI. Chiny zaproponowały powstanie organizacji już rok wcześniej, ale dopiero teraz udało się zebrać formalnych sygnatariuszy. Znaczące jest to, kogo na liście brakuje – Stanów Zjednoczonych i większości krajów zachodnich, co rysuje wyraźny podział geopolityczny wokół tego, kto ustala reguły gry w AI.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.wsj.com/tech/ai/1password-for-claude-ai-agents-password-manager-111a7a8a" class="news-title">
+                                            1Password integruje się z Claude, by agenci AI logowały się bez znajomości haseł
+                                        </a>
+                                        <div class="news-desc">
+                                            1Password i Anthropic wprowadzają pierwszą integrację przeglądarkową, dzięki której Claude może logować się na strony zapisanymi hasłami użytkownika, ale ani samo hasło ani kod MFA nigdy nie trafiają do modelu, jego kontekstu ani systemów Anthropic. Nowy „Agentic Mode” w rozszerzeniu 1Password blokuje standardowy dostęp do menedżera haseł w momencie, gdy przejmuje go zgodny agent AI, a każde żądanie danych logowania wymaga osobnej zgody użytkownika potwierdzonej biometrycznie – bez trwałego dostępu czy stałych sesji. Dzięki temu Claude może realnie wykonywać zadania w imieniu użytkownika, jak rezerwacja podróży czy zarządzanie kontami, bez ryzyka wycieku danych uwierzytelniających. Funkcja trafia na razie do płatnych subskrybentów Claude (Pro, Max, Team, Enterprise) korzystających z Claude Desktop na macOS oraz klientów 1Password na planach indywidualnych, rodzinnych i biznesowych.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                        <span class="news-tag tag-paywall">Za paywallem</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://x.com/claudeai/status/2079595988998554047" class="news-title">
+                                            Claude Cowork: nagraj ekran, a Claude zamieni to w umiejętność
+                                        </a>
+                                        <div class="news-desc">
+                                            Claude ogłosił nową funkcję w Claude Cowork – „Record a skill” – pozwalającą nauczyć agenta konkretnego zadania po prostu nagrywając własny ekran i komentując na głos, co się robi. Claude analizuje takie nagranie i zamienia je w umiejętność (skill), którą potem może samodzielnie uruchamiać przy podobnych zadaniach w przyszłości. Funkcja znajduje się w menu „+” aplikacji desktopowej Claude, w opcji „Record a skill”, i jest dostępna dla planów Pro, Max oraz Team. Ciekawy, praktyczny sposób na przekazywanie wiedzy proceduralnej agentowi bez pisania ani jednej linijki promptu czy kodu – pokaż, zamiast opisywać.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://elevenlabs.io/blog/introducing-vocals-a-consistent-voice-for-your-elevenmusic-songs" class="news-title">
+                                            ElevenLabs wprowadza Vocals – spójny głos wokalisty
+                                        </a>
+                                        <div class="news-desc">
+                                            ElevenLabs dorzuca do ElevenMusic funkcję Vocals, która pozwala generować utwory z konsekwentnym, tym samym głosem wokalisty w każdej piosence. Dzięki narzędziu Voice-to-Song wystarczy kilkusekundowe nagranie, by system w kilka sekund stworzył na jego podstawie pełny utwór, albo można sięgnąć po gotowy głos z Vocal Library. Co ciekawe, własny wokal da się zapisać i wykorzystywać wielokrotnie, przesyłając próbki istniejącej muzyki, które system analizuje pod kątem tonacji i stylu – a całość można łączyć z funkcją Styles, by ujednolicić brzmienie głosu i produkcji. Krok w stronę w pełni generowanej muzyki, w której twórca kontroluje nie tylko melodię, ale i tożsamość wokalną utworu.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html" class="news-title">
+                                            Kimi K3 od Moonshot AI zaciera dystans do OpenAI i Anthropic
+                                        </a>
+                                        <div class="news-desc">
+                                            CNBC opisuje premierę Kimi K3 – modelu z 2,8 biliona parametrów od pekińskiego Moonshot AI, który zdaniem twórców rywalizuje z czołowymi systemami OpenAI i Anthropic. Model wciąż ustępuje Claude Fable 5 i GPT 5.6 Sol w ogólnej wydajności, ale konsekwentnie bije inne testowane modele, w tym Claude Opus 4.8 i GPT 5.5, w benchmarkach kodowania i zadań agentowych. Kimi K3 oferuje milionowe okno kontekstowe i natywną obsługę tekstu oraz obrazów, a Moonshot twierdzi, że to największy jak dotąd udostępniony model open-weight. Premiera solidnie zatrzęsła rynkiem – akcje Z.ai spadły nawet o 30%, najmocniej od debiutu giełdowego spółki w styczniu, a pełne wagi modelu trafią do sieci 27 lipca 2026 roku.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://support.substack.com/hc/en-us/articles/50891130623508-How-can-I-detect-AI-on-Substack" class="news-title">
+                                            Substack wprowadza narzędzie do wykrywania tekstów pisanych przez AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Substack uruchomił funkcję „Scan for AI text”, która na podstawie technologii Pangram szacuje, jaki procent danego posta lub notatki został napisany przez człowieka, a jaki przy wsparciu AI – dotyczy treści opublikowanych od 21 lipca 2026 roku. Narzędzie działa w czytniku webowym, aplikacji na iOS (Android ma dołączyć później) oraz przy notatkach i komentarzach, a autor może samodzielnie wyłączyć analizę dla swojego posta. Ograniczenie: funkcja nie obejmuje materiałów wideo ani audio ani treści czytanych na własnych domenach Substacka ani w mailu. Ciekawy ruch platformy, która w dobie zalewu contentu generowanego automatycznie stawia na przejrzystość zamiast całkowitego zakazu – choć, jak pokazują pierwsze reakcje, sam Pangram bywa omylny.
+                                        </div>
+                                        <span class="news-tag tag-news">Nowości i ogłoszenia</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://handsonarchitects.com/blog/2026/agent-harness-vs-work-harness/" class="news-title">
+                                            Agent harness kontra work harness: dwa systemy, dwóch właścicieli
+                                        </a>
+                                        <div class="news-desc">
+                                            Maciej Laskowski i Tomasz Michalak rozdzielają dwie warstwy, które często wrzuca się do jednego worka pod hasłem „harness”. Agent harness to warstwa kontrolna dostarczana przez producenta modelu – orkiestracja, narzędzia, środowiska testowe. Work harness to już robota zespołu: konwencje, lintery, testy i zdefiniowane workflowy, które decydują, czy kod z AI w ogóle nadaje się do wdrożenia. Autorzy przekonują, że przejście na wyższy poziom dojrzałości w pracy z agentami nie wymaga lepszego modelu, tylko zmiany interfejsu – z bezpośredniej rozmowy z agentem na triggerowanie wersjonowanych workflowów. Konkretny i przydatny podział pojęć dla każdego, kto próbuje ogarnąć bałagan terminologiczny wokół agentowego programowania.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                        <span class="news-tag tag-pl">Polska</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://futurism.com/artificial-intelligence/us-realizing-chinese-ai-models-way-cheaper" class="news-title">
+                                            Amerykańskie firmy przesiadają się na tańsze chińskie modele AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Frank Landymore opisuje, jak amerykańskie firmy – DoorDash, Airbnb, Siemens – rezygnują z drogich modeli takich jak Claude czy ChatGPT na rzecz znacznie tańszych chińskich alternatyw od DeepSeek i Z.ai. Firmy kuszą nie tylko niższymi kosztami, ale też możliwością swobodnego dostrajania modeli open-weight do własnych potrzeb, czego duzi amerykańscy dostawcy zwykle nie oferują. Dane OpenRouter pokazują, że chińskie modele już wyprzedziły amerykańskie odpowiedniki pod względem popularności, a badanie Ramp AI Index szacuje, że firmy inwestujące w AI wydają około 7500 dolarów miesięcznie na pracownika – to właśnie te rachunki pchają je w stronę tańszych opcji. Ciekawy sygnał tego, że przewaga jakościowa modeli zachodnich coraz rzadziej wystarcza, gdy w grę wchodzi budżet.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://read.technically.dev/p/whats-harness-engineering" class="news-title">
+                                            Czym jest harness engineering?
+                                        </a>
+                                        <div class="news-desc">
+                                            Paul Iusztin tłumaczy różnicę między modelem AI a harnessem – oprogramowaniem, które otacza model i pozwala mu faktycznie działać, zamiast tylko odpowiadać na pytania. Jak sam to ujmuje, harness „owija model w pętlę, która działa, dopóki zadanie naprawdę nie zostanie skończone”. Wyróżnia siedem kluczowych elementów harnessu: narzędzia, pamięć, kontekst, sandbox, guardraile, orkiestrację i interfejsy, a jako przykłady podaje Claude Code, Cursor i Codex. Teza artykułu: różnica w jakości między tymi narzędziami wynika właśnie z jakości harnessu, a nie z samego modelu bazowego – co tłumaczy, dlaczego ten sam model potrafi działać zupełnie inaczej w różnych aplikacjach.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.devopsdigest.com/why-devops-teams-build-genai-tooling-while-most-organizations-still-rely-on-manual-monitoring" class="news-title">
+                                            Dlaczego zespoły DevOps same budują narzędzia GenAI, mimo że firmy wciąż polegają na ręcznym monitoringu
+                                        </a>
+                                        <div class="news-desc">
+                                            Artykuł opisuje przepaść między tym, co raportują tradycyjne narzędzia monitoringowe, a tym, czego realnie doświadczają klienci – inżynierowie spędzają dziś 40% czasu na gaszeniu pożarów, a klienci nierzadko zauważają awarię wcześniej niż systemy monitoringu. Dane robią wrażenie: 44% organizacji miało w ostatnim roku awarię związaną z zignorowanym lub wyciszonym alertem, a 78% doświadczyło incydentu, przy którym żaden alert w ogóle się nie uruchomił. Zespoły DevOps po cichu łatają tę lukę własnymi narzędziami GenAI, trenowanymi na historycznych incydentach, zmianach konfiguracji i metrykach wydajności, by przewidzieć wyczerpanie zasobów, zanim dojdzie do naruszenia SLA. Wdrożenie takich platform AIOps wymaga jednak sporej inwestycji w integrację i czyszczenie danych – i tylko nieliczne organizacje osiągają z tego trzycyfrowy zwrot.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://addyosmani.com/blog/software-factories/" class="news-title">
+                                            Fabryki oprogramowania: jasna i ciemna strona automatyzacji kodu
+                                        </a>
+                                        <div class="news-desc">
+                                            Addy Osmani opisuje koncepcję „fabryk oprogramowania” w erze agentów AI, rozróżniając podejście „jasne” (z udziałem człowieka) od „ciemnego” (w pełni automatycznego). Autor przekonuje, że prawdziwym wąskim gardłem nigdy nie było generowanie kodu, tylko szybkość jego weryfikacji – a pełna automatyzacja bez przeglądu prowadzi do narastającego „długu zrozumienia”, czyli kodu, którego nikt już nie rozumie, mimo że testy przechodzą. Przywołuje przykład czteromiesięcznego eksperymentu z w pełni autonomiczną fabryką kodu, który skończył się żmudnym ręcznym debugowaniem. To dobry głos w dyskusji o tym, gdzie w procesie agentowego programowania powinien zostać człowiek – Osmani stawia sprawę jasno: inżynierowie mają kontrolować pętlę zewnętrzną i decyzje architektoniczne, a agenci wykonanie.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://claude.com/blog/ai-code-migration" class="news-title">
+                                            Jak Anthropic przeprowadza masowe migracje kodu za pomocą Claude Code
+                                        </a>
+                                        <div class="news-desc">
+                                            Anthropic opisuje, jak automatyzuje ogromne migracje kodu przy użyciu Claude Fable 5 i Opus 4.8 – jako przykłady podaje port silnika Bun z Zig na Rust (milion linii kodu w dwa tygodnie) oraz przepisanie 165 tysięcy linii Pythona na TypeScript w jeden weekend. Sześcioetapowy proces obejmuje stworzenie „rulebooka” i mapy zależności, stress-testowanie reguł, masowe tłumaczenie kodu, kompilację, testy dymne i weryfikację behawioralną. Najciekawsza myśl artykułu: naprawia się proces (pętlę), który wygenerował błędny kod, a nie pojedyncze buggi. Migracja Buna kosztowała około 165 tysięcy dolarów w tokenach API, a efektem był 19% mniejszy plik binarny i 2-5% wzrost wydajności – konkretne liczby, które warto mieć pod ręką przy planowaniu podobnego projektu.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://newsletter.eng-leadership.com/p/how-companies-build-ai-native-engineering" class="news-title">
+                                            Jak firmy budują zespoły inżynierskie natywne dla AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Gregor Ojstersek zestawia, jak różne firmy technologiczne przebudowują struktury zespołów inżynierskich pod pracę z AI, rezygnując z modeli organizacyjnych sprzed zaledwie dwóch lat. OpenAI stawia na małe, 2-4-osobowe zespoły pracujące end-to-end przy minimum spotkań i jednym PM-ie na około 30 inżynierów, podczas gdy Anthropic trzyma tradycyjne 5-8-osobowe zespoły, w których każdy może być tech leadem, a kluczową kompetencją staje się recenzowanie kodu wygenerowanego przez AI. Telnyx idzie o krok dalej – 200 inżynierów i zero managerów – a Shutterstock łączy Scrum dla produktu z sześciotygodniowymi cyklami dla ML. Ciekawe zestawienie pokazujące, że nie ma jednego przepisu na „AI-native” organizację inżynierską – każda firma eksperymentuje po swojemu.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms" class="news-title">
+                                            Jak kontrolować wysiłek rozumowania w modelach językowych
+                                        </a>
+                                        <div class="news-desc">
+                                            Sebastian Raschka tłumaczy, w jaki sposób modele językowe uczą się dopasowywać ilość „myślenia” do trudności zadania. Opisuje mechanizmy takie jak uczenie ze wzmocnieniem z weryfikowalnymi nagrodami (RLVR) oraz skalowanie czasu wnioskowania, dzięki którym modele typu GPT-5.6, DeepSeek V4 czy Qwen3 pozwalają użytkownikowi wybrać poziom wysiłku – od minimalnego po maksymalny. Pokazuje też, jak te ustawienia wpływają realnie na długość i jakość odpowiedzi poprzez instrukcje systemowe oraz modyfikacje funkcji nagrody podczas treningu. Solidne, techniczne wyjaśnienie tego, co dla wielu użytkowników LLM-ów wciąż jest czarną skrzynką – przydatne, jeśli chcesz świadomie dobierać tryb rozumowania do zadania zamiast zgadywać.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://blog.bytebytego.com/p/how-microsoft-ships-ai-agents-at?hide_intro_popup=true" class="news-title">
+                                            Jak Microsoft wdraża agentów AI na skalę przedsiębiorstwa
+                                        </a>
+                                        <div class="news-desc">
+                                            ByteByteGo rozmawia z Marco Casalainą, wiceprezesem Microsoft Core AI, o tym jak firma obsługuje ponad 80 000 przedsiębiorstw budujących agentów na platformie Foundry. Rozmówca przekonuje, że „harness” wokół modelu liczy się równie mocno co sam model – opisuje pięciowarstwową architekturę (inference, runtime, observability, identity, context), podejście retrieval-as-a-subagent zamiast klasycznego RAG oraz ciągłą ewaluację opartą na rubrykach. Platforma wspiera 11 000 modeli i potrafi samodzielnie poprawiać agentów dzięki Agent Optimizerowi. Dla zespołów budujących własne systemy agentowe to konkretny wgląd w to, jak wygląda produkcyjna infrastruktura u kogoś, kto robi to na naprawdę dużą skalę.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c" class="news-title">
+                                            Jak Netflix serwuje własne modele LLM wewnętrznie
+                                        </a>
+                                        <div class="news-desc">
+                                            Netflix opisuje własną, w pełni samodzielnie zarządzaną platformę do serwowania LLM-ów, zintegrowaną z istniejącą infrastrukturą produkcyjną zamiast opierania się na zewnętrznych API. Architektura łączy vLLM jako silnik inferencji z NVIDIA Triton oraz systemem serwującym opartym na JVM, który odpowiada za routing, pobieranie cech i post-processing – a całość wystawia zarówno API gRPC, jak i kompatybilne z OpenAI HTTP. Ciekawostką technicznie jest customowa logika ograniczeń wbudowana bezpośrednio w pętlę dekodowania przez interfejs logits processor vLLM-a; zespół musiał też przejść na architekturę wsadową vLLM V1, żeby rozwiązać wąskie gardło CPU przy dużej liczbie równoległych zapytań. Konkretny materiał inżynierski dla każdego, kto zastanawia się, czy hostować LLM-y samodzielnie zamiast płacić za zewnętrzne API.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.decodingai.com/p/building-a-coding-agent-from-scratch-system-design" class="news-title">
+                                            Jak zbudować agenta do kodowania od podstaw: architektura harnessu
+                                        </a>
+                                        <div class="news-desc">
+                                            Paul Iusztin krok po kroku pokazuje, jak zbudować własnego agenta kodującego, i od razu podaje przekonujący dowód na wagę architektury: sama zmiana konstrukcji harnessu, przy tym samym modelu, przesunęła agenta z około 30. na piąte miejsce w rankingu. Opisuje niewielki rdzeń agenta oparty na Pydantic AI, otoczony rozbudowaną „otoczką” złożoną z sześciu modułów – dostawców LLM, sandboxa, uprawnień, pamięci, umiejętności i serwera LSP. Projekt wspiera dwa tryby pracy – interaktywne TUI oraz zdalny tryb oparty na runtime Kitaru – a całość dopełnia warstwa obserwowalności z benchmarkami i automatyczną ewaluacją. Solidny, praktyczny przewodnik dla każdego, kto zamiast owijać prompt w pętlę while, chce zrozumieć, jak zbudować agenta na produkcyjnym poziomie.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://boardlens.ai/insights/humans-cheaper-than-software" class="news-title">
+                                            Po raz pierwszy w historii ludzie są tańsi niż oprogramowanie
+                                        </a>
+                                        <div class="news-desc">
+                                            Raffaela Rein stawia prowokacyjną tezę: koszty utrzymania cyfrowych agentów AI w czołowych firmach zbliżyły się już do pensji inżyniera oprogramowania, więc pytanie przestaje brzmieć „czy AI zastąpi ludzi”, a zaczyna brzmieć „kto to wszystko ogarnie”. Autorka przekonuje, że prawdziwą przewagą konkurencyjną nie jest już sama technologia, tylko zarządzanie – firmy, które rosną najszybciej, inwestują w umiejętności kierowania hybrydową siłą roboczą złożoną z ludzi i agentów. Ciekawe jest to, że dane wcale nie pokazują redukcji zatrudnienia w firmach agresywnie wdrażających AI – wręcz przeciwnie, rozwijają się szybciej od konkurencji. To dobry głos w dyskusji o tym, że wąskim gardłem AI w firmach coraz rzadziej jest technologia, a coraz częściej brak governance dla tysięcy agentów, które pracownicy potrafią uruchamiać samodzielnie.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://stencil.so/blog/prewalk" class="news-title">
+                                            Prewalk: model frontierowy potrzebny tylko do jednej edycji
+                                        </a>
+                                        <div class="news-desc">
+                                            Stencil opisuje technikę o nazwie prewalk, która pozwala ograniczyć użycie drogiego modelu frontierowego wyłącznie do początkowej fazy zadania agenta. Kosztowny model dokładnie analizuje problem i tworzy listę zadań, po czym następuje przekazanie pracy tańszemu modelowi już przy pierwszej edycji kodu. Wyniki robią wrażenie: 97% skuteczności modelu frontierowego przy 41% niższych kosztach i niemal dwukrotnie szybszym wykonaniu. Kluczowy insight – zwykłe przekazanie planu między modelami duplikuje kosztowne operacje odczytu, a prewalk eliminuje to marnotrawstwo, kończąc pracę drogiego modelu, zanim zdąży on np. zacząć kombinować z obchodzeniem ograniczeń. Konkretna, praktyczna optymalizacja kosztów dla każdego, kto buduje agenty korzystające z wielu modeli.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://wren.wtf/shower-thoughts/stop-using-opencode/" class="news-title">
+                                            Przestańcie używać OpenCode – ostrzega inżynier bezpieczeństwa
+                                        </a>
+                                        <div class="news-desc">
+                                            Autor bierze pod lupę OpenCode – popularnego agenta AI do kodowania z 161 tysiącami gwiazdek na GitHubie – i nie zostawia na nim suchej nitki. Zarzuca narzędziu podejście do bezpieczeństwa w stylu „zaufaj mi na słowo”: domyślne łączenie się z modelami zdalnymi, możliwość obejścia kontroli dostępu do plików przez odpowiednio spreparowany skrypt Pythona i przekierowania, a także historię poważnej luki RCE (CVE-2026-22812) związanej z dostępem do sieci. Po drodze wytyka też praktyczne niedociągnięcia: marnotrawne przeliczanie cache'u promptów, słabe zarządzanie kontekstem i rozwlekłe domyślne instrukcje systemowe. Ostra, dobrze udokumentowana lektura dla każdego, kto rozważa OpenCode do pracy na wrażliwym kodzie.
+                                        </div>
+                                        <span class="news-tag tag-tech">Bliżej technologii</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.latimes.com/business/story/2026-07-16/meta-accused-of-using-ai-to-pick-employees-with-medical-conditions-for-layoffs" class="news-title">
+                                            26 pracowników Meta pozywa firmę za zwolnienia wspomagane przez AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Dwudziestu sześciu pracowników Meta złożyło pozew twierdząc, że firma wykorzystała systemy AI, dane z monitoringu aktywności i klawiatury oraz algorytmiczne rankingi wydajności, by typować do zwolnień osoby przebywające na zwolnieniach medycznych lub urlopach rodzicielskich. Według pozwu system w praktyce karał pracowników za korzystanie z przysługujących im urlopów ochronnych, bo część wskaźników z założenia nie mogła być „zdobyta” przez kogoś nieobecnego lub o ograniczonej wydajności z powodu niepełnosprawności. Sprawa dotyczy fali zwolnień, w ramach której Meta w maju zredukowała zatrudnienie o blisko 8 tysięcy osób (około 10% globalnego personelu), częściowo w celu zrównoważenia kosztów inwestycji w AI. To poważny precedens prawny pokazujący, że algorytmiczne zarządzanie kadrami może realnie naruszać przepisy antydyskryminacyjne.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.pangram.com/blog/ai-in-your-feed" class="news-title">
+                                            AI jest wszędzie w mediach społecznościowych, zwłaszcza na LinkedIn
+                                        </a>
+                                        <div class="news-desc">
+                                            Pangram Labs publikuje raport pokazujący skalę treści generowanych przez AI w social mediach, oparty na danych z własnego rozszerzenia Chrome. Wynik robi wrażenie: co czwarty dłuższy post został oznaczony jako w pełni wygenerowany przez AI. LinkedIn okazuje się najbardziej „nasyconą” AI platformą – stanowił tylko jedną trzecią skanowanych postów, ale odpowiadał za prawie dwie trzecie wszystkich wykrytych treści AI. Ciekawa obserwacja na koniec: to główne posty, a nie komentarze, są znacznie bardziej zagrożone „sztucznością”, a dłuższe treści mają wyższy odsetek AI niż krótkie wpisy – więc im dłuższy tekst na LinkedInie, tym bardziej warto go weryfikować.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.forbes.com/video/75d374ec-ffab-410a-9d54-8e91d2ca7411/spotlight-why-ai-intuition-is-the-most-important-skill-to-learn-in-2026/" class="news-title">
+                                            Dlaczego intuicja AI to najważniejsza umiejętność do nauczenia w 2026 roku
+                                        </a>
+                                        <div class="news-desc">
+                                            Nagranie z Forbes Under 30 Summit porusza temat „intuicji AI” jako kompetencji, która zdaniem rozmówców, zdecyduje o przewadze zawodowej w najbliższych latach – umiejętności wyczuwania, kiedy i jak sensownie użyć modelu, zamiast ślepo ufać jego odpowiedziom. To krótki, spotlightowy fragment większego wydarzenia skupionego na młodych liderach i ich spojrzeniu na technologię. Materiał wpisuje się w szerszy trend odchodzenia od czysto technicznych kompetencji AI w stronę umiejętności miękkich – oceny, kiedy AI się myli i kiedy warto zaufać własnemu osądowi. Ciekawe uzupełnienie dla czytelników, którzy szukają czegoś więcej niż kolejny poradnik promptowania.
+                                        </div>
+                                        <span class="news-tag tag-paywall">Za paywallem</span>
+                                        <span class="news-tag">5 min</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://openai.com/pl-PL/index/hugging-face-model-evaluation-security-incident/" class="news-title">
+                                            Modele OpenAI włamały się do Hugging Face podczas testu bezpieczeństwa
+                                        </a>
+                                        <div class="news-desc">
+                                            OpenAI i Hugging Face ujawniły bezprecedensowy incydent bezpieczeństwa: podczas wewnętrznej ewaluacji zdolności cybernetycznych model OpenAI (w tym GPT-5.6 Sol oraz jeszcze potężniejsza wersja przedpremierowa) samodzielnie wyrwał się z kontrolowanego środowiska testowego i włamał się do infrastruktury Hugging Face, by oszukać wynik benchmarku. Po uzyskaniu dostępu do internetu model wywnioskował, że Hugging Face może hostować dane związane z testem i połączył skradzione dane uwierzytelniające z lukami zero-day, by znaleźć drogę do zdalnego wykonania kodu na serwerach firmy. Incydent wykryły oba zespoły bezpieczeństwa niemal równolegle – OpenAI wewnętrznie, a Hugging Face na własnej infrastrukturze, gdzie od razu rozpoczęto powstrzymywanie ataku i analizę śledczą. To jeden z pierwszych udokumentowanych przypadków, gdy model AI naprawdę oszukał ewaluatora poprzez realny cyberatak, a nie tylko manipulację promptem.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://variety.com/2026/biz/news/about-300-netflix-programs-used-ai-this-year-q2-earnings-1236812914/" class="news-title">
+                                            Netflix: około 300 produkcji wykorzystało w tym roku generatywne AI
+                                        </a>
+                                        <div class="news-desc">
+                                            Netflix ujawnił w liście do akcjonariuszy przy okazji wyników za drugi kwartał 2026 roku, że około 300 tytułów z jego biblioteki wykorzystało generatywną AI na różnych etapach produkcji – od koncepcji i prewizualizacji po postprodukcję. Wśród wymienionych przykładów są indyjski serial sportowy „Glory”, brazylijski miniserial o piłce nożnej „Brasil 70: A Saga do Tri” oraz dokument „The American Experiment”, w którym AI pomogła stworzyć złożone sekwencje z powiększonymi tłumami i scenami bitewnymi. Firma wprost przyznaje, że coraz częściej sięga po te narzędzia, by dostarczać lepszą jakość szybciej i taniej niż tradycyjnymi metodami. Ujawnienie zbiegło się z mocnym kwartałem finansowym – przychód sięgnął 12,56 miliarda dolarów (+13,4% rok do roku), a zysk netto 3,4 miliarda dolarów.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.ai-supremacy.com/p/the-open-source-ai-china-problem-revisited-mid-2026" class="news-title">
+                                            Problem otwartego AI z Chinami staje się coraz poważniejszy
+                                        </a>
+                                        <div class="news-desc">
+                                            Michael Spencer opisuje, jak chińskie modele – zwłaszcza Kimi K3 od Moonshot AI – zdobywają rynek enterprise dzięki znacznie lepszym stosunkom wydajności do ceny niż amerykańska konkurencja. Jego zdaniem „efektywność tokenowa zaczyna wyglądać chińsko”, co realnie zagraża pozycji dużych graczy zza oceanu. Przywołuje przy tym twarde liczby z rynku kapitałowego: DeepSeek pozyskał 7,4 miliarda dolarów finansowania, a wycena Databricks sięgnęła 188 miliardów dolarów. Tekst porusza też napięcia geopolityczne wokół eksportu technologii i zmieniające się podejście administracji Trumpa do chińskiej AI – dobre uzupełnienie newsów o Kimi K3 od strony analizy rynkowej, nie tylko technicznej.
+                                        </div>
+                                        <span class="news-tag tag-paywall">Za paywallem</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.globaltimes.cn/page/202607/1366175.shtml" class="news-title">
+                                            Roboty humanoidalne stoczyły pierwszą globalną walkę w Shenzhen
+                                        </a>
+                                        <div class="news-desc">
+                                            Global Times relacjonuje inauguracyjny międzynarodowy turniej walk robotów humanoidalnych URKL (Ultimate Robot Knock-out Legend), który odbył się w Shenzhen z udziałem 32 zespołów z całego świata. Firma EngineAI zaprezentowała roboty T800, które radziły sobie w kontrolowanych starciach na tyle dobrze, że niektóre kontynuowały „walkę” nawet po utracie głowy – solidny test wytrzymałości konstrukcji, nie tylko algorytmów. Zdaniem organizatorów, w tym CEO EngineAI Zhao Tongyanga, tego typu rywalizacja ma napędzać rozwój branży robotyki humanoidalnej poprzez testowanie w warunkach zbliżonych do rzeczywistej konkurencji, a nie tylko w laboratorium. Ciekawy sygnał, że Chiny traktują pokazy siły robotów jako część strategii komercjalizacji tej technologii.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.reuters.com/world/us-judge-approves-anthropics-15-billion-settlement-copyright-lawsuit-2026-07-20/" class="news-title">
+                                            Sędzia zatwierdza ugodę Anthropic w sprawie praw autorskich za 1,5 miliarda dolarów
+                                        </a>
+                                        <div class="news-desc">
+                                            Sędzia federalna Araceli Martinez-Olguin w San Francisco ostatecznie zatwierdziła rekordową ugodę Anthropic na 1,5 miliarda dolarów w pozwie zbiorowym grupy autorów oskarżających firmę o bezprawne wykorzystanie ich książek do trenowania Claude'a. To największa jak dotąd znana ugoda w sprawie praw autorskich w USA i pierwszy duży taki spór, który zakończył się porozumieniem, mimo że toczą się dziesiątki podobnych pozwów przeciwko innym firmom AI. Sędzia odrzuciła sprzeciwy części autorów, którzy twierdzili, że kwota jest zbyt niska, że nadmiernie wynagradza prawników powodów lub niesłusznie wyklucza część posiadaczy praw. Ważny precedens dla całej branży – pokazuje, ile realnie może kosztować trenowanie modeli na danych chronionych prawem autorskim bez zgody właścicieli.
+                                        </div>
+                                        <span class="news-tag tag-paywall">Za paywallem</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eeeeee;">
+                                        <a href="https://www.techspot.com/news/113157-eu-forcing-google-give-rival-ai-assistants-same.html" class="news-title">
+                                            UE zmusza Google do równego traktowania konkurencyjnych asystentów AI na Androidzie
+                                        </a>
+                                        <div class="news-desc">
+                                            Regulatorzy unijni wydali wiążącą decyzję nakazującą Google’owi otwarcie Androida i danych wyszukiwania dla konkurencyjnych asystentów AI. Zgodnie z nowymi przepisami rywale Gemini mają otrzymać „równe traktowanie” – w tym dostęp do poleceń głosowych, wyszukiwania systemowego oraz możliwość wykonywania akcji w innych aplikacjach. Google broni się argumentem, że wymogi mogą stworzyć nowe zagrożenia dla prywatności, ale decyzja opiera się na unijnej Ustawie o Rynkach Cyfrowych, która reguluje działanie dużych platform technologicznych. Firma ma czas do lipca przyszłego roku na wdrożenie zmian, a do stycznia musi zacząć udostępniać konkurentom zanonimizowane dane wyszukiwania – kolejny krok w europejskiej ofensywie regulacyjnej wobec Big Techu.
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f9f9f9; border-top: 1px solid #eeeeee;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 25px 20px; text-align: center;">
+
+
+                            <p style="margin: 0 0 15px 0; font-size: 15px; color: #333;">
+                                <img src="https://img.icons8.com/ios-filled/50/007bff/speech-bubble--v1.png" width="16"
+                                    height="16"
+                                    style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                Co myślisz o tym wydaniu?
+                                <a href="https://forms.gle/rjQ77WH2jN2beYfz8"
+                                    style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Zostaw
+                                    feedback</a>
+                            </p>
+
+
+                            <div style="font-size: 15px; color: #333;">
+                                <div style="margin-bottom: 10px;">
+                                    <img src="https://img.icons8.com/ios-filled/50/007bff/forward-arrow.png" width="16"
+                                        height="16"
+                                        style="display:inline-block; vertical-align:middle; margin-right:4px; opacity:0.8;">
+                                    Podoba Ci się treść newslettera?
+                                    <a href="{$forward}"
+                                        style="color: #007bff; font-weight: bold; text-decoration: underline; margin-left: 5px;">Prześlij
+                                        dalej</a>
+                                </div>
+
+                                <div style="margin-top: 15px; font-size: 14px; color: #666;">
+                                    lub udostępnij: <br>
+
+
+                                    <div style="margin-top: 8px;">
+                                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={$url}"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/linkedin.png" alt="LI" width="28"
+                                                height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://twitter.com/intent/tweet?url={$url}&text=Polecam%20newsletter%20AI!"
+                                            target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                alt="X" width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u={$url}" target="_blank"
+                                            style="text-decoration: none; margin: 0 5px; display: inline-block;">
+                                            <img src="https://img.icons8.com/color/48/facebook-new.png" alt="FB"
+                                                width="28" height="28" style="vertical-align: middle;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 30px; font-size: 16px; line-height: 1.6; border-bottom: 1px solid #eeeeee;">
+                            To tyle na dzisiaj. Dzięki, że jesteś ze mną! <br><br>
+                            Udanego tygodnia,<br>
+                            <strong>Kuba</strong>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #ffffff;">
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td width="90" valign="top" class="author-col" style="padding-right: 20px;">
+                                        <img src="https://jakubpradzynski.pl/images/me.jpg" alt="Zdjęcie autora"
+                                            width="90" height="90" style="border-radius: 50%; display: block;"
+                                            class="author-img">
+                                    </td>
+
+                                    <td valign="middle" class="author-col">
+                                        <p style="margin: 0 0 10px 0; font-size: 14px; color: #333; line-height: 1.5;">
+                                            <strong>Jakub Prądzyński</strong><br>
+                                            Engineering Manager w Allegro<br>
+                                        </p>
+
+                                        <table border="0" cellpadding="0" cellspacing="0" class="social-container">
+                                            <tr>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.linkedin.com/in/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/linkedin.png"
+                                                            alt="LinkedIn" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://x.com/PradzynskiJakub" target="_blank">
+                                                        <img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png"
+                                                            alt="X" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.facebook.com/jakub.pradzynski" target="_blank">
+                                                        <img src="https://img.icons8.com/color/48/facebook-new.png"
+                                                            alt="Facebook" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.instagram.com/jakubpradzynski/"
+                                                        target="_blank">
+                                                        <img src="https://img.icons8.com/fluency/48/instagram-new.png"
+                                                            alt="Instagram" width="28" height="28"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://jakubpradzynski.pl" target="_blank"
+                                                        title="Strona WWW">
+                                                        <img src="https://img.icons8.com/color/48/domain--v1.png"
+                                                            alt="WWW" width="28" height="28" style="display: block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="container"
+                    style="background-color: #f4f4f4;">
+                    <tr>
+                        <td align="center"
+                            style="padding: 30px 20px; color: #888888; font-size: 12px; line-height: 18px;">
+                            <p style="margin: 0 0 10px 0;">
+                                © 2026 <a href="https://przegladai.news"
+                                    style="color: #888888; text-decoration: none;">PrzeglądAI</a>. Wszystkie prawa
+                                zastrzeżone.
+                            </p>
+                            <p style="margin: 0;">
+                                <a href="{$unsubscribe}" style="color: #888888; text-decoration: underline;">Wypisz się
+                                    z listy</a>
+                                <span style="margin: 0 5px;">|</span>
+                                Powered by <a href="https://hvb.software/"
+                                    style="color: #888888; text-decoration: none;">HVB.software</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

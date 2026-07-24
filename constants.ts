@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '30',
+    slug: 'wydanie-30-openai-hakuje-hugging-face-kimi-k3-kontra-zachod-i-meta-zwalnia-z-pomoca-ai',
+    title: 'Wydanie #30: OpenAI hakuje Hugging Face, Kimi K3 kontra Zachód i Meta zwalnia z pomocą AI',
+    date: '24-07-2026',
+    htmlUrl: '/issues/30.html'
+  },
+  {
     id: '29',
     slug: 'wydanie-29-apple-pozywa-openai-niebezpieczenstwo-grog-cli-i-codex-micro',
     title: 'Wydanie #29: Apple pozywa OpenAI, (nie)bezpieczeństwo Grog CLI i Codex Micro',
