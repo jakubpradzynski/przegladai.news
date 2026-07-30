@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '31',
+    slug: 'wydanie-31-polska-ustawa-o-ai-claude-opus-5-i-wyciek-danych-z-suno',
+    title: 'Wydanie #31: Polska ustawa o AI, Claude Opus 5 i wyciek danych z Suno',
+    date: '31-07-2026',
+    htmlUrl: '/issues/31.html'
+  },
+  {
     id: '30',
     slug: 'wydanie-30-openai-hakuje-hugging-face-kimi-k3-kontra-zachod-i-meta-zwalnia-z-pomoca-ai',
     title: 'Wydanie #30: OpenAI hakuje Hugging Face, Kimi K3 kontra Zachód i Meta zwalnia z pomocą AI',
