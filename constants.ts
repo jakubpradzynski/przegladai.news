@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '32',
+    slug: 'wydanie-32-tanszy-gpt-56-oslabiony-deepmind-i-rekord-microsoftu',
+    title: 'Wydanie #32: Tańszy GPT-5.6, osłabiony DeepMind i rekord Microsoftu',
+    date: '07-08-2026',
+    htmlUrl: '/issues/32.html'
+  },
+  {
     id: '31',
     slug: 'wydanie-31-polska-ustawa-o-ai-claude-opus-5-i-wyciek-danych-z-suno',
     title: 'Wydanie #31: Polska ustawa o AI, Claude Opus 5 i wyciek danych z Suno',
