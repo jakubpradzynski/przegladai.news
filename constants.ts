@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '33',
+    slug: 'wydanie-33-gemini-z-1-mld-uzytkownikow-manifest-zuckerberga-i-ai-persona-na-spotify',
+    title: 'Wydanie #33: Gemini z 1 mld użytkowników, manifest Zuckerberga i AI Persona na Spotify',
+    date: '14-08-2026',
+    htmlUrl: '/issues/33.html'
+  },
+  {
     id: '32',
     slug: 'wydanie-32-tanszy-gpt-56-oslabiony-deepmind-i-rekord-microsoftu',
     title: 'Wydanie #32: Tańszy GPT-5.6, osłabiony DeepMind i rekord Microsoftu',
