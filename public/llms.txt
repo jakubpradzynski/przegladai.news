@@ -43,6 +43,7 @@ Na naszej stronie znajdziesz:
 - **Wydanie #30**: "OpenAI hakuje Hugging Face, Kimi K3 kontra Zachód i Meta zwalnia z pomocą AI" (24-07-2026) - https://przegladai.news/wydanie-30-openai-hakuje-hugging-face-kimi-k3-kontra-zachod-i-meta-zwalnia-z-pomoca-ai
 - **Wydanie #31**: "Polska ustawa o AI, Claude Opus 5 i wyciek danych z Suno" (31-07-2026) - https://przegladai.news/wydanie-31-polska-ustawa-o-ai-claude-opus-5-i-wyciek-danych-z-suno
 - **Wydanie #32**: "Tańszy GPT-5.6, osłabiony DeepMind i rekord Microsoftu" (07-08-2026) - https://przegladai.news/wydanie-32-tanszy-gpt-56-oslabiony-deepmind-i-rekord-microsoftu
+- **Wydanie #33**: "Gemini z 1 mld użytkowników, manifest Zuckerberga i AI Persona na Spotify" (14-08-2026) - https://przegladai.news/wydanie-33-gemini-z-1-mld-uzytkownikow-manifest-zuckerberga-i-ai-persona-na-spotify
 
 ## Kontakt
 Strona internetowa: https://przegladai.news
