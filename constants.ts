@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '34',
+    slug: 'wydanie-34-stripe-kupuje-openrouter-ai-szef-zwalnia-pracownika-i-deepseek-bije-rekord-na-githubie',
+    title: 'Wydanie #34: Stripe kupuje OpenRouter, AI-szef zwalnia pracownika i DeepSeek bije rekord na GitHubie',
+    date: '21-08-2026',
+    htmlUrl: '/issues/34.html'
+  },
+  {
     id: '33',
     slug: 'wydanie-33-gemini-z-1-mld-uzytkownikow-manifest-zuckerberga-i-ai-persona-na-spotify',
     title: 'Wydanie #33: Gemini z 1 mld użytkowników, manifest Zuckerberga i AI Persona na Spotify',
