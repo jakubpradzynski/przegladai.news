@@ -45,6 +45,7 @@ Na naszej stronie znajdziesz:
 - **Wydanie #32**: "Tańszy GPT-5.6, osłabiony DeepMind i rekord Microsoftu" (07-08-2026) - https://przegladai.news/wydanie-32-tanszy-gpt-56-oslabiony-deepmind-i-rekord-microsoftu
 - **Wydanie #33**: "Gemini z 1 mld użytkowników, manifest Zuckerberga i AI Persona na Spotify" (14-08-2026) - https://przegladai.news/wydanie-33-gemini-z-1-mld-uzytkownikow-manifest-zuckerberga-i-ai-persona-na-spotify
 - **Wydanie #34**: "Stripe kupuje OpenRouter, AI-szef zwalnia pracownika i DeepSeek bije rekord na GitHubie" (21-08-2026) - https://przegladai.news/wydanie-34-stripe-kupuje-openrouter-ai-szef-zwalnia-pracownika-i-deepseek-bije-rekord-na-githubie
+- **Wydanie #35**: "Rządowa dymisja przez AI, komputer Perplexity bez chmury i mistrzostwa świata robotów" (28-08-2026) - https://przegladai.news/wydanie-35-rzadowa-dymisja-przez-ai-komputer-perplexity-bez-chmury-i-mistrzostwa-swiata-robotow
 
 ## Kontakt
 Strona internetowa: https://przegladai.news
