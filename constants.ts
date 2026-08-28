@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '35',
+    slug: 'wydanie-35-rzadowa-dymisja-przez-ai-komputer-perplexity-bez-chmury-i-mistrzostwa-swiata-robotow',
+    title: 'Wydanie #35: Rządowa dymisja przez AI, komputer Perplexity bez chmury i mistrzostwa świata robotów',
+    date: '28-08-2026',
+    htmlUrl: '/issues/35.html'
+  },
+  {
     id: '34',
     slug: 'wydanie-34-stripe-kupuje-openrouter-ai-szef-zwalnia-pracownika-i-deepseek-bije-rekord-na-githubie',
     title: 'Wydanie #34: Stripe kupuje OpenRouter, AI-szef zwalnia pracownika i DeepSeek bije rekord na GitHubie',
