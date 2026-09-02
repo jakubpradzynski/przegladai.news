@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '36',
+    slug: 'wydanie-36-scamwatch-openai-zrywa-z-cursorem-i-koniec-ery-tima-cooka',
+    title: 'Wydanie #36: ScamWatch, OpenAI zrywa z Cursorem i koniec ery Tima Cooka',
+    date: '04-09-2026',
+    htmlUrl: '/issues/36.html'
+  },
+  {
     id: '35',
     slug: 'wydanie-35-rzadowa-dymisja-przez-ai-komputer-perplexity-bez-chmury-i-mistrzostwa-swiata-robotow',
     title: 'Wydanie #35: Rządowa dymisja przez AI, komputer Perplexity bez chmury i mistrzostwa świata robotów',
