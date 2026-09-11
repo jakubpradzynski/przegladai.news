@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '37',
+    slug: 'wydanie-37-gpt-6-astra-forum-cyfryzacji-2026-i-roboty-na-targach-ifa',
+    title: 'Wydanie #37: GPT-6 Astra, Forum Cyfryzacji 2026 i roboty na targach IFA',
+    date: '11-09-2026',
+    htmlUrl: '/issues/37.html'
+  },
+  {
     id: '36',
     slug: 'wydanie-36-scamwatch-openai-zrywa-z-cursorem-i-koniec-ery-tima-cooka',
     title: 'Wydanie #36: ScamWatch, OpenAI zrywa z Cursorem i koniec ery Tima Cooka',
