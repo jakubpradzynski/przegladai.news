@@ -2,6 +2,13 @@ import { BlogPost } from './types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: '38',
+    slug: 'wydanie-38-nowa-siri-od-apple-debata-o-spowolnieniu-ai-i-waymo-w-las-vegas',
+    title: 'Wydanie #38: Nowa Siri od Apple, debata o spowolnieniu AI i Waymo w Las Vegas',
+    date: '18-09-2026',
+    htmlUrl: '/issues/38.html'
+  },
+  {
     id: '37',
     slug: 'wydanie-37-gpt-6-astra-forum-cyfryzacji-2026-i-roboty-na-targach-ifa',
     title: 'Wydanie #37: GPT-6 Astra, Forum Cyfryzacji 2026 i roboty na targach IFA',
