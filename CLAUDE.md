@@ -43,6 +43,6 @@ strona/           przegladai.news — statyczne przekierowanie na Substacka (Git
 ## Uwagi techniczne
 
 - Skrypty uruchamiamy z katalogu głównego: `python3 narzedzia/<skrypt>.py`. Zależności: `requests`, `bs4`, `Pillow`.
-- Gmail skrzynki przegladai.news — przez CLI `gws` (`narzedzia/lib/gmail.py`, tylko odczyt).
+- Gmail skrzynki przegladai.news — przez CLI `gws` (`narzedzia/lib/gmail.py`, tylko odczyt). Jedyny wyjątek: wypisywanie z list w `narzedzia/newslettery/wypisz.py`, zawsze po decyzji Kuby.
 - Strona `strona/` to tylko przekierowanie; nowe wydania jej nie zmieniają.
 - Kolory tagów w `narzedzia/generuj_wydanie.py` są dokładnie takie jak na Substacku — nie zmieniać bez sprawdzenia opublikowanego posta.
