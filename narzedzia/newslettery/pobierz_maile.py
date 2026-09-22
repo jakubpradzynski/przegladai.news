@@ -6,6 +6,8 @@ dlugosc tekstu i lista linkow (href, tekst linku, zdanie wokol linku).
 Na tej podstawie analizuj.py dopasowuje maile do newsow z wydan.
 
 Uzycie:
+    python3 narzedzia/newslettery/pobierz_maile.py                     # 10 ostatnich wydan do dzis
+    python3 narzedzia/newslettery/pobierz_maile.py --ostatnie-wydania 6
     python3 narzedzia/newslettery/pobierz_maile.py --od 2026-07-08 --do 2026-09-19
 """
 import argparse
@@ -13,12 +15,13 @@ import json
 import os
 import re
 import sys
+from datetime import date, datetime, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from bs4 import BeautifulSoup  # noqa: E402
 
-from lib import gmail  # noqa: E402
+from lib import gmail, repo  # noqa: E402
 
 CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '.cache', 'newslettery')
 BLOCK_TAGS = ('p', 'td', 'li', 'h1', 'h2', 'h3', 'h4', 'div', 'blockquote')
@@ -54,11 +57,18 @@ def extract(html, plain):
 def main():
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--od', required=True, help='YYYY-MM-DD')
-    parser.add_argument('--do', required=True, help='YYYY-MM-DD')
+    parser.add_argument('--ostatnie-wydania', type=int, default=10,
+                        help='zakres: od 12 dni przed N-tym wydaniem od konca do dzis (gdy brak --od)')
+    parser.add_argument('--od', help='YYYY-MM-DD')
+    parser.add_argument('--do', help='YYYY-MM-DD (domyslnie jutro)')
     parser.add_argument('--etykieta', default='Newsletter')
     parser.add_argument('--watki', type=int, default=8)
     args = parser.parse_args()
+    if not args.od:
+        dirs = repo.issue_dirs()[-args.ostatnie_wydania:]
+        first = repo.read_json(os.path.join(dirs[0], 'meta.json'))['data']
+        args.od = (datetime.strptime(first, '%Y-%m-%d') - timedelta(days=12)).strftime('%Y-%m-%d')
+    args.do = args.do or (date.today() + timedelta(days=1)).isoformat()
 
     os.makedirs(CACHE_DIR, exist_ok=True)
     out_path = os.path.join(CACHE_DIR, 'maile.jsonl')

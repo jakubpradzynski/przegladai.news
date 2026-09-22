@@ -18,6 +18,7 @@ Trzy poziomy dopasowania maila do newsa z wydania:
 Wynik: .cache/newslettery/raport.json i tabela na stdout.
 
 Uzycie:
+    python3 narzedzia/newslettery/analizuj.py               # 10 ostatnich wydan
     python3 narzedzia/newslettery/analizuj.py --wydania 29-38
 """
 import argparse
@@ -139,15 +140,22 @@ def mail_items(mails):
 def main():
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--wydania', default='29-38')
+    parser.add_argument('--wydania', help='zakres numerow, np. 29-38 (domyslnie 10 ostatnich)')
     args = parser.parse_args()
+    if not args.wydania:
+        numbers = [int(os.path.basename(d)) for d in repo.issue_dirs()[-10:]]
+        args.wydania = '%d-%d' % (numbers[0], numbers[-1])
 
     news = load_news(parse_range(args.wydania))
     with open(os.path.join(CACHE_DIR, 'maile.jsonl'), encoding='utf-8') as f:
         mails = [json.loads(line) for line in f if line.strip()]
+    # statystyki tylko z okresu pokrytego wydaniami (plik moze miec starsze i nowsze maile)
+    start = min(x['data'] for x in news) - WINDOW
+    end = max(x['data'] for x in news) + timedelta(days=1)
     for mail in mails:
         mail['_date'] = datetime.fromtimestamp(mail['internal_date'] / 1000)
         mail['_sender'] = sender_key(mail['sender'])
+    mails = [m for m in mails if start <= m['_date'] <= end]
     items = mail_items(mails)
     print('Maili: %d, pozycji tresci: %d, newsow z wydan %s: %d'
           % (len(mails), len(items), args.wydania, len(news)), file=sys.stderr)

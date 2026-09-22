@@ -1,54 +1,61 @@
 ---
 name: porzadki-newsletterow
-description: Sprawdza, które newslettery w skrzynce przegladai.news (etykieta Newsletter) faktycznie dostarczają newsy do wydań PrzeglądAI, i po akceptacji Kuby wypisuje z bezużytecznych. Reaguje na "porządki w newsletterach", "z których newsletterów się wypisać".
+description: Regularne porządki w subskrypcjach skrzynki przegladai.news - analizuje, które newslettery (etykieta Newsletter) dostarczają newsy do wydań PrzeglądAI, i uruchamia narzędzie, w którym Kuba przegląda kandydatów z dwoma ostatnimi mailami, oznacza "wypisz"/"zostaw" i jednym przyciskiem się wypisuje. Reaguje na "/porzadki-newsletterow", "porządki w newsletterach", "wyczyść subskrypcje".
 ---
+
+Prowadzisz okresowe porządki w newsletterach. Kuba decyduje o każdym wypisaniu w narzędziu —
+Ty przygotowujesz dane, uruchamiasz narzędzie i podsumowujesz wynik. **Nigdy nie wypisuj
+nikogo bez decyzji Kuby w narzędziu.**
 
 ## Krok 1 — Maile
 
-Zakres: od tygodnia przed 10. wydaniem od końca do daty ostatniego wydania (daty w `wydania/*/meta.json`).
+Uruchom w tle (pierwszy raz kilka minut, potem dociąga tylko brakujące):
 
 ```bash
-python3 narzedzia/newslettery/pobierz_maile.py --od <RRRR-MM-DD> --do <RRRR-MM-DD>
+python3 narzedzia/newslettery/pobierz_maile.py
 ```
 
-Pobiera tylko brakujące maile do `.cache/newslettery/maile.jsonl` (kilka minut, uruchom w tle).
+Zakres: od 12 dni przed 10. wydaniem od końca do dziś (`--ostatnie-wydania N`, żeby zmienić).
 
-## Krok 2 — Analiza
+## Krok 2 — Analiza i kandydaci
 
 ```bash
-python3 narzedzia/newslettery/analizuj.py --wydania <od>-<do>
+python3 narzedzia/newslettery/analizuj.py
+python3 narzedzia/newslettery/kandydaci.py
 ```
 
-Wynik: tabela + `.cache/newslettery/raport.json` (z przykładami trafień i tematami maili). Kolumny:
-- **ZRODLO** — newsy z wydań, do których mail dał bezpośrednio link (także po rozwinięciu trackera),
-  albo mail sam był artykułem (newslettery autorskie na Substacku: Addy Osmani, Pragmatic Engineer…),
-- **TEMAT / T+PR** — newsy, które nadawca opisał, nawet z innym linkiem („pewne” / z „prawdopodobnymi”, precyzja ok. 2/3),
-- **1SZY** — ile newsów ten nadawca podał jako pierwszy, **UNIK** — ile tylko on,
-- **DOM%** — udział linków z próbki prowadzących do domen często używanych w wydaniach
-  (0% bywa mylące, gdy nadawca linkuje do własnej strony albo trackera, którego nie da się rozwinąć),
-- **AI%** — udział treści o AI.
+`analizuj.py` dopasowuje maile do newsów z 10 ostatnich wydań (link, temat maila = artykuł,
+ten sam temat innymi słowami) i ocenia potencjał. `kandydaci.py` wybiera listy mailingowe
+o niskiej użyteczności, sortuje od tych, które najbardziej zaśmiecają skrzynkę, i pomija:
+- listy oznaczone „zostaw” w ostatnich 90 dniach,
+- listy już wypisane — chyba że nadal przysyłają maile (wracają na górę z adnotacją).
 
-## Krok 3 — Propozycja
+Decyzje są w `redakcja/newslettery.json`. Pokaż Kubie krótko: ilu kandydatów, ile maili
+tygodniowo generują i 5 pierwszych z listy.
 
-Podziel nadawców na grupy i przy każdej wypisz krótkie uzasadnienie liczbami:
-1. **Kluczowe źródła** — wysokie ZRODLO lub UNIK.
-2. **Duplikaty** — duży wolumen, sporo tematów, ale UNIK≈0 i mało ZRODLO: wszystko to samo przychodzi z lepszych źródeł.
-3. **Radar bez linków** — dużo TEMAT, często 1SZY, ale ZRODLO≈0 (linkują do siebie / paywall).
-4. **Niewykorzystany potencjał** — mało trafień, ale wysoki DOM% i AI% albo profil pasujący do sekcji „Bliżej technologii”.
-5. **Do wypisania** — brak trafień i niski potencjał (reklamy, poza tematem, tekst bez linków).
-6. **Decyzja Kuby** — polscy twórcy i autorzy, których Kuba może chcieć zostawić z innych powodów.
+## Krok 3 — Przegląd w narzędziu
 
-Przy wątpliwych przejrzyj `tematy_maili` i `przyklady` z raportu. Pokaż Kubie wynik i szacunek,
-ile maili tygodniowo ubędzie. **Nie wypisuj bez wyraźnej zgody Kuby.**
-
-## Krok 4 — Wypisanie (po zgodzie)
-
-Zatwierdzonych nadawców zapisz do `praca/do_wypisania.txt` (jedna linia = nadawca dokładnie jak w raporcie):
+Przed startem zapamiętaj stan decyzji, a potem uruchom serwer w tle (`run_in_background: true`):
 
 ```bash
-python3 narzedzia/newslettery/wypisz.py --lista praca/do_wypisania.txt            # podgląd
-python3 narzedzia/newslettery/wypisz.py --lista praca/do_wypisania.txt --wykonaj
+touch .cache/newslettery/przeglad_start
+python3 narzedzia/newslettery/przeglad/server.py
 ```
 
-Skrypt używa one-click `List-Unsubscribe`, w razie potrzeby wysyła mail przez `gws`, a resztę
-wypisuje jako linki do kliknięcia. Wynik zapisuje w `redakcja/zrodla.md`.
+Napisz Kubie: narzędzie działa na **http://localhost:8010**. Dla każdego kandydata widać statystyki,
+powód, ostrzeżenia (np. ten sam wydawca co newsletter, który zostaje) i dwa ostatnie maile.
+Klawisze: **W** — wypisz, **Z** — zostaw, ↑/↓ — nawigacja. Postęp zapisuje się na bieżąco,
+można przerwać i wrócić. Na końcu „Podsumowanie i wypisanie” → „Wypisz zaznaczone”.
+
+Poczekaj na zakończenie (Monitor):
+`until [ redakcja/newslettery.json -nt .cache/newslettery/przeglad_start ]; do sleep 5; done`
+
+## Krok 4 — Podsumowanie
+
+Przeczytaj z `redakcja/newslettery.json` wpisy z dzisiejszą datą i podaj Kubie:
+- ile list wypisano automatycznie i ile maili tygodniowo ubędzie,
+- listy ze statusem `do_recznego` — z linkiem do wypisu (pole `uwagi`), do kliknięcia ręcznie,
+- ile list zostawił (wrócą do oceny za 90 dni).
+
+Zamknij serwer: `curl -s -X POST http://localhost:8010/api/shutdown`. Zaproponuj commit
+`redakcja/newslettery.json` (to historia decyzji, potrzebna przy kolejnych porządkach).

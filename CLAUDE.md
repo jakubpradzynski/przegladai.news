@@ -14,6 +14,9 @@ Repo służy do przygotowania wydania z Claude Code i archiwum wydań. Autor: Ku
    Nie automatyzujemy publikacji na Substacku w żadnej formie.
 5. **`/zakoncz-wydanie`** — dziennik poprawek, `ucz-sie`, sprzątanie, branch `issue-N`, PR z `/schedule` na piątek.
 
+Co jakiś czas: **`/porzadki-newsletterow`** — analiza, które newslettery dostarczają newsy, i narzędzie
+do przeglądu kandydatów (dwa ostatnie maile, „wypisz” / „zostaw”) z automatycznym wypisaniem.
+
 ## Samorozwój — najważniejsza zasada
 
 Każda poprawka Kuby względem wersji AI trafia do `redakcja/dziennik/poprawki.jsonl` (tylko dopisujemy,
@@ -31,7 +34,8 @@ data.csv          linki zbierane w tygodniu (gitignore)
 praca/            pliki robocze bieżącego wydania (gitignore)
 redakcja/         reguły stylu i wyboru newsów + dziennik poprawek — jedyne źródło prawdy o stylu
 wydania/NNN/      archiwum: substack.html, dane.csv, meta.json, okladka.jpeg
-narzedzia/        skrypty Pythona (lib/ — wspólne), adminka/, okladka/ (szablon, font), newslettery/
+narzedzia/        skrypty Pythona (lib/ — wspólne), adminka/, okladka/ (szablon, font),
+                  newslettery/ (analiza skrzynki, kandydaci, przeglad/ — narzędzie do wypisywania)
 strona/           przegladai.news — statyczne przekierowanie na Substacka (GitHub Pages)
 .claude/          skille i subagent opisywacz
 ```

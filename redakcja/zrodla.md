@@ -27,4 +27,5 @@ używa bramek z `meta refresh`, beehiiv i TLDR — zwykłych przekierowań HTTP.
 
 ## Newslettery (skrzynka przegladai.news)
 
-Raport skuteczności nadawców: `narzedzia/newslettery/` (skill `porzadki-newsletterow`).
+Porządki w subskrypcjach: skill `porzadki-newsletterow` (narzędzie http://localhost:8010).
+Decyzje „wypisz” / „zostaw” dla list mailingowych: `redakcja/newslettery.json`.
