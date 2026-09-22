@@ -6,6 +6,8 @@ Repo służy do przygotowania wydania z Claude Code i archiwum wydań. Autor: Ku
 ## Cotygodniowy proces
 
 1. **Codziennie** Kuba wrzuca linki do `data.csv` (dowolny format, byle URL-e).
+   W dniu wydania **`/przeglad-stron`** — nowe wpisy ze śledzonych stron (`redakcja/strony.json`) od dnia
+   przed ostatnim wydaniem, narzędzie na http://localhost:8020, wybrane linki trafiają do `data.csv`.
 2. **`/zbierz-dane`** (czwartek) — skill `zbierz-dane`: czyszczenie linków, opisy przez subagentów
    `opisywacz`, ocena i rekomendacje TOP 30, adminka na http://localhost:8000.
 3. **Adminka** — Kuba wybiera newsy i poprawia teksty, potem w zakładce „Wydanie” wybiera tytuł,
@@ -35,7 +37,8 @@ praca/            pliki robocze bieżącego wydania (gitignore)
 redakcja/         reguły stylu i wyboru newsów + dziennik poprawek — jedyne źródło prawdy o stylu
 wydania/NNN/      archiwum: substack.html, dane.csv, meta.json, okladka.jpeg
 narzedzia/        skrypty Pythona (lib/ — wspólne), adminka/, okladka/ (szablon, font),
-                  newslettery/ (analiza skrzynki, kandydaci, przeglad/ — narzędzie do wypisywania)
+                  newslettery/ (analiza skrzynki, kandydaci, przeglad/ — narzędzie do wypisywania),
+                  strony/ (zbieranie wpisów ze stron, przeglad/ — wybór do data.csv)
 strona/           przegladai.news — statyczne przekierowanie na Substacka (GitHub Pages)
 .claude/          skille i subagent opisywacz
 ```

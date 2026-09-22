@@ -11,6 +11,8 @@ opisany jest styl newslettera. Prompty w skillach tylko odsyłają tutaj.
 | `priorytety.md` | Ocena newsów, podział na sekcje, co trafia do TOP 30, kolejność w wydaniu |
 | `wstep.md` | Tekst między „Cześć!” a „Zapraszam do lektury!” |
 | `seo.md` | Opis SEO, slug, napis na okładce |
+| `strony.json` | Strony i blogi przeglądane przy każdym wydaniu (`/przeglad-stron`) |
+| `newslettery.json` | Decyzje „wypisz” / „zostaw” dla newsletterów (`/porzadki-newsletterow`) |
 | `zrodla.md` | Wiedza techniczna o źródłach: paywalle, strony wymagające przeglądarki, trackery, nadawcy newsletterów |
 
 ## Jak te pliki się zmieniają
