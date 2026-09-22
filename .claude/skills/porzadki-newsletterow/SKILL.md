@@ -19,21 +19,27 @@ Pobiera tylko brakujące maile do `.cache/newslettery/maile.jsonl` (kilka minut,
 python3 narzedzia/newslettery/analizuj.py --wydania <od>-<do>
 ```
 
-Dopasowuje newsy z wydań do linków w mailach (URL, a przy trackerach — tekst wokół linku
-i rozwinięte przekierowanie). Wynik: tabela + `.cache/newslettery/raport.json`.
-Kolumny: MAILE, TRAF (newsy z wydań w mailach), URL (potwierdzone adresem), UNIK (news był
-tylko w tym newsletterze), L/MAIL (linki treści na mail).
+Wynik: tabela + `.cache/newslettery/raport.json` (z przykładami trafień i tematami maili). Kolumny:
+- **ZRODLO** — newsy z wydań, do których mail dał bezpośrednio link (także po rozwinięciu trackera),
+  albo mail sam był artykułem (newslettery autorskie na Substacku: Addy Osmani, Pragmatic Engineer…),
+- **TEMAT / T+PR** — newsy, które nadawca opisał, nawet z innym linkiem („pewne” / z „prawdopodobnymi”, precyzja ok. 2/3),
+- **1SZY** — ile newsów ten nadawca podał jako pierwszy, **UNIK** — ile tylko on,
+- **DOM%** — udział linków z próbki prowadzących do domen często używanych w wydaniach
+  (0% bywa mylące, gdy nadawca linkuje do własnej strony albo trackera, którego nie da się rozwinąć),
+- **AI%** — udział treści o AI.
 
 ## Krok 3 — Propozycja
 
-Podziel nadawców:
-- **wypisać**: 0 trafień przy ≥3 mailach, albo ≤1 trafienie przy ≥20 mailach i 0 unikalnych;
-- **decyzja Kuby**: polscy twórcy, autorzy z nazwiska i newslettery z 1–3 unikalnymi trafieniami przy dużym wolumenie;
-- **zostają**: reszta.
+Podziel nadawców na grupy i przy każdej wypisz krótkie uzasadnienie liczbami:
+1. **Kluczowe źródła** — wysokie ZRODLO lub UNIK.
+2. **Duplikaty** — duży wolumen, sporo tematów, ale UNIK≈0 i mało ZRODLO: wszystko to samo przychodzi z lepszych źródeł.
+3. **Radar bez linków** — dużo TEMAT, często 1SZY, ale ZRODLO≈0 (linkują do siebie / paywall).
+4. **Niewykorzystany potencjał** — mało trafień, ale wysoki DOM% i AI% albo profil pasujący do sekcji „Bliżej technologii”.
+5. **Do wypisania** — brak trafień i niski potencjał (reklamy, poza tematem, tekst bez linków).
+6. **Decyzja Kuby** — polscy twórcy i autorzy, których Kuba może chcieć zostawić z innych powodów.
 
-Przy „wypisać” i „decyzja Kuby” przejrzyj 1–2 tematy maili z raportu (`tematy_maili`), żeby odróżnić
-newsletter bez linków lub reklamowy od tematycznie nietrafionego. Pokaż Kubie tabelę z uzasadnieniem
-i szacunkiem, ile maili tygodniowo ubędzie. **Nie wypisuj bez wyraźnej zgody Kuby.**
+Przy wątpliwych przejrzyj `tematy_maili` i `przyklady` z raportu. Pokaż Kubie wynik i szacunek,
+ile maili tygodniowo ubędzie. **Nie wypisuj bez wyraźnej zgody Kuby.**
 
 ## Krok 4 — Wypisanie (po zgodzie)
 
