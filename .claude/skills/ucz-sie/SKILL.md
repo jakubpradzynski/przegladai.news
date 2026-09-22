@@ -1,0 +1,67 @@
+---
+name: ucz-sie
+description: Uczy reguły redakcyjne PrzeglądAI na poprawkach Kuby - czyta nowe wpisy z redakcja/dziennik/poprawki.jsonl i sam aktualizuje redakcja/*.md. Uruchamiany automatycznie przez zakoncz-wydanie i zbierz-dane; także na "ucz się z poprawek".
+---
+
+Twoim zadaniem jest, żeby Kuba co tydzień poprawiał mniej. Każda jego poprawka jest informacją
+o tym, czego reguły jeszcze nie mówią. Działasz sam — **nie pytasz Kuby o zgodę**. Zmiany trafiają
+do PR-a wydania, więc Kuba zobaczy je w diffie i może je cofnąć.
+
+## Krok 1 — Nowe wpisy
+
+```bash
+python3 narzedzia/dziennik.py nowe
+```
+
+Brak nowych wpisów → zakończ jednym zdaniem.
+
+## Krok 2 — Analiza
+
+Przeczytaj wszystkie pliki `redakcja/*.md` i pogrupuj nowe wpisy:
+
+| Wpisy | Plik |
+|---|---|
+| `zmiana` pola `Tytuł`, `wybrany_tytul`, `zmiana` pola `tytul` | `tytuly.md` |
+| `zmiana` pola `Opis` | `opisy.md` |
+| `zmiana` pól `Tagi`, `Czas` | `tagi.md` |
+| `odrzucony_top`, `wybrany_z_rezerwy`, `dodany_przez_kube`, `usuniety_w_substacku`, `podsumowanie` | `priorytety.md` |
+| `zmiana` pola `wstep` | `wstep.md` |
+| `zmiana` pól `opis_seo`, `slug`, `okladka` | `seo.md` |
+
+Dla każdej zmiany tekstu porównaj wersję AI z wersją Kuby i nazwij, **co dokładnie** zmienił
+(skrócił? usunął frazę? zmienił szyk? dodał kontekst? zmienił ton? poprawił fakt?). Zmiany czysto
+faktograficzne (literówka w nazwie, zła liczba) nie są regułą stylu — pomiń je, chyba że się powtarzają.
+
+## Krok 3 — Aktualizacja reguł
+
+Zasady:
+- **Nigdy nie edytuj sekcji „Uwagi Kuby”.**
+- **Pojedyncza poprawka** → para w sekcji „Przykłady poprawek (AI → Kuba)” właściwego pliku:
+  `- #<nr> <pole>: „<AI>” → „<Kuba>” — <czego uczy, jednym zdaniem>` (długie opisy skróć do fragmentu, który się zmienił).
+  Trzymaj najwyżej 12 przykładów na plik — najstarsze usuwaj (zostają w dzienniku).
+- **Wzorzec powtarzający się (2+ razy w dzienniku, także w starszych wpisach)** → reguła w odpowiedniej
+  sekcji pliku (zmień istniejącą albo dodaj nową). Przykłady, na których się opiera, możesz wtedy usunąć.
+- **Fraza, którą Kuba konsekwentnie usuwa** → dopisz ją do listy „Nie używać” w `opisy.md`
+  (w cudzysłowie „…” — walidator czyta ją stamtąd automatycznie).
+- **Selekcja** → w `priorytety.md`, sekcja „Czego się nauczyliśmy z selekcji”: jakie typy newsów, źródła
+  i tematy Kuba odrzuca mimo wysokiej oceny, a jakie bierze z rezerwy. Gdy wzorzec jest wyraźny,
+  popraw rubrykę ocen albo proporcje sekcji.
+- Przy konflikcie z istniejącą regułą wygrywa nowsza — zmień starą i odnotuj to w kroku 4.
+
+## Krok 4 — Dziennik zmian reguł
+
+Dopisz na końcu `redakcja/zmiany-regul.md`:
+
+```markdown
+## <RRRR-MM-DD> — wydanie #<nr>
+
+- <plik>: <co się zmieniło> (na podstawie: <krótko które poprawki, np. 3× skrócony opis wideo>)
+```
+
+## Krok 5 — Oznacz jako przetworzone
+
+```bash
+python3 narzedzia/dziennik.py oznacz
+```
+
+Na koniec podaj Kubie 2–5 punktów: czego się nauczyłeś i co zmieniłeś.

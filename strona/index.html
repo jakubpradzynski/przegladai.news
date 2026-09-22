@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>PrzeglądAI</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico">
+  <!-- Domena przegladai.news tylko przekierowuje na Substacka:
+       /                  -> przegladai.substack.com
+       /<slug>            -> przegladai.substack.com/p/<slug>
+       /issues/<nr>.html  -> wydanie o danym numerze (stare linki do wersji HTML)
+       /?p=/<slug>        -> jak /<slug> (stary mechanizm SPA z 404.html)
+       Ten sam plik sluzy jako index.html i 404.html. -->
+  <script>
+    (function () {
+      var BASE = 'https://przegladai.substack.com';
+      // Tylko dla starych adresow /issues/<nr>.html - nowe wydania juz ich nie maja.
+      var ISSUES = {
+        '1': 'wydanie-1-hiszpanski-jesus-ai-i-miliardowe-zakupy-zuckerberga-w-chinach',
+        '2': 'wydanie-2-nowosci-z-targow-ces-i-tryb-health-w-chatgpt',
+        '3': 'wydanie-3-google-robi-1-krok-do-tylu-i-5-do-przodu',
+        '4': 'wydanie-4-reklamy-w-chatgpt-weryfikacja-wieku-i-spadek-ruchu-z-google',
+        '5': 'wydanie-5-album-muzyczny-od-elevenlabs-gemini-w-chrome-i-jak-mala-wyspa-zarabia-miliony-na-ai',
+        '6': 'wydanie-6-agentowe-narzedzia-od-openai-i-jak-ai-wplywa-na-nasze-umiejetnosci',
+        '7': 'wydanie-7-ai-podczas-super-bowl-rada-przyszlosci-i-agentic-engineering',
+        '8': 'wydanie-8-ai-gasi-pozary-i-acqui-hire-w-praktyce',
+        '9': 'wydanie-9-zdalnie-sterowany-claude-i-awarie-spowodowane-ai',
+        '10': 'wydanie-10-nano-banana-2-i-departament-wojny-vs-anthropic',
+        '11': 'wydanie-11-jetbrains-air-marsz-dziewiatki-i-top-100-aplikacji-genai',
+        '12': 'wydanie-12-olaf-z-krainy-lodu-i-ai-w-google-maps',
+        '13': 'wydanie-13-koniec-sory-atak-na-litellm-i-900-mln-dolarow-dla-apple',
+        '14': 'wydanie-14-polska-ustawa-o-ai-darmowy-claude-max-i-dekada-po-alphago',
+        '15': 'wydanie-15-projekt-glasswing-agenci-ai-na-gieldzie-i-software-slop',
+        '16': 'wydanie-16-lokalne-elevenlabs-m-od-perplexity-i-atak-na-dom-sama-altmana',
+        '17': 'wydanie-17-apple-bez-tima-cooka-piosenka-ai-numerem-1-i-robot-kontra-dziki-w-warszawie',
+        '18': 'wydanie-18-deepseek-v4-anthropic-wyprzedza-openai-i-ai-wykrywa-raka-trzustki',
+        '19': 'wydanie-19-gpt-55-instant-anthropic-w-spacex-i-oscary-bez-ai',
+        '20': 'wydanie-20-googlebook-polska-fabryka-ai-i-case-study-ikea',
+        '21': 'wydanie-21-google-io-2026-andrej-karpathy-w-anthropic-i-polski-victor-za-75-mln-usd',
+        '22': 'wydanie-22-robot-sprzatajacy-gatsby-raport-stack-overflow-i-koszt-orkiestracji-ai',
+        '23': 'wydanie-23-buffett-inwestuje-w-google-claude-opus-48-i-elevenlabs-w-warszawie',
+        '24': 'wydanie-24-plany-apple-na-ai-z-wwdc26-claude-fable-5-i-sukces-iceye',
+        '25': 'wydanie-25-ipo-spacex-przejecie-cursora-oraz-zmiany-w-google-polska',
+        '26': 'wydanie-26-claude-tag-na-slacku-orkiestrator-z-japonii-i-nowa-era-androida',
+        '27': 'wydanie-27-claude-sonnet-5-drozejace-macbooki-i-ford-znow-zatrudnia-ludzi',
+        '28': 'wydanie-28-spacexai-5-openai-dla-rzadu-usa-i-kariera-w-it-w-erze-agentow',
+        '29': 'wydanie-29-apple-pozywa-openai-niebezpieczenstwo-grog-cli-i-codex-micro',
+        '30': 'wydanie-30-openai-hakuje-hugging-face-kimi-k3-kontra-zachod-i-meta-zwalnia-z-pomoca-ai',
+        '31': 'wydanie-31-polska-ustawa-o-ai-claude-opus-5-i-wyciek-danych-z-suno',
+        '32': 'wydanie-32-tanszy-gpt-56-oslabiony-deepmind-i-rekord-microsoftu',
+        '33': 'wydanie-33-gemini-z-1-mld-uzytkownikow-manifest-zuckerberga-i-ai-persona-na-spotify',
+        '34': 'wydanie-34-stripe-kupuje-openrouter-ai-szef-zwalnia-pracownika-i-deepseek-bije-rekord-na-githubie',
+        '35': 'wydanie-35-rzadowa-dymisja-przez-ai-komputer-perplexity-bez-chmury-i-mistrzostwa-swiata-robotow',
+        '36': 'wydanie-36-scamwatch-openai-zrywa-z-cursorem-i-koniec-ery-tima-cooka',
+        '37': 'wydanie-37-gpt-6-astra-forum-cyfryzacji-2026-i-roboty-na-targach-ifa',
+        '38': 'wydanie-38-nowa-siri-od-apple-debata-o-spowolnieniu-ai-i-waymo-w-las-vegas'
+      };
+      var path = window.location.pathname;
+      var legacy = new URLSearchParams(window.location.search).get('p');
+      if (legacy) path = legacy;
+      path = path.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');
+      var target = BASE + '/';
+      var issue = path.match(/^issues\/(\d+)$/);
+      if (issue && ISSUES[issue[1]]) {
+        target = BASE + '/p/' + ISSUES[issue[1]];
+      } else if (path && path.indexOf('/') === -1 && path !== 'index') {
+        target = BASE + '/p/' + path;
+      }
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>Przekierowuję na <a href="https://przegladai.substack.com">przegladai.substack.com</a>…</p>
+</body>
+</html>
