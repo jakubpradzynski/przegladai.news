@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
-"""Preselekcja wpisow ze stron: przygotowanie danych dla subagenta i sprawdzenie jego wyniku.
+"""Preselekcja wpisow ze stron: reguly automatyczne + paczki dla subagentow + scalenie wyniku.
 
-    przygotuj  .cache/strony/wynik.json (+ przegladarka.json) -> .cache/strony/do_oceny.json
-               Kazdy wpis dostaje id; do tego statystyka strony i ostatnie decyzje Kuby
-               z redakcja/dziennik/strony_wybory.jsonl (przyklady wzietych i pominietych).
-    sprawdz    .cache/strony/preselekcja.json (wynik subagenta preselektor) - czy kazdy wpis
-               ma ocene tak/moze/nie i powod. Kod wyjscia 1, gdy czegos brakuje.
+    przygotuj  .cache/strony/wynik.json (+ przegladarka.json)
+               1. reguly automatyczne z redakcja/preselekcja.md (sekcja "Reguly automatyczne"):
+                  wpisy bez zwiazku z AI na stronach ogolnych i tytuly pasujace do wzorcow -> "nie"
+                  (bez AI, natychmiast) -> .cache/strony/oceny/auto.json
+               2. reszta w paczkach po --paczka wpisow -> .cache/strony/do_oceny/paczka_NN.json,
+                  kazda z kontekstem tylko swoich stron (skutecznosc + ostatnie decyzje Kuby)
+    sprawdz    scala .cache/strony/oceny/*.json -> .cache/strony/preselekcja.json;
+               kod wyjscia 1, gdy ktorys wpis nie ma oceny tak/moze/nie z powodem
 
 Uzycie:
-    python3 narzedzia/strony/preselekcja.py przygotuj
+    python3 narzedzia/strony/preselekcja.py przygotuj [--paczka 25]
     python3 narzedzia/strony/preselekcja.py sprawdz
 """
 import argparse
 import collections
+import glob
 import json
 import os
+import re
+import shutil
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -24,10 +30,32 @@ sys.path.insert(0, os.path.join(HERE, 'przeglad'))
 from lib import repo  # noqa: E402
 
 CACHE = os.path.join(repo.ROOT, '.cache', 'strony')
-DO_OCENY = os.path.join(CACHE, 'do_oceny.json')
+DO_OCENY = os.path.join(CACHE, 'do_oceny')
+OCENY = os.path.join(CACHE, 'oceny')
 PRESELEKCJA = os.path.join(CACHE, 'preselekcja.json')
 WYBORY = os.path.join(repo.REDAKCJA, 'dziennik', 'strony_wybory.jsonl')
-PRZYKLADY_NA_STRONE = 12
+REGULY = os.path.join(repo.REDAKCJA, 'preselekcja.md')
+PRZYKLADY_NA_STRONE = 10
+
+AI_RE = re.compile(
+    r'\b(ai|a\.i\.|artificial intelligence|sztuczn\w* inteligencj\w*|llms?|gpt[\w.-]*|chatgpt|claude|gemini|'
+    r'openai|anthropic|copilot|agent\w*|agentow\w*|language models?|model\w* językow\w*|machine learning|'
+    r'uczeni\w* maszynow\w*|neural|genai|generative|generatywn\w*|deepmind|nvidia|robot\w*|humanoid\w*|'
+    r'chatbot\w*|czatbot\w*|mistral|llama|deepseek|perplexity|cursor|codex|diffusion|inference|inferencj\w*|'
+    r'rag|mcp|prompt\w*|automatyzacj\w*|automation|elevenlabs|hugging ?face|midjourney|runway|xai|grok|'
+    r'waymo|autonomous|autonomiczn\w*|deepfake\w*|deep fake|scamwatch|siri|alexa|meta ai|muse|synthesia|'
+    r'scale ai|databricks|snowflake cortex|nvidia)\b', re.IGNORECASE)
+
+
+def auto_rules():
+    with open(REGULY, encoding='utf-8') as f:
+        text = f.read()
+    match = re.search(r'## Reguły automatyczne.*?```json\n(.*?)\n```', text, re.DOTALL)
+    if not match:
+        return set(), []
+    rules = json.loads(match.group(1))
+    patterns = [(re.compile(r['wzorzec'], re.IGNORECASE), r['powod']) for r in rules.get('wzorce_nie', [])]
+    return set(rules.get('strony_ogolne', [])), patterns
 
 
 def history():
@@ -39,51 +67,89 @@ def history():
                 entry = json.loads(line)
                 if entry['kuba'] == 'niewidziany':
                     continue
-                site = stats[entry['strona']]
-                site['wszystkie'] += 1
-                site['wziete'] += entry['kuba'] == 'wziety'
+                stats[entry['strona']]['wszystkie'] += 1
+                stats[entry['strona']]['wziete'] += entry['kuba'] == 'wziety'
                 examples[entry['strona']].append(entry)
     return stats, examples
 
 
-def cmd_przygotuj(_args):
+def site_context(name, stats, examples):
+    past = examples.get(name, [])
+    return {'historia': stats.get(name, {'wziete': 0, 'wszystkie': 0}),
+            'ostatnio_wziete': [e['tytul'] for e in past if e['kuba'] == 'wziety'][-PRZYKLADY_NA_STRONE:],
+            'ostatnio_pominiete': [e['tytul'] for e in past if e['kuba'] == 'pominiety'][-PRZYKLADY_NA_STRONE:]}
+
+
+def cmd_przygotuj(args):
     import server  # wczytanie wyniku razem z wpisami z przegladarki
     result = server.load(with_preselection=False)
+    general_sites, patterns = auto_rules()
     stats, examples = history()
-    items, sites = [], {}
+
+    for folder in (DO_OCENY, OCENY):
+        shutil.rmtree(folder, ignore_errors=True)
+        os.makedirs(folder)
+    if os.path.exists(PRESELEKCJA):
+        os.remove(PRESELEKCJA)
+
+    auto, todo = [], []
     for site in result['strony']:
-        if not site['nowe']:
-            continue
-        past = examples.get(site['nazwa'], [])
-        taken = [e['tytul'] for e in past if e['kuba'] == 'wziety'][-PRZYKLADY_NA_STRONE:]
-        skipped = [e['tytul'] for e in past if e['kuba'] == 'pominiety'][-PRZYKLADY_NA_STRONE:]
-        sites[site['nazwa']] = {'historia': stats.get(site['nazwa'], {'wziete': 0, 'wszystkie': 0}),
-                                'ostatnio_wziete': taken, 'ostatnio_pominiete': skipped}
         for item in site['nowe']:
             if item.get('w_data_csv') or item.get('opublikowany'):
                 continue
-            items.append({'id': item['link'], 'strona': site['nazwa'], 'data': item['data'],
-                          'tytul': item['tytul'], 'opis': item.get('opis', '')[:300]})
-    repo.write_json(DO_OCENY, {'od': result['od'], 'strony': sites, 'wpisy': items})
-    print('Do oceny: %d wpisów z %d stron -> %s' % (len(items), len(sites), os.path.relpath(DO_OCENY, repo.ROOT)))
+            text = '%s %s' % (item['tytul'], item.get('opis', ''))
+            rule = next((reason for pattern, reason in patterns if pattern.search(item['tytul'])), None)
+            if rule:
+                auto.append({'id': item['link'], 'ocena': 'nie', 'powod': 'reguła: ' + rule})
+            elif site['nazwa'] in general_sites and not AI_RE.search(text):
+                auto.append({'id': item['link'], 'ocena': 'nie', 'powod': 'reguła: brak związku z AI w tytule i opisie'})
+            else:
+                todo.append({'id': item['link'], 'strona': site['nazwa'], 'data': item['data'],
+                             'tytul': item['tytul'], 'opis': item.get('opis', '')[:250]})
+    repo.write_json(os.path.join(OCENY, 'auto.json'), auto)
+
+    # paczki: wpisy jednej strony trzymamy razem (duplikaty tematow najczesciej sa w obrebie agregatora)
+    todo.sort(key=lambda i: i['strona'])
+    batches = [todo[i:i + args.paczka] for i in range(0, len(todo), args.paczka)]
+    for n, batch in enumerate(batches, 1):
+        sites = sorted({i['strona'] for i in batch})
+        repo.write_json(os.path.join(DO_OCENY, 'paczka_%02d.json' % n), {
+            'od': result['od'],
+            'strony': {s: site_context(s, stats, examples) for s in sites},
+            'wszystkie_tytuly_w_przegladzie': [i['tytul'] for i in todo],   # do wykrywania duplikatow miedzy paczkami
+            'wpisy': batch,
+        })
+    print('Reguły automatyczne: %d wpisów -> "nie" (bez AI)' % len(auto))
+    print('Do oceny AI: %d wpisów w %d paczkach -> .cache/strony/do_oceny/paczka_NN.json' % (len(todo), len(batches)))
+    for n, batch in enumerate(batches, 1):
+        print('  paczka_%02d: %d wpisów (%s)' % (n, len(batch), ', '.join(sorted({i['strona'] for i in batch}))))
 
 
 def cmd_sprawdz(_args):
-    todo = repo.read_json(DO_OCENY)
-    done = repo.read_json(PRESELEKCJA)
-    if not todo or done is None:
-        raise SystemExit('Brak do_oceny.json albo preselekcja.json')
-    by_id = {d['id']: d for d in done}
-    missing = [i['id'] for i in todo['wpisy'] if i['id'] not in by_id]
-    bad = [d['id'] for d in done if d.get('ocena') not in ('tak', 'moze', 'nie') or not d.get('powod')]
-    counts = collections.Counter(d.get('ocena') for d in done)
-    print('Ocenione: %d/%d (tak %d, może %d, nie %d)' % (len(done), len(todo['wpisy']),
-                                                        counts['tak'], counts['moze'], counts['nie']))
+    expected = set()
+    for path in glob.glob(os.path.join(DO_OCENY, 'paczka_*.json')):
+        expected |= {i['id'] for i in repo.read_json(path)['wpisy']}
+    ratings, missing_batches = {}, []
+    for path in sorted(glob.glob(os.path.join(DO_OCENY, 'paczka_*.json'))):
+        out = os.path.join(OCENY, os.path.basename(path))
+        if not os.path.exists(out):
+            missing_batches.append(os.path.basename(path))
+    for path in glob.glob(os.path.join(OCENY, '*.json')):
+        for r in repo.read_json(path) or []:
+            ratings[r['id']] = r
+    missing = [i for i in expected if i not in ratings]
+    bad = [r['id'] for r in ratings.values() if r.get('ocena') not in ('tak', 'moze', 'nie') or not r.get('powod')]
+    repo.write_json(PRESELEKCJA, list(ratings.values()))
+    counts = collections.Counter(r.get('ocena') for r in ratings.values())
+    print('Ocenione: %d (tak %d, może %d, nie %d) -> .cache/strony/preselekcja.json'
+          % (len(ratings), counts['tak'], counts['moze'], counts['nie']))
+    for name in missing_batches:
+        print('  brak wyniku paczki: %s' % name)
     for ident in missing:
         print('  brak oceny: %s' % ident)
     for ident in bad:
         print('  zła ocena albo brak powodu: %s' % ident)
-    if missing or bad:
+    if missing_batches or missing or bad:
         sys.exit(1)
 
 
@@ -91,7 +157,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest='polecenie', required=True)
-    sub.add_parser('przygotuj').set_defaults(func=cmd_przygotuj)
+    p = sub.add_parser('przygotuj')
+    p.add_argument('--paczka', type=int, default=25)
+    p.set_defaults(func=cmd_przygotuj)
     sub.add_parser('sprawdz').set_defaults(func=cmd_sprawdz)
     args = parser.parse_args()
     args.func(args)

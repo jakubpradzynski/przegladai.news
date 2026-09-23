@@ -85,6 +85,10 @@ Zaktualizuj `redakcja/preselekcja.md` (sekcji „Uwagi Kuby” nie ruszasz):
   przy powtórce (2+ razy) do „Odrzucamy”.
 - **AI „może”** — gdy dany typ tematu z danej strony Kuba konsekwentnie bierze (albo pomija) 3+ razy,
   zamień to w regułę „tak” (albo „nie”), żeby następnym razem nie trafiał do „Do decyzji”.
+- Reguły automatyczne (blok JSON w sekcji „Reguły automatyczne”) zmieniaj ostrożnie — działają bez AI
+  i bez podglądu: dopisz wzorzec do `wzorce_nie` albo stronę do `strony_ogolne` dopiero, gdy Kuba
+  pominął taki typ wpisu 5+ razy i ani razu go nie wziął. Gdy Kuba wziął wpis, który reguła automatyczna
+  odrzuciła (widać to po `powod_ai` zaczynającym się od „reguła:”), popraw albo usuń tę regułę od razu.
 - Zaktualizuj tabelę „Skuteczność stron” (liczby z `python3 narzedzia/strony/zarzadzaj.py lista`).
 - Dopisz do „Przykłady decyzji Kuby” pary w formacie
   `- <strona>: „<tytuł>” — AI: <ocena>, Kuba: <decyzja> — <czego uczy>` (najwyżej 15, najstarsze usuń).

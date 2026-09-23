@@ -54,6 +54,31 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
 - Treści spoza AI (ICEYE: satelity, JVM Bloggers: Java bez AI, Datadog bez AI).
 - Marketing platform agentowych bez ogólnej lekcji (LangChain: 0/96 w historii, Stack Overflow Blog: 0/39).
 
+## Reguły automatyczne (bez AI)
+
+Stosowane w kodzie przed oceną AI (`narzedzia/strony/preselekcja.py`), więc są natychmiastowe.
+`strony_ogolne` — strony, na których nie wszystko dotyczy AI: wpis bez słowa związanego z AI
+w tytule i opisie dostaje „nie”. `wzorce_nie` — wyrażenia regularne (bez rozróżniania wielkości liter)
+dla tytułów, które zawsze odrzucamy. Tę sekcję aktualizuje też `ucz-sie` — tylko dla wzorców
+potwierdzonych wieloma decyzjami Kuby.
+
+```json
+{
+  "strony_ogolne": ["CNBC AI", "The Information", "XYZ Technologia", "JetBrains", "JVM Bloggers",
+                    "Nowy Marketing AI", "Ministerstwo Cyfryzacji", "ICEYE Blog", "ICEYE Press (PL)",
+                    "Datadog AI", "Netflix Tech Blog", "GitHub Blog", "Stack Overflow AI", "LeadDev AI",
+                    "Google Workspace Updates"],
+  "wzorce_nie": [
+    {"wzorzec": "^Fragments:", "powod": "przegląd linków autora"},
+    {"wzorzec": "for Beginners", "powod": "poradnik dla początkujących"},
+    {"wzorzec": "\\b\\d+(\\.\\d+)+ (Is|Are) (Now )?(Out|Available)", "powod": "wydanie wersji narzędzia"},
+    {"wzorzec": "Bug-?Fix Releases?", "powod": "wydanie poprawek"},
+    {"wzorzec": "availability report", "powod": "raport dostępności usługi"},
+    {"wzorzec": "stock (sinks|jumps|falls|rises|surges|slides|soars)|price target", "powod": "komentarz giełdowy"}
+  ]
+}
+```
+
 ## Skuteczność stron (historia)
 
 Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), wydania #29–#38:

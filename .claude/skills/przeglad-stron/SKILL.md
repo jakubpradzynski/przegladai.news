@@ -51,16 +51,22 @@ sposób, żeby działała bez przeglądarki (np. kanał RSS), popraw ją przez s
 python3 narzedzia/strony/preselekcja.py przygotuj
 ```
 
-Potem uruchom subagenta `preselektor` (Agent, `subagent_type: "preselektor"`). Ocenia wszystkie wpisy
-z `.cache/strony/do_oceny.json` według `redakcja/preselekcja.md` i historii decyzji Kuby, a wynik zapisuje
-w `.cache/strony/preselekcja.json`. Sprawdź wynik:
+Skrypt najpierw stosuje reguły automatyczne z `redakcja/preselekcja.md` (bez AI, natychmiast): wpisy
+bez związku z AI na stronach ogólnych i tytuły pasujące do wzorców odrzucenia dostają „nie”.
+Resztę dzieli na paczki po 25 w `.cache/strony/do_oceny/paczka_NN.json`.
+
+Dla **każdej paczki** uruchom subagenta `preselektor` (Agent, `subagent_type: "preselektor"`) —
+**wszystkie naraz, w jednej wiadomości**, żeby działały równolegle. Polecenie dla każdego:
+„Oceń `.cache/strony/do_oceny/paczka_NN.json`, wynik zapisz do `.cache/strony/oceny/paczka_NN.json`.”
+Preselektor ocenia tylko po tytule i opisie (Haiku, bez sieci) — cała preselekcja powinna trwać
+około minuty. Potem:
 
 ```bash
 python3 narzedzia/strony/preselekcja.py sprawdz
 ```
 
-Gdy czegoś brakuje, poproś subagenta (SendMessage) o uzupełnienie. Gdy subagent zawiedzie, idź dalej
-bez preselekcji — narzędzie pokaże wtedy wszystko jako „Do decyzji”.
+Scala oceny do `.cache/strony/preselekcja.json`. Gdy brakuje paczki albo ocen, uruchom preselektora
+ponownie tylko dla tej paczki. Gdy to się nie uda, idź dalej — wpisy bez oceny trafią do „Do decyzji”.
 
 ## Krok 4 — Narzędzie
 
