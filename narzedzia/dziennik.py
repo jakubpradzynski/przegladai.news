@@ -10,8 +10,12 @@ Polecenia:
     substack <nr>   wydania/NNN/ vs post opublikowany na Substacku (poprawki zrobione juz w edytorze)
     nowe            wypisuje wpisy jeszcze nieprzetworzone przez ucz-sie
     oznacz          oznacza wszystkie wpisy jako przetworzone
+    nowe --strony   to samo dla decyzji z przegladu stron (dziennik/strony_wybory.jsonl):
+                    podsumowanie zgodnosci AI z Kuba i lista rozbieznosci
+    oznacz --strony
 """
 import argparse
+import collections
 import html
 import json
 import os
@@ -25,6 +29,7 @@ from lib import repo  # noqa: E402
 from lib.urlclean import dedup_key  # noqa: E402
 
 STAN = os.path.join(os.path.dirname(repo.DZIENNIK), 'stan.json')
+WYBORY = os.path.join(os.path.dirname(repo.DZIENNIK), 'strony_wybory.jsonl')
 SUBSTACK_API = 'https://przegladai.substack.com/api/v1/posts/%s'
 FIELDS = ['Tytuł', 'Opis', 'Tagi', 'Czas']
 
@@ -211,26 +216,48 @@ def cmd_substack(args):
     repo.write_json(os.path.join(folder, 'meta.json'), meta)
 
 
-def read_all():
-    if not os.path.exists(repo.DZIENNIK):
+def read_all(path=None):
+    path = path or repo.DZIENNIK
+    if not os.path.exists(path):
         return []
-    with open(repo.DZIENNIK, encoding='utf-8') as f:
+    with open(path, encoding='utf-8') as f:
         return [json.loads(line) for line in f if line.strip()]
 
 
-def cmd_nowe(_args):
-    done = (repo.read_json(STAN, {}) or {}).get('przetworzone_wpisy', 0)
-    entries = read_all()[done:]
+def cmd_nowe(args):
+    key = 'przetworzone_strony' if args.strony else 'przetworzone_wpisy'
+    done = (repo.read_json(STAN, {}) or {}).get(key, 0)
+    entries = read_all(WYBORY if args.strony else None)[done:]
     print('Nowych wpisow: %d (przetworzonych wczesniej: %d)' % (len(entries), done))
+    if not args.strony:
+        for entry in entries:
+            print(json.dumps(entry, ensure_ascii=False))
+        return
+    # decyzje ze stron: tabela zgodnosci i tylko rozbieznosci (zgodne nic nie ucza)
+    pairs = collections.Counter((e.get('ai'), e['kuba']) for e in entries)
+    print('AI -> Kuba: ' + ', '.join('%s->%s: %d' % (a, k, n) for (a, k), n in sorted(pairs.items(), key=str)))
+    per_site = collections.defaultdict(collections.Counter)
     for entry in entries:
-        print(json.dumps(entry, ensure_ascii=False))
+        per_site[entry['strona']]['%s->%s' % (entry.get('ai'), entry['kuba'])] += 1
+    print('Na strone:')
+    for site, counts in sorted(per_site.items()):
+        print('  %-30s %s' % (site, ', '.join('%s: %d' % kv for kv in sorted(counts.items()))))
+    print('Rozbieznosci:')
+    for entry in entries:
+        ai, kuba = entry.get('ai'), entry['kuba']
+        mismatch = (ai == 'tak' and kuba == 'pominiety') or (ai in ('nie', 'moze') and kuba == 'wziety') or ai is None
+        if mismatch and kuba != 'niewidziany':
+            print(json.dumps({k: entry.get(k) for k in ('strona', 'tytul', 'opis', 'ai', 'powod_ai', 'kuba')},
+                             ensure_ascii=False))
 
 
-def cmd_oznacz(_args):
-    total = len(read_all())
-    repo.write_json(STAN, {'przetworzone_wpisy': total,
-                           'data': datetime.now().strftime('%Y-%m-%d %H:%M')})
-    print('Oznaczono jako przetworzone: %d wpisow' % total)
+def cmd_oznacz(args):
+    key = 'przetworzone_strony' if args.strony else 'przetworzone_wpisy'
+    state = repo.read_json(STAN, {}) or {}
+    state[key] = len(read_all(WYBORY if args.strony else None))
+    state['data'] = datetime.now().strftime('%Y-%m-%d %H:%M')
+    repo.write_json(STAN, state)
+    print('Oznaczono jako przetworzone: %d wpisow (%s)' % (state[key], key))
 
 
 def main():
@@ -242,8 +269,10 @@ def main():
     p = sub.add_parser('substack')
     p.add_argument('numer', type=int)
     p.set_defaults(func=cmd_substack)
-    sub.add_parser('nowe').set_defaults(func=cmd_nowe)
-    sub.add_parser('oznacz').set_defaults(func=cmd_oznacz)
+    for name, func in (('nowe', cmd_nowe), ('oznacz', cmd_oznacz)):
+        p = sub.add_parser(name)
+        p.add_argument('--strony', action='store_true', help='decyzje z przegladu stron')
+        p.set_defaults(func=func)
     args = parser.parse_args()
     args.func(args)
 

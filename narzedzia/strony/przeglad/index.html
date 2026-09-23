@@ -37,6 +37,11 @@
   .badge { display:inline-block; font-size:11px; padding:1px 7px; border-radius:10px; background:#eef0f3; margin-top:4px; }
   .result { background:#e6f4ea; color:var(--ok); border-radius:8px; padding:10px 14px; margin:10px 0; font-weight:600; }
   kbd { background:#eef0f3; border-radius:3px; padding:0 5px; font-size:12px; }
+  .section { font-size:16px; margin:26px 0 4px; padding-bottom:4px; border-bottom:2px solid var(--line); display:flex; gap:10px; align-items:baseline; }
+  .section.tak { border-color:var(--accent); } .section.nie { border-color:#ccc; cursor:pointer; }
+  .why { font-size:12px; color:var(--accent); margin-top:3px; }
+  .why.nie { color:var(--muted); }
+  .site-tag { font-size:11px; color:var(--muted); }
 </style>
 </head>
 <body>
@@ -64,7 +69,9 @@ const ICON = {ok: '✓', uwaga: '!', przegladarka: '?', problem: '✕', blad: '�
 async function load() {
   const res = await (await fetch('/api/wpisy')).json();
   data = res.wynik;
-  chosen = new Set(res.sesja?.wybrane || []);
+  const all = data.strony.flatMap(st => st.nowe);
+  chosen = new Set(res.sesja?.wybrane ?? all.filter(i => i.ocena === 'tak' && !i.w_data_csv).map(i => i.link));
+  rejectedOpen = !!res.sesja?.odrzucone_otwarte;
   $('range').textContent = `wpisy od ${data.od}`;
   renderStatus(); render();
 }
@@ -81,33 +88,54 @@ function renderStatus() {
     ${s.komunikat ? `<span class="muted"> · ${esc(s.komunikat)}</span>` : ''}</span></div>`).join('');
 }
 
+const SECTIONS = [
+  {key: 'tak', title: 'Proponowane', hint: 'AI uważa, że to materiał do wydania — zaznaczone od razu, odznacz, jeśli nie'},
+  {key: 'moze', title: 'Do decyzji', hint: 'AI nie jest pewne — zdecyduj'},
+  {key: 'nie', title: 'Odrzucone przez AI', hint: 'według reguł z redakcja/preselekcja.md — kliknij, żeby rozwinąć i sprawdzić'},
+];
+let rejectedOpen = false;
+
+function itemHtml(it, k) {
+  const on = chosen.has(it.link);
+  return `<div class="item ${on ? 'chosen' : ''} ${it.w_data_csv ? 'done' : ''}" data-k="${k}">
+    <input type="checkbox" ${on ? 'checked' : ''} tabindex="-1">
+    <div><a class="title" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.tytul)}</a>
+      ${it.opis ? `<div class="desc">${esc(it.opis)}</div>` : ''}
+      ${it.powod ? `<div class="why ${it.ocena}">AI: ${esc(it.powod)}</div>` : ''}</div>
+    <div class="meta"><span class="site-tag">${esc(it.strona)}</span><br>${esc(it.data)}
+      ${it.w_data_csv ? '<br><span class="badge">już w data.csv</span>' : ''}
+      ${it.opublikowany ? '<br><span class="badge">był w wydaniu</span>' : ''}
+      ${it.przegladarka ? '<br><span class="badge">z przeglądarki</span>' : ''}</div></div>`;
+}
+
 function render() {
   const hide = $('hide-known').checked;
+  const all = [];
+  for (const s of data.strony) for (const it of s.nowe) if (!(hide && it.w_data_csv)) all.push({...it, strona: s.nazwa});
   flat = [];
   let html = '';
-  for (const s of data.strony) {
-    const items = s.nowe.filter(i => !(hide && i.w_data_csv));
+  for (const sec of SECTIONS) {
+    const items = all.filter(i => (i.ocena || 'moze') === sec.key)
+      .sort((a, b) => a.strona.localeCompare(b.strona) || b.data.localeCompare(a.data));
     if (!items.length) continue;
-    html += `<h2>${esc(s.nazwa)} <span class="muted">${items.length}</span> <a href="${esc(s.url)}" target="_blank" rel="noopener">otwórz stronę ↗</a></h2>`;
-    for (const it of items) {
-      const k = flat.length;
-      flat.push({...it, strona: s.nazwa});
-      const on = chosen.has(it.link);
-      html += `<div class="item ${on ? 'chosen' : ''} ${it.w_data_csv ? 'done' : ''}" data-k="${k}">
-        <input type="checkbox" ${on ? 'checked' : ''} tabindex="-1">
-        <div><a class="title" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.tytul)}</a>
-          ${it.opis ? `<div class="desc">${esc(it.opis)}</div>` : ''}</div>
-        <div class="meta">${esc(it.data)}
-          ${it.w_data_csv ? '<br><span class="badge">już w data.csv</span>' : ''}
-          ${it.opublikowany ? '<br><span class="badge">był w wydaniu</span>' : ''}
-          ${it.przegladarka ? '<br><span class="badge">z przeglądarki</span>' : ''}</div></div>`;
-    }
+    const collapsed = sec.key === 'nie' && !rejectedOpen;
+    html += `<div class="section ${sec.key}" ${sec.key === 'nie' ? 'id="toggle-rejected"' : ''}>
+      ${sec.key === 'nie' ? (collapsed ? '▶' : '▼') : ''} ${sec.title} <span class="muted">${items.length}</span>
+      <span class="muted" style="font-size:12px;font-weight:normal">${sec.hint}</span></div>`;
+    if (collapsed) continue;
+    for (const it of items) { html += itemHtml(it, flat.length); flat.push(it); }
   }
+  if (!data.preselekcja) html = '<p class="muted">Brak preselekcji AI — wszystkie wpisy są w sekcji „Do decyzji”.</p>' + html;
   $('items').innerHTML = html || '<p>Brak nowych wpisów od ostatniego wydania. Wszystkie strony sprawdzone — szczegóły w „Stan stron”.</p>';
+  $('toggle-rejected')?.addEventListener('click', () => { rejectedOpen = !rejectedOpen; persist(); render(); });
   focus = Math.min(focus, Math.max(0, flat.length - 1));
   highlight(false);
   $('count').textContent = `wybrane: ${chosen.size}`;
   $('save').disabled = !chosen.size;
+}
+
+function persist() {
+  fetch('/api/sesja', {method: 'POST', body: JSON.stringify({wybrane: [...chosen], odrzucone_otwarte: rejectedOpen})});
 }
 
 function highlight(scroll = true) {
@@ -118,7 +146,7 @@ function highlight(scroll = true) {
 function toggle(k) {
   const link = flat[k].link;
   chosen.has(link) ? chosen.delete(link) : chosen.add(link);
-  fetch('/api/sesja', {method: 'POST', body: JSON.stringify({wybrane: [...chosen]})});
+  persist();
   const el = document.querySelector(`.item[data-k="${k}"]`);
   el.classList.toggle('chosen', chosen.has(link));
   el.querySelector('input').checked = chosen.has(link);
@@ -144,8 +172,8 @@ $('hide-known').onchange = render;
 
 $('save').onclick = async () => {
   const perSite = {};
-  flat.filter(i => chosen.has(i.link)).forEach(i => perSite[i.strona] = (perSite[i.strona] || 0) + 1);
-  const res = await (await fetch('/api/zapisz', {method: 'POST', body: JSON.stringify({linki: [...chosen], na_strone: perSite})})).json();
+  data.strony.forEach(st => st.nowe.filter(i => chosen.has(i.link)).forEach(() => perSite[st.nazwa] = (perSite[st.nazwa] || 0) + 1));
+  const res = await (await fetch('/api/zapisz', {method: 'POST', body: JSON.stringify({linki: [...chosen], na_strone: perSite, odrzucone_otwarte: rejectedOpen})})).json();
   $('result').innerHTML = `<div class="result">Dodano do data.csv: ${res.dodane}${res.pominiete ? ` (pominięte, bo już były: ${res.pominiete})` : ''}. Możesz zamknąć tę kartę.</div>`;
   chosen = new Set();
   const again = await (await fetch('/api/wpisy')).json();

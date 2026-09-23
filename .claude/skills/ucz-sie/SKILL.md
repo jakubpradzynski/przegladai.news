@@ -1,6 +1,6 @@
 ---
 name: ucz-sie
-description: Uczy reguły redakcyjne PrzeglądAI na poprawkach Kuby - czyta nowe wpisy z redakcja/dziennik/poprawki.jsonl i sam aktualizuje redakcja/*.md. Uruchamiany automatycznie przez zakoncz-wydanie i zbierz-dane; także na "ucz się z poprawek".
+description: Uczy reguły redakcyjne PrzeglądAI na poprawkach i decyzjach Kuby - czyta nowe wpisy z redakcja/dziennik/poprawki.jsonl (teksty, selekcja) i strony_wybory.jsonl (preselekcja wpisów ze stron) i sam aktualizuje redakcja/*.md. Uruchamiany automatycznie przez zakoncz-wydanie, zbierz-dane i przeglad-stron; także na "ucz się z poprawek".
 ---
 
 Twoim zadaniem jest, żeby Kuba co tydzień poprawiał mniej. Każda jego poprawka jest informacją
@@ -65,3 +65,28 @@ python3 narzedzia/dziennik.py oznacz
 ```
 
 Na koniec podaj Kubie 2–5 punktów: czego się nauczyłeś i co zmieniłeś.
+
+## Część 2: preselekcja wpisów ze stron
+
+Gdy skill uruchomiono z przeglądu stron (albo są nowe decyzje ze stron), zrób dodatkowo:
+
+```bash
+python3 narzedzia/dziennik.py nowe --strony
+```
+
+Pokazuje tabelę zgodności AI z Kubą (np. `tak->wziety: 12, tak->pominiety: 3, moze->wziety: 5`) i listę
+rozbieżności: AI dało „tak”, a Kuba pominął; AI dało „może”/„nie”, a Kuba wziął. Zgodne decyzje
+niczego nie uczą, więc lista ich nie zawiera.
+
+Zaktualizuj `redakcja/preselekcja.md` (sekcji „Uwagi Kuby” nie ruszasz):
+- **AI „nie”, a Kuba wziął** — najważniejszy sygnał: reguła odrzucenia jest za szeroka. Zawęź ją
+  albo przenieś ten typ tematu do „Zwykle może”.
+- **AI „tak”, a Kuba pominął** — typ tematu (albo strona) przechodzi z „Bierzemy” do „Zwykle może”;
+  przy powtórce (2+ razy) do „Odrzucamy”.
+- **AI „może”** — gdy dany typ tematu z danej strony Kuba konsekwentnie bierze (albo pomija) 3+ razy,
+  zamień to w regułę „tak” (albo „nie”), żeby następnym razem nie trafiał do „Do decyzji”.
+- Zaktualizuj tabelę „Skuteczność stron” (liczby z `python3 narzedzia/strony/zarzadzaj.py lista`).
+- Dopisz do „Przykłady decyzji Kuby” pary w formacie
+  `- <strona>: „<tytuł>” — AI: <ocena>, Kuba: <decyzja> — <czego uczy>` (najwyżej 15, najstarsze usuń).
+
+Opisz zmiany w `redakcja/zmiany-regul.md` (jak w kroku 4) i oznacz: `python3 narzedzia/dziennik.py oznacz --strony`.

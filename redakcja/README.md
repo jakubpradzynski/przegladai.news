@@ -11,6 +11,7 @@ opisany jest styl newslettera. Prompty w skillach tylko odsyłają tutaj.
 | `priorytety.md` | Ocena newsów, podział na sekcje, co trafia do TOP 30, kolejność w wydaniu |
 | `wstep.md` | Tekst między „Cześć!” a „Zapraszam do lektury!” |
 | `seo.md` | Opis SEO, slug, napis na okładce |
+| `preselekcja.md` | Wstępna ocena wpisów ze stron (tak / może / nie) — uczona na decyzjach w `/przeglad-stron` |
 | `strony.json` | Strony i blogi przeglądane przy każdym wydaniu (`/przeglad-stron`) |
 | `newslettery.json` | Decyzje „wypisz” / „zostaw” dla newsletterów (`/porzadki-newsletterow`) |
 | `zrodla.md` | Wiedza techniczna o źródłach: paywalle, strony wymagające przeglądarki, trackery, nadawcy newsletterów |
@@ -23,9 +24,10 @@ czego oczekuje. Ma najwyższy priorytet: gdy coś w niej przeczy reszcie pliku, 
 
 **Pozostałe sekcje uzupełnia AI na podstawie poprawek Kuby:**
 
-1. Każda poprawka wygenerowanej treści (tytuł, opis, tag, usunięty news, wstęp, SEO,
-   tytuł wydania, napis na okładce, zmiany zrobione później w Substacku) trafia do
-   `dziennik/poprawki.jsonl`. Plik tylko rośnie: wpisów nie usuwa się i nie zmienia.
+1. Każda poprawka wygenerowanej treści (tytuł, opis, tag, usunięty news, wstęp, SEO, tytuł wydania,
+   napis na okładce, zmiany zrobione później w Substacku) trafia do `dziennik/poprawki.jsonl`,
+   a każda decyzja przy preselekcji wpisów ze stron — do `dziennik/strony_wybory.jsonl`.
+   Pliki tylko rosną: wpisów nie usuwa się i nie zmienia.
 2. Na końcu każdego wydania skill `ucz-sie` czyta nowe wpisy z dziennika i sam,
    bez pytania, aktualizuje reguły i przykłady w tych plikach.
 3. Każda zmiana reguł jest opisana w `zmiany-regul.md` (też tylko dopisywany)

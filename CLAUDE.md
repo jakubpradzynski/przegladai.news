@@ -7,7 +7,9 @@ Repo służy do przygotowania wydania z Claude Code i archiwum wydań. Autor: Ku
 
 1. **Codziennie** Kuba wrzuca linki do `data.csv` (dowolny format, byle URL-e).
    W dniu wydania **`/przeglad-stron`** — nowe wpisy ze śledzonych stron (`redakcja/strony.json`) od dnia
-   przed ostatnim wydaniem, narzędzie na http://localhost:8020, wybrane linki trafiają do `data.csv`.
+   przed ostatnim wydaniem, preselekcja AI (subagent `preselektor`, reguły `redakcja/preselekcja.md`),
+   narzędzie na http://localhost:8020, wybrane linki trafiają do `data.csv`, reguły uczą się na decyzjach.
+   Lista stron: skill **`/strony`** (dodaj / usuń / lista) — zawsze przez `narzedzia/strony/zarzadzaj.py`.
 2. **`/zbierz-dane`** (czwartek) — skill `zbierz-dane`: czyszczenie linków, opisy przez subagentów
    `opisywacz`, ocena i rekomendacje TOP 30, adminka na http://localhost:8000.
 3. **Adminka** — Kuba wybiera newsy i poprawia teksty, potem w zakładce „Wydanie” wybiera tytuł,
@@ -40,7 +42,7 @@ narzedzia/        skrypty Pythona (lib/ — wspólne), adminka/, okladka/ (szabl
                   newslettery/ (analiza skrzynki, kandydaci, przeglad/ — narzędzie do wypisywania),
                   strony/ (zbieranie wpisów ze stron, przeglad/ — wybór do data.csv)
 strona/           przegladai.news — statyczne przekierowanie na Substacka (GitHub Pages)
-.claude/          skille i subagent opisywacz
+.claude/          skille i subagenci (opisywacz, preselektor)
 ```
 
 ## Uwagi techniczne
