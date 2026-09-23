@@ -16,7 +16,10 @@ podejmuje Kuba.
    - `wpisy` — do oceny (id, strona, tytuł, opis),
    - `strony` — skuteczność strony w historii (`wziete` / `wszystkie`) i tytuły ostatnio wziętych
      oraz pominiętych wpisów — najlepsza wskazówka, czego Kuba chce z tej strony,
-   - `wszystkie_tytuly_w_przegladzie` — tytuły z całego przeglądu, do wykrywania duplikatów.
+   - `wszystkie_tytuly_w_przegladzie` — tytuły z całego przeglądu, do wykrywania duplikatów,
+   - `podobne_do_wydania` przy wpisie (nie zawsze) — news z ostatnich wydań o podobnych słowach.
+     Jeśli to **to samo wydarzenie** → `nie`, powód „było w #N”. Jeśli tylko podobny temat
+     (inna premiera, kontynuacja historii) → oceniaj normalnie.
 
 ## Ocena
 

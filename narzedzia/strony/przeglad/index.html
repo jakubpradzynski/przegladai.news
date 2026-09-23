@@ -101,10 +101,12 @@ function itemHtml(it, k) {
     <input type="checkbox" ${on ? 'checked' : ''} tabindex="-1">
     <div><a class="title" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.tytul)}</a>
       ${it.opis ? `<div class="desc">${esc(it.opis)}</div>` : ''}
-      ${it.powod ? `<div class="why ${it.ocena}">AI: ${esc(it.powod)}</div>` : ''}</div>
+      ${it.powod ? `<div class="why ${it.ocena}">AI: ${esc(it.powod)}</div>` : ''}
+      ${it.podobne ? `<div class="why nie">Podobny news był w wydaniu ${esc(it.podobne)}</div>` : ''}</div>
     <div class="meta"><span class="site-tag">${esc(it.strona)}</span><br>${esc(it.data)}
       ${it.w_data_csv ? '<br><span class="badge">już w data.csv</span>' : ''}
       ${it.opublikowany ? '<br><span class="badge">był w wydaniu</span>' : ''}
+      ${it.podobne ? `<br><span class="badge" title="${esc(it.podobne)}">podobne do ${esc(it.podobne.split(':')[0])}</span>` : ''}
       ${it.przegladarka ? '<br><span class="badge">z przeglądarki</span>' : ''}</div></div>`;
 }
 

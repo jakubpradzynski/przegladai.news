@@ -35,6 +35,7 @@ SESJA = os.path.join(CACHE, 'sesja.json')
 HISTORIA = os.path.join(repo.REDAKCJA, 'dziennik', 'strony.jsonl')
 WYBORY = os.path.join(repo.REDAKCJA, 'dziennik', 'strony_wybory.jsonl')
 PRESELEKCJA = os.path.join(CACHE, 'preselekcja.json')
+PODOBNE = os.path.join(CACHE, 'podobne.json')
 
 
 def load(with_preselection=True):
@@ -59,15 +60,18 @@ def load(with_preselection=True):
     if os.path.exists(repo.DATA_CSV):
         with open(repo.DATA_CSV, encoding='utf-8') as f:
             known = {dedup_key(line.strip()) for line in f if line.strip().startswith('http')}
-    ratings = {}
+    ratings, similar = {}, {}
     if with_preselection:
         ratings = {r['id']: r for r in (repo.read_json(PRESELEKCJA, []) or [])}
+        similar = repo.read_json(PODOBNE, {}) or {}
     for site in result['strony']:
         for item in site['nowe']:
             item['w_data_csv'] = dedup_key(item['link']) in known
             rating = ratings.get(item['link'])
             item['ocena'] = rating['ocena'] if rating else 'moze'
             item['powod'] = rating['powod'] if rating else ('' if not ratings else 'brak oceny AI')
+            if item['link'] in similar:
+                item['podobne'] = similar[item['link']]
     result['preselekcja'] = bool(ratings)
     return result
 

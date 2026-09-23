@@ -60,6 +60,10 @@ Przejrzyj tytuły wszystkich opisanych newsów. Gdy dwa linki opisują to samo w
 python3 narzedzia/scal_opisy.py
 ```
 
+Skrypt sprawdza też, czy temat nie był już w 2 ostatnich wydaniach — także pod innym linkiem
+(`narzedzia/lib/tematy.py`). Taki news trafia do rezerwy z uzasadnieniem „BYŁO W WYDANIU #N: …”,
+a podobny (niepewny) dostaje dopisek „podobny news był w #N”. Kuba widzi to w admince.
+
 Gdy skrypt zgłasza problemy (zakazane frazy, długość, tagi, czas), popraw wskazane pozycje
 w `praca/opisy/*.json` i uruchom ponownie. Dopiero gdy przejdzie, idź dalej. Skrypt zapisuje
 `praca/prepared_data.csv` i nietykalną kopię `praca/wersja_ai.csv` — z niej potem liczymy,

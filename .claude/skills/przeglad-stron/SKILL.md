@@ -51,8 +51,10 @@ sposób, żeby działała bez przeglądarki (np. kanał RSS), popraw ją przez s
 python3 narzedzia/strony/preselekcja.py przygotuj
 ```
 
-Skrypt najpierw stosuje reguły automatyczne z `redakcja/preselekcja.md` (bez AI, natychmiast): wpisy
-bez związku z AI na stronach ogólnych i tytuły pasujące do wzorców odrzucenia dostają „nie”.
+Skrypt najpierw stosuje reguły automatyczne (bez AI, natychmiast), które dają „nie”:
+- wpisy, które były w 2 ostatnich wydaniach — ten sam link albo ten sam temat pod innym linkiem
+  (`narzedzia/lib/tematy.py`); wpisy tylko podobne dostają podpowiedź „podobne do #N” dla AI i dla Kuby,
+- z `redakcja/preselekcja.md`: wpisy bez związku z AI na stronach ogólnych i tytuły pasujące do wzorców.
 Resztę dzieli na paczki po 25 w `.cache/strony/do_oceny/paczka_NN.json`.
 
 Dla **każdej paczki** uruchom subagenta `preselektor` (Agent, `subagent_type: "preselektor"`) —

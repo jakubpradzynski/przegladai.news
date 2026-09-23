@@ -2,6 +2,8 @@
 """Krok 3 /zbierz-dane: praca/opisy/*.json -> praca/prepared_data.csv
 
 Scala opisy przygotowane przez subagentow, waliduje je wedlug redakcja/*.md,
+sprawdza, czy temat nie byl juz w 2 ostatnich wydaniach (lib/tematy.py - takze pod innym linkiem;
+duplikat idzie do rezerwy z adnotacja "bylo w #N"),
 wylicza sekcje i rekomendacje (TOP / rezerwa) wedlug redakcja/priorytety.md
 i zapisuje:
     praca/prepared_data.csv  - wejscie adminki
@@ -24,7 +26,7 @@ from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from lib import repo, walidacja  # noqa: E402
+from lib import repo, tematy, walidacja  # noqa: E402
 from lib.urlclean import dedup_key  # noqa: E402
 
 MAX_PER_DOMAIN = 3
@@ -122,8 +124,20 @@ def main():
         print('\nPopraw praca/opisy/*.json i uruchom ponownie (albo --bez-walidacji).')
         sys.exit(1)
 
+    issues = tematy.Wydania(ostatnie=2)
+    repeated = 0
     for row in rows:
         row['Ocena'] = row['Ocena'] if row['Ocena'].isdigit() else '0'
+        seen = issues.sprawdz(row['Link'], '%s %s' % (row['Tytuł'], row['Opis']))
+        if not seen:
+            continue
+        note = '#%d: %s' % (seen['wydanie'], seen['tytul'])
+        if seen['poziom'] in ('link', 'pewne'):
+            row['Duplikat'] = 'było w ' + note
+            row['Uzasadnienie'] = ('BYŁO W WYDANIU %s. %s' % (note, row['Uzasadnienie'])).strip()
+            repeated += 1
+        else:
+            row['Uzasadnienie'] = ('%s (podobny news był w %s)' % (row['Uzasadnienie'], note)).strip()
     taken = recommend(rows, args.na_sekcje)
 
     order = {s: i for i, s in enumerate(repo.SECTIONS)}
@@ -134,6 +148,8 @@ def main():
         if os.path.exists(path):
             os.remove(path)
 
+    if repeated:
+        print('Tematy, które były w 2 ostatnich wydaniach (przeniesione do rezerwy): %d' % repeated)
     counts = collections.Counter(r['Sekcja'] for r in rows)
     print('Zapisano %d newsow -> %s' % (len(rows), os.path.relpath(repo.PREPARED, repo.ROOT)))
     for section in repo.SECTIONS:

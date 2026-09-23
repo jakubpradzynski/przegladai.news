@@ -2,8 +2,9 @@
 """Preselekcja wpisow ze stron: reguly automatyczne + paczki dla subagentow + scalenie wyniku.
 
     przygotuj  .cache/strony/wynik.json (+ przegladarka.json)
-               1. reguly automatyczne z redakcja/preselekcja.md (sekcja "Reguly automatyczne"):
-                  wpisy bez zwiazku z AI na stronach ogolnych i tytuly pasujace do wzorcow -> "nie"
+               1. reguly automatyczne: wpisy, ktore byly w 2 ostatnich wydaniach (ten sam link albo
+                  ten sam temat - lib/tematy.py), oraz z redakcja/preselekcja.md (sekcja "Reguly
+                  automatyczne"): wpisy bez zwiazku z AI na stronach ogolnych i tytuly pasujace do wzorcow -> "nie"
                   (bez AI, natychmiast) -> .cache/strony/oceny/auto.json
                2. reszta w paczkach po --paczka wpisow -> .cache/strony/do_oceny/paczka_NN.json,
                   kazda z kontekstem tylko swoich stron (skutecznosc + ostatnie decyzje Kuby)
@@ -27,12 +28,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(HERE))
 sys.path.insert(0, os.path.join(HERE, 'przeglad'))
 
-from lib import repo  # noqa: E402
+from lib import repo, tematy  # noqa: E402
 
 CACHE = os.path.join(repo.ROOT, '.cache', 'strony')
 DO_OCENY = os.path.join(CACHE, 'do_oceny')
 OCENY = os.path.join(CACHE, 'oceny')
 PRESELEKCJA = os.path.join(CACHE, 'preselekcja.json')
+PODOBNE = os.path.join(CACHE, 'podobne.json')
+SESJA = os.path.join(CACHE, 'sesja.json')
 WYBORY = os.path.join(repo.REDAKCJA, 'dziennik', 'strony_wybory.jsonl')
 REGULY = os.path.join(repo.REDAKCJA, 'preselekcja.md')
 PRZYKLADY_NA_STRONE = 10
@@ -89,24 +92,35 @@ def cmd_przygotuj(args):
     for folder in (DO_OCENY, OCENY):
         shutil.rmtree(folder, ignore_errors=True)
         os.makedirs(folder)
-    if os.path.exists(PRESELEKCJA):
-        os.remove(PRESELEKCJA)
+    for path in (PRESELEKCJA, SESJA):   # nowy przeglad: stare oceny i zaznaczenia nie obowiazuja
+        if os.path.exists(path):
+            os.remove(path)
 
-    auto, todo = [], []
+    issues = tematy.Wydania(ostatnie=2)
+    auto, todo, similar = [], [], {}
     for site in result['strony']:
         for item in site['nowe']:
-            if item.get('w_data_csv') or item.get('opublikowany'):
+            if item.get('w_data_csv'):
                 continue
             text = '%s %s' % (item['tytul'], item.get('opis', ''))
+            seen = issues.sprawdz(item['link'], text)
             rule = next((reason for pattern, reason in patterns if pattern.search(item['tytul'])), None)
-            if rule:
+            if seen and seen['poziom'] in ('link', 'pewne'):
+                auto.append({'id': item['link'], 'ocena': 'nie',
+                             'powod': 'reguła: było w #%d — %s' % (seen['wydanie'], seen['tytul'][:70])})
+            elif rule:
                 auto.append({'id': item['link'], 'ocena': 'nie', 'powod': 'reguła: ' + rule})
             elif site['nazwa'] in general_sites and not AI_RE.search(text):
                 auto.append({'id': item['link'], 'ocena': 'nie', 'powod': 'reguła: brak związku z AI w tytule i opisie'})
             else:
-                todo.append({'id': item['link'], 'strona': site['nazwa'], 'data': item['data'],
-                             'tytul': item['tytul'], 'opis': item.get('opis', '')[:250]})
+                entry = {'id': item['link'], 'strona': site['nazwa'], 'data': item['data'],
+                         'tytul': item['tytul'], 'opis': item.get('opis', '')[:250]}
+                if seen:   # 'mozliwe' - tylko podpowiedz dla AI i dla Kuby
+                    entry['podobne_do_wydania'] = '#%d: %s' % (seen['wydanie'], seen['tytul'])
+                    similar[item['link']] = entry['podobne_do_wydania']
+                todo.append(entry)
     repo.write_json(os.path.join(OCENY, 'auto.json'), auto)
+    repo.write_json(PODOBNE, similar)
 
     # paczki: wpisy jednej strony trzymamy razem (duplikaty tematow najczesciej sa w obrebie agregatora)
     todo.sort(key=lambda i: i['strona'])
@@ -119,7 +133,9 @@ def cmd_przygotuj(args):
             'wszystkie_tytuly_w_przegladzie': [i['tytul'] for i in todo],   # do wykrywania duplikatow miedzy paczkami
             'wpisy': batch,
         })
-    print('Reguły automatyczne: %d wpisów -> "nie" (bez AI)' % len(auto))
+    print('Reguły automatyczne: %d wpisów -> "nie" (bez AI), w tym było w ostatnich wydaniach: %d'
+          % (len(auto), sum('było w #' in a['powod'] for a in auto)))
+    print('Podobne do newsów z ostatnich wydań (podpowiedź dla AI): %d' % len(similar))
     print('Do oceny AI: %d wpisów w %d paczkach -> .cache/strony/do_oceny/paczka_NN.json' % (len(todo), len(batches)))
     for n, batch in enumerate(batches, 1):
         print('  paczka_%02d: %d wpisów (%s)' % (n, len(batch), ', '.join(sorted({i['strona'] for i in batch}))))
