@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.dirname(HERE))
 
 from lib import repo  # noqa: E402
 
-WORK_FIELDS = repo.AI_FIELDS + ['Wybrany']
+WORK_FIELDS = repo.AI_FIELDS + ['Wybrany', 'Kolejnosc']
 
 
 def run(script, *args):
@@ -95,7 +95,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             rows = self.body().get('wiersze', [])
             chosen = [r for r in rows if r.get('Wybrany')]
             repo.write_csv(repo.ROBOCZY, rows, WORK_FIELDS)
-            repo.write_csv(repo.FINAL, chosen, repo.BASE_FIELDS)
+            repo.write_csv(repo.FINAL, chosen, repo.FINAL_FIELDS)
             return self.reply({'ok': True, 'zapisano': len(chosen)})
         if path == '/api/okladka':
             ok, out = run('okladka.py', self.body().get('napis', ''), '--podglad')

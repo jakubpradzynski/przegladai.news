@@ -24,7 +24,7 @@ Przeczytaj wszystkie pliki `redakcja/*.md` i pogrupuj nowe wpisy:
 | `zmiana` pola `Tytuł`, `wybrany_tytul`, `zmiana` pola `tytul` | `tytuly.md` |
 | `zmiana` pola `Opis` | `opisy.md` |
 | `zmiana` pól `Tagi`, `Czas` | `tagi.md` |
-| `odrzucony_top`, `wybrany_z_rezerwy`, `dodany_przez_kube`, `usuniety_w_substacku`, `podsumowanie` | `priorytety.md` |
+| `odrzucony_top`, `wybrany_z_rezerwy`, `dodany_przez_kube`, `usuniety_w_substacku`, `podsumowanie`, `zmiana` pola `kolejnosc` | `priorytety.md` (kolejność: sekcja „Kolejność w wydaniu”) |
 | `zmiana` pola `wstep` | `wstep.md` |
 | `zmiana` pól `opis_seo`, `slug`, `okladka` | `seo.md` |
 

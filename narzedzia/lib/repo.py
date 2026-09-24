@@ -27,9 +27,42 @@ WYDANIE = os.path.join(PRACA, 'wydanie.json')
 
 BASE_FIELDS = ['Link', 'Tytuł', 'Opis', 'Tagi', 'Czas']
 AI_FIELDS = BASE_FIELDS + ['Sekcja', 'Ocena', 'Uzasadnienie', 'Rekomendacja']
+FINAL_FIELDS = BASE_FIELDS + ['Kolejnosc']
 
 TAGS = ['Bliżej technologii', 'Nowości i ogłoszenia', 'Polska', 'Za paywallem']
 SECTIONS = ['Nowości', 'Technologia', 'Pozostałe']
+
+
+PL_ORDER = str.maketrans({'ą': 'a~', 'ć': 'c~', 'ę': 'e~', 'ł': 'l~', 'ń': 'n~', 'ó': 'o~', 'ś': 's~',
+                          'ź': 'z~', 'ż': 'z~~'})
+
+
+def pl_key(text):
+    """Klucz sortowania po polsku (ta sama funkcja jest w adminka/index.html)."""
+    return (text or '').lower().translate(PL_ORDER)
+
+
+def publication_group(tags):
+    """(grupa, 0 gdy Polska) - kolejnosc w wydaniu wg redakcja/priorytety.md."""
+    tags = tags or ''
+    if 'Nowości i ogłoszenia' in tags:
+        group = 0
+    elif 'Bliżej technologii' in tags:
+        group = 1
+    elif 'Polska' in tags:
+        group = 2
+    else:
+        group = 3
+    return group, 0 if 'Polska' in tags else 1
+
+
+def publication_key(row):
+    """Grupa, Polska na gorze, reczna kolejnosc z adminki (jesli jest), tytul."""
+    try:
+        manual = float(row.get('Kolejnosc') or '')
+    except ValueError:
+        manual = float('inf')
+    return publication_group(row.get('Tagi')) + (manual, pl_key(row.get('Tytuł')))
 
 
 def section_for(tags):

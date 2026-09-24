@@ -51,6 +51,10 @@
   pre.out { background:#1d1f23; color:#e8eaed; padding:10px 12px; border-radius:6px; white-space:pre-wrap; font-size:12px; }
   img.cover { max-width:100%; border:1px solid var(--line); border-radius:6px; margin-top:8px; }
   .hidden { display:none; }
+  .order { display:flex; gap:4px; align-items:center; }
+  .order button { border:1px solid var(--line); background:#fff; border-radius:4px; width:28px; height:24px; cursor:pointer; font-size:13px; }
+  .order button:disabled { opacity:.3; cursor:default; }
+  .subgroup { font-size:12px; color:var(--muted); margin:10px 0 2px 4px; text-transform:uppercase; letter-spacing:.04em; }
 </style>
 </head>
 <body>
@@ -95,7 +99,7 @@
       </div>
       <pre class="out hidden" id="wyd-out"></pre>
       <div id="wyd-links" class="hidden">
-        <p><a href="/podglad/substack" target="_blank">Otwórz substack.html</a> — zaznacz treść od „Cześć!” do „Kuba” i wklej do edytora Substacka.</p>
+        <p><a href="/podglad/substack" target="_blank">Otwórz substack.html</a> — kliknij tam „Kopiuj treść do Substacka” i wklej w edytorze (kolory tagów zostają).</p>
         <img class="cover" id="final-cover" alt="Okładka">
       </div>
     </div>
@@ -118,6 +122,46 @@ const esc = s => (s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':
 const tagsOf = r => (r.Tagi || '').split(',').map(t => t.trim()).filter(Boolean);
 const sectionOf = r => tagsOf(r).includes('Nowości i ogłoszenia') ? 'Nowości'
   : tagsOf(r).includes('Bliżej technologii') ? 'Technologia' : 'Pozostałe';
+// Kolejnosc publikacji - ta sama logika co repo.publication_key w Pythonie:
+// grupa (Nowości, Bliżej technologii, tylko Polska, bez tagu), Polska na górze, ręczna kolejność, tytuł.
+const PL = {'ą': 'a~', 'ć': 'c~', 'ę': 'e~', 'ł': 'l~', 'ń': 'n~', 'ó': 'o~', 'ś': 's~', 'ź': 'z~', 'ż': 'z~~'};
+const plKey = t => (t || '').toLowerCase().replace(/[ąćęłńóśźż]/g, c => PL[c]);
+function pubGroup(r) {
+  const t = tagsOf(r);
+  const g = t.includes('Nowości i ogłoszenia') ? 0 : t.includes('Bliżej technologii') ? 1 : t.includes('Polska') ? 2 : 3;
+  return [g, t.includes('Polska') ? 0 : 1];
+}
+const SUBGROUP_LABEL = {'0-0': 'Polska', '0-1': 'Pozostałe', '1-0': 'Polska', '1-1': 'Pozostałe', '2-0': 'Tylko Polska', '3-1': 'Bez tagu'};
+const num = v => { const n = parseFloat(v); return isNaN(n) ? Infinity : n; };
+function pubCompare(a, b) {
+  const ga = pubGroup(a), gb = pubGroup(b);
+  const ka = plKey(a.Tytuł), kb = plKey(b.Tytuł);
+  return (ga[0] - gb[0]) || (ga[1] - gb[1]) || ((num(a.Kolejnosc) - num(b.Kolejnosc)) || 0) || (ka < kb ? -1 : ka > kb ? 1 : 0);
+}
+function subgroupList(r) {
+  const key = pubGroup(r).join('-');
+  return rows.filter(x => x.Wybrany && pubGroup(x).join('-') === key).sort(pubCompare);
+}
+function freezeOrder() {
+  // utrwala widoczną kolejność jako liczby, żeby generator ułożył dokładnie tak samo
+  const seen = new Set();
+  rows.filter(r => r.Wybrany).forEach(r => {
+    const key = pubGroup(r).join('-');
+    if (seen.has(key)) return;
+    seen.add(key);
+    subgroupList(r).forEach((x, k) => x.Kolejnosc = String((k + 1) * 10));
+  });
+}
+function move(i, dir) {
+  const list = subgroupList(rows[i]);
+  list.forEach((x, k) => x.Kolejnosc = String((k + 1) * 10));
+  const pos = list.indexOf(rows[i]);
+  const other = list[pos + dir];
+  if (!other) return;
+  [rows[i].Kolejnosc, other.Kolejnosc] = [other.Kolejnosc, rows[i].Kolejnosc];
+  persist(); render();
+  document.getElementById('item-' + i)?.scrollIntoView({block: 'center'});
+}
 const scoreColor = s => s >= 8 ? '#1e8e3e' : s >= 6 ? '#5b2a86' : s >= 4 ? '#b06000' : '#c5221f';
 
 async function load() {
@@ -160,6 +204,10 @@ function itemHtml(r, i) {
     <div class="meta">
       <div><span class="score" style="background:${scoreColor(+r.Ocena)}">${r.Ocena || '–'}</span>
         ${r.Rekomendacja === 'TOP' ? '<b>TOP</b>' : 'rezerwa'}</div>
+      ${r.Wybrany ? (() => { const l = subgroupList(r), p = l.indexOf(r); return `<div class="order">
+        <button class="mv" data-i="${i}" data-d="-1" ${p <= 0 ? 'disabled' : ''} title="wyżej w wydaniu">↑</button>
+        <button class="mv" data-i="${i}" data-d="1" ${p >= l.length - 1 ? 'disabled' : ''} title="niżej w wydaniu">↓</button>
+        <span>${p + 1}. w grupie</span></div>`; })() : ''}
       ${r.Uzasadnienie ? `<div class="why">${esc(r.Uzasadnienie)}</div>` : ''}
       <div class="chips">${chips}</div>
       <div>Czas <input class="time" data-i="${i}" data-f="Czas" value="${esc(r.Czas)}" placeholder="np. 12 min"></div>
@@ -171,12 +219,19 @@ function itemHtml(r, i) {
 function render() {
   const html = SECTIONS.map(s => {
     const inSec = rows.map((r, i) => [r, i]).filter(([r]) => sectionOf(r) === s.id);
-    inSec.sort((a, b) => (!!b[0].Wybrany - !!a[0].Wybrany) || (+b[0].Ocena - +a[0].Ocena));
-    const chosen = inSec.filter(([r]) => r.Wybrany);
-    const rest = inSec.filter(([r]) => !r.Wybrany);
+    const chosen = inSec.filter(([r]) => r.Wybrany).sort(([a], [b]) => pubCompare(a, b));
+    const rest = inSec.filter(([r]) => !r.Wybrany).sort(([a], [b]) => +b.Ocena - +a.Ocena);
     const open = showReserve[s.id];
-    return `<h2>${s.id} <small>${chosen.length} wybranych / cel ${s.target} · ${rest.length} w rezerwie</small></h2>
-      ${chosen.map(([r, i]) => itemHtml(r, i)).join('')}
+    const groups = new Set(chosen.map(([r]) => pubGroup(r).join('-')));
+    let last = null;
+    const chosenHtml = chosen.map(([r, i]) => {
+      const key = pubGroup(r).join('-');
+      const label = groups.size > 1 && key !== last ? `<div class="subgroup">${SUBGROUP_LABEL[key] || ''}</div>` : '';
+      last = key;
+      return label + itemHtml(r, i);
+    }).join('');
+    return `<h2>${s.id} <small>${chosen.length} wybranych / cel ${s.target} · ${rest.length} w rezerwie · kolejność jak w wydaniu</small></h2>
+      ${chosenHtml}
       ${rest.length ? `<div class="divider" data-sec="${s.id}">${open ? '▲ zwiń rezerwę' : `▼ pokaż rezerwę (${rest.length})`}</div>` : ''}
       ${open ? rest.map(([r, i]) => itemHtml(r, i)).join('') : ''}`;
   }).join('');
@@ -198,6 +253,7 @@ function persist() {
 $('sections').addEventListener('click', e => {
   const t = e.target;
   if (t.classList.contains('divider')) { showReserve[t.dataset.sec] = !showReserve[t.dataset.sec]; return render(); }
+  if (t.classList.contains('mv')) return move(+t.dataset.i, +t.dataset.d);
   if (t.classList.contains('chip')) {
     const r = rows[t.dataset.i];
     let tags = tagsOf(r);
@@ -223,6 +279,7 @@ $('sections').addEventListener('input', e => { if (e.target.tagName === 'TEXTARE
 $('top-only').onclick = () => { rows.forEach(r => r.Wybrany = r.Rekomendacja === 'TOP' ? '1' : ''); persist(); render(); };
 $('save').onclick = async () => {
   document.activeElement?.blur();
+  freezeOrder();
   const res = await (await fetch('/api/zapisz', {method: 'POST', body: JSON.stringify({wiersze: rows})})).json();
   $('sel-status').textContent = `Zapisano selekcję: ${res.zapisano} newsów. Claude przygotowuje propozycje wydania…`;
   switchTab('wyd');

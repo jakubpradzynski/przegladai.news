@@ -23,6 +23,32 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib import repo, walidacja  # noqa: E402
 import okladka  # noqa: E402
 
+# Przycisk kopiujacy tresc (od "Czesc!" do "Kuba") do schowka jako czysty HTML w formacie Substacka.
+# Reczne zaznaczanie i kopiowanie przepuszcza tresc przez serializacje przegladarki, ktora potrafi
+# zgubic kolory tagow; tu schowek dostaje dokladnie te same znaczniki, ktore Substack sam zapisuje.
+COPY_TOOLBAR = """<meta charset="utf-8">
+<div style="position: sticky; top: 0; background: #fff; padding: 10px 0; border-bottom: 1px solid #ddd; margin-bottom: 16px; font-family: sans-serif;">
+<button id="kopiuj" style="background: #5b2a86; color: #fff; border: 0; border-radius: 6px; padding: 8px 16px; font-size: 14px; cursor: pointer;">📋 Kopiuj treść do Substacka</button>
+<span id="kopiuj-status" style="margin-left: 10px; color: #555; font-size: 13px;">Tytuł, podtytuł i SEO są w bloku metadanych na dole.</span>
+</div>
+<script>
+document.getElementById('kopiuj').onclick = async function () {
+  var el = document.getElementById('tresc'), status = document.getElementById('kopiuj-status');
+  try {
+    await navigator.clipboard.write([new ClipboardItem({
+      'text/html': new Blob([el.innerHTML], {type: 'text/html'}),
+      'text/plain': new Blob([el.innerText], {type: 'text/plain'})
+    })]);
+    status.textContent = 'Skopiowano — wklej w edytorze Substacka (Cmd+V).';
+  } catch (e) {
+    var range = document.createRange(); range.selectNodeContents(el);
+    var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    document.execCommand('copy'); sel.removeAllRanges();
+    status.textContent = 'Skopiowano (tryb zapasowy) — wklej w edytorze Substacka.';
+  }
+};
+</script>"""
+
 # Kolory tagow dokladnie takie, jakie sa na Substacku (data-color z opublikowanych wydan),
 # zeby po wklejeniu nie trzeba bylo ich poprawiac recznie.
 TAG_COLORS = {
@@ -45,23 +71,9 @@ def label(text, color=None):
     return '<strong>%s</strong>' % span
 
 
-def sort_key(row):
-    """Kolejnosc z redakcja/priorytety.md: Nowosci, Blizej technologii, Polska, reszta."""
-    tags = row['Tagi']
-    if 'Nowości i ogłoszenia' in tags:
-        group = 0
-    elif 'Bliżej technologii' in tags:
-        group = 1
-    elif 'Polska' in tags:
-        group = 2
-    else:
-        group = 3
-    return (group, 'Polska' not in tags, row['Tytuł'].lower())
-
-
 def build_html(meta, rows):
     esc = html.escape
-    parts = ['<h1>%s</h1>' % esc(meta['tytul']), '<p>Cześć!</p>']
+    parts = [COPY_TOOLBAR, '<h1>%s</h1>' % esc(meta['tytul']), '<div id="tresc">', '<p>Cześć!</p>']
     for paragraph in meta['wstep'].split('\n\n'):
         if paragraph.strip():
             parts.append('<p>%s</p>' % esc(paragraph.strip()))
@@ -79,6 +91,7 @@ def build_html(meta, rows):
 
     parts.append('<p>To tyle na dzisiaj.<br><strong>Dzięki, że jesteś ze mną!</strong></p>')
     parts.append('<p>Udanego tygodnia,<br><em>Kuba</em></p>')
+    parts.append('</div>')
 
     day = meta['data'].split('-')
     parts.append(
@@ -108,7 +121,7 @@ def main():
     if not os.path.exists(repo.FINAL):
         raise SystemExit('Brak praca/final_prepared_data.csv - zapisz selekcje w admince.')
 
-    rows = [{k: r.get(k, '') for k in repo.BASE_FIELDS} for r in repo.read_csv(repo.FINAL)]
+    rows = [{k: r.get(k, '') for k in repo.FINAL_FIELDS} for r in repo.read_csv(repo.FINAL)]
     problems = []
     for row in rows:
         row['Tagi'] = walidacja.normalize_tags(row['Tagi'])
@@ -118,7 +131,8 @@ def main():
             problems.append('%s: nieznany tag %s' % (row['Tytuł'], bad))
     if problems:
         raise SystemExit('\n'.join(problems))
-    rows.sort(key=sort_key)
+    # kolejnosc z redakcja/priorytety.md + reczne przesuniecia z adminki (kolumna Kolejnosc)
+    rows.sort(key=repo.publication_key)
 
     folder = repo.issue_dir(meta['numer'])
     os.makedirs(folder, exist_ok=True)
@@ -132,7 +146,7 @@ def main():
     rel = os.path.relpath(folder, repo.ROOT)
     print('Wydanie #%s gotowe w %s/ (%d newsow, okladka: %d linie, %dpx)'
           % (meta['numer'], rel, len(rows), len(lines), size))
-    print('  %s/substack.html  - otworz w przegladarce i skopiuj do Substacka' % rel)
+    print('  %s/substack.html  - otworz w przegladarce, przycisk "Kopiuj tresc do Substacka"' % rel)
     print('  %s/okladka.jpeg' % rel)
 
 

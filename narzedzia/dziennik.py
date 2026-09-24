@@ -97,6 +97,19 @@ def cmd_selekcja(_args):
                         'kontekst': {'tytul': ai['Tytuł'], 'tagi': ai['Tagi'], 'sekcja_ai': ai['Sekcja'],
                                      'ocena_ai': ai['Ocena'], 'uzasadnienie_ai': ai['Uzasadnienie']}})
 
+    # kolejnosc: domyslna (grupa, Polska na gorze, alfabet) vs reczna z adminki
+    names = {(0, 0): 'Nowości / Polska', (0, 1): 'Nowości', (1, 0): 'Bliżej technologii / Polska',
+             (1, 1): 'Bliżej technologii', (2, 0): 'Tylko Polska', (3, 1): 'Bez tagu'}
+    groups = collections.defaultdict(list)
+    for row in final_rows:
+        groups[repo.publication_group(row.get('Tagi'))].append(row)
+    for key, members in sorted(groups.items()):
+        default = [r['Tytuł'] for r in sorted(members, key=lambda r: repo.pl_key(r['Tytuł']))]
+        manual = [r['Tytuł'] for r in sorted(members, key=repo.publication_key)]
+        if default != manual:
+            entries.append({'wydanie': issue, 'etap': 'selekcja', 'rodzaj': 'zmiana', 'pole': 'kolejnosc',
+                            'kontekst': {'grupa': names.get(key, str(key))}, 'ai': default, 'kuba': manual})
+
     ai_order = [dedup_key(r['Link']) for r in repo.read_csv(repo.WERSJA_AI) if r['Rekomendacja'] == 'TOP']
     entries.append({'wydanie': issue, 'etap': 'selekcja', 'rodzaj': 'podsumowanie',
                     'kontekst': {'kandydatow_ai': len(ai_rows), 'top_ai': len(ai_order),

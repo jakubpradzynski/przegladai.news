@@ -152,6 +152,8 @@ def cmd_sprawdz(_args):
             missing_batches.append(os.path.basename(path))
     for path in glob.glob(os.path.join(OCENY, '*.json')):
         for r in repo.read_json(path) or []:
+            if r.get('ocena') == 'może':   # model czasem pisze z polskim znakiem
+                r['ocena'] = 'moze'
             ratings[r['id']] = r
     missing = [i for i in expected if i not in ratings]
     bad = [r['id'] for r in ratings.values() if r.get('ocena') not in ('tak', 'moze', 'nie') or not r.get('powod')]

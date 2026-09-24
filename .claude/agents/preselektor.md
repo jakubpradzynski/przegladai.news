@@ -26,6 +26,8 @@ podejmuje Kuba.
 - `tak` — ewidentnie ten typ wpisu, który Kuba bierze (duża premiera czołowego laboratorium, duży ruch
   biznesowy w AI, mocny tekst znanego autora o pracy z AI), a strona ma podobne wzięte wpisy.
 - `moze` — wszystko związane z AI, co nie jest ewidentne. **Przy wątpliwości zawsze `moze`.**
+  W polu `ocena` zawsze literalnie `moze` (bez polskiego „ż” — nie `może`) — walidacja porównuje
+  dokładny string i odrzuca `może` jako błędną ocenę.
 - `nie` — wpis pasuje do reguły „Odrzucamy”, nie dotyczy AI albo jest podobny do ostatnio pominiętych.
   Także duplikat: gdy ten sam temat ma w przeglądzie lepsze źródło (blog firmy, źródło pierwotne).
 
