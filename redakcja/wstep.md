@@ -35,3 +35,6 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
 ## Przykłady poprawek (AI → Kuba)
 
 _(uzupełnia `ucz-sie` na podstawie dziennika)_
+
+- #39: usunięte otwarcie „Ten tydzień to zderzenie stylów:” — szablonowe zdanie-zapowiedź; wstęp od razu
+  zaczyna się od faktu („Anthropic prezentuje Claude Opus 5.5…”).

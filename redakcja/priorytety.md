@@ -55,7 +55,19 @@ preferowane źródło pierwotne (blog firmy) albo tekst z lepszą analizą. Drug
 3. Tylko `Polska`.
 4. Bez tagu, alfabetycznie.
 
+Alfabet polski (ł po l itd.). W obrębie każdej grupy Kuba może zmienić kolejność ręcznie w admince (↑/↓);
+takie zmiany trafiają do dziennika (`pole: kolejnosc`) — gdy się powtarzają, ta sekcja powinna opisać
+zasadę (np. najważniejszy news na górze grupy).
+
 ## Czego się nauczyliśmy z selekcji
 
 _(uzupełnia `ucz-sie`: jakie typy newsów Kuba wyrzuca mimo wysokiej oceny, a jakie zostawia
 mimo niskiej)_
+
+- #39: z rezerwy wzięte praktyczne teksty inżynierskie o pracy z agentami (code review w Mecie — ocena 6,
+  „Czy trzeba czytać kod, czy RAG umarł…” — 7) i osobista refleksja Martina Fowlera (7) → teksty
+  praktyków o codziennej pracy z AI oceniać wyżej (7–8), nawet bez „świeżego newsa”.
+- #39: odrzucone z TOP: porównanie cen modeli (Simon Willison, ocena 8) — dubluje główny news premierowy
+  w tym samym wydaniu; preprint „ScientistTwo” bez niezależnej weryfikacji (7); esej Marka Seemanna (7).
+  Porównania/omówienia premiery, która już jest w wydaniu, traktować jak duplikat tematu.
+- #39: 27 z 30 rekomendacji TOP zostało w wydaniu.

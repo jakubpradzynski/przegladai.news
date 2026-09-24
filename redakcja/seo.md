@@ -32,3 +32,8 @@ zamiast zmniejszać font.
 ## Przykłady poprawek (AI → Kuba)
 
 _(uzupełnia `ucz-sie` na podstawie dziennika)_
+
+- #37 opis_seo: „GPT-6 Astra bije rekordy, Nvidia przejmuje Hugging Face za 12,9 mld USD…” → zastąpione
+  osobistym, wielozdaniowym wstępem kończącym się „Zapraszam do lektury!” (nie 120–160 znaków, nie
+  styl SEO) — pojedynczy przypadek, możliwe że Kuba wkleił tu treść wstępu przez pomyłkę w admince;
+  obserwować, czy się powtórzy, zanim zmienimy regułę formatu.

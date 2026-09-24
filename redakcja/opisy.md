@@ -15,7 +15,10 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
 - **Zdanie 2–4: szczegóły, które wyróżniają materiał.** Liczby, nazwy, przykład, case study.
   Szczegół zamiast ogólnika: „zespół Bun przepracował 535 tysięcy linii kodu z Zig na Rust w 11 dni”.
 - **Ostatnie zdanie: dlaczego to ważne / co z tego wynika.** Kontekst branżowy, porównanie
-  z historią, ocena. To jest miejsce na opinię.
+  z historią, ocena. To jest miejsce na opinię — **o sprawie, nie o samym tekście.** Nie kończymy
+  recenzją artykułu („Konkretne, klarowne rozprawienie się z…”, „Konkretne wskazówki od kogoś, kto…”,
+  „Nieprzyjemne odkrycie dla firmy, która…”) — takie zdanie Kuba wycina (3× w #39). Gdy nie ma nic
+  więcej do powiedzenia o skutkach, lepiej zakończyć na konkrecie.
   - „Po latach, w których Siri była głównym celem żartów o zapóźnieniu Apple w AI, to pierwsza wersja, która realnie próbuje dogonić konkurencję – na razie w becie i tylko po angielsku, więc prawdziwy test dopiero przed nią.”
   - „Dla zespołów, które dziś płacą słone rachunki za API do jednego, uniwersalnego modelu, to konkretna, wdrożeniowa recepta.”
 
@@ -27,6 +30,11 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   „Michael Spencer dokumentuje…”, „Autorzy z Thoughtworks tłumaczą…”.
 - Przy wideo i podcastach: kto rozmawia, 2–3 konkretne wątki, dla kogo warto poświęcić czas.
 - Przy tekstach za paywallem nie udawać, że przeczytało się całość — opisywać to, co widać.
+  Samego paywalla nie komentujemy w opisie (od tego jest tag `Za paywallem`).
+- Bez słów względnego czasu („dziś”, „wczoraj”, „w tym tygodniu”) — wydanie czyta się później.
+- Bez zastrzeżeń typu „choć temat pojawiał się już u innych” i bez pobocznych szczegółów (pseudonimy
+  autorów, techniczne detale spoza głównej tezy) — skracają opis bez straty.
+- „agenci AI” / „agentów” (odmiana osobowa), nie „agenty”.
 - Pisownia: półpauza „–” w dopowiedzeniach, polskie cudzysłowy „…”, liczby z przecinkiem dziesiętnym
   („0,1125 centa”), procenty bez spacji („92,5%”).
 
@@ -59,3 +67,9 @@ Pełniejsza lista wzorców AI: skill `humanizer-pl`.
 ## Przykłady poprawek (AI → Kuba)
 
 _(uzupełnia `ucz-sie` na podstawie dziennika)_
+
+- #39 Opis („Czy trzeba czytać kod, czy RAG umarł…”): usunięte zamknięcie „Konkretne, klarowne rozprawienie się z trzema modnymi hasłami zamiast kolejnego artykułu-hype'u.” — recenzja tekstu zamiast wniosku.
+- #39 Opis (Meta, code review): usunięte „Konkretne wskazówki od kogoś, kto realnie robi code review na dużą skalę, choć sam koncept… pojawiał się już u innych twórców.” — recenzja + zastrzeżenie.
+- #39 Opis (ChatGPT i ciasteczko): usunięte „Nieprzyjemne odkrycie dla firmy, która przedstawia się jako…” oraz „działający pod pseudonimem Buchodi”.
+- #39 Opis (AI Force): „…ujawnione; WSJ zasłania resztę tekstu paywallem.” → „…ujawnione.” — paywall tylko w tagu.
+- #39 Opis (GPT-6 Sol i Luna): usunięte „dziś”; (Matt Pocock): „agenty działające” → „agentów działających”.
