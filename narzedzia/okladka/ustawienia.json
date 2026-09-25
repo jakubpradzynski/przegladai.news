@@ -1,0 +1,13 @@
+{
+  "_komentarz": "Parametry zmierzone na okladce wydania #38 (2752x1536). Szablon = ta okladka bez napisu.",
+  "szablon": "szablon.jpeg",
+  "font": "Oswald-Variable.ttf",
+  "wariant_fontu": "SemiBold",
+  "kolor": "#2A053C",
+  "ramka": {"x": 426, "y": 555, "w": 1900, "h": 710},
+  "max_linii": 3,
+  "font_max": 190,
+  "font_min": 120,
+  "odstep_linii": 1.08,
+  "jakosc_jpeg": 92
+}

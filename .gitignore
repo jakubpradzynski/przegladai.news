@@ -1,8 +1,12 @@
 node_modules
-dist
-.env.local
 .idea
 .venv
 .DS_Store
-.antigravity
-.antigravitycli
+.env.local
+.cache
+__pycache__
+*.pyc
+
+# pliki robocze biezacego wydania
+/data.csv
+/praca/

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>PrzeglądAI – adminka wydania</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --line:#e3e5e8; --text:#1d1f23; --muted:#6b7079; --accent:#5b2a86;
+          --nowosci:#1555e2; --tech:#bf9000; --polska:#d00; --ok:#1e8e3e; --warn:#c5221f; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); }
+  header { position:sticky; top:0; z-index:5; background:var(--card); border-bottom:1px solid var(--line); padding:10px 20px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  header h1 { font-size:16px; margin:0 12px 0 0; }
+  .tabs button { border:0; background:none; padding:6px 12px; font-size:14px; cursor:pointer; border-radius:6px; color:var(--muted); }
+  .tabs button.active { background:var(--accent); color:#fff; }
+  .counters { display:flex; gap:10px; flex-wrap:wrap; margin-left:auto; }
+  .counter { padding:3px 9px; border-radius:12px; background:#eef0f3; font-variant-numeric:tabular-nums; }
+  .counter.good { background:#e6f4ea; color:var(--ok); } .counter.bad { background:#fce8e6; color:var(--warn); }
+  main { max-width:1200px; margin:0 auto; padding:16px 20px 80px; }
+  h2 { margin:28px 0 8px; font-size:17px; display:flex; gap:10px; align-items:baseline; }
+  h2 small { color:var(--muted); font-weight:normal; }
+  .item { background:var(--card); border:1px solid var(--line); border-left:4px solid transparent; border-radius:8px; padding:10px 12px; margin:6px 0; display:grid; grid-template-columns:28px 1fr 250px; gap:10px; }
+  .item.chosen { border-left-color:var(--accent); }
+  .item:not(.chosen) { opacity:.62; } .item:not(.chosen):hover, .item:not(.chosen):focus-within { opacity:1; }
+  .item input[type=checkbox] { width:18px; height:18px; margin-top:4px; cursor:pointer; }
+  .title { width:100%; font-weight:600; font-size:15px; border:1px solid transparent; border-radius:4px; padding:3px 5px; resize:none; font-family:inherit; }
+  .desc { width:100%; border:1px solid transparent; border-radius:4px; padding:3px 5px; resize:vertical; font-family:inherit; font-size:13px; color:#333; min-height:60px; }
+  .title:hover, .desc:hover { border-color:var(--line); } .title:focus, .desc:focus { border-color:var(--accent); outline:none; }
+  .meta { font-size:12px; color:var(--muted); display:flex; flex-direction:column; gap:6px; }
+  .meta a { color:var(--muted); word-break:break-all; }
+  .score { display:inline-block; min-width:26px; text-align:center; padding:1px 6px; border-radius:10px; font-weight:700; color:#fff; }
+  .why { font-style:italic; }
+  .chips { display:flex; flex-wrap:wrap; gap:4px; }
+  .chip { border:1px solid var(--line); background:#fff; border-radius:12px; padding:2px 8px; font-size:12px; cursor:pointer; color:var(--muted); }
+  .chip.on { color:#fff; border-color:transparent; }
+  .chip.on[data-tag="Nowości i ogłoszenia"] { background:var(--nowosci); } .chip.on[data-tag="Bliżej technologii"] { background:var(--tech); }
+  .chip.on[data-tag="Polska"] { background:var(--polska); } .chip.on[data-tag="Za paywallem"] { background:#555; }
+  .time { width:90px; padding:2px 6px; border:1px solid var(--line); border-radius:4px; font-size:12px; }
+  .len { font-size:11px; color:var(--muted); } .len.bad { color:var(--warn); }
+  .divider { text-align:center; color:var(--muted); font-size:12px; margin:10px 0; border-top:1px dashed var(--line); padding-top:6px; cursor:pointer; }
+  .toolbar { display:flex; gap:10px; align-items:center; margin:12px 0; flex-wrap:wrap; }
+  button.primary { background:var(--accent); color:#fff; border:0; padding:9px 18px; border-radius:6px; font-size:14px; cursor:pointer; }
+  button.secondary { background:#fff; border:1px solid var(--line); padding:8px 14px; border-radius:6px; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  .status { color:var(--muted); font-size:13px; }
+  .panel { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 18px; margin:12px 0; }
+  .panel label { display:block; font-weight:600; margin:14px 0 4px; }
+  .panel input[type=text], .panel textarea { width:100%; padding:7px 9px; border:1px solid var(--line); border-radius:5px; font:inherit; }
+  .panel textarea { min-height:110px; resize:vertical; }
+  .proposal { display:flex; gap:8px; align-items:center; margin:4px 0; font-weight:normal; }
+  .hint { color:var(--muted); font-size:12px; font-weight:normal; }
+  pre.out { background:#1d1f23; color:#e8eaed; padding:10px 12px; border-radius:6px; white-space:pre-wrap; font-size:12px; }
+  img.cover { max-width:100%; border:1px solid var(--line); border-radius:6px; margin-top:8px; }
+  .hidden { display:none; }
+  .order { display:flex; gap:4px; align-items:center; }
+  .order button { border:1px solid var(--line); background:#fff; border-radius:4px; width:28px; height:24px; cursor:pointer; font-size:13px; }
+  .order button:disabled { opacity:.3; cursor:default; }
+  .subgroup { font-size:12px; color:var(--muted); margin:10px 0 2px 4px; text-transform:uppercase; letter-spacing:.04em; }
+</style>
+</head>
+<body>
+<header>
+  <h1>PrzeglądAI</h1>
+  <div class="tabs"><button id="tab-sel" class="active">Selekcja</button><button id="tab-wyd">Wydanie</button></div>
+  <div class="counters" id="counters"></div>
+</header>
+
+<main>
+  <section id="view-sel">
+    <div class="toolbar">
+      <button class="primary" id="save">Zapisz selekcję</button>
+      <button class="secondary" id="top-only">Zaznacz tylko rekomendacje AI</button>
+      <span class="status" id="sel-status"></span>
+    </div>
+    <div id="sections"></div>
+  </section>
+
+  <section id="view-wyd" class="hidden">
+    <div class="panel" id="wyd-wait">
+      <p id="wyd-wait-text">Najpierw zapisz selekcję. Claude przygotuje wtedy propozycje tytułu, wstęp i opis SEO; ta zakładka odświeża się sama.</p>
+    </div>
+    <div class="panel hidden" id="wyd-form">
+      <label>Tytuł wydania <span class="hint">wybierz propozycję albo wpisz własny</span></label>
+      <div id="proposals"></div>
+      <input type="text" id="f-tytul">
+      <label>Wstęp <span class="hint">między „Cześć!” a „Zapraszam do lektury!” — to też tekst do social mediów</span> <span class="len" id="len-wstep"></span></label>
+      <textarea id="f-wstep"></textarea>
+      <label>Opis SEO <span class="len" id="len-seo"></span></label>
+      <textarea id="f-seo" style="min-height:60px"></textarea>
+      <label>Napis na okładce <button class="secondary" id="cover-preview" style="margin-left:8px;padding:3px 10px">Podgląd</button></label>
+      <input type="text" id="f-okladka">
+      <img class="cover hidden" id="cover-img" alt="Podgląd okładki">
+      <label>Slug (URL posta)</label>
+      <input type="text" id="f-slug">
+      <label>Data publikacji</label>
+      <input type="text" id="f-data" style="max-width:160px">
+      <div class="toolbar" style="margin-top:18px">
+        <button class="primary" id="generate">Generuj wydanie</button>
+        <span class="status" id="wyd-status"></span>
+      </div>
+      <pre class="out hidden" id="wyd-out"></pre>
+      <div id="wyd-links" class="hidden">
+        <p><a href="/podglad/substack" target="_blank">Otwórz substack.html</a> — kliknij tam „Kopiuj treść do Substacka” i wklej w edytorze (kolory tagów zostają).</p>
+        <img class="cover" id="final-cover" alt="Okładka">
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+const TAGS = ['Nowości i ogłoszenia', 'Bliżej technologii', 'Polska', 'Za paywallem'];
+const SECTIONS = [
+  {id: 'Nowości', tag: 'Nowości i ogłoszenia', target: 10},
+  {id: 'Technologia', tag: 'Bliżej technologii', target: 10},
+  {id: 'Pozostałe', tag: null, target: 10},
+];
+let rows = [];
+let showReserve = {};
+let saveTimer = null;
+
+const $ = id => document.getElementById(id);
+const esc = s => (s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tagsOf = r => (r.Tagi || '').split(',').map(t => t.trim()).filter(Boolean);
+const sectionOf = r => tagsOf(r).includes('Nowości i ogłoszenia') ? 'Nowości'
+  : tagsOf(r).includes('Bliżej technologii') ? 'Technologia' : 'Pozostałe';
+// Kolejnosc publikacji - ta sama logika co repo.publication_key w Pythonie:
+// grupa (Nowości, Bliżej technologii, tylko Polska, bez tagu), Polska na górze, ręczna kolejność, tytuł.
+const PL = {'ą': 'a~', 'ć': 'c~', 'ę': 'e~', 'ł': 'l~', 'ń': 'n~', 'ó': 'o~', 'ś': 's~', 'ź': 'z~', 'ż': 'z~~'};
+const plKey = t => (t || '').toLowerCase().replace(/[ąćęłńóśźż]/g, c => PL[c]);
+function pubGroup(r) {
+  const t = tagsOf(r);
+  const g = t.includes('Nowości i ogłoszenia') ? 0 : t.includes('Bliżej technologii') ? 1 : t.includes('Polska') ? 2 : 3;
+  return [g, t.includes('Polska') ? 0 : 1];
+}
+const SUBGROUP_LABEL = {'0-0': 'Polska', '0-1': 'Pozostałe', '1-0': 'Polska', '1-1': 'Pozostałe', '2-0': 'Tylko Polska', '3-1': 'Bez tagu'};
+const num = v => { const n = parseFloat(v); return isNaN(n) ? Infinity : n; };
+function pubCompare(a, b) {
+  const ga = pubGroup(a), gb = pubGroup(b);
+  const ka = plKey(a.Tytuł), kb = plKey(b.Tytuł);
+  return (ga[0] - gb[0]) || (ga[1] - gb[1]) || ((num(a.Kolejnosc) - num(b.Kolejnosc)) || 0) || (ka < kb ? -1 : ka > kb ? 1 : 0);
+}
+function subgroupList(r) {
+  const key = pubGroup(r).join('-');
+  return rows.filter(x => x.Wybrany && pubGroup(x).join('-') === key).sort(pubCompare);
+}
+function freezeOrder() {
+  // utrwala widoczną kolejność jako liczby, żeby generator ułożył dokładnie tak samo
+  const seen = new Set();
+  rows.filter(r => r.Wybrany).forEach(r => {
+    const key = pubGroup(r).join('-');
+    if (seen.has(key)) return;
+    seen.add(key);
+    subgroupList(r).forEach((x, k) => x.Kolejnosc = String((k + 1) * 10));
+  });
+}
+function move(i, dir) {
+  const list = subgroupList(rows[i]);
+  list.forEach((x, k) => x.Kolejnosc = String((k + 1) * 10));
+  const pos = list.indexOf(rows[i]);
+  const other = list[pos + dir];
+  if (!other) return;
+  [rows[i].Kolejnosc, other.Kolejnosc] = [other.Kolejnosc, rows[i].Kolejnosc];
+  persist(); render();
+  document.getElementById('item-' + i)?.scrollIntoView({block: 'center'});
+}
+const scoreColor = s => s >= 8 ? '#1e8e3e' : s >= 6 ? '#5b2a86' : s >= 4 ? '#b06000' : '#c5221f';
+
+async function load() {
+  const res = await fetch('/api/dane');
+  const data = await res.json();
+  rows = data.wiersze;
+  $('sel-status').textContent = rows.length ? `Wczytano ${rows.length} newsów (${data.zrodlo})` : 'Brak danych — najpierw /zbierz-dane';
+  render();
+}
+
+function counters() {
+  const chosen = rows.filter(r => r.Wybrany);
+  const bySec = s => chosen.filter(r => sectionOf(r) === s).length;
+  const cls = (n, lo, hi) => n >= lo && n <= hi ? 'good' : 'bad';
+  const parts = SECTIONS.map(s => {
+    const n = bySec(s.id);
+    return `<span class="counter ${cls(n, s.target - 2, s.target + 2)}">${s.id} ${n}/${s.target}</span>`;
+  });
+  const pl = chosen.filter(r => tagsOf(r).includes('Polska')).length;
+  const pw = chosen.filter(r => tagsOf(r).includes('Za paywallem')).length;
+  const vid = chosen.filter(r => r.Czas).length;
+  parts.push(`<span class="counter ${cls(chosen.length, 28, 31)}">razem ${chosen.length}/30</span>`);
+  parts.push(`<span class="counter ${pl >= 1 ? 'good' : ''}">Polska ${pl}</span>`);
+  parts.push(`<span class="counter">wideo ${vid}</span>`);
+  parts.push(`<span class="counter ${pw > 2 ? 'bad' : ''}">paywall ${pw}</span>`);
+  $('counters').innerHTML = parts.join('');
+}
+
+function itemHtml(r, i) {
+  const tags = tagsOf(r);
+  const chips = TAGS.map(t => `<span class="chip ${tags.includes(t) ? 'on' : ''}" data-tag="${t}" data-i="${i}">${t}</span>`).join('');
+  const len = (r.Opis || '').length;
+  return `<div class="item ${r.Wybrany ? 'chosen' : ''}" id="item-${i}">
+    <input type="checkbox" data-i="${i}" class="pick" ${r.Wybrany ? 'checked' : ''}>
+    <div>
+      <textarea class="title" rows="1" data-i="${i}" data-f="Tytuł">${esc(r.Tytuł)}</textarea>
+      <textarea class="desc" data-i="${i}" data-f="Opis">${esc(r.Opis)}</textarea>
+      <span class="len ${len < 350 || len > 1200 ? 'bad' : ''}">${len} znaków</span>
+    </div>
+    <div class="meta">
+      <div><span class="score" style="background:${scoreColor(+r.Ocena)}">${r.Ocena || '–'}</span>
+        ${r.Rekomendacja === 'TOP' ? '<b>TOP</b>' : 'rezerwa'}</div>
+      ${r.Wybrany ? (() => { const l = subgroupList(r), p = l.indexOf(r); return `<div class="order">
+        <button class="mv" data-i="${i}" data-d="-1" ${p <= 0 ? 'disabled' : ''} title="wyżej w wydaniu">↑</button>
+        <button class="mv" data-i="${i}" data-d="1" ${p >= l.length - 1 ? 'disabled' : ''} title="niżej w wydaniu">↓</button>
+        <span>${p + 1}. w grupie</span></div>`; })() : ''}
+      ${r.Uzasadnienie ? `<div class="why">${esc(r.Uzasadnienie)}</div>` : ''}
+      <div class="chips">${chips}</div>
+      <div>Czas <input class="time" data-i="${i}" data-f="Czas" value="${esc(r.Czas)}" placeholder="np. 12 min"></div>
+      <a href="${esc(r.Link)}" target="_blank" rel="noopener">${esc(r.Link)}</a>
+    </div>
+  </div>`;
+}
+
+function render() {
+  const html = SECTIONS.map(s => {
+    const inSec = rows.map((r, i) => [r, i]).filter(([r]) => sectionOf(r) === s.id);
+    const chosen = inSec.filter(([r]) => r.Wybrany).sort(([a], [b]) => pubCompare(a, b));
+    const rest = inSec.filter(([r]) => !r.Wybrany).sort(([a], [b]) => +b.Ocena - +a.Ocena);
+    const open = showReserve[s.id];
+    const groups = new Set(chosen.map(([r]) => pubGroup(r).join('-')));
+    let last = null;
+    const chosenHtml = chosen.map(([r, i]) => {
+      const key = pubGroup(r).join('-');
+      const label = groups.size > 1 && key !== last ? `<div class="subgroup">${SUBGROUP_LABEL[key] || ''}</div>` : '';
+      last = key;
+      return label + itemHtml(r, i);
+    }).join('');
+    return `<h2>${s.id} <small>${chosen.length} wybranych / cel ${s.target} · ${rest.length} w rezerwie · kolejność jak w wydaniu</small></h2>
+      ${chosenHtml}
+      ${rest.length ? `<div class="divider" data-sec="${s.id}">${open ? '▲ zwiń rezerwę' : `▼ pokaż rezerwę (${rest.length})`}</div>` : ''}
+      ${open ? rest.map(([r, i]) => itemHtml(r, i)).join('') : ''}`;
+  }).join('');
+  $('sections').innerHTML = html;
+  document.querySelectorAll('textarea').forEach(autoResize);
+  counters();
+}
+
+function autoResize(t) { t.style.height = 'auto'; t.style.height = (t.scrollHeight + 2) + 'px'; }
+
+function persist() {
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(async () => {
+    await fetch('/api/roboczy', {method: 'POST', body: JSON.stringify({wiersze: rows})});
+    $('sel-status').textContent = 'Zapisano roboczo ' + new Date().toLocaleTimeString();
+  }, 600);
+}
+
+$('sections').addEventListener('click', e => {
+  const t = e.target;
+  if (t.classList.contains('divider')) { showReserve[t.dataset.sec] = !showReserve[t.dataset.sec]; return render(); }
+  if (t.classList.contains('mv')) return move(+t.dataset.i, +t.dataset.d);
+  if (t.classList.contains('chip')) {
+    const r = rows[t.dataset.i];
+    let tags = tagsOf(r);
+    const tag = t.dataset.tag;
+    if (tags.includes(tag)) tags = tags.filter(x => x !== tag);
+    else {
+      tags.push(tag);
+      if (tag === 'Nowości i ogłoszenia') tags = tags.filter(x => x !== 'Bliżej technologii');
+      if (tag === 'Bliżej technologii') tags = tags.filter(x => x !== 'Nowości i ogłoszenia');
+    }
+    r.Tagi = tags.sort((a, b) => a.localeCompare(b, 'pl')).join(', ');
+    persist(); render();
+    document.getElementById('item-' + t.dataset.i)?.scrollIntoView({block: 'center'});
+  }
+});
+$('sections').addEventListener('change', e => {
+  const t = e.target;
+  if (t.classList.contains('pick')) { rows[t.dataset.i].Wybrany = t.checked ? '1' : ''; persist(); render(); }
+  else if (t.dataset.f) { rows[t.dataset.i][t.dataset.f] = t.value; persist(); counters(); }
+});
+$('sections').addEventListener('input', e => { if (e.target.tagName === 'TEXTAREA') autoResize(e.target); });
+
+$('top-only').onclick = () => { rows.forEach(r => r.Wybrany = r.Rekomendacja === 'TOP' ? '1' : ''); persist(); render(); };
+$('save').onclick = async () => {
+  document.activeElement?.blur();
+  freezeOrder();
+  const res = await (await fetch('/api/zapisz', {method: 'POST', body: JSON.stringify({wiersze: rows})})).json();
+  $('sel-status').textContent = `Zapisano selekcję: ${res.zapisano} newsów. Claude przygotowuje propozycje wydania…`;
+  switchTab('wyd');
+};
+
+// --- Zakładka "Wydanie" ---
+let formFilled = false;
+let slugTouched = false, coverTouched = false;
+
+function slugify(title) {
+  const head = title.includes(':') ? title.split(':').slice(1).join(':') : title;
+  const num = (title.match(/#(\d+)/) || [])[1] || '';
+  const s = head.replace(/ł/g, 'l').replace(/Ł/g, 'L').normalize('NFKD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  return `wydanie-${num}-${s}`;
+}
+const coverOf = title => title.replace(/^\s*Wydanie\s*/i, '');
+
+function lengths() {
+  const w = $('f-wstep').value.length, s = $('f-seo').value.length;
+  $('len-wstep').textContent = w + ' znaków'; $('len-wstep').className = 'len' + (w < 200 || w > 650 ? ' bad' : '');
+  $('len-seo').textContent = s + ' znaków (120–160)'; $('len-seo').className = 'len' + (s < 120 || s > 160 ? ' bad' : '');
+}
+
+async function pollIssue() {
+  const d = await (await fetch('/api/wydanie')).json();
+  if (!d.ai) {
+    $('wyd-wait-text').textContent = d.selekcja_zapisana
+      ? 'Selekcja zapisana. Claude przygotowuje propozycje tytułu, wstęp i opis SEO… (odświeża się samo)'
+      : 'Najpierw zapisz selekcję. Claude przygotuje wtedy propozycje tytułu, wstęp i opis SEO; ta zakładka odświeża się sama.';
+    return setTimeout(pollIssue, 3000);
+  }
+  $('wyd-wait').classList.add('hidden');
+  $('wyd-form').classList.remove('hidden');
+  if (formFilled) return;
+  formFilled = true;
+  const src = d.zapisane || {};
+  const ai = d.ai;
+  $('proposals').innerHTML = (ai.propozycje_tytulu || []).map((p, i) =>
+    `<label class="proposal"><input type="radio" name="prop" value="${esc(p)}"> ${esc(p)}</label>`).join('');
+  $('f-tytul').value = src.tytul || (ai.propozycje_tytulu || [''])[0];
+  $('f-wstep').value = src.wstep || ai.wstep || '';
+  $('f-seo').value = src.opis_seo || ai.opis_seo || '';
+  $('f-okladka').value = src.okladka || ai.okladka || coverOf($('f-tytul').value);
+  $('f-slug').value = src.slug || ai.slug || slugify($('f-tytul').value);
+  $('f-data').value = src.data || ai.data || d.piatek;
+  window.issueNumber = ai.numer || d.nastepny_numer;
+  document.querySelectorAll('input[name=prop]').forEach(r => {
+    r.checked = r.value === $('f-tytul').value;
+    r.onchange = () => { $('f-tytul').value = r.value; titleChanged(); };
+  });
+  lengths();
+}
+
+function titleChanged() {
+  const t = $('f-tytul').value;
+  if (!slugTouched) $('f-slug').value = slugify(t);
+  if (!coverTouched) $('f-okladka').value = coverOf(t);
+}
+$('f-tytul').oninput = titleChanged;
+$('f-slug').oninput = () => slugTouched = true;
+$('f-okladka').oninput = () => coverTouched = true;
+$('f-wstep').oninput = lengths; $('f-seo').oninput = lengths;
+
+$('cover-preview').onclick = async () => {
+  const res = await (await fetch('/api/okladka', {method: 'POST', body: JSON.stringify({napis: $('f-okladka').value})})).json();
+  if (res.ok) { $('cover-img').src = '/podglad/okladka-robocza?' + Date.now(); $('cover-img').classList.remove('hidden'); }
+  else { alertOut(res.wynik); }
+};
+
+function alertOut(text) { $('wyd-out').textContent = text; $('wyd-out').classList.remove('hidden'); }
+
+$('generate').onclick = async () => {
+  $('generate').disabled = true; $('wyd-status').textContent = 'Generuję…';
+  const payload = {
+    numer: window.issueNumber, tytul: $('f-tytul').value.trim(), wstep: $('f-wstep').value.trim(),
+    opis_seo: $('f-seo').value.trim(), slug: $('f-slug').value.trim(), data: $('f-data').value.trim(),
+    okladka: $('f-okladka').value.trim(),
+  };
+  const res = await (await fetch('/api/wydanie', {method: 'POST', body: JSON.stringify(payload)})).json();
+  $('generate').disabled = false;
+  $('wyd-status').textContent = res.ok ? 'Gotowe. Możesz poprawiać i generować ponownie.' : 'Błąd — szczegóły poniżej.';
+  alertOut(res.wynik);
+  if (res.ok) {
+    $('wyd-links').classList.remove('hidden');
+    $('final-cover').src = '/podglad/okladka?' + Date.now();
+  }
+};
+
+function switchTab(name) {
+  $('tab-sel').classList.toggle('active', name === 'sel');
+  $('tab-wyd').classList.toggle('active', name === 'wyd');
+  $('view-sel').classList.toggle('hidden', name !== 'sel');
+  $('view-wyd').classList.toggle('hidden', name !== 'wyd');
+}
+$('tab-sel').onclick = () => switchTab('sel');
+$('tab-wyd').onclick = () => switchTab('wyd');
+
+load();
+pollIssue();
+</script>
+</body>
+</html>

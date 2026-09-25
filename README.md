@@ -1,54 +1,20 @@
 # PrzeglądAI 🤖
 
-Landing page oraz archiwum newslettera "PrzeglądAI" – źródła wyselekcjonowanej wiedzy o sztucznej inteligencji dla branży IT i entuzjastów technologii.
+Repozytorium newslettera [PrzeglądAI](https://przegladai.substack.com) — cotygodniowego przeglądu
+najciekawszych newsów i artykułów ze świata AI dla branży IT.
 
-## 📝 O Projekcie
+Wydania powstają z pomocą Claude Code, a publikowane są na Substacku. Domena
+[przegladai.news](https://przegladai.news) przekierowuje na Substacka (katalog `strona/`, GitHub Pages).
 
-**PrzeglądAI** to newsletter tworzony przez Engineering Managera, który filtruje szum informacyjny, dostarczając konkretne materiały o nowościach, praktykach, narzędziach i finansach w świecie AI.
+## Jak powstaje wydanie
 
-Aplikacja pełni rolę wizytówki newslettera, umożliwiając:
-- 📧 Subskrypcję (integracja z MailerLite).
-- 🗄️ Dostęp do archiwum poprzednich wydań.
-- 📖 Czytanie poszczególnych numerów w formie artykułów.
+```
+data.csv ──/zbierz-dane──▶ adminka (selekcja + wydanie) ──▶ wydania/NNN/ ──Substack (ręcznie)──▶ /zakoncz-wydanie ──▶ PR
+```
 
-## 🛠 Technologie
+Szczegóły procesu i struktury repo: [`CLAUDE.md`](CLAUDE.md). Reguły redakcyjne: [`redakcja/`](redakcja/).
 
-Projekt został zbudowany w oparciu o nowoczesny stos technologiczny:
+## Autor
 
-- **React 19** - Biblioteka UI.
-- **TypeScript** - Bezpieczeństwo typów.
-- **Tailwind CSS** - Szybkie stylowanie interfejsu.
-- **React Router** - Routing po stronie klienta (SPA).
-- **Lucide React** - Nowoczesne ikony.
-- **Vite** - Narzędzie budowania i serwer deweloperski (domyślne dla tego typu konfiguracji).
-
-## 🚀 Uruchomienie lokalne
-
-1. **Instalacja zależności:**
-   ```bash
-   npm install
-   ```
-
-2. **Uruchomienie w trybie deweloperskim:**
-   ```bash
-   npm start
-   # lub
-   npm run dev
-   ```
-
-3. **Budowanie wersji produkcyjnej:**
-   ```bash
-   npm run build
-   ```
-
-## ☁️ Deployment
-
-Projekt jest skonfigurowany do automatycznego wdrażania na **GitHub Pages** przy użyciu GitHub Actions. Plik konfiguracyjny znajduje się w `.github/workflows/pages-deploy.yml`.
-
-## 👤 Autor
-
-**Jakub Prądzyński**  
-Engineering Manager w Allegro. Łączy świat biznesu z inżynierią oprogramowania.
-
-- [LinkedIn](https://www.linkedin.com/in/jakubpradzynski/)
-- [Strona WWW](https://jakubpradzynski.pl)
+**Jakub Prądzyński** — Engineering Manager w Allegro.
+[LinkedIn](https://www.linkedin.com/in/jakubpradzynski/) · [jakubpradzynski.pl](https://jakubpradzynski.pl)

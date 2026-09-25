@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>PrzeglądAI – porządki w newsletterach</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --line:#e3e5e8; --text:#1d1f23; --muted:#6b7079; --accent:#5b2a86;
+          --cut:#c5221f; --keep:#1e8e3e; --warn:#b06000; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); height:100vh; display:flex; flex-direction:column; }
+  header { background:var(--card); border-bottom:1px solid var(--line); padding:10px 18px; display:flex; gap:16px; align-items:center; }
+  header h1 { font-size:16px; margin:0; }
+  .progress { color:var(--muted); }
+  .spacer { flex:1; }
+  button { font:inherit; cursor:pointer; border-radius:6px; }
+  .btn { border:1px solid var(--line); background:#fff; padding:7px 14px; }
+  .btn.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .btn.cut { background:var(--cut); color:#fff; border-color:var(--cut); font-weight:600; padding:10px 22px; }
+  .btn.keep { background:var(--keep); color:#fff; border-color:var(--keep); font-weight:600; padding:10px 22px; }
+  .btn:disabled { opacity:.5; cursor:default; }
+  .layout { flex:1; display:flex; min-height:0; }
+  aside { width:300px; border-right:1px solid var(--line); overflow:auto; background:var(--card); }
+  aside .row { padding:8px 12px; border-bottom:1px solid #f0f1f3; cursor:pointer; display:flex; gap:8px; align-items:flex-start; font-size:13px; }
+  aside .row.active { background:#efe8f6; }
+  aside .mark { width:18px; flex:none; text-align:center; font-weight:700; }
+  aside .mark.wypisz { color:var(--cut); } aside .mark.zostaw { color:var(--keep); }
+  aside .name { overflow:hidden; text-overflow:ellipsis; }
+  aside .sub { color:var(--muted); font-size:11px; }
+  main { flex:1; display:flex; flex-direction:column; min-width:0; }
+  .info { padding:14px 18px; background:var(--card); border-bottom:1px solid var(--line); }
+  .info h2 { margin:0 0 6px; font-size:18px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin:6px 0; }
+  .chip { background:#eef0f3; border-radius:12px; padding:2px 9px; font-size:12px; }
+  .reason { margin:6px 0; }
+  .warn { background:#fff4e5; color:var(--warn); border-radius:6px; padding:6px 10px; margin:6px 0; font-size:13px; }
+  .note { background:#fce8e6; color:var(--cut); border-radius:6px; padding:6px 10px; margin:6px 0; font-size:13px; font-weight:600; }
+  .examples { color:var(--muted); font-size:12px; }
+  .actions { display:flex; gap:10px; align-items:center; margin-top:10px; }
+  .hint { color:var(--muted); font-size:12px; }
+  .mails { flex:1; display:flex; gap:10px; padding:10px; min-height:0; }
+  .mail { flex:1; display:flex; flex-direction:column; background:var(--card); border:1px solid var(--line); border-radius:8px; min-width:0; }
+  .mail .head { padding:6px 10px; border-bottom:1px solid var(--line); font-size:12px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .mail iframe { flex:1; border:0; width:100%; border-radius:0 0 8px 8px; background:#fff; }
+  .summary { padding:24px; overflow:auto; }
+  .summary table { border-collapse:collapse; background:var(--card); margin:10px 0; }
+  .summary td, .summary th { border:1px solid var(--line); padding:6px 10px; text-align:left; font-size:13px; }
+  .ok { color:var(--keep); font-weight:600; } .fail { color:var(--cut); font-weight:600; }
+  .hidden { display:none !important; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Porządki w newsletterach</h1>
+  <span class="progress" id="progress"></span>
+  <span class="spacer"></span>
+  <button class="btn primary" id="finish-btn">Podsumowanie i wypisanie →</button>
+</header>
+<div class="layout">
+  <aside id="list"></aside>
+  <main id="review">
+    <div class="info" id="info"></div>
+    <div class="mails" id="mails"></div>
+  </main>
+  <main id="summary" class="summary hidden"></main>
+</div>
+
+<script>
+let items = [];
+let decisions = {};
+let current = 0;
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmtDate = ms => new Date(ms).toLocaleDateString('pl-PL', {day:'numeric', month:'short'});
+const mailCache = {};
+
+async function load() {
+  const data = await (await fetch('/api/kandydaci')).json();
+  items = data.kandydaci;
+  decisions = data.decyzje || {};
+  const firstOpen = items.findIndex(c => !decisions[c.id]);
+  current = firstOpen === -1 ? 0 : firstOpen;
+  renderList(); show(current);
+}
+
+function renderList() {
+  const done = items.filter(c => decisions[c.id]).length;
+  const cut = items.filter(c => decisions[c.id] === 'wypisz').length;
+  $('progress').textContent = `${done} / ${items.length} ocenionych · do wypisania: ${cut}`;
+  $('list').innerHTML = items.map((c, i) => {
+    const d = decisions[c.id];
+    const mark = d === 'wypisz' ? '✕' : d === 'zostaw' ? '✓' : '';
+    return `<div class="row ${i === current ? 'active' : ''}" data-i="${i}">
+      <span class="mark ${d || ''}">${mark}</span>
+      <div><div class="name">${esc(c.nadawca.replace(/<.*>/, ''))}</div>
+      <div class="sub">${c.maile} maili · ${c.zrodlo} newsów stąd${c.adnotacja ? ' · ' + esc(c.adnotacja) : ''}</div></div></div>`;
+  }).join('');
+}
+
+async function fetchMail(id) {
+  if (!mailCache[id]) mailCache[id] = fetch('/api/mail/' + id).then(r => r.text());
+  return mailCache[id];
+}
+
+async function show(i) {
+  current = i;
+  const c = items[i];
+  if (!c) return;
+  renderList();
+  document.querySelector(`.row[data-i="${i}"]`)?.scrollIntoView({block: 'nearest'});
+  const d = decisions[c.id];
+  $('info').innerHTML = `
+    <h2>${esc(c.nadawca)}</h2>
+    ${c.adnotacja ? `<div class="note">${esc(c.adnotacja)}</div>` : ''}
+    <div class="chips">
+      <span class="chip">${c.maile} maili (${c.na_tydzien}/tydz.)</span>
+      <span class="chip">newsy wzięte stąd: <b>${c.zrodlo}</b></span>
+      <span class="chip">tematy z wydań: ${c.temat}</span>
+      <span class="chip">pierwszy: ${c.pierwszy}</span>
+      <span class="chip">unikalne: ${c.unikalne}</span>
+      <span class="chip">treści o AI: ${c.ai_pct}%</span>
+    </div>
+    <div class="reason"><b>Dlaczego kandydat:</b> ${esc(c.powod)}</div>
+    ${c.ostrzezenie ? `<div class="warn">⚠ ${esc(c.ostrzezenie)}</div>` : ''}
+    ${c.przyklady.length ? `<div class="examples">Tematy z wydań, które miał: ${c.przyklady.map(esc).join(' · ')}</div>` : ''}
+    ${c.warianty.length > 1 ? `<div class="examples">Warianty nadawcy: ${c.warianty.map(esc).join(' · ')}</div>` : ''}
+    <div class="actions">
+      <button class="btn cut" id="cut">Wypisz <small>(W)</small></button>
+      <button class="btn keep" id="keep">Zostaw <small>(Z)</small></button>
+      ${d ? `<button class="btn" id="undo">Cofnij decyzję</button>` : ''}
+      <span class="hint">Strzałki ↑ ↓ — poprzedni / następny. Decyzja: ${d === 'wypisz' ? '<b style="color:var(--cut)">wypisać</b>' : d === 'zostaw' ? '<b style="color:var(--keep)">zostawić</b>' : 'brak'}</span>
+    </div>`;
+  $('cut').onclick = () => decide('wypisz');
+  $('keep').onclick = () => decide('zostaw');
+  if ($('undo')) $('undo').onclick = () => decide(null);
+
+  $('mails').innerHTML = c.maile_ostatnie.map((m, k) => `
+    <div class="mail"><div class="head">${fmtDate(m.data)} · ${esc(m.temat)}</div>
+    <iframe id="mail-${k}" sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe></div>`).join('')
+    || '<p style="padding:20px">Brak maili w pobranym okresie.</p>';
+  c.maile_ostatnie.forEach(async (m, k) => {
+    const htmlText = await fetchMail(m.id);
+    if (items[current] === c) $('mail-' + k).srcdoc = htmlText;
+  });
+  // wczytaj z wyprzedzeniem maile następnego kandydata
+  items[i + 1]?.maile_ostatnie.forEach(m => fetchMail(m.id));
+}
+
+function persist() {
+  fetch('/api/sesja', {method: 'POST', body: JSON.stringify({decyzje: decisions})});
+}
+
+function decide(value) {
+  const c = items[current];
+  if (value) decisions[c.id] = value; else delete decisions[c.id];
+  persist();
+  if (value) {
+    const next = items.findIndex((x, j) => j > current && !decisions[x.id]);
+    if (next !== -1) return show(next);
+    const any = items.findIndex(x => !decisions[x.id]);
+    if (any === -1) return summary();
+  }
+  show(current);
+}
+
+$('list').addEventListener('click', e => {
+  const row = e.target.closest('.row');
+  if (row) { hideSummary(); show(+row.dataset.i); }
+});
+
+document.addEventListener('keydown', e => {
+  if (!$('summary').classList.contains('hidden')) return;
+  if (e.key === 'w' || e.key === 'W') decide('wypisz');
+  else if (e.key === 'z' || e.key === 'Z') decide('zostaw');
+  else if (e.key === 'ArrowDown') { e.preventDefault(); show(Math.min(items.length - 1, current + 1)); }
+  else if (e.key === 'ArrowUp') { e.preventDefault(); show(Math.max(0, current - 1)); }
+});
+
+function hideSummary() { $('summary').classList.add('hidden'); $('review').classList.remove('hidden'); }
+
+function summary() {
+  $('review').classList.add('hidden');
+  $('summary').classList.remove('hidden');
+  const cut = items.filter(c => decisions[c.id] === 'wypisz');
+  const keep = items.filter(c => decisions[c.id] === 'zostaw');
+  const open = items.filter(c => !decisions[c.id]);
+  const perWeek = cut.reduce((s, c) => s + c.na_tydzien, 0);
+  $('summary').innerHTML = `
+    <h2>Podsumowanie</h2>
+    <p>Do wypisania: <b>${cut.length}</b> (ok. ${perWeek.toFixed(0)} maili tygodniowo mniej) ·
+       zostawiasz: <b>${keep.length}</b> · bez decyzji: <b>${open.length}</b> (nie zmieniam ich, wrócą przy następnym przeglądzie).</p>
+    <table><tr><th>Do wypisania</th><th>Maili/tydz.</th><th>Newsy stąd</th></tr>
+      ${cut.map(c => `<tr><td>${esc(c.nadawca)}</td><td>${c.na_tydzien}</td><td>${c.zrodlo}</td></tr>`).join('')}</table>
+    <p><button class="btn cut" id="go" ${cut.length || keep.length ? '' : 'disabled'}>Wypisz zaznaczone (${cut.length}) i zapisz decyzje</button>
+       <button class="btn" id="back">← Wróć do przeglądu</button></p>
+    <div id="results"></div>`;
+  $('back').onclick = () => { hideSummary(); show(current); };
+  $('go').onclick = async () => {
+    $('go').disabled = true; $('go').textContent = 'Wypisuję…';
+    const res = await (await fetch('/api/zakoncz', {method: 'POST', body: JSON.stringify({decyzje: decisions})})).json();
+    const manual = res.wyniki.filter(r => !r.ok);
+    $('results').innerHTML = `
+      <h3>Wynik</h3>
+      <table><tr><th>Newsletter</th><th>Status</th></tr>
+      ${res.wyniki.map(r => `<tr><td>${esc(r.nadawca)}</td><td class="${r.ok ? 'ok' : 'fail'}">
+        ${r.ok ? '✓ wypisano (' + esc(r.info) + ')' : '✕ ' + esc(r.info) + (r.link ? ` — <a href="${esc(r.link)}" target="_blank" rel="noopener">otwórz link wypisu</a>` : '')}</td></tr>`).join('')}
+      </table>
+      <p>Zapisano też ${res.zostawione} decyzji „zostaw” (wrócą do oceny za 90 dni).
+      ${manual.length ? `<b>${manual.length}</b> list trzeba wypisać ręcznie — linki powyżej.` : 'Wszystko wypisane automatycznie.'}</p>`;
+    $('go').textContent = 'Gotowe';
+  };
+}
+$('finish-btn').onclick = summary;
+
+load();
+</script>
+</body>
+</html>

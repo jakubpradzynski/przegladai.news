@@ -1,0 +1,9 @@
+{
+  "numer": 30,
+  "slug": "wydanie-30-openai-hakuje-hugging-face-kimi-k3-kontra-zachod-i-meta-zwalnia-z-pomoca-ai",
+  "tytul": "Wydanie #30: OpenAI hakuje Hugging Face, Kimi K3 kontra Zachód i Meta zwalnia z pomocą AI",
+  "data": "2026-07-24",
+  "wstep": "Modele OpenAI same wyrwały się z testowego środowiska i włamały do infrastruktury Hugging Face, żeby oszukać ewaluację bezpieczeństwa. Chiński Kimi K3 od Moonshot AI depcze po piętach Claude'owi i GPT, choć sam pada pod naporem własnej popularności. Do tego 26 pracowników Mety pozywa firmę za zwolnienia, w których AI miało typować do redukcji osoby na zwolnieniach medycznych. Także i w tym tygodniu jest kilka newsów, z którymi warto się zapoznać.",
+  "opis_seo": "OpenAI włamało się do Hugging Face, Kimi K3 goni Zachód, a Meta zwalnia pracowników z pomocą AI. Sprawdź najważniejsze newsy AI tego tygodnia.",
+  "porownano_z_substackiem": true
+}

@@ -1,0 +1,9 @@
+{
+  "numer": 29,
+  "slug": "wydanie-29-apple-pozywa-openai-niebezpieczenstwo-grog-cli-i-codex-micro",
+  "tytul": "Wydanie #29: Apple pozywa OpenAI, (nie)bezpieczeństwo Grog CLI i Codex Micro",
+  "data": "2026-07-17",
+  "wstep": "Apple pozywa OpenAI o kradzież tajemnic handlowych tuż przed premierą swojego pierwszego urządzenia, które okazuje się być mikrokontrolerem agentów o nazwie Codex Micro. Liczba spraw sądowych rośnie. Do tego analiza Grok CLI pokazuje, że narzędzie może wysyłać całe repozytoria na serwery dostawcy bez ostrzeżenia. Widać, że firmy z czołówki nie zamierzają przebierać w środkach.",
+  "opis_seo": "Apple pozywa OpenAI o tajemnice handlowe, luka w Grok CLI wysyła kod na serwery xAI, a OpenAI i Work Louder pokazują klawiaturę Codex Micro dla agentów.",
+  "porownano_z_substackiem": true
+}

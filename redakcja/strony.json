@@ -1,0 +1,199 @@
+{
+  "_komentarz": [
+    "Strony przeglądane przy każdym wydaniu (skill przeglad-stron).",
+    "feed: kanał RSS/Atom, gdy jest (najpewniejsze daty). Bez feed: link z listingu + data ze strony artykułu.",
+    "przegladarka: true - strona blokuje zwykłe pobieranie, wpisy zbiera Claude przez Chrome.",
+    "filtr: opcjonalny fragment adresu, który musi mieć link (np. tylko artykuły z danej sekcji)."
+  ],
+  "strony": [
+    {
+      "nazwa": "Google for Developers",
+      "url": "https://developers.googleblog.com/",
+      "feed": "https://developers.googleblog.com/feeds/posts/default"
+    },
+    {
+      "nazwa": "OpenAI News",
+      "url": "https://openai.com/pl-PL/news/",
+      "feed": "https://openai.com/news/rss.xml"
+    },
+    {
+      "nazwa": "Google Workspace (blog.google)",
+      "url": "https://blog.google/products-and-platforms/products/workspace/",
+      "feed": "https://blog.google/products/workspace/rss/"
+    },
+    {
+      "nazwa": "Google Workspace Updates",
+      "url": "https://workspaceupdates.googleblog.com/",
+      "feed": "https://workspaceupdates.googleblog.com/feeds/posts/default"
+    },
+    {
+      "nazwa": "Manus",
+      "url": "https://manus.im/blog"
+    },
+    {
+      "nazwa": "CNBC AI",
+      "url": "https://www.cnbc.com/ai-artificial-intelligence/"
+    },
+    {
+      "nazwa": "Ashpreet Bedi",
+      "url": "https://www.ashpreetbedi.com/articles",
+      "feed": "https://ashpreetbedi.com/feed.xml"
+    },
+    {
+      "nazwa": "Andrej Karpathy",
+      "url": "https://karpathy.bearblog.dev/blog/",
+      "feed": "https://karpathy.bearblog.dev/feed/?type=rss"
+    },
+    {
+      "nazwa": "Ministerstwo Cyfryzacji",
+      "url": "https://www.gov.pl/web/cyfryzacja/wiadomosci"
+    },
+    {
+      "nazwa": "The Information",
+      "url": "https://www.theinformation.com/technology?view=recent",
+      "feed": "https://www.theinformation.com/feed"
+    },
+    {
+      "nazwa": "GitHub Blog",
+      "url": "https://github.blog/",
+      "feed": "https://github.blog/feed/"
+    },
+    {
+      "nazwa": "Google Antigravity",
+      "url": "https://antigravity.google/blog",
+      "feed": "https://antigravity.google/blog/rss.xml"
+    },
+    {
+      "nazwa": "Anthropic News",
+      "url": "https://www.anthropic.com/news"
+    },
+    {
+      "nazwa": "Anthropic Research",
+      "url": "https://www.anthropic.com/research"
+    },
+    {
+      "nazwa": "Martin Fowler",
+      "url": "https://martinfowler.com/",
+      "feed": "https://martinfowler.com/feed.atom"
+    },
+    {
+      "nazwa": "Cursor",
+      "url": "https://cursor.com/en-US/blog"
+    },
+    {
+      "nazwa": "JetBrains",
+      "url": "https://blog.jetbrains.com/",
+      "feed": "https://blog.jetbrains.com/feed/"
+    },
+    {
+      "nazwa": "Addy Osmani",
+      "url": "https://addyosmani.com/blog/",
+      "feed": "https://addyosmani.com/rss.xml"
+    },
+    {
+      "nazwa": "LeadDev AI",
+      "url": "https://leaddev.com/ai",
+      "feed": "https://leaddev.com/rss.xml"
+    },
+    {
+      "nazwa": "JVM Bloggers",
+      "url": "https://jvm-bloggers.com/",
+      "feed": "https://jvm-bloggers.com/pl/rss"
+    },
+    {
+      "nazwa": "Google Innovation & AI",
+      "url": "https://blog.google/innovation-and-ai/",
+      "feed": "https://blog.google/innovation-and-ai/rss/"
+    },
+    {
+      "nazwa": "LangChain",
+      "url": "https://www.langchain.com/blog",
+      "feed": "https://www.langchain.com/blog/rss.xml"
+    },
+    {
+      "nazwa": "The Decoder",
+      "url": "https://the-decoder.com/",
+      "feed": "https://the-decoder.com/feed/"
+    },
+    {
+      "nazwa": "AIOAI.pl",
+      "url": "https://aioai.pl/category/aktualnosci/",
+      "feed": "https://aioai.pl/category/aktualnosci/feed/"
+    },
+    {
+      "nazwa": "Nowy Marketing AI",
+      "url": "https://nowymarketing.pl/category/ai/"
+    },
+    {
+      "nazwa": "Simon Couch",
+      "url": "https://simonpcouch.com/blog/",
+      "feed": "https://simonpcouch.com/blog/index.xml"
+    },
+    {
+      "nazwa": "ElevenLabs",
+      "url": "https://elevenlabs.io/blog"
+    },
+    {
+      "nazwa": "ElevenLabs Product",
+      "url": "https://elevenlabs.io/blog/category/product"
+    },
+    {
+      "nazwa": "Future Tools News",
+      "url": "https://futuretools.io/news",
+      "feed": "https://www.futuretools.io/news/rss.xml"
+    },
+    {
+      "nazwa": "Netflix Tech Blog",
+      "url": "https://netflixtechblog.com/",
+      "feed": "https://netflixtechblog.com/feed"
+    },
+    {
+      "nazwa": "Perplexity",
+      "url": "https://www.perplexity.ai/hub/blog",
+      "przegladarka": true
+    },
+    {
+      "nazwa": "Stack Overflow AI",
+      "url": "https://stackoverflow.blog/ai/",
+      "feed": "https://stackoverflow.blog/ai/feed/"
+    },
+    {
+      "nazwa": "Lovable",
+      "url": "https://lovable.dev/blog",
+      "feed": "https://lovable.dev/blog/rss.xml"
+    },
+    {
+      "nazwa": "LLM Stats AI News",
+      "url": "https://llm-stats.com/ai-news"
+    },
+    {
+      "nazwa": "XYZ Technologia",
+      "url": "https://xyz.pl/sekcja/technologia/",
+      "feed": "https://xyz.pl/sekcja/technologia/feed/"
+    },
+    {
+      "nazwa": "Datadog AI",
+      "url": "https://www.datadoghq.com/blog/ai/",
+      "feed": "https://www.datadoghq.com/blog/ai/index.xml"
+    },
+    {
+      "nazwa": "ICEYE Press (PL)",
+      "url": "https://www.iceye.com/pl-pl/press/press-releases",
+      "feed": "https://www.iceye.com/pl-pl/press/press-releases/rss.xml"
+    },
+    {
+      "nazwa": "ICEYE Blog",
+      "url": "https://www.iceye.com/blog",
+      "feed": "https://www.iceye.com/blog/rss.xml"
+    },
+    {
+      "nazwa": "Viktor",
+      "url": "https://viktor.com/blog"
+    },
+    {
+      "nazwa": "The Batch (Andrew Ng)",
+      "url": "https://www.deeplearning.ai/the-batch/tag/letters",
+      "feed": "https://charonhub.deeplearning.ai/rss/"
+    }
+  ]
+}
