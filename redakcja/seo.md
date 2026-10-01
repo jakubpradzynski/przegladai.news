@@ -37,3 +37,4 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
   osobistym, wielozdaniowym wstępem kończącym się „Zapraszam do lektury!” (nie 120–160 znaków, nie
   styl SEO) — pojedynczy przypadek, możliwe że Kuba wkleił tu treść wstępu przez pomyłkę w admince;
   obserwować, czy się powtórzy, zanim zmienimy regułę formatu.
+- #40 opis_seo: „OpenAI dots…” → „OpenAI Dots…” — jedyna zmiana; nazwa produktu wielką literą (jak w tytule). Opis SEO nie nadążył za tytułem (zostało „agent, który włamał się do rządu Australii”, a w tytule jest Nokia) — SEO ma wymieniać tematy z wybranego tytułu.

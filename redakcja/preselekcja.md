@@ -24,7 +24,9 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   zerwane partnerstwa („Our decision on Cursor following its acquisition by SpaceX”, „Lovable raised $400M”),
   starcia konkurencyjne dużych graczy („Amazon blocks Meta's AI agent Muse from online shopping”),
   wieści o IPO czołowych labów („Anthropic is also reportedly postponing its IPO”) — także gdy
-  relacjonuje je agregator, bo to news biznesowy, nie premiera produktu.
+  relacjonuje je agregator, bo to news biznesowy, nie premiera produktu. **Nie** liczą się do tego
+  partnerstwa technologiczne i umowy infrastrukturalne (OpenAI + Synopsys, DeepSeek + Huawei,
+  Anthropic–Akamai $11,6 mld — wszystkie pominięte #40) — to „może”.
 - Stanowiska i eseje liderów branży, które wywołują dyskusję (Amodei o tempie rozwoju AI,
   „Pacing model development…”, „An Alien Mind”).
 - Teksty inżynierskie z uniwersalną, przenośną lekcją o pracy z AI i agentami (metodyka, ewaluacja),
@@ -45,6 +47,8 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   (Amazon vs Muse, Anthropic IPO), nie premiery modeli. Temat bywa dobry, ale do wydania trafia źródło
   pierwotne. Gdy w tej samej partii jest wpis ze źródła pierwotnego, ocena agregatora = „nie”
   z powodem „duplikat: <tytuł źródła>”.
+- Partnerstwa technologiczne, umowy chmurowe/infrastrukturalne i narzędzia open source firm
+  (The Decoder: OpenAI + Synopsys, DeepSeek + Huawei, Anthropic–Akamai — pominięte #40, mimo wysokiej kwoty).
 - Ogłoszenia inicjatyw badawczych/biznesowych bez konkretnego produktu („Anthropic is setting up
   a biology lab…” — pominięty #39) i pojedyncze głośne incydenty relacjonowane przez agregator
   („U.S. military nearly boarded a Chinese ship over a hallucinated AI report” — pominięty #39,
@@ -87,7 +91,7 @@ potwierdzonych wieloma decyzjami Kuby.
   "strony_ogolne": ["CNBC AI", "The Information", "XYZ Technologia", "JetBrains", "JVM Bloggers",
                     "Nowy Marketing AI", "Ministerstwo Cyfryzacji", "ICEYE Blog", "ICEYE Press (PL)",
                     "Datadog AI", "Netflix Tech Blog", "GitHub Blog", "Stack Overflow AI", "LeadDev AI",
-                    "Google Workspace Updates"],
+                    "Google Workspace Updates", "Mam Startup"],
   "wzorce_nie": [
     {"wzorzec": "^Fragments:", "powod": "przegląd linków autora"},
     {"wzorzec": "for Beginners", "powod": "poradnik dla początkujących"},
@@ -101,31 +105,30 @@ potwierdzonych wieloma decyzjami Kuby.
 
 ## Skuteczność stron (historia)
 
-Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), wydania #29–#38:
+Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), wydania #29–#39 (stan z `zarzadzaj.py lista`, 2026-10-01):
 
 | Strona | Wzięte / wpisy | Komentarz |
 |---|---|---|
 | Addy Osmani | 8/10 | prawie wszystko — domyślnie „tak” |
 | Martin Fowler | 6/29 | artykuły tak, „Fragments” i osobiste nie |
-| OpenAI News | 12/161 | tylko duże premiery i stanowiska; case study, granty, regiony — nie |
-| Future Tools News | 60/614 | agregator, największe źródło tematów; brać duże newsy, drobne launche — nie |
+| OpenAI News | 12/172 | tylko duże premiery i stanowiska; case study, granty, regiony — nie |
+| Future Tools News | 60/652 | agregator, największe źródło tematów; brać duże newsy, drobne launche — nie |
 | Anthropic News | 3/16, Research 1/16 | premiery modeli tak, reszta może |
 | Google for Developers | 3/22 | premiery modeli i narzędzi AI; nowa funkcja SDK bez premiery — może |
 | Google Antigravity | 4/10 | premiery modeli w Antigravity |
-| The Decoder | 6/142 | agregator; bierze tylko newsy biznesowe (IPO, starcia firm), premiery modeli relacjonowane tu — może |
-| AIOAI.pl | 3/48 | polski agregator; duże tematy |
+| The Decoder | 11/192 | agregator; bierze tylko newsy biznesowe (IPO, starcia firm), premiery modeli relacjonowane tu — może |
+| AIOAI.pl | 3/52 | polski agregator; duże tematy |
 | GitHub Blog | 3/51 | ewaluacja i code review z AI tak; własne case studies/rewrite bez przenośnej lekcji, Copilot for Beginners, raporty — nie |
 | Lovable | 3/24 | przejęcia i rundy tak, partnerstwa bez zmiany biznesowej — nie |
-| XYZ Technologia | 1/11 | polskie wywiady o wpływie AI na firmy — może, czasem wziete |
+| XYZ Technologia | 2/21 | polskie wywiady o wpływie AI na firmy — może, czasem wziete |
+| Mam Startup | 1/40 | polski agregator startupów i biznesu, prawie nic o AI — domyślnie „nie”, polskie tematy AI „może” |
 | Manus, ElevenLabs, ElevenLabs Product, Netflix, Simon Couch, Ashpreet Bedi | 1–2 na stronę | rundy, premiery modeli u nich, teksty techniczne |
-| LangChain, Stack Overflow AI, JetBrains, JVM Bloggers, Google Workspace Updates, Google Innovation & AI, Cursor (poza premierami modeli), ICEYE, Viktor, Datadog, LeadDev, The Batch | 0 | domyślnie „nie” lub „może” przy wyjątkowym temacie; JetBrains developer diary (bez premiery) — może, nie tak |
+| LangChain, Stack Overflow AI, JetBrains, JVM Bloggers, Google Workspace Updates, Google Innovation & AI, Cursor (poza premierami modeli), ICEYE, Viktor, Datadog, LeadDev, The Batch, Perplexity, CNBC AI, The Information, Ministerstwo Cyfryzacji | 0 | domyślnie „nie” lub „może” przy wyjątkowym temacie; JetBrains developer diary (bez premiery) — może, nie tak |
 
 ## Przykłady decyzji Kuby (AI → Kuba)
 
 _(uzupełnia `ucz-sie` na podstawie `dziennik/strony_wybory.jsonl`)_
 
-- The Decoder: „xAI launches Grok 4.7 at bargain prices…” — AI: tak, Kuba: pominięty — premiera modelu
-  relacjonowana przez agregator to „może”, nie „tak”, nawet dla znanego laba.
 - The Decoder: „Amazon blocks Meta's AI agent Muse from online shopping” — AI: tak, Kuba: wzięty —
   news biznesowy/konkurencyjny (nie premiera modelu) z agregatora jest OK jako „tak”.
 - The Decoder: „Following OpenAI, Anthropic is also reportedly postponing its IPO” — AI: tak,
@@ -142,3 +145,17 @@ _(uzupełnia `ucz-sie` na podstawie `dziennik/strony_wybory.jsonl`)_
   Kuba: pominięty — nowa funkcja SDK bez premiery modelu to „może”.
 - XYZ Technologia: „AI wycina menedżerów. «Firmy traktują to jak szansę…»” (WYWIAD) — AI: może,
   Kuba: wzięty — polski wywiad o wpływie AI na zarządzanie firmą pasuje do wydania.
+- XYZ Technologia: „Twórca PizzaPortal i iTaxi bierze się za usługi prawne… startup oparty na AI” — AI: może,
+  Kuba: wzięty — polski startup AI znanego założyciela pasuje do wydania.
+- JVM Bloggers: „Zmiana paradygmatu programowania z AI [DevTalk Trio S04E06]” — AI: może, Kuba: wzięty —
+  odcinek o pracy z AI w programowaniu można wziąć, nawet ze strony 1/57 (reguła „teksty o pracy z AI”).
+- ElevenLabs: „ElevenLabs reaches $22bn valuation after employee tender” — AI: nie („duplikat”),
+  Kuba: wzięty — to nie był duplikat: wycena firmy to osobny news biznesowy; „duplikat” tylko dla tego samego zdarzenia.
+- The Decoder: „OpenAI and Synopsys team up to build an AI model that designs chips…” — AI: tak,
+  Kuba: pominięty — partnerstwo technologiczne to „może”, nie „tak”.
+- The Decoder: „Anthropic signs $11.6 billion cloud deal with Akamai…” — AI: tak, Kuba: pominięty —
+  umowa chmurowa, nawet duża kwotowo, to „może” (jak przy DeepSeek + Huawei).
+- Anthropic News / Future Tools News: „Claude Sonnet 5.5” — AI: tak, Kuba: pominięty (oba) — wpis mógł być
+  już zebrany z innego źródła; nie oznaczać „tak” bez sprawdzenia duplikatu w `data.csv` i wydaniu.
+- The Decoder / Mam Startup: „GPT-6.1 Astra… wstrzymana premiera” — AI: tak, Kuba: pominięty (oba źródła) —
+  incydent bezpieczeństwa relacjonowany pośrednio to „może”.

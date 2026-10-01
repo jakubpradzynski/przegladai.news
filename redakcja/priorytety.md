@@ -71,3 +71,7 @@ mimo niskiej)_
   w tym samym wydaniu; preprint „ScientistTwo” bez niezależnej weryfikacji (7); esej Marka Seemanna (7).
   Porównania/omówienia premiery, która już jest w wydaniu, traktować jak duplikat tematu.
 - #39: 27 z 30 rekomendacji TOP zostało w wydaniu.
+- #40: z rezerwy wzięte ElevenLabs Eleven v4 (ocena 7) i wycena ElevenLabs (6) oraz lekkie ciekawostki: Claude na Nokii (5), Google Suncatcher (5), felieton o autonomicznych bolidach F1 (5) → ciekawostki o niskiej ocenie wchodzą jako „oddech” (1–3 na wydanie), zwłaszcza jeśli mają trafić do tytułu.
+- #40: odrzucone z TOP: podsumowanie DevDay (7) — dubluje osobne wpisy o dots i GPT-6.1 Sol; CNN o agentach OpenAI w USA (7) — dubluje wątek z BBC; Marktechpost o kosztach agentów kodujących (7), Glyph (6), Gemini Gems (6). Zbiorcze podsumowania wydarzeń oceniać niżej, gdy premiery z nich mają osobne wpisy.
+- #40: kolejność w grupie „Nowości”: Kuba zamiast alfabetu ułożył najpierw największą premierę (OpenAI dots, GPT-6.1 Sol), potem pary tej samej firmy obok siebie (ElevenLabs ×2, Meta ×3), potem reszta (Marketplace, AMD, Nvidia). Pojedyncza zmiana — przy powtórce zmienić regułę kolejności (najważniejszy news pierwszy, newsy jednej firmy razem).
+- #40: 25 z 30 rekomendacji TOP zostało w wydaniu, 5 dobrano z rezerwy.

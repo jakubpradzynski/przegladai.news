@@ -194,6 +194,11 @@
       "nazwa": "The Batch (Andrew Ng)",
       "url": "https://www.deeplearning.ai/the-batch/tag/letters",
       "feed": "https://charonhub.deeplearning.ai/rss/"
+    },
+    {
+      "nazwa": "Mam Startup",
+      "url": "https://mamstartup.pl/",
+      "feed": "https://mamstartup.pl/feed/"
     }
   ]
 }
