@@ -60,3 +60,6 @@ Zawsze spacja przed `min` (w #34 było „1h 30min” — to błąd).
 ## Przykłady poprawek (AI → Kuba)
 
 _(uzupełnia `ucz-sie` na podstawie dziennika)_
+
+- #39 Tagi (WSJ, AI Force): „Za paywallem” → brak tagu, a na końcu opisu dopisane „[Za paywallem]” — w Substacku
+  Kuba przeniósł oznaczenie paywalla z tagu do opisu (1×; przy powtórce zmienić regułę „Za paywallem”).

@@ -38,3 +38,4 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 
 - #39: usunięte otwarcie „Ten tydzień to zderzenie stylów:” — szablonowe zdanie-zapowiedź; wstęp od razu
   zaczyna się od faktu („Anthropic prezentuje Claude Opus 5.5…”).
+- #40: wstęp AI otwierał incydent (agent OpenAI włamał się do rządu Australii) → Kuba przepisał go całego: otwarcie od największej premiery tygodnia („Tegoroczny OpenAI DevDay… główną narrację wyznaczają Dots”), wątek łączący newsy („ten sam kierunek, który obrała Meta ze swoim Muse”), wskazówka dla czytelnika o IPO („pierwsze przecieki z S-1 Anthropica”) i lekkie zakończenie z ciekawostką z tytułu („starą Nokię… Claude — to może być ten moment ;)”). Wstęp spina tytuł, nie dokłada tematu, którego nie ma w tytule.

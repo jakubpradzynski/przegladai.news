@@ -58,3 +58,4 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 
 - #39 Tytuł: „James Shore: jak naprawdę zmierzyć wpływ AI…” → „Jak naprawdę zmierzyć wpływ AI…” — nazwisko mało znanego autora nie idzie do tytułu (tak samo: Orestis Ioannou, Paul Iusztin).
 - #39 tytuł wydania: wybrana 1. propozycja „Claude Opus 5.5, wojna o agenta zakupowego Muse i AI Force Trumpa” — premiera modelu + konflikt biznesowy + polityka; odrzucone warianty z dwoma premierami modeli naraz i z mniej znanym wątkiem (Cowork).
+- #40 tytuł wydania: Kuba złożył własny z 1. propozycji i rezerwy: „OpenAI Dots, prospekt IPO Anthropic i Claude na Nokii z 2007 roku” — trzeci temat to lekka ciekawostka (Nokia, ocena 5, wzięta z rezerwy), a nie incydent (włamanie agenta do rządu Australii); „Dots” wielką literą jak nazwa produktu. Wszystkie 3 propozycje AI były poważne — przynajmniej jedna ma mieć lekki temat.
