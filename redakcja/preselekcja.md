@@ -47,6 +47,10 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   (Amazon vs Muse, Anthropic IPO), nie premiery modeli. Temat bywa dobry, ale do wydania trafia źródło
   pierwotne. Gdy w tej samej partii jest wpis ze źródła pierwotnego, ocena agregatora = „nie”
   z powodem „duplikat: <tytuł źródła>”.
+- **Future Tools News: nigdy „tak”.** W #41 Kuba pominął wszystkie 3 wpisy ocenione tu na „tak” (GPT-6 — ten sam
+  news miał już z openai.com w `data.csv`; Runway Praxis-1; Team Human) i wziął 4 z „może” (plugin ChatGPT do notatek,
+  EmbeddingGemma 2, raport a16z, ogłoszenie Trumpa). Premiery i stanowiska relacjonowane przez ten agregator
+  to „może”; „tak” tylko gdy brak źródła pierwotnego w partii i `data.csv`.
 - Partnerstwa technologiczne, umowy chmurowe/infrastrukturalne i narzędzia open source firm
   (The Decoder: OpenAI + Synopsys, DeepSeek + Huawei, Anthropic–Akamai — pominięte #40, mimo wysokiej kwoty).
 - Ogłoszenia inicjatyw badawczych/biznesowych bez konkretnego produktu („Anthropic is setting up
@@ -105,23 +109,23 @@ potwierdzonych wieloma decyzjami Kuby.
 
 ## Skuteczność stron (historia)
 
-Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), wydania #29–#39 (stan z `zarzadzaj.py lista`, 2026-10-01):
+Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), wydania #29–#40 (stan z `zarzadzaj.py lista`, 2026-10-08):
 
 | Strona | Wzięte / wpisy | Komentarz |
 |---|---|---|
 | Addy Osmani | 8/10 | prawie wszystko — domyślnie „tak” |
-| Martin Fowler | 6/29 | artykuły tak, „Fragments” i osobiste nie |
-| OpenAI News | 12/172 | tylko duże premiery i stanowiska; case study, granty, regiony — nie |
-| Future Tools News | 60/652 | agregator, największe źródło tematów; brać duże newsy, drobne launche — nie |
-| Anthropic News | 3/16, Research 1/16 | premiery modeli tak, reszta może |
-| Google for Developers | 3/22 | premiery modeli i narzędzi AI; nowa funkcja SDK bez premiery — może |
-| Google Antigravity | 4/10 | premiery modeli w Antigravity |
-| The Decoder | 11/192 | agregator; bierze tylko newsy biznesowe (IPO, starcia firm), premiery modeli relacjonowane tu — może |
-| AIOAI.pl | 3/52 | polski agregator; duże tematy |
-| GitHub Blog | 3/51 | ewaluacja i code review z AI tak; własne case studies/rewrite bez przenośnej lekcji, Copilot for Beginners, raporty — nie |
-| Lovable | 3/24 | przejęcia i rundy tak, partnerstwa bez zmiany biznesowej — nie |
-| XYZ Technologia | 2/21 | polskie wywiady o wpływie AI na firmy — może, czasem wziete |
-| Mam Startup | 1/40 | polski agregator startupów i biznesu, prawie nic o AI — domyślnie „nie”, polskie tematy AI „może” |
+| Martin Fowler | 6/35 | artykuły tak, „Fragments” i osobiste nie |
+| OpenAI News | 12/185 | tylko duże premiery i stanowiska; case study, granty, regiony — nie |
+| Future Tools News | 68/698 | agregator, największe źródło tematów; brać duże newsy, drobne launche — nie; w przeglądzie 8.10 premiery i stanowiska („tak”) pominięte, a „może” (plugin, raport rynku, polityka) wzięte — wszystko tu „może” |
+| Anthropic News | 3/20, Research 1/22 | premiery modeli tak, reszta może |
+| Google for Developers | 3/28 | premiery modeli i narzędzi AI; nowa funkcja SDK bez premiery — może |
+| Google Antigravity | 4/11 | premiery modeli w Antigravity |
+| The Decoder | 12/242 | agregator; bierze tylko newsy biznesowe (IPO, starcia firm), premiery modeli relacjonowane tu — może |
+| AIOAI.pl | 3/58 | polski agregator; duże tematy |
+| GitHub Blog | 3/63 | ewaluacja i code review z AI tak; własne case studies/rewrite bez przenośnej lekcji, Copilot for Beginners, raporty — nie |
+| Lovable | 3/28 | przejęcia i rundy tak, partnerstwa bez zmiany biznesowej — nie |
+| XYZ Technologia | 2/31 | polskie wywiady o wpływie AI na firmy — może, czasem wziete |
+| Mam Startup | 1/87 | polski agregator startupów i biznesu, prawie nic o AI — domyślnie „nie”, polskie tematy AI „może” |
 | Manus, ElevenLabs, ElevenLabs Product, Netflix, Simon Couch, Ashpreet Bedi | 1–2 na stronę | rundy, premiery modeli u nich, teksty techniczne |
 | LangChain, Stack Overflow AI, JetBrains, JVM Bloggers, Google Workspace Updates, Google Innovation & AI, Cursor (poza premierami modeli), ICEYE, Viktor, Datadog, LeadDev, The Batch, Perplexity, CNBC AI, The Information, Ministerstwo Cyfryzacji | 0 | domyślnie „nie” lub „może” przy wyjątkowym temacie; JetBrains developer diary (bez premiery) — może, nie tak |
 
@@ -129,16 +133,6 @@ Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), wydania #29�
 
 _(uzupełnia `ucz-sie` na podstawie `dziennik/strony_wybory.jsonl`)_
 
-- The Decoder: „Amazon blocks Meta's AI agent Muse from online shopping” — AI: tak, Kuba: wzięty —
-  news biznesowy/konkurencyjny (nie premiera modelu) z agregatora jest OK jako „tak”.
-- The Decoder: „Following OpenAI, Anthropic is also reportedly postponing its IPO” — AI: tak,
-  Kuba: wzięty — wieści o IPO czołowego laba biorą, nawet z agregatora.
-- The Decoder: „Anthropic is setting up a biology lab where Claude guides robots…” — AI: tak,
-  Kuba: pominięty — ogłoszenie inicjatywy badawczej bez konkretnego produktu to „może”.
-- GitHub Blog: „Migrating the GitHub Copilot runtime to Rust, using Copilot” — AI: tak, Kuba: pominięty —
-  opis własnego rewrite u vendora bez przenośnej lekcji to „może”, nie „tak”.
-- GitHub Blog: „Should you read the code, is RAG dead, and did Skills kill MCP?” — AI: może,
-  Kuba: wzięty — odcinek podcastu z hot-takes o AI można wziąć.
 - JetBrains: „Building a RAG Pipeline for Semantic Code Search: A Developer Diary…” — AI: tak,
   Kuba: pominięty — developer diary o budowie własnego narzędzia to „może”.
 - Google for Developers: „Introducing Support for Local AI Models in the Antigravity SDK” — AI: tak,
@@ -159,3 +153,14 @@ _(uzupełnia `ucz-sie` na podstawie `dziennik/strony_wybory.jsonl`)_
   już zebrany z innego źródła; nie oznaczać „tak” bez sprawdzenia duplikatu w `data.csv` i wydaniu.
 - The Decoder / Mam Startup: „GPT-6.1 Astra… wstrzymana premiera” — AI: tak, Kuba: pominięty (oba źródła) —
   incydent bezpieczeństwa relacjonowany pośrednio to „może”.
+
+- Future Tools News: „ChatGPT Launches AI Meeting Note-Taker Plugin for Mac Desktop App in Beta” — AI: może,
+  Kuba: wzięty — nowa funkcja ChatGPT o realnym zastosowaniu można wziąć; zostaje „może”.
+- Future Tools News: „a16z: Only 2% of US Households Currently Pay for AI Services” — AI: może, Kuba: wzięty —
+  raport z liczbami o rynku AI bierze; „może”.
+- Future Tools News: „Trump Announces «Super Intelligence Force»…” — AI: może („polityka, nie tech”), Kuba: wzięty —
+  decyzje polityczne USA o AI nie są „nie”; zostają „może”.
+- Future Tools News: „Runway CEO Unveils Praxis-1 Robot Model…” i „Team Human Campaign Urges Global AI Slowdown” —
+  AI: tak, Kuba: pominięty — premiera/stanowisko przez agregator to „może”.
+- Future Tools News: „OpenAI Launches GPT-6 and Intelligent UI…” — AI: tak, Kuba: pominięty — news był już w `data.csv`
+  z openai.com (inny URL); duplikat tematu, nie „tak”.

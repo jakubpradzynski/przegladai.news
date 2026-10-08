@@ -6,8 +6,9 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
 
 ## Długość i budowa
 
-- Jeden akapit, 3–5 zdań, zwykle 600–1000 znaków (średnio ok. 850 w wydaniach #29–#38).
-  Krótkie newsy mogą mieć ~450, długie teksty techniczne do ~1100.
+- Jeden akapit, 3–4 zdania, zwykle 400–750 znaków. W #29–#38 opisy miały średnio ok. 850, ale w #41 Kuba
+  skrócił 19 opisów średnio z ~710 do ~590 znaków — celujemy w ~600. Krótkie newsy mogą mieć ~400,
+  długie teksty techniczne do ~800.
 - **Zdanie 1–2: co konkretnie.** Kto, co zrobił, z jakimi liczbami. Pierwsze zdanie od razu
   przechodzi do rzeczy — podmiotem jest firma albo autor, nie „artykuł”. **Opis nie powtarza tytułu:**
   gdy tytuł już mówi, kto i co zrobił („OpenAI przedstawia dots…”, „AMD przejmuje World Labs…”),
@@ -34,10 +35,21 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
 - Bez uwag o tym, jak powstał opis („Opis powstał na podstawie opisu i rozdziałów filmu…”) i o czasie
   trwania demonstracji w odcinku — Kuba wycina to z opisu (#40); takie uwagi idą do pola `Uwagi`.
 - Przy tekstach za paywallem nie udawać, że przeczytało się całość — opisywać to, co widać.
-  Samego paywalla nie komentujemy w opisie (od tego jest tag `Za paywallem`).
+  Samego paywalla nie komentujemy w opisie (od tego jest tag `Za paywallem`) — także zdaniami o tym, co widać
+  i czego nie widać („widoczny jest tylko wstęp”, „bez porównań wydajności czy cen”, „Pełna treść jest dostępna
+  tylko dla płacących”); Kuba wyciął takie zdania w #39 i dwukrotnie w #41.
 - Bez słów względnego czasu („dziś”, „wczoraj”, „w tym tygodniu”) — wydanie czyta się później.
 - Bez zastrzeżeń typu „choć temat pojawiał się już u innych” i bez pobocznych szczegółów (pseudonimy
   autorów, techniczne detale spoza głównej tezy) — skracają opis bez straty.
+- **Bez zdań o wiarygodności źródła.** Kuba wycinał „Informacje pochodzą ze strony producenta, bez niezależnej
+  weryfikacji”, „Dane pochodzą ze śladów technicznych… to estymacja”, „Komunikat jest typowo marketingowy, z cytatami
+  klientów” (Nolla Derm, Bloomberry, TikTok w #41 — 3×). Takie uwagi idą do pola `Uwagi`, nie do opisu.
+- **Bez dopisków o dostępności, instalacji i zespole.** Wycięte w #41: tryby zatwierdzania, Compliance API
+  i instalacja przez Marketplace (Claude w Google Workspace), „dostęp mają tylko zaufani obrońcy w programie…”
+  (Gemini 4 Argon), kredyty API i cena cache w Sonnecie (Haiku 5.5), termin wysyłki i skład zespołu (Ghost),
+  „Modele w Work i Codex się nie zmieniają” (GPT-6), lista wyników benchmarków (Beam), nazwy funkcji i cytaty
+  klientów (TikTok), prywatne pokazy i symulator (walka z robotami). Opis trzyma główny fakt + 1–2 liczby;
+  szczegóły wdrożenia, cennika i regionu zostają w źródle (2–3 takie szczegóły na news to za dużo).
 - „agenci AI” / „agentów” (odmiana osobowa), nie „agenty”.
 - Pisownia: półpauza „–” w dopowiedzeniach, polskie cudzysłowy „…”, liczby z przecinkiem dziesiętnym
   („0,1125 centa”), procenty bez spacji („92,5%”).
@@ -51,6 +63,7 @@ Nie używać (walidator je wyłapuje):
 - „Opis powstał na podstawie”, „Artykuł omawia”, „Autor omawia kluczowe aspekty”, „W artykule dowiesz się”
 - „odgrywa kluczową rolę”, „podkreśla znaczenie”
 - pytania retoryczne do czytelnika w stylu „Czy zastanawiałeś się…?”
+- „bez niezależnej weryfikacji”, „typowo marketingowy”, „Informacje pochodzą ze strony producenta”
 - listy i pogrubienia w opisie — opis to zwykły akapit
 
 Oszczędnie (max 2 razy na wydanie, nie w sąsiednich newsach):
@@ -82,3 +95,5 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #40 Opis (film Less Bitter): usunięte „Opis powstał na podstawie opisu i rozdziałów filmu, bo napisów nie udało się pobrać.” — uwagi o procesie nie należą do opisu.
 - #40 Opis (JVM Bloggers): usunięte „Demonstracja kodu trwa mniej więcej od 6. do 18. minuty…” oraz zdanie „Dla polskich programistów to praktyczny przykład…” — opis 770 → 570 znaków.
 - #39 Opis (GPT-6 Sol i Luna): usunięte „dziś”; (Matt Pocock): „agenty działające” → „agentów działających”.
+- #41 Opis (Nolla Derm, Bloomberry, TikTok): usunięte „Informacje pochodzą ze strony producenta, bez niezależnej weryfikacji skuteczności.”, „Dane pochodzą ze śladów technicznych…, więc to estymacja” i „Komunikat jest typowo marketingowy…” — wiarygodność źródła nie należy do opisu.
+- #41 Opis (Claude w Google Workspace, 706 → 416 znaków): usunięte trzy zdania o trybach zatwierdzania, Compliance API i instalacji z Marketplace — opis zostaje przy tym, co Claude robi w Dokumentach, Arkuszach i Prezentacjach.
