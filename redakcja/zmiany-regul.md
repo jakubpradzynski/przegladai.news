@@ -59,3 +59,34 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
   wstęp spinający tytuł, spójność SEO z wybranym tytułem (po 1×, bez zmiany reguł).
 - priorytety.md: nauka z selekcji #40 — ciekawostki z rezerwy jako „oddech”, zbiorcze podsumowania wydarzeń niżej,
   pierwsza obserwacja zmiany kolejności w „Nowościach”.
+
+## 2026-10-08 — przegląd stron (wydanie #41)
+
+- preselekcja.md: Future Tools News nigdy „tak” — premiery i stanowiska z agregatora to „może”
+  (na podstawie: 3× „tak” pominięte — GPT-6 duplikat openai.com, Runway Praxis-1, Team Human; 4× „może” wzięte);
+  tabela „Skuteczność stron” odświeżona; 5 nowych przykładów decyzji, 5 najstarszych usuniętych.
+  Z 317 wpisów Kuba wziął 9. Reguły automatyczne bez zmian: żaden wpis odrzucony regułą nie został wzięty,
+  ale też żaden wzorzec nie osiągnął progu 5 pominięć.
+
+## 2026-10-08 — wydanie #40 (poprawki z Substacka)
+
+- Bez zmian w regułach: 2 wpisy (Opis + Czas wideo o Project Suncatcher) to tylko przeniesienie „[2 min]” do treści opisu w Substacku, bez zmiany tekstu — format, nie styl.
+
+## 2026-10-08 — wydanie #41
+
+- opisy.md: (1) docelowa długość skrócona do ~600 znaków (3–4 zdania) — 19 opisów skróconych średnio z ~714 do ~589;
+  (2) nowa reguła: bez zdań o wiarygodności źródła („bez niezależnej weryfikacji”, „typowo marketingowy”,
+  „estymacja” — 3× Nolla Derm, Bloomberry, TikTok), trzy frazy dopisane do „Nie używać”; (3) nowa reguła: bez dopisków
+  o dostępności, instalacji, cenniku i zespole (≥8 newsów: Claude w Workspace, Gemini 4 Argon, Haiku 5.5, Ghost,
+  GPT-6, Beam, TikTok, walka z robotami); (4) paywall: nie komentować też tego, co widać/czego nie widać w tekście
+  (2× w #41, 1× w #39); 2 nowe przykłady.
+- tytuly.md: (1) tytuły badań i raportów bez prefiksu „Badanie:”/„Raport X:” (2× w #41 — zmiana wzorca z tabeli);
+  (2) nazwisko autora w tytule tylko dla szefów czołowych firm — zdjęte „Hunter Rice:” i „Acemoglu:” (zaostrzenie reguły);
+  (3) tytuł wydania: Kuba w #40 i #41 sam składa tytuł z ciekawostką/produktem „z efektem wow”, więc jedna z trzech
+  propozycji ma być ciekawostkowa, a pytajnik jest dozwolony przy niepotwierdzonej obietnicy; 4 nowe przykłady.
+- tagi.md: 2 przykłady (EmbeddingGemma 2 → Nowości; Nolla Derm → bez tagu), po 1×, bez zmiany reguł.
+- priorytety.md: nauka z selekcji #41 — ciekawostki i produkty konsumenckie z rezerwy (oceny 3–5) wchodzą drugi raz
+  z rzędu; komunikaty korporacyjne/regulacyjne (ads, watermarking, SynthID) odrzucane z TOP; 24/30 TOP zostało.
+- wstep.md: przykład — wstęp pod własny tytuł z konkretem przy każdym temacie i żartobliwym zakończeniem.
+- Bez zmian w seo.md (opis SEO przepisany pod wybrany tytuł, reguła spójności z tytułem już obowiązuje) i w regułach
+  kolejności (przesunięcie EmbeddingGemma 2 na koniec grupy wynikało ze zmiany tagu).

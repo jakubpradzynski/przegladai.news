@@ -63,3 +63,5 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 
 - #39 Tagi (WSJ, AI Force): „Za paywallem” → brak tagu, a na końcu opisu dopisane „[Za paywallem]” — w Substacku
   Kuba przeniósł oznaczenie paywalla z tagu do opisu (1×; przy powtórce zmienić regułę „Za paywallem”).
+- #41 Tagi (EmbeddingGemma 2, Google): „Bliżej technologii” → „Nowości i ogłoszenia” — premiera modelu z bloga Google to ogłoszenie, nawet gdy jest developerska i techniczna (1×; przy powtórce: oficjalne premiery modeli z blogów firm zawsze „Nowości”).
+- #41 Tagi (Nolla Derm): „Nowości i ogłoszenia” → bez tagu — materiał z marketingowej strony firmy (AI w medycynie) to ciekawostka, nie oficjalna premiera (1×).
