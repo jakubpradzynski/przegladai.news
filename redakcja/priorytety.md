@@ -57,7 +57,9 @@ preferowane źródło pierwotne (blog firmy) albo tekst z lepszą analizą. Drug
 
 Alfabet polski (ł po l itd.). W obrębie każdej grupy Kuba może zmienić kolejność ręcznie w admince (↑/↓);
 takie zmiany trafiają do dziennika (`pole: kolejnosc`) — gdy się powtarzają, ta sekcja powinna opisać
-zasadę (np. najważniejszy news na górze grupy).
+zasadę. Powtarza się (#40, #42): **newsy powiązane tematem lub firmą stoją obok siebie** zamiast alfabetu
+(ElevenLabs ×2, Meta ×3, w #42 Character.AI i Getty — upadłości obok siebie, bank z Mythosem tuż przed nimi),
+a w grupie „Nowości / Polska” polski news z ogłoszeniem (Politechnika Lubelska) idzie przed polskim wdrożeniem.
 
 ## Czego się nauczyliśmy z selekcji
 
@@ -78,3 +80,5 @@ mimo niskiej)_
 - #41: z rezerwy wzięte ciekawostki i produkty konsumenckie mimo ocen 3–5: Google Playground (5), wpis o darmowym Adobe open source (3), walka człowieka z robotem (5), Nolla Derm (5), TikTok agenci (5) oraz dwa płatne przewodniki AI Engineering Insider (3, sekcja Technologia miała tylko 6 kandydatów). Drugi raz z rzędu (po #40) lekkie newsy wchodzą jako „oddech” i do tytułu wydania → ocenę 5 dawać ciekawostkom i produktom konsumenckim z wyraźnym „efektem wow”, a ocenę 3 tylko pustym wpisom bez treści.
 - #41: odrzucone z TOP: reklamy graficzne i pomiar w ChatGPT Ads (7), znakowanie wodne tekstu w UE (7), SynthID Detector (7), Astribot T1 (6), program szkoleniowy Anthropic (6), pamięć Devina (6) — komunikaty korporacyjne i regulacyjne bez „efektu wow”; ChatGPT Ads dubluje analizę Bloomberry, która została. Ogłoszenia o monetyzacji, regulacjach i programach firm oceniać o 1 punkt niżej, gdy temat już jest w wydaniu w innym ujęciu.
 - #41: 24 z 30 rekomendacji TOP zostało w wydaniu, 6 dobrano z rezerwy (z 40 kandydatów).
+- #42: z rezerwy wzięte: Getty (6), EY i Mam Startup (6), mashupy gier z AI (5), sztuczni influencerzy (5), Politechnika Lubelska (5), dwa teksty znanych autorów — Orosz w Pragmatic Engineer (6) i Ojstersek w Engineering Leadership (6), Turing Post o Gaussian Splatting (5) i AI Engineering Insider o Apple (3). Trzeci raz z rzędu (#40, #41) wchodzą lekkie newsy i ciekawostki z oceną 5–6, a poza TOP zostały: Gemini 4 Argon ×2 (7 — temat z #41 i dublet), YouTube Ask (6), Żabka Jush (6), trzy teksty o agentach od mało znanych autorów lub vendora (stack72, claude.com, decodingai: 6–7), Manager's Path (8, długi esej na Medium) i zwolnieni badacze OpenAI (7). Argon w #41 był już tematem → przy premierze, która była w poprzednim wydaniu, dawać maks. 5 także dla jej wariantu (cloud, robotyka).
+- #42: 21 z 30 rekomendacji TOP zostało w wydaniu, 9 dobrano z rezerwy (z 46 kandydatów) — najsłabsza zgodność z AI od #39. Rekomendacje były za bardzo „technologiczne” i za mało „biznes + ciekawostka”: wydanie wzięło upadłość Character.AI, kulisy Muse, Getty, EY, FBI w OpenAI, mashupy gier.

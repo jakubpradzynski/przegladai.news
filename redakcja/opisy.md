@@ -24,6 +24,9 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   gdy to fakt z materiału (np. porównanie z konkurencją podane w źródle), nie nasza ocena. Nie kończymy
   też recenzją tekstu („Konkretne, klarowne rozprawienie się z…”, „Lekki, polski felieton…”).
   - Dozwolony przykład faktu z materiału na końcu: „…na razie w becie i tylko po angielsku.”
+- **Osobny fakt doklejony po przecinku do zdania („…, a wersja konsumencka pojawi się później”, „…, a Scion nie jest
+  ogólnym zamiennikiem gita”) rozbijamy na dwa zdania** — Kuba zrobił to 2× w #42; tak samo pierwszy raz w #42 usunął
+  „z celu” i „badawczy” jako zbędne słowa. Krótsze zdania, ten sam komplet faktów.
 
 ## Ton
 
@@ -40,7 +43,10 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   tylko dla płacących”); Kuba wyciął takie zdania w #39 i dwukrotnie w #41.
 - Bez słów względnego czasu („dziś”, „wczoraj”, „w tym tygodniu”) — wydanie czyta się później.
 - Bez zastrzeżeń typu „choć temat pojawiał się już u innych” i bez pobocznych szczegółów (pseudonimy
-  autorów, techniczne detale spoza głównej tezy) — skracają opis bez straty.
+  autorów, techniczne detale spoza głównej tezy) — skracają opis bez straty. Dotyczy też zdania o ograniczeniach
+  badania na końcu („Słusznie zaznacza też ograniczenia: jeden serwis i małe próbki” — Fowler #42, wcześniej #39),
+  pobocznych wątków z tego samego wydania newslettera („…oraz o nowych otwartych modelach z UE i USA”) i miejsca
+  publikacji pracy naukowej („Praca ukazała się w Journal of…”).
 - **Bez zdań o wiarygodności źródła.** Kuba wycinał „Informacje pochodzą ze strony producenta, bez niezależnej
   weryfikacji”, „Dane pochodzą ze śladów technicznych… to estymacja”, „Komunikat jest typowo marketingowy, z cytatami
   klientów” (Nolla Derm, Bloomberry, TikTok w #41 — 3×). Takie uwagi idą do pola `Uwagi`, nie do opisu.
@@ -49,7 +55,8 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   (Gemini 4 Argon), kredyty API i cena cache w Sonnecie (Haiku 5.5), termin wysyłki i skład zespołu (Ghost),
   „Modele w Work i Codex się nie zmieniają” (GPT-6), lista wyników benchmarków (Beam), nazwy funkcji i cytaty
   klientów (TikTok), prywatne pokazy i symulator (walka z robotami). Opis trzyma główny fakt + 1–2 liczby;
-  szczegóły wdrożenia, cennika i regionu zostają w źródle (2–3 takie szczegóły na news to za dużo).
+  szczegóły wdrożenia, cennika i regionu zostają w źródle (2–3 takie szczegóły na news to za dużo). Zapowiedzi
+  bez terminu („rozszerzenie o głos i dźwięk marki, bez podania terminów” — ElevenLabs #42) też odpadają.
 - „agenci AI” / „agentów” (odmiana osobowa), nie „agenty”.
 - Pisownia: półpauza „–” w dopowiedzeniach, polskie cudzysłowy „…”, liczby z przecinkiem dziesiętnym
   („0,1125 centa”), procenty bez spacji („92,5%”).
@@ -85,11 +92,6 @@ Pełniejsza lista wzorców AI: skill `humanizer-pl`.
 
 _(uzupełnia `ucz-sie` na podstawie dziennika)_
 
-- #39 Opis („Czy trzeba czytać kod, czy RAG umarł…”): usunięte zamknięcie „Konkretne, klarowne rozprawienie się z trzema modnymi hasłami zamiast kolejnego artykułu-hype'u.” — recenzja tekstu zamiast wniosku.
-- #39 Opis (Meta, code review): usunięte „Konkretne wskazówki od kogoś, kto realnie robi code review na dużą skalę, choć sam koncept… pojawiał się już u innych twórców.” — recenzja + zastrzeżenie.
-- #39 Opis (ChatGPT i ciasteczko): usunięte „Nieprzyjemne odkrycie dla firmy, która przedstawia się jako…” oraz „działający pod pseudonimem Buchodi”.
-- #39 Opis (AI Force): „…ujawnione; WSJ zasłania resztę tekstu paywallem.” → „…ujawnione.” — paywall tylko w tagu.
-- #39 Opis (AI Force, po publikacji): do opisu dopisane „[Za paywallem]” zamiast tagu — oznaczenie paywalla na końcu opisu, nie jako zdanie (1×; zob. tagi.md).
 - #40 Opis (Muse, Marketplace, Nvidia, Small Business, Charm, ElevenLabs v4, AMD, dots): wycięte pierwsze zdanie powtarzające tytuł („Meta zaprezentowała Muse Charm, niewielki gadżet…” → „Niewielki gadżet…”) — opis zaczyna od szczegółów.
 - #40 Opis (Muse, Addy Osmani, enzym CRISPR, BBC): wycięte zamknięcie „To jeden z pierwszych przypadków, w których… i test dla odpowiedzialności firm” — bez komentarza na końcu.
 - #40 Opis (film Less Bitter): usunięte „Opis powstał na podstawie opisu i rozdziałów filmu, bo napisów nie udało się pobrać.” — uwagi o procesie nie należą do opisu.
@@ -97,3 +99,8 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #39 Opis (GPT-6 Sol i Luna): usunięte „dziś”; (Matt Pocock): „agenty działające” → „agentów działających”.
 - #41 Opis (Nolla Derm, Bloomberry, TikTok): usunięte „Informacje pochodzą ze strony producenta, bez niezależnej weryfikacji skuteczności.”, „Dane pochodzą ze śladów technicznych…, więc to estymacja” i „Komunikat jest typowo marketingowy…” — wiarygodność źródła nie należy do opisu.
 - #41 Opis (Claude w Google Workspace, 706 → 416 znaków): usunięte trzy zdania o trybach zatwierdzania, Compliance API i instalacji z Marketplace — opis zostaje przy tym, co Claude robi w Dokumentach, Arkuszach i Prezentacjach.
+- #42 Opis (Fowler, harnessy): usunięte „Słusznie zaznacza też ograniczenia: jeden serwis i małe próbki.” — zastrzeżenie na końcu (jak #39), opis kończy się wnioskiem autora.
+- #42 Opis (Pragmatic Engineer, sciencesays, ElevenLabs Brand Kit): usunięte „oraz o nowych otwartych modelach z UE i USA”, „Praca ukazała się w Journal of the Academy of Marketing Science.”, „bez podania terminów” — poboczne wątki, miejsce publikacji i brak terminu zapowiedzi.
+- #42 Opis (Gemini w Workspace, Scion): „…miesięcznie, a wersja konsumencka pojawi się później.” → „…miesięcznie. Wersja konsumencka pojawi się później.”; „Migracja zajęła pięć miesięcy, a Scion nie jest…” → dwa zdania — osobny fakt po przecinku rozbijamy.
+- #42 Opis (bug hunter Paolo Perrone): usunięte „i wyścigi, które przeżywają poprawkę” z listy czterech sposobów — techniczny detal spoza głównej tezy.
+- #42 Opis (mamstartup EY): „dostosowaniu do regulacji” → „dostosowaniu do przepisów regulacyjnych”; Trasti: „NNW szkolnego” → „szkolnego NNW” — drobne korekty szyku i słownictwa (1×).
