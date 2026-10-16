@@ -52,11 +52,15 @@ Przykłady: „Wydanie #38: Nowa Siri od Apple, debata o spowolnieniu AI i Waymo
 
 Przy generowaniu zawsze 2–3 propozycje różniące się doborem tematów, nie tylko szykiem.
 
-**Kuba w #40 i #41 sam złożył tytuł** (w #40 z 1. propozycji i rezerwy, w #41 bez żadnej z trzech) z tematów, wśród których
+**Kuba w #40, #41 i #42 sam złożył tytuł** (w #40 z 1. propozycji i rezerwy, w #41 bez żadnej z trzech) z tematów, wśród których
 jest lekka ciekawostka albo produkt „z efektem wow” (Claude na Nokii; komputer pod AI, Google Playground, darmowy Adobe),
 niekoniecznie najwyżej oceniany; w #41 największa premiera tygodnia (GPT-6 z Intelligent UI, Haiku 5.5) została poza tytułem.
 Dlatego jedna z trzech propozycji ma być „ciekawostkowa” (dziwny albo konsumencki news z wybranych), a przy
-niepotwierdzonej obietnicy w tytule pytajnik jest dozwolony („…i darmowy Adobe?”).
+niepotwierdzonej obietnicy w tytule pytajnik jest dozwolony („…i darmowy Adobe?”). W #42 Kuba złożył tytuł
+z tematów z różnych propozycji, ale bez ciekawostki: upadłość Character.AI (biznes, 1. propozycja), Muse Wonder
+(premiera Mety, 2. propozycja) i nowy system kontroli wersji Anthropic (techniczny wątek tygodnia, 2. propozycja).
+Propozycje mają więc dzielić się na rozłączne tematy, z których łatwo złożyć własny tytuł — nie powielać tych samych trzech
+w różnym szyku — a tematy: biznes/upadłość, premiera dużej firmy i wątek techniczny dostają pierwszeństwo przed ciekawostką.
 
 ## Przykłady poprawek (AI → Kuba)
 
@@ -69,3 +73,5 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #41 Tytuł (Hunter Rice, Acemoglu): „Hunter Rice: kto wygra wyścig…” → „Kto wygra wyścig…”; „Acemoglu: AI zastąpi…” → „AI zastąpi…” — nazwisko tylko dla szefów czołowych firm.
 - #41 Tytuł (Tom's Hardware, EmbeddingGemma 2): „po klatkowej walce” → „po walce”; „multimodalne osadzenia na urządzeniu” → „multimodalny model na urządzeniu” — prostszy wyraz zamiast żargonu/ozdobnika.
 - #41 tytuł wydania: żadna z 3 propozycji → własny „Komputer osobisty pod AI, Google Playground i darmowy Adobe?” (Ghost 7, Playground 5, wpis o Adobe 3) zamiast „GPT-6 z Intelligent UI, Claude Haiku 5.5 i Pentagon bez Anthropic” — ciekawostki i produkty przed największą premierą; pytajnik przy niezweryfikowanej obietnicy.
+- #42 Tytuł (Getty Images): „…idzie w restrukturyzację z rozdziału 11 i znika z giełdy” → „…idzie w restrukturyzację i znika z giełdy” — amerykańska procedura prawna nie idzie do tytułu (1×).
+- #42 tytuł wydania: żadna z 3 propozycji → własny „Upadłość Character.AI, Muse Wonder i nowy system kontroli wersji Anthropic” — biznes + premiera Mety + wątek techniczny, bez ciekawostki; tematy z propozycji 1 i 2. Propozycja „ciekawostkowa” (Claude i policja, dyktafon w OpenAI, mashupy gier) nie została użyta.

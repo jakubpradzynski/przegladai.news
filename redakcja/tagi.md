@@ -15,7 +15,10 @@ Tylko te cztery. Kilka tagów rozdzielamy `, ` i sortujemy alfabetycznie
 Oficjalne premiery i ogłoszenia: nowy model, produkt, funkcja, aktualizacja narzędzia,
 runda finansowania, przejęcie ogłoszone przez strony, uruchomienie usługi w nowym miejscu.
 Najczęściej źródłem jest blog lub newsroom firmy (openai.com, blog.google, anthropic.com,
-apple.com/newsroom) albo relacja z samego ogłoszenia (TechCrunch, The Verge).
+apple.com/newsroom) albo relacja z samego ogłoszenia (TechCrunch, The Verge). **Premiera modelu, API lub produktu
+to „Nowości” także wtedy, gdy omawia ją agregator lub polski serwis i tekst jest techniczny** (Kuba w #42:
+Decisions API z aioai.pl „Bliżej technologii” → „Nowości”; w #41 EmbeddingGemma 2 — 2×). Otwarcie centrum
+badawczego dla przemysłu (Politechnika Lubelska) też dostaje „Nowości i ogłoszenia”.
 
 Przykłady: „Anthropic prezentuje Claude Fable 5.1…”, „Waymo uruchamia autonomiczne przejazdy w Las Vegas”,
 „Mistral pozyskuje 3 mld euro…”, „Cursor uruchamia Origin – własny hosting kodu”.
@@ -33,8 +36,10 @@ developers.googleblog.com, danluu.com, arxiv.org.
 
 ### Polska
 Dotyczy Polski: polska instytucja, firma, projekt, rynek, prawo, wydarzenie w Polsce,
-materiał po polsku od polskiego twórcy, albo Polak w roli głównej (np. tekst Jakuba Pachockiego
-z OpenAI w #37). Łączy się z każdym innym tagiem.
+albo Polak w roli głównej (np. tekst Jakuba Pachockiego z OpenAI w #37). Łączy się z każdym innym tagiem.
+**Sam język polski materiału nie wystarcza:** w #42 Kuba zdjął „Polska” z polskiego omówienia API OpenAI (aioai.pl)
+i z polskiego streszczenia globalnego badania EY (Mam Startup) — tag zostaje, gdy temat dotyczy polskiej firmy,
+instytucji, rynku lub prawa (Trasti, Żabka Jush, Politechnika Lubelska).
 
 ### Za paywallem
 Treść w całości lub w kluczowej części tylko dla płacących. Typowo: płatne wydania
@@ -65,3 +70,6 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
   Kuba przeniósł oznaczenie paywalla z tagu do opisu (1×; przy powtórce zmienić regułę „Za paywallem”).
 - #41 Tagi (EmbeddingGemma 2, Google): „Bliżej technologii” → „Nowości i ogłoszenia” — premiera modelu z bloga Google to ogłoszenie, nawet gdy jest developerska i techniczna (1×; przy powtórce: oficjalne premiery modeli z blogów firm zawsze „Nowości”).
 - #41 Tagi (Nolla Derm): „Nowości i ogłoszenia” → bez tagu — materiał z marketingowej strony firmy (AI w medycynie) to ciekawostka, nie oficjalna premiera (1×).
+- #42 Tagi (Decisions API, aioai.pl): „Bliżej technologii, Polska” → „Nowości i ogłoszenia” — premiera API OpenAI to ogłoszenie, a polskie omówienie zagranicznego tematu nie jest „Polską” (2× jak EmbeddingGemma 2 w #41).
+- #42 Tagi (EY CEO Outlook, Mam Startup): „Polska” → bez tagu — globalne badanie 1200 prezesów, polski tylko komentarz i język serwisu.
+- #42 Tagi (Politechnika Lubelska, XYZ): „Polska” → „Nowości i ogłoszenia, Polska” — otwarcie centrum dla przemysłu to ogłoszenie.

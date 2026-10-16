@@ -90,3 +90,29 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
 - wstep.md: przykład — wstęp pod własny tytuł z konkretem przy każdym temacie i żartobliwym zakończeniem.
 - Bez zmian w seo.md (opis SEO przepisany pod wybrany tytuł, reguła spójności z tytułem już obowiązuje) i w regułach
   kolejności (przesunięcie EmbeddingGemma 2 na koniec grupy wynikało ze zmiany tagu).
+
+## 2026-10-15 — przegląd stron przed wydaniem #42
+
+- preselekcja.md: (1) „Zwykle może”: polskie wdrożenia i badania o AI (4 wzięte z „może”: Żabka Jush, Trasti, Politechnika
+  Lubelska, badanie o wynikach firm) zostają „może”; (2) nowa pozycja: premiera modelu w Antigravity/Google, gdy ten
+  sam model ma już wpis ze źródła pierwotnego — „może”, nie „tak” (1× tak→pominięty, Gemini 4 Argon);
+  (3) nowe produkty mniejszych firm z agregatorów (Brand Kit, Odyssey-3, Decisions API) — „może”; (4) Netflix
+  LLM-as-a-Judge dopisany do tekstów inżynierskich z przenośną lekcją; tabela skuteczności stron odświeżona;
+  5 nowych przykładów decyzji (najstarsze 5 usunięte). Reguły automatyczne bez zmian — żaden wpis „nie” nie został
+  wzięty (201 „nie” Kuba zostawił zwiniętych, 3 „tak” wzięte z 4).
+
+## 2026-10-15 — wydanie #42
+
+- opisy.md: (1) rozszerzona reguła zastrzeżeń i pobocznych szczegółów — także zdanie o ograniczeniach badania na końcu,
+  poboczne wątki z tego samego newslettera, miejsce publikacji pracy naukowej (na podstawie: Fowler 2× w #39/#42, Pragmatic
+  Engineer, sciencesays); (2) zapowiedzi „bez podania terminów” do dopisków o dostępności; (3) nowa reguła: osobny fakt
+  doklejony po przecinku rozbijamy na dwa zdania (2×: Gemini w Workspace, Scion); 5 nowych przykładów (najstarsze 5 usunięte).
+- tagi.md: (1) premiera modelu/API/produktu omawiana przez agregator lub polski serwis = „Nowości i ogłoszenia”, nawet
+  techniczna (2× w #41/#42: EmbeddingGemma 2, Decisions API) — zmiana wcześniejszej reguły; (2) „Polska” nie wystarczy
+  samym językiem materiału — zdjęte z Decisions API i badania EY (2×); 3 nowe przykłady.
+- priorytety.md: nauka z selekcji #42 (ciekawostki z rezerwy trzeci raz z rzędu, odrzucone Gemini 4 Argon ×2 jako temat z #41,
+  21/30 TOP zostało); reguła kolejności — powiązane tematycznie newsy obok siebie (2× #40/#42).
+- tytuly.md: Kuba trzeci raz z rzędu sam złożył tytuł (z tematów dwóch propozycji, bez ciekawostki) — propozycje mają mieć
+  rozłączne tematy; Getty bez „rozdziału 11” w przykładach.
+- wstep.md: przykład — usunięta puenta AI na końcu wstępu.
+- Bez zmian w seo.md (opis SEO i okładka przyjęte bez poprawek).
