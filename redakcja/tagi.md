@@ -73,3 +73,5 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #42 Tagi (Decisions API, aioai.pl): „Bliżej technologii, Polska” → „Nowości i ogłoszenia” — premiera API OpenAI to ogłoszenie, a polskie omówienie zagranicznego tematu nie jest „Polską” (2× jak EmbeddingGemma 2 w #41).
 - #42 Tagi (EY CEO Outlook, Mam Startup): „Polska” → bez tagu — globalne badanie 1200 prezesów, polski tylko komentarz i język serwisu.
 - #42 Tagi (Politechnika Lubelska, XYZ): „Polska” → „Nowości i ogłoszenia, Polska” — otwarcie centrum dla przemysłu to ogłoszenie.
+- #43 Tagi (Cyberly, XYZ): „Nowości i ogłoszenia, Polska” → „Polska” — przejęcie polskiego startupu przez zagraniczną firmę (bez premiery produktu) to biznes/Polska, nie ogłoszenie produktu.
+- #43 Tagi (Vals AI, sześciu agentów o zwrot za bilet): „Bliżej technologii” → bez tagu — eksperyment z agentami opowiedziany jak ciekawostka, a nie materiał inżynierski (1×).

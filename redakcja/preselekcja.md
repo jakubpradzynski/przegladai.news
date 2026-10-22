@@ -17,6 +17,8 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
 
 - Premiery i duże aktualizacje modeli czołowych laboratoriów — **tylko ze źródła pierwotnego**
   (blog/Twitter laboratorium): OpenAI, Google/DeepMind, Anthropic, Meta, xAI, Mistral, DeepSeek, Apple.
+  **Nie** liczą się do tego kolejne migawki/wersje poboczne istniejącego modelu (DeepSeek „V4.1-Flash-1017” —
+  AI „tak”, Kuba pominął #43) — to „może”.
   Przykłady wziętych: „GPT-6 Astra”, „Introducing ChatGPT Images 2.5”, „Gemini 3.8 Live”,
   „Introducing Grok 4.6”. Ta sama premiera relacjonowana przez agregator (The Decoder i podobne)
   to „może”, nawet gdy laboratorium jest czołowe — zob. „Zwykle może” niżej.
@@ -24,7 +26,8 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   zerwane partnerstwa („Our decision on Cursor following its acquisition by SpaceX”, „Lovable raised $400M”),
   starcia konkurencyjne dużych graczy („Amazon blocks Meta's AI agent Muse from online shopping”),
   wieści o IPO czołowych labów („Anthropic is also reportedly postponing its IPO”) — także gdy
-  relacjonuje je agregator, bo to news biznesowy, nie premiera produktu. **Nie** liczą się do tego
+  relacjonuje je agregator, bo to news biznesowy, nie premiera produktu. Przejęcie niszowej firmy spoza
+  głównego nurtu AI (OpenAI + Orchestra Bio, biofarma — AI „tak”, Kuba pominął #43) to „może”. **Nie** liczą się do tego
   partnerstwa technologiczne i umowy infrastrukturalne (OpenAI + Synopsys, DeepSeek + Huawei,
   Anthropic–Akamai $11,6 mld — wszystkie pominięte #40) — to „może”.
 - Stanowiska i eseje liderów branży, które wywołują dyskusję (Amodei o tempie rozwoju AI,
@@ -46,7 +49,9 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   Alibaba Qwen-Image, Tencent Gander, Qwen3.8-Omni-Flash) — wziął tylko dwa newsy biznesowe
   (Amazon vs Muse, Anthropic IPO), nie premiery modeli. Temat bywa dobry, ale do wydania trafia źródło
   pierwotne. Gdy w tej samej partii jest wpis ze źródła pierwotnego, ocena agregatora = „nie”
-  z powodem „duplikat: <tytuł źródła>”.
+  z powodem „duplikat: <tytuł źródła>”. Uwaga: w #43 Kuba wziął wpis Future Tools „OpenAI Brings Frontier Models and Codex
+  to Google Cloud's Model Garden” oceniony „nie” jako duplikat openai.com — gdy źródło pierwotne jest tylko „może”
+  (partnerstwo dystrybucyjne), duplikat z agregatora też dawaj jako „może”, nie „nie”.
 - **Future Tools News: nigdy „tak”.** W #41 Kuba pominął wszystkie 3 wpisy ocenione tu na „tak” (GPT-6 — ten sam
   news miał już z openai.com w `data.csv`; Runway Praxis-1; Team Human) i wziął 4 z „może” (plugin ChatGPT do notatek,
   EmbeddingGemma 2, raport a16z, ogłoszenie Trumpa). Premiery i stanowiska relacjonowane przez ten agregator
@@ -63,7 +68,10 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
 - Polskie tematy o AI: prawo, administracja, polskie firmy (gov.pl, AIOAI.pl, Nowy Marketing, XYZ).
   Tylko gdy dotyczą AI; sama cyfryzacja czy cyberbezpieczeństwo bez AI to „nie”. W #42 Kuba wziął 4 takie
   wpisy z „może” (Żabka Jush, Trasti + ElevenLabs, Politechnika Lubelska, badanie o wynikach firm z AI) —
-  polskie wdrożenia i badania o wpływie AI na firmy zostają „może”, nie „nie”.
+  polskie wdrożenia i badania o wpływie AI na firmy zostają „może”, nie „nie”. W #43 Kuba wziął z „może” 8 polskich
+  wpisów (XYZ: Wordware/Sauna, AI w dużych polskich firmach, Google–Finlandia vs Polska, Cyberly; Mam Startup: Sauna,
+  PKO „Genia”; gov.pl: PLLuM w sądzie; JVM Bloggers: rozpoznawanie LLM-ów), ale pominął ok. 13 innych — wciąż „może”,
+  nie „tak”. Wpis o tym samym zdarzeniu z kilku polskich źródeł też zostaje „może” (Kuba bierze jedno z nich).
 - Premiera modelu w Antigravity/Google, gdy ten sam model ma już wpis ze źródła pierwotnego w partii
   albo w wydaniu (Antigravity „Gemini 4 Argon in Google Antigravity” — AI „tak”, Kuba pominął w #42).
 - Badania i raporty z danymi (Anthropic Economic Index, raporty o rynku pracy).
@@ -116,42 +124,31 @@ potwierdzonych wieloma decyzjami Kuby.
 
 ## Skuteczność stron (historia)
 
-Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), stan z `zarzadzaj.py lista`, 2026-10-15 (po przeglądzie #42):
+Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), stan z `zarzadzaj.py lista`, 2026-10-22 (po przeglądzie #43):
 
 | Strona | Wzięte / wpisy | Komentarz |
 |---|---|---|
 | Addy Osmani | 8/10 | prawie wszystko — domyślnie „tak” |
-| Martin Fowler | 7/36 | artykuły tak, „Fragments” i osobiste nie |
-| OpenAI News | 12/187 | tylko duże premiery i stanowiska; case study, granty, regiony — nie |
-| Future Tools News | 70/736 | agregator, największe źródło tematów; brać duże newsy, drobne launche — nie; w przeglądzie 8.10 premiery i stanowiska („tak”) pominięte, a „może” (plugin, raport rynku, polityka) wzięte — wszystko tu „może” |
-| Anthropic News | 3/25, Research 1/27 | premiery modeli tak, reszta może |
-| Google for Developers | 4/32 | premiery modeli i narzędzi AI; nowa funkcja SDK bez premiery — może |
+| Martin Fowler | 7/38 | artykuły tak, „Fragments” i osobiste nie |
+| OpenAI News | 13/206 | tylko duże premiery i stanowiska; case study, granty, regiony — nie |
+| Future Tools News | 72/791 | agregator, największe źródło tematów; brać duże newsy, drobne launche — nie; w przeglądzie 8.10 premiery i stanowiska („tak”) pominięte, a „może” (plugin, raport rynku, polityka) wzięte — wszystko tu „może” |
+| Anthropic News | 3/28, Research 1/32 | premiery modeli tak, reszta może |
+| Google for Developers | 4/42 | premiery modeli i narzędzi AI; nowa funkcja SDK bez premiery — może |
 | Google Antigravity | 4/12 | premiery modeli w Antigravity, o ile ten sam model nie ma już wpisu ze źródła pierwotnego |
-| The Decoder | 14/276 | agregator; bierze tylko newsy biznesowe (IPO, starcia firm), premiery modeli relacjonowane tu — może |
-| AIOAI.pl | 4/59 | polski agregator; duże tematy |
-| GitHub Blog | 3/63 | ewaluacja i code review z AI tak; własne case studies/rewrite bez przenośnej lekcji, Copilot for Beginners, raporty — nie |
-| Lovable | 3/28 | przejęcia i rundy tak, partnerstwa bez zmiany biznesowej — nie |
-| XYZ Technologia | 3/34 | polskie wywiady i wdrożenia AI — może, czasem wzięte |
-| Mam Startup | 3/93 | polski agregator startupów i biznesu, prawie nic o AI — domyślnie „nie”, polskie tematy AI „może” (2 z 6 „może” wzięte w #42) |
+| The Decoder | 15/326 | agregator; bierze tylko newsy biznesowe (IPO, starcia firm), premiery modeli relacjonowane tu — może |
+| AIOAI.pl | 4/63 | polski agregator; duże tematy |
+| GitHub Blog | 3/67 | ewaluacja i code review z AI tak; własne case studies/rewrite bez przenośnej lekcji, Copilot for Beginners, raporty — nie |
+| Lovable | 3/33 | przejęcia i rundy tak, partnerstwa bez zmiany biznesowej — nie |
+| XYZ Technologia | 7/44 | polskie wywiady, startupy i wdrożenia AI — może; w #43 wzięte 4 z 6 „może” |
+| Mam Startup | 5/153 | polski agregator startupów i biznesu, prawie nic o AI — domyślnie „nie” (48 „nie” w #43, żaden nie wzięty), polskie tematy AI „może” (2 z 12 wzięte w #43) |
+| CNBC AI (1/101), Ministerstwo Cyfryzacji (1/33) | 1 | pojedyncze trafienia (koszty obrony przed AI; PLLuM w sądzie); reszta „nie”/„może” |
 | Manus, ElevenLabs, ElevenLabs Product, Netflix (LLM-as-a-Judge), Simon Couch, Ashpreet Bedi | 1–2 na stronę | rundy, premiery modeli u nich, teksty techniczne |
-| LangChain, Stack Overflow AI, JetBrains, JVM Bloggers, Google Workspace Updates, Google Innovation & AI, Cursor (poza premierami modeli), ICEYE, Viktor, Datadog, LeadDev, The Batch, Perplexity, CNBC AI, The Information, Ministerstwo Cyfryzacji | 0 | domyślnie „nie” lub „może” przy wyjątkowym temacie; JetBrains developer diary (bez premiery) — może, nie tak |
+| LangChain, Stack Overflow AI, JetBrains, JVM Bloggers, Google Workspace Updates, Google Innovation & AI, Cursor (poza premierami modeli), ICEYE, Viktor, Datadog, LeadDev, The Batch, Perplexity, The Information | 0 | domyślnie „nie” lub „może” przy wyjątkowym temacie; JetBrains developer diary (bez premiery) — może, nie tak |
 
 ## Przykłady decyzji Kuby (AI → Kuba)
 
 _(uzupełnia `ucz-sie` na podstawie `dziennik/strony_wybory.jsonl`)_
 
-- ElevenLabs: „ElevenLabs reaches $22bn valuation after employee tender” — AI: nie („duplikat”),
-  Kuba: wzięty — to nie był duplikat: wycena firmy to osobny news biznesowy; „duplikat” tylko dla tego samego zdarzenia.
-- The Decoder: „OpenAI and Synopsys team up to build an AI model that designs chips…” — AI: tak,
-  Kuba: pominięty — partnerstwo technologiczne to „może”, nie „tak”.
-- The Decoder: „Anthropic signs $11.6 billion cloud deal with Akamai…” — AI: tak, Kuba: pominięty —
-  umowa chmurowa, nawet duża kwotowo, to „może” (jak przy DeepSeek + Huawei).
-- Anthropic News / Future Tools News: „Claude Sonnet 5.5” — AI: tak, Kuba: pominięty (oba) — wpis mógł być
-  już zebrany z innego źródła; nie oznaczać „tak” bez sprawdzenia duplikatu w `data.csv` i wydaniu.
-- The Decoder / Mam Startup: „GPT-6.1 Astra… wstrzymana premiera” — AI: tak, Kuba: pominięty (oba źródła) —
-  incydent bezpieczeństwa relacjonowany pośrednio to „może”.
-- Future Tools News: „ChatGPT Launches AI Meeting Note-Taker Plugin for Mac Desktop App in Beta” — AI: może,
-  Kuba: wzięty — nowa funkcja ChatGPT o realnym zastosowaniu można wziąć; zostaje „może”.
 - Future Tools News: „a16z: Only 2% of US Households Currently Pay for AI Services” — AI: może, Kuba: wzięty —
   raport z liczbami o rynku AI bierze; „może”.
 - Future Tools News: „Trump Announces «Super Intelligence Force»…” — AI: może („polityka, nie tech”), Kuba: wzięty —
@@ -170,3 +167,9 @@ _(uzupełnia `ucz-sie` na podstawie `dziennik/strony_wybory.jsonl`)_
   AI: może, Kuba: wzięty — koszty obrony przed AI to news; CNBC bez komentarza giełdowego bywa dobre.
 - Future Tools News: „OpenAI Accuses Ex-Employee of Leaking 100+ Confidential Files to Apple” — AI: może, Kuba: wzięty —
   spór z byłym pracownikiem OpenAI wystarcza (obok „YouTube conversational search”); zostaje „może”.
+- OpenAI News: „OpenAI acquires Orchestra Bio” — AI: tak, Kuba: pominięty — przejęcie niszowej firmy (biofarma) to „może”, nie „tak”.
+- Future Tools News: „DeepSeek Launches V4.1-Flash-1017…” — AI: tak, Kuba: pominięty — migawka/wersja poboczna modelu to „może”, mimo źródła pierwotnego.
+- Future Tools News: „OpenAI Brings Frontier Models and Codex to Google Cloud's Model Garden” — AI: nie (duplikat), Kuba: wzięty — gdy oryginał to „może” (partnerstwo), duplikat z agregatora też „może”.
+- XYZ Technologia: „Wordware robi wielki zwrot… Sauna” (i Mam Startup: „Czy Sauna działa w saunie?”) — AI: może, Kuba: wzięty — polski start produktu AI z dużą wyceną; ten sam temat z dwóch źródeł zostaje „może”.
+- Mam Startup: „PKO Bank Polski wdraża autorskie modele AI. Mała Genia i Duża Genia…” — AI: może, Kuba: wzięty — duże polskie wdrożenie AI w banku; polskie wdrożenia to „może”.
+- Ministerstwo Cyfryzacji: „Asystent AI dla sędziów – PLLuM trafi do NSA” — AI: może, Kuba: wzięty — polski AI w administracji ze źródła pierwotnego (gov.pl).

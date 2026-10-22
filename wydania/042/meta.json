@@ -5,5 +5,6 @@
   "data": "2026-10-16",
   "wstep": "Character.AI, jeden z najgłośniejszych startupów od chatbotów, ogłosił upadłość – Disney kupuje część aktywów za 20 milionów dolarów, a firma traciła ponad 8 milionów miesięcznie przy 12 milionach użytkowników. Meta prezentuje Muse Wonder, modele z „aktywną pamięcią” o użytkowniku, trenowane w centrum danych o mocy gigawata. Najbardziej techniczny wątek tygodnia to Anthropic: dzienna liczba merge'y do monorepo wzrosła z 2500 do ponad 30 tysięcy, więc zespół zbudował własny zamiennik gita.",
   "opis_seo": "Upadłość Character.AI, Muse Wonder od Mety i nowy system kontroli wersji Anthropic dla agentów – przegląd najważniejszych newsów AI tego tygodnia.",
-  "okladka": "#42: Upadłość Character.AI, Muse Wonder i nowy system kontroli wersji Anthropic"
+  "okladka": "#42: Upadłość Character.AI, Muse Wonder i nowy system kontroli wersji Anthropic",
+  "porownano_z_substackiem": true
 }
