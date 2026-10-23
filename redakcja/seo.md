@@ -17,6 +17,8 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
 Przykład (#38): „Nowa Siri od Apple, spór Amodei kontra Huang o tempo rozwoju AI i ekspansja Waymo
 w Las Vegas – przegląd najważniejszych newsów AI tego tygodnia.”
 
+- Po zmianie tytułu przez Kubę (#40, #43) opis SEO pisze się od nowa pod wybrany tytuł: te same trzy tematy, nazwy pełne (np. „Basal Omni”), bez tematów z odrzuconych propozycji.
+
 ## Slug
 
 `wydanie-<nr>-<tytuł po dwukropku>`: małe litery, bez polskich znaków (ą→a, ł→l, ż/ź→z…),
@@ -38,3 +40,4 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
   styl SEO) — pojedynczy przypadek, możliwe że Kuba wkleił tu treść wstępu przez pomyłkę w admince;
   obserwować, czy się powtórzy, zanim zmienimy regułę formatu.
 - #40 opis_seo: „OpenAI dots…” → „OpenAI Dots…” — jedyna zmiana; nazwa produktu wielką literą (jak w tytule). Opis SEO nie nadążył za tytułem (zostało „agent, który włamał się do rządu Australii”, a w tytule jest Nokia) — SEO ma wymieniać tematy z wybranego tytułu.
+- #43 opis_seo: „5% akcji Anthropic na fundusz, Apple HomeView z Siri i otwarty Muse Spark od Mety…” → „Sauna od Wordware, polski model Basal Omni na szczycie JevBench i PLLuM w sądzie…” — SEO przepisane pod nowy tytuł (jak w #40); „Basal” → „Basal Omni”.

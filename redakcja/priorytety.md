@@ -15,7 +15,9 @@ Wydanie ma 30 newsów w trzech sekcjach (sekcja wynika z tagu):
 | Pozostałe | bez żadnego z dwóch powyższych (może mieć `Polska` / `Za paywallem`) | 10 | 4–10 |
 
 Dodatkowo w całym wydaniu:
-- `Polska`: 1–4 newsy. Dobry polski news ma pierwszeństwo przed podobnie ocenionym zagranicznym.
+- `Polska`: 1–4 newsy. Dobry polski news ma pierwszeństwo przed podobnie ocenionym zagranicznym. W #43 Kuba wziął ich
+  7 (z rezerwy m.in. Sauna, Cyberly) i zbudował wokół nich tytuł i wstęp — gdy w tygodniu jest 5+ mocnych polskich newsów
+  o AI, limit 4 nie obowiązuje.
 - Wideo/podcasty (pole `Czas`): 1–4.
 - `Za paywallem`: najwyżej 2.
 - Najwyżej 3 newsy z jednej domeny (youtube.com się nie liczy).
@@ -82,3 +84,6 @@ mimo niskiej)_
 - #41: 24 z 30 rekomendacji TOP zostało w wydaniu, 6 dobrano z rezerwy (z 40 kandydatów).
 - #42: z rezerwy wzięte: Getty (6), EY i Mam Startup (6), mashupy gier z AI (5), sztuczni influencerzy (5), Politechnika Lubelska (5), dwa teksty znanych autorów — Orosz w Pragmatic Engineer (6) i Ojstersek w Engineering Leadership (6), Turing Post o Gaussian Splatting (5) i AI Engineering Insider o Apple (3). Trzeci raz z rzędu (#40, #41) wchodzą lekkie newsy i ciekawostki z oceną 5–6, a poza TOP zostały: Gemini 4 Argon ×2 (7 — temat z #41 i dublet), YouTube Ask (6), Żabka Jush (6), trzy teksty o agentach od mało znanych autorów lub vendora (stack72, claude.com, decodingai: 6–7), Manager's Path (8, długi esej na Medium) i zwolnieni badacze OpenAI (7). Argon w #41 był już tematem → przy premierze, która była w poprzednim wydaniu, dawać maks. 5 także dla jej wariantu (cloud, robotyka).
 - #42: 21 z 30 rekomendacji TOP zostało w wydaniu, 9 dobrano z rezerwy (z 46 kandydatów) — najsłabsza zgodność z AI od #39. Rekomendacje były za bardzo „technologiczne” i za mało „biznes + ciekawostka”: wydanie wzięło upadłość Character.AI, kulisy Muse, Getty, EY, FBI w OpenAI, mashupy gier.
+- #43: z rezerwy wzięte: Sauna z Mam Startup (6; zamiast wpisu XYZ o Wordware, który AI uznało za lepszy — Kuba wolał wersję z konkretami promocji dla Polaków), Cyberly (6), dwa teksty Engineering Leadership o AI w pracy managerów (6) i spec-driven development (6), Bjorn Roche o pracy EM-a z AI (5) oraz Seth Godin (5). Polskie newsy i teksty dla managerów inżynierii (EM) wchodzą z rezerwy mimo ocen 5–6 → polskim newsom o AI oraz praktycznym tekstom dla EM-ów dawać o 1 punkt więcej.
+- #43: odrzucone z TOP: ChatGPT w Chrome (7), batching vs speculative decoding (7), metryki RAG (6), prospekt IPO Anthropic z WSJ (7, paywall; temat IPO był już w Q3 Decoder), Growth Memo o ruchu bezpośrednim (6), Wordware z XYZ (6, duplikat Sauny z Mam Startup). Wąsko techniczne analizy inferencji/RAG i trzeci wpis o IPO Anthropic zostają poza wydaniem; pary duplikatów (Sauna) wybierać tak, by zostawał wpis z większą liczbą konkretów dla czytelnika, a nie ze „źródła pierwotnego”.
+- #43: 24 z 30 rekomendacji TOP zostało w wydaniu, 6 dobrano z rezerwy (z 42 kandydatów).

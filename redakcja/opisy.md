@@ -47,6 +47,13 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   badania na końcu („Słusznie zaznacza też ograniczenia: jeden serwis i małe próbki” — Fowler #42, wcześniej #39),
   pobocznych wątków z tego samego wydania newslettera („…oraz o nowych otwartych modelach z UE i USA”) i miejsca
   publikacji pracy naukowej („Praca ukazała się w Journal of…”).
+- **Bez zamykających zdań o braku informacji, ocenie tekstu i pobocznych wątkach (Kuba wyciął je w #43 aż 10×).**
+  Wycięte: „Wartość transakcji nie została ujawniona.” (Cyberly), „Pozew nie wskazuje kwot ani kar.” i „…ale komunikat nie
+  podaje źródła” (Iowa), „To jeden przebieg na model w jednym scenariuszu, więc nie jest to ranking.” (Vals), „Ciekawe
+  spojrzenie od środka, choć stan firmy autor zna z relacji znajomych.” (Amazon memo), „…więc Verna nie proponuje gotowego
+  rozwiązania.”, a także dopiski o osobie trzeciej lub drugorzędnym wątku: komentarz Elona Muska do funduszu Anthropic,
+  „Amazon zablokował zakupy agenta Muse” (Stripe), lista otwartych pytań na końcu tekstu GitHuba, dwa dodatkowe modele
+  biznesowe Setha Godina. Opis kończy się na ostatnim konkrecie z głównej tezy; czego w źródle brakuje, nie opisujemy.
 - **Bez zdań o wiarygodności źródła.** Kuba wycinał „Informacje pochodzą ze strony producenta, bez niezależnej
   weryfikacji”, „Dane pochodzą ze śladów technicznych… to estymacja”, „Komunikat jest typowo marketingowy, z cytatami
   klientów” (Nolla Derm, Bloomberry, TikTok w #41 — 3×). Takie uwagi idą do pola `Uwagi`, nie do opisu.
@@ -92,10 +99,6 @@ Pełniejsza lista wzorców AI: skill `humanizer-pl`.
 
 _(uzupełnia `ucz-sie` na podstawie dziennika)_
 
-- #40 Opis (Muse, Marketplace, Nvidia, Small Business, Charm, ElevenLabs v4, AMD, dots): wycięte pierwsze zdanie powtarzające tytuł („Meta zaprezentowała Muse Charm, niewielki gadżet…” → „Niewielki gadżet…”) — opis zaczyna od szczegółów.
-- #40 Opis (Muse, Addy Osmani, enzym CRISPR, BBC): wycięte zamknięcie „To jeden z pierwszych przypadków, w których… i test dla odpowiedzialności firm” — bez komentarza na końcu.
-- #40 Opis (film Less Bitter): usunięte „Opis powstał na podstawie opisu i rozdziałów filmu, bo napisów nie udało się pobrać.” — uwagi o procesie nie należą do opisu.
-- #40 Opis (JVM Bloggers): usunięte „Demonstracja kodu trwa mniej więcej od 6. do 18. minuty…” oraz zdanie „Dla polskich programistów to praktyczny przykład…” — opis 770 → 570 znaków.
 - #39 Opis (GPT-6 Sol i Luna): usunięte „dziś”; (Matt Pocock): „agenty działające” → „agentów działających”.
 - #41 Opis (Nolla Derm, Bloomberry, TikTok): usunięte „Informacje pochodzą ze strony producenta, bez niezależnej weryfikacji skuteczności.”, „Dane pochodzą ze śladów technicznych…, więc to estymacja” i „Komunikat jest typowo marketingowy…” — wiarygodność źródła nie należy do opisu.
 - #41 Opis (Claude w Google Workspace, 706 → 416 znaków): usunięte trzy zdania o trybach zatwierdzania, Compliance API i instalacji z Marketplace — opis zostaje przy tym, co Claude robi w Dokumentach, Arkuszach i Prezentacjach.
@@ -104,3 +107,7 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #42 Opis (Gemini w Workspace, Scion): „…miesięcznie, a wersja konsumencka pojawi się później.” → „…miesięcznie. Wersja konsumencka pojawi się później.”; „Migracja zajęła pięć miesięcy, a Scion nie jest…” → dwa zdania — osobny fakt po przecinku rozbijamy.
 - #42 Opis (bug hunter Paolo Perrone): usunięte „i wyścigi, które przeżywają poprawkę” z listy czterech sposobów — techniczny detal spoza głównej tezy.
 - #42 Opis (mamstartup EY): „dostosowaniu do regulacji” → „dostosowaniu do przepisów regulacyjnych”; Trasti: „NNW szkolnego” → „szkolnego NNW” — drobne korekty szyku i słownictwa (1×).
+- #43 Opis (Cyberly, Iowa, Vals, Verna, Amazon memo): usunięte ostatnie zdania o braku danych i ocenie („Wartość transakcji nie została ujawniona.”, „Pozew nie wskazuje kwot ani kar.”, „…nie jest to ranking.”) — opis kończy się konkretem, nie komentarzem do źródła.
+- #43 Opis (CNBC fundusz Anthropic, Stripe, Seth Godin, GitHub): usunięty poboczny wątek na końcu (komentarz Muska, blokada Muse przez Amazon, dwa dodatkowe modele biznesowe, lista otwartych pytań) — jeden główny fakt zamiast dopisków; w CNBC także „nie fundacja 501(c)(3), a” (amerykańska forma prawna).
+- #43 Opis (Claude Duet, PLLuM, PKO): „jak planowanie spotkań, jak i…” → „czynności oraz planowanie spotkań…”; „sprawdzić i zatwierdzić sędzia” → „zostać sprawdzony i zatwierdzony przez sędziego”; „i” → „oraz” — drobne korekty składni, 1×.
+- #43 Opis (Claude Code code review): „Past incydenty… testy sprawdzające reviewera” → „Przeszłe incydenty… testy sprawdzane” — literówka i uproszczenie (fakt, nie styl).

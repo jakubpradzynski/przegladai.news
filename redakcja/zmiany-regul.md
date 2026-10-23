@@ -116,3 +116,28 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
   rozłączne tematy; Getty bez „rozdziału 11” w przykładach.
 - wstep.md: przykład — usunięta puenta AI na końcu wstępu.
 - Bez zmian w seo.md (opis SEO i okładka przyjęte bez poprawek).
+
+## 2026-10-22 — przegląd stron #43
+
+- preselekcja.md: (1) „Bierzemy”: migawki/wersje poboczne modelu (DeepSeek V4.1-Flash-1017) i przejęcia niszowych firm spoza
+  głównego nurtu AI (Orchestra Bio) to „może”, nie „tak” (na podstawie: 2× AI „tak”, Kuba pominął); (2) „Zwykle może”: polskie
+  tematy AI — 8 z ok. 21 „może” wziętych (XYZ, Mam Startup, gov.pl, JVM Bloggers), więc zostają „może”, bez awansu na „tak”;
+  (3) duplikat z agregatora też „może”, gdy oryginał jest „może” (Future Tools + OpenAI/Google Cloud, wzięty mimo „nie”);
+  (4) tabela skuteczności stron odświeżona, 6 nowych przykładów decyzji (najstarsze 6 usunięte). Reguły automatyczne bez zmian
+  (jedyne „nie”→wzięty nie pochodziło z reguły automatycznej).
+
+## 2026-10-22 — wydanie #42 (porównanie z Substackiem)
+
+- wstep.md: tylko jeden przykład (apostrof typograficzny „merge’y”; reszta różnicy to artefakt przycisku Substacka). Bez nowych reguł.
+
+## 2026-10-22 — wydanie #43
+
+- opisy.md: nowa reguła — bez zamykających zdań o braku informacji („nie ujawniono”, „nie wskazuje”), oceny tekstu i pobocznych
+  wątków trzecich osób (na podstawie: ok. 10 wyciętych zdań w Cyberly, Iowa, Vals, Verna, Amazon memo, CNBC/Musk, Stripe,
+  Godin, GitHub); 4 nowe przykłady (4 najstarsze usunięte).
+- tagi.md: 2 przykłady — przejęcie polskiego startupu bez premiery = tylko „Polska” (Cyberly); eksperyment z agentami jako
+  ciekawostka bez tagu (Vals, 1×).
+- priorytety.md: limit „Polska” 1–4 nie obowiązuje, gdy w tygodniu jest 5+ mocnych polskich newsów; nauka z selekcji #43
+  (polskie newsy i teksty dla EM z rezerwy, wąsko techniczne analizy i trzeci wpis o IPO odrzucone, 24/30 TOP zostało).
+- tytuly.md: czwarty z rzędu własny tytuł Kuby (#40–#43) — przy 4+ polskich newsach jedna propozycja ma być „polska”.
+- wstep.md, seo.md: wstęp i SEO przepisane pod „polski” tytuł; reguła: SEO piszemy od nowa pod wybrany tytuł (2× — #40, #43).
