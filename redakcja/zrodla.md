@@ -13,6 +13,7 @@ Zwykłe pobranie (WebFetch) nie zwraca treści — od razu Chrome:
 - youtube.com — opis i długość przez skill `youtube-watcher` (napisy), tytuł/czas w razie potrzeby przez Chrome
 - wsj.com, bloomberg.com — blokada bota (DataDome/403) na poziomie WebFetch i curl, nie tylko paywall;
   w Chrome darmowy fragment (WSJ) albo cała treść (Bloomberg) zwykle się czyta (2026-09-24)
+- openai.com, cnbc.com, axios.com, fastcompany.com, netflixtechblog.com — HTTP 403 dla WebFetch/curl, w Chrome treść czyta się w całości (2026-10-29)
 - news.sky.com — blokada Akamai (HTTP 403) dla WebFetch/curl, w Chrome treść czyta się w całości (2026-09-24)
 
 ## Paywalle

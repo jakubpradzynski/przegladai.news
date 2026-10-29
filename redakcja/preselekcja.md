@@ -81,6 +81,16 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   Odyssey-3 w The Decoder, Decisions API w AIOAI.pl, nowa funkcja YouTube w Future Tools) — w #42 Kuba
   wziął po jednym z „może”; zostają „może”.
 
+- Teksty inżynierskie o budowie agentów od dużych zespołów, nawet z bloga vendora (LangChain „The Art of Loop Engineering”,
+  „How We Built Our Design Agent” — AI „może”/„nie”, Kuba wziął oba #44) i wyjaśnienia roli/praktyki z laboratorium
+  (OpenAI „What FDE means at OpenAI”). Case study klienta nadal „nie”; własny agent/harness z lekcją — „może”.
+- Polskie teksty o pracy z AI w programowaniu (JVM Bloggers „AI w SDLC: Model nie ma znaczenia” — wzięty #44, 1 z 8 „może”).
+- Decoder i inne agregatory — stanowiska i spekulacje o rundach/wycenach (Jack Clark o 2027, Altman o alignmencie,
+  OpenAI obniża wycenę, OpenAI podbiera klientów Anthropic — wszystkie AI „tak”, Kuba pominął #44): to „może”.
+  „Tak” dla agregatora tylko przy konkretnym, dużym fakcie biznesowym (Meta–Nvidia 3 mld $, emisja akcji Meta 95 mld $ — wzięte #44).
+- Przed „tak” dla newsa o IPO Anthropic sprawdź, czy temat jest już w partii/`data.csv` z innego źródła
+  (S-1 z anthropic.com i Future Tools — AI „tak”, Kuba pominął #44): drugi i kolejny wpis o tym samym to „nie” (duplikat).
+
 ## Odrzucamy (zwykle „nie”)
 
 - Drobne aktualizacje funkcji i wydania wersji: Google Workspace Updates (0/19), wydania IDE i bibliotek
@@ -95,7 +105,8 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   z analitykami w „Closing Bell”).
 - Wpisy osobiste i przeglądy linków autorów („Fragments: …”, „Social Media Engagement”).
 - Treści spoza AI (ICEYE: satelity, JVM Bloggers: Java bez AI, Datadog bez AI).
-- Marketing platform agentowych bez ogólnej lekcji (LangChain: 0/96 w historii, Stack Overflow Blog: 0/39).
+- Marketing platform agentowych bez ogólnej lekcji (Stack Overflow Blog: 0/71). LangChain: marketing i case study
+  klientów — „nie”, ale posty inżynierskie o budowie agentów — „może” (zob. niżej).
 
 ## Reguły automatyczne (bez AI)
 
@@ -124,41 +135,32 @@ potwierdzonych wieloma decyzjami Kuby.
 
 ## Skuteczność stron (historia)
 
-Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), stan z `zarzadzaj.py lista`, 2026-10-22 (po przeglądzie #43):
+Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), stan z `zarzadzaj.py lista`, 2026-10-29 (po przeglądzie #44):
 
 | Strona | Wzięte / wpisy | Komentarz |
 |---|---|---|
 | Addy Osmani | 8/10 | prawie wszystko — domyślnie „tak” |
 | Martin Fowler | 7/38 | artykuły tak, „Fragments” i osobiste nie |
-| OpenAI News | 13/206 | tylko duże premiery i stanowiska; case study, granty, regiony — nie |
-| Future Tools News | 72/791 | agregator, największe źródło tematów; brać duże newsy, drobne launche — nie; w przeglądzie 8.10 premiery i stanowiska („tak”) pominięte, a „może” (plugin, raport rynku, polityka) wzięte — wszystko tu „może” |
-| Anthropic News | 3/28, Research 1/32 | premiery modeli tak, reszta może |
-| Google for Developers | 4/42 | premiery modeli i narzędzi AI; nowa funkcja SDK bez premiery — może |
+| OpenAI News | 15/226 | tylko duże premiery i stanowiska; case study, granty, regiony — nie |
+| Future Tools News | 73/837 | agregator, największe źródło tematów; brać duże newsy, drobne launche — nie; w przeglądzie 8.10 premiery i stanowiska („tak”) pominięte, a „może” (plugin, raport rynku, polityka) wzięte — wszystko tu „może” |
+| Anthropic News | 3/34, Research 1/35 | premiery modeli tak, reszta może |
+| Google for Developers | 4/49 | premiery modeli i narzędzi AI; nowa funkcja SDK bez premiery — może |
 | Google Antigravity | 4/12 | premiery modeli w Antigravity, o ile ten sam model nie ma już wpisu ze źródła pierwotnego |
-| The Decoder | 15/326 | agregator; bierze tylko newsy biznesowe (IPO, starcia firm), premiery modeli relacjonowane tu — może |
-| AIOAI.pl | 4/63 | polski agregator; duże tematy |
-| GitHub Blog | 3/67 | ewaluacja i code review z AI tak; własne case studies/rewrite bez przenośnej lekcji, Copilot for Beginners, raporty — nie |
-| Lovable | 3/33 | przejęcia i rundy tak, partnerstwa bez zmiany biznesowej — nie |
-| XYZ Technologia | 7/44 | polskie wywiady, startupy i wdrożenia AI — może; w #43 wzięte 4 z 6 „może” |
-| Mam Startup | 5/153 | polski agregator startupów i biznesu, prawie nic o AI — domyślnie „nie” (48 „nie” w #43, żaden nie wzięty), polskie tematy AI „może” (2 z 12 wzięte w #43) |
-| CNBC AI (1/101), Ministerstwo Cyfryzacji (1/33) | 1 | pojedyncze trafienia (koszty obrony przed AI; PLLuM w sądzie); reszta „nie”/„może” |
+| The Decoder | 17/376 | agregator; bierze tylko konkretne duże newsy biznesowe (IPO, Meta–Nvidia, emisja akcji), premiery modeli, stanowiska i spekulacje o rundach — może (4 „tak” pominięte w #44) |
+| AIOAI.pl | 4/68 | polski agregator; duże tematy |
+| GitHub Blog | 3/70 | ewaluacja i code review z AI tak; własne case studies/rewrite bez przenośnej lekcji, Copilot for Beginners, raporty — nie |
+| Lovable | 3/35 | przejęcia i rundy tak, partnerstwa bez zmiany biznesowej — nie |
+| XYZ Technologia | 7/54 | polskie wywiady, startupy i wdrożenia AI — może; w #43 wzięte 4 z 6 „może” |
+| Mam Startup | 6/210 | polski agregator startupów i biznesu, prawie nic o AI — domyślnie „nie” (47 „nie” w #44, żaden nie wzięty), polskie tematy AI „może” (1 z 10 wzięty w #44: Meta Muse) |
+| CNBC AI (1/126), Ministerstwo Cyfryzacji (1/43) | 1 | pojedyncze trafienia (koszty obrony przed AI; PLLuM w sądzie); reszta „nie”/„może” |
 | Manus, ElevenLabs, ElevenLabs Product, Netflix (LLM-as-a-Judge), Simon Couch, Ashpreet Bedi | 1–2 na stronę | rundy, premiery modeli u nich, teksty techniczne |
-| LangChain, Stack Overflow AI, JetBrains, JVM Bloggers, Google Workspace Updates, Google Innovation & AI, Cursor (poza premierami modeli), ICEYE, Viktor, Datadog, LeadDev, The Batch, Perplexity, The Information | 0 | domyślnie „nie” lub „może” przy wyjątkowym temacie; JetBrains developer diary (bez premiery) — może, nie tak |
+| LangChain (2/136), JVM Bloggers (3/76) | 2–3 | posty inżynierskie o budowie agentów (LangChain), polskie teksty o AI w programowaniu (JVM) — „może”; reszta „nie” |
+| Stack Overflow AI, JetBrains, Google Workspace Updates, Google Innovation & AI, Cursor (poza premierami modeli), ICEYE, Viktor, Datadog, LeadDev, The Batch, Perplexity, The Information | 0 | domyślnie „nie” lub „może” przy wyjątkowym temacie; JetBrains developer diary (bez premiery) — może, nie tak |
 
 ## Przykłady decyzji Kuby (AI → Kuba)
 
 _(uzupełnia `ucz-sie` na podstawie `dziennik/strony_wybory.jsonl`)_
 
-- Future Tools News: „a16z: Only 2% of US Households Currently Pay for AI Services” — AI: może, Kuba: wzięty —
-  raport z liczbami o rynku AI bierze; „może”.
-- Future Tools News: „Trump Announces «Super Intelligence Force»…” — AI: może („polityka, nie tech”), Kuba: wzięty —
-  decyzje polityczne USA o AI nie są „nie”; zostają „może”.
-- Future Tools News: „Runway CEO Unveils Praxis-1 Robot Model…” i „Team Human Campaign Urges Global AI Slowdown” —
-  AI: tak, Kuba: pominięty — premiera/stanowisko przez agregator to „może”.
-- Future Tools News: „OpenAI Launches GPT-6 and Intelligent UI…” — AI: tak, Kuba: pominięty — news był już w `data.csv`
-  z openai.com (inny URL); duplikat tematu, nie „tak”.
-- Google Antigravity: „Gemini 4 Argon in Google Antigravity” — AI: tak, Kuba: pominięty — ten sam model był już
-  w partii z innych źródeł pierwotnych; sprawdzać duplikat modelu przed „tak”.
 - Netflix Tech Blog: „The Lifecycle of LLM-as-a-Judge: Building, Aligning, and Monitoring at scale” — AI: może,
   Kuba: wzięty — tekst z przenośną lekcją o ewaluacji LLM od dużego zespołu; „może”, nie „nie”.
 - Mam Startup: „ElevenLabs i Trasti… Polisy kupimy w trakcie rozmowy z botem” — AI: może, Kuba: wzięty —
@@ -173,3 +175,10 @@ _(uzupełnia `ucz-sie` na podstawie `dziennik/strony_wybory.jsonl`)_
 - XYZ Technologia: „Wordware robi wielki zwrot… Sauna” (i Mam Startup: „Czy Sauna działa w saunie?”) — AI: może, Kuba: wzięty — polski start produktu AI z dużą wyceną; ten sam temat z dwóch źródeł zostaje „może”.
 - Mam Startup: „PKO Bank Polski wdraża autorskie modele AI. Mała Genia i Duża Genia…” — AI: może, Kuba: wzięty — duże polskie wdrożenie AI w banku; polskie wdrożenia to „może”.
 - Ministerstwo Cyfryzacji: „Asystent AI dla sędziów – PLLuM trafi do NSA” — AI: może, Kuba: wzięty — polski AI w administracji ze źródła pierwotnego (gov.pl).
+
+- LangChain: „How We Built Our Design Agent” — AI: nie (case study vendora), Kuba: wzięty — własny agent open source z opisem harnessu to nie case study klienta; „może”.
+- LangChain: „The Art of Loop Engineering” — AI: może, Kuba: wzięty — ogólna lekcja o pętli agentów; posty inżynierskie LangChain zostają „może”.
+- OpenAI News: „What FDE means at OpenAI” — AI: może, Kuba: wzięty — wyjaśnienie praktyki z laboratorium; „może”, nie „nie”.
+- The Decoder: „Anthropic co-founder Jack Clark moves his prediction for self-improving AI forward to 2027”, „Sam Altman says advanced AI will inevitably escape its sandbox…”, „OpenAI lowers valuation target, raises up to $30 billion”, „OpenAI offers discounts… to poach Anthropic's biggest customers” — AI: tak, Kuba: pominięty (wszystkie 4) — stanowiska i spekulacje o rundach przez agregator to „może”; wziął tylko Meta–Nvidia i emisję akcji Meta (konkretne fakty).
+- Anthropic News / Future Tools News: „Anthropic files S-1 with the SEC…” — AI: tak, Kuba: pominięty — temat IPO był już w partii z innych źródeł; sprawdzać duplikat przed „tak”.
+- JVM Bloggers: „AI w SDLC: Model nie ma znaczenia” — AI: może, Kuba: wzięty — polski tekst o pracy z Claude Code; z 8 wpisów JVM Bloggers wziął 1, reszta „nie”.

@@ -17,7 +17,7 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
 Przykład (#38): „Nowa Siri od Apple, spór Amodei kontra Huang o tempo rozwoju AI i ekspansja Waymo
 w Las Vegas – przegląd najważniejszych newsów AI tego tygodnia.”
 
-- Po zmianie tytułu przez Kubę (#40, #43) opis SEO pisze się od nowa pod wybrany tytuł: te same trzy tematy, nazwy pełne (np. „Basal Omni”), bez tematów z odrzuconych propozycji.
+- Po zmianie tytułu przez Kubę (#40, #43, #44) opis SEO pisze się od nowa pod wybrany tytuł (w #44: te same trzy tematy co w tytule, każdy z liczbą — 16,3 mld $, 60 tysięcy osób, 95 mld $): te same trzy tematy, nazwy pełne (np. „Basal Omni”), bez tematów z odrzuconych propozycji.
 
 ## Slug
 

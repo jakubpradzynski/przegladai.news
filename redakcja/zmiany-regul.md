@@ -141,3 +141,19 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
   (polskie newsy i teksty dla EM z rezerwy, wąsko techniczne analizy i trzeci wpis o IPO odrzucone, 24/30 TOP zostało).
 - tytuly.md: czwarty z rzędu własny tytuł Kuby (#40–#43) — przy 4+ polskich newsach jedna propozycja ma być „polska”.
 - wstep.md, seo.md: wstęp i SEO przepisane pod „polski” tytuł; reguła: SEO piszemy od nowa pod wybrany tytuł (2× — #40, #43).
+
+## 2026-10-29 — przegląd stron przed wydaniem #44
+
+- preselekcja.md: nowe wpisy w „Zwykle może” — posty inżynierskie o budowie agentów (LangChain 2× wzięte: Loop Engineering, Design Agent),
+  wyjaśnienia praktyk z laboratoriów (OpenAI FDE), polskie teksty o AI w programowaniu (JVM Bloggers); The Decoder: stanowiska
+  i spekulacje o rundach/wycenach nie są „tak” (4× pominięte), „tak” tylko przy konkretnym dużym fakcie (Meta–Nvidia, emisja akcji Meta, wzięte);
+  sprawdzanie duplikatu tematu IPO Anthropic przed „tak” (2× pominięty S-1). „Odrzucamy”: LangChain już nie „0/96” — tylko marketing i case study.
+  Tabela skuteczności stron odświeżona; 6 nowych przykładów decyzji (5 najstarszych usunięte). Reguły automatyczne bez zmian
+  (żaden wpis odrzucony regułą automatyczną nie został wzięty). (Na podstawie: 9 wziętych z 339 pokazanych; 6× „tak”→pominięty, 2× „nie”→wzięty, 4× „może”→wzięty.)
+
+## 2026-10-29 — wydanie #44
+
+- opisy.md: reguła zamykających zdań wzmocniona (9 wyciętych w #44: ograniczenia modelu, brak ceny akcji, terminy, przyznanie autora, kolejny projekt); nowy przykład (najstarszy usunięty) (na podstawie: Genie 4, S-1, Microsoft, FDE, YC, Latent Space, Verna).
+- tytuly.md: 2 przykłady — krótsze tytuły newsów bez doprecyzowań i dopowiedzeń po półpauzie (Netflix, Pocock); piąty z rzędu własny tytuł wydania, tym razem „pieniądze i rynek pracy” bez premier.
+- priorytety.md: kolejność w „Nowości” — największa premiera pierwsza i newsy jednej firmy obok siebie (2× #40, #44); nauka z selekcji #44 (25/30 TOP zostało, duplikaty: wybór bogatszej wersji + dopisanie faktów z drugiej).
+- seo.md: SEO pisane od nowa pod własny tytuł Kuby (3× — #40, #43, #44).
