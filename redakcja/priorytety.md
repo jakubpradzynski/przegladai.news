@@ -59,7 +59,8 @@ preferowane źródło pierwotne (blog firmy) albo tekst z lepszą analizą. Drug
 
 Alfabet polski (ł po l itd.). W obrębie każdej grupy Kuba może zmienić kolejność ręcznie w admince (↑/↓);
 takie zmiany trafiają do dziennika (`pole: kolejnosc`) — gdy się powtarzają, ta sekcja powinna opisać
-zasadę. Powtarza się (#40, #42): **newsy powiązane tematem lub firmą stoją obok siebie** zamiast alfabetu
+zasadę. Powtarza się (#40, #42, #44): **największa premiera pierwsza** w grupie „Nowości” (w #44: Gemini 4 Carbon, Genie 4,
+GPT-6.1 Terra, potem Canva Craft i 1Password zamiast alfabetu; Google obok Google), a także **newsy powiązane tematem lub firmą stoją obok siebie** zamiast alfabetu
 (ElevenLabs ×2, Meta ×3, w #42 Character.AI i Getty — upadłości obok siebie, bank z Mythosem tuż przed nimi),
 a w grupie „Nowości / Polska” polski news z ogłoszeniem (Politechnika Lubelska) idzie przed polskim wdrożeniem.
 
@@ -87,3 +88,6 @@ mimo niskiej)_
 - #43: z rezerwy wzięte: Sauna z Mam Startup (6; zamiast wpisu XYZ o Wordware, który AI uznało za lepszy — Kuba wolał wersję z konkretami promocji dla Polaków), Cyberly (6), dwa teksty Engineering Leadership o AI w pracy managerów (6) i spec-driven development (6), Bjorn Roche o pracy EM-a z AI (5) oraz Seth Godin (5). Polskie newsy i teksty dla managerów inżynierii (EM) wchodzą z rezerwy mimo ocen 5–6 → polskim newsom o AI oraz praktycznym tekstom dla EM-ów dawać o 1 punkt więcej.
 - #43: odrzucone z TOP: ChatGPT w Chrome (7), batching vs speculative decoding (7), metryki RAG (6), prospekt IPO Anthropic z WSJ (7, paywall; temat IPO był już w Q3 Decoder), Growth Memo o ruchu bezpośrednim (6), Wordware z XYZ (6, duplikat Sauny z Mam Startup). Wąsko techniczne analizy inferencji/RAG i trzeci wpis o IPO Anthropic zostają poza wydaniem; pary duplikatów (Sauna) wybierać tak, by zostawał wpis z większą liczbą konkretów dla czytelnika, a nie ze „źródła pierwotnego”.
 - #43: 24 z 30 rekomendacji TOP zostało w wydaniu, 6 dobrano z rezerwy (z 42 kandydatów).
+- #44: z rezerwy wzięty wpis Decodera o emisji akcji Mety (7) zamiast CNBC (7, TOP) — Kuba uzupełnił go o zdania z CNBC (Nvidia, AMD i Broadcom po 5 mld $, Muse i centra danych). Przy duplikacie zostaje wersja z bogatszą strukturą faktów (drugi raz po Saunie w #43), a brakujące konkrety dopisujemy z drugiego źródła zamiast wybierać jedno.
+- #44: odrzucone z TOP: Recursive Flint (7, otwarty model do kodowania lokalnego), Harness AI Budgets (5, ogłoszenie vendora), arXiv o pamięci agentów (6, mała próba), CNBC o emisji Mety (7, duplikat) i Nvidia–Meta 3 mld $ (7, blisko tematu emisji). Drobne modele otwarte i ogłoszenia vendorów zostają poza wydaniem, gdy jest 5+ większych premier (Carbon, Genie 4, Terra, Canva Craft).
+- #44: 25 z 30 rekomendacji TOP zostało w wydaniu, 1 dobrano z rezerwy (z 36 kandydatów) — najlepsza zgodność od #39; w wydaniu 26 newsów (mniej niż 30, bo kandydatów było tylko 36). Wydanie ma tylko 1 polski news, więc bez „polskiego” tytułu.

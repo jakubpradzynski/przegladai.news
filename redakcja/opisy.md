@@ -47,7 +47,9 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   badania na końcu („Słusznie zaznacza też ograniczenia: jeden serwis i małe próbki” — Fowler #42, wcześniej #39),
   pobocznych wątków z tego samego wydania newslettera („…oraz o nowych otwartych modelach z UE i USA”) i miejsca
   publikacji pracy naukowej („Praca ukazała się w Journal of…”).
-- **Bez zamykających zdań o braku informacji, ocenie tekstu i pobocznych wątkach (Kuba wyciął je w #43 aż 10×).**
+- **Bez zamykających zdań o braku informacji, ocenie tekstu i pobocznych wątkach (Kuba wyciął je w #43 aż 10×, w #44 jeszcze 9×).**
+  W #44 doszły: ograniczenia modelu („…dryfują w długich sesjach, a całość znakuje SynthID”), brak ceny/liczby akcji w prospekcie,
+  terminy decyzji pracowników, przyznanie autora, że to „model myślowy”, kolejny przykład projektu w tekście o wdrożeniach.
   Wycięte: „Wartość transakcji nie została ujawniona.” (Cyberly), „Pozew nie wskazuje kwot ani kar.” i „…ale komunikat nie
   podaje źródła” (Iowa), „To jeden przebieg na model w jednym scenariuszu, więc nie jest to ranking.” (Vals), „Ciekawe
   spojrzenie od środka, choć stan firmy autor zna z relacji znajomych.” (Amazon memo), „…więc Verna nie proponuje gotowego
@@ -99,7 +101,6 @@ Pełniejsza lista wzorców AI: skill `humanizer-pl`.
 
 _(uzupełnia `ucz-sie` na podstawie dziennika)_
 
-- #39 Opis (GPT-6 Sol i Luna): usunięte „dziś”; (Matt Pocock): „agenty działające” → „agentów działających”.
 - #41 Opis (Nolla Derm, Bloomberry, TikTok): usunięte „Informacje pochodzą ze strony producenta, bez niezależnej weryfikacji skuteczności.”, „Dane pochodzą ze śladów technicznych…, więc to estymacja” i „Komunikat jest typowo marketingowy…” — wiarygodność źródła nie należy do opisu.
 - #41 Opis (Claude w Google Workspace, 706 → 416 znaków): usunięte trzy zdania o trybach zatwierdzania, Compliance API i instalacji z Marketplace — opis zostaje przy tym, co Claude robi w Dokumentach, Arkuszach i Prezentacjach.
 - #42 Opis (Fowler, harnessy): usunięte „Słusznie zaznacza też ograniczenia: jeden serwis i małe próbki.” — zastrzeżenie na końcu (jak #39), opis kończy się wnioskiem autora.
@@ -111,3 +112,4 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #43 Opis (CNBC fundusz Anthropic, Stripe, Seth Godin, GitHub): usunięty poboczny wątek na końcu (komentarz Muska, blokada Muse przez Amazon, dwa dodatkowe modele biznesowe, lista otwartych pytań) — jeden główny fakt zamiast dopisków; w CNBC także „nie fundacja 501(c)(3), a” (amerykańska forma prawna).
 - #43 Opis (Claude Duet, PLLuM, PKO): „jak planowanie spotkań, jak i…” → „czynności oraz planowanie spotkań…”; „sprawdzić i zatwierdzić sędzia” → „zostać sprawdzony i zatwierdzony przez sędziego”; „i” → „oraz” — drobne korekty składni, 1×.
 - #43 Opis (Claude Code code review): „Past incydenty… testy sprawdzające reviewera” → „Przeszłe incydenty… testy sprawdzane” — literówka i uproszczenie (fakt, nie styl).
+- #44 Opis (Genie 4, S-1 Anthropic, Microsoft, FDE OpenAI, YC RFS, Latent Space, Verna): znów wycięte ostatnie zdania — ograniczenia modelu („Szczegóły obrazu… dryfują, a całość znakuje SynthID”), brak ceny akcji i Long-Term Benefit Trust, termin decyzji pracowników („odejdą 31 grudnia”), projekt głosowy dla telekomu, „Sam przyznaje, że to model myślowy”, zdanie o tym, że start-upy nie muszą pracować nad pomysłami YC — opis kończy się na ostatnim konkrecie głównej tezy (9 wpisów w jednym wydaniu; reguła ostatniego zdania działa, wciąż do pilnowania).
