@@ -17,6 +17,10 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   „10-krotnie”, „o 90%”.
 - Cudzysłowy polskie „…” (albo proste "…", gdy tak było w źródle). Dopowiedzenia po półpauzie „–”.
 
+- Gdy autor jest ważny tylko jako przedstawiciel firmy, w tytule stoi firma, a nie nazwisko:
+  „Czym jest Forward Deployed Engineering w OpenAI”, nie „Colin Jarvis z OpenAI: …”. Nazwisko (np. założyciel
+  zespołu) trafia do opisu, jeśli podnosi wagę materiału.
+
 ### Wzorce według typu materiału
 
 | Typ | Wzorzec | Przykłady z wydań |

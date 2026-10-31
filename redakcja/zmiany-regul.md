@@ -157,3 +157,16 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
 - tytuly.md: 2 przykłady — krótsze tytuły newsów bez doprecyzowań i dopowiedzeń po półpauzie (Netflix, Pocock); piąty z rzędu własny tytuł wydania, tym razem „pieniądze i rynek pracy” bez premier.
 - priorytety.md: kolejność w „Nowości” — największa premiera pierwsza i newsy jednej firmy obok siebie (2× #40, #44); nauka z selekcji #44 (25/30 TOP zostało, duplikaty: wybór bogatszej wersji + dopisanie faktów z drugiej).
 - seo.md: SEO pisane od nowa pod własny tytuł Kuby (3× — #40, #43, #44).
+
+## 2026-10-31 — nowy styl opisów (po #44)
+
+- opisy.md: przebudowany. Opis pisany z perspektywy czytelnika (inżynier, EM, PM/UX, finanse/biznes): co się stało →
+  konkrety z porównaniem → co to znaczy dla czytelnika. Zastępuje regułę „kończymy na konkrecie, bez komentarza”
+  z #39–#44 – wycinane były ogólne komentarze i uwagi o braku danych, te zakazy zostają; konsekwencja dla czytelnika
+  jest teraz wymagana (na podstawie: uwagi Kuby do opisów z #44).
+- opisy.md: gołe wyniki benchmarków wyłącznie jako porównanie (skok, próg, cena na tle konkurencji); ocena skali
+  w newsach finansowych; bez szczegółów struktury (klasy akcji); nazwisko autora tylko gdy podnosi wagę (zwykle rola + firma).
+- opisy.md: prostszy język, krótkie zdania, bez niejasnych sformułowań z artykułu; anglicyzmy zostają, ale nie kilka
+  obok siebie; dozwolone jedno konkretne pytanie do czytelnika (max 2–3 na wydanie); pytanie o polski kontekst przy newsach z USA.
+- opisy.md + agent opisywacz: możliwość WebSearch po brakujący kontekst (źródło w `Uwagi`).
+- tytuly.md: w tytule firma zamiast nazwiska, gdy autor jest istotny tylko jako przedstawiciel firmy.
