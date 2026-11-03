@@ -170,3 +170,11 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
   obok siebie; dozwolone jedno konkretne pytanie do czytelnika (max 2–3 na wydanie); pytanie o polski kontekst przy newsach z USA.
 - opisy.md + agent opisywacz: możliwość WebSearch po brakujący kontekst (źródło w `Uwagi`).
 - tytuly.md: w tytule firma zamiast nazwiska, gdy autor jest istotny tylko jako przedstawiciel firmy.
+
+## 2026-11-02 — wydanie #44 (posty social, uwagi Kuby w czacie)
+
+- social.md: budowa posta pogłębionego haczyk → wstęp (o artykule, wyjaśnienie pojęć) → rozwinięcie → zakończenie;
+  pełne zdania zamiast serii krótkich „statementów”; bez mocnych tez; wnioski dla managerów bez pouczania;
+  nowe frazy w „Nie używać”; infografiki w nowych stylach `notatka` / `minimal` (na podstawie: uwagi Kuby do t1, t4,
+  w-e6z0d i ogólna uwaga o infografikach „wyglądają AI-owo”)
+- social-platformy.md: hashtagi domyślnie brak (było 0–3); walidator ostrzega o hashtagach

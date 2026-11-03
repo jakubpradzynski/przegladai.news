@@ -1,0 +1,33 @@
+{
+  "tematy": [
+    "t1",
+    "t4",
+    "w-e6z0d"
+  ],
+  "szczegoly": [
+    {
+      "id": "t1",
+      "z_propozycji_ai": true,
+      "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+      "tytul_newsa": "Czy LeetCode umarł i co zamiast niego?",
+      "kat": "Rekrutacja z LeetCode traci sens, gdy zadanie algorytmiczne rozwiązuje model – jak w takim razie sprawdzać inżynierów? Kuba rekrutuje i uczył na UMK, ma tu własne zdanie.",
+      "wskazowka": ""
+    },
+    {
+      "id": "t4",
+      "z_propozycji_ai": true,
+      "link": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+      "tytul_newsa": "Głód wygrywa ze stażem – rady dla młodych inżynierów w erze AI",
+      "kat": "Felix Rieseberg: głód wygrywa ze stażem – juniorzy widzą tarcia, których weterani nie zauważają. Co to znaczy dla onboardingu i dawania juniorom przestrzeni.",
+      "wskazowka": ""
+    },
+    {
+      "id": "w-e6z0d",
+      "z_propozycji_ai": false,
+      "kat": "",
+      "wskazowka": "",
+      "link": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "tytul_newsa": "Anthropic składa w SEC prospekt IPO – przychody 16,3 mld dolarów w pół roku"
+    }
+  ]
+}

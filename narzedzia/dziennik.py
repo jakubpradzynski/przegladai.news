@@ -8,6 +8,9 @@ Polecenia:
     selekcja        praca/wersja_ai.csv  vs praca/final_prepared_data.csv
     wydanie         praca/wydanie_ai.json vs praca/wydanie.json (tytul, wstep, SEO, slug, okladka)
     substack <nr>   wydania/NNN/ vs post opublikowany na Substacku (poprawki zrobione juz w edytorze)
+    social <nr>     posty social: wydania/NNN/social/ tematy_ai.json vs wybor.json, posty_ai.json vs posty.json,
+                    uwagi Kuby i wyniki po publikacji (etap "social"); mozna uruchamiac wielokrotnie -
+                    zapisuje tylko to, czego jeszcze nie bylo w dzienniku
     nowe            wypisuje wpisy jeszcze nieprzetworzone przez ucz-sie
     oznacz          oznacza wszystkie wpisy jako przetworzone
     nowe --strony   to samo dla decyzji z przegladu stron (dziennik/strony_wybory.jsonl):
@@ -229,6 +232,77 @@ def cmd_substack(args):
     repo.write_json(os.path.join(folder, 'meta.json'), meta)
 
 
+def cmd_social(args):
+    import hashlib
+    folder = os.path.join(repo.issue_dir(args.numer), 'social')
+    topics_ai = repo.read_json(os.path.join(folder, 'tematy_ai.json'), {}) or {}
+    choice = repo.read_json(os.path.join(folder, 'wybor.json'), {}) or {}
+    ai = repo.read_json(os.path.join(folder, 'posty_ai.json'))
+    final_path = os.path.join(folder, 'posty.json')
+    final = repo.read_json(final_path)
+    if not ai or not final:
+        raise SystemExit('Brak %s/posty_ai.json albo posty.json' % folder)
+    issue = int(args.numer)
+    logged = set(final.get('_dziennik', []))
+    entries = []
+
+    def add(key, entry):
+        key = key + ':' + hashlib.md5(json.dumps(entry, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:8]
+        if key not in logged:
+            logged.add(key)
+            entries.append(dict({'wydanie': issue, 'etap': 'social'}, **entry))
+
+    chosen = set(choice.get('tematy', []))
+    for t in topics_ai.get('tematy', []):
+        picked = t['id'] in chosen
+        add('temat:' + t['id'], {'rodzaj': 'temat_wybrany' if picked else 'temat_pominiety',
+                                 'link': t.get('link'), 'kontekst': {'tytul': t.get('tytul_newsa'), 'kat_ai': t.get('kat'),
+                                                                     'polecany_ai': t.get('rekomendowany', False)}})
+    for t in choice.get('szczegoly', []):
+        if not t.get('z_propozycji_ai'):
+            add('temat:' + t['id'], {'rodzaj': 'temat_dodany', 'link': t.get('link'),
+                                     'kuba': {'tytul': t.get('tytul_newsa'), 'kat': t.get('kat')}})
+        elif t.get('wskazowka'):
+            add('wskazowka:' + t['id'], {'rodzaj': 'wskazowka', 'link': t.get('link'), 'kuba': t['wskazowka'],
+                                         'kontekst': {'tytul': t.get('tytul_newsa')}})
+
+    final_posts = {post['id']: post for post in final.get('posty', [])}
+    for post_ai in ai.get('posty', []):
+        post = final_posts.get(post_ai['id'])
+        if post is None:
+            continue
+        ctx = {'post': post['id'], 'rodzaj_posta': post.get('rodzaj'), 'temat': post.get('temat'),
+               'kat': post.get('kat')}
+        if final.get('status') == 'gotowe':
+            add('decyzja:' + post['id'], {'rodzaj': 'post_publikowany' if post.get('publikuj', True) else 'post_odrzucony',
+                                          'kontekst': dict(ctx, linkedin_ai=post_ai.get('linkedin', '')[:400])})
+        img_ai, img = post_ai.get('obrazek') or {}, post.get('obrazek') or {}
+        pairs = [('linkedin', post_ai.get('linkedin'), post.get('linkedin')),
+                 ('komentarz', post_ai.get('komentarz'), post.get('komentarz')),
+                 ('x', '\n---\n'.join(post_ai.get('x', [])), '\n---\n'.join(post.get('x', []))),
+                 ('obrazek', img_ai.get('wybrany'), img.get('wybrany')),
+                 ('obrazek_prompt', img_ai.get('prompt'), img.get('prompt')),
+                 ('infografika', json.dumps(img_ai.get('infografika'), ensure_ascii=False, sort_keys=True),
+                  json.dumps(img.get('infografika'), ensure_ascii=False, sort_keys=True)),
+                 ('termin', post_ai.get('termin'), post.get('termin'))]
+        for field, before, after in pairs:
+            if norm(before) != norm(after):
+                add('zmiana:%s:%s' % (post['id'], field), {'rodzaj': 'zmiana', 'pole': field, 'ai': before or '',
+                                                            'kuba': after or '', 'kontekst': ctx})
+        if (post.get('uwaga_kuby') or '').strip():
+            add('uwaga:' + post['id'], {'rodzaj': 'uwaga', 'kuba': post['uwaga_kuby'].strip(), 'kontekst': ctx})
+        result = {k: v for k, v in (post.get('wynik') or {}).items() if v not in ('', None)}
+        if result:
+            add('wynik:' + post['id'], {'rodzaj': 'wynik', 'kuba': result,
+                                        'kontekst': dict(ctx, termin=post.get('termin'),
+                                                         obrazek=img.get('wybrany'),
+                                                         haczyk=(post.get('linkedin') or '').strip().split('\n')[0][:200])})
+
+    print('Dopisano do dziennika: %d wpisow' % append(entries))
+    final['_dziennik'] = sorted(logged)
+    repo.write_json(final_path, final)
+
+
 def read_all(path=None):
     path = path or repo.DZIENNIK
     if not os.path.exists(path):
@@ -282,6 +356,9 @@ def main():
     p = sub.add_parser('substack')
     p.add_argument('numer', type=int)
     p.set_defaults(func=cmd_substack)
+    p = sub.add_parser('social')
+    p.add_argument('numer', type=int)
+    p.set_defaults(func=cmd_social)
     for name, func in (('nowe', cmd_nowe), ('oznacz', cmd_oznacz)):
         p = sub.add_parser(name)
         p.add_argument('--strony', action='store_true', help='decyzje z przegladu stron')

@@ -27,6 +27,12 @@ Przeczytaj wszystkie pliki `redakcja/*.md` i pogrupuj nowe wpisy:
 | `odrzucony_top`, `wybrany_z_rezerwy`, `dodany_przez_kube`, `usuniety_w_substacku`, `podsumowanie`, `zmiana` pola `kolejnosc` | `priorytety.md` (kolejność: sekcja „Kolejność w wydaniu”) |
 | `zmiana` pola `wstep` | `wstep.md` |
 | `zmiana` pól `opis_seo`, `slug`, `okladka` | `seo.md` |
+| etap `social`: `zmiana` pola `linkedin`, `uwaga`, `wskazowka`, `post_odrzucony` / `post_publikowany` | `social.md` (styl, struktura, ton, forma zwracania się) |
+| etap `social`: `temat_wybrany`, `temat_pominiety`, `temat_dodany` | `social.md` (sekcja „Wybór tematów”) |
+| etap `social`: `zmiana` pól `obrazek`, `obrazek_prompt`, `infografika` | `social.md` (sekcja „Obrazki”) |
+| etap `social`: `zmiana` pól `x`, `komentarz`, `termin` | `social-platformy.md` |
+| etap `social`: nawiązania osobiste dodane / usunięte przez Kubę (widać w `zmiana` pola `linkedin`) | `o-mnie.md` (sekcja „Czego się nauczyliśmy o nawiązaniach”) |
+| etap `social`: `wynik` | `social-platformy.md` / `social.md` — patrz niżej |
 
 Dla każdej zmiany tekstu porównaj wersję AI z wersją Kuby i nazwij, **co dokładnie** zmienił
 (skrócił? usunął frazę? zmienił szyk? dodał kontekst? zmienił ton? poprawił fakt?). Zmiany czysto
@@ -47,6 +53,12 @@ Zasady:
   i tematy Kuba odrzuca mimo wysokiej oceny, a jakie bierze z rezerwy. Gdy wzorzec jest wyraźny,
   popraw rubrykę ocen albo proporcje sekcji.
 - Przy konflikcie z istniejącą regułą wygrywa nowsza — zmień starą i odnotuj to w kroku 4.
+- **Posty social** — `uwaga` (komentarz Kuby w narzędziu, w tym `[prośba] …` z prośby o poprawkę) mówi wprost,
+  czego chce: jedna wyraźna uwaga może od razu zostać regułą. `post_odrzucony` przy wielu wygenerowanych postach
+  to słaby sygnał (Kuba wybiera 2–3 z 5–6) — wnioski dopiero z powtórek (typ tematu, kąt, haczyk).
+  Formę zwracania się do czytelnika (Ty / Wy / bezosobowo) ustal z poprawek `linkedin` i zapisz w „Ton i język”.
+- **Wyniki postów** (`wynik`) — porównuj dopiero przy 6+ postach z wynikami (różne wydania); szukaj różnic
+  w haczyku, temacie, obrazku i dniu. Wnioski zapisuj ostrożnie („na N postach…”), nigdy z jednego posta.
 
 ## Krok 4 — Dziennik zmian reguł
 

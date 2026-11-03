@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>PrzeglądAI – posty social</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --line:#e3e5e8; --text:#1d1f23; --muted:#6b7079; --accent:#5b2a86;
+          --soft:#f3edf9; --ok:#1e8e3e; --warn:#b06000; --bad:#c5221f; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); }
+  header { position:sticky; top:0; z-index:5; background:var(--card); border-bottom:1px solid var(--line); padding:10px 20px; display:flex; gap:14px; align-items:center; flex-wrap:wrap; }
+  header h1 { font-size:16px; margin:0; }
+  .muted { color:var(--muted); } .spacer { flex:1; }
+  button { font:inherit; cursor:pointer; border-radius:6px; }
+  .btn { border:1px solid var(--line); background:#fff; padding:6px 12px; }
+  .btn.small { padding:2px 8px; font-size:12px; }
+  .btn.primary { background:var(--accent); color:#fff; border-color:var(--accent); font-weight:600; }
+  .btn:disabled { opacity:.5; cursor:default; }
+  main { max-width:1280px; margin:0 auto; padding:14px 20px 120px; }
+  .chip { font-size:12px; padding:3px 10px; border-radius:12px; background:#eef0f3; }
+  .chip.busy { background:#fff4e0; color:var(--warn); } .chip.ok { background:#e6f4ea; color:var(--ok); }
+  details.block { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-bottom:14px; }
+  details.block > summary { cursor:pointer; font-weight:600; font-size:15px; }
+  .topic { border:1px solid var(--line); border-left:4px solid transparent; border-radius:8px; padding:9px 12px; margin:6px 0; display:grid; grid-template-columns:24px 1fr; gap:8px; }
+  .topic.on { border-left-color:var(--accent); background:#faf7fd; }
+  .topic.done { opacity:.55; }
+  .topic .kat { margin-top:3px; } .topic .why { font-size:12px; color:var(--accent); margin-top:3px; }
+  .topic textarea, .topic input[type=text] { width:100%; margin-top:6px; font:inherit; font-size:13px; padding:5px 7px; border:1px solid var(--line); border-radius:6px; }
+  .badge { display:inline-block; font-size:11px; padding:1px 7px; border-radius:10px; background:var(--soft); color:var(--accent); margin-left:6px; }
+  .post { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin:16px 0; }
+  .post.off { opacity:.6; }
+  .post-head { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:10px; }
+  .post-head h2 { margin:0; font-size:16px; }
+  .cols { display:grid; grid-template-columns: 1.25fr 1fr; gap:18px; }
+  @media (max-width: 1000px) { .cols { grid-template-columns: 1fr; } }
+  label.f { display:block; font-size:12px; font-weight:600; color:var(--muted); margin:10px 0 3px; text-transform:uppercase; letter-spacing:.03em; }
+  textarea.t { width:100%; font:14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; padding:8px 10px; border:1px solid var(--line); border-radius:6px; resize:vertical; }
+  textarea.t:focus { outline:2px solid #c9b3e0; border-color:#c9b3e0; }
+  .count { font-size:12px; color:var(--muted); display:flex; gap:10px; justify-content:space-between; align-items:center; margin-top:2px; }
+  .count .over { color:var(--bad); font-weight:600; }
+  .fold { font-size:13px; background:var(--soft); border-radius:6px; padding:6px 9px; margin-top:6px; white-space:pre-wrap; }
+  .fold b { color:var(--accent); font-weight:600; }
+  .tweet { position:relative; margin-bottom:6px; }
+  .tweet .n { position:absolute; left:-22px; top:8px; font-size:11px; color:var(--muted); }
+  .img-row { display:flex; gap:14px; align-items:flex-start; flex-wrap:wrap; }
+  .img-row img { width:200px; border:1px solid var(--line); border-radius:6px; }
+  .radios label { margin-right:12px; cursor:pointer; }
+  .problems { margin:8px 0 0; padding:0; list-style:none; font-size:13px; }
+  .problems .bad { color:var(--bad); } .problems .warn { color:var(--warn); }
+  .row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .row input[type=text] { flex:1; min-width:240px; font:inherit; padding:5px 8px; border:1px solid var(--line); border-radius:6px; }
+  .results { display:grid; grid-template-columns:repeat(5, 1fr); gap:8px; }
+  .results input { width:100%; font:inherit; padding:4px 6px; border:1px solid var(--line); border-radius:6px; }
+  .banner { background:#fff4e0; border:1px solid #f1d3a3; border-radius:8px; padding:10px 14px; margin-bottom:12px; }
+  .toast { position:fixed; bottom:18px; right:18px; background:#1d1f23; color:#fff; padding:8px 14px; border-radius:6px; opacity:0; transition:opacity .2s; }
+  .toast.show { opacity:.92; }
+  .empty { text-align:center; padding:40px; color:var(--muted); }
+  details.facts { font-size:13px; margin-top:6px; background:#fafbfc; border:1px solid var(--line); border-radius:6px; padding:6px 10px; }
+  details.facts summary { cursor:pointer; } details.facts ul { margin:6px 0 2px; padding-left:18px; }
+  details.facts li { margin:5px 0; } .f-ok b { color:var(--ok); } .f-bad b, b.bad { color:var(--bad); } .f-warn b { color:var(--warn); }
+  details.facts .quote { color:var(--muted); font-style:italic; font-size:12px; } details.facts .note { color:var(--warn); font-size:12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">Posty social</h1>
+  <a id="issue-link" class="muted" target="_blank"></a>
+  <span class="spacer"></span>
+  <span id="save-state" class="muted"></span>
+  <span id="tasks" class="chip"></span>
+  <button class="btn primary" id="finish">Zakończ i ucz</button>
+</header>
+<main>
+  <div id="banner"></div>
+  <details class="block" id="topics-block" open>
+    <summary>Tematy postów <span class="muted" id="topics-summary"></span></summary>
+    <p class="muted">Zaznacz dowolną liczbę tematów — do każdego Claude napisze post i wątek na X. Potem wybierzesz, które publikujesz.
+      Wskazówka jest opcjonalna (np. „od strony managera”, „nawiąż do JUG-a”).</p>
+    <div id="ai-topics"></div>
+    <details style="margin-top:10px"><summary class="muted">Inne newsy z wydania</summary><div id="other-news"></div></details>
+    <div class="row" style="margin-top:10px"><button class="btn primary" id="generate">Generuj posty</button><span class="muted" id="gen-info"></span></div>
+  </details>
+  <div id="posts"></div>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+let S = null;            // stan z serwera
+let model = null;        // posty.json (lokalna kopia)
+let version = 0, dirty = false, saving = false, pendingRemote = false, saveTimer = null;
+const picked = {};       // id tematu -> {wskazowka, kat, link, tytul}
+
+const $ = s => document.querySelector(s);
+const esc = s => (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1600); }
+
+// --- dlugosc na X (to samo co narzedzia/social/posty.py) ---
+const LIGHT = [[0,4351],[8192,8205],[8208,8223],[8242,8247]];
+function xLength(text) {
+  let total = 0;
+  for (const part of text.split(/(https?:\/\/\S+)/)) {
+    if (/^https?:\/\/\S+$/.test(part)) { total += 23; continue; }
+    let prevZwj = false;
+    for (const ch of part) {
+      const cp = ch.codePointAt(0);
+      if (cp === 0xFE0F || cp === 0x200D || (cp >= 0x1F3FB && cp <= 0x1F3FF)) { prevZwj = cp === 0x200D; continue; }
+      if (prevZwj) { prevZwj = false; continue; }
+      total += LIGHT.some(([a,b]) => cp >= a && cp <= b) ? 1 : 2;
+    }
+  }
+  return total;
+}
+
+async function api(path, body) {
+  const r = await fetch(path, body === undefined ? {} : {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)});
+  return {status: r.status, data: await r.json()};
+}
+
+async function load(first) {
+  const {data} = await api('/api/stan');
+  S = data;
+  renderHeader();
+  if (first) renderTopics();
+  const remoteChanged = data.wersja !== version;
+  if (first || (remoteChanged && !dirty && !saving)) {
+    const active = document.activeElement;
+    if (!first && active && active.closest && active.closest('#posts') && /TEXTAREA|INPUT/.test(active.tagName)) {
+      pendingRemote = true;   // nie przerywamy pisania - wczytamy po wyjsciu z pola
+    } else {
+      model = data.posty; version = data.wersja; pendingRemote = false;
+      if (!first && remoteChanged) toast('Wczytano zmiany od Claude');
+      renderTopics(); renderPosts();
+    }
+  } else if (remoteChanged && dirty) {
+    $('#banner').innerHTML = '<div class="banner">Claude zmienił posty, a Ty masz niezapisane zmiany. ' +
+      '<button class="btn small" onclick="forceSave()">Zostaw moje</button> <button class="btn small" onclick="reloadRemote()">Wczytaj wersję Claude</button></div>';
+  }
+  renderChecks(data.kontrola || {});
+}
+
+function renderHeader() {
+  const m = S.meta || {};
+  $('#title').textContent = 'Posty social — wydanie #' + S.numer;
+  const a = $('#issue-link'); a.textContent = m.tytul || ''; a.href = S.url_wydania;
+  const n = (S.zadania || []).length;
+  const t = $('#tasks');
+  t.className = 'chip ' + (n ? 'busy' : (model && model.status === 'gotowe' ? 'ok' : ''));
+  t.textContent = n ? 'Claude pracuje… (' + n + ' w kolejce)' : (model && model.status === 'gotowe' ? 'zakończone' : 'Claude czeka');
+}
+
+// ---------- tematy ----------
+function generatedIds() { return new Set(((S.wybor || {}).tematy) || []); }
+
+function renderTopics() {
+  const done = generatedIds();
+  const ai = (S.tematy_ai || {}).tematy || [];
+  const aiLinks = new Set(ai.map(t => t.link));
+  if (!Object.keys(picked).length && !done.size) ai.filter(t => t.rekomendowany).forEach(t => picked[t.id] = {id:t.id, wskazowka:''});
+  $('#ai-topics').innerHTML = ai.length ? ai.map(t => topicHtml(t.id, t.tytul_newsa, t.link, t.kat, t.dlaczego, t.rekomendowany, done.has(t.id), false)).join('')
+    : '<div class="empty">Brak propozycji AI (tematy_ai.json) — Claude jeszcze je przygotowuje.</div>';
+  $('#other-news').innerHTML = (S.newsy || []).filter(n => !aiLinks.has(n.link)).map(n =>
+    topicHtml(ownId(n.link), n.tytul, n.link, '', '', false, done.has(ownId(n.link)), true)).join('');
+  document.querySelectorAll('.topic input[type=checkbox]').forEach(cb => cb.onchange = () => {
+    const id = cb.dataset.id;
+    if (cb.checked) picked[id] = {id, wskazowka: ''}; else delete picked[id];
+    cb.closest('.topic').classList.toggle('on', cb.checked); updateGen();
+  });
+  document.querySelectorAll('.topic textarea, .topic input[type=text]').forEach(el => el.oninput = () => {
+    const id = el.dataset.id; picked[id] = picked[id] || {id};
+    picked[id][el.dataset.f] = el.value;
+    const cb = document.querySelector('.topic input[type=checkbox][data-id="' + id + '"]');
+    if (cb && !cb.checked) { cb.checked = true; cb.closest('.topic').classList.add('on'); updateGen(); }
+  });
+  $('#topics-summary').textContent = done.size ? '— wygenerowane: ' + done.size : '';
+  $('#topics-block').open = !(model && model.posty && model.posty.length > 1);
+  updateGen();
+}
+
+function ownId(link) { return 'w-' + hash(link); }   // id newsa spoza propozycji AI - ten sam przy renderze i wysylce
+function hash(s) { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h.toString(36).slice(0, 5); }
+
+function topicHtml(id, title, link, kat, why, rec, done, own) {
+  const on = !!picked[id] && !done;
+  return `<div class="topic ${on ? 'on' : ''} ${done ? 'done' : ''}">
+    <input type="checkbox" data-id="${id}" ${on ? 'checked' : ''} ${done ? 'disabled checked' : ''}>
+    <div><a class="title" href="${esc(link)}" target="_blank"><b>${esc(title)}</b></a>${rec ? '<span class="badge">polecany</span>' : ''}${done ? '<span class="badge">wygenerowany</span>' : ''}
+      ${kat ? `<div class="kat">${esc(kat)}</div>` : ''}${why ? `<div class="why">${esc(why)}</div>` : ''}
+      ${done ? '' : own ? `<input type="text" data-id="${id}" data-f="kat" placeholder="Twój kąt (opcjonalnie)" value="${esc((picked[id] || {}).kat)}">`
+                        : `<textarea rows="1" data-id="${id}" data-f="wskazowka" placeholder="Wskazówka dla Claude (opcjonalnie)">${esc((picked[id] || {}).wskazowka)}</textarea>`}
+    </div></div>`;
+}
+
+function updateGen() {
+  const n = Object.keys(picked).filter(id => !generatedIds().has(id)).length;
+  $('#generate').textContent = 'Generuj posty (' + n + ')';
+  $('#generate').disabled = !n;
+}
+
+$('#generate').onclick = async () => {
+  const done = generatedIds();
+  const ai = Object.fromEntries(((S.tematy_ai || {}).tematy || []).map(t => [t.id, t]));
+  const others = Object.fromEntries((S.newsy || []).map(n => [ownId(n.link), n]));
+  const tematy = Object.values(picked).filter(p => !done.has(p.id)).map(p => {
+    const t = ai[p.id] || others[p.id] || {};
+    return {id: p.id, z_propozycji_ai: !!ai[p.id], link: t.link, tytul_newsa: t.tytul_newsa || t.tytul,
+            kat: p.kat || t.kat || '', wskazowka: p.wskazowka || ''};
+  });
+  await api('/api/wybor', {tematy});
+  toast('Wysłano do Claude: ' + tematy.length);
+  $('#gen-info').textContent = 'Claude pisze posty — pojawią się poniżej same.';
+  load(false).then(renderTopics);
+};
+
+// ---------- posty ----------
+function get(post, path) { return path.split('.').reduce((o, k) => (o || {})[k], post); }
+function set(post, path, value) {
+  const keys = path.split('.'); let o = post;
+  keys.slice(0, -1).forEach((k, i) => { if (o[k] === undefined) o[k] = /^\d+$/.test(keys[i + 1]) ? [] : {}; o = o[k]; });
+  o[keys.at(-1)] = value;
+}
+
+function renderPosts() {
+  const posts = (model || {}).posty || [];
+  if (!posts.length) { $('#posts').innerHTML = '<div class="empty">Jeszcze nie ma postów. Zaznacz tematy i kliknij „Generuj posty”.</div>'; return; }
+  $('#posts').innerHTML = posts.map(postHtml).join('');
+  document.querySelectorAll('#posts [data-f]').forEach(el => {
+    const ev = el.type === 'checkbox' || el.type === 'radio' ? 'change' : 'input';
+    el.addEventListener(ev, () => onEdit(el));
+    el.addEventListener('blur', () => { if (pendingRemote && !dirty) load(false); });
+  });
+  document.querySelectorAll('textarea.t').forEach(autoGrow);
+  renderChecks(S.kontrola || {});
+}
+
+function postHtml(p) {
+  const img = p.obrazek || {}, w = p.wynik || {};
+  const title = p.rodzaj === 'glowny' ? 'Post główny — wstęp wydania' : esc(p.temat || p.tytul_newsa || p.id);
+  const termin = (p.termin || '').replace(' ', 'T');
+  const src = img.wybrany === 'okladka' ? '/okladka.jpeg' : (img.plik && img.plik.startsWith('obrazki/') ? '/' + img.plik + '?v=' + Date.now() : '');
+  return `<section class="post ${p.publikuj === false ? 'off' : ''}" id="post-${p.id}">
+    <div class="post-head">
+      <label><input type="checkbox" data-id="${p.id}" data-f="publikuj" ${p.publikuj !== false ? 'checked' : ''}> publikuję</label>
+      <h2>${title}</h2>
+      ${p.link_newsa ? `<a class="muted" href="${esc(p.link_newsa)}" target="_blank">źródło</a>` : ''}
+      <span class="spacer"></span>
+      <input type="datetime-local" data-id="${p.id}" data-f="termin" value="${esc(termin)}">
+    </div>
+    ${p.kat ? `<div class="muted" style="margin-top:-6px">Kąt: ${esc(p.kat)}</div>` : ''}
+    ${factsHtml(p)}
+    <div class="cols">
+      <div>
+        <label class="f">LinkedIn · Facebook · Substack Notes</label>
+        <textarea class="t" rows="10" data-id="${p.id}" data-f="linkedin">${esc(p.linkedin)}</textarea>
+        <div class="count"><span data-count="li-${p.id}"></span><button class="btn small" onclick="copy('${p.id}','linkedin')">Kopiuj</button></div>
+        <div class="fold" data-fold="${p.id}"></div>
+        <label class="f">Pierwszy komentarz (link)</label>
+        <textarea class="t" rows="2" data-id="${p.id}" data-f="komentarz">${esc(p.komentarz)}</textarea>
+        <div class="count"><span></span><button class="btn small" onclick="copy('${p.id}','komentarz')">Kopiuj</button></div>
+      </div>
+      <div>
+        <label class="f">X — wątek</label>
+        <div style="padding-left:22px">
+        ${(p.x || []).map((t, i) => `<div class="tweet"><span class="n">${i + 1}/</span>
+          <textarea class="t" rows="3" data-id="${p.id}" data-f="x.${i}">${esc(t)}</textarea>
+          <div class="count"><span data-count="x-${p.id}-${i}"></span><span>
+            <button class="btn small" onclick="copy('${p.id}','x.${i}')">Kopiuj</button>
+            <button class="btn small" onclick="tweetOp('${p.id}',${i},'del')">Usuń</button></span></div></div>`).join('')}
+        <button class="btn small" onclick="tweetOp('${p.id}',${(p.x || []).length},'add')">+ wpis</button>
+        </div>
+      </div>
+    </div>
+    <label class="f">Obrazek</label>
+    <div class="radios">
+      ${['okladka', 'infografika', 'prompt', 'brak'].map(r => `<label><input type="radio" name="img-${p.id}" value="${r}" data-id="${p.id}" data-f="obrazek.wybrany" ${img.wybrany === r ? 'checked' : ''}> ${
+        {okladka:'okładka wydania', infografika:'infografika', prompt:'zdjęcie/grafika z promptu', brak:'bez obrazka'}[r]}</label>`).join('')}
+    </div>
+    <div class="img-row" style="margin-top:8px">
+      ${src ? `<img src="${src}">` : ''}
+      ${img.infografika ? `<div style="flex:1;min-width:280px"><div class="muted" style="font-size:12px">Infografika (JSON — rodzaje: liczba, porownanie, lista, cytat)</div>
+        <textarea class="t" rows="6" id="spec-${p.id}" style="font-family:ui-monospace,monospace;font-size:12px">${esc(JSON.stringify(img.infografika, null, 1))}</textarea>
+        <div class="row" style="margin-top:4px"><label class="muted" style="font-size:12px">Styl:
+          <select onchange="setStyle('${p.id}', this.value)">${['notatka', 'minimal'].map(s => `<option ${(img.infografika.styl || 'notatka') === s ? 'selected' : ''}>${s}</option>`).join('')}</select></label>
+          <button class="btn small" onclick="redraw('${p.id}')">Przerysuj</button></div></div>` : ''}
+      ${img.prompt !== undefined ? `<div style="flex:1;min-width:280px"><div class="muted" style="font-size:12px">Prompt do generatora obrazów</div>
+        <textarea class="t" rows="5" data-id="${p.id}" data-f="obrazek.prompt">${esc(img.prompt)}</textarea>
+        <button class="btn small" onclick="copy('${p.id}','obrazek.prompt')">Kopiuj prompt</button></div>` : ''}
+    </div>
+    <label class="f">Uwaga dla AI — co Ci się podoba / nie podoba (uczy reguły)</label>
+    <textarea class="t" rows="1" data-id="${p.id}" data-f="uwaga_kuby" placeholder="np. za dużo emoji, haczyk świetny, nie pisz o golfie przy tym temacie">${esc(p.uwaga_kuby)}</textarea>
+    <div class="row" style="margin-top:8px">
+      <input type="text" id="ask-${p.id}" placeholder="Poproś Claude o poprawkę tego posta (np. krótszy, mocniejszy haczyk, więcej o zespole)">
+      <button class="btn" onclick="ask('${p.id}')">Wyślij do Claude</button>
+    </div>
+    <details style="margin-top:10px"><summary class="muted">Wyniki po publikacji (opcjonalnie — też uczą)</summary>
+      <div class="results" style="margin-top:6px">
+      ${[['li_wyswietlenia','LinkedIn wyświetlenia'],['li_reakcje','LinkedIn reakcje'],['li_komentarze','LinkedIn komentarze'],['x_wyswietlenia','X wyświetlenia'],['nowi_subskrybenci','nowi subskrybenci']].map(([k, l]) =>
+        `<label class="muted" style="font-size:12px">${l}<input type="number" data-id="${p.id}" data-f="wynik.${k}" value="${esc(w[k])}"></label>`).join('')}
+      </div>
+      <textarea class="t" rows="1" style="margin-top:6px" data-id="${p.id}" data-f="wynik.notatka" placeholder="notatka (np. dużo komentarzy od deweloperów)">${esc(w.notatka)}</textarea>
+    </details>
+    <ul class="problems" data-problems="${p.id}"></ul>
+  </section>`;
+}
+
+function factsHtml(p) {
+  const v = p.weryfikacja;
+  if (!v || !(v.fakty || []).length) {
+    return (p.fakty || []).length ? `<details class="facts"><summary>Fakty (${p.fakty.length}) — jeszcze niezweryfikowane</summary><ul>${p.fakty.map(f => '<li>' + esc(typeof f === 'string' ? f : f.fakt) + '</li>').join('')}</ul></details>` : '';
+  }
+  const icon = {potwierdzony: '✓', 'rozbieżność': '✗', niepotwierdzony: '?'};
+  const bad = v.fakty.filter(f => f.status !== 'potwierdzony').length;
+  return `<details class="facts" ${bad ? 'open' : ''}><summary>Weryfikacja faktów: ${v.fakty.length - bad}/${v.fakty.length} potwierdzone${bad ? ` — <b class="bad">${bad} do sprawdzenia</b>` : ''} <span class="muted">(${esc(v.data || '')})</span></summary>
+    <ul>${v.fakty.map(f => `<li class="f-${f.status === 'potwierdzony' ? 'ok' : f.status === 'rozbieżność' ? 'bad' : 'warn'}">
+      <b>${icon[f.status] || '?'}</b> ${esc(f.fakt)}
+      ${f.link ? ` — <a href="${esc(f.link)}" target="_blank">pokaż w źródle</a>` : ''}
+      ${f.cytat ? `<div class="quote">„${esc(f.cytat)}”</div>` : ''}
+      ${f.uwaga ? `<div class="note">${esc(f.uwaga)}</div>` : ''}</li>`).join('')}</ul></details>`;
+}
+
+function updateCounts(id) {
+  const p = model.posty.find(x => x.id === id); if (!p) return;
+  const li = p.linkedin || '';
+  const first = li.trim().split(/\n\s*\n/)[0] || '';
+  const c = document.querySelector(`[data-count="li-${id}"]`);
+  if (c) c.innerHTML = `${li.length}/3000 znaków · haczyk: <span class="${first.length > 210 ? 'over' : ''}">${first.length}/210</span>`;
+  const f = document.querySelector(`[data-fold="${id}"]`);
+  if (f) f.innerHTML = '<b>Widoczne przed „…więcej”:</b> ' + esc(li.slice(0, 210)) + (li.length > 210 ? '…' : '');
+  (p.x || []).forEach((t, i) => {
+    const el = document.querySelector(`[data-count="x-${id}-${i}"]`);
+    const n = xLength(t || '');
+    if (el) el.innerHTML = `<span class="${n > 280 ? 'over' : ''}">${n}/280</span>`;
+  });
+}
+
+function renderChecks(k) {
+  if (!model) return;
+  for (const p of model.posty || []) {
+    updateCounts(p.id);
+    const ul = document.querySelector(`[data-problems="${p.id}"]`);
+    const c = k[p.id]; if (!ul || !c) continue;
+    ul.innerHTML = c.bledy.map(e => `<li class="bad">✗ ${esc(e)}</li>`).join('') + c.uwagi.map(e => `<li class="warn">! ${esc(e)}</li>`).join('');
+  }
+}
+
+function autoGrow(el) { el.style.height = 'auto'; el.style.height = (el.scrollHeight + 4) + 'px'; }
+
+function onEdit(el) {
+  const p = model.posty.find(x => x.id === el.dataset.id);
+  let v = el.type === 'checkbox' ? el.checked : el.value;
+  if (el.dataset.f === 'termin') v = v.replace('T', ' ');
+  if (el.type === 'number') v = v === '' ? '' : Number(v);
+  set(p, el.dataset.f, v);
+  if (el.tagName === 'TEXTAREA') autoGrow(el);
+  if (el.dataset.f === 'publikuj') el.closest('.post').classList.toggle('off', !v);
+  updateCounts(p.id);
+  scheduleSave();
+  if (el.dataset.f === 'obrazek.wybrany') { save().then(renderPosts); }
+}
+
+function scheduleSave() {
+  dirty = true; $('#save-state').textContent = 'zapisuję…';
+  clearTimeout(saveTimer); saveTimer = setTimeout(save, 800);
+}
+
+async function save(force) {
+  clearTimeout(saveTimer);
+  if (!dirty && !force) return;
+  saving = true;
+  const {status, data} = await api('/api/posty', {wersja: force ? 0 : version, posty: model});
+  saving = false;
+  if (status === 409) { $('#save-state').textContent = 'konflikt'; load(false); return; }
+  version = data.wersja; dirty = false; $('#save-state').textContent = 'zapisane';
+  S.kontrola = data.kontrola; renderChecks(data.kontrola);
+}
+async function forceSave() { $('#banner').innerHTML = ''; await save(true); }
+async function reloadRemote() { $('#banner').innerHTML = ''; dirty = false; version = -1; await load(false); }
+
+function tweetOp(id, i, op) {
+  const p = model.posty.find(x => x.id === id); p.x = p.x || [];
+  if (op === 'add') p.x.push(''); else p.x.splice(i, 1);
+  renderPosts(); scheduleSave();
+}
+
+async function copy(id, path) {
+  const p = model.posty.find(x => x.id === id);
+  await navigator.clipboard.writeText(get(p, path) || ''); toast('Skopiowano');
+}
+
+async function redraw(id) {
+  let spec;
+  try { spec = JSON.parse(document.getElementById('spec-' + id).value); } catch (e) { return toast('Niepoprawny JSON'); }
+  await save();
+  const {status, data} = await api('/api/grafika', {id, spec});
+  if (status !== 200) return toast(data.blad || 'Błąd');
+  version = -1; await load(false); toast('Przerysowano');
+}
+
+function setStyle(id, styl) {
+  const el = document.getElementById('spec-' + id);
+  try { const spec = JSON.parse(el.value); spec.styl = styl; el.value = JSON.stringify(spec, null, 1); redraw(id); }
+  catch (e) { toast('Niepoprawny JSON'); }
+}
+
+async function ask(id) {
+  const el = document.getElementById('ask-' + id);
+  if (!el.value.trim()) return;
+  await save();
+  await api('/api/prosba', {id, prosba: el.value.trim()});
+  el.value = ''; toast('Wysłano do Claude'); load(false);
+}
+
+$('#finish').onclick = async () => {
+  await save();
+  const posts = (model || {}).posty || [];
+  const n = posts.filter(p => p.publikuj !== false).length;
+  if (!posts.length) return toast('Brak postów');
+  await api('/api/gotowe', {});
+  toast('Zakończone (' + n + ' do publikacji) — Claude zapisze poprawki i nauczy się z nich');
+  load(false);
+};
+
+load(true);
+setInterval(() => load(false), 3000);
+</script>
+</body>
+</html>

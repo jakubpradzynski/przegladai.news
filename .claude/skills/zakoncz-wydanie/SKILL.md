@@ -54,3 +54,4 @@ gh pr create --title "Issue #<nr>" --body "/schedule $(python3 -c "import sys; s
 ```
 
 Podaj Kubie link do PR-a i krótkie podsumowanie z kroku 3: jakie reguły się zmieniły.
+Na koniec zaproponuj kolejny etap: `/posty-social <nr>` — posty na LinkedIn / FB / Substack Notes / X do tego wydania.

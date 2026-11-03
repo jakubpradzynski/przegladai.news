@@ -1,0 +1,179 @@
+{
+  "numer": 44,
+  "tytul": "Wydanie #44: Prospekt IPO Anthropic, odejścia w Microsoft i 95 mld dolarów Mety na AI",
+  "posty": [
+    {
+      "id": "glowny",
+      "rodzaj": "glowny",
+      "temat": "Wstęp wydania",
+      "kat": "Rachunek za wyścig AI: przychody Anthropic, odejścia w Microsoft i emisja akcji Mety w jednym tygodniu.",
+      "linkedin": "Anthropic w pół roku: 16,3 mld dolarów przychodu. Microsoft w tym samym tygodniu proponuje dobrowolne odejście 60 tysiącom pracowników.\n\nTo dwie strony tego samego rachunku za AI.\n\nProspekt IPO Anthropic pokazuje skalę: klientów płacących ponad 100 tys. dolarów rocznie jest już ponad 11,9 tysiąca. Rok wcześniej było ich 950.\n\nMicrosoft wydaje na infrastrukturę AI ponad 50 mld dolarów kwartalnie i szuka oszczędności gdzie indziej. Także w ludziach.\n\nA Meta planuje zebrać nawet 95 mld dolarów z emisji akcji. Rachunek za wyścig AI robi się naprawdę duży.\n\nZ lżejszych rzeczy: GPT-6.1 Terra ma API o połowę tańsze od poprzednika ;)\n\nTo i ~25 innych newsów z tygodnia zebrałem w 44. wydaniu PrzeglądAI, link w komentarzu.\n\nJeśli pracujesz w dużej firmie: czujesz już, że budżet na AI zaczyna konkurować z budżetem na zespół?",
+      "komentarz": "Wydanie #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai",
+      "x": [
+        "Anthropic w pół roku: 16,3 mld $ przychodu. Microsoft w tym samym tygodniu proponuje dobrowolne odejście ~60 tys. pracowników. Dwie strony tego samego rachunku za AI.",
+        "Z prospektu IPO Anthropic: klientów płacących ponad 100 tys. $ rocznie jest już ponad 11,9 tys. Rok wcześniej – 950.",
+        "Microsoft wydaje na infrastrukturę AI ponad 50 mld $ kwartalnie. Meta chce zebrać nawet 95 mld $ z emisji akcji. Rachunek za wyścig AI rośnie szybciej niż przychody.",
+        "To i ~25 innych newsów z tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai"
+      ],
+      "obrazek": {
+        "wybrany": "okladka",
+        "infografika": {
+          "rodzaj": "liczba",
+          "naglowek": "IPO Anthropic",
+          "liczba": "16,3 mld $",
+          "podpis": "przychodu Anthropic w pierwszym półroczu 2026 – rok wcześniej cały rok dał 4,6 mld $",
+          "zrodlo": "prospekt S-1 Anthropic"
+        },
+        "plik": "../okladka.jpeg"
+      },
+      "termin": "2026-10-30 08:30",
+      "fakty": [
+        "16,3 mld $ w H1 2026, 4,6 mld $ w 2025 – opis newsa o S-1 (dane.csv)",
+        "950 → 11,9 tys. klientów >100 tys. $ – wstęp wydania",
+        "60 tys. osób, >50 mld $ capex kwartalnie – opis newsa CNBC",
+        "95 mld $ – opis newsa The Decoder",
+        "Terra 50% taniej – opis newsa OpenAI"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t1",
+      "rodzaj": "temat",
+      "temat": "Koniec rekrutacji z LeetCode",
+      "link_newsa": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+      "tytul_newsa": "Czy LeetCode umarł i co zamiast niego?",
+      "kat": "Skoro AI pisze kod, na rozmowie trzeba sprawdzać, czy kandydat umie ocenić kod, którego nie napisał – czytanie i review zamiast algorytmów na tablicy.",
+      "linkedin": "Google daje kandydatom na juniora i mida 200–500 linii obcego kodu, 60 minut i dostęp do Gemini. Zadanie: znaleźć błędy. Żadnego odwracania drzewa binarnego na tablicy.\n\nGregor Ojstersek zebrał w swoim newsletterze głosy o końcu LeetCode. Sulman Choudhary, szef inżynierii ChatGPT w OpenAI, byłby zdziwiony, gdyby pod koniec 2026 firmy dalej robiły takie rozmowy. Felix Rieseberg z Anthropic usunął kodowanie z rozmów w swoim zespole, bo przestało cokolwiek mówić o kandydacie.\n\nBig Tech na razie zostaje przy LeetCode, bo jest obiektywny i skaluje się na tysiące aplikacji. Ale używa się go coraz rzadziej.\n\nMnie najbardziej przekonuje kierunek Google. LeetCode sprawdzał, czy umiesz napisać algorytm. Dziś ważniejsze jest, czy umiesz ocenić kod, którego nie pisałeś. A przez AI takiego kodu w każdym PR-ze jest coraz więcej.\n\nNa rozmowie najwięcej powie moment, w którym model podsuwa rozwiązanie z subtelnym błędem. Kandydat albo to wyłapie, albo wklei i pójdzie dalej. Tego nie sprawdzisz zadaniem z grafów.\n\nPodoba mi się też pomysł Ojsterseka na dwa zadania: jedno bez AI, drugie z AI. Widać, czy ktoś rozumie podstawy i czy umie pracować z narzędziem, którego i tak użyje pierwszego dnia.\n\nCiekawy komentarz pod artykułem: jeden z czytelników zamienił zadania domowe na 90 minut czytania i refaktoru kodu z AI. Kandydaci radzą sobie gorzej, niż się spodziewał.\n\nJak wygląda techniczna rozmowa w Twojej firmie: dalej algorytmy, czy już coś bliżej codziennej pracy?\n\n#Rekrutacja #EngineeringManagement",
+      "komentarz": "Pełny przegląd tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai\nŹródło: https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+      "x": [
+        "Google sprawdza juniorów i midów tak: 200–500 linii obcego kodu, 60 minut, dostęp do Gemini. Znajdź błędy. Bez algorytmów na tablicy.",
+        "Szef inżynierii ChatGPT w OpenAI byłby zdziwiony, gdyby firmy robiły rozmowy w stylu LeetCode jeszcze pod koniec 2026. Felix Rieseberg z Anthropic już usunął kodowanie z rozmów w swoim zespole.",
+        "LeetCode sprawdzał, czy umiesz napisać algorytm. Teraz ważniejsze jest, czy umiesz ocenić kod, którego nie pisałeś. Z AI takiego kodu w PR-ach jest coraz więcej.",
+        "Najlepszy test na rozmowie: model podsuwa rozwiązanie z subtelnym błędem. Kandydat albo to wyłapie, albo wklei i pójdzie dalej.",
+        "Artykuł Gregora Ojsterseka: https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative\nTen i inne newsy z tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "naglowek": "Rekrutacja w Google",
+          "liczba": "200–500 linii",
+          "podpis": "obcego kodu, 60 minut i Gemini do pomocy. Zadanie: znaleźć błędy. Tak Google sprawdza juniorów i midów.",
+          "zrodlo": "Business Insider via Engineering Leadership",
+          "numer": 44
+        },
+        "prompt": "Realistic photo, 4:5 vertical (1080x1350). A small meeting room in an ordinary software office, late morning natural light from a window. On the table: an open laptop showing blurred lines of code (unreadable), a printed page of code with a few handwritten pen circles and margin marks, two coffee mugs, a pen lying across the paper. Two chairs slightly pulled out, no people visible or only a hand holding the pen from the side, nobody looking at the camera. No readable text, no robots, no glowing elements, no holograms, no 3D render look. Muted, warm colors, shallow depth of field, shot like a casual phone photo by someone in the room.",
+        "plik": "obrazki/t1.png"
+      },
+      "termin": "2026-11-03 08:30",
+      "fakty": [
+        "200–500 linii, 60 minut, Gemini, juniorzy i mid – runda code comprehension Google (artykuł za Business Insider, opis w wydaniu)",
+        "Sulman Choudhary, szef inżynierii ChatGPT: 'I'd be surprised if, by the end of 2026, companies still use such a type of an interview' – artykuł",
+        "Felix Rieseberg (Anthropic): 'The coding interview is dead, at least for my team' / 'no longer provides signal' – wpis na X cytowany w artykule",
+        "Big Tech zostaje przy LeetCode, bo obiektywny i skalowalny; 'Leetcode is not dead, but I believe the actual usage is declining' – artykuł",
+        "Dwa zadania: jedno bez AI, drugie z AI – opcja 'hybrid' autora (artykuł, opis w wydaniu)",
+        "90 minut code comprehension + live refactor z AI zamiast take-home, kandydaci radzą sobie gorzej niż oczekiwał – komentarz czytelnika Matteo Pampany pod artykułem"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t4",
+      "rodzaj": "temat",
+      "temat": "Juniorzy, świeże oko, onboarding",
+      "link_newsa": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+      "tytul_newsa": "Głód wygrywa ze stażem – rady dla młodych inżynierów w erze AI",
+      "kat": "Świeże spojrzenie nowej osoby ma termin ważności, a to manager decyduje, czy zdąży z niego skorzystać, zanim nauczy się, „dlaczego się nie da”.",
+      "linkedin": "Felix Rieseberg chciał w Notionie powiesić w zespołach telewizory z dashboardami. Odbił się od ściany i odpuścił. Rok później nowa osoba przyszła z tym samym pomysłem. Telewizory wisiały następnego dnia.\n\nJego komentarz: „Gdzieś w ciągu tego roku sam stałem się starym wyjadaczem”.\n\nTo historia z tekstu Felixa (dziś manager w Anthropic) dla juniorów. Teza: głód wygrywa ze stażem. Skoro zbudowanie czegoś jest tanie, liczy się pomysł i to, czy ktoś w ogóle zapyta, czy „niemożliwe” jest naprawdę niemożliwe. W Anthropic dwóch stosunkowo nowych inżynierów zbudowało w weekend prototyp graficznego interfejsu do Claude Code. Pierwsza publiczna wersja wyszła po ok. 8 dniach.\n\nDla mnie to bardziej tekst dla managerów niż dla juniorów. Świeże oko nowej osoby ma termin ważności. Po kilku miesiącach już wie, „dlaczego się nie da”, i przestaje pytać. Często nauczyła się tego od nas.\n\nCo bym z tym zrobił w onboardingu:\n– poprosił nową osobę o listę rzeczy, które ją dziwią, zanim do nich przywyknie,\n– na „czemu tego nie zrobimy?” nie odpowiadał „już próbowaliśmy”, tylko „sprawdź”,\n– dał miejsce na prototyp, zamiast kazać pisać dokument do akceptacji.\n\nNie kupuję tego w całości. W Notionie tryb offline uchodził za niemożliwy. Złożoność modelu danych była prawdziwa, tylko opór szefa nie, bo nikt go nie sprawdził. Najlepiej działa para: nowa osoba pyta, a ktoś ze stażem wie, które ograniczenie jest realne.\n\nJaką „oczywistą” rzecz w Twoim zespole ostatnio podważył ktoś nowy i miał rację?\n\n#EngineeringManagement #Onboarding",
+      "komentarz": "Pełny przegląd tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai\nŹródło: https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+      "x": [
+        "Felix Rieseberg chciał w Notionie powiesić telewizory z dashboardami. Odbił się i odpuścił. Rok później nowa osoba przyszła z tym samym pomysłem – telewizory wisiały następnego dnia.\n\n„Gdzieś w ciągu tego roku sam stałem się starym wyjadaczem.”",
+        "Jego teza dla juniorów: głód wygrywa ze stażem. Budowanie jest tanie, więc liczy się pomysł i odwaga, żeby zapytać, czy „niemożliwe” jest naprawdę niemożliwe.\n\nW Anthropic dwóch nowych inżynierów zrobiło w weekend prototyp GUI do Claude Code. Publiczna wersja: ~8 dni później.",
+        "Moim zdaniem to bardziej lekcja dla managerów. Świeże oko nowej osoby ma termin ważności – po kilku miesiącach wie już, „dlaczego się nie da”. Często od nas.\n\nNa „czemu tego nie zrobimy?” lepiej odpowiedzieć „sprawdź” niż „już próbowaliśmy”.",
+        "Rady Felixa dla juniorów: poznaj cele szefa swojego szefa, wybierz jeden radykalny pomysł i pokaż działający prototyp zamiast dokumentu. Jeden, bo łatwo schować 3 świetne pomysły wśród 20 słabych.",
+        "To i ~25 innych newsów z tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "infografika": {
+          "rodzaj": "cytat",
+          "cytat": "Gdzieś w ciągu tego roku sam stałem się starym wyjadaczem.",
+          "autor": "Felix Rieseberg, Anthropic",
+          "naglowek": "Głód wygrywa ze stażem",
+          "numer": 44
+        },
+        "prompt": "Realistic photo, 4:5 vertical (1080x1350). An open-plan software office in soft morning daylight: a large flat TV freshly mounted on a white wall, its screen switched off, a small step ladder still standing next to it, a cardboard box and a coiled HDMI cable on the floor, a drill on a nearby desk. In the background, out-of-focus desks with laptops and a couple of people seen from behind, working. Natural colors, slight film grain, shot on a 35mm lens, candid documentary feel. No text, no logos, no people facing the camera, no robots, no holograms, no 3D render look.",
+        "plik": "obrazki/t4.png"
+      },
+      "termin": "2026-11-04 08:30",
+      "fakty": [
+        "Telewizory z dashboardami w Notionie: Felix odpuścił, rok później Ji Pei zapytał i TV pojawiły się następnego dnia – artykuł źródłowy",
+        "Cytat „Somewhere in that year, I had become the old-timer.” – artykuł źródłowy (tłumaczenie własne)",
+        "Prototyp GUI Claude Code w weekend, dwóch stosunkowo nowych inżynierów (Anthony Morris, Alice Zhao), publiczna wersja po ok. 8 dniach – artykuł i opis w wydaniu",
+        "Tryb offline w Notionie: złożoność modelu danych była prawdziwa, opór CEO (Ivan Zhao) nie – nikt nie sprawdził – artykuł źródłowy",
+        "„3 świetne pomysły wśród 20 słabych” – artykuł (przykład ilustracyjny autora, wpis X nr 4)",
+        "Rady: cele szefa szefa, jeden radykalny pomysł, prototyp zamiast dokumentu – artykuł i opis w wydaniu",
+        "~25 innych newsów – jak w poście głównym #44",
+        "Wątek LinkedIn nie dotyka rekrutacji/LeetCode (temat wtorkowego posta)"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "w-e6z0d",
+      "rodzaj": "temat",
+      "temat": "Prospekt Anthropic: strata i tokeny",
+      "link_newsa": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "tytul_newsa": "Anthropic składa w SEC prospekt IPO – przychody 16,3 mld dolarów w pół roku",
+      "kat": "80,7 mld straty to głównie księgowość, a prospekt pokazuje coś ważniejszego: firmy płacą za AI jak za chmurę (za zużycie), więc tak trzeba je budżetować i pilnować w zespołach.",
+      "linkedin": "Anthropic pokazał w prospekcie IPO 80,7 mld dolarów straty netto za pół roku. Brzmi jak katastrofa, a to chyba najmniej ciekawa liczba w całym dokumencie.\n\n72,4 mld z tej kwoty to zmiana wyceny not zamiennych i instrumentów pochodnych. Upraszczając: inwestorzy pożyczyli firmie pieniądze z prawem zamiany na akcje. Im wyżej rynek wycenia Anthropic, tym więcej te noty są warte, a w księgach wychodzi z tego „strata”. Sama działalność dała 693 mln dolarów straty operacyjnej.\n\nMnie bardziej zaciekawiło, za co firmy faktycznie płacą. 80% przychodu z półrocza (13,1 mld dolarów) to opłaty za zużyte tokeny. Subskrypcje to 20%.\n\nNajlepiej widać to w jednym akapicie prospektu: w dwóch tygodniach do 2 stycznia 2026 wydatki klientów spadły o ok. 20%, bo w firmach trwały świąteczne code freeze'y. Deweloperzy na urlopie, agenci też ;)\n\nDla managera to konkretna lekcja. AI w zespole to w praktyce mniej licencja na stanowisko, którą planujesz raz w roku, a bardziej rachunek za chmurę. Koszt rośnie z każdym agentem puszczonym w długą pętlę i z każdym wielkim kontekstem. Prawie połowa sprzedaży Anthropic idzie zresztą przez marketplace'y AWS, Google Cloud i Azure, więc często ląduje na tej samej fakturze co serwery.\n\nDlatego budżet na AI śledziłbym tak jak koszty chmury: per zespół i per projekt. Lepiej zobaczyć skok na dashboardzie niż usłyszeć o nim od działu finansów.\n\nJak to wygląda u Ciebie: stała licencja na osobę czy już płacicie za zużycie tokenów?",
+      "komentarz": "Pełny przegląd tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai\nŹródło: https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "x": [
+        "Anthropic w prospekcie IPO: 80,7 mld $ straty netto w pół roku. Strata operacyjna? 693 mln $. Cała reszta to głównie księgowość.",
+        "72,4 mld $ to zmiana wyceny not zamiennych na akcje. Im wyżej rynek wycenia firmę, tym więcej te noty są warte i tym większa „strata” na papierze.",
+        "Ciekawsze: 80% przychodu Anthropic (13,1 mld $ w półroczu) to opłaty za zużyte tokeny. Subskrypcje to tylko 20%.",
+        "Najlepszy detal z prospektu: w dwóch tygodniach do 2 stycznia wydatki klientów spadły o ~20%, bo firmy miały świąteczne code freeze'y. Deweloperzy na urlopie, agenci też.",
+        "Wniosek dla managerów: AI w zespole to bardziej rachunek za chmurę niż licencja na stanowisko. Liczcie koszty per zespół i projekt, zanim zrobią to za Was finanse.",
+        "Więcej newsów z tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "porownanie",
+          "naglowek": "Prospekt IPO Anthropic",
+          "tytul": "Strata w I połowie 2026",
+          "jednostka": " mld $",
+          "elementy": [
+            {
+              "etykieta": "Strata netto",
+              "wartosc": 80.7
+            },
+            {
+              "etykieta": "Strata operacyjna",
+              "wartosc": 0.7
+            }
+          ],
+          "zrodlo": "prospekt S-1 Anthropic",
+          "numer": 44
+        },
+        "prompt": "Realistic photo, close-up of a desk in a small office at dusk: an open laptop with a blurred cloud billing dashboard, a printed invoice with a few lines highlighted in yellow marker, a calculator and a half-empty coffee mug. Natural window light mixed with a warm desk lamp, shallow depth of field, slightly messy, everyday feel. No people facing the camera, no readable text, no robots, no glowing brains, no holograms, not a 3D render. Vertical 4:5, 1080x1350.",
+        "plik": "obrazki/w-e6z0d.png"
+      },
+      "termin": "2026-11-05 08:30",
+      "fakty": [
+        "80,7 mld $ straty netto (80 748 mln), 72,4 mld $ zmiana wartości godziwej not zamiennych, derywatów i SAFE (72 388 mln), 693 mln $ straty operacyjnej – S-1, tabela Summary Consolidated Financial Data, I poł. 2026; przypis: zmiana 'primarily driven by an increase in the fair value of our outstanding convertible promissory notes resulting from an increase in our enterprise valuation'",
+        "Noty zamieniają się na akcje tuż przed zakończeniem oferty – S-1: 'the Convertible Notes Conversion will occur immediately prior to the completion of this offering'",
+        "80% przychodu = consumption-based, 13,1 mld $; subskrypcje 3,2 mld $ (20%) – S-1, MD&A, I poł. 2026; przychód rozpoznawany 'based on the quantity of tokens consumed'",
+        "Spadek wydatków klientów o ok. 20% w dwóch tygodniach do 2.01.2026 vs dwa tygodnie do 19.12.2025, przez code freeze'y w święta – S-1, sekcja Customer Usage Patterns",
+        "48% przychodu przez marketplace'y CSP (AWS, GCP, Azure) w I poł. 2026 – S-1, Risk Factors ('Prawie połowa' w poście)"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    }
+  ]
+}
