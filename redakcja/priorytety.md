@@ -38,7 +38,8 @@ który chce w 15 minut wiedzieć, co ważnego wydarzyło się w AI w tym tygodni
 Podwyższają ocenę: konkretne liczby, oryginalne dane, case study z firmy, autor-praktyk,
 temat, który czytelnik może od razu zastosować, związek z Polską, świeżość (ostatnie 7 dni).
 Obniżają: clickbait, brak konkretów, temat opisany już w poprzednich wydaniach,
-tekst sponsorowany, paywall bez widocznej treści.
+tekst sponsorowany, paywall bez widocznej treści, wąsko techniczne poradniki o ewaluacji, RAG i inferencji
+bez nowego wątku, zwłaszcza od mało znanych autorów (odrzucone w #43 i #45 mimo oceny 7 — dawać 5–6).
 
 ## Rekomendacja
 
@@ -59,7 +60,7 @@ preferowane źródło pierwotne (blog firmy) albo tekst z lepszą analizą. Drug
 
 Alfabet polski (ł po l itd.). W obrębie każdej grupy Kuba może zmienić kolejność ręcznie w admince (↑/↓);
 takie zmiany trafiają do dziennika (`pole: kolejnosc`) — gdy się powtarzają, ta sekcja powinna opisać
-zasadę. Powtarza się (#40, #42, #44): **największa premiera pierwsza** w grupie „Nowości” (w #44: Gemini 4 Carbon, Genie 4,
+zasadę. Powtarza się (#40, #42, #44, #45): **największa premiera pierwsza** w grupie „Nowości” (w #45: Images 2.6 przed Siri AI i Netflixem; w #44: Gemini 4 Carbon, Genie 4,
 GPT-6.1 Terra, potem Canva Craft i 1Password zamiast alfabetu; Google obok Google), a także **newsy powiązane tematem lub firmą stoją obok siebie** zamiast alfabetu
 (ElevenLabs ×2, Meta ×3, w #42 Character.AI i Getty — upadłości obok siebie, bank z Mythosem tuż przed nimi),
 a w grupie „Nowości / Polska” polski news z ogłoszeniem (Politechnika Lubelska) idzie przed polskim wdrożeniem.
@@ -91,3 +92,6 @@ mimo niskiej)_
 - #44: z rezerwy wzięty wpis Decodera o emisji akcji Mety (7) zamiast CNBC (7, TOP) — Kuba uzupełnił go o zdania z CNBC (Nvidia, AMD i Broadcom po 5 mld $, Muse i centra danych). Przy duplikacie zostaje wersja z bogatszą strukturą faktów (drugi raz po Saunie w #43), a brakujące konkrety dopisujemy z drugiego źródła zamiast wybierać jedno.
 - #44: odrzucone z TOP: Recursive Flint (7, otwarty model do kodowania lokalnego), Harness AI Budgets (5, ogłoszenie vendora), arXiv o pamięci agentów (6, mała próba), CNBC o emisji Mety (7, duplikat) i Nvidia–Meta 3 mld $ (7, blisko tematu emisji). Drobne modele otwarte i ogłoszenia vendorów zostają poza wydaniem, gdy jest 5+ większych premier (Carbon, Genie 4, Terra, Canva Craft).
 - #44: 25 z 30 rekomendacji TOP zostało w wydaniu, 1 dobrano z rezerwy (z 36 kandydatów) — najlepsza zgodność od #39; w wydaniu 26 newsów (mniej niż 30, bo kandydatów było tylko 36). Wydanie ma tylko 1 polski news, więc bez „polskiego” tytułu.
+- #45: z rezerwy wzięte: Hutchison „Zestaw testów jest nowym code review” (5, tekst sprzed 7 tygodni), wyrok za oszustwo streamingowe z muzyką AI (5) i profil badacza dźwięku z MIT (4) — czwarty raz z rzędu (#40–#45) wchodzą lekkie ciekawostki i „oddech”, nawet z oceną 4; tekst o testach jako nowym code review pasuje do wątku e2e z tytułu wydania.
+- #45: odrzucone z TOP: ewaluacja agenta kodującego (7), agent wyszukujący wiele razy vs jedno wyszukiwanie (7), rady dla młodych inżynierów ze Stripe (6) i zapowiedź mObywatela (5, zapowiedź bez konkretów). Trzeci raz (po #43) poza wydaniem zostają wąsko techniczne poradniki z liczbami od mało znanych autorów — oceniać o 1–2 punkty niżej, chyba że wnoszą nowy wątek.
+- #45: 26 z 30 rekomendacji TOP zostało w wydaniu, 3 dobrano z rezerwy (z 35 kandydatów); w wydaniu 29 newsów.

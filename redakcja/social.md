@@ -60,6 +60,11 @@ AI proponuje 6–8 tematów z wydania, w tym 3 polecane. Polecamy te, przy któr
 - polska scena AI, gdy jest temat z konkretem,
 - rzeczy zaskakujące lub zabawne, które dają dobrą historię.
 
+W #44 Kuba wybrał 2 z 3 poleconych (LeetCode, „Głód wygrywa ze stażem”), pominął polecane „996” i „AI w SDLC: harness”
+oraz cztery niepolecane (Uber, Microsoft, banki vs agenci, Netflix) i **sam dodał news z prospektu IPO Anthropic**
+(z którego powstały dwa posty: wstęp i „strata i tokeny”). Wniosek: duże liczby z dokumentów finansowych,
+które da się przełożyć na budżetowanie AI w zespołach, są dla niego tematem pierwszego wyboru.
+
 Rzadziej polecamy: czyste premiery modeli z samymi benchmarkami (chyba że jest kąt kosztowy
 albo praktyczny), newsy prawne bez wpływu na codzienną pracę, temat, który był postem w poprzednim tygodniu.
 Każda propozycja ma: **kąt** (jedno zdanie: co Kuba ma do powiedzenia) i **dlaczego** (czemu to zadziała u odbiorców).

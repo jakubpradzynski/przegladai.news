@@ -75,3 +75,4 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #42 Tagi (Politechnika Lubelska, XYZ): „Polska” → „Nowości i ogłoszenia, Polska” — otwarcie centrum dla przemysłu to ogłoszenie.
 - #43 Tagi (Cyberly, XYZ): „Nowości i ogłoszenia, Polska” → „Polska” — przejęcie polskiego startupu przez zagraniczną firmę (bez premiery produktu) to biznes/Polska, nie ogłoszenie produktu.
 - #43 Tagi (Vals AI, sześciu agentów o zwrot za bilet): „Bliżej technologii” → bez tagu — eksperyment z agentami opowiedziany jak ciekawostka, a nie materiał inżynierski (1×).
+- #45 Tagi (43 darmowe skille do budowania produktu z agentami, Product Compass): „Nowości i ogłoszenia” → „Bliżej technologii” — zestaw narzędzi dla agentów od autora newslettera to materiał dla ludzi z branży, a nie oficjalna premiera firmy (1×).

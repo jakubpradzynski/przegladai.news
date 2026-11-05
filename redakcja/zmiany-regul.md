@@ -178,3 +178,20 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
   nowe frazy w „Nie używać”; infografiki w nowych stylach `notatka` / `minimal` (na podstawie: uwagi Kuby do t1, t4,
   w-e6z0d i ogólna uwaga o infografikach „wyglądają AI-owo”)
 - social-platformy.md: hashtagi domyślnie brak (było 0–3); walidator ostrzega o hashtagach
+
+## 2026-11-05 — przegląd stron przed wydaniem #45
+
+- preselekcja.md: duplikat agregatora zawsze „może” z podpowiedzią „duplikat: …”, „nie” tylko przy tym samym linku (drugi raz — Future Tools „Images 2.6”, wcześniej Model Garden #43) (na podstawie: nie→wziety 1×).
+- preselekcja.md: The Decoder bez dużego ruchu biznesowego czołowej firmy = „nie” (wzięty 1 z 41, 40 „może” pominiętych); inwestycja w firmę spoza czołówki (Aramco–Humain) = „może”, nie „tak” (na podstawie: tak→pominiety 1×, 40× może→pominiety).
+- preselekcja.md: OpenAI News poza premierami = „nie” (16/16 „może” pominiętych); The Information domyślnie „nie” (0/144); polskie wdrożenia, inwestycje i incydenty z AI oraz teksty twórców o budowie z AI zostają „może” (na podstawie: 7× może→wziety).
+- preselekcja.md: tabela skuteczności stron odświeżona, przykłady decyzji (15 najnowszych).
+- social.md: sekcja „Wybór tematów” — wnioski z wyboru tematów w #44 (własny temat z prospektu IPO, 2 z 3 poleconych).
+
+## 2026-11-05 — wydanie #45
+
+- opisy.md: nowa reguła w „Długość i budowa” — zdanie z perspektywą czytelnika zostaje, gdy daje konkretne działanie lub wniosek; puste rady, „to znak, że…” i oceny wydarzenia wycinamy lub kończymy opis na fakcie; 3 nowe przykłady (najstarsze usunięte) (na podstawie: 4× wycięte zakończenia — Reddit, Pierre, Proton, PayU; żargon i poboczne detale w Netflix, ChatGPT search, MIT; nazwisko zamiast „Autor” w Hacker Tube).
+- tagi.md: przykład — zestaw narzędzi dla agentów (Product Compass) to „Bliżej technologii”, nie „Nowości” (1×).
+- tytuly.md: szósty z rzędu własny tytuł wydania — tym razem „inżynierski” (e2e, HackerTube, Lovable); jedna z propozycji ma być pod wątek inżynierski.
+- priorytety.md: obniżenie oceny wąsko technicznych poradników o ewaluacji, RAG i inferencji (3× poza wydaniem: #43, #45); lekkie ciekawostki z oceną 4–5 wchodzą z rezerwy po raz szósty; kolejność „Nowości” — największa premiera pierwsza (4× — #40, #42, #44, #45).
+- wstep.md, seo.md: przykłady — wstęp i SEO przygotowane pod własny tytuł przyjęte bez zmian.
+

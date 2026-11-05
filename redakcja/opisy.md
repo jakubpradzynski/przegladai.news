@@ -31,6 +31,11 @@ pytanie **„co to znaczy dla mnie?”**, a nie tylko „co się stało?”. Sam
   treści materiału i konkretne – nie ogólna recenzja tekstu („ciekawy, klarowny”) i nie „to ważny krok”.
   To zmiana wobec reguły z #39–#44, gdzie Kuba wycinał końcowe komentarze: wycinane były komentarze ogólne,
   oceny tekstu i drobne uwagi o braku danych, a nie konsekwencje dla czytelnika, o które teraz prosi.
+- **Zdanie z perspektywą czytelnika zostaje, gdy daje konkretne działanie albo wniosek** (`npx e2e init`, przejrzenie
+  App Intents, „dopasuj autonomię do możliwości modelu”). Puste rady („warto sprawdzić, jak bardzo zależą od niego
+  odwiedziny”), przejścia „to znak, że…” i ocena wydarzenia („ten przypadek pokazuje, jak szybko kończy się to buntem”)
+  Kuba w #45 skracał albo wycinał; wniosek może być samodzielnym zdaniem bez „Jeśli … to”. Gdy wniosek byłby ogólny,
+  opis kończy się na fakcie.
 - Opis zachęca do kliknięcia przez to, co obiecuje w środku („pokazuje, jak…”, „wylicza 11 pomysłów, wśród
   nich…”), bez wprost napisanego „warto przeczytać”.
 - Osobny fakt doklejony po przecinku rozbijamy na dwa zdania. Krótsze zdania, ten sam komplet faktów.
@@ -136,9 +141,6 @@ Pełniejsza lista wzorców AI: skill `humanizer-pl`.
 
 _(uzupełnia `ucz-sie` na podstawie dziennika)_
 
-- #41 Opis (Nolla Derm, Bloomberry, TikTok): usunięte „Informacje pochodzą ze strony producenta, bez niezależnej weryfikacji skuteczności.”, „Dane pochodzą ze śladów technicznych…, więc to estymacja” i „Komunikat jest typowo marketingowy…” — wiarygodność źródła nie należy do opisu.
-- #41 Opis (Claude w Google Workspace, 706 → 416 znaków): usunięte trzy zdania o trybach zatwierdzania, Compliance API i instalacji z Marketplace — opis zostaje przy tym, co Claude robi w Dokumentach, Arkuszach i Prezentacjach.
-- #42 Opis (Fowler, harnessy): usunięte „Słusznie zaznacza też ograniczenia: jeden serwis i małe próbki.” — zastrzeżenie na końcu (jak #39), opis kończy się wnioskiem autora.
 - #42 Opis (Pragmatic Engineer, sciencesays, ElevenLabs Brand Kit): usunięte „oraz o nowych otwartych modelach z UE i USA”, „Praca ukazała się w Journal of the Academy of Marketing Science.”, „bez podania terminów” — poboczne wątki, miejsce publikacji i brak terminu zapowiedzi.
 - #42 Opis (Gemini w Workspace, Scion): „…miesięcznie, a wersja konsumencka pojawi się później.” → „…miesięcznie. Wersja konsumencka pojawi się później.”; „Migracja zajęła pięć miesięcy, a Scion nie jest…” → dwa zdania — osobny fakt po przecinku rozbijamy.
 - #42 Opis (bug hunter Paolo Perrone): usunięte „i wyścigi, które przeżywają poprawkę” z listy czterech sposobów — techniczny detal spoza głównej tezy.
@@ -148,3 +150,6 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #43 Opis (Claude Duet, PLLuM, PKO): „jak planowanie spotkań, jak i…” → „czynności oraz planowanie spotkań…”; „sprawdzić i zatwierdzić sędzia” → „zostać sprawdzony i zatwierdzony przez sędziego”; „i” → „oraz” — drobne korekty składni, 1×.
 - #43 Opis (Claude Code code review): „Past incydenty… testy sprawdzające reviewera” → „Przeszłe incydenty… testy sprawdzane” — literówka i uproszczenie (fakt, nie styl).
 - #44 Opis (Genie 4, S-1 Anthropic, Microsoft, FDE OpenAI, YC RFS, Latent Space, Verna): znów wycięte ostatnie zdania — ograniczenia modelu („Szczegóły obrazu… dryfują, a całość znakuje SynthID”), brak ceny akcji i Long-Term Benefit Trust, termin decyzji pracowników („odejdą 31 grudnia”), projekt głosowy dla telekomu, „Sam przyznaje, że to model myślowy”, zdanie o tym, że start-upy nie muszą pracować nad pomysłami YC — opis kończy się na ostatnim konkrecie głównej tezy (9 wpisów w jednym wydaniu; reguła ostatniego zdania działa, wciąż do pilnowania).
+- #45 Opis (Reddit, Pierre, Proton, PayU): usunięte „Jeśli twoje serwisy żyją z ruchu z Google, warto sprawdzić, jak bardzo zależą od niego odwiedziny.”; „Jeśli używasz agentów kodujących, to znak, że wąskim gardłem…” → „Wąskim gardłem…”; „Jeśli mierzysz zespół wykorzystaniem AI… pokazuje, jak szybko kończy się to buntem.” → „Kolejny przykład jak presja na użycie AI może odbić się rykoszetem.”; „To przejście od testów w laboratorium do realnych płatności.” — ogólne rady i oceny zamiast konkretu (4 wpisy).
+- #45 Opis (Netflix, ChatGPT search, MIT): usunięte „czyli „kuchnię testową” do nowych sposobów szukania…” → „czyli nowy sposób szukania filmów”; „powiedział na kolacji w Nowym Jorku” → „powiedział”; „OpenAI zamierza też połączyć tryby Chat i Work.”; „Badacz uważa, że maszyny muszą uczyć się słuchania z danych…” — żargon ze źródła, detal okoliczności i poboczny wątek.
+- #45 Opis (Hacker Tube, Generatywni, DeepSeek): „Autor zbudował…” → „Karpathy zbudował…” (nazwisko, gdy podnosi wagę); „Zespół Generatywnych pokazuje… Zaczyna” → „Generatywni pokazują… Zaczynają” (kanał jako podmiot); „niesprawdzony podgląd” → „niesprawdzony preview” — anglicyzm zostaje, gdy tak się mówi w branży.
