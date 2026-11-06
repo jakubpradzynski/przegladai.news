@@ -1,0 +1,602 @@
+{
+  "numer": 44,
+  "tytul": "Wydanie #44: Prospekt IPO Anthropic, odejścia w Microsoft i 95 mld dolarów Mety na AI",
+  "status": "gotowe",
+  "posty": [
+    {
+      "id": "glowny",
+      "rodzaj": "glowny",
+      "temat": "Wstęp wydania",
+      "kat": "Rachunek za wyścig AI: przychody Anthropic, odejścia w Microsoft i emisja akcji Mety w jednym tygodniu.",
+      "linkedin": "W jednym tygodniu pojawiły się trzy newsy, które dobrze pokazują, ile kosztuje wyścig AI i kto już na nim zarabia.\n\nAnthropic złożył prospekt przed wejściem na giełdę i po raz pierwszy pokazał pełne liczby. W pierwszym półroczu 2026 roku miał 16,3 mld dolarów przychodu, a klientów płacących mu ponad 100 tys. dolarów rocznie jest już ponad 11,9 tysiąca. Rok wcześniej było ich niewiele ponad 950.\n\nW tym samym tygodniu Microsoft zaproponował dobrowolne odejście około 60 tysiącom pracowników. Tylko w trzecim kwartale jego wydatki inwestycyjne, głównie na centra danych pod AI, miały przekroczyć 50 mld dolarów, więc oszczędności firma szuka w innych miejscach.\n\nMeta z kolei planuje zebrać nawet 95 mld dolarów z emisji akcji, żeby sfinansować rozbudowę swojej infrastruktury AI. Rachunek za ten wyścig robi się naprawdę duży.\n\nZ lżejszych rzeczy: OpenAI wypuściło GPT-6.1 Terra, którego API jest o połowę tańsze od poprzednika ;)\n\nTe i ponad 20 innych newsów z tygodnia zebrałem w 44. wydaniu PrzeglądAI, link w komentarzu.\n\nCiekawi mnie, czy w Twojej firmie też widać, że budżet na AI zaczyna konkurować z budżetem na zespół?",
+      "komentarz": "Wydanie #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai",
+      "x": [
+        "W jednym tygodniu trzy newsy, które dobrze pokazują, ile kosztuje wyścig AI i kto już na nim zarabia 👇",
+        "Anthropic w prospekcie przed IPO: 16,3 mld $ przychodu w pierwszym półroczu 2026 i ponad 11,9 tys. klientów płacących ponad 100 tys. $ rocznie.",
+        "Microsoft proponuje dobrowolne odejście ok. 60 tys. pracowników. Tylko w III kwartale jego wydatki inwestycyjne, głównie na centra danych pod AI, miały przekroczyć 50 mld $. Meta planuje zebrać nawet 95 mld $ z emisji akcji.",
+        "Te i ponad 20 innych newsów z tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai"
+      ],
+      "obrazek": {
+        "wybrany": "okladka",
+        "infografika": {
+          "rodzaj": "liczba",
+          "naglowek": "IPO Anthropic",
+          "liczba": "16,3 mld $",
+          "podpis": "przychodu Anthropic w pierwszym półroczu 2026 – rok wcześniej cały rok dał 4,6 mld $",
+          "zrodlo": "prospekt S-1 Anthropic"
+        },
+        "plik": "../okladka.jpeg"
+      },
+      "termin": "2026-10-30 08:30",
+      "fakty": [
+        "16,3 mld $ w H1 2026, 4,6 mld $ w 2025 – opis newsa o S-1 (dane.csv)",
+        "950 → 11,9 tys. klientów >100 tys. $ – wstęp wydania",
+        "60 tys. osób, >50 mld $ capex kwartalnie – opis newsa CNBC",
+        "95 mld $ – opis newsa The Decoder",
+        "Terra 50% taniej – opis newsa OpenAI"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[czat] Uwagi ogólne dotyczą wszystkich tekstów: mniej krótkich statementów (np. „To dwie strony tego samego rachunku za AI.”), bez hashtagów.\n[prośba] przepisane według uwag z czatu (pełne zdania, bez statementów); usunięte „Rok wcześniej było ich 950” do czasu weryfikacji.\n[weryfikacja] Microsoft: „ponad 50 mld $ kwartalnie na AI” → prognoza capex za III kwartał (CNBC); „~25 innych” → „ponad 20 innych”; przywrócone 950 klientów (stan na 30.09.2025).",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "glowny",
+        "data": "2026-11-02 12:00",
+        "fakty": [
+          {
+            "fakt": "Microsoft wydaje na infrastrukturę AI ponad 50 mld dolarów kwartalnie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html",
+            "link": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html#:~:text=Capital%20expenditures%20for%20the%20September%20quarter%20should%20exceed",
+            "cytat": "Capital expenditures for the September quarter should exceed $50 billion, Microsoft said in July.",
+            "uwaga": "Poprawione w poście po weryfikacji. CNBC mówi o prognozie całych wydatków inwestycyjnych (capex) za jeden kwartał (wrześniowy), wobec 34,9 mld $ rok wcześniej — nie o stałym poziomie „kwartalnie” i nie wyłącznie o infrastrukturze AI (artykuł łączy je z budową centrów danych pod AI). Bezpieczniej: „Tylko w trzecim kwartale wydatki inwestycyjne Microsoftu, głównie na centra danych pod AI, miały przekroczyć 50 mld dolarów” (X: „bo w samym III kwartale capex, głównie na centra danych AI, miał przekroczyć 50 mld $”)."
+          },
+          {
+            "fakt": "Te i ~25 innych newsów z tygodnia w 44. wydaniu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "wydania/044/dane.csv",
+            "link": "",
+            "cytat": "",
+            "uwaga": "Poprawione w poście po weryfikacji. W wydaniu #44 jest 26 newsów łącznie; poza 4 wymienionymi w poście zostaje 22. „~25 innych” lekko zawyża — lepiej „ponad 20 innych newsów” albo „Te i 22 inne newsy”."
+          },
+          {
+            "fakt": "Anthropic złożył prospekt (S-1) przed wejściem na giełdę",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.digitalhealthnews.com/anthropic-files-for-ipo-plans-nasdaq-listing-under-ant",
+            "link": "https://www.digitalhealthnews.com/anthropic-files-for-ipo-plans-nasdaq-listing-under-ant#:~:text=has%20filed%20a%20registration%20statement%20with",
+            "cytat": "has filed a registration statement with the U.S. Securities and Exchange Commission (SEC)",
+            "uwaga": "Źródło pierwotne (sec.gov) zbyt duże do pobrania przez WebFetch; potwierdzone w relacji Digital Health News i wynikach wyszukiwania (S-1 z 26.10.2026, Nasdaq, ticker ANT)."
+          },
+          {
+            "fakt": "16,3 mld dolarów przychodu w pierwszym półroczu 2026",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.digitalhealthnews.com/anthropic-files-for-ipo-plans-nasdaq-listing-under-ant",
+            "link": "https://www.digitalhealthnews.com/anthropic-files-for-ipo-plans-nasdaq-listing-under-ant#:~:text=The%20company%20reported%20%2416.3%20billion%20in%20revenue",
+            "cytat": "The company reported $16.3 billion in revenue for the first half of 2026, up 1,300% from $1.2 billion",
+            "uwaga": "Dokładnie 16 286 mln $ za sześć miesięcy do 30.06.2026 (wg relacji z S-1). Sprawdzone w mediach, sec.gov niedostępne dla WebFetch (rozmiar)."
+          },
+          {
+            "fakt": "Cały 2025 rok dał Anthropic 4,6 mld $ przychodu",
+            "gdzie": "infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.digitalhealthnews.com/anthropic-files-for-ipo-plans-nasdaq-listing-under-ant",
+            "link": "https://www.digitalhealthnews.com/anthropic-files-for-ipo-plans-nasdaq-listing-under-ant#:~:text=full-year%20revenue%20increased%20to",
+            "cytat": "The filing shows that Anthropic's full-year revenue increased to $4.6 billion in 2025, compared with $386 million in 2024.",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Ponad 11,9 tys. klientów płaci Anthropic ponad 100 tys. dolarów rocznie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.thestack.technology/big-customers-spurred-anthropics-growth-can-they-keep-it-going/",
+            "link": "https://www.thestack.technology/big-customers-spurred-anthropics-growth-can-they-keep-it-going/#:~:text=included%20more%20than%2011%2C900%20customers",
+            "cytat": "Its customer base as of September 30, 2026 included more than 11,900 customers that generate $100,000 or more in revenue",
+            "uwaga": "Stan na 30.09.2026 (przychód z ostatnich 12 miesięcy ≥100 tys. $), nie na koniec półrocza — w poście nie ma daty, więc OK."
+          },
+          {
+            "fakt": "Microsoft zaproponował dobrowolne odejście około 60 tysiącom pracowników",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html",
+            "link": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html#:~:text=Around%2060%2C000%20people%20are%20eligible",
+            "cytat": "Around 60,000 people are eligible, according to a person familiar with the matter.",
+            "uwaga": "60 tys. to liczba uprawnionych do oferty (wg anonimowego źródła), nie liczba odchodzących — sformułowanie „zaproponował … około 60 tysiącom” jest poprawne."
+          },
+          {
+            "fakt": "Microsoft szuka oszczędności, bo budowa infrastruktury AI jest kosztowna (związek przyczynowy)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html",
+            "link": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html#:~:text=as%20it%20strives%20to%20balance%20a%20costly",
+            "cytat": "as it strives to balance a costly artificial intelligence infrastructure build-out with capital efficiency",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Meta planuje zebrać nawet 95 mld dolarów z emisji akcji na rozbudowę infrastruktury AI",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://the-decoder.com/meta-plans-up-to-95-billion-in-stock-sales-to-fund-its-ai-buildout/",
+            "link": "https://the-decoder.com/meta-plans-up-to-95-billion-in-stock-sales-to-fund-its-ai-buildout/#:~:text=the%20company%20plans%20to%20sell%20up%20to",
+            "cytat": "According to The Information, the company plans to sell up to $95 billion in shares.",
+            "uwaga": "The Decoder powołuje się na The Information (doniesienia, nie komunikat Mety)."
+          },
+          {
+            "fakt": "OpenAI wypuściło GPT-6.1 Terra, którego API jest o połowę tańsze od poprzednika",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.vktr.com/ai-platforms/openais-cheapest-path-to-flagship-performance-is-gpt61-terra/",
+            "link": "https://www.vktr.com/ai-platforms/openais-cheapest-path-to-flagship-performance-is-gpt61-terra/#:~:text=standard%20API%20prices%20are%2050%25%20lower",
+            "cytat": "GPT-6.1 Terra’s standard API prices are 50% lower than GPT-5.6 Terra and GPT-6.1 Sol.",
+            "uwaga": "openai.com zwraca 403 dla WebFetch; potwierdzone w VKTR. Wg Apidog 50% dotyczy ceny wejścia, wyjście jest tańsze o ok. 58% — „o połowę tańsze” jest OK."
+          },
+          {
+            "fakt": "Liczba klientów płacących ponad 100 tys. $ rocznie wzrosła w rok z 950 do ponad 11,9 tysiąca",
+            "gdzie": "wstęp wydania (nie w poście)",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.thestack.technology/big-customers-spurred-anthropics-growth-can-they-keep-it-going/",
+            "link": "https://www.thestack.technology/big-customers-spurred-anthropics-growth-can-they-keep-it-going/#:~:text=up%20from%20950%20as%20of%20the",
+            "cytat": "up from 950 as of the same period last year",
+            "uwaga": "950 (dokładnie „ponad 950”) to stan na 30.09.2025, a 11,9 tys. — na 30.09.2026; „w rok” się zgadza. Uwaga: to dane na koniec III kwartału, nie za pierwsze półrocze, z którego jest 16,3 mld $ — zdanie we wstępie łączy dwa różne okresy, ale nie jest błędne. Ściślej: „liczba klientów płacących ponad 100 tysięcy rocznie wzrosła od września 2025 z ponad 950 do ponad 11,9 tysiąca”."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t1",
+      "rodzaj": "temat",
+      "temat": "Koniec rekrutacji z LeetCode",
+      "link_newsa": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+      "tytul_newsa": "Czy LeetCode umarł i co zamiast niego?",
+      "kat": "AI przeniosło dużą część pracy z pisania kodu na czytanie, więc rekrutacja powinna sprawdzać rozumienie i ocenę cudzego kodu, a nie algorytmy na tablicy.",
+      "linkedin": "Google testuje w części zespołów nową rundę rozmowy dla juniorów i midów: 200–500 linii cudzego kodu i godzina na znalezienie w nim błędów. W trakcie można korzystać z Gemini.\n\nTen przykład pochodzi z tekstu Gregora Ojsterseka (newsletter Engineering Leadership) o tym, jak rekrutować programistów, skoro coraz więcej kodu pisze AI. Punktem wyjścia jest LeetCode, czyli platforma z zadaniami algorytmicznymi, na której przez lata ćwiczyło się przed rozmowami w Big Techu.\n\nSulman Choudhary, szef inżynierii ChatGPT w OpenAI, byłby zdziwiony, gdyby pod koniec 2026 roku firmy dalej prowadziły takie rozmowy, a Felix Rieseberg z Anthropic usunął zadania z kodowania z rozmów w swoim zespole, bo przestały cokolwiek mówić o kandydacie. Big Tech na razie zostaje przy LeetCode, bo łatwo go ocenić i skalować, ale według autora korzysta się z niego coraz rzadziej.\n\nJako alternatywy artykuł podaje review kodu z ukrytymi błędami i pair programming z AI. Sam autor proponuje dwa zadania: jedno bez AI, żeby sprawdzić podstawy, i drugie z AI, żeby zobaczyć, jak kandydat weryfikuje to, co podsuwa mu model.\n\nMnie najbardziej przekonuje kierunek, który testuje Google. AI przeniosło dużą część pracy z pisania kodu na czytanie, więc umiejętność zrozumienia cudzego kodu i wyłapania w nim błędów staje się kluczowa. Dla managera ważne jest też to, że taka rozmowa sprawdza pracę, którą nowa osoba będzie robić od pierwszego dnia.\n\nJak wygląda rozmowa techniczna w Twojej firmie? Dalej są algorytmy, czy już coś bliższego codziennej pracy?",
+      "komentarz": "Pełny przegląd tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai\nŹródło: https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+      "x": [
+        "Google testuje w części zespołów rundę dla juniorów i midów: 200–500 linii cudzego kodu i godzina na znalezienie błędów i omówienie, co by poprawić. Można przy tym korzystać z Gemini.",
+        "LeetCode to platforma z zadaniami algorytmicznymi, na której latami ćwiczyło się przed rozmowami w Big Techu. Szef inżynierii ChatGPT w OpenAI byłby zdziwiony, gdyby firmy robiły takie rozmowy jeszcze pod koniec 2026.",
+        "Jako alternatywy artykuł podaje review kodu z ukrytymi błędami i pair programming z AI. Gregor Ojstersek proponuje też dwa zadania: jedno bez AI na podstawy, drugie z AI na to, jak kandydat sprawdza wynik modelu.",
+        "AI przeniosło dużą część pracy z pisania kodu na czytanie, więc umiejętność zrozumienia cudzego kodu staje się kluczowa. Runda Google sprawdza dokładnie to.",
+        "Artykuł: https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative\nTen i inne newsy z tygodnia zebrałem w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "lista",
+          "styl": "notatka",
+          "tytul": "Co zamiast LeetCode?",
+          "punkty": [
+            "Review kodu z ukrytymi błędami",
+            "Rozmowa o projekcie systemu z problemem z AI",
+            "Pair programming, w którym wolno używać AI",
+            "Dwa zadania: jedno bez AI, drugie z AI"
+          ],
+          "zrodlo": "Engineering Leadership, G. Ojstersek",
+          "numer": 44
+        },
+        "prompt": "Realistic photo, 4:5 vertical (1080x1350). A small meeting room in an ordinary software office, late morning natural light from a window. On the table: an open laptop showing blurred lines of code (unreadable), a printed page of code with a few handwritten pen circles and margin marks, two coffee mugs, a pen lying across the paper. Two chairs slightly pulled out, no people visible or only a hand holding the pen from the side, nobody looking at the camera. No readable text, no robots, no glowing elements, no holograms, no 3D render look. Muted, warm colors, shallow depth of field, shot like a casual phone photo by someone in the room.",
+        "plik": "obrazki/t1.png"
+      },
+      "termin": "2026-11-03 08:30",
+      "fakty": [
+        "200–500 linii, 60 minut, Gemini dozwolone, role junior i mid – runda Code Comprehension Google, artykuł za Business Insider",
+        "LeetCode – platforma z zadaniami algorytmicznymi (założona w 2015, artykuł); opis „ćwiczyło się przed rozmowami w dużych firmach” – wiedza ogólna, zgodna z artykułem",
+        "Sulman Choudhary, szef inżynierii ChatGPT: 'I'd be surprised if, by the end of 2026, companies still use such a type of an interview' – cytat w artykule",
+        "Felix Rieseberg (Anthropic): 'The coding interview is dead, at least for my team' / 'no longer provides signal' – wpis na X cytowany w artykule",
+        "Big Tech zostaje przy LeetCode, bo obiektywny i skalowalny, ale 'actual usage is declining' – artykuł",
+        "Alternatywy: code review z celowymi błędami, pair programming z AI, product/technical deep dive; opcja 3 autora: jedno zadanie bez AI, drugie z AI – artykuł"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[czat] Za dużo krótkich statementów („Zadanie: znaleźć błędy. Żadnego odwracania drzewa…”). Chcę: haczyk, potem wstęp, że powstał artykuł o sposobie rekrutacji w obecnym świecie (i czym jest LeetCode), rozwinięcie, zakończenie. Zamiast „Dziś ważniejsze jest, czy umiesz ocenić kod, którego nie pisałeś” raczej „AI przeniosło dużą część pracy z pisania kodu na czytanie, więc to kluczowa umiejętność”. Bez hashtagów.\n[weryfikacja] runda Google to pilotaż w części zespołów, nie standard; w X review z błędami to alternatywa zebrana w artykule, nie propozycja autora.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t1",
+        "data": "2026-11-02 22:08",
+        "fakty": [
+          {
+            "fakt": "Google na rozmowach z juniorami i midami daje kandydatom 200–500 linii cudzego kodu i godzinę (60 minut) na znalezienie błędów, z dostępem do Gemini",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=I%20do%20see%20some%20movement%20and",
+            "cytat": "I do see some movement and “pilot” adjustments ... Google started an initiative called the “Code Comprehension round”.",
+            "uwaga": "Poprawione w poście po weryfikacji. Liczby (200–500 linii, 60 minut, Gemini, role junior i mid) zgadzają się z artykułem, który powołuje się na Business Insider („In this round, you receive a 200-500 line unfamiliar codebase, and you have 60 minutes”). Ale autor nazywa to pilotażem, a doniesienia wtórne (WebSearch: Entrepreneur, newsbytesapp, digitaltoday; samego tekstu Business Insidera nie znalazłem) piszą o pilotażu w wybranych zespołach w USA od drugiej połowy 2026. Zdanie „Google na rozmowach … daje” brzmi jak standard w całej firmie. Lepiej: „Google testuje w części zespołów rundę dla juniorów i midów: 200–500 linii cudzego kodu i godzina…”. Poza tym w rundzie chodzi nie tylko o błędy, ale też o omówienie decyzji projektowych i propozycje usprawnień, choć to uproszczenie nie zmienia sensu."
+          },
+          {
+            "fakt": "Gregor Ojstersek (X: „Gregor Ojstersek proponuje w zamian”) proponuje review kodu z ukrytymi błędami i pair programming z AI",
+            "gdzie": "x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=Code%20review%20exercise%20seems%20to%20be%20emerging",
+            "cytat": "Code review exercise seems to be emerging as one of the strongest alternatives. A lot of people mentioned that this is the format that they prefer now.",
+            "uwaga": "Poprawione w poście po weryfikacji. Review kodu z podłożonymi błędami to w artykule jedna z „3 most popular alternatives”, które autor zebrał od innych, a nie jego własna propozycja. Jego rekomendacje to: Option 1 (otwarte pytania, „my recommended type”), Option 2 (pair programming) i Option 3 (np. dwa zadania: bez AI i z AI). W LinkedIn jest dobrze („Jako alternatywy artykuł podaje…”, „Sam autor proponuje dwa zadania”). W X lepiej napisać: „W artykule jako alternatywy: review kodu z ukrytymi błędami, pair programming z AI, a autor proponuje też dwa zadania…”."
+          },
+          {
+            "fakt": "Tekst Gregora Ojsterseka w newsletterze Engineering Leadership o tym, jak rekrutować programistów, skoro coraz więcej kodu pisze AI",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=what%20I%20personally%20recommend%20instead%20of",
+            "cytat": "what are the alternatives that are gaining the most traction, and what I personally recommend instead of leetcode-style interviews",
+            "uwaga": "Newsletter newsletter.eng-leadership.com, autor Gregor Ojstersek (stopka: info@gregorojstersek.com)."
+          },
+          {
+            "fakt": "LeetCode to platforma z zadaniami algorytmicznymi, na której latami ćwiczyło się przed rozmowami w Big Techu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=Leetcode%20%28the%20platform%29%20was%20founded%20in",
+            "cytat": "Leetcode (the platform) was founded in 2015, and quite quickly after that, it became the go-to style for tech interviews in many companies.",
+            "uwaga": "Artykuł mówi o „many companies” i Big Techu (Google, Meta, Amazon, Apple…); opis platformy jako zadań algorytmicznych to wiedza ogólna."
+          },
+          {
+            "fakt": "Sulman Choudhary, szef inżynierii ChatGPT w OpenAI, byłby zdziwiony, gdyby pod koniec 2026 roku firmy dalej prowadziły takie rozmowy",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=companies%20still%20use%20such%20a%20type",
+            "cytat": "“I’d be surprised if, by the end of 2026, companies still use such a type of an interview” This is what Sulman Choudhary, Head of Engineering, ChatGPT, OpenAI, mentioned",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Felix Rieseberg z Anthropic usunął zadania z kodowania z rozmów w swoim zespole, bo przestały cokolwiek mówić o kandydacie",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=who%20is%20an%20Engineering%20Manager%20at%20Anthropic",
+            "cytat": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month.",
+            "uwaga": "Wpis na X z 27.10.2026 osadzony w artykule; Rieseberg to Engineering Manager w Anthropic. Fragment tekstu w linku wskazuje zdanie artykułu przed osadzonym wpisem (tekst z embeda może się nie podświetlić)."
+          },
+          {
+            "fakt": "Big Tech na razie zostaje przy LeetCode, bo łatwo go ocenić i skalować, ale według autora korzysta się z niego coraz rzadziej",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=Leetcode%20is%20not%20dead%2C%20but%20I",
+            "cytat": "Leetcode is not dead, but I believe the actual usage is declining and is used mostly in bigger companies, due to the high volume of applicants.",
+            "uwaga": "Uzasadnienie: „this type of interview is an objective measure, and when you’re dealing with so many engineers interviewing at the same time” — „łatwo ocenić i skalować” to wierne streszczenie."
+          },
+          {
+            "fakt": "Alternatywa: review kodu z ukrytymi błędami",
+            "gdzie": "linkedin, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=Code%20review%20exercise%20seems%20to%20be%20emerging",
+            "cytat": "you provide a piece of code to the candidate, which includes intentional bugs, performance issues, security concerns, or opportunities for improvement",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Alternatywa: pair programming, w którym wolno używać AI",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=The%20candidate%20is%20given%20a%20practical%20engineering%20task",
+            "cytat": "Solving a real-world problem or doing pair programming (with AI usage allowed)",
+            "uwaga": "Pair programming to też Option 2 w rekomendacjach autora."
+          },
+          {
+            "fakt": "Alternatywa: rozmowa o projekcie systemu z problemem z AI (infografika)",
+            "gdzie": "infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=This%20was%20mentioned%20by%20Sulman%20Choudhary",
+            "cytat": "It’s a combination of a System Design interview, together with product/business and AI understanding.",
+            "uwaga": "W artykule „Product & Technical deep dive”, zaproponowane przez Sulmana Choudhary’ego; kandydat dostaje problem „mostly a problem related to AI”."
+          },
+          {
+            "fakt": "Autor proponuje dwa zadania: jedno bez AI (podstawy), drugie z AI (jak kandydat weryfikuje wynik modelu)",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=Another%20option%20can%20be%20a%20mix",
+            "cytat": "one focuses more on solving the challenge that is highly relevant to the role without AI tools, and another challenge with AI tools",
+            "uwaga": "To Option 3 autora; drugie zadanie sprawdza m.in. „whether they are validating the output”. Pierwsze w artykule to „pure implementation” zadania związanego z rolą — „podstawy” to luźne, ale dopuszczalne streszczenie. Główną rekomendacją autora są jednak otwarte pytania (Option 1)."
+          },
+          {
+            "fakt": "Runda Google sprawdza rozumienie cudzego kodu",
+            "gdzie": "x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+            "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative#:~:text=In%20this%20round%2C%20you%20are%20evaluating",
+            "cytat": "In this round, you are evaluating how well candidates understand unfamiliar code, identify potential problems, communicate feedback, and make trade-offs.",
+            "uwaga": "Zdanie dotyczy code review exercise, które artykuł opisuje jako „quite similar to the Code Comprehension round by Google”."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t4",
+      "rodzaj": "temat",
+      "temat": "Świeże spojrzenie nowej osoby",
+      "link_newsa": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+      "tytul_newsa": "Głód wygrywa ze stażem – rady dla młodych inżynierów w erze AI",
+      "kat": "Nowa osoba w zespole przynosi świeże spojrzenie z zewnątrz, ale z czasem wchodzi w schemat firmy — manager może to wykorzystać tylko na początku.",
+      "linkedin": "Felix Rieseberg chciał kiedyś powiesić w biurze Notiona telewizory z dashboardami. Trafił na opór i odpuścił. Rok później nowa osoba zapytała o to samo i telewizory wisiały następnego dnia.\n\nFelix (dziś w Anthropic) opisał to w tekście z radami dla juniorów i przyznał, że przez ten rok sam stał się „starym wyjadaczem”, który wie, czego się w firmie nie da zrobić.\n\nPisze, że przy pracy z AI staż liczy się mniej niż kiedyś, bo zbudowanie czegoś jest tanie, więc liczy się pomysł i to, czy ktoś zapyta. Claude Code był używany głównie w terminalu, a dwóch stosunkowo nowych inżynierów Anthropic zbudowało w weekend prototyp wersji z interfejsem graficznym. Pierwsza publiczna wersja wyszła około 8 dni później.\n\nJako manager widzę tu ważny wniosek nie tylko dla juniorów. Nowa osoba przez pierwsze miesiące patrzy na zespół z zewnątrz, więc widzi rzeczy, do których reszta przywykła, i przynosi pomysły z innych firm. Z czasem uczy się, jak działa firma, wchodzi w ten sam schemat i takich pomysłów jest coraz mniej. To naturalne, ale oznacza, że manager ma ograniczony czas, żeby z tego świeżego spojrzenia skorzystać.\n\nCo bym z tym zrobił przy onboardingu:\n– poprosił nową osobę o spisanie rzeczy, które ją dziwią, zanim do nich przywyknie,\n– na pytanie „czemu tego nie zrobimy?” odpowiadał „sprawdź”, a nie „już próbowaliśmy”,\n– dał czas na mały prototyp, zamiast wymagać dokumentu do akceptacji.\n\nJaką rzecz, którą w Twoim zespole wszyscy uważali za oczywistą, ostatnio podważył ktoś nowy?",
+      "komentarz": "Pełny przegląd tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai\nŹródło: https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+      "x": [
+        "Felix Rieseberg chciał kiedyś powiesić w biurze Notiona telewizory z dashboardami, ale trafił na opór i odpuścił. Rok później nowa osoba zapytała o to samo i telewizory wisiały następnego dnia. Felix przyznaje, że przez ten rok sam stał się starym wyjadaczem.",
+        "W tekście z radami dla juniorów Felix pisze, że przy pracy z AI staż liczy się mniej, bo zbudowanie czegoś jest tanie. W Anthropic dwóch stosunkowo nowych inżynierów zrobiło w weekend prototyp graficznej wersji Claude Code, a publiczna wersja wyszła ok. 8 dni później.",
+        "Widzę tu też wniosek dla managerów. Nowa osoba patrzy na zespół z zewnątrz i przynosi pomysły z innych firm, ale z czasem wchodzi w schemat i przestaje to robić. Jeśli manager nie wykorzysta tego na początku, ten moment po prostu minie.",
+        "Dlatego przy onboardingu poprosiłbym nową osobę o listę rzeczy, które ją dziwią, zanim do nich przywyknie. A na pytanie „czemu tego nie zrobimy?” odpowiadałbym „sprawdź”, a nie „już próbowaliśmy”.",
+        "Ten i ~25 innych newsów z tygodnia zebrałem w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "infografika": {
+          "rodzaj": "cytat",
+          "cytat": "Gdzieś w ciągu tego roku sam stałem się starym wyjadaczem.",
+          "autor": "Felix Rieseberg, Anthropic",
+          "naglowek": "Głód wygrywa ze stażem",
+          "numer": 44,
+          "styl": "notatka"
+        },
+        "prompt": "Realistic photo, 4:5 vertical (1080x1350). An open-plan software office in soft morning daylight: a large flat TV freshly mounted on a white wall, its screen switched off, a small step ladder still standing next to it, a cardboard box and a coiled HDMI cable on the floor, a drill on a nearby desk. In the background, out-of-focus desks with laptops and a couple of people seen from behind, working. Natural colors, slight film grain, shot on a 35mm lens, candid documentary feel. No text, no logos, no people facing the camera, no robots, no holograms, no 3D render look.",
+        "plik": "obrazki/t4.png"
+      },
+      "termin": "2026-11-04 08:30",
+      "fakty": [
+        "Telewizory z dashboardami w Notionie: Felix trafił na opór organizacyjny i odpuścił, ok. rok później Ji Pei zapytał i TV pojawiły się następnego dnia – artykuł źródłowy",
+        "„Starym wyjadaczem” – parafraza z artykułu: „Somewhere in that year, I had become the old-timer” (tłumaczenie własne)",
+        "Felix pracuje dziś w Anthropic – artykuł / poprzednia wersja posta (podpis infografiki)",
+        "Staż liczy się mniej, budowanie tanie – artykuł („Impact is less bounded by how many years of accumulated knowledge…”) i opis w wydaniu",
+        "Claude Code głównie w terminalu (CLI); dwóch stosunkowo nowych inżynierów (Anthony Morris, Alice Zhao) zbudowało w weekend prototyp GUI; pierwsza publiczna wersja ok. 8 dni później – artykuł",
+        "Rady przy onboardingu – własne propozycje Kuby (sformułowane jako „co bym zrobił”, bez doświadczeń z zespołu); „prototyp zamiast dokumentu” nawiązuje do rady Felixa (prototyp zamiast PRD)",
+        "~25 innych newsów – jak w poprzedniej wersji / poście głównym #44",
+        "Usunięto wątek trybu offline w Notionie i hashtagi (uwaga Kuby)"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[czat] Dużo rzeczy niezrozumiałych, np. „Nie kupuję tego w całości. W Notionie tryb offline uchodził za niemożliwy. Złożoność modelu danych była prawdziwa, tylko opór szefa nie…”. Sedno: nowe osoby mają świeże spojrzenie – albo manager to wykorzysta, albo po czasie ktoś nauczy się działać w schemacie danego ekosystemu i przestanie przynosić nowe rzeczy z zewnątrz. Post bardziej pod to. Bez hashtagów.\n[weryfikacja] X: „dwóch nowych inżynierów” → „dwóch stosunkowo nowych” (źródło: „relatively new”).",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t4",
+        "data": "2026-11-02 22:08",
+        "fakty": [
+          {
+            "fakt": "Felix Rieseberg chciał w Notionie powiesić telewizory z dashboardami, trafił na opór i odpuścił",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+            "link": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/#:~:text=I%20wanted%20to%20outfit%20teams%20with%20large%20TVs",
+            "cytat": "I wanted to outfit teams with large TVs to display live dashboards. I ran into organizational walls, failed",
+            "uwaga": "Źródło: tuż po dołączeniu do Notiona, 'organizational walls', 'didn't care enough to start a whole fight' — 'opór i odpuścił' oddaje sens."
+          },
+          {
+            "fakt": "Rok później nowa osoba zapytała o to samo i telewizory wisiały następnego dnia",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+            "link": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/#:~:text=The%20TVs%20showed%20up%20the%20next%20day",
+            "cytat": "He’d already asked. The TVs showed up the next day.",
+            "uwaga": "Źródło: 'A year later, Ji Pei joined as a new hire with the same idea'. 'Wisiały' vs 'showed up' (pojawiły się) — dopuszczalne uproszczenie."
+          },
+          {
+            "fakt": "Felix przyznał, że przez ten rok sam stał się „starym wyjadaczem” (infografika: „Gdzieś w ciągu tego roku sam stałem się starym wyjadaczem.”)",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+            "link": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/#:~:text=Somewhere%20in%20that%20year",
+            "cytat": "Somewhere in that year, I had become the old-timer.",
+            "uwaga": "Tłumaczenie cytatu wierne. Dopowiedzenie w LinkedIn 'który wie, czego się w firmie nie da zrobić' jest interpretacją Kuby (w źródle Felix mówi Ji Peiowi 'not to bother; I'd already tried') — poza cudzysłowem, sens zachowany."
+          },
+          {
+            "fakt": "Felix pracuje dziś w Anthropic (podpis infografiki: „Felix Rieseberg, Anthropic”)",
+            "gdzie": "linkedin, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+            "link": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/#:~:text=As%20a%20hiring%20manager%20at%20Anthropic",
+            "cytat": "As a hiring manager at Anthropic, I stopped asking candidates to do them.",
+            "uwaga": "Bio pod artykułem: 'I'm an EM at Anthropic'."
+          },
+          {
+            "fakt": "Felix opisał to w tekście z radami dla juniorów",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+            "link": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/#:~:text=This%20post%20is%20my%20best%20advice%20for%20junior%20engineers",
+            "cytat": "This post is my best advice for junior engineers, though “junior” is the wrong word.",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Przy pracy z AI staż liczy się mniej niż kiedyś, bo zbudowanie czegoś jest tanie; liczy się pomysł i to, czy ktoś zapyta",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+            "link": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/#:~:text=Impact%20is%20less%20bounded%20by%20how%20many%20years",
+            "cytat": "Impact is less bounded by how many years of accumulated knowledge in frameworks and libraries you’ve gathered.",
+            "uwaga": "Taniość budowania: 'Execution isn’t expensive anymore.' Pomysł: '(2) Pick a radical idea'. 'Czy ktoś zapyta': historie o trybie offline ('didn’t know better than to just ask') i telewizorach ('He’d already asked'). Synteza wierna."
+          },
+          {
+            "fakt": "Claude Code był używany głównie w terminalu",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+            "link": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/#:~:text=people%20got%20so%20used%20to%20using%20Claude%20Code",
+            "cytat": "people got so used to using Claude Code as a command-line interface (CLI)",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Dwóch stosunkowo nowych inżynierów Anthropic zbudowało w weekend prototyp wersji Claude Code z interfejsem graficznym",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+            "link": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/#:~:text=it%20took%20two%20relatively%20new%20engineers",
+            "cytat": "it took two relatively new engineers (",
+            "uwaga": "Pełne zdanie: 'it took two relatively new engineers (Anthony Morris and Alice Zhao) to whip up a working prototype over one weekend'. Że chodzi o GUI, wynika z kontekstu ('a good graphical interface for Claude Code is a very popular product'). W X skrócono do 'dwóch nowych inżynierów' — źródło mówi 'relatively new'; drobne, można dodać 'stosunkowo'."
+          },
+          {
+            "fakt": "Pierwsza publiczna wersja wyszła około 8 dni później",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+            "link": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/#:~:text=The%20first%20public%20version%20shipped%20roughly%20eight%20days%20later",
+            "cytat": "The first public version shipped roughly eight days later.",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Ten i ~25 innych newsów z tygodnia w #44 PrzeglądAI",
+            "gdzie": "x",
+            "status": "potwierdzony",
+            "zrodlo": "https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai",
+            "link": "https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai",
+            "cytat": "",
+            "uwaga": "Sprawdzone lokalnie: wydania/044/dane.csv ma 26 newsów (ten + 25), slug zgodny z wydania/044/meta.json."
+          }
+        ]
+      }
+    },
+    {
+      "id": "w-e6z0d",
+      "rodzaj": "temat",
+      "temat": "Prospekt Anthropic: strata i tokeny",
+      "link_newsa": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "tytul_newsa": "Anthropic składa w SEC prospekt IPO – przychody 16,3 mld dolarów w pół roku",
+      "kat": "80,7 mld straty to głównie księgowość, a prospekt pokazuje też, że firmy płacą za AI jak za chmurę (za zużycie), więc warto tak je budżetować i śledzić w zespołach.",
+      "linkedin": "Anthropic pokazał w prospekcie IPO 80,7 mld dolarów straty netto za pół roku. Brzmi strasznie, ale nie jest to jedyna ciekawa liczba w całym dokumencie.\n\nProspekt S-1 to dokument, który firma składa w amerykańskiej komisji SEC przed wejściem na giełdę. Opisuje finanse i ryzyka, więc widać w nim, jak zarabia firma od AI.\n\nWracając do straty: 72,4 mld z tej kwoty to zmiana wyceny not zamiennych i instrumentów pochodnych. Upraszczając: inwestorzy pożyczyli firmie pieniądze z prawem zamiany na akcje. Im wyżej rynek wycenia Anthropic, tym więcej te noty są warte, a w księgach wychodzi z tego „strata”. Sama działalność dała 693 mln dolarów straty operacyjnej.\n\nCiekawe jest też to, za co firmy płacą. 80% przychodu z półrocza (13,1 mld dolarów) to opłaty za zużyte tokeny, a subskrypcje to 20%. Dobrze widać to w prospekcie: w dwóch tygodniach do 2 stycznia 2026 wydatki klientów spadły o ok. 20%, a prospekt łączy to ze świątecznymi urlopami i code freeze'ami w firmach. Deweloperzy na urlopie, agenci też ;)\n\nCoś wartego uwagi dla managerów: AI w zespole przypomina raczej rachunek za chmurę niż licencję na stanowisko, którą planuje się raz w roku. Prawie połowa sprzedaży Anthropic idzie przez marketplace'y AWS, Google Cloud i Azure, więc często ląduje na tej samej fakturze co serwery.\n\nDlatego budżet na AI śledziłbym tak jak koszty chmury, czyli per zespół i per projekt. Lepiej zobaczyć skok na dashboardzie niż usłyszeć o nim od działu finansów.\n\nA u Ciebie: stała licencja na osobę czy już płacicie za zużycie tokenów?",
+      "komentarz": "Pełny przegląd tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai\nŹródło: https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "x": [
+        "Anthropic złożył w SEC prospekt IPO (S-1). Jest w nim 80,7 mld $ straty netto za pół roku. Brzmi strasznie, ale strata operacyjna to 693 mln $, a resztę robi głównie księgowość.",
+        "72,4 mld $ to głównie zmiana wyceny not zamiennych, czyli pożyczek od inwestorów z prawem zamiany na akcje. Im wyżej rynek wycenia firmę, tym więcej te noty są warte i tym większa „strata” na papierze.",
+        "Ciekawe jest też, za co firmy płacą: 80% przychodu Anthropic (13,1 mld $ w półroczu) to opłaty za zużyte tokeny. Subskrypcje to 20%.",
+        "Fajny detal z prospektu: w dwóch tygodniach do 2 stycznia wydatki klientów spadły o ok. 20%, a prospekt łączy to ze świątecznymi code freeze'ami. Deweloperzy na urlopie, agenci też.",
+        "Coś wartego uwagi dla managerów: AI w zespole działa bardziej jak rachunek za chmurę niż licencja na stanowisko. Dlatego koszty warto śledzić per zespół i projekt, zanim zapyta o nie dział finansów.",
+        "Więcej newsów z tygodnia w #44 PrzeglądAI: https://przegladai.substack.com/p/wydanie-44-prospekt-ipo-anthropic-odejscia-w-microsoft-i-95-mld-dolarow-mety-na-ai"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "porownanie",
+          "naglowek": "Prospekt IPO Anthropic",
+          "tytul": "Strata w I połowie 2026",
+          "jednostka": " mld $",
+          "elementy": [
+            {
+              "etykieta": "Strata netto",
+              "wartosc": 80.7
+            },
+            {
+              "etykieta": "Strata operacyjna",
+              "wartosc": 0.7
+            }
+          ],
+          "zrodlo": "prospekt S-1 Anthropic",
+          "numer": 44,
+          "styl": "notatka"
+        },
+        "prompt": "Realistic photo, close-up of a desk in a small office at dusk: an open laptop with a blurred cloud billing dashboard, a printed invoice with a few lines highlighted in yellow marker, a calculator and a half-empty coffee mug. Natural window light mixed with a warm desk lamp, shallow depth of field, slightly messy, everyday feel. No people facing the camera, no readable text, no robots, no glowing brains, no holograms, not a 3D render. Vertical 4:5, 1080x1350.",
+        "plik": "obrazki/w-e6z0d.png"
+      },
+      "termin": "2026-11-05 08:30",
+      "fakty": [
+        "80,7 mld $ straty netto (80 748 mln), 72,4 mld $ zmiana wartości godziwej not zamiennych, derywatów i SAFE (72 388 mln), 693 mln $ straty operacyjnej – S-1, tabela Summary Consolidated Financial Data, I poł. 2026; przypis: zmiana 'primarily driven by an increase in the fair value of our outstanding convertible promissory notes resulting from an increase in our enterprise valuation'",
+        "Noty zamieniają się na akcje tuż przed zakończeniem oferty – S-1: 'the Convertible Notes Conversion will occur immediately prior to the completion of this offering'",
+        "80% przychodu = consumption-based, 13,1 mld $; subskrypcje 3,2 mld $ (20%) – S-1, MD&A, I poł. 2026; przychód rozpoznawany 'based on the quantity of tokens consumed'",
+        "Spadek wydatków klientów o ok. 20% w dwóch tygodniach do 2.01.2026 vs dwa tygodnie do 19.12.2025, przez code freeze'y w święta – S-1, sekcja Customer Usage Patterns",
+        "48% przychodu przez marketplace'y CSP (AWS, GCP, Azure) w I poł. 2026 – S-1, Risk Factors ('Prawie połowa' w poście)",
+        "Opis S-1 (dokument składany w SEC przed IPO) – wiedza ogólna, bez liczb"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[czat] Całkiem fajny, ale bez mocnych statementów: zamiast „Brzmi jak katastrofa, a to chyba najmniej ciekawa liczba w całym dokumencie” raczej „Brzmi strasznie, ale nie jest to jedyna ciekawa liczba w całym dokumencie”. Fajne: proste wyjaśnienie not zamiennych („Upraszczając…”). Nie pisałbym „Mnie bardziej zaciekawiło, za co firmy faktycznie płacą” ani „Dla managera to konkretna lekcja” – raczej „ważny wniosek / coś wartego uwagi dla managerów”.\n[weryfikacja] X: 72,4 mld $ to „głównie” zmiana wyceny not; spadek w święta – S-1 podaje code freeze jako możliwą przyczynę, nie pewną.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "w-e6z0d",
+        "data": "2026-11-02 22:10",
+        "fakty": [
+          {
+            "fakt": "72,4 mld $ to zmiana wyceny not zamiennych (wątek X, 2. tweet: cała kwota przypisana notom)",
+            "gdzie": "x",
+            "status": "potwierdzony",
+            "zrodlo": "https://hackernoon.com/anthropics-s-1-shows-$163b-in-half-year-revenue-a-900percent-nrr-and-an-$807b-loss-that-mostly-isnt",
+            "link": "https://hackernoon.com/anthropics-s-1-shows-$163b-in-half-year-revenue-a-900percent-nrr-and-an-$807b-loss-that-mostly-isnt#:~:text=These%20changes%20were%20primarily%20driven%20by%20an%20increase",
+            "cytat": "a $72,388 million charge for the change in fair value of convertible notes, derivative liabilities, and SAFEs",
+            "uwaga": "Poprawione w poście po weryfikacji. sec.gov zwraca 403 (wymaga kontaktu w User-Agent; nie podawano danych Kuby), WebFetch nie mieści pliku S-1 (>10 MB) - sprawdzone w relacjach mediów cytujących S-1. Pozycja 72 388 mln obejmuje noty zamienne, instrumenty pochodne i SAFE; S-1 mówi, że zmiana wynika 'primarily' (głównie) ze wzrostu wartości not. Drobne uproszczenie - poprawka: '72,4 mld $ to głównie zmiana wyceny not zamiennych…' albo '…not zamiennych i innych instrumentów'. Wersja LinkedIn ('not zamiennych i instrumentów pochodnych') jest OK."
+          },
+          {
+            "fakt": "Spadek wydatków klientów o ok. 20% w dwóch tygodniach do 2 stycznia 2026 (vs dwa poprzednie tygodnie), bo firmy miały świąteczne code freeze'y",
+            "gdzie": "linkedin, x",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://www.woshipm.com/ai/6484800.html",
+            "link": "https://www.woshipm.com/ai/6484800.html#:~:text=%E6%88%AA%E8%87%B32026%E5%B9%B41%E6%9C%882%E6%97%A5%E7%9A%84%E4%B8%A4%E5%91%A8",
+            "cytat": "截至2026年1月2日的两周，客户总支出比此前两周下降约20%",
+            "uwaga": "Potwierdza tylko jedno źródło wtórne (woshipm.com); sekcji „Customer Usage Patterns” w S-1 nie udało się odczytać automatycznie – sprawdź ręcznie. sec.gov zwraca 403 (wymaga kontaktu w User-Agent; nie podawano danych Kuby), WebFetch nie mieści pliku S-1 (>10 MB) - sprawdzone w relacjach mediów cytujących S-1. Jedyne znalezione źródło to chińskojęzyczny artykuł woshipm.com (2026-10-27); angielskich relacji ani tekstu S-1 (sekcja Customer Usage Patterns) nie udało się odczytać. Artykuł: 'S-1 wspomina, że urlopy pracowników i wstrzymanie wdrażania kodu przez firmy MOGĄ spowolnić prace' (招股书提到，员工休假，以及企业暂停更新代码，都可能让开发活动放缓) - S-1 podaje to jako prawdopodobną przyczynę, więc 'bo' jest lekkim uproszczeniem, ale sens się zgadza. Warto zerknąć do S-1 ręcznie."
+          },
+          {
+            "fakt": "Prospekt S-1 złożony w SEC przed IPO; strata netto 80,7 mld $ za pół roku (I połowa 2026)",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://blog.pebblous.ai/blog/anthropic-s1-operating-loss-vs-net-loss/en/",
+            "link": "https://blog.pebblous.ai/blog/anthropic-s1-operating-loss-vs-net-loss/en/#:~:text=That%20document%20records%20a%20net%20loss",
+            "cytat": "That document records a net loss of $80.7 billion for the half.",
+            "uwaga": "sec.gov zwraca 403 (wymaga kontaktu w User-Agent; nie podawano danych Kuby), WebFetch nie mieści pliku S-1 (>10 MB) - sprawdzone w relacjach mediów cytujących S-1. Tabela S-1: 80 748 mln $ za sześć miesięcy do 30.06.2026. S-1 złożony publicznie 26.10.2026, ticker ANT (Nasdaq)."
+          },
+          {
+            "fakt": "Strata operacyjna 693 mln $ (infografika: 0,7 mld $)",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://blog.pebblous.ai/blog/anthropic-s1-operating-loss-vs-net-loss/en/",
+            "link": "https://blog.pebblous.ai/blog/anthropic-s1-operating-loss-vs-net-loss/en/#:~:text=The%20operating%20loss%20line%20in%20that%20same%20document%20reads",
+            "cytat": "The operating loss line in that same document reads $693 million.",
+            "uwaga": "Potwierdza też HackerNoon: 'the S-1 reports an operating loss of only $693 million on $16,286 million of revenue'."
+          },
+          {
+            "fakt": "72,4 mld $ to zmiana wyceny not zamiennych i instrumentów pochodnych; im wyżej rynek wycenia firmę, tym więcej noty są warte i tym większa 'strata' na papierze",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://hackernoon.com/anthropics-s-1-shows-$163b-in-half-year-revenue-a-900percent-nrr-and-an-$807b-loss-that-mostly-isnt",
+            "link": "https://hackernoon.com/anthropics-s-1-shows-$163b-in-half-year-revenue-a-900percent-nrr-and-an-$807b-loss-that-mostly-isnt#:~:text=These%20changes%20were%20primarily%20driven%20by%20an%20increase",
+            "cytat": "These changes were primarily driven by an increase in the fair value of our outstanding convertible promissory notes resulting from an increase in our enterprise valuation",
+            "uwaga": "HackerNoon cytuje przypis S-1 dosłownie. Pebblous: '$72.388 billion of non-cash cost, booked as the fair value of convertible notes and SAFEs rose'. Wyjaśnienie noty zamiennej (pożyczka z prawem zamiany na akcje) zgodne z opisem w Pebblous."
+          },
+          {
+            "fakt": "80% przychodu z półrocza (13,1 mld $) to opłaty za zużyte tokeny, subskrypcje 20%",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://capitalandcompute.net/blog/how-does-anthropic-make-money/",
+            "link": "https://capitalandcompute.net/blog/how-does-anthropic-make-money/#:~:text=was%20consumption%20revenue",
+            "cytat": "$13.1 billion (80%) was consumption revenue, metered per token used, and $3.2 billion (20%) was subscriptions",
+            "uwaga": "Definicja z S-1 cytowana tamże: revenue 'recognized when customers use our intelligence service, based on the quantity of tokens consumed'. Dokładnie 13 064 mln (80,2%) i 3 222 mln (19,8%) z 16 286 mln."
+          },
+          {
+            "fakt": "Prawie połowa sprzedaży Anthropic idzie przez marketplace'y AWS, Google Cloud i Azure (fakturowana przez chmurę)",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://capitalandcompute.net/blog/how-does-anthropic-make-money/",
+            "link": "https://capitalandcompute.net/blog/how-does-anthropic-make-money/#:~:text=Nearly%20half%20of%20all%20revenue",
+            "cytat": "Nearly half of all revenue (48%) arrived through cloud marketplaces; the S-1 names AWS, Google Cloud and Microsoft Azure",
+            "uwaga": "48% w I poł. 2026 (47% w 2025). Ten sam artykuł: S-1 mówi, że platformy (Amazon Bedrock, Gemini Enterprise Agent Platform, Microsoft Foundry) 'bill end customers, collect payments on our behalf' - co uzasadnia 'ląduje na tej samej fakturze co serwery' (wniosek autora, nie dosłownie z S-1)."
+          }
+        ]
+      }
+    }
+  ],
+  "_dziennik": [
+    "decyzja:glowny:5c3b4b57",
+    "decyzja:t1:6d85d8e8",
+    "decyzja:t4:84a58c47",
+    "decyzja:w-e6z0d:911e036c",
+    "temat:t1:826f3b02",
+    "temat:t2:dad84ced",
+    "temat:t3:0fea42c4",
+    "temat:t4:a84ac834",
+    "temat:t5:2f863ab2",
+    "temat:t6:aed46ff3",
+    "temat:t7:8637d1ec",
+    "temat:t8:2fca9058",
+    "temat:w-e6z0d:b95c5210",
+    "uwaga:glowny:97854baf",
+    "uwaga:t1:30e341b7",
+    "uwaga:t4:7140e980",
+    "uwaga:w-e6z0d:3873fab2",
+    "zmiana:glowny:linkedin:e0b5cc6c",
+    "zmiana:glowny:x:58941842",
+    "zmiana:t1:infografika:4c1fa61c",
+    "zmiana:t1:linkedin:e40a2690",
+    "zmiana:t1:x:db699a79",
+    "zmiana:t4:infografika:4f81cdcc",
+    "zmiana:t4:linkedin:3a3b28a9",
+    "zmiana:t4:x:7071ffe2",
+    "zmiana:w-e6z0d:infografika:4a8df9bb",
+    "zmiana:w-e6z0d:linkedin:36bfa5cd",
+    "zmiana:w-e6z0d:x:d188b398"
+  ]
+}

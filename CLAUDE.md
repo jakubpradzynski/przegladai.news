@@ -17,6 +17,12 @@ Repo służy do przygotowania wydania z Claude Code i archiwum wydań. Autor: Ku
 4. **Substack** — Kuba ręcznie wkleja `wydania/NNN/substack.html`, dodaje okładkę i planuje wysyłkę.
    Nie automatyzujemy publikacji na Substacku w żadnej formie.
 5. **`/zakoncz-wydanie`** — dziennik poprawek, `ucz-sie`, sprzątanie, branch `issue-N`, PR z `/schedule` na piątek.
+6. **`/posty-social [nr]`** (osobny etap po wydaniu) — post główny ze wstępu + propozycje tematów postów pogłębionych;
+   w narzędziu na http://localhost:8030 Kuba wybiera tematy, subagenci `social-autor` piszą posty (LinkedIn — ten sam
+   tekst na Facebook i Substack Notes — oraz wątek na X), infografiki (`narzedzia/social/grafika.py`) i prompty do zdjęć,
+   a `social-weryfikator` sprawdza każdy fakt w źródle (link do podświetlonego fragmentu).
+   Kuba poprawia w narzędziu albo prosi Claude; `dziennik.py social` + `ucz-sie` uczą `redakcja/social*.md` i `o-mnie.md`.
+   Publikacja ręczna. Cały przepływ i co się z czego uczy: `narzedzia/social/README.md`.
 
 Co jakiś czas: **`/porzadki-newsletterow`** — analiza, które newslettery dostarczają newsy, i narzędzie
 do przeglądu kandydatów (dwa ostatnie maile, „wypisz” / „zostaw”) z automatycznym wypisaniem.
@@ -37,12 +43,13 @@ Sekcji „Uwagi Kuby” w plikach `redakcja/` nie edytuje nikt poza Kubą.
 data.csv          linki zbierane w tygodniu (gitignore)
 praca/            pliki robocze bieżącego wydania (gitignore)
 redakcja/         reguły stylu i wyboru newsów + dziennik poprawek — jedyne źródło prawdy o stylu
-wydania/NNN/      archiwum: substack.html, dane.csv, meta.json, okladka.jpeg
+wydania/NNN/      archiwum: substack.html, dane.csv, meta.json, okladka.jpeg, social/ (posty social)
 narzedzia/        skrypty Pythona (lib/ — wspólne), adminka/, okladka/ (szablon, font),
                   newslettery/ (analiza skrzynki, kandydaci, przeglad/ — narzędzie do wypisywania),
-                  strony/ (zbieranie wpisów ze stron, przeglad/ — wybór do data.csv)
+                  strony/ (zbieranie wpisów ze stron, przeglad/ — wybór do data.csv),
+                  social/ (posty social: posty.py, grafika.py, przeglad/ — narzędzie do postów)
 strona/           przegladai.news — statyczne przekierowanie na Substacka (GitHub Pages)
-.claude/          skille i subagenci (opisywacz, preselektor)
+.claude/          skille i subagenci (opisywacz, preselektor, social-autor, social-weryfikator)
 ```
 
 ## Uwagi techniczne

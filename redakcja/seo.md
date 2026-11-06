@@ -41,3 +41,4 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
   obserwować, czy się powtórzy, zanim zmienimy regułę formatu.
 - #40 opis_seo: „OpenAI dots…” → „OpenAI Dots…” — jedyna zmiana; nazwa produktu wielką literą (jak w tytule). Opis SEO nie nadążył za tytułem (zostało „agent, który włamał się do rządu Australii”, a w tytule jest Nokia) — SEO ma wymieniać tematy z wybranego tytułu.
 - #43 opis_seo: „5% akcji Anthropic na fundusz, Apple HomeView z Siri i otwarty Muse Spark od Mety…” → „Sauna od Wordware, polski model Basal Omni na szczycie JevBench i PLLuM w sądzie…” — SEO przepisane pod nowy tytuł (jak w #40); „Basal” → „Basal Omni”.
+- #45 opis_seo: napisany od nowa pod własny tytuł Kuby („TesterArmy to teraz e2e z 8 mln $, Karpathy buduje HackerTube w dwie godziny, a Lovable opowiada o przebudowie – przegląd newsów AI tego tygodnia.”, 146 znaków), przyjęty bez zmian — tak samo jak w #40, #43, #44; mieści się w 120–160 znakach, gdy każdy temat ma jeden konkret.

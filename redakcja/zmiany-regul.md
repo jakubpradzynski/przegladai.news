@@ -157,3 +157,41 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
 - tytuly.md: 2 przykłady — krótsze tytuły newsów bez doprecyzowań i dopowiedzeń po półpauzie (Netflix, Pocock); piąty z rzędu własny tytuł wydania, tym razem „pieniądze i rynek pracy” bez premier.
 - priorytety.md: kolejność w „Nowości” — największa premiera pierwsza i newsy jednej firmy obok siebie (2× #40, #44); nauka z selekcji #44 (25/30 TOP zostało, duplikaty: wybór bogatszej wersji + dopisanie faktów z drugiej).
 - seo.md: SEO pisane od nowa pod własny tytuł Kuby (3× — #40, #43, #44).
+
+## 2026-10-31 — nowy styl opisów (po #44)
+
+- opisy.md: przebudowany. Opis pisany z perspektywy czytelnika (inżynier, EM, PM/UX, finanse/biznes): co się stało →
+  konkrety z porównaniem → co to znaczy dla czytelnika. Zastępuje regułę „kończymy na konkrecie, bez komentarza”
+  z #39–#44 – wycinane były ogólne komentarze i uwagi o braku danych, te zakazy zostają; konsekwencja dla czytelnika
+  jest teraz wymagana (na podstawie: uwagi Kuby do opisów z #44).
+- opisy.md: gołe wyniki benchmarków wyłącznie jako porównanie (skok, próg, cena na tle konkurencji); ocena skali
+  w newsach finansowych; bez szczegółów struktury (klasy akcji); nazwisko autora tylko gdy podnosi wagę (zwykle rola + firma).
+- opisy.md: prostszy język, krótkie zdania, bez niejasnych sformułowań z artykułu; anglicyzmy zostają, ale nie kilka
+  obok siebie; dozwolone jedno konkretne pytanie do czytelnika (max 2–3 na wydanie); pytanie o polski kontekst przy newsach z USA.
+- opisy.md + agent opisywacz: możliwość WebSearch po brakujący kontekst (źródło w `Uwagi`).
+- tytuly.md: w tytule firma zamiast nazwiska, gdy autor jest istotny tylko jako przedstawiciel firmy.
+
+## 2026-11-02 — wydanie #44 (posty social, uwagi Kuby w czacie)
+
+- social.md: budowa posta pogłębionego haczyk → wstęp (o artykule, wyjaśnienie pojęć) → rozwinięcie → zakończenie;
+  pełne zdania zamiast serii krótkich „statementów”; bez mocnych tez; wnioski dla managerów bez pouczania;
+  nowe frazy w „Nie używać”; infografiki w nowych stylach `notatka` / `minimal` (na podstawie: uwagi Kuby do t1, t4,
+  w-e6z0d i ogólna uwaga o infografikach „wyglądają AI-owo”)
+- social-platformy.md: hashtagi domyślnie brak (było 0–3); walidator ostrzega o hashtagach
+
+## 2026-11-05 — przegląd stron przed wydaniem #45
+
+- preselekcja.md: duplikat agregatora zawsze „może” z podpowiedzią „duplikat: …”, „nie” tylko przy tym samym linku (drugi raz — Future Tools „Images 2.6”, wcześniej Model Garden #43) (na podstawie: nie→wziety 1×).
+- preselekcja.md: The Decoder bez dużego ruchu biznesowego czołowej firmy = „nie” (wzięty 1 z 41, 40 „może” pominiętych); inwestycja w firmę spoza czołówki (Aramco–Humain) = „może”, nie „tak” (na podstawie: tak→pominiety 1×, 40× może→pominiety).
+- preselekcja.md: OpenAI News poza premierami = „nie” (16/16 „może” pominiętych); The Information domyślnie „nie” (0/144); polskie wdrożenia, inwestycje i incydenty z AI oraz teksty twórców o budowie z AI zostają „może” (na podstawie: 7× może→wziety).
+- preselekcja.md: tabela skuteczności stron odświeżona, przykłady decyzji (15 najnowszych).
+- social.md: sekcja „Wybór tematów” — wnioski z wyboru tematów w #44 (własny temat z prospektu IPO, 2 z 3 poleconych).
+
+## 2026-11-05 — wydanie #45
+
+- opisy.md: nowa reguła w „Długość i budowa” — zdanie z perspektywą czytelnika zostaje, gdy daje konkretne działanie lub wniosek; puste rady, „to znak, że…” i oceny wydarzenia wycinamy lub kończymy opis na fakcie; 3 nowe przykłady (najstarsze usunięte) (na podstawie: 4× wycięte zakończenia — Reddit, Pierre, Proton, PayU; żargon i poboczne detale w Netflix, ChatGPT search, MIT; nazwisko zamiast „Autor” w Hacker Tube).
+- tagi.md: przykład — zestaw narzędzi dla agentów (Product Compass) to „Bliżej technologii”, nie „Nowości” (1×).
+- tytuly.md: szósty z rzędu własny tytuł wydania — tym razem „inżynierski” (e2e, HackerTube, Lovable); jedna z propozycji ma być pod wątek inżynierski.
+- priorytety.md: obniżenie oceny wąsko technicznych poradników o ewaluacji, RAG i inferencji (3× poza wydaniem: #43, #45); lekkie ciekawostki z oceną 4–5 wchodzą z rezerwy po raz szósty; kolejność „Nowości” — największa premiera pierwsza (4× — #40, #42, #44, #45).
+- wstep.md, seo.md: przykłady — wstęp i SEO przygotowane pod własny tytuł przyjęte bez zmian.
+

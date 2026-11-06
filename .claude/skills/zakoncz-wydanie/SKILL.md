@@ -39,7 +39,7 @@ po `/zbierz-dane` zostają na kolejny tydzień.
 ## Krok 5 — Git i Pull Request
 
 ```bash
-git checkout -b issue-<nr>
+git checkout issue-<nr> 2>/dev/null || git checkout -b issue-<nr>   # branch może już istnieć (np. z wcześniejszymi zmianami reguł)
 git add wydania/<NNN> redakcja
 git commit -m "Issue #<nr>"
 git push -u origin issue-<nr>
@@ -54,3 +54,4 @@ gh pr create --title "Issue #<nr>" --body "/schedule $(python3 -c "import sys; s
 ```
 
 Podaj Kubie link do PR-a i krótkie podsumowanie z kroku 3: jakie reguły się zmieniły.
+Na koniec zaproponuj kolejny etap: `/posty-social <nr>` — posty na LinkedIn / FB / Substack Notes / X do tego wydania.

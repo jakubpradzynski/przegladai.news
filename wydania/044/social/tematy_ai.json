@@ -1,0 +1,69 @@
+{
+  "numer": 44,
+  "tematy": [
+    {
+      "id": "t1",
+      "link": "https://newsletter.eng-leadership.com/p/is-leetcode-dead-whats-the-alternative",
+      "tytul_newsa": "Czy LeetCode umarł i co zamiast niego?",
+      "kat": "Rekrutacja z LeetCode traci sens, gdy zadanie algorytmiczne rozwiązuje model – jak w takim razie sprawdzać inżynierów? Kuba rekrutuje i uczył na UMK, ma tu własne zdanie.",
+      "dlaczego": "Rekrutacja to temat, w którym każdy deweloper i manager ma doświadczenia i opinię – daje komentarze.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t2",
+      "link": "https://jvm-bloggers.com/r/4hKOalh",
+      "tytul_newsa": "AI w SDLC: model nie ma znaczenia, liczy się harness",
+      "kat": "Polski tekst z Sii: to warstwa wokół modelu (kontekst, narzędzia, weryfikacja) decyduje o wyniku agenta, nie sam model – czyli znowu inżynieria, a nie magia.",
+      "dlaczego": "Kontra do wyścigu modeli, konkretna liczba (33,6% → 49,0% po zmianie samego harnessu) i polski autor do oznaczenia.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t3",
+      "link": "https://www.elenaverna.com/p/im-not-doing-996",
+      "tytul_newsa": "Nie pracuję w trybie 996 – Elena Verna o kulturze nadgodzin w firmach AI",
+      "kat": "Elena Verna o kulturze 996: AI miało skrócić pracę, a zamiast tego zespoły biorą 10 projektów zamiast jednego. Perspektywa managera, który odpowiada za tempo i ludzi.",
+      "dlaczego": "Temat kultury pracy i wypalenia – mocno emocjonalny, dobrze się niesie na LinkedInie i pokazuje Kubę jako managera.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t4",
+      "link": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+      "tytul_newsa": "Głód wygrywa ze stażem – rady dla młodych inżynierów w erze AI",
+      "kat": "Felix Rieseberg: głód wygrywa ze stażem – juniorzy widzą tarcia, których weterani nie zauważają. Co to znaczy dla onboardingu i dawania juniorom przestrzeni.",
+      "dlaczego": "Pozytywny głos o juniorach w czasie, gdy wszyscy mówią, że AI ich zastąpi.",
+      "rekomendowany": false
+    },
+    {
+      "id": "t5",
+      "link": "https://www.uber.com/us/en/blog/ai-code-cleanup/",
+      "tytul_newsa": "Jak Uber usuwa przestarzałe feature flagi za pomocą agentów AI",
+      "kat": "Uber AutoClean usunął 16 tys. feature flag i milion linii kodu agentami – dług techniczny to najlepszy pierwszy use case dla agentów w firmie.",
+      "dlaczego": "Konkretny, praktyczny przykład z dużej firmy, który zespół może skopiować – inżynierowie lubią takie case study.",
+      "rekomendowany": false
+    },
+    {
+      "id": "t6",
+      "link": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html",
+      "tytul_newsa": "Microsoft oferuje dobrowolne odejścia 60 tysiącom pracowników",
+      "kat": "Microsoft proponuje dobrowolne odejście 60 tys. osób, bo infrastruktura AI kosztuje 50 mld $ kwartalnie – budżet na GPU zaczyna konkurować z budżetem na ludzi.",
+      "dlaczego": "Duża, niepokojąca liczba; ale temat był już w poście głównym.",
+      "rekomendowany": false
+    },
+    {
+      "id": "t7",
+      "link": "https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access",
+      "tytul_newsa": "Banki w USA wykrywają nieautoryzowanych agentów AI na kontach klientów",
+      "kat": "Banki blokują agentów AI na kontach klientów, a 1Password daje agentom logowanie bez hasła – tożsamość agenta to nowy problem bezpieczeństwa.",
+      "dlaczego": "Praktyczny problem, który za chwilę dotknie każdą aplikację z logowaniem.",
+      "rekomendowany": false
+    },
+    {
+      "id": "t8",
+      "link": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015",
+      "tytul_newsa": "Netflix: Pensive AI diagnozuje awarie zadań w skali 100 tysięcy dziennie",
+      "kat": "Netflix diagnozuje 100 tys. awarii dziennie, a model zwraca tylko numery linii błędu zamiast przepisywać logi – sprytne ograniczenie zadania zamiast większego modelu.",
+      "dlaczego": "Sprytny inżynierski trik, który łatwo przełożyć na własny projekt.",
+      "rekomendowany": false
+    }
+  ]
+}

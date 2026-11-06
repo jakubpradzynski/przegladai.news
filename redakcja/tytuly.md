@@ -17,6 +17,10 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   „10-krotnie”, „o 90%”.
 - Cudzysłowy polskie „…” (albo proste "…", gdy tak było w źródle). Dopowiedzenia po półpauzie „–”.
 
+- Gdy autor jest ważny tylko jako przedstawiciel firmy, w tytule stoi firma, a nie nazwisko:
+  „Czym jest Forward Deployed Engineering w OpenAI”, nie „Colin Jarvis z OpenAI: …”. Nazwisko (np. założyciel
+  zespołu) trafia do opisu, jeśli podnosi wagę materiału.
+
 ### Wzorce według typu materiału
 
 | Typ | Wzorzec | Przykłady z wydań |
@@ -52,7 +56,7 @@ Przykłady: „Wydanie #38: Nowa Siri od Apple, debata o spowolnieniu AI i Waymo
 
 Przy generowaniu zawsze 2–3 propozycje różniące się doborem tematów, nie tylko szykiem.
 
-**Kuba w #40, #41 i #42 sam złożył tytuł** (w #40 z 1. propozycji i rezerwy, w #41 bez żadnej z trzech) z tematów, wśród których
+**Kuba w #40–#45 sam złożył tytuł** (najnowszy: #45 — patrz przykłady), wcześniej w #40, #41 i #42 (w #40 z 1. propozycji i rezerwy, w #41 bez żadnej z trzech) z tematów, wśród których
 jest lekka ciekawostka albo produkt „z efektem wow” (Claude na Nokii; komputer pod AI, Google Playground, darmowy Adobe),
 niekoniecznie najwyżej oceniany; w #41 największa premiera tygodnia (GPT-6 z Intelligent UI, Haiku 5.5) została poza tytułem.
 Dlatego jedna z trzech propozycji ma być „ciekawostkowa” (dziwny albo konsumencki news z wybranych), a przy
@@ -66,7 +70,6 @@ w różnym szyku — a tematy: biznes/upadłość, premiera dużej firmy i wąte
 
 _(uzupełnia `ucz-sie` na podstawie dziennika)_
 
-- #39 Tytuł: „James Shore: jak naprawdę zmierzyć wpływ AI…” → „Jak naprawdę zmierzyć wpływ AI…” — nazwisko mało znanego autora nie idzie do tytułu (tak samo: Orestis Ioannou, Paul Iusztin).
 - #39 tytuł wydania: wybrana 1. propozycja „Claude Opus 5.5, wojna o agenta zakupowego Muse i AI Force Trumpa” — premiera modelu + konflikt biznesowy + polityka; odrzucone warianty z dwoma premierami modeli naraz i z mniej znanym wątkiem (Cowork).
 - #40 tytuł wydania: Kuba złożył własny z 1. propozycji i rezerwy: „OpenAI Dots, prospekt IPO Anthropic i Claude na Nokii z 2007 roku” — trzeci temat to lekka ciekawostka (Nokia, ocena 5, wzięta z rezerwy), a nie incydent (włamanie agenta do rządu Australii); „Dots” wielką literą jak nazwa produktu. Wszystkie 3 propozycje AI były poważne — przynajmniej jedna ma mieć lekki temat.
 - #41 Tytuł (Bloomberry, Bain): „Badanie: kto kupuje reklamy w ChatGPT…” → „Kto kupuje reklamy…”; „Raport Bain: branża AI musi zarabiać…” → „Branża AI musi zarabiać…” — bez prefiksu raportu/badania.
@@ -78,3 +81,4 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #43 tytuł wydania: żadna z 3 propozycji → własny „Sauna od Wordware, sukces polskiego modelu Basal Omni i PLLuM w sądzie” (po rozmowie z Claude) — czwarty raz z rzędu (#40–#43) Kuba sam składa tytuł. Tym razem cały numer pod hasłem „Polska”: trzy polskie newsy zamiast największych premier (Apple HomeView, Muse Spark Open, fundusz Anthropic poza tytułem). Gdy wybrane są 4+ mocne polskie newsy, jedna z propozycji ma być „polskim” wydaniem; nazwa modelu pełna („Basal Omni”, nie „Basal”).
 - #44 Tytuł (Netflix, Pocock): „…awarie zadań danych w skali 100 tysięcy dziennie” → „…awarie zadań w skali…”; „Uczciwa recenzja Skills Matta Pococka – dyscyplina inżynierska, ale nie zamiennik osądu” → „Uczciwa recenzja Skills Matta Pococka” — krótszy tytuł bez doprecyzowania i dopowiedzenia po półpauzie.
 - #44 tytuł wydania: żadna z 3 propozycji → własny „Prospekt IPO Anthropic, odejścia w Microsoft i 95 mld dolarów Mety na AI” — piąty raz z rzędu (#40–#44) Kuba sam składa tytuł; tym razem trzy tematy biznesowe: IPO Anthropic (1. propozycja), Meta (1.) i odejścia w Microsoft (2. propozycja, zamiast GPT-6.1 Terra, który został tylko we wstępie). Tytuł pod „pieniądze i rynek pracy”, premiery (Terra, Carbon, Genie 4) poza tytułem.
+- #45 tytuł wydania: żadna z 3 propozycji → własny „TesterArmy to teraz e2e, HackerTube i jak powstał Lovable” (po rozmowie z Claude; pytajnik na końcu zdjął w admince) — szósty raz z rzędu (#40–#45) Kuba sam składa tytuł; tym razem trzy wątki „dla budujących z agentami”: startup z rundą seed (e2e, tag Polska), osobisty projekt Karpathy’ego i lekcja inżynierska (Lovable), zamiast największych newsów biznesowych (runda OpenAI, wyszukiwarka ChatGPT, Reddit) i premier (Images 2.6, Siri AI). Jedna z trzech propozycji ma być „inżynierska” (narzędzie, projekt, lekcja z budowy), z nazwą startupu po zmianie nazwy (e2e, nie tylko TesterArmy).
