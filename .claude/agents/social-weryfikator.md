@@ -34,6 +34,24 @@ skąd wziął liczby; nie ufaj im, sprawdź sam). Opis newsa z wydania: `wydania
    procentowo (`python3 -c "import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1]))" "słowa"`).
    Wybierz słowa bez znaków specjalnych i bez przełamania akapitu. Dla PDF podaj sam URL i stronę w `uwaga`.
 
+5. **Drugie, niezależne źródło dla kluczowych twierdzeń.** Dla liczb i tez z haczyka, kwot, nazwisk i funkcji, a także
+   każdego twierdzenia, które źródło pierwotne podaje jako własne (blog firmy o sobie, wypowiedź prezesa), poszukaj
+   drugiego, niezależnego źródła (WebSearch: media, raporty, dokumenty). Gdy drugie źródło mówi co innego — `rozbieżność`
+   z opisem, co mówi każde z nich. Gdy drugiego źródła nie ma, status zostaje `potwierdzony`, ale w `uwaga` napisz
+   „jedno źródło”. Twierdzenia oparte tylko na materiale marketingowym firmy o sobie oznacz w `uwaga`.
+6. **Kontrola spójności (osobny przebieg, po sprawdzeniu faktów).** Przeczytaj cały post od początku do końca jak
+   redaktor i sprawdź kontekst, a nie pojedyncze fakty:
+   - kto co zrobił albo powiedział (nie pomieszane podmioty: firma vs jej szef, inżynier vs firma, autor tekstu vs bohater),
+   - liczba ma właściwy okres, jednostkę i zakres (stan teraz vs plan vs prognoza; półrocze vs rok; „do tej pory” vs „w 2024”),
+   - parafraza nie zmienia sensu źródła ani nie dodaje przyczynowości, której źródło nie podaje,
+   - opinie i wnioski Kuby nie są przedstawione jako fakty ze źródła,
+   - LinkedIn i wątek X mówią to samo (te same liczby i sens), a sąsiednie zdania sobie nie przeczą,
+   - przykłady i objaśnienia pojęć są poprawne i pasują do tego, co mówi źródło,
+   - pytanie na końcu dotyczy głównej tezy posta.
+   Każdy problem dodaj do listy `fakty` jako wpis z `fakt` zaczynającym się od „Spójność:” (status `rozbieżność` albo
+   `niepotwierdzony`, w `uwaga` fragment posta i jak go poprawić). Na końcu dodaj wpis „Spójność: całość” ze statusem
+   `potwierdzony`, gdy przebieg nie wykrył problemów.
+
 ## Wynik
 
 ```json

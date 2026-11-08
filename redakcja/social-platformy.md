@@ -16,11 +16,11 @@ _(sekcję edytuje tylko Kuba)_
 - **Bez linku w treści posta.** Posty z linkiem zewnętrznym mają wyraźnie mniejszy zasięg.
   Link do wydania / źródła idzie w **pierwszym komentarzu** (dodawanym od razu po publikacji).
 - Przed „…więcej” widać ~210 znaków (na telefonie mniej) — haczyk musi się zmieścić w pierwszym akapicie.
-- Limit 3000 znaków, praktycznie 700–1500.
+- Limit 3000 znaków, praktycznie 1000–1700 (do ~2000, gdy temat wymaga wyjaśnienia).
 - Krótkie akapity oddzielone pustą linią. Listy z „–” albo oszczędnymi emoji.
 - Hashtagi: domyślnie **brak** (Kuba nie jest przekonany, że coś dają, a wyglądają sztucznie — #44).
 - Nie oznaczamy firm/osób na siłę; oznaczenie autora artykułu tylko, gdy realnie się do niego odnosimy.
-- Obrazek pionowy 4:5 (1080×1350) zajmuje najwięcej miejsca w feedzie. Okładka wydania jest pozioma — OK dla posta głównego.
+- Obrazek pionowy 4:5 (1080×1350) zajmuje najwięcej miejsca w feedzie (infografiki ze skryptu mają ten format; zdjęcia z Google Flow powstają w 3:4 i są przycinane do 4:5). Okładka wydania jest pozioma — OK dla posta głównego.
 - Pierwsza godzina decyduje: warto odpowiadać na komentarze zaraz po publikacji.
 - Godziny: wt–czw 8:00–10:00. Post główny w piątek rano (dzień wydania).
 
@@ -53,6 +53,8 @@ _(sekcję edytuje tylko Kuba)_
 | Pogłębiony 2 | środa, 8:30 |
 | Pogłębiony 3 | czwartek, 8:30 |
 | Kolejne | następne dni robocze albo do decyzji Kuby |
+
+W praktyce (#45) Kuba publikuje ok. trzech postów pogłębionych tygodniowo i zostawia sobie wybór wariantu (np. jeden z dwóch tematów na wtorek), a pierwszy post potrafi pójść już w weekend po wydaniu. Terminy w narzędziu to propozycje — AI daje daty, Kuba układa kolejność.
 
 Najlepszy (najmocniejszy haczyk) idzie na wtorek.
 

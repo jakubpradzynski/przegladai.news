@@ -29,7 +29,7 @@ Przeczytaj wszystkie pliki `redakcja/*.md` i pogrupuj nowe wpisy:
 | `zmiana` pól `opis_seo`, `slug`, `okladka` | `seo.md` |
 | etap `social`: `zmiana` pola `linkedin`, `uwaga`, `wskazowka`, `post_odrzucony` / `post_publikowany` | `social.md` (styl, struktura, ton, forma zwracania się) |
 | etap `social`: `temat_wybrany`, `temat_pominiety`, `temat_dodany` | `social.md` (sekcja „Wybór tematów”) |
-| etap `social`: `zmiana` pól `obrazek`, `obrazek_prompt`, `infografika` | `social.md` (sekcja „Obrazki”) |
+| etap `social`: `zmiana` pól `obrazek`, `obrazek_prompt`, `obrazek_mem`, `infografika` | `social.md` (sekcja „Obrazki”) |
 | etap `social`: `zmiana` pól `x`, `komentarz`, `termin` | `social-platformy.md` |
 | etap `social`: nawiązania osobiste dodane / usunięte przez Kubę (widać w `zmiana` pola `linkedin`) | `o-mnie.md` (sekcja „Czego się nauczyliśmy o nawiązaniach”) |
 | etap `social`: `wynik` | `social-platformy.md` / `social.md` — patrz niżej |
