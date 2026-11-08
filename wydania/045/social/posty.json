@@ -1,0 +1,888 @@
+{
+  "numer": 45,
+  "tytul": "Wydanie #45: TesterArmy to teraz e2e, HackerTube i jak powstał Lovable",
+  "status": "gotowe",
+  "posty": [
+    {
+      "id": "glowny",
+      "rodzaj": "glowny",
+      "temat": "Wstęp wydania",
+      "link_newsa": "",
+      "tytul_newsa": "",
+      "kat": "Trzy wątki dla budujących z agentami: HackerTube Karpathy’ego, e2e (dawniej TesterArmy) i lekcja Lovable.",
+      "linkedin": "Andrej Karpathy w dwie godziny zbudował z Claude serwis HackerTube. Z 43 milionów komentarzy z Hacker News wyłowił 6454 filmy, które programiści polecają sobie od lat.\n\nRęcznie zrobił tylko klucz API Google, serwer VPS i domenę. Resztę, razem z wdrożeniem i zabezpieczeniem serwera, wykonał agent.\n\nObok tego dwa wątki dla każdego, kto buduje z agentami. TesterArmy zmienia nazwę na e2e i zbiera 8 mln dolarów na narzędzie, które sprawdza kod pisany przez agentów. Po miesiącu ma już ponad 1,5 mln pobrań z npm.\n\nZespół Lovable opisuje z kolei, że wyrzucił większość kodu swoich autonomicznych agentów, bo działały nieprzewidywalnie, i zastąpił go prostym łańcuchem narzędzi.\n\nTo i ponad 25 innych newsów z tygodnia zebrałem w 45. wydaniu PrzeglądAI, link w komentarzu.\n\nCzy używałeś/aś e2e w swojej pracy? Jak Tobie się sprawdziło?",
+      "komentarz": "Wydanie #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable",
+      "x": [
+        "Andrej Karpathy w dwie godziny zbudował z Claude serwis HackerTube: z 43 mln komentarzy z Hacker News wyłowił 6454 filmy, które programiści polecają sobie od lat.",
+        "Ręcznie zrobił tylko klucz API Google, serwer VPS i domenę. Wdrożenie i zabezpieczenie serwera zrobił agent.",
+        "Dwa inne wątki dla budujących z agentami: TesterArmy zmienia nazwę na e2e i zbiera 8 mln $ na testowanie kodu pisanego przez agentów. Lovable wyrzucił większość kodu swoich autonomicznych agentów na rzecz prostego łańcucha narzędzi.",
+        "To i ponad 25 innych newsów z tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "okladka",
+        "infografika": {
+          "rodzaj": "liczba",
+          "naglowek": "HackerTube",
+          "liczba": "6454",
+          "podpis": "filmów polecanych w komentarzach Hacker News, wyłowionych z 43 mln komentarzy w około dwie godziny z Claude",
+          "zrodlo": "blog Andreja Karpathy’ego"
+        },
+        "plik": "../okladka.jpeg"
+      },
+      "termin": "2026-11-06 09:30",
+      "fakty": [
+        "2 godziny, klucz API Google, serwer VPS i domena ręcznie, wdrożenie przez agenta – opis newsa Hacker Tube (dane.csv)",
+        "43 mln komentarzy, 6454 filmy – post Karpathy’ego na X i opis newsa",
+        "8 mln $ seed, ponad 1,5 mln pobrań z npm – opis newsa e2e (dane.csv)",
+        "większość kodu autonomicznych agentów usunięto, prosty łańcuch narzędzi – opis newsa Lovable (dane.csv)",
+        "ponad 25 innych newsów – wydanie ma 29 newsów"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[weryfikacja] „43 mln komentarzy z Hacker News” potwierdzone w poście Karpathy’ego na X („43M comments over 20 years of HN”, odczytane w Chrome); blog podaje tylko „all” i 40 tys. po filtrowaniu.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "glowny",
+        "data": "2026-11-05 12:00",
+        "fakty": [
+          {
+            "fakt": "Karpathy zbudował HackerTube z Claude z 43 mln komentarzy z Hacker News",
+            "gdzie": "linkedin, x, infografika",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://karpathy.bearblog.dev/hacker-tube/",
+            "link": "https://www.drweb.de/karpathy-hackertube-claude/",
+            "cytat": "Opus 5.5 lud laut Karpathy alle Kommentare von Hacker News herunter, nach seinem Beitrag auf X 43 Millionen aus 20 Jahren.",
+            "uwaga": "Blog Karpathy'ego nie podaje łącznej liczby komentarzy (tylko 'all' i 40K po filtrowaniu). 43 mln pojawia się wyłącznie w jednym źródle wtórnym (drweb.de), które powołuje się na jego post na X; posta nie udało się sprawdzić. Sprawdź post na X albo usuń liczbę (można napisać 'ze wszystkich komentarzy z Hacker News' / 'z ok. 40 tys. komentarzy z poleceniami filmów'). Uwaga: sformułowanie 'z 43 mln komentarzy wyłowił 6454 filmy' pomija, że pośrednio wyfiltrowano ok. 40 tys. komentarzy z polecanymi filmami."
+          },
+          {
+            "fakt": "HackerTube powstał w około dwie godziny z Claude",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://karpathy.bearblog.dev/hacker-tube/",
+            "link": "https://karpathy.bearblog.dev/hacker-tube/#:~:text=This%20takes%20~2%20hours%20now",
+            "cytat": "This takes ~2 hours now.",
+            "uwaga": "Blog: Opus 5.5 w Claude Code. Sformułowanie 'takes ~2 hours now' może dotyczyć powtórzenia całego procesu; media (aiweekly.co) opisują to jako zbudowanie w ok. 2 godziny."
+          },
+          {
+            "fakt": "Wyłowiono 6454 filmy polecane w komentarzach Hacker News",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://karpathy.bearblog.dev/hacker-tube/",
+            "link": "https://karpathy.bearblog.dev/hacker-tube/#:~:text=In%20total%2C%20we%20get%206%2C454%20YouTube%20videos",
+            "cytat": "In total, we get 6,454 YouTube videos that have been recommended by a few people on HN from 2007-2026 across 150 topics.",
+            "uwaga": "Filmy polecane przez kilka osób na HN w latach 2007-2026."
+          },
+          {
+            "fakt": "Ręcznie zrobił tylko klucz API Google, serwer VPS i domenę",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://karpathy.bearblog.dev/hacker-tube/",
+            "link": "https://karpathy.bearblog.dev/hacker-tube/#:~:text=I%20booted%20up%20a%20VPS%20box",
+            "cytat": "I had to create some kind of API key from Google Cloud UI to query YouTube for video metadata",
+            "uwaga": "Dalej: 'I booted up a VPS box', 'I bought the domain name.' Klucz to klucz YouTube Data API z Google Cloud."
+          },
+          {
+            "fakt": "Wdrożenie i zabezpieczenie serwera wykonał agent",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://karpathy.bearblog.dev/hacker-tube/",
+            "link": "https://karpathy.bearblog.dev/hacker-tube/#:~:text=Once%20the%20box%20was%20up%20I",
+            "cytat": "Once the box was up I gave Claude the IP and told it update, deploy, secure, harden and optimize the code, and it did the whole thing.",
+            "uwaga": ""
+          },
+          {
+            "fakt": "TesterArmy zmienia nazwę na e2e",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://e2e.com/blog/seed",
+            "link": "https://e2e.com/blog/seed#:~:text=TesterArmy%20is%20now",
+            "cytat": "TesterArmy is now e2e",
+            "uwaga": ""
+          },
+          {
+            "fakt": "e2e zebrało 8 mln dolarów (seed)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://e2e.com/blog/seed",
+            "link": "https://e2e.com/blog/seed#:~:text=raised%20%248%20million%20in%20seed%20funding",
+            "cytat": "raised $8 million in seed funding",
+            "uwaga": "Cytat z odczytu strony; kwota $8 million potwierdzona, fragment w linku może nie podświetlić."
+          },
+          {
+            "fakt": "Narzędzie e2e sprawdza/testuje kod pisany przez agentów",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://e2e.com/blog/seed",
+            "link": "https://e2e.com/blog/seed",
+            "cytat": "the verification layer for the agentic coding era",
+            "uwaga": "Otwarte (Apache-2.0) narzędzie do testowania aplikacji pisanych z agentami."
+          },
+          {
+            "fakt": "e2e ma ponad 1,5 mln pobrań z npm po miesiącu",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://e2e.com/blog/seed",
+            "link": "https://e2e.com/blog/seed",
+            "cytat": "e2e passed 1.5M npm downloads in its first month",
+            "uwaga": "Źródło podaje 1.5M ('passed' = przekroczyło), więc 'ponad 1,5 mln' jest OK. Cytat z odczytu strony, nie dosłownie sprawdzony w HTML."
+          },
+          {
+            "fakt": "Lovable wyrzucił większość kodu autonomicznych agentów na rzecz prostego łańcucha narzędzi; agenci działali nieprzewidywalnie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+            "link": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it#:~:text=We%20deleted%20almost%20all%20agent%20code",
+            "cytat": "We deleted almost all agent code and went back to one user request resulting in a rather predictable chain of tools.",
+            "uwaga": "Autor: współzałożyciel Anton Osika; 'taking actions with no predictable finish time'. Post pisze 'zespół Lovable opisuje' - OK."
+          },
+          {
+            "fakt": "Wydanie ma ponad 25 innych newsów",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "wydania/045/dane.csv",
+            "link": "wydania/045/dane.csv",
+            "cytat": "29 wierszy z newsami w dane.csv",
+            "uwaga": "Wydanie ma 29 newsów, więc 'ponad 25 innych' jest prawdziwe (28 poza głównym wątkiem)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t4",
+      "rodzaj": "temat",
+      "temat": "Lovable i ciągłe przebudowy",
+      "link_newsa": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+      "tytul_newsa": "Jak powstał Lovable i dlaczego ciągle go przebudowują",
+      "kat": "W firmach AI duża część projektu jest co jakiś czas przebudowywana, bo przebudowa jest dziś tańsza i uczy się na działającym rozwiązaniu; warto zawęzić problem, kontrolować wykonanie i uczyć się z wyników.",
+      "linkedin": "Użytkownicy Lovable utworzyli do tej pory ponad 70 mln projektów, a mimo to zespół usunął prawie cały kod swoich agentów i wrócił do prostszego schematu pracy.\n\nLovable to platforma, na której aplikacje powstają w rozmowie z AI. Agent sam planuje kolejne kroki do wykonania. Według firmy takie agenty z dużą swobodą grzęzły w technicznych szczegółach, popełniały błędy i nie dało się przewidzieć, kiedy skończą pracę. Dlatego jedno polecenie użytkownika uruchamia dziś z góry znany ciąg kroków, a nie agenta, który sam decyduje, co robić dalej.\n\nDobrze widać to na drugim przykładzie z tekstu, z 2024 roku. Zamiast dotrenowywać model, inżynierowie przeglądali logi rozmów z aplikacji, które się psuły, i spisywali krótkie notatki o powtarzających się błędach. Taka notatka brzmi na przykład: „Używaj tylko ikon, które istnieją w bibliotece lucide-react”. Przy każdym nowym zadaniu system wyszukiwał w tych notatkach pasujące fragmenty i dopisywał je do polecenia dla modelu. Zwykły tekst zamiast treningu.\n\nDziś kod Lovable to ponad 100 tys. pull requestów, więc takie przebudowy dotyczą dużego, żywego projektu, a nie prototypu.\n\nWidzę tu wzorzec, który powtarza się w wielu firmach AI: duża część projektu jest co jakiś czas przebudowywana. Po części dlatego, że modele szybko się zmieniają, ale nie tylko. Człowiek uczy się dopiero na działającym rozwiązaniu, a przebudowa jest dziś tańsza niż kiedyś. Dawniej przebudowa całości trwała długo i kosztowała dużo, więc system planowano tak, żeby jej uniknąć. Teraz łatwiej jest szybko wypuścić działającą wersję, zebrać feedback i zbudować ją od nowa zgodnie z potrzebami użytkowników.\n\nCo możemy z tego wziąć dla siebie: po pierwsze, zawęzić problem, po drugie, kontrolować jego wykonanie, a po trzecie, uczyć się z wyników. Na czym warto się zastanowić: które części naszego rozwiązania najtrudniej byłoby przebudować, gdyby użytkownicy pokazali, że potrzebują czegoś innego?\n\nCzy w Twoim zespole przebudowa rozwiązania jest dziś tańsza niż kilka lat temu i czy zmienia to sposób, w jaki planujecie architekturę?",
+      "komentarz": "Pełny przegląd tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable\nŹródło: https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+      "x": [
+        "Użytkownicy Lovable utworzyli do tej pory ponad 70 mln projektów. Mimo to zespół usunął prawie cały kod swoich agentów i wrócił do prostszego schematu.",
+        "Agent sam planuje kolejne kroki. Według firmy takie agenty grzęzły w technicznych szczegółach, popełniały błędy i nie dało się przewidzieć, kiedy skończą. Teraz jedno polecenie uruchamia z góry znany ciąg kroków.",
+        "Przykład z 2024: inżynierowie przeglądali logi zepsutych aplikacji i spisywali notatki o błędach, np. „używaj tylko ikon z biblioteki lucide-react”. System dopisywał pasujące notatki do polecenia dla modelu. Bez dotrenowywania.",
+        "Widzę tu wzorzec z wielu firm AI: duża część projektu jest co jakiś czas przebudowywana. Nie tylko przez zmiany modeli. Przebudowa jest dziś tańsza, więc może warto szybciej wypuścić działającą wersję, zebrać feedback i zbudować od nowa.",
+        "Co z tego wziąć: zawęzić problem, kontrolować jego wykonanie i uczyć się z wyników.\nWięcej w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "brak",
+        "infografika": {
+          "rodzaj": "lista",
+          "styl": "notatka",
+          "naglowek": "Lovable: co z tego wziąć",
+          "tytul": "Trzy rzeczy do przebudowy",
+          "punkty": [
+            "Zawęź problem",
+            "Kontroluj wykonanie",
+            "Ucz się z wyników"
+          ],
+          "zrodlo": "blog Lovable",
+          "numer": 45
+        },
+        "prompt": "Minimalist flat illustration, 3:4 vertical, off-white background. On the left a tangled knot of thin dark-blue lines; on the right the same line pulled straight into a clean sequence of three small circles joined by a straight line. One accent color (warm orange) on the three circles, lots of white space, hand-drawn feel, not a stock-looking graphic. No text, no people, no logos. Calm, uncluttered composition with the main subject centered and generous margin so it can be cropped to 4:5.",
+        "plik": "obrazki/t4.png",
+        "mem": {
+          "szablon": "Always Has Been",
+          "link": "https://imgflip.com/memegenerator/Always-Has-Been",
+          "tekst": "góra (astronauta pyta): Czekaj, w firmach AI duża część produktu jest co jakiś czas przebudowywana?\ndół (odpowiedź): Zawsze tak było."
+        }
+      },
+      "termin": "2026-11-08 12:00",
+      "fakty": [
+        "ponad 70 mln projektów utworzonych przez użytkowników „to date” – blog Lovable („our users have created more than 70 million projects on the platform to date”)",
+        "ponad 100 tys. pull requestów, bez „scalonych”; stan osiągnięty – blog Lovable („More than 100,000 pull requests in our codebase later”)",
+        "agenci z większą swobodą grzęźli w „technical rabbit holes”, błędy, brak przewidywalnego czasu zakończenia – blog Lovable („less-constrained agents”)",
+        "usunięcie prawie całego kodu agentów, powrót do „rather predictable chain of tools”; blog nie wymienia kroków tego ciągu, więc post ich nie podaje – blog Lovable",
+        "2024: inżynierowie przeglądali logi czatów z zepsutych aplikacji i spisywali krótkie notatki o błędach; „retrieval step selected the relevant notes and added them to the model's context”; przykład „Only use icons that exist in lucide-react” – blog Lovable (autor zaznacza, że to ilustracja)",
+        "zasada „constrain the problem, control execution, and learn from the results” – blog Lovable, przepisana jako własne rozumowanie",
+        "OPINIA Kuby: wzorzec ciągłych przebudów w wielu firmach AI; przebudowa tańsza niż kiedyś i nauka na działającym rozwiązaniu; rada, by szybciej wypuszczać i przebudowywać (z uwag Kuby)",
+        "„zmiany po ponad 100 tys. pull requestów” – interpretacja zwrotu „100,000 pull requests in our codebase later” (stan osiągnięty, przeszły); do weryfikacji"
+      ],
+      "publikuj": true,
+      "wynik": {},
+      "uwaga_kuby": "[czat] Haczyk: „zespół usunął prawie cały kod swoich agentów i wrócił do przewidywalnego łańcucha narzędzi” – jakich narzędzi? Czym jest łańcuch narzędzi? Czy chodzi o to, że zamiast odpalać agenta, który robi kilka powtarzalnych kroków, po prostu to zakodowali? Nie wiem. Czy te 100 tysięcy pull requestów to moment, który minął i teraz jest opisywany, czy dopiero przyszłość?\n[czat] Zamiast „mniej ograniczeni agenci” (nie wiem, co to znaczy) napisałbym: agenci AI sami planują kolejne kroki do wykonania (agent to program, który sam planuje kolejne kroki).\n[czat] „Jedno zapytanie użytkownika uruchamia z góry ustalony ciąg narzędzi” – na przykład jakich narzędzi? „Drugi przykład jest równie przyziemny” – przykład czego? Mam wrażenie, że to nie ma sensu. „Krok wyszukiwania dobierał notatki i dopisywał je do kontekstu” – krok wyszukiwania czego? To też do poprawy.\n[czat] Zasada z tekstu „zawęź problem, kontroluj wykonanie i ucz się z wyników” mi nie pasuje, chociaż wniosek jest dobry. Napisałbym raczej: co możemy z tego wziąć dla siebie – po pierwsze trzeba zawęzić problem, po drugie kontrolować jego wykonanie, a po trzecie uczyć się z wyników.\n[czat] Zamiast „widzę tu raczej wzorzec”: widzę tu wzorzec, który powtarza się w wielu firmach AI – duża część projektu jest co jakiś czas przebudowywana. „Rozumiem, że to kosztuje, ale modele zmieniają się szybciej niż architektura wokół nich” – nie wiem, czy to jedyna kwestia. Może chodzi też o to, że człowiek uczy się po czasie, na produkcyjnym rozwiązaniu: szybciej dostarczyć rozwiązanie produkcyjne, wyciągać wnioski i przebudowywać od nowa pod potrzeby użytkowników, bo samo przebudowywanie i tworzenie jest tańsze niż wcześniej. Kiedyś przebudowa całego rozwiązania była bardzo kosztowna i długo trwała, więc raczej jej unikano i tak planowano system, żeby nie była potrzebna. Teraz być może lepiej szybciej dostarczyć działające rozwiązanie, zebrać feedback i przebudować je na nowo.\n[czat] Zamiast „coś wartego uwagi dla menedżerów”: coś, na czym warto się zastanowić.\n[czat] Pytanie na końcu nie do końca się spisuje – mówi o modelu LLM pod spodem jako kluczowym, a tu chodzi ogólnie o przebudowę tych narzędzi/rozwiązań.\n[weryfikacja] liczba „ponad 100 tys. pull requestów” to stan na dziś (podsumowanie od 2023), a nie moment, w którym zapadły zmiany – zdanie przepisane.\n[czat] Zdjęcia: nie takie rzeczy (garaż, motocykl, remont); podobały się dziewięć kubków (podział pracy na dziewięć osób) i notes z rozpisaną architekturą. Nie muszą być realistyczne – mogą być minimalistyczne, ilustracje, grafiki generowane pod temat (nie szablonowe), sceneria może wyglądać realnie, ale nie jak zdjęcie z banku. Chętnie wskazówki o memach (szablon + gotowy tekst).\n[czat] Decyzja: Lovable idzie dziś bez obrazka; Proton i Cisco zostają oba, ale pójdzie jeden z nich (we wtorek) — do wyboru; Prawo Brooksa na końcu (czwartek) z memem Gru's Plan zrobionym przez Kubę (obrazki/t6_mem.jpg). Żadne z pozostałych zdjęć ani infografik nie podoba się — bez obrazka.",
+      "weryfikacja": {
+        "id": "t4",
+        "data": "2026-11-08 12:00",
+        "fakty": [
+          {
+            "fakt": "„Te zmiany zapadły już po ponad 100 tys. pull requestów” (interpretacja: zmiany nastąpiły po osiągnięciu 100 tys. PR)",
+            "gdzie": "linkedin",
+            "status": "rozbieżność",
+            "zrodlo": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+            "link": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it#:~:text=More%20than%20100%2C000%20pull%20requests%20in%20our%20codebase%20later",
+            "cytat": "More than 100,000 pull requests in our codebase later",
+            "uwaga": "Źródło podaje 100 tys. PR jako stan obecny w chwili pisania (listopad 2026, podsumowanie od wiosny 2023), a nie moment, w którym zapadły zmiany. Usunięcie kodu agentów i notatki to koniec/rok 2024, opisane osobno i niepowiązane z tą liczbą. Do poprawy: usunąć zdanie albo napisać „Dziś kod Lovable to ponad 100 tys. pull requestów, a przebudowują go nadal”. Dotyczy też fragmentu „na dużym, żywym projekcie” (ok jako wniosek, ale nie jako moment zmian). Liczba 100 tys. dotyczy PR w ogóle, źródło nie mówi „scalonych”."
+          },
+          {
+            "fakt": "Ponad 70 mln projektów utworzonych przez użytkowników do tej pory",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+            "link": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it#:~:text=our%20users%20have%20created%20more%20than%2070%20million%20projects",
+            "cytat": "our users have created more than 70 million projects on the platform to date",
+            "uwaga": "Zdanie w poście („mimo to” po 70 mln) to układ narracyjny; liczba zgodna. Odczyt przez WebFetch (streszczenie strony)."
+          },
+          {
+            "fakt": "Zespół usunął prawie cały kod agentów i wrócił do prostszego schematu: jedno żądanie użytkownika → dość przewidywalny, z góry znany ciąg kroków/narzędzi (opis z czatem i podglądem na żywo)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+            "link": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it#:~:text=We%20deleted%20almost%20all%20agent%20code",
+            "cytat": "We deleted almost all agent code and went back to one user request resulting in a rather predictable chain of tools",
+            "uwaga": "Czas: late 2024. Źródło mówi „dość przewidywalny ciąg narzędzi”; post pisze „z góry znany ciąg kroków” – dopuszczalne uproszczenie, choć „przewidywalny” jest bliższy. Czat i podgląd na żywo wspomniane w źródle jako ilustracja przepływu, nie wymienione w poście. Post nie podaje, jakich narzędzi – słusznie."
+          },
+          {
+            "fakt": "Agenci z większą swobodą grzęźli w technicznych szczegółach, popełniali błędy, nie było wiadomo kiedy skończą",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+            "link": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it#:~:text=less-constrained%20agents%20would%20get%20stuck%20in%20technical%20rabbit%20holes",
+            "cytat": "less-constrained agents would get stuck in technical rabbit holes",
+            "uwaga": "Błędy i brak przewidywalności czasu: źródło mówi też „Giving them more freedom made the product less dependable”; punkt o nieprzewidywalnym czasie skończenia odczytany ze streszczenia strony, nie ze zdania dosłownego."
+          },
+          {
+            "fakt": "W 2024 inżynierowie przeglądali logi czatów zepsutych aplikacji i spisywali krótkie notatki o powtarzających się błędach; krok wyszukiwania dobierał pasujące notatki i dodawał do kontekstu modelu; zamiast dotrenowywania",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+            "link": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it#:~:text=A%20retrieval%20step%20selected%20the%20relevant%20notes",
+            "cytat": "A retrieval step selected the relevant notes and added them to the model's context.",
+            "uwaga": "„Zamiast fine-tuningu” – źródło porównuje „knowledge files” do fine-tuningu (odczyt streszczenia). Rok 2024 potwierdzony („In 2024, we found a simpler way to start”)."
+          },
+          {
+            "fakt": "Przykład notatki: „używaj tylko ikon, które istnieją w bibliotece lucide-react”",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+            "link": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it#:~:text=Only%20use%20icons%20that%20exist%20in%20lucide-react",
+            "cytat": "Only use icons that exist in lucide-react.",
+            "uwaga": "Źródło oznacza to jako przykład ilustracyjny; post mówi „na przykład” – OK."
+          },
+          {
+            "fakt": "Zasada: zawęzić problem, kontrolować wykonanie, uczyć się z wyników",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+            "link": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it#:~:text=constrain%20the%20problem%2C%20control%20execution",
+            "cytat": "constrain the problem, control execution, and learn from the results",
+            "uwaga": "Post podaje to jako wniosek własny, treść zgodna."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t2",
+      "rodzaj": "temat",
+      "temat": "Proton i rozmowy o użyciu AI",
+      "link_newsa": "https://www.404media.co/reaping-and-sowing-ceo-edition/",
+      "tytul_newsa": "Szef Protona odwołuje „ponowne rozmowy kwalifikacyjne” o używanie AI",
+      "kat": "Gdy firma ocenia sam fakt użycia AI, ludzie używają go także tam, gdzie nie pomaga; lepiej rozmawiać o efektach i pytać zespół, co pomaga, a co przeszkadza.",
+      "linkedin": "Szef Protona zaplanował ponowne rozmowy kwalifikacyjne dla niemal wszystkich pracowników i odwołał je dzień po tym, jak sprawa trafiła do mediów.\n\nWedług źródeł z firmy osoby, które zarząd uznałby za używające AI za mało, mogłyby stracić pracę. Andy Yen, szef Protona, już wcześniej pisał pracownikom, żeby przestali ręcznie dopieszczać cały kod i częściej korzystali z AI.\n\nGdy jeden z nich poprosił na kanale o bezpieczeństwie o kilka dni na testy penetracyjne nowego kodu, czyli kontrolowane próby włamania przed wdrożeniem, usłyszał, że to myślenie przegranych, bo można być jednocześnie szybkim i bezpiecznym. Użytkownicy Protona krytykują zarząd w sieci, a część żąda dymisji Yena.\n\nRozumiem, dlaczego firma chciała to sprawdzić. Zarząd płaci za narzędzia i chce wiedzieć, czy ktoś z nich korzysta, a część ludzi sama z nich nie skorzysta, jeśli nikt ich do tego nie zachęci. Problem w tym, że samo użycie mówi o nawykach, a nie o tym, czy narzędzie pomogło.\n\nSkoro oceniany jest fakt użycia, a nie efekt, ludzie będą używać AI także tam, gdzie im to nie pomaga. Do tego dochodzi strach o pracę: łatwiej pokazać, że się korzysta z AI, niż tłumaczyć, że w danym zadaniu wyszłoby wolniej. Prośba o czas na testy pokazuje, jak łatwo troskę o jakość wziąć za opór.\n\nNa czym warto się zastanowić: o adopcji AI lepiej rozmawiać przez efekty, na przykład czas dostarczania, liczbę błędów i jakość code review, i pytać zespół, co narzędzie ułatwiło, a gdzie przeszkadza.\n\nJak u Ciebie w zespole jest oceniane, jak dobrze ludzie używają AI i czy wiedzą, kiedy narzędzie pomaga, a kiedy przeszkadza?",
+      "komentarz": "Pełny przegląd tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable\nŹródło: https://www.404media.co/reaping-and-sowing-ceo-edition/",
+      "x": [
+        "Szef Protona zaplanował ponowne rozmowy kwalifikacyjne dla niemal wszystkich pracowników. Odwołał je dzień po tym, jak sprawa trafiła do mediów.",
+        "Według źródeł z firmy osoby używające AI za mało mogły stracić pracę. Szef wcześniej pisał, żeby przestać ręcznie dopieszczać kod i używać AI częściej.",
+        "Prośbę o kilka dni na testy penetracyjne nowego kodu usłyszał jako myślenie przegranych. Rozumiem, że firma chce sprawdzać, czy korzysta z narzędzi, za które płaci.",
+        "Ale gdy oceniany jest fakt użycia, a nie efekt, ludzie używają AI także tam, gdzie im to nie pomaga.",
+        "Lepiej rozmawiać o efektach: czas dostarczania, liczba błędów, jakość code review. I pytać zespół, co ułatwiło, a co przeszkadza. Jak to oceniacie u siebie?\nWięcej w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "brak",
+        "infografika": {
+          "rodzaj": "lista",
+          "styl": "notatka",
+          "tytul": "Co oceniać zamiast samego użycia AI",
+          "punkty": [
+            "Czas dostarczania",
+            "Liczba błędów po wdrożeniu",
+            "Jakość code review",
+            "Opinia zespołu: co pomaga, a co przeszkadza"
+          ],
+          "zrodlo": "PrzeglądAI #45",
+          "numer": 45
+        },
+        "prompt": "Realistic photo, 3:4 vertical. A quiet team room in late afternoon with soft window light: a desk with an open paper notebook with a hand-drawn checklist, a pen, a coffee mug and a closed laptop, a wall whiteboard in soft focus behind. Main subject centered with generous margin at the edges for cropping to 4:5. Nobody looking at the camera, no readable text, no robots, no glowing elements, no holograms, no 3D render look. Natural colors, shallow depth of field, casual phone photo feel.",
+        "plik": "obrazki/t2.png",
+        "mem": {
+          "szablon": "Change My Mind",
+          "link": "https://imgflip.com/memegenerator/Change-My-Mind",
+          "tekst": "napis na tabliczce: Liczenie, kto używa AI, nie mówi, czy AI pomaga"
+        }
+      },
+      "termin": "2026-11-10 08:30",
+      "fakty": [
+        "Ponowne rozmowy dla niemal wszystkich pracowników, odwołane w piątek, dzień po czwartkowej publikacji; osoby używające AI za mało mogły stracić pracę – 404 Media (zweryfikowane, weryfikacja/t2.json)",
+        "Wcześniejsze wezwanie Yena, by przestać ręcznie dopieszczać cały kod i używać AI więcej (sierpień, kanał o bezpieczeństwie) – fragment ze strony 404 Media, NOWY, niezweryfikowany przez weryfikatora; parafraza „stop lovingly handcrafting all our code and use AI more”",
+        "Prośba o kilka dni na testy penetracyjne; odpowiedź Yena „loser thinking” i „possible to be fast and secure” – 404 Media / wcześniejsze śledztwo, NOWE sformułowanie, do weryfikacji; „myślenie przegranych” to tłumaczenie „loser thinking”",
+        "Krytyka użytkowników w sieci, część żąda dymisji Yena – 404 Media (zweryfikowane)",
+        "Wyjaśnienie testów penetracyjnych – objaśnienie ogólne, nie ze źródła",
+        "OPINIA Kuby: zarząd chce wiedzieć, czy narzędzia są używane (ustępstwo); samo użycie mówi o nawykach, nie o pożytku; ludzie używają AI tam, gdzie nie pomaga",
+        "OPINIA/domysł (rozumowanie, nie fakt ze źródła): strach o pracę sprzyja pokazywaniu użycia; prośba o czas na testy mogła zostać odebrana jako opór",
+        "OPINIA Kuby: adopcję AI lepiej oceniać efektami (czas dostarczania, błędy, jakość code review) i pytać zespół"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[czat] „Mierzenie samego użycia zamienia narzędzie w mandat” – nie wiem, co to znaczy, słowo „mandat” mi nie pasuje, zmieniłbym. „Skoro oceniany jest fakt użycia, a nie efekt, ludzie będą używać AI także tam, gdzie im to nie pomaga” – z tym się zgadzam.\n[czat] Nie chcę, żeby było wprost „ważny wniosek dla menedżerów”. Napisałbym po prostu: o adopcji AI lepiej rozmawiać przez efekty, na przykład czas dostarczania, liczbę błędów, jakość code review, i pytać zespół, co narzędzie ułatwiło, a gdzie przeszkadza.\n[czat] Pytanie „czy u Ciebie w firmie ktoś sprawdza, kto i jak często używa AI, czy raczej patrzy na wyniki” zamieniłbym na coś w stylu: jak u Ciebie w zespole jest weryfikowane/oceniane, jak dobrze ludzie używają AI, jaki mają stopień wiedzy o AI – nie „czy ktoś sprawdza”, tylko „jak to jest weryfikowane”.\n[czat] Obrazek „6 osób z firmy i nagranie ze spotkania” mi się nie podoba, te 6 osób jest nieistotne. Istotne jest to, jak oceniać używanie AI w firmach.\n[czat] Zdjęcia: nie takie rzeczy (garaż, motocykl, remont); podobały się dziewięć kubków (podział pracy na dziewięć osób) i notes z rozpisaną architekturą. Nie muszą być realistyczne – mogą być minimalistyczne, ilustracje, grafiki generowane pod temat (nie szablonowe), sceneria może wyglądać realnie, ale nie jak zdjęcie z banku. Chętnie wskazówki o memach (szablon + gotowy tekst).\n[czat] Decyzja: Lovable idzie dziś bez obrazka; Proton i Cisco zostają oba, ale pójdzie jeden z nich (we wtorek) — do wyboru; Prawo Brooksa na końcu (czwartek) z memem Gru's Plan zrobionym przez Kubę (obrazki/t6_mem.jpg). Żadne z pozostałych zdjęć ani infografik nie podoba się — bez obrazka.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t2",
+        "data": "2026-11-08 12:00",
+        "fakty": [
+          {
+            "fakt": "Szef Protona zaplanował ponowne rozmowy kwalifikacyjne dla niemal wszystkich pracowników i odwołał je dzień po publikacji w mediach",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "cytat": "cancelled a series of nearly company-wide 're-interviews' that would have forced employees to explain how they are using AI",
+            "uwaga": "Odwołanie w piątek, po czwartkowej publikacji śledztwa 404 Media (dni tygodnia nie są podane z datą w artykule). Artykuł z 2 listopada 2026; źródła: sześciu obecnych pracowników i nagranie spotkania.",
+            "zrodlo": "https://www.404media.co/reaping-and-sowing-ceo-edition/",
+            "link": "https://www.404media.co/reaping-and-sowing-ceo-edition/#:~:text=cancelled%20a%20series%20of%20nearly%20company-wide"
+          },
+          {
+            "fakt": "Osoby uznane za używające AI za mało mogły stracić pracę (według źródeł z firmy)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "cytat": "with the clear intention that they may be fired if not using it enough in the eyes of Proton leadership",
+            "uwaga": "Post poprawnie przypisuje to źródłom z firmy.",
+            "zrodlo": "https://www.404media.co/reaping-and-sowing-ceo-edition/",
+            "link": "https://www.404media.co/reaping-and-sowing-ceo-edition/#:~:text=with%20the%20clear%20intention%20that%20they"
+          },
+          {
+            "fakt": "Andy Yen, szef Protona, wcześniej pisał pracownikom, żeby przestali ręcznie dopieszczać cały kod i częściej używali AI",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "cytat": "stop lovingly handcrafting all our code and use AI more",
+            "uwaga": "Wypowiedź z końca sierpnia. Artykuł pisze, że Yen 'added' – to dopowiedzenie w tej samej wymianie na kanale o bezpieczeństwie co odpowiedź o pentestach, nie osobna wcześniejsza wiadomość (artykuł tego jasno nie rozstrzyga). 'Już wcześniej' względem odwołanych rozmów jest poprawne.",
+            "zrodlo": "https://www.404media.co/reaping-and-sowing-ceo-edition/",
+            "link": "https://www.404media.co/reaping-and-sowing-ceo-edition/#:~:text=stop%20lovingly%20handcrafting%20all%20our%20code"
+          },
+          {
+            "fakt": "Pracownik poprosił na kanale o bezpieczeństwie o kilka dni na testy penetracyjne nowego kodu; Yen odpowiedział, że to myślenie przegranych, bo można być szybkim i bezpiecznym (sierpień)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "cytat": "That's bullshit and loser thinking. Of course it's possible to be fast and secure.",
+            "uwaga": "Prośba: 'at least take a few days to pentest newly written code before pushing it live'. Odpowiedź pod koniec sierpnia, kanał Slack o bezpieczeństwie. 'Myślenie przegranych' to wierne tłumaczenie 'loser thinking'; pominięcie 'bullshit' jest OK. Post nie podaje daty – wypowiedź z sierpnia, nie z tego tygodnia (post tego nie sugeruje).",
+            "zrodlo": "https://www.404media.co/reaping-and-sowing-ceo-edition/",
+            "link": "https://www.404media.co/reaping-and-sowing-ceo-edition/#:~:text=That%27s%20bullshit%20and%20loser%20thinking.%20Of"
+          },
+          {
+            "fakt": "Użytkownicy Protona krytykują zarząd w sieci, część żąda dymisji Yena",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "cytat": "explicitly called for Yen to resign",
+            "uwaga": "Pełniej: 'Many Proton users have blasted the company's leadership on social media over the last 24 hours and explicitly called for Yen to resign.' Post mówi 'część żąda' – zgodne ('many' ≥ część).",
+            "zrodlo": "https://www.404media.co/reaping-and-sowing-ceo-edition/",
+            "link": "https://www.404media.co/reaping-and-sowing-ceo-edition/#:~:text=explicitly%20called%20for%20Yen%20to%20resign"
+          },
+          {
+            "fakt": "Testy penetracyjne to kontrolowane próby włamania przed wdrożeniem",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "cytat": "pentest newly written code before pushing it live",
+            "uwaga": "Ogólna definicja, nie ze źródła; poprawna.",
+            "zrodlo": "https://www.404media.co/reaping-and-sowing-ceo-edition/",
+            "link": "https://www.404media.co/reaping-and-sowing-ceo-edition/#:~:text=pentest%20newly%20written%20code%20before%20pushing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "t3",
+      "rodzaj": "temat",
+      "temat": "Cisco: tokeny bez limitu na stary kod",
+      "link_newsa": "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts",
+      "tytul_newsa": "Cisco daje 27-latkowi nieograniczone tokeny AI na przepisanie 98% starego kodu w 24 miesiące",
+      "kat": "Ambitny cel przepisania 98% kodu: trudność leży nie w samym przepisaniu, tylko w stopniowym wdrażaniu bez zakłócania pracy firmy; strangler pattern wzmocniony AI.",
+      "linkedin": "Były założyciel przejętego przez Cisco startupu EzDubs dostał nieograniczone tokeny AI i 24 miesiące na przepisanie 98% starego kodu firmy.\n\nDecyzję podjął prezes i dyrektor produktowy Cisco, który powiedział 27-letniemu inżynierowi, żeby \"poszedł na całość\". Plan inżyniera to praca w dwuosobowym zespole i cztery tygodnie na pokazanie, że to podejście działa.\n\nBrak limitu na tokeny oznacza brak sufitu kosztów pracy agentów i trudno mi uwierzyć, że górnej granicy naprawdę nie ma. Twórca OpenClaw po przejściu do OpenAI wydał w 30 dni około 1,3 mln dolarów na tokeny: 603 mld tokenów, około 100 instancji Codexa i trzy osoby do nadzoru, a rachunek pokrywa OpenAI. Skala potrafi więc być ogromna, ale zakładam, że ktoś w Cisco prędzej czy później spojrzy na rachunek.\n\nZazwyczaj tak duże migracje trwają bardzo długo, więc cel jest bardzo ambitny. Zastanawiam się, czy problemem będzie samo przepisanie kodu na nowo, czy raczej wdrażanie go krok po kroku i sprawdzanie każdego kawałka tak, żeby firma działała bez zmian. Agent napisze nową wersję modułu szybko, ale ktoś musi wykazać, że zachowuje się przynajmniej tak dobrze, jak starsza wersja.\n\nPrzed takim eksperymentem dobrze ustalić, po czym poznamy, że to naprawdę działa i można to puścić na produkcję. Ważniejszy od samego przepisania jest plan, jak potem wcielić nowy kod w życie: który fragment przełączamy pierwszy, jak porównujemy wyniki ze starym systemem i jak wracamy, gdy coś pójdzie nie tak.\n\nCzy techniki znane od lat, jak strangler pattern (stopniowe zastępowanie starych kawałków systemu nowymi), wzmocnione AI, mogą dać bardzo dobre efekty przy przepisywaniu kodu?",
+      "komentarz": "Pełny przegląd tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable\nŹródło: https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts\nKoszty tokenów twórcy OpenClawa: https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill",
+      "x": [
+        "Były założyciel przejętego przez Cisco startupu EzDubs dostał nieograniczone tokeny AI i 24 miesiące na przepisanie 98% starego kodu firmy.",
+        "Decyzję podjął prezes i dyrektor produktowy Cisco: inżynier ma iść na całość. Jego plan to dwuosobowy zespół i cztery tygodnie na pokazanie, że to działa.",
+        "Brak limitu na tokeny to brak sufitu kosztów. Twórca OpenClawa wydał w 30 dni ok. 1,3 mln dolarów na tokeny OpenAI (603 mld tokenów, ok. 100 instancji Codexa). Ktoś w Cisco i tak zerknie na rachunek.",
+        "Takie migracje zwykle trwają bardzo długo. Problemem może być nie samo przepisanie, tylko wdrażanie krok po kroku tak, żeby firma działała bez zmian. Warto z góry ustalić, po czym poznamy, że nowy kod działa.",
+        "Czy strangler pattern wzmocniony AI da bardzo dobre efekty przy przepisywaniu kodu? Więcej newsów z tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "brak",
+        "prompt": "Minimalist illustration with a soft, slightly textured look, 3:4 vertical, plain light background. A tall old grey tree trunk almost entirely wrapped by a vigorous green fig vine growing up from the base, with only a thin bare strip of the old trunk still visible at the top (the new gradually taking over the old, the idea behind the strangler pattern). No text, no people, no logos. Calm, uncluttered composition with the main subject centered and generous margin so it can be cropped to 4:5.",
+        "plik": "obrazki/t3.png",
+        "mem": {
+          "szablon": "Drake Hotline Bling",
+          "link": "https://imgflip.com/memegenerator/Drake-Hotline-Bling",
+          "tekst": "góra (nie): Wieloletni projekt migracji, duży zespół i harmonogram na kilkadziesiąt stron\ndół (tak): Dwie osoby, nieograniczone tokeny i 4 tygodnie na dowód, że to działa"
+        }
+      },
+      "termin": "2026-11-10 08:30",
+      "fakty": [
+        "Były założyciel przejętego startupu EzDubs; nieograniczone tokeny AI, 24 miesiące, 98% starego kodu, wiek 27 lat - Fortune 30.10.2026 (fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/), nagłówek Tom's Hardware",
+        "Prezes i dyrektor produktowy Cisco, 'you can go nuts' (iść na całość) - Fortune",
+        "Plan inżyniera: dwuosobowy zespół i cztery tygodnie na dowód - Fortune",
+        "OpenClaw: ok. 1,3 mln USD (1 305 088,81 USD) w 30 dni, 603 mld tokenów, 7,6 mln zapytań, ok. 100 instancji Codex, trzy osoby, koszt pokrywa OpenAI, Steinberger w OpenAI od lutego 2026 - The Next Web z 18.05.2026 (thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill); nagłówek Tom's Hardware potwierdza 1,3 mln USD, 603 mld tokenów, 7,6 mln zapytań, 100 agentów (treść niedostępna). Nie użyto późniejszej, niepotwierdzonej liczby ok. 10 mln USD.",
+        "OPINIA Kuby: trudno uwierzyć, że nie ma górnego limitu; ktoś w Cisco spojrzy na rachunek",
+        "OPINIA Kuby: zazwyczaj takie migracje trwają bardzo długo, więc cel jest bardzo ambitny",
+        "OPINIA Kuby: problemem może być wdrażanie krok po kroku, nie samo przepisanie; ważniejszy plan wdrożenia; strangler pattern wzmocniony AI"
+      ],
+      "publikuj": true,
+      "wynik": {},
+      "uwaga_kuby": "[weryfikacja] „dwie albo trzy osoby” potwierdza tylko Notebookcheck (nie Fortune) – dopisano przypisanie; „migracje trwają latami” oznaczone jako opinia; wyjaśnienie tokenów to wiedza ogólna, nie ze źródła.\n[czat] Zdania „Sprawę opisał Fortune 30 października, a Tom's Hardware podał ją dalej” w ogóle bym nie pisał – to nieistotne, źródło jest na dole. Zacząłbym od byłego założyciela startupu EzDubs, który Cisco przejęło, a decyzję podjął prezes i dyrektor produktowy firmy – bez imienia i nazwiska. „Go nuts” przetłumaczyłbym jako „iść na całość”.\n[czat] Wyjaśnienia, czym są tokeny, bym nie dawał – zakładam, że ludzie wiedzą. Istotne jest, że brak limitu na tokeny oznacza brak sufitu kosztów pracy agentów, i że ciężko mi uwierzyć, że nie ma tu żadnego górnego limitu – zwłaszcza patrząc na to, jak duże budżety potrafi wydać twórca OpenClawa, który przeszedł do OpenAI. Są o tym newsy i artykuły – prześledź je w ramach weryfikacji faktów (użyj tylko tego, co da się potwierdzić).\n[czat] Napisałbym po prostu: plan inżyniera to praca w dwuosobowym zespole i czterotygodniowy deadline na pokazanie, że podejście działa. Zdania „to jego plan, a nie ustalenie Cisco” usunąłbym.\n[czat] Zamiast „moim zdaniem takie migracje zwykle trwają latami…”: zazwyczaj tak duże migracje trwają bardzo długo, więc cel jest bardzo ambitny. Pytanie, czy problemem jest samo przepisanie kodu na nowo, czy odpowiednie wdrażanie i sprawdzanie krok po kroku, żeby utrzymać działanie firmy na niezmienionym poziomie – to łączy się z następną częścią, więc połączyłbym te fragmenty.\n[czat] Zamiast „coś wartego uwagi dla menedżerów”: na czym warto się zastanowić – przed takim eksperymentem warto ustalić, po czym poznamy, że to faktycznie działa i można to wdrożyć na produkcję; ważniejszy od samego przepisania kodu jest plan, jak potem wcielić go w życie.\n[czat] Pytanie na końcu zamieniłbym na coś w kierunku strangler pattern (to tylko wskazówka): czy uważasz, że techniki znane wcześniej, np. strangler pattern, wzmocnione AI mogą dać bardzo dobre efekty przy przepisywaniu kodu?\n[czat] Infografika: 98% w 24 miesiące bez limitu tokenów – nie jestem przekonany, czy jest dobra.\n[czat] Zdjęcia: nie takie rzeczy (garaż, motocykl, remont); podobały się dziewięć kubków (podział pracy na dziewięć osób) i notes z rozpisaną architekturą. Nie muszą być realistyczne – mogą być minimalistyczne, ilustracje, grafiki generowane pod temat (nie szablonowe), sceneria może wyglądać realnie, ale nie jak zdjęcie z banku. Chętnie wskazówki o memach (szablon + gotowy tekst).\n[czat] Decyzja: Lovable idzie dziś bez obrazka; Proton i Cisco zostają oba, ale pójdzie jeden z nich (we wtorek) — do wyboru; Prawo Brooksa na końcu (czwartek) z memem Gru's Plan zrobionym przez Kubę (obrazki/t6_mem.jpg). Żadne z pozostałych zdjęć ani infografik nie podoba się — bez obrazka.",
+      "weryfikacja": {
+        "id": "t3",
+        "data": "2026-11-08 12:00",
+        "fakty": [
+          {
+            "fakt": "Nieograniczone tokeny AI dla inżyniera",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+            "link": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/#:~:text=given%20him%20unlimited%20tokens%20because%20he%27s%20going%20to%20refactor",
+            "cytat": "I've given him unlimited tokens because he's going to refactor code",
+            "uwaga": "Cytat z odczytu strony; fragment może nie podświetlić (apostrof)."
+          },
+          {
+            "fakt": "Przepisanie 98% starego kodu w 24 miesiące",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+            "link": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/#:~:text=refactoring%2098%25%20of%20Cisco%E2%80%99s%20legacy%20code%20within%2024%20months",
+            "cytat": "refactoring 98% of Cisco's legacy code within 24 months",
+            "uwaga": "Fortune używa 'refactoring'; post mówi 'przepisanie' - zgodne z nagłówkiem Tom's Hardware ('rewrite')."
+          },
+          {
+            "fakt": "Decyzję podjął prezes i dyrektor produktowy Cisco",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+            "link": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/#:~:text=president%20and%20chief%20product%20officer%20Jeetu%20Patel",
+            "cytat": "Cisco's president and chief product officer Jeetu Patel",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Inżynier ma 27 lat",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+            "link": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/#:~:text=a%2027-year-old%20he%20found%20hidden%20in%20the%20org%20chart",
+            "cytat": "a 27-year-old he found hidden in the org chart",
+            "uwaga": ""
+          },
+          {
+            "fakt": "'Go nuts' = iść na całość (Patel powiedział inżynierowi)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+            "link": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/#:~:text=you%20can%20go%20nuts",
+            "cytat": "So I'm like, you can go, you can go nuts.",
+            "uwaga": "Tłumaczenie dopuszczalne."
+          },
+          {
+            "fakt": "Plan inżyniera: dwuosobowy zespół",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+            "link": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/#:~:text=could%20rewrite%20Cisco%E2%80%99s%20legacy%20code%20with%20a%20two-person%20team",
+            "cytat": "Krishnamurthy reckoned he could rewrite Cisco's legacy code with a two-person team.",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Cztery tygodnie na pokazanie, że to działa",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+            "link": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/#:~:text=he%20has%20given%20himself%20four%20weeks%20to%20prove%20it",
+            "cytat": "So he has given himself four weeks to prove it,",
+            "uwaga": "To termin, który inżynier sam sobie wyznaczył; post oddaje to jako część jego planu - OK."
+          },
+          {
+            "fakt": "Inżynier to były założyciel przejętego przez Cisco startupu EzDubs",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://techcrunch.com/2025/11/17/cisco-acquires-translation-startup-ezdubs/",
+            "link": "https://techcrunch.com/2025/11/17/cisco-acquires-translation-startup-ezdubs/#:~:text=Cisco%20acquires%20translation%20startup%20EzDubs",
+            "cytat": "Cisco acquires translation startup EzDubs",
+            "uwaga": "Fortune pisze o 'real-time translation startup Krishnamurthy cofounded in 2023' bez nazwy EzDubs. Połączenie Krishnamurthy = współzałożyciel EzDubs (przejęty przez Cisco, ogłoszone 17.11.2025) wynika z TechCrunch/UC Today (wyniki WebSearch; sama strona TechCrunch nie pobrana). Dwa źródła wtórne zgodne, ale nie jedno źródło pierwotne."
+          },
+          {
+            "fakt": "Twórca OpenClawa (Peter Steinberger) jest w OpenAI",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill",
+            "link": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill#:~:text=Peter%20Steinberger%2C%20the%20creator%20of%20OpenClaw%20and%20an%20engineer%20at%20OpenAI",
+            "cytat": "Peter Steinberger, the creator of OpenClaw and an engineer at OpenAI",
+            "uwaga": "Dołączył w lutym 2026."
+          },
+          {
+            "fakt": "Ok. 1,3 mln USD na tokeny w 30 dni",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill",
+            "link": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill#:~:text=1.3%20million",
+            "cytat": "$1.3 million monthly OpenAI bill",
+            "uwaga": "Nagłówek TNW; treść z odczytu."
+          },
+          {
+            "fakt": "603 mld tokenów",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill",
+            "link": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill#:~:text=The%20bill%2C%20which%20covered%20603%20billion%20tokens%20across",
+            "cytat": "The bill, which covered 603 billion tokens across 7.6 million requests over 30 days",
+            "uwaga": "Liczba 7,6 mln zapytań jest w źródle, ale w tekście posta nie występuje."
+          },
+          {
+            "fakt": "Ok. 100 instancji Codexa",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill",
+            "link": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill#:~:text=approximately%20100%20Codex%20instances%20simultaneously",
+            "cytat": "running approximately 100 Codex instances simultaneously on his open-source project",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Trzy osoby do nadzoru",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill",
+            "link": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill#:~:text=three%20humans%20oversee%20a%20fleet%20of%20AI%20agents",
+            "cytat": "three humans oversee a fleet of AI agents",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Rachunek pokrywa OpenAI",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill",
+            "link": "https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill#:~:text=OpenAI%20is%20covering%20the%20cost",
+            "cytat": "OpenAI is covering the cost",
+            "uwaga": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "t1",
+      "rodzaj": "temat",
+      "temat": "Ostrożność wobec agentów AI",
+      "link_newsa": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+      "tytul_newsa": "Dlaczego dobrzy programiści są ostrożni wobec agentów AI",
+      "kat": "Doświadczeni programiści nie boją się o pracę, tylko nie ufają jeszcze kodowi pisanemu głównie przez agentów, a eksperyment pokazuje, że praca przesuwa się na projektowanie i kontrolę (harness).",
+      "linkedin": "W tygodniowym eksperymencie agenci AI napisali cały kod aplikacji dla linii lotniczej. Po tygodniu była gotowa w około 80%, a build często świecił na czerwono.\n\nEksperyment prowadził Giles Alexander, Regional CTO Thoughtworks na Europę, a opisała go Rachel Laycock, CTO Thoughtworks, na blogu na martinfowler.com. Build to automatyczne budowanie i testowanie aplikacji, więc czerwony oznacza, że coś się nie przeszło. Mimo to aplikacja działała.\n\nZespół oszacował, że około dwóch trzecich czasu spędził przy tablicy, projektując domenę, granice systemu i plany dla agentów. Pozostała jedna trzecia poszła na harness, czyli testy, kontrakty, kontrole architektury i pipeline, które mają dawać agentom informację zwrotną. Laycock pisze wprost: „Built is not the same as working in production”, czyli zbudowane nie znaczy działające na produkcji.\n\nWedług niej ostrożność doświadczonych programistów nie wynika głównie ze strachu o pracę, choć u części osób bywa i tak. Chodzi o brak zaufania do systemów, przy których nikt jeszcze nie ma doświadczenia w budowaniu w ten sposób. Rozumiem to podejście i moim zdaniem to nie jest niechęć do nowego, tylko wiedza, ile pracy zostaje po wygenerowaniu kodu. Skoro agent pisze kod, to ciężar przechodzi na projektowanie i na harness.\n\nNa czym warto się zastanowić, który podaje też autorka: nie oceniać sukcesu tym, ile kodu napisali agenci, i dać zespołowi przestrzeń na eksperymenty.\n\nIle z takiego harnessu, czyli testów, kontraktów i kontroli architektury, masz dziś w swoim projekcie, żeby agent szybko dowiedział się, że coś zepsuł?",
+      "komentarz": "Pełny przegląd tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable\nŹródło: https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+      "x": [
+        "W tygodniowym eksperymencie agenci AI napisali cały kod aplikacji dla linii lotniczej. Po tygodniu była gotowa w ok. 80%, ale build często był czerwony.",
+        "Eksperyment z Thoughtworks opisała Rachel Laycock, CTO firmy. Zespół oszacował, że ok. 2/3 czasu spędził przy tablicy na projektowaniu, a 1/3 na harnessie: testach, kontraktach i kontrolach architektury.",
+        "Laycock: „Built is not the same as working in production”. Doświadczeni programiści są ostrożni głównie nie ze strachu o pracę, tylko dlatego, że nikt nie ma jeszcze doświadczenia z budowaniem systemów w ten sposób.",
+        "Moim zdaniem to wiedza, ile pracy zostaje po wygenerowaniu kodu. Dla managerów: nie mierzyć sukcesu ilością kodu od agentów, tylko dać zespołowi przestrzeń na eksperymenty.",
+        "Ten i inne newsy z tygodnia zebrałem w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "lista",
+          "styl": "notatka",
+          "tytul": "Aplikacja dla linii lotniczej, 1 tydzień",
+          "punkty": [
+            "Cały kod napisali agenci",
+            "Po tygodniu gotowe w ok. 80%",
+            "2/3 czasu przy tablicy, 1/3 na harness",
+            "Build często czerwony"
+          ],
+          "zrodlo": "Rachel Laycock, Thoughtworks",
+          "numer": 45
+        },
+        "prompt": "Realistic photo, 3:4 vertical. A whiteboard in a small office meeting room in soft morning daylight, covered with hand-drawn boxes and arrows (unreadable marker scribbles), a marker on the ledge, and in the blurred background a laptop on a table with a screen of red and green rows. Main subject centered with generous margins so it can be cropped to 4:5. No people facing the camera, no readable text, no robots, no glowing elements, no holograms, not a 3D render. Natural colors, shallow depth of field, casual phone-photo feel.",
+        "plik": "obrazki/t1.png"
+      },
+      "termin": "2026-11-12 08:30",
+      "fakty": [
+        "Tygodniowy eksperyment, agenci napisali cały kod aplikacji dla linii lotniczej, po tygodniu ok. 80% gotowa (80% = stopień ukończenia) – martinfowler.com/rachels-ramblings/good-devs-wary.html",
+        "Rachel Laycock, CTO Thoughtworks (autorka); eksperyment prowadził Giles Alexander, Regional CTO Europe – to samo źródło",
+        "Ok. 2/3 czasu przy tablicy (domena, granice, plany dla agentów), 1/3 na harness (testy, kontrakty, kontrole architektury, pipeline) – szacunek zespołu, to samo źródło",
+        "Build często czerwony, aplikacja działała; cytat „Built is not the same as working in production” – to samo źródło",
+        "Ostrożność nie wynika głównie ze strachu o pracę (u części osób bywa), tylko z braku zaufania/doświadczenia – to samo źródło",
+        "Wyjaśnienie, że czerwony build = coś się nie przeszło – wyjaśnienie autora posta (ogólna wiedza)",
+        "Rada dla managerów (nie oceniać sukcesu ilością kodu od agentów, dać przestrzeń na eksperymenty) – to samo źródło",
+        "OPINIA Kuby: ostrożność to wiedza, ile pracy zostaje po wygenerowaniu kodu; ciężar przechodzi na projektowanie i harness; pytanie końcowe"
+      ],
+      "publikuj": false,
+      "wynik": {},
+      "uwaga_kuby": "[czat] Ten temat (ostrożność wobec agentów AI) bym usunął – nie chcę go publikować.",
+      "weryfikacja": {
+        "id": "t1",
+        "data": "2026-11-06 10:00",
+        "fakty": [
+          {
+            "fakt": "Ostrożność doświadczonych programistów \"nie wynika głównie ze strachu o pracę\" (post: według Laycock, u części osób bywa i tak)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+            "link": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html#:~:text=another%20fear%20hiding%20behind%20those%20obvious%20ones",
+            "cytat": "another fear hiding behind those obvious ones",
+            "uwaga": "Źródło: obawa o pracę jest prawdziwa 'for some people, some of the time', ale głębszy lęk dotyczy zaufania do systemu. Słowo 'głównie' to lekka interpretacja, zgodna z sensem. Cytat z odczytu strony, fragment w linku może nie podświetlić."
+          },
+          {
+            "fakt": "Brak zaufania do systemów, przy których nikt nie ma jeszcze doświadczenia w budowaniu w ten sposób",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+            "link": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html#:~:text=when%20nobody%20has%20experience%20of%20building%20it%20this%20way",
+            "cytat": "How much can we trust a system when nobody has experience of building it this way?",
+            "uwaga": "Cytat z odczytu strony; fragment w linku może nie podświetlić."
+          },
+          {
+            "fakt": "Rada dla managerów: nie oceniać sukcesu ilością kodu napisanego przez agentów i dać zespołowi przestrzeń na eksperymenty",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+            "link": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html#:~:text=create%20real%20room%20for%20experimentation",
+            "cytat": "time, permission to get things wrong, and not judging success by how much code the agents produced",
+            "uwaga": "Rada skierowana do 'leaders'; 'managerowie' to zgodne tłumaczenie."
+          },
+          {
+            "fakt": "Tygodniowy eksperyment: agenci napisali cały kod aplikacji dla linii lotniczej",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+            "link": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html#:~:text=No%20code%20written%20by%20anyone",
+            "cytat": "No code written by anyone. Everything built by agents.",
+            "uwaga": "Źródło: 'The point wasn't to prove that an airline application could be built in a week' - aplikacja linii lotniczej potwierdzona, choć sformułowanie pośrednie."
+          },
+          {
+            "fakt": "Po tygodniu aplikacja była gotowa w około 80%",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+            "link": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html#:~:text=they%20got%2080%25%20done",
+            "cytat": "Funnily enough they got 80% done and we all know what that means",
+            "uwaga": "Autorka mówi to z ironią (ostatnie 20% bywa najtrudniejsze) - post podaje liczbę bez przesady. Cytat z odczytu strony."
+          },
+          {
+            "fakt": "Build często czerwony, mimo to aplikacja działała",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+            "link": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html#:~:text=The%20application%20ran%2C%20but%20the%20build%20was%20frequently%20red",
+            "cytat": "The application ran, but the build was frequently red.",
+            "uwaga": ""
+          },
+          {
+            "fakt": "Eksperyment prowadził Giles Alexander, Regional CTO Thoughtworks na Europę",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+            "link": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html#:~:text=Giles%20Alexander%2C%20our%20Regional%20CTO%20for%20Europe",
+            "cytat": "Giles Alexander, our Regional CTO for Europe, brought senior engineers, infrastructure consultants and product people",
+            "uwaga": "Źródło mówi, że zebrał zespół na ten tydzień; 'prowadził' jest uczciwym skrótem."
+          },
+          {
+            "fakt": "Rachel Laycock, CTO Thoughtworks, autorka tekstu na martinfowler.com",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+            "link": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+            "cytat": "CTO at Thoughtworks",
+            "uwaga": "Tytuł z podpisu autorki odczytany ze strony; brak dosłownego 5-słowego fragmentu pewnego do podświetlenia, więc link bez fragmentu."
+          },
+          {
+            "fakt": "Zespół oszacował ok. 2/3 czasu przy tablicy (domena, granice systemu, plany dla agentów) i 1/3 na harness (testy, kontrakty, kontrole architektury, pipeline)",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+            "link": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html#:~:text=they%20spend%20about",
+            "cytat": "When I asked them to estimate they said they spend about ⅔ of their time at the whiteboard and ⅓ on the harness",
+            "uwaga": "Zawartość harnessu (testy, kontrakty, kontrole architektury, pipeline) pochodzi z tego samego tekstu; źródło nie definiuje 'harness' formalnie, a post to robi (zgodnie z użyciem w tekście). Zapis ⅔ może utrudnić podświetlenie."
+          },
+          {
+            "fakt": "Cytat Laycock: „Built is not the same as working in production”",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+            "link": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html#:~:text=Built%20is%20not%20the%20same%20as%20working%20in%20production",
+            "cytat": "Built is not the same as working in production.",
+            "uwaga": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "t6",
+      "rodzaj": "temat",
+      "temat": "Prawo Brooksa dla agentów AI",
+      "link_newsa": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "tytul_newsa": "Prawo Brooksa w erze AI – więcej agentów nie przyspiesza projektu",
+      "kat": "Agenci znoszą koszt onboardingu i spotkań, ale praca sekwencyjna dalej jest sekwencyjna, a koordynację przejmuje człowiek, który wyznacza tempo i ma mniej czasu na ocenę jakości.",
+      "linkedin": "W 1975 roku Frederick Brooks napisał w książce „The Mythical Man-Month”, że dodanie ludzi do spóźnionego projektu spóźni go jeszcze bardziej.\n\nPrzy agentach AI wydaje się, że ten problem znika. Nie potrzebują onboardingu ani spotkań, a właśnie z nich brały się koszty dokładania ludzi. Tyle że praca sekwencyjna jest dalej sekwencyjna: dziewięciu agentów nie zrobi dziecka w miesiąc. Kiedyś to brzmiało lepiej 😅\n\nKolejni agenci mogą też zacząć sobie przeszkadzać. Kilku agentów w jednym repozytorium bez orkiestracji potrafi nadpisywać nawzajem swoją pracę. A koszt koordynacji nie znika, tylko przechodzi na człowieka: ktoś musi określić, co znaczy „gotowe”, sprawdzić wyniki i złożyć części w całość.\n\nWąskim gardłem robi się więc człowiek, który to wszystko spina, i to on wyznacza tempo. Im więcej agentów, tym więcej koordynacji spada na niego, a tym mniej zostaje czasu na ocenę jakości. Dlatego dokładanie kolejnych agentów może obniżać jakość, nawet jeśli kodu przybywa szybciej.\n\nCo możemy z tego wziąć dla siebie: najpierw rozbić pracę na kawałki i zastanowić się, które da się zrobić naprawdę niezależnie. Potem dać każdemu agentowi osobny krok, a nie fragment tego samego pliku. Warto też ustalić kontrakty między nimi, czyli co jeden oddaje drugiemu (np. interfejs albo format danych) i po czym poznać, że skończył. Bez jasnych wymagań dostaniemy po prostu złą odpowiedź szybciej.\n\nW którym momencie dokładanie AI, w jakiejkolwiek formie, przestaje zwiększać wydajność i jakość, a zaczyna je pogarszać, np. przez ciągłe przełączanie kontekstu?",
+      "komentarz": "Pełny przegląd tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable\nŹródło: https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "x": [
+        "W 1975 roku Frederick Brooks napisał, że dodanie ludzi do spóźnionego projektu spóźni go jeszcze bardziej. Agenci AI nie potrzebują onboardingu ani spotkań, więc czy ten problem znika?",
+        "Niezupełnie. Praca sekwencyjna dalej jest sekwencyjna: dziewięciu agentów nie zrobi dziecka w miesiąc. A kilku agentów w jednym repozytorium bez orkiestracji potrafi nadpisywać sobie pracę.",
+        "Koszt koordynacji nie znika, tylko przechodzi na człowieka. Ktoś musi określić, co znaczy „gotowe”, sprawdzić wyniki i złożyć części. To on staje się wąskim gardłem i wyznacza tempo.",
+        "Więcej agentów to więcej koordynacji i mniej czasu na ocenę jakości. Dlatego najpierw podziel pracę na niezależne kroki i ustal kontrakty między agentami: co kto oddaje i po czym wiadomo, że skończył.",
+        "Gdzie u Was dokładanie AI przestaje zwiększać wydajność i jakość, a zaczyna je pogarszać? Ten temat i inne newsy z tygodnia: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "mem",
+        "infografika": {
+          "rodzaj": "lista",
+          "styl": "notatka",
+          "tytul": "Jak rozdzielać pracę między agentów",
+          "punkty": [
+            "Rozbić pracę na kawałki",
+            "Każdemu agentowi osobny, niezależny krok",
+            "Kontrakty: co kto oddaje",
+            "Jasne „gotowe” i ocena jakości"
+          ],
+          "numer": 45
+        },
+        "prompt": "Simple, realistic-looking but minimalist scene, 3:4 vertical. Nine identical white ceramic mugs arranged in a neat 3x3 grid on a plain light wooden table, seen from above in soft daylight, with one small notebook and a pencil next to the grid (nine \"workers\", one person to coordinate them). No text, no people, no logos. Calm, uncluttered composition with the main subject centered and generous margin so it can be cropped to 4:5.",
+        "plik": "obrazki/t6_mem.jpg",
+        "mem": {
+          "szablon": "Gru's Plan",
+          "link": "https://imgflip.com/memegenerator/Grus-Plan",
+          "tekst": "1: Dodamy więcej agentów do projektu\n2: Praca pójdzie szybciej\n3: Człowiek musi spiąć i sprawdzić wyniki wszystkich agentów\n4: Człowiek musi spiąć i sprawdzić wyniki wszystkich agentów",
+          "plik": "obrazki/t6_mem.jpg"
+        }
+      },
+      "termin": "2026-11-12 08:30",
+      "fakty": [
+        "Brooks, „The Mythical Man-Month”, 1975: dodanie ludzi do spóźnionego projektu spóźnia go bardziej – źródło (zweryfikowane)",
+        "Agenci nie potrzebują onboardingu ani spotkań („onboarding time, endless stand-ups…disappear overnight”) – źródło (zweryfikowane)",
+        "„nine agents still can't deliver a baby in one month”; praca sekwencyjna dalej sekwencyjna – źródło (zweryfikowane)",
+        "Wielu agentów w jednym repozytorium bez orkiestracji nadpisuje sobie pracę – źródło (zweryfikowane)",
+        "Koszt koordynacji: ktoś musi określić „done”, sprawdzić wyniki, złożyć części – źródło (zweryfikowane)",
+        "Bez jasnych wymagań „zła odpowiedź szybciej” – źródło (zweryfikowane), w poście bez przypisania autorowi",
+        "OPINIA Kuby: człowiek jako wąskie gardło wyznaczające tempo; więcej agentów = więcej koordynacji kosztem oceny jakości, więc jakość może spadać",
+        "OPINIA Kuby: rozbić pracę na niezależne kroki, osobny krok dla agenta, kontrakty między agentami (interfejs/format danych) – rady, nie fakty ze źródła",
+        "OPINIA Kuby: pytanie o punkt, w którym dokładanie AI pogarsza wydajność i jakość (przełączanie kontekstu)"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[czat] Nie dawałbym „Jan van den Berg na swoim blogu” – link do artykułu jest w komentarzu w źródłach; ma to być po prostu mój post w tym temacie, bez wskazywania, że ktoś to napisał w artykule.\n[czat] „Na pierwszy rzut oka agenci wygrywają, bo nie potrzebują onboardingu ani spotkań, a z nich brały się koszty dokładania ludzi” – to prawda. „Autor przypomina” – do przerobienia: po prostu praca sekwencyjna jest dalej sekwencyjna, a dokładanie kolejnych agentów może sprawić, że będą sobie przeszkadzać, i koszt koordynacji nie znika, tylko przechodzi na człowieka.\n[czat] Nie pisz „ważny wniosek dla menedżerów”. Nie pisałbym też „moim zdaniem wąskim gardłem robi się jednak człowiek” – po prostu: wąskim gardłem robi się człowiek, który to wszystko spina, więc to on wyznacza tempo. Warto zaznaczyć, że dokładanie kolejnych agentów może obniżyć jakość, bo człowiek musi wykonać więcej koordynacji poza oceną jakości. Warto najpierw rozbić pracę na kawałki, przemyśleć, jak sensownie rozdzielić ją na agentów, żeby robili osobne, niezwiązane ze sobą kroki, może wyznaczyć kontrakty między nimi.\n[czat] Pytanie na końcu („kto u Ciebie w zespole odpowiada za złożenie w całość tego, co zrobili agenci”) zmieniłbym na pytanie o punkt, w którym dodawanie więcej AI w jakiejkolwiek formie przestaje zwiększać wydajność, jakość i to, czego potrzebujemy, a zaczyna nam to pogarszać (np. za dużo przełączania kontekstu).\n[weryfikacja] teza o człowieku jako wąskim gardle i spadku jakości to wniosek Kuby, nie fakt ze źródła.\n[czat] Zdjęcia: nie takie rzeczy (garaż, motocykl, remont); podobały się dziewięć kubków (podział pracy na dziewięć osób) i notes z rozpisaną architekturą. Nie muszą być realistyczne – mogą być minimalistyczne, ilustracje, grafiki generowane pod temat (nie szablonowe), sceneria może wyglądać realnie, ale nie jak zdjęcie z banku. Chętnie wskazówki o memach (szablon + gotowy tekst).\n[czat] Decyzja: Lovable idzie dziś bez obrazka; Proton i Cisco zostają oba, ale pójdzie jeden z nich (we wtorek) — do wyboru; Prawo Brooksa na końcu (czwartek) z memem Gru's Plan zrobionym przez Kubę (obrazki/t6_mem.jpg). Żadne z pozostałych zdjęć ani infografik nie podoba się — bez obrazka.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t6",
+        "data": "2026-11-08 12:00",
+        "fakty": [
+          {
+            "fakt": "Wąskim gardłem robi się człowiek, który spina pracę agentów i wyznacza tempo; więcej agentów to mniej czasu na ocenę jakości, więc jakość może spadać",
+            "gdzie": "linkedin, x",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+            "link": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai#:~:text=Someone%20still%20needs%20to%20define",
+            "cytat": "Someone still needs to define \"done\", review the code, catch hallucinations, and stitch the pieces together.",
+            "uwaga": "Źródło mówi tylko, że ktoś musi zdefiniować „done”, sprawdzić kod i złożyć części. Nie ma w nim tezy o człowieku jako wąskim gardle wyznaczającym tempo ani o mniejszej ilości czasu na ocenę jakości i spadku jakości. To wniosek Kuby; w poście podany jako stwierdzenie, więc zostawić jako własną opinię (np. „moim zdaniem”) albo złagodzić. Przeszukano całą stronę."
+          },
+          {
+            "fakt": "Brooks w książce „The Mythical Man-Month” (1975): dodanie ludzi do spóźnionego projektu spóźni go jeszcze bardziej",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+            "link": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai#:~:text=Adding%20manpower%20to%20a%20late%20software%20project",
+            "cytat": "Adding manpower to a late software project makes it later.",
+            "uwaga": "Źródło: Brooks sformułował to w książce z 1975 r."
+          },
+          {
+            "fakt": "Agenci AI nie potrzebują onboardingu ani spotkań",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+            "link": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai#:~:text=The%20traditional%20bottlenecks%20onboarding%20time%20endless",
+            "cytat": "The traditional bottlenecks -- onboarding time, endless stand-ups, and office politics -- disappear overnight.",
+            "uwaga": "Źródło mówi też o polityce biurowej; „spotkania” = stand-upy. Zgodne."
+          },
+          {
+            "fakt": "Dziewięciu agentów nie zrobi dziecka w miesiąc; praca sekwencyjna dalej sekwencyjna",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+            "link": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai#:~:text=nine%20agents%20still%20can",
+            "cytat": "nine agents still can’t deliver a baby in one month.",
+            "uwaga": "Metafora ze źródła."
+          },
+          {
+            "fakt": "Kilku agentów w jednym repozytorium bez orkiestracji potrafi nadpisywać nawzajem swoją pracę",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+            "link": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai#:~:text=Throw%20nine%20autonomous%20agents%20at%20a%20single%20codebase",
+            "cytat": "Throw nine autonomous agents at a single codebase without crystal-clear orchestration... they will happily rewrite each other's work in a high-speed loop.",
+            "uwaga": "Źródło mówi o dziewięciu agentach i „codebase”; „kilku” i „repozytorium” to dopuszczalne uogólnienie."
+          },
+          {
+            "fakt": "Koszt koordynacji przechodzi na człowieka: ktoś musi określić „gotowe”, sprawdzić wyniki i złożyć części",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+            "link": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai#:~:text=Someone%20still%20needs%20to%20define",
+            "cytat": "Someone still needs to define \"done\", review the code, catch hallucinations, and stitch the pieces together.",
+            "uwaga": "Źródło mówi „review the code”, post „sprawdzić wyniki” – OK."
+          },
+          {
+            "fakt": "Bez jasnych wymagań dostaniemy złą odpowiedź szybciej",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+            "link": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai#:~:text=Adding%20agents%20to%20a%20project%20with%20unclear",
+            "cytat": "Adding agents to a project with unclear requirements gets you the wrong answer faster.",
+            "uwaga": "Zgodne; w poście bez przypisania autorowi, co jest zgodne z życzeniem Kuby."
+          }
+        ]
+      }
+    }
+  ],
+  "_dziennik": [
+    "decyzja:glowny:77fe8edb",
+    "decyzja:t1:762b3f6c",
+    "decyzja:t2:46c954a6",
+    "decyzja:t3:4c79ca03",
+    "decyzja:t4:1bffbe80",
+    "decyzja:t6:87f415c0",
+    "temat:t1:69887018",
+    "temat:t2:eb4a3539",
+    "temat:t3:2e5c2779",
+    "temat:t4:fc8cd272",
+    "temat:t5:c257d49c",
+    "temat:t6:70a603ed",
+    "temat:t7:fd5aa113",
+    "uwaga:glowny:7c387f7a",
+    "uwaga:t1:94e36834",
+    "uwaga:t2:0c8d300e",
+    "uwaga:t2:5ff709bc",
+    "uwaga:t3:4c62f5c6",
+    "uwaga:t3:d7429123",
+    "uwaga:t4:95906403",
+    "uwaga:t4:ef032c08",
+    "uwaga:t6:4a3e41a1",
+    "uwaga:t6:effd9d14",
+    "wskazowka:t4:8c953fb2",
+    "zmiana:glowny:linkedin:b25d55a4",
+    "zmiana:glowny:termin:4993181a",
+    "zmiana:t2:infografika:cba725e3",
+    "zmiana:t2:linkedin:0722b452",
+    "zmiana:t2:obrazek:f965baff",
+    "zmiana:t2:obrazek_mem:464ed03e",
+    "zmiana:t2:obrazek_prompt:0ed50b8e",
+    "zmiana:t2:x:7244f805",
+    "zmiana:t3:infografika:a48aae60",
+    "zmiana:t3:komentarz:91815834",
+    "zmiana:t3:linkedin:da90e372",
+    "zmiana:t3:obrazek:43adb616",
+    "zmiana:t3:obrazek:79ca010b",
+    "zmiana:t3:obrazek_mem:556a7f3f",
+    "zmiana:t3:obrazek_prompt:1ca96a51",
+    "zmiana:t3:termin:1b815ceb",
+    "zmiana:t3:x:2333c1a0",
+    "zmiana:t4:infografika:7c42f414",
+    "zmiana:t4:linkedin:4ef8f4ce",
+    "zmiana:t4:linkedin:a7a444c4",
+    "zmiana:t4:obrazek:cf1cd25e",
+    "zmiana:t4:obrazek_mem:7b3f314c",
+    "zmiana:t4:obrazek_prompt:a419cbac",
+    "zmiana:t4:termin:bf3ca75b",
+    "zmiana:t4:x:b444bf36",
+    "zmiana:t4:x:c794a01e",
+    "zmiana:t6:infografika:8a0f03d0",
+    "zmiana:t6:linkedin:e2c1defb",
+    "zmiana:t6:obrazek:df73c0ab",
+    "zmiana:t6:obrazek_mem:855ddf2d",
+    "zmiana:t6:obrazek_mem:bac441d9",
+    "zmiana:t6:obrazek_prompt:4a5b6ed2",
+    "zmiana:t6:termin:5faa4f79",
+    "zmiana:t6:x:352d01e0"
+  ]
+}

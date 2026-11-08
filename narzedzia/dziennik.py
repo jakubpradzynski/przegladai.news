@@ -282,6 +282,8 @@ def cmd_social(args):
                  ('x', '\n---\n'.join(post_ai.get('x', [])), '\n---\n'.join(post.get('x', []))),
                  ('obrazek', img_ai.get('wybrany'), img.get('wybrany')),
                  ('obrazek_prompt', img_ai.get('prompt'), img.get('prompt')),
+                 ('obrazek_mem', json.dumps(img_ai.get('mem'), ensure_ascii=False, sort_keys=True) if img_ai.get('mem') else '',
+                  json.dumps(img.get('mem'), ensure_ascii=False, sort_keys=True) if img.get('mem') else ''),
                  ('infografika', json.dumps(img_ai.get('infografika'), ensure_ascii=False, sort_keys=True),
                   json.dumps(img.get('infografika'), ensure_ascii=False, sort_keys=True)),
                  ('termin', post_ai.get('termin'), post.get('termin'))]

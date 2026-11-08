@@ -110,6 +110,11 @@ na post (numer wydania, id posta, wynik do `.cache/social/<NNN>/weryfikacja/<id>
 python3 narzedzia/social/posty.py weryfikacja <NNN>
 ```
 
+Weryfikator robi trzy rzeczy: sprawdza każdy fakt w źródle, dla kluczowych liczb i tez szuka **drugiego, niezależnego
+źródła** i na końcu robi **kontrolę spójności** całego tekstu (kto co zrobił, okresy i jednostki, czy parafraza nie zmienia
+sensu, czy opinia nie jest podana jak fakt, czy LinkedIn i X mówią to samo) — wpisy zaczynające się od „Spójność:”.
+Po każdej poprawce posta, która zmienia fakty albo sens, weryfikację uruchamiasz od nowa.
+
 Narzędzie pokazuje przy poście listę faktów (✓ / ✗ / ?), cytat ze źródła i link „pokaż w źródle” prowadzący
 do podświetlonego fragmentu. Rozbieżności popraw od razu w `posty.json` (to poprawka faktów, nie stylu —
 dopisz w `uwaga_kuby` linię `[weryfikacja] …`, żeby `ucz-sie` nie brał jej za preferencję Kuby) i zweryfikuj

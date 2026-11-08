@@ -1,0 +1,273 @@
+{
+  "numer": 45,
+  "tytul": "Wydanie #45: TesterArmy to teraz e2e, HackerTube i jak powstał Lovable",
+  "posty": [
+    {
+      "id": "glowny",
+      "rodzaj": "glowny",
+      "temat": "Wstęp wydania",
+      "link_newsa": "",
+      "tytul_newsa": "",
+      "kat": "Trzy wątki dla budujących z agentami: HackerTube Karpathy’ego, e2e (dawniej TesterArmy) i lekcja Lovable.",
+      "linkedin": "Andrej Karpathy w dwie godziny zbudował z Claude serwis HackerTube. Z 43 milionów komentarzy z Hacker News wyłowił 6454 filmy, które programiści polecają sobie od lat.\n\nRęcznie zrobił tylko klucz API Google, serwer VPS i domenę. Resztę, razem z wdrożeniem i zabezpieczeniem serwera, wykonał agent.\n\nObok tego dwa wątki dla każdego, kto buduje z agentami. TesterArmy zmienia nazwę na e2e i zbiera 8 mln dolarów na narzędzie, które sprawdza kod pisany przez agentów. Po miesiącu ma już ponad 1,5 mln pobrań z npm.\n\nZespół Lovable opisuje z kolei, że wyrzucił większość kodu swoich autonomicznych agentów, bo działały nieprzewidywalnie, i zastąpił go prostym łańcuchem narzędzi.\n\nTo i ponad 25 innych newsów z tygodnia zebrałem w 45. wydaniu PrzeglądAI, link w komentarzu.\n\nCo w Twoich projektach z agentami nadal robisz ręcznie, a co oddajesz agentowi?",
+      "komentarz": "Wydanie #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable",
+      "x": [
+        "Andrej Karpathy w dwie godziny zbudował z Claude serwis HackerTube: z 43 mln komentarzy z Hacker News wyłowił 6454 filmy, które programiści polecają sobie od lat.",
+        "Ręcznie zrobił tylko klucz API Google, serwer VPS i domenę. Wdrożenie i zabezpieczenie serwera zrobił agent.",
+        "Dwa inne wątki dla budujących z agentami: TesterArmy zmienia nazwę na e2e i zbiera 8 mln $ na testowanie kodu pisanego przez agentów. Lovable wyrzucił większość kodu swoich autonomicznych agentów na rzecz prostego łańcucha narzędzi.",
+        "To i ponad 25 innych newsów z tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "okladka",
+        "infografika": {
+          "rodzaj": "liczba",
+          "naglowek": "HackerTube",
+          "liczba": "6454",
+          "podpis": "filmów polecanych w komentarzach Hacker News, wyłowionych z 43 mln komentarzy w około dwie godziny z Claude",
+          "zrodlo": "blog Andreja Karpathy’ego"
+        },
+        "plik": "../okladka.jpeg"
+      },
+      "termin": "2026-11-06 08:30",
+      "fakty": [
+        "2 godziny, klucz API Google, serwer VPS i domena ręcznie, wdrożenie przez agenta – opis newsa Hacker Tube (dane.csv)",
+        "43 mln komentarzy, 6454 filmy – post Karpathy’ego na X i opis newsa",
+        "8 mln $ seed, ponad 1,5 mln pobrań z npm – opis newsa e2e (dane.csv)",
+        "większość kodu autonomicznych agentów usunięto, prosty łańcuch narzędzi – opis newsa Lovable (dane.csv)",
+        "ponad 25 innych newsów – wydanie ma 29 newsów"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t4",
+      "rodzaj": "temat",
+      "temat": "Lovable i ciągłe przebudowy",
+      "link_newsa": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+      "tytul_newsa": "Jak powstał Lovable i dlaczego ciągle go przebudowują",
+      "kat": "W firmach AI duża część projektu jest co jakiś czas przebudowywana, więc warstwę wokół modelu warto budować jako wymienialną i zaczynać od wąskiego problemu.",
+      "linkedin": "Użytkownicy Lovable utworzyli ponad 70 mln projektów, a mimo to zespół usunął prawie cały kod swoich agentów i wrócił do przewidywalnego łańcucha narzędzi.\n\nOpisał to na blogu firmy Anton Osika, współzałożyciel Lovable i twórca GPT Engineer, po ponad 100 tys. pull requestów w kodzie. Agent to program, który sam planuje kolejne kroki. Według tekstu mniej ograniczeni agenci grzęźli w technicznych szczegółach, popełniali błędy i nie dało się przewidzieć, kiedy skończą. Teraz jedno zapytanie użytkownika uruchamia z góry ustalony ciąg narzędzi.\n\nDrugi przykład jest równie przyziemny. Zamiast dotrenowywać model, inżynierowie przeglądali logi czatów z zepsutych aplikacji i spisywali krótkie notatki o powtarzających się błędach. Krok wyszukiwania dobierał te pasujące do zadania i dopisywał je do kontekstu, czyli do tego, co model dostaje razem z poleceniem. Zasada z tekstu brzmi: zawęź problem, kontroluj wykonanie i ucz się z wyników.\n\nWidzę tu raczej wzorzec, który chyba powtarza się w wielu firmach AI: duża część projektu jest co jakiś czas przebudowywana. Rozumiem, że to kosztuje, ale modele zmieniają się szybciej niż architektura wokół nich, więc to, co rok temu wymagało rozbudowanej autonomii, dziś może załatwić prostsze rozwiązanie.\n\nCoś wartego uwagi dla managerów: przy rozwiązaniach opartych na LLM lepiej od razu zaplanować czas na przebudowę i budować warstwę wokół modelu tak, żeby dało się ją wymienić.\n\nKtóra część rozwiązania opartego na LLM w Twoim zespole powstała pod możliwości modelu sprzed roku i czeka na przebudowę?",
+      "komentarz": "Pełny przegląd tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable\nŹródło: https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+      "x": [
+        "Użytkownicy Lovable utworzyli ponad 70 mln projektów. Mimo to zespół usunął prawie cały kod swoich agentów i wrócił do przewidywalnego łańcucha narzędzi.",
+        "Powód opisał współzałożyciel Anton Osika: mniej ograniczeni agenci grzęźli w technicznych szczegółach, popełniali błędy i nie dało się przewidzieć, kiedy skończą.",
+        "Zamiast dotrenowywać model, inżynierowie spisywali krótkie notatki o powtarzających się błędach. Krok wyszukiwania dobierał pasujące do zadania i dodawał je do kontekstu.",
+        "Moim zdaniem to wzorzec z wielu firm AI: duża część projektu jest co jakiś czas przebudowywana, bo modele zmieniają się szybciej niż architektura wokół nich. Warto zaplanować na to czas z góry.",
+        "Zasada z tekstu: zawęź problem, kontroluj wykonanie, ucz się z wyników.\nWięcej w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "styl": "notatka",
+          "naglowek": "Lovable",
+          "liczba": "70 mln",
+          "podpis": "projektów utworzyli użytkownicy, a prawie cały kod agentów i tak usunięto",
+          "zrodlo": "blog Lovable",
+          "numer": 45
+        },
+        "prompt": "Realistic photo, 3:4 vertical. A garage workshop in soft daylight from an open door: a half-disassembled motorcycle engine on a workbench, parts laid out in neat rows on a cloth, a torque wrench and a few hand tools beside it, a worn notebook with pencil marks open next to the parts. Main subject centered with generous margin at the edges. Everyday, slightly messy, candid feel. No people facing the camera, no readable text, no robots, no glowing elements, no holograms, no 3D render look. Natural colors, shallow depth of field, slight film grain.",
+        "plik": "obrazki/t4.png"
+      },
+      "termin": "2026-11-09 08:30",
+      "fakty": [
+        "ponad 70 mln projektów utworzonych przez użytkowników – blog Lovable („more than 70 million projects on the platform”)",
+        "ponad 100 tys. pull requestów w kodzie (bez „scalonych”) – blog Lovable („More than 100,000 pull requests in our codebase”)",
+        "Anton Osika, współzałożyciel Lovable i twórca GPT Engineer – blog Lovable",
+        "usunięcie prawie całego kodu agentów, powrót do przewidywalnego łańcucha narzędzi; mniej ograniczeni agenci grzęźli w technicznych szczegółach, błędy, brak przewidywalnego czasu zakończenia – blog Lovable",
+        "notatki o błędach z logów czatów zepsutych aplikacji, bez dotrenowywania, krok wyszukiwania dobierał notatki do kontekstu – blog Lovable",
+        "zasada „constrain the problem, control execution, and learn from the results” – blog Lovable",
+        "OPINIA Kuby: wzorzec ciągłych przebudów w wielu firmach AI (wskazówka Kuby); „modele zmieniają się szybciej niż architektura wokół nich”; rada o zaplanowaniu czasu na przebudowę"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t2",
+      "rodzaj": "temat",
+      "temat": "Proton i rozmowy o użyciu AI",
+      "link_newsa": "https://www.404media.co/reaping-and-sowing-ceo-edition/",
+      "tytul_newsa": "Szef Protona odwołuje „ponowne rozmowy kwalifikacyjne” o używanie AI",
+      "kat": "Manager, który mierzy zespół użyciem AI zamiast jakością efektów, zamienia narzędzie w mandat.",
+      "linkedin": "Szef Protona zaplanował ponowne rozmowy kwalifikacyjne dla niemal wszystkich pracowników i odwołał je dzień po tym, jak 404 Media opisało sprawę.\n\nSerwis 404 Media rozmawiał z sześcioma obecnymi pracownikami i dotarł do nagrania około dwugodzinnego spotkania całej firmy. Według tych źródeł osoby, które zarząd uznałby za używające AI za mało, mogły stracić pracę. Szef firmy Andy Yen odwołał rozmowy w piątek, dzień po czwartkowej publikacji śledztwa.\n\nW tym samym śledztwie opisano, że jeden z pracowników poprosił na kanale o bezpieczeństwie o kilka dni na testy penetracyjne nowego kodu, czyli kontrolowane próby włamania, które sprawdzają go przed wdrożeniem. Użytkownicy Protona krytykują zarząd w sieci, a część wprost żąda dymisji Yena.\n\nRozumiem, że szef chce mieć pewność, że firma korzysta z narzędzi, w które inwestuje. Moim zdaniem jednak mierzenie samego użycia zamienia narzędzie w mandat, bo skoro oceniany jest fakt użycia, a nie efekt, ludzie będą używać AI także tam, gdzie im to nie pomaga.\n\nWażny wniosek dla managerów: o adopcji AI lepiej rozmawiać przez efekty, na przykład czas dostarczenia, liczbę błędów po wdrożeniu czy jakość code review, i pytać zespół, co narzędzie ułatwiło, a gdzie przeszkadza.\n\nCzy u Ciebie w firmie ktoś sprawdza, kto i jak często używa AI, czy raczej patrzy na to, co z tego wychodzi?",
+      "komentarz": "Pełny przegląd tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable\nŹródło: https://www.404media.co/reaping-and-sowing-ceo-edition/",
+      "x": [
+        "Szef Protona zaplanował ponowne rozmowy kwalifikacyjne dla niemal wszystkich pracowników. Odwołał je dzień po tym, jak 404 Media opisało sprawę.",
+        "404 Media powołuje się na sześciu obecnych pracowników i nagranie ok. dwugodzinnego spotkania firmy. Według nich za zbyt małe użycie AI mogło grozić zwolnienie.",
+        "Jeden z pracowników prosił na kanale o bezpieczeństwie o kilka dni na testy penetracyjne nowego kodu. Użytkownicy krytykują zarząd, część żąda dymisji Andy'ego Yena.",
+        "Mierzenie samego użycia AI zamienia narzędzie w mandat: ludzie używają go też tam, gdzie nie pomaga. Lepiej pytać, co ułatwiło pracę, a gdzie przeszkadza.",
+        "Więcej newsów z tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "naglowek": "Proton i AI",
+          "liczba": "6 osób",
+          "podpis": "z firmy i nagranie ze spotkania to źródła 404 Media. Według nich za zbyt małe użycie AI mogło grozić zwolnienie",
+          "zrodlo": "404 Media"
+        },
+        "prompt": "Realistic photo, natural window light, a quiet open-space office late in the afternoon, a single laptop on a desk with a coffee mug and a paper notebook beside it, a clipboard with an unchecked checklist next to the keyboard, no people looking at camera, no text on screen, no robots, shallow depth of field, 3:4 vertical, main subject centered with room around the edges, documentary style",
+        "plik": "obrazki/t2.png"
+      },
+      "termin": "2026-11-10 08:30",
+      "fakty": [
+        "Ponowne rozmowy dla niemal wszystkich pracowników; osoby używające AI za mało mogły stracić pracę (źródła: sześciu obecnych pracowników, nagranie ok. dwugodzinnego spotkania) – 404 Media, reaping-and-sowing-ceo-edition",
+        "Andy Yen odwołał rozmowy w piątek, dzień po czwartkowej publikacji śledztwa – 404 Media, reaping-and-sowing-ceo-edition",
+        "Jeden pracownik na kanale o bezpieczeństwie prosił o kilka dni na testy penetracyjne nowego kodu – czwartkowe śledztwo 404 Media (manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning), nie linkowany artykuł",
+        "Krytyka użytkowników w sieci, część żąda dymisji Yena – 404 Media, reaping-and-sowing-ceo-edition",
+        "Wyjaśnienie testów penetracyjnych – objaśnienie ogólne, nie ze źródła",
+        "OPINIA Kuby: mierzenie samego użycia zamienia narzędzie w mandat; ludzie używają AI tam, gdzie nie pomaga; wniosek o miarach efektów (czas dostarczenia, błędy, code review) i ustępstwo wobec szefa – nie fakty ze źródła"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t3",
+      "rodzaj": "temat",
+      "temat": "Cisco: tokeny bez limitu na stary kod",
+      "link_newsa": "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts",
+      "tytul_newsa": "Cisco daje 27-latkowi nieograniczone tokeny AI na przepisanie 98% starego kodu w 24 miesiące",
+      "kat": "Skrajny test, czy agenci i mały zespół wyleczą dług techniczny szybciej niż projekt migracji; trudność leży w dowodzie, że nowy kod robi to samo co stary.",
+      "linkedin": "Cisco dało 27-letniemu inżynierowi nieograniczone tokeny AI i 24 miesiące na przepisanie 98% starego kodu firmy.\n\nSprawę opisał Fortune 30 października, a Tom's Hardware podał ją dalej. Inżynier jest byłym założycielem startupu EzDubs, który Cisco przejęło, a decyzję podjął Jeetu Patel, prezes i dyrektor produktowy firmy. Powiedział mu, że może „go nuts”. Tokeny to jednostki, w których rozlicza się pracę modeli AI, więc brak limitu oznacza brak sufitu na koszt pracy agentów.\n\nPlan samego inżyniera to zespół dwóch osób i cztery tygodnie na pokazanie, że podejście działa. To jego plan, a nie ustalenie Cisco, bo Patel mówił później o dwóch albo trzech osobach. Fortune nie pisze też, kto ustalił cel 98%. Zwykle taka migracja to projekt na lata, z dużym zespołem i szczegółowym harmonogramem, więc różnica skali jest spora.\n\nRozumiem tę logikę, bo cztery tygodnie szybko pokażą, czy podejście ma sens. Moim zdaniem trudniejsze od samego przepisania będzie jednak wykazanie, że nowy kod robi to samo co stary, zwłaszcza gdy stary nie ma dobrych testów. Z relacji tego nie wiemy.\n\nCoś wartego uwagi dla managerów: przed takim eksperymentem warto ustalić, po czym poznamy, że przepisany fragment działa tak samo, zanim agenci napiszą pierwszą linijkę.\n\nPo czym w Twojej firmie poznalibyście, że przepisany moduł zachowuje się dokładnie tak jak stary?",
+      "komentarz": "Pełny przegląd tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable\nŹródło: https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts",
+      "x": [
+        "Cisco dało 27-letniemu inżynierowi nieograniczone tokeny AI i 24 miesiące na przepisanie 98% starego kodu firmy. Sprawę opisał Fortune, Tom's Hardware podał ją dalej.",
+        "Inżynier to były założyciel przejętego startupu EzDubs. Decyzję podjął Jeetu Patel, prezes i dyrektor produktowy Cisco, który kazał mu „go nuts”.",
+        "Plan inżyniera: dwie osoby i cztery tygodnie na pokazanie, że to działa. To jego plan, nie ustalenie Cisco. Patel mówił później o dwóch albo trzech osobach.",
+        "Rozumiem logikę krótkiego sprawdzianu. Moim zdaniem trudniejsze od przepisania będzie jednak wykazanie, że nowy kod robi to samo co stary, zwłaszcza bez dobrych testów.",
+        "Po czym u Ciebie poznalibyście, że przepisany moduł działa jak stary? Więcej newsów z tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "styl": "notatka",
+          "naglowek": "Cisco i stary kod",
+          "liczba": "98%",
+          "podpis": "starego kodu w 24 miesiące, nieograniczone tokeny",
+          "zrodlo": "Fortune, 30.10.2026",
+          "numer": 45
+        },
+        "prompt": "Realistic photo, 3:4 vertical. Two ordinary office desks pushed together in late afternoon, warm natural window light. On them a worn stack of printed old documentation with sticky notes, two closed laptops, a half-finished coffee, a paper wall calendar with four days circled in pen. Seen from a slight angle, nobody looking at the camera, main subject centered with margin around the edges for cropping to 4:5. No readable text, no robots, no glowing elements, no holograms, no 3D render look. Muted colors, shallow depth of field, casual phone photo feel.",
+        "plik": "obrazki/t3.png"
+      },
+      "termin": "2026-11-11 08:30",
+      "fakty": [
+        "Fortune z 30.10.2026 opisał sprawę, Tom's Hardware podaje ją dalej (treść Tom's Hardware niedostępna do sprawdzenia) - fortune.com/2026/10/30/cisco-president-jeetu-patel-...",
+        "27 lat, nieograniczone tokeny, 98% starego kodu, 24 miesiące - nagłówek Fortune i Tom's Hardware",
+        "Były założyciel przejętego startupu EzDubs - Fortune (former founder) i Notebookcheck",
+        "Jeetu Patel, prezes i dyrektor produktowy, 'you can go nuts' - Fortune",
+        "Zespół dwóch osób i cztery tygodnie to plan inżyniera (Fortune); Patel później mówił o 'two or three people' (Notebookcheck)",
+        "Fortune nie podaje, kto ustalił cel 98% - post tego nie przypisuje nikomu",
+        "Wyjaśnienie tokenów i 'taka migracja to projekt na lata' - wiedza ogólna, nie z artykułu",
+        "OPINIA Kuby: trudność dowodu, że nowy kod robi to samo co stary; wniosek dla managerów i pytanie końcowe"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t1",
+      "rodzaj": "temat",
+      "temat": "Ostrożność wobec agentów AI",
+      "link_newsa": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+      "tytul_newsa": "Dlaczego dobrzy programiści są ostrożni wobec agentów AI",
+      "kat": "Doświadczeni programiści nie boją się o pracę, tylko nie ufają jeszcze kodowi pisanemu głównie przez agentów, a eksperyment pokazuje, że praca przesuwa się na projektowanie i kontrolę (harness).",
+      "linkedin": "W tygodniowym eksperymencie agenci AI napisali cały kod aplikacji dla linii lotniczej. Po tygodniu była gotowa w około 80%, a build często świecił na czerwono.\n\nEksperyment prowadził Giles Alexander, Regional CTO Thoughtworks na Europę, a opisała go Rachel Laycock, CTO Thoughtworks, na blogu na martinfowler.com. Build to automatyczne budowanie i testowanie aplikacji, więc czerwony oznacza, że coś się nie przeszło. Mimo to aplikacja działała.\n\nZespół oszacował, że około dwóch trzecich czasu spędził przy tablicy, projektując domenę, granice systemu i plany dla agentów. Pozostała jedna trzecia poszła na harness, czyli testy, kontrakty, kontrole architektury i pipeline, które mają dawać agentom informację zwrotną. Laycock pisze wprost: „Built is not the same as working in production”, czyli zbudowane nie znaczy działające na produkcji.\n\nWedług niej ostrożność doświadczonych programistów nie wynika głównie ze strachu o pracę, choć u części osób bywa i tak. Chodzi o brak zaufania do systemów, przy których nikt jeszcze nie ma doświadczenia w budowaniu w ten sposób. Rozumiem to podejście i moim zdaniem to nie jest niechęć do nowego, tylko wiedza, ile pracy zostaje po wygenerowaniu kodu. Skoro agent pisze kod, to ciężar przechodzi na projektowanie i na harness.\n\nNa czym warto się zastanowić, który podaje też autorka: nie oceniać sukcesu tym, ile kodu napisali agenci, i dać zespołowi przestrzeń na eksperymenty.\n\nIle z takiego harnessu, czyli testów, kontraktów i kontroli architektury, masz dziś w swoim projekcie, żeby agent szybko dowiedział się, że coś zepsuł?",
+      "komentarz": "Pełny przegląd tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable\nŹródło: https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+      "x": [
+        "W tygodniowym eksperymencie agenci AI napisali cały kod aplikacji dla linii lotniczej. Po tygodniu była gotowa w ok. 80%, ale build często był czerwony.",
+        "Eksperyment z Thoughtworks opisała Rachel Laycock, CTO firmy. Zespół oszacował, że ok. 2/3 czasu spędził przy tablicy na projektowaniu, a 1/3 na harnessie: testach, kontraktach i kontrolach architektury.",
+        "Laycock: „Built is not the same as working in production”. Doświadczeni programiści są ostrożni głównie nie ze strachu o pracę, tylko dlatego, że nikt nie ma jeszcze doświadczenia z budowaniem systemów w ten sposób.",
+        "Moim zdaniem to wiedza, ile pracy zostaje po wygenerowaniu kodu. Dla managerów: nie mierzyć sukcesu ilością kodu od agentów, tylko dać zespołowi przestrzeń na eksperymenty.",
+        "Ten i inne newsy z tygodnia zebrałem w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "lista",
+          "styl": "notatka",
+          "tytul": "Aplikacja dla linii lotniczej, 1 tydzień",
+          "punkty": [
+            "Cały kod napisali agenci",
+            "Po tygodniu gotowe w ok. 80%",
+            "2/3 czasu przy tablicy, 1/3 na harness",
+            "Build często czerwony"
+          ],
+          "zrodlo": "Rachel Laycock, Thoughtworks",
+          "numer": 45
+        },
+        "prompt": "Realistic photo, 3:4 vertical. A whiteboard in a small office meeting room in soft morning daylight, covered with hand-drawn boxes and arrows (unreadable marker scribbles), a marker on the ledge, and in the blurred background a laptop on a table with a screen of red and green rows. Main subject centered with generous margins so it can be cropped to 4:5. No people facing the camera, no readable text, no robots, no glowing elements, no holograms, not a 3D render. Natural colors, shallow depth of field, casual phone-photo feel.",
+        "plik": "obrazki/t1.png"
+      },
+      "termin": "2026-11-12 08:30",
+      "fakty": [
+        "Tygodniowy eksperyment, agenci napisali cały kod aplikacji dla linii lotniczej, po tygodniu ok. 80% gotowa (80% = stopień ukończenia) – martinfowler.com/rachels-ramblings/good-devs-wary.html",
+        "Rachel Laycock, CTO Thoughtworks (autorka); eksperyment prowadził Giles Alexander, Regional CTO Europe – to samo źródło",
+        "Ok. 2/3 czasu przy tablicy (domena, granice, plany dla agentów), 1/3 na harness (testy, kontrakty, kontrole architektury, pipeline) – szacunek zespołu, to samo źródło",
+        "Build często czerwony, aplikacja działała; cytat „Built is not the same as working in production” – to samo źródło",
+        "Ostrożność nie wynika głównie ze strachu o pracę (u części osób bywa), tylko z braku zaufania/doświadczenia – to samo źródło",
+        "Wyjaśnienie, że czerwony build = coś się nie przeszło – wyjaśnienie autora posta (ogólna wiedza)",
+        "Rada dla managerów (nie oceniać sukcesu ilością kodu od agentów, dać przestrzeń na eksperymenty) – to samo źródło",
+        "OPINIA Kuby: ostrożność to wiedza, ile pracy zostaje po wygenerowaniu kodu; ciężar przechodzi na projektowanie i harness; pytanie końcowe"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t6",
+      "rodzaj": "temat",
+      "temat": "Prawo Brooksa dla agentów AI",
+      "link_newsa": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "tytul_newsa": "Prawo Brooksa w erze AI – więcej agentów nie przyspiesza projektu",
+      "kat": "Agenci znoszą koszt onboardingu i spotkań, ale praca sekwencyjna dalej jest sekwencyjna, a koordynację przejmuje człowiek, więc tempo wyznacza on, a nie liczba agentów.",
+      "linkedin": "W 1975 roku Frederick Brooks napisał w książce „The Mythical Man-Month”, że dodanie ludzi do spóźnionego projektu spóźni go jeszcze bardziej. Czy to samo dotyczy agentów AI?\n\nPyta o to Jan van den Berg na swoim blogu j11g.com. Na pierwszy rzut oka agenci wygrywają, bo nie potrzebują onboardingu ani spotkań, a właśnie z nich brały się koszty dokładania ludzi. Autor przypomina jednak, że dziewięciu agentów nadal nie zrobi dziecka w miesiąc, bo praca sekwencyjna dalej jest sekwencyjna.\n\nKoszt koordynacji nie znika, tylko przechodzi na człowieka: ktoś musi określić, co znaczy „gotowe”, sprawdzić wyniki i złożyć części w całość. Do tego kilku agentów w jednym repozytorium bez orkiestracji potrafi nadpisywać nawzajem swoją pracę. Swoją wersję prawa na 2026 rok autor ujmuje tak: agenci w projekcie z niejasnymi wymaganiami dają złą odpowiedź szybciej.\n\nRozumiem pokusę, żeby przy dużym projekcie po prostu uruchomić więcej agentów, skoro nie trzeba ich wdrażać. Moim zdaniem wąskim gardłem robi się jednak człowiek, który to wszystko spina, więc to on wyznacza tempo. Ważny wniosek dla managerów: zanim dołożysz kolejnych agentów, sprawdź, ile pracy da się podzielić na niezależne kawałki i czy zespół umie opisać, co ma być gotowe.\n\nKto u Ciebie w zespole odpowiada za złożenie w całość tego, co zrobili agenci?",
+      "komentarz": "Pełny przegląd tygodnia w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable\nŹródło: https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "x": [
+        "Frederick Brooks napisał w 1975 roku, że dodanie ludzi do spóźnionego projektu spóźni go jeszcze bardziej. Jan van den Berg z bloga j11g.com sprawdza, czy to samo dotyczy agentów AI.",
+        "Agenci nie potrzebują onboardingu ani spotkań, więc koszty znane z prawa Brooksa wydają się znikać. Ale dziewięciu agentów nadal nie zrobi dziecka w miesiąc: praca sekwencyjna dalej jest sekwencyjna.",
+        "Koszt koordynacji przejmuje człowiek. Ktoś musi określić, co znaczy „gotowe”, sprawdzić wyniki i złożyć części. Kilku agentów w jednym repozytorium bez orkiestracji potrafi nadpisywać sobie pracę.",
+        "Wersja prawa na 2026 według autora: agenci w projekcie z niejasnymi wymaganiami dają złą odpowiedź szybciej. Moim zdaniem zanim dołożysz agentów, sprawdź, ile pracy da się podzielić na niezależne kawałki.",
+        "Artykuł: https://j11g.com/the-mythical-man-month-in-the-age-of-ai\nTen i inne newsy z tygodnia zebrałem w #45 PrzeglądAI: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "lista",
+          "styl": "notatka",
+          "tytul": "Co zostaje człowiekowi",
+          "punkty": [
+            "Określić, co znaczy „gotowe”",
+            "Sprawdzić wyniki agentów",
+            "Złożyć części w całość",
+            "Pilnować, żeby agenci nie nadpisywali sobie pracy"
+          ],
+          "zrodlo": "j11g.com, Jan van den Berg",
+          "numer": 45
+        },
+        "prompt": "Realistic photo, 3:4 vertical. A long office table in morning daylight with nine identical coffee mugs in a row next to one open notebook with a hand-drawn timeline of arrows in pen (no readable words), a pen lying across the page. Main subject centered with generous margin on all sides so it can be cropped to 4:5. Out-of-focus laptops and chairs in the background, nobody looking at the camera. No text, no robots, no glowing elements, no holograms, no 3D render look. Muted warm colors, shallow depth of field, casual phone-photo feel.",
+        "plik": "obrazki/t6.png"
+      },
+      "termin": "2026-11-16 08:30",
+      "fakty": [
+        "Autor bloga j11g.com: Jan van den Berg (nagłówek i stopka strony) – źródło",
+        "Brooks, „The Mythical Man-Month”, 1975: „Adding manpower to a late software project makes it later” – źródło",
+        "Agenci bez onboardingu i stand-upów („onboarding time, endless stand-ups…disappear overnight”) – źródło",
+        "„nine agents still can’t deliver a baby in one month. Sequential tasks are still sequential.” – źródło",
+        "Ktoś musi określić „done”, zrobić review, wyłapać halucynacje i złożyć części („Someone still needs to define \"done\"…”) – źródło",
+        "Wielu agentów w jednym repozytorium bez orkiestracji nadpisuje sobie pracę („they will happily rewrite each other's work”) – źródło",
+        "Wersja prawa na 2026 jako teza autora: „Adding agents to a project with unclear requirements gets you the wrong answer faster.” – źródło",
+        "OPINIA Kuby: człowiek jako wąskie gardło i wyznaczający tempo; rada, by sprawdzić podział na niezależne kawałki i umiejętność opisania „gotowe” – wniosek, nie fakt ze źródła",
+        "OPINIA/wniosek: zdanie o pokusie uruchamiania większej liczby agentów – nie ze źródła"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    }
+  ]
+}

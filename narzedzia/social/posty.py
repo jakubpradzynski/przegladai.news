@@ -16,7 +16,8 @@ Post:
      "linkedin": "...",          tekst na LinkedIn (ten sam idzie na Facebooka i Substack Notes)
      "komentarz": "...",         pierwszy komentarz: link do wydania / zrodla
      "x": ["...", "..."],        watek na X, kazdy wpis <= 280 (wazona dlugosc)
-     "obrazek": {"wybrany": "okladka|infografika|prompt|brak", "infografika": {spec}, "prompt": "...",
+     "obrazek": {"wybrany": "okladka|infografika|prompt|mem|brak", "infografika": {spec}, "prompt": "...",
+                 "mem": {"szablon": "Drake Hotline Bling", "link": "https://imgflip.com/...", "tekst": "góra: ...\ndół: ..."},
                  "plik": "obrazki/t1.png"},
      "termin": "2026-11-03 08:30", "publikuj": true, "uwaga_kuby": "", "wynik": {}}
 
@@ -150,6 +151,8 @@ def check_post(post, phrases):
     image = post.get('obrazek') or {}
     if image.get('wybrany') == 'infografika' and not image.get('infografika'):
         problems.append('obrazek: wybrana infografika bez specyfikacji')
+    if image.get('wybrany') == 'mem' and not (image.get('mem') or {}).get('tekst'):
+        problems.append('obrazek: wybrany mem bez tekstu')
     return problems, warnings
 
 
@@ -189,12 +192,14 @@ def render_images(numer, data):
         spec = image.get('infografika')
         if image.get('wybrany') == 'okladka':
             image['plik'] = '../okladka.jpeg'
+        if image.get('wybrany') == 'mem' and (image.get('mem') or {}).get('plik'):
+            image['plik'] = image['mem']['plik']      # gotowy mem zrobiony przez Kube (obrazki/<id>_mem.jpg)
         if not spec:
             continue
         spec = dict({'numer': meta.get('numer', numer)}, **spec)
         target = os.path.join(out_dir, '%s.png' % post['id'])
         render(spec, target)
-        if image.get('wybrany') != 'okladka':
+        if image.get('wybrany') not in ('okladka', 'mem'):
             image['plik'] = 'obrazki/%s.png' % post['id']
         done.append(post['id'])
     return done
@@ -302,17 +307,22 @@ def cmd_eksport(args):
         if facts:
             lines += ['Weryfikacja faktów: %d/%d potwierdzone%s' % (len(facts) - len(bad), len(facts),
                       '' if not bad else ' — DO SPRAWDZENIA: ' + '; '.join(f['fakt'] for f in bad)), '']
-        lines += ['### LinkedIn / Facebook / Substack Notes', '', post['linkedin'], '',
-                  '**Pierwszy komentarz:**', '', post.get('komentarz', ''), '']
+        # tekst w bloku kodu: kopiowanie zachowuje puste linie miedzy akapitami (z renderowanego markdownu zlewaja sie w jeden)
+        lines += ['### LinkedIn / Facebook / Substack Notes', '', '```text', post['linkedin'], '```', '',
+                  '**Pierwszy komentarz:**', '', '```text', post.get('komentarz', ''), '```', '']
         lines += ['### X (wątek)', '']
         for i, tweet in enumerate(post.get('x', []), 1):
             lines += ['%d/ %s' % (i, tweet), '']
         chosen = image.get('wybrany', 'brak')
         lines += ['### Obrazek: %s' % chosen, '']
-        if chosen in ('infografika', 'okladka') and image.get('plik'):
+        if chosen in ('infografika', 'okladka', 'mem') and image.get('plik'):
             lines += ['![](%s)' % image['plik'], '']
         if chosen == 'prompt' and image.get('prompt'):
             lines += ['Prompt:', '', '```', image['prompt'], '```', '']
+        if chosen == 'mem' and image.get('mem'):
+            mem = image['mem']
+            lines += ['Mem: %s%s' % (mem.get('szablon', ''), ' (%s)' % mem['link'] if mem.get('link') else ''), '',
+                      '```', mem.get('tekst', ''), '```', '']
         lines += ['---', '']
     with open(paths(args.numer)['md'], 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))

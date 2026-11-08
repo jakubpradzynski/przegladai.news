@@ -1,0 +1,61 @@
+{
+  "numer": 45,
+  "tematy": [
+    {
+      "id": "t1",
+      "link": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+      "tytul_newsa": "Dlaczego dobrzy programiści są ostrożni wobec agentów AI",
+      "kat": "Doświadczeni programiści nie boją się o pracę, tylko nie ufają jeszcze kodowi napisanemu głównie przez agentów – a w eksperymencie z aplikacją dla linii lotniczej zespół spędził dwie trzecie czasu na projektowaniu, resztę na testach i kontroli.",
+      "dlaczego": "Pytanie, ile zaufania dać agentom w kodzie produkcyjnym, ma każdy deweloper i manager; mocny punkt wyjścia do dyskusji w komentarzach.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t2",
+      "link": "https://www.404media.co/reaping-and-sowing-ceo-edition/",
+      "tytul_newsa": "Szef Protona odwołuje „ponowne rozmowy kwalifikacyjne” o używanie AI",
+      "kat": "Szef Protona chciał sprawdzać pracowników z używania AI i musiał wycofać plan po śledztwie 404 Media – manager, który mierzy zespół użyciem AI zamiast jakością, zamienia narzędzie w mandat.",
+      "dlaczego": "Kuba jest managerem i ma tu własny kąt: czym mierzyć wartość pracy zespołu z AI. Temat emocjonalny, dobrze się niesie.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t3",
+      "link": "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts",
+      "tytul_newsa": "Cisco daje 27-latkowi nieograniczone tokeny AI na przepisanie 98% starego kodu w 24 miesiące",
+      "kat": "Cisco daje 27-latkowi nieograniczony budżet tokenów na przepisanie 98% starego kodu w 24 miesiące – skrajny test, czy agenci i mały zespół wyleczą dług techniczny szybciej niż projekt migracji.",
+      "dlaczego": "Dług techniczny i koszty narzędzi AI to codzienność managera inżynierii; liczby (98%, 24 miesiące, cztery tygodnie na dowód) łatwo przełożyć na własny zespół.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t4",
+      "link": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+      "tytul_newsa": "Jak powstał Lovable i dlaczego ciągle go przebudowują",
+      "kat": "Lovable wyrzucił większość kodu autonomicznych agentów na rzecz prostego łańcucha narzędzi i notatek o błędach ładowanych do kontekstu – lekcja o dopasowaniu autonomii do możliwości modelu.",
+      "dlaczego": "Konkretna lekcja z budowy produktu na LLM, z liczbami (70 mln projektów, 100 tys. scalonych PR); dla inżynierów i managerów budujących z agentami.",
+      "rekomendowany": false
+    },
+    {
+      "id": "t5",
+      "link": "https://e2e.com/blog/seed",
+      "tytul_newsa": "TesterArmy zmienia nazwę na e2e i pozyskuje 8 mln dolarów na weryfikację kodu pisanego przez agentów",
+      "kat": "TesterArmy zmienia nazwę na e2e i zbiera 8 mln dolarów na narzędzie, które pilnuje kodu pisanego przez agentów – skoro agenci piszą coraz więcej kodu, rośnie rola testów jako bezpiecznika.",
+      "dlaczego": "Temat testów przy kodzie AI łączy się z doświadczeniem dewelopera; 1,5 mln pobrań w miesiąc to mocna liczba, a startup ma polskie akcenty.",
+      "rekomendowany": false
+    },
+    {
+      "id": "t6",
+      "link": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "tytul_newsa": "Prawo Brooksa w erze AI – więcej agentów nie przyspiesza projektu",
+      "kat": "Prawo Brooksa z 1975 roku działa też dla agentów AI: praca sekwencyjna dalej jest sekwencyjna, więc dziewięciu agentów nie zrobi dziecka w miesiąc – wniosek dla managerów planujących projekty z agentami.",
+      "dlaczego": "Klasyka, którą zna każdy deweloper, w nowym kontekście; łatwo o dobrą dyskusję o planowaniu pracy z agentami.",
+      "rekomendowany": false
+    },
+    {
+      "id": "t7",
+      "link": "https://mamstartup.pl/payu-we-wspolpracy-z-visa-uruchomil-w-polsce-pilotaz-zakupow-z-wykorzystaniem-agentow-ai/",
+      "tytul_newsa": "PayU i Visa testują w Polsce zakupy robione przez agentów AI",
+      "kat": "PayU z Visą testują w Polsce zakupy, które agent AI kończy sam, w prawdziwym środowisku płatniczym (Empik, Tortli) – agent dostaje token zamiast danych karty i limity wydatków.",
+      "dlaczego": "Polska scena AI z konkretem i ciekawym mechanizmem bezpieczeństwa; łatwe pytanie do czytelników, czy zaufaliby agentowi swojej karty.",
+      "rekomendowany": false
+    }
+  ]
+}

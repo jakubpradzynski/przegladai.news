@@ -10,7 +10,8 @@ from urllib.parse import urlparse
 from . import repo
 
 TIME_RE = re.compile(r'^(\d+h( \d+ min)?|\d+ min)$')
-MEDIA_HOSTS = ('youtube.com', 'youtu.be', 'vimeo.com', 'open.spotify.com', 'podcasts.apple.com')
+MEDIA_HOSTS = ('youtube.com', 'youtu.be', 'vimeo.com', 'open.spotify.com', 'podcasts.apple.com',
+               'lspace.beehiiv.com')
 TAG_FIXES = {'za paywałem': 'Za paywallem', 'za paywalem': 'Za paywallem'}
 
 

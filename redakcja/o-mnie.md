@@ -35,3 +35,5 @@ onboarding juniorów, code review, produktywność, koszty narzędzi, odpowiedzi
 ## Czego się nauczyliśmy o nawiązaniach
 
 _(uzupełnia `ucz-sie`: które nawiązania Kuba zostawiał, a które usuwał, i przy jakich tematach)_
+- #45: motoryzacja i motocykl — Kuba odrzucił obrazy z garażem i silnikiem motocykla („aż tak się nie czuję” w tym temacie). Nie używamy ich w obrazach ani nawiązaniach, dopóki Kuba sam nie wróci do tematu.
+

@@ -195,3 +195,35 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
 - priorytety.md: obniżenie oceny wąsko technicznych poradników o ewaluacji, RAG i inferencji (3× poza wydaniem: #43, #45); lekkie ciekawostki z oceną 4–5 wchodzą z rezerwy po raz szósty; kolejność „Nowości” — największa premiera pierwsza (4× — #40, #42, #44, #45).
 - wstep.md, seo.md: przykłady — wstęp i SEO przygotowane pod własny tytuł przyjęte bez zmian.
 
+## 2026-11-05 — posty social #45 (uwaga Kuby w czacie)
+
+- social.md, social-platformy.md: prompty do zdjęć w formacie 3:4 zamiast 4:5 (Google Flow nie obsługuje 4:5), motyw na środku kadru do przycięcia do 4:5; infografiki ze skryptu zostają w 4:5 (na podstawie: komunikat Flow zgłoszony przez Kubę).
+
+## 2026-11-06 — posty social #45 (uwaga Kuby w czacie)
+
+- social.md: posty pogłębione budowane jako news → opinia: haczyk z faktem (4 typy), źródło i kontekst z nazwami, rozwinięcie, ostrożne stanowisko z ustępstwem, wniosek dla czytelnika, konkretne pytanie na końcu; długość 1000–1700 znaków; zasady tonu (konkrety z nazwy, punktory „–”) i obrazków (zdjęcie człowieka zamiast grafiki, gdy pasuje) (na podstawie: uwaga Kuby w czacie).
+- social-platformy.md: LinkedIn — praktyczna długość 1000–1700 znaków.
+
+## 2026-11-08 — posty social #45 (poprawki Kuby w czacie)
+
+- social.md: posty pogłębione dłuższe (1500–2200 znaków, 5–7 akapitów) i bardziej profesjonalne; nie piszemy niezrozumiałych sformułowań bez konkretnego przykładu ze źródła (sprawdzamy w artykule) ani idiomów bez tłumaczenia; post jest tekstem Kuby, więc nie piszemy w treści, kto opisał artykuł (źródło w komentarzu); zamiast etykiety „wniosek dla managerów” — „na czym warto się zastanowić”; pytanie końcowe dotyczy głównej tezy; stanowisko rozważa inne przyczyny; nie tłumaczymy podstaw (tokeny); infografika pokazuje sedno, a nie ciekawostkę ze źródła (na podstawie: uwagi Kuby do t2, t3, t4, t6 — w tym 4× „wniosek/coś wartego uwagi dla menedżerów”, 3× niezrozumiałe sformułowanie z artykułu, 3× odesłanie do autora/redakcji w treści).
+- social.md, lista „Nie używać”: „Ważny wniosek dla managerów”, „Coś wartego uwagi dla managerów”, „zamienia narzędzie w mandat”, „Autor przypomina”.
+
+## 2026-11-08 — nauka z postów social #45 (poprawki Kuby w tekstach i uwagi o obrazkach)
+
+- social.md, „Stanowisko Kuby”: zastrzeżenia („pewnie”, „chyba”, „może być lepiej”) tylko przy naprawdę niepewnych tezach; uzasadnione twierdzenia wprost (na podstawie: 3 poprawki w t4 i t3, np. „Teraz może być lepiej…” → „Teraz łatwiej jest…”).
+- social.md, krok 5: wniosek dla czytelnika bez żadnej etykiety, także bez „Na czym warto się zastanowić:” (na podstawie: usunięta etykieta w t3).
+- social.md, „Ton i język”: nie odmieniamy nazw produktów (OpenClaw), cytaty i idiomy w cudzysłowie, tryb przypuszczający dla skutków hipotetycznych, przecinki przy „po pierwsze, …”, konkret zamiast ogólnika, autoironia z emoji (max 1 na post), formy neutralne płciowo w pytaniach (na podstawie: poprawki w t2, t3, t4, t6 i pytaniu w poście głównym).
+- social.md, post główny: końcowe pytanie konkretne, o doświadczenie z narzędziem z wydania (na podstawie: pytanie o e2e zamiast ogólnego pytania o agentów).
+- social.md, „Obrazki”: obraz nie musi być realistycznym zdjęciem (minimalistyczne ilustracje, grafiki pod temat), ilustruje konkretną tezę (np. dziewięć kubków = podział pracy), bez garażu, motoryzacji i remontów; nowa opcja `mem` (szablon z imgflip + gotowy tekst) obok infografiki i promptu (na podstawie: uwagi Kuby o zdjęciach w t3, t4, t6).
+- social.md, „Wybór tematów”: z 7 propozycji Kuba wziął 4 o organizacji pracy z agentami i kosztach, wyłączył polecany esej o zaufaniu do agentów (t1).
+- o-mnie.md: bez nawiązań i obrazów motoryzacyjnych.
+- Narzędzia: pole `obrazek.mem` w narzędziu posty social, walidatorze, eksporcie i dzienniku; host `lspace.beehiiv.com` w walidatorze czasu.
+
+## 2026-11-08 — zamknięcie postów social #45 (decyzje Kuby)
+
+- social.md, „Obrazki”: obrazek tylko gdy naprawdę dobry — Kuba odrzucił wszystkie wygenerowane zdjęcia i infografiki z #45, zostawił jeden mem („Gru's Plan” przy prawie Brooksa); proponujemy 1–2 mocne pomysły zamiast kompletu, mem najwyżej raz na tydzień, a gotowy plik mema trafia do `obrazki/<id>_mem.jpg` (na podstawie: 3 posty bez obrazka, 1 mem wybrany).
+- social-platformy.md: Kuba publikuje ok. trzech postów tygodniowo i zostawia wybór wariantu; terminy to propozycje.
+- Weryfikacja faktów (agent `social-weryfikator`, skill `posty-social`): drugie niezależne źródło dla kluczowych liczb i tez oraz osobna kontrola spójności całego tekstu (podmioty, okresy, parafrazy, opinie vs fakty, zgodność LinkedIn z X) (na podstawie: prośba Kuby o jeszcze dokładniejszą weryfikację).
+- narzędzia: eksport `posty.md` z tekstem LinkedIn i komentarzem w blokach kodu (kopiowanie zachowuje puste linie między akapitami); `obrazek.mem.plik` obsługiwany w narzędziu i eksporcie.- social.md, przykłady: definicje pojęć krótko, bez „to program, który…” (na podstawie: poprawka w t4, 1×).
+
