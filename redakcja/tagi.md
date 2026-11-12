@@ -42,6 +42,9 @@ i z polskiego streszczenia globalnego badania EY (Mam Startup) — tag zostaje, 
 instytucji, rynku lub prawa (Trasti, Żabka Jush, Politechnika Lubelska).
 
 ### Za paywallem
+**Oznaczenie idzie na koniec opisu jako „ [Za paywallem]”, nie do pola `Tagi`** (Kuba robi tak w Substacku
+od #39 i #45 — 2×). Tag `Za paywallem` nie trafia do `Tagi`. **Wyjątek:** gdy link jest odblokowany (np. NYT z `unlocked_article_code`),
+dopisku nie dajemy — w #46 Kuba usunął „[Za paywallem]” z opisu odblokowanego tekstu NYT (1×).
 Treść w całości lub w kluczowej części tylko dla płacących. Typowo: płatne wydania
 The Pragmatic Engineer i Engineering Leadership, WSJ, Forbes, Reuters (część),
 Bloomberg, The Information. Uwaga na pisownię: `Za paywallem` (w #35 była literówka „Za paywałem”).
@@ -66,8 +69,11 @@ Zawsze spacja przed `min` (w #34 było „1h 30min” — to błąd).
 
 _(uzupełnia `ucz-sie` na podstawie dziennika)_
 
+- #46 Tagi (Anthropic roadshow przed IPO): „Nowości i ogłoszenia” → bez tagu — wieści o IPO to biznes/rynek, nie premiera produktu (jak pozostałe wpisy o IPO w grupie „Bez tagu”; 1×).
+- #46 Tagi (RTV Euro AGD, Mam Startup): „Polska” → „Nowości i ogłoszenia, Polska” — wdrożenie nowego agenta w sieci sklepów to ogłoszenie, jak otwarcie centrum w #42 (2×; polskie wdrożenie produktu = „Nowości i ogłoszenia, Polska”).
+
 - #39 Tagi (WSJ, AI Force): „Za paywallem” → brak tagu, a na końcu opisu dopisane „[Za paywallem]” — w Substacku
-  Kuba przeniósł oznaczenie paywalla z tagu do opisu (1×; przy powtórce zmienić regułę „Za paywallem”).
+  Kuba przeniósł oznaczenie paywalla z tagu do opisu (1×; powtórzone w #45 → reguła „Za paywallem” zmieniona: dopisek w opisie, bez tagu).
 - #41 Tagi (EmbeddingGemma 2, Google): „Bliżej technologii” → „Nowości i ogłoszenia” — premiera modelu z bloga Google to ogłoszenie, nawet gdy jest developerska i techniczna (1×; przy powtórce: oficjalne premiery modeli z blogów firm zawsze „Nowości”).
 - #41 Tagi (Nolla Derm): „Nowości i ogłoszenia” → bez tagu — materiał z marketingowej strony firmy (AI w medycynie) to ciekawostka, nie oficjalna premiera (1×).
 - #42 Tagi (Decisions API, aioai.pl): „Bliżej technologii, Polska” → „Nowości i ogłoszenia” — premiera API OpenAI to ogłoszenie, a polskie omówienie zagranicznego tematu nie jest „Polską” (2× jak EmbeddingGemma 2 w #41).

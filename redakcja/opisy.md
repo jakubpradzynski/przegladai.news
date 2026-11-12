@@ -96,7 +96,7 @@ Nie dodajemy spekulacji. Gdy strony nie da się odczytać, nie zgadujemy (reguł
 - Przy wideo i podcastach: kto rozmawia (rola, nie tylko nazwisko), 2–3 konkretne wątki, kto skorzysta.
 - Bez uwag o tym, jak powstał opis i o czasie trwania demonstracji w odcinku – idzie do pola `Uwagi`.
 - Przy tekstach za paywallem nie udawać, że przeczytało się całość – opisywać to, co widać. Samego paywalla
-  nie komentujemy w opisie (od tego jest tag `Za paywallem`).
+  nie komentujemy w treści opisu; oznaczenie to dopisek „ [Za paywallem]” na samym końcu opisu (zamiast tagu, #39 i #45); nie dopisujemy go przy linkach odblokowanych (NYT z `unlocked_article_code`, #46).
 - Bez słów względnego czasu („dziś”, „wczoraj”, „w tym tygodniu”) – wydanie czyta się później.
 - **Bez zdań o braku informacji w źródle, o wiarygodności źródła i o ograniczeniach badania** (Kuba wycinał je
   w #39–#44: „Wartość transakcji nie została ujawniona”, „bez niezależnej weryfikacji”, „typowo marketingowy”,
@@ -140,6 +140,11 @@ Pełniejsza lista wzorców AI: skill `humanizer-pl`.
 ## Przykłady poprawek (AI → Kuba)
 
 _(uzupełnia `ucz-sie` na podstawie dziennika)_
+
+- #46 Opis (Fowler/Thoughtworks): „Matteo Vaccari z Thoughtworks na martinfowler.com przekonuje” → „…z Thoughtworks przekonuje” — nazwa serwisu pomijana (jak nazwa bloga; 1×).
+- #46 Opis (Spotify, 3 PM-owie): usunięte zdanie o najlepszym wyniku roku zespołu modelu (uzgodniony pomiar przed architekturą) — poboczna ilustracja przed ostatnim wątkiem; opis kończy się główną tezą (kolejny raz po #43–#45 skracanie końcówki).
+- #46 Opis (NYT o Amodeim): usunięte „ [Za paywallem]” — link był odblokowany (`unlocked_article_code`).
+- #46 Opis (RTV Euro AGD): „krótszym wdrażaniu nowych osób” → „krótszym czasie wdrażania nowych osób” — rzeczownik odczasownikowy rozwinięty, drobna korekta szyku (1×).
 
 - #42 Opis (Pragmatic Engineer, sciencesays, ElevenLabs Brand Kit): usunięte „oraz o nowych otwartych modelach z UE i USA”, „Praca ukazała się w Journal of the Academy of Marketing Science.”, „bez podania terminów” — poboczne wątki, miejsce publikacji i brak terminu zapowiedzi.
 - #42 Opis (Gemini w Workspace, Scion): „…miesięcznie, a wersja konsumencka pojawi się później.” → „…miesięcznie. Wersja konsumencka pojawi się później.”; „Migracja zajęła pięć miesięcy, a Scion nie jest…” → dwa zdania — osobny fakt po przecinku rozbijamy.
