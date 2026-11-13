@@ -227,3 +227,22 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
 - Weryfikacja faktów (agent `social-weryfikator`, skill `posty-social`): drugie niezależne źródło dla kluczowych liczb i tez oraz osobna kontrola spójności całego tekstu (podmioty, okresy, parafrazy, opinie vs fakty, zgodność LinkedIn z X) (na podstawie: prośba Kuby o jeszcze dokładniejszą weryfikację).
 - narzędzia: eksport `posty.md` z tekstem LinkedIn i komentarzem w blokach kodu (kopiowanie zachowuje puste linie między akapitami); `obrazek.mem.plik` obsługiwany w narzędziu i eksporcie.- social.md, przykłady: definicje pojęć krótko, bez „to program, który…” (na podstawie: poprawka w t4, 1×).
 
+
+## 2026-11-12 — przegląd stron przed wydaniem #46
+
+- preselekcja.md: z 14 wziętych wpisów 4 były „tak” (wszystkie trafione), 10 „może”; The Decoder — 0/33 „może” wziętych, reguła „bez dużego ruchu czołowej firmy = nie” wzmocniona (na podstawie: 33 pominięte wpisy);
+  polskie źródła (gov.pl, Mam Startup, Nowy Marketing, XYZ) — 7 wziętych z „może”, potwierdzenie reguły „może”; JetBrains „Air” i LangChain „Eval-Driven Development” zostają „może”;
+  duplikat agregatora (Future Tools GPT-6 Cyber) znów wzięty — reguła „duplikat zawsze może” bez zmian; zaktualizowana tabela skuteczności i przykłady decyzji.
+
+## 2026-11-12 — wydanie #45 (poprawki z Substacka)
+
+- tagi.md, opisy.md: paywall oznaczamy dopiskiem „ [Za paywallem]” na końcu opisu, bez tagu `Za paywallem` (na podstawie: 2× — #39 i #45; przy #45 dodatkowo typograficzny apostrof ’ w „Google’a”).
+- narzędzia/scal_opisy.py: limit paywalli liczy też dopisek w opisie (`is_paywall`), nie tylko tag.
+- wstęp #45: różnica to tylko „Subscribe now” z Substacka — pominięte.
+
+## 2026-11-12 — wydanie #46
+
+- tagi.md, opisy.md: dopisku „[Za paywallem]” nie dajemy przy linkach odblokowanych (NYT z `unlocked_article_code`); dodane przykłady: bez nazwy serwisu w opisie, skrócona końcówka (Spotify), rozwinięty rzeczownik odczasownikowy (na podstawie: 1× każde).
+- tagi.md: wieści o IPO → bez tagu (1×); polskie wdrożenie nowego agenta (RTV Euro AGD) → „Nowości i ogłoszenia, Polska” (2×, jak w #42).
+- priorytety.md: duplikaty — przy komunikatach oficjalnych (IPO, gov.pl) źródło pierwotne, przy relacjach prasowych wersja z konkretami (zmiana względem uogólnienia z #43–#44); odrzucone poradniki o harnessie i ogłoszenia vendorów; wzięta pełna lista decyzji z #46; możliwość dorzucenia newsa z ostatniej chwili.
+- wstep.md: zbędne „A” przed kolejnym tematem usunięte (1×).

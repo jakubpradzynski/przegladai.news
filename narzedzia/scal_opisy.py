@@ -34,6 +34,10 @@ MAX_PAYWALL = 2
 MIN_SCORE = 5
 
 
+def is_paywall(row):
+    return 'Za paywallem' in row.get('Tagi', '') or '[Za paywallem]' in row.get('Opis', '')
+
+
 def domain(url):
     host = urlparse(url).netloc.lower()
     return host[4:] if host.startswith('www.') else host
@@ -54,7 +58,7 @@ def recommend(rows, per_section):
             return False
         if dom not in ('youtube.com', 'youtu.be') and per_domain[dom] >= MAX_PER_DOMAIN:
             return False
-        if 'Za paywallem' in row['Tagi'] and paywall >= MAX_PAYWALL:
+        if is_paywall(row) and paywall >= MAX_PAYWALL:
             return False
         return int(row['Ocena']) >= MIN_SCORE
 
@@ -63,7 +67,7 @@ def recommend(rows, per_section):
         row['Rekomendacja'] = 'TOP'
         per_domain[domain(row['Link'])] += 1
         taken[row['Sekcja']] += 1
-        if 'Za paywallem' in row['Tagi']:
+        if is_paywall(row):
             paywall += 1
 
     for row in ranked:
@@ -157,7 +161,7 @@ def main():
     print('  Polska: %d, wideo: %d, paywall: %d' % (
         sum('Polska' in r['Tagi'] for r in rows if r['Rekomendacja'] == 'TOP'),
         sum(bool(r['Czas']) for r in rows if r['Rekomendacja'] == 'TOP'),
-        sum('Za paywallem' in r['Tagi'] for r in rows if r['Rekomendacja'] == 'TOP')))
+        sum(is_paywall(r) for r in rows if r['Rekomendacja'] == 'TOP')))
 
 
 if __name__ == '__main__':

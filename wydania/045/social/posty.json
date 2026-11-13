@@ -419,7 +419,7 @@
         "OPINIA Kuby: zazwyczaj takie migracje trwają bardzo długo, więc cel jest bardzo ambitny",
         "OPINIA Kuby: problemem może być wdrażanie krok po kroku, nie samo przepisanie; ważniejszy plan wdrożenia; strangler pattern wzmocniony AI"
       ],
-      "publikuj": true,
+      "publikuj": false,
       "wynik": {},
       "uwaga_kuby": "[weryfikacja] „dwie albo trzy osoby” potwierdza tylko Notebookcheck (nie Fortune) – dopisano przypisanie; „migracje trwają latami” oznaczone jako opinia; wyjaśnienie tokenów to wiedza ogólna, nie ze źródła.\n[czat] Zdania „Sprawę opisał Fortune 30 października, a Tom's Hardware podał ją dalej” w ogóle bym nie pisał – to nieistotne, źródło jest na dole. Zacząłbym od byłego założyciela startupu EzDubs, który Cisco przejęło, a decyzję podjął prezes i dyrektor produktowy firmy – bez imienia i nazwiska. „Go nuts” przetłumaczyłbym jako „iść na całość”.\n[czat] Wyjaśnienia, czym są tokeny, bym nie dawał – zakładam, że ludzie wiedzą. Istotne jest, że brak limitu na tokeny oznacza brak sufitu kosztów pracy agentów, i że ciężko mi uwierzyć, że nie ma tu żadnego górnego limitu – zwłaszcza patrząc na to, jak duże budżety potrafi wydać twórca OpenClawa, który przeszedł do OpenAI. Są o tym newsy i artykuły – prześledź je w ramach weryfikacji faktów (użyj tylko tego, co da się potwierdzić).\n[czat] Napisałbym po prostu: plan inżyniera to praca w dwuosobowym zespole i czterotygodniowy deadline na pokazanie, że podejście działa. Zdania „to jego plan, a nie ustalenie Cisco” usunąłbym.\n[czat] Zamiast „moim zdaniem takie migracje zwykle trwają latami…”: zazwyczaj tak duże migracje trwają bardzo długo, więc cel jest bardzo ambitny. Pytanie, czy problemem jest samo przepisanie kodu na nowo, czy odpowiednie wdrażanie i sprawdzanie krok po kroku, żeby utrzymać działanie firmy na niezmienionym poziomie – to łączy się z następną częścią, więc połączyłbym te fragmenty.\n[czat] Zamiast „coś wartego uwagi dla menedżerów”: na czym warto się zastanowić – przed takim eksperymentem warto ustalić, po czym poznamy, że to faktycznie działa i można to wdrożyć na produkcję; ważniejszy od samego przepisania kodu jest plan, jak potem wcielić go w życie.\n[czat] Pytanie na końcu zamieniłbym na coś w kierunku strangler pattern (to tylko wskazówka): czy uważasz, że techniki znane wcześniej, np. strangler pattern, wzmocnione AI mogą dać bardzo dobre efekty przy przepisywaniu kodu?\n[czat] Infografika: 98% w 24 miesiące bez limitu tokenów – nie jestem przekonany, czy jest dobra.\n[czat] Zdjęcia: nie takie rzeczy (garaż, motocykl, remont); podobały się dziewięć kubków (podział pracy na dziewięć osób) i notes z rozpisaną architekturą. Nie muszą być realistyczne – mogą być minimalistyczne, ilustracje, grafiki generowane pod temat (nie szablonowe), sceneria może wyglądać realnie, ale nie jak zdjęcie z banku. Chętnie wskazówki o memach (szablon + gotowy tekst).\n[czat] Decyzja: Lovable idzie dziś bez obrazka; Proton i Cisco zostają oba, ale pójdzie jeden z nich (we wtorek) — do wyboru; Prawo Brooksa na końcu (czwartek) z memem Gru's Plan zrobionym przez Kubę (obrazki/t6_mem.jpg). Żadne z pozostałych zdjęć ani infografik nie podoba się — bez obrazka.",
       "weryfikacja": {
@@ -717,7 +717,7 @@
         "Gdzie u Was dokładanie AI przestaje zwiększać wydajność i jakość, a zaczyna je pogarszać? Ten temat i inne newsy z tygodnia: https://przegladai.substack.com/p/wydanie-45-testerarmy-to-teraz-e2e-hackertube-i-jak-powstal-lovable"
       ],
       "obrazek": {
-        "wybrany": "mem",
+        "wybrany": "brak",
         "infografika": {
           "rodzaj": "lista",
           "styl": "notatka",
@@ -739,7 +739,7 @@
           "plik": "obrazki/t6_mem.jpg"
         }
       },
-      "termin": "2026-11-12 08:30",
+      "termin": "2026-11-12 16:00",
       "fakty": [
         "Brooks, „The Mythical Man-Month”, 1975: dodanie ludzi do spóźnionego projektu spóźnia go bardziej – źródło (zweryfikowane)",
         "Agenci nie potrzebują onboardingu ani spotkań („onboarding time, endless stand-ups…disappear overnight”) – źródło (zweryfikowane)",
