@@ -53,12 +53,15 @@ preferowane źródło pierwotne (blog firmy) albo tekst z lepszą analizą. Drug
 
 ## Kolejność w wydaniu
 
-1. Nowości i ogłoszenia (najpierw z tagiem `Polska`), dalej alfabetycznie po tytule.
-2. Bliżej technologii (najpierw z tagiem `Polska`), dalej alfabetycznie.
+1. Nowości i ogłoszenia (najpierw z tagiem `Polska`), dalej **malejąco po ocenie (priorytecie)**, przy remisie alfabetycznie po tytule.
+2. Bliżej technologii (najpierw z tagiem `Polska`), dalej malejąco po ocenie.
 3. Tylko `Polska`.
-4. Bez tagu, alfabetycznie.
+4. Bez tagu, malejąco po ocenie.
 
-Alfabet polski (ł po l itd.). W obrębie każdej grupy Kuba może zmienić kolejność ręcznie w admince (↑/↓);
+**Od #47** domyślna kolejność w grupie to ocena malejąco, a nie alfabet: w #47 Kuba kliknął „Posortuj po priorytecie”
+(nowy przycisk w admince) i ułożył tak wszystkie trzy grupy (GPT-6.2 Astra i Sol, Gemini 4 Hydrogen i Neon, Portfel ChatGPT
+na górze „Nowości”; Anthropic IPO, Huang, pozew Kalifornii na górze „Bez tagu”), zamiast ręcznych ↑/↓; ocenę można w admince poprawić.
+Alfabet polski (ł po l itd.) zostaje tylko przy remisie ocen. W obrębie każdej grupy Kuba może zmienić kolejność ręcznie w admince (↑/↓);
 takie zmiany trafiają do dziennika (`pole: kolejnosc`) — gdy się powtarzają, ta sekcja powinna opisać
 zasadę. Powtarza się (#40, #42, #44, #45): **największa premiera pierwsza** w grupie „Nowości” (w #45: Images 2.6 przed Siri AI i Netflixem; w #44: Gemini 4 Carbon, Genie 4,
 GPT-6.1 Terra, potem Canva Craft i 1Password zamiast alfabetu; Google obok Google), a także **newsy powiązane tematem lub firmą stoją obok siebie** zamiast alfabetu
@@ -98,3 +101,4 @@ mimo niskiej)_
 - #46: z rezerwy wzięte: Anthropic roadshow z anthropic.com (8, zamiast fxstreet o IPO z oceną 9 — AI wybrało drugie ze względu na wycenę i datę), SQL od LLM-a (6), LangChain o eval-driven development (5), RTV Euro AGD z Gemini (6), Polska–Korea z gov.pl (6; mamstartup duplikat), Dior (5) oraz jeden wpis więcej z Nowości. Przy duplikatach o IPO i komunikatach urzędowych Kuba wziął **źródło pierwotne** (anthropic.com, gov.pl), mimo że w #43–#44 wolał wersję z większą liczbą konkretów (Sauna, Meta) — przy oficjalnym komunikacie (IPO, ministerstwo) źródło pierwotne, przy relacjach prasowych wersja z konkretami.
 - #46: odrzucone z TOP: Claude i finanse osobiste (7), Google Agentic Data Cloud (6), harness Product Compass (6, poradnik), UX for AI (6), fxstreet o IPO (9, duplikat), badanie trakkr o statystykach AI (7), agentowa Siri Apple (6, przeciek, temat z #45). Kolejny raz poza wydaniem poradniki o harnessie i ogłoszenia korporacyjne vendorów.
 - #46: z 30 rekomendacji TOP 23 zostało w wydaniu, 6–7 dobrano z rezerwy (z 61 kandydatów); w wydaniu 29 newsów. Link dodany przez Kubę po zapisaniu partii (Guardian o rezygnacji Huanga, ocena 9) jako główny wpis o największym newsie tygodnia — duże newsy z ostatniej chwili, których nie było w partii, trzeba umieć dorzucić (opis z pełnego tekstu, duplikaty innych źródeł przestawić).
+- #47: z 30 rekomendacji TOP wszystkie 30 zostało w wydaniu (31 kandydatów, nic z rezerwy ani odrzuconego) — pierwsza pełna zgodność od #39; praca Kuby poszła w kolejność (sortowanie po ocenie), a nie w selekcję. Wydanie ma tylko 1 polski news z tagiem (Lato) i 1 z XTB; dwa duże newsy (Anthropic IPO, Huang) są w grupie „Bez tagu”.

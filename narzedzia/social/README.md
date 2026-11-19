@@ -18,7 +18,7 @@ Ten plik opisuje przepływ dla człowieka. Publikacja zawsze ręczna.
   ├─ 4a. Weryfikacja: po jednym subagencie social-weryfikator na post — każdy fakt sprawdzony w źródle,
   │             cytat + link „pokaż w źródle” (#:~:text=…). Rozbieżności Claude poprawia od razu ([weryfikacja]).
   ├─ 5. Poprawki Kuby (dowolna kolejność, dowolnie wiele razy) — zawsze tylko w posty.json:
-  │       • edycja w narzędziu (zapis automatyczny), wybór obrazka i stylu infografiki, „publikuję”, termin,
+  │       • edycja w narzędziu (zapis automatyczny), wybór obrazka i stylu infografiki, „publikuję”, „opublikowane” (znacznik w narzędziu i w posty.md), termin,
   │       • „Uwaga dla AI” przy poście — co się podoba / nie podoba,
   │       • „Wyślij do Claude” przy poście — prośba o poprawkę przez kolejkę,
   │       • w czacie, swoimi słowami — uwagi do jednego posta, do wszystkich albo do infografik;

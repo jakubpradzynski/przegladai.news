@@ -29,8 +29,15 @@
   .badge { display:inline-block; font-size:11px; padding:1px 7px; border-radius:10px; background:var(--soft); color:var(--accent); margin-left:6px; }
   .post { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin:16px 0; }
   .post.off { opacity:.6; }
+  .post.published { border-left:4px solid var(--ok); background:#f6fbf7; }
+  .post-head .pub { color:var(--ok); font-weight:600; }
   .post-head { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:10px; }
-  .post-head h2 { margin:0; font-size:16px; }
+  .post-head h2 { margin:0; font-size:16px; cursor:pointer; }
+  .post .toggle { border:1px solid var(--line); background:#fff; width:26px; height:26px; padding:0; line-height:1; font-size:15px; color:var(--muted); }
+  .post .toggle::before { content:'▾'; } .post.collapsed .toggle::before { content:'▸'; }
+  .post.collapsed .post-head { margin-bottom:0; }
+  .post.collapsed .post-body { display:none; }
+  .posts-bar { display:flex; gap:8px; justify-content:flex-end; margin:10px 0 -6px; }
   .cols { display:grid; grid-template-columns: 1.25fr 1fr; gap:18px; }
   @media (max-width: 1000px) { .cols { grid-template-columns: 1fr; } }
   label.f { display:block; font-size:12px; font-weight:600; color:var(--muted); margin:10px 0 3px; text-transform:uppercase; letter-spacing:.03em; }
@@ -221,29 +228,62 @@ function set(post, path, value) {
 function renderPosts() {
   const posts = (model || {}).posty || [];
   if (!posts.length) { $('#posts').innerHTML = '<div class="empty">Jeszcze nie ma postów. Zaznacz tematy i kliknij „Generuj posty”.</div>'; return; }
-  $('#posts').innerHTML = posts.map(postHtml).join('');
+  $('#posts').innerHTML = '<div class="posts-bar"><button class="btn small" onclick="collapseAll(true)">Zwiń wszystkie</button> ' +
+    '<button class="btn small" onclick="collapseAll(false)">Rozwiń wszystkie</button></div>' + posts.map(postHtml).join('');
   document.querySelectorAll('#posts [data-f]').forEach(el => {
     const ev = el.type === 'checkbox' || el.type === 'radio' ? 'change' : 'input';
     el.addEventListener(ev, () => onEdit(el));
     el.addEventListener('blur', () => { if (pendingRemote && !dirty) load(false); });
   });
-  document.querySelectorAll('textarea.t').forEach(autoGrow);
+  document.querySelectorAll('.post:not(.collapsed) textarea.t').forEach(autoGrow);
   renderChecks(S.kontrola || {});
 }
 
+// --- zwijanie postów (stan pamiętany w przeglądarce) ---
+const COLLAPSE_KEY = 'posty-social-zwiniete';
+const collapsed = new Set((() => { try { return JSON.parse(localStorage.getItem(COLLAPSE_KEY) || '[]'); } catch (e) { return []; } })());
+function saveCollapsed() { try { localStorage.setItem(COLLAPSE_KEY, JSON.stringify([...collapsed])); } catch (e) {} }
+function applyCollapsed(id) {
+  const sec = document.getElementById('post-' + id); if (!sec) return;
+  sec.classList.toggle('collapsed', collapsed.has(id));
+  if (!collapsed.has(id)) sec.querySelectorAll('textarea.t').forEach(autoGrow);   // ukryte pola mają zerową wysokość
+}
+function togglePost(id) {
+  if (collapsed.has(id)) collapsed.delete(id); else collapsed.add(id);
+  saveCollapsed(); applyCollapsed(id);
+}
+function collapseAll(on) {
+  for (const p of (model || {}).posty || []) { if (on) collapsed.add(p.id); else collapsed.delete(p.id); }
+  saveCollapsed(); for (const p of (model || {}).posty || []) applyCollapsed(p.id);
+}
+
+// Wybrany rodzaj obrazka musi mieć pole do wypełnienia — inaczej wybór infografiki / mema / promptu
+// dla posta, który ich nie ma, nic nie pokazuje (a walidator zgłasza błąd).
+function ensureImageStub(p) {
+  const img = p.obrazek = p.obrazek || {};
+  if (img.wybrany === 'infografika' && !img.infografika)
+    img.infografika = {rodzaj: 'liczba', naglowek: '', liczba: '', podpis: '', zrodlo: '', styl: 'notatka'};
+  if (img.wybrany === 'mem' && img.mem === undefined) img.mem = {szablon: '', link: '', tekst: ''};
+  if (img.wybrany === 'prompt' && img.prompt === undefined) img.prompt = '';
+}
+
 function postHtml(p) {
+  ensureImageStub(p);
   const img = p.obrazek || {}, w = p.wynik || {};
   const title = p.rodzaj === 'glowny' ? 'Post główny — wstęp wydania' : esc(p.temat || p.tytul_newsa || p.id);
   const termin = (p.termin || '').replace(' ', 'T');
   const src = img.wybrany === 'okladka' ? '/okladka.jpeg' : (img.plik && img.plik.startsWith('obrazki/') ? '/' + img.plik + '?v=' + Date.now() : '');
-  return `<section class="post ${p.publikuj === false ? 'off' : ''}" id="post-${p.id}">
+  return `<section class="post ${p.publikuj === false ? 'off' : ''} ${p.opublikowano ? 'published' : ''} ${collapsed.has(p.id) ? 'collapsed' : ''}" id="post-${p.id}">
     <div class="post-head">
+      <button class="toggle" title="Zwiń / rozwiń post" onclick="togglePost('${p.id}')"></button>
       <label><input type="checkbox" data-id="${p.id}" data-f="publikuj" ${p.publikuj !== false ? 'checked' : ''}> publikuję</label>
-      <h2>${title}</h2>
+      <label class="pub"><input type="checkbox" data-id="${p.id}" data-f="opublikowano" ${p.opublikowano ? 'checked' : ''}> opublikowane</label>
+      <h2 onclick="togglePost('${p.id}')">${title}</h2>
       ${p.link_newsa ? `<a class="muted" href="${esc(p.link_newsa)}" target="_blank">źródło</a>` : ''}
       <span class="spacer"></span>
       <input type="datetime-local" data-id="${p.id}" data-f="termin" value="${esc(termin)}">
     </div>
+    <div class="post-body">
     ${p.kat ? `<div class="muted" style="margin-top:-6px">Kąt: ${esc(p.kat)}</div>` : ''}
     ${factsHtml(p)}
     <div class="cols">
@@ -273,6 +313,9 @@ function postHtml(p) {
       ${['okladka', 'infografika', 'prompt', 'mem', 'brak'].map(r => `<label><input type="radio" name="img-${p.id}" value="${r}" data-id="${p.id}" data-f="obrazek.wybrany" ${img.wybrany === r ? 'checked' : ''}> ${
         {okladka:'okładka wydania', infografika:'infografika', prompt:'zdjęcie/grafika z promptu', mem:'mem (szablon + tekst)', brak:'bez obrazka'}[r]}</label>`).join('')}
     </div>
+    ${img.wybrany === 'infografika' && !src ? '<div class="muted" style="margin-top:6px">Uzupełnij specyfikację infografiki poniżej i kliknij „Przerysuj” — obrazek pojawi się tutaj.</div>' : ''}
+    ${img.wybrany === 'mem' && !(img.mem || {}).tekst ? '<div class="muted" style="margin-top:6px">Wpisz szablon mema i teksty do pól poniżej.</div>' : ''}
+    ${img.wybrany === 'brak' ? '<div class="muted" style="margin-top:6px">Ten post pójdzie bez obrazka.</div>' : ''}
     <div class="img-row" style="margin-top:8px">
       ${src ? `<img src="${src}">` : ''}
       ${img.infografika ? `<div style="flex:1;min-width:280px"><div class="muted" style="font-size:12px">Infografika (JSON — rodzaje: liczba, porownanie, lista, cytat)</div>
@@ -304,6 +347,7 @@ function postHtml(p) {
       <textarea class="t" rows="1" style="margin-top:6px" data-id="${p.id}" data-f="wynik.notatka" placeholder="notatka (np. dużo komentarzy od deweloperów)">${esc(w.notatka)}</textarea>
     </details>
     <ul class="problems" data-problems="${p.id}"></ul>
+    </div>
   </section>`;
 }
 
@@ -355,8 +399,10 @@ function onEdit(el) {
   if (el.dataset.f === 'termin') v = v.replace('T', ' ');
   if (el.type === 'number') v = v === '' ? '' : Number(v);
   set(p, el.dataset.f, v);
+  if (el.dataset.f === 'obrazek.wybrany') ensureImageStub(p);
   if (el.tagName === 'TEXTAREA') autoGrow(el);
   if (el.dataset.f === 'publikuj') el.closest('.post').classList.toggle('off', !v);
+  if (el.dataset.f === 'opublikowano') el.closest('.post').classList.toggle('published', !!v);
   updateCounts(p.id);
   scheduleSave();
   if (el.dataset.f === 'obrazek.wybrany') { save().then(renderPosts); }

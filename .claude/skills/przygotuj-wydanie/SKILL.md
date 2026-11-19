@@ -20,9 +20,10 @@ Numer wydania: ostatni katalog w `wydania/` + 1. Data: najbliższy piątek (`pyt
 
 Przygotuj:
 - 3 propozycje tytułu `Wydanie #<nr>: …`, różniące się doborem tematów (nie tylko szykiem),
-- wstęp pasujący do **pierwszej** propozycji (zasady: `redakcja/wstep.md`),
-- opis SEO 120–160 znaków do pierwszej propozycji,
-- slug: `python3 -c "import sys; sys.path.insert(0,'narzedzia'); from lib import repo; print(repo.issue_slug(<nr>, '<tytuł>'))"`,
+- **dla każdej propozycji tytułu osobno**: wstęp (zasady: `redakcja/wstep.md`), opis SEO 120–160 znaków,
+  slug i napis na okładkę — adminka podmienia je automatycznie, gdy Kuba wybierze inną propozycję
+  (a jego poprawki każdej wersji zapamiętuje). Wstęp i SEO wariantu spinają tematy tego tytułu, nie innego,
+- slug (dla każdej propozycji): `python3 -c "import sys; sys.path.insert(0,'narzedzia'); from lib import repo; print(repo.issue_slug(<nr>, '<tytuł>'))"`,
 - napis na okładkę `#<nr>: …` — sprawdź, że się mieści: `python3 narzedzia/okladka.py "<napis>" --podglad`.
   Gdy skrypt zgłasza, że się nie mieści, skróć napis według `redakcja/seo.md`.
 
@@ -30,7 +31,8 @@ Zapisz do `praca/wydanie_ai.json`:
 
 ```json
 {"numer": 39, "propozycje_tytulu": ["Wydanie #39: …", "…", "…"], "wstep": "…",
- "opis_seo": "…", "slug": "wydanie-39-…", "data": "2026-09-25", "okladka": "#39: …"}
+ "opis_seo": "…", "slug": "wydanie-39-…", "data": "2026-09-25", "okladka": "#39: …",
+ "warianty": [{"wstep": "…", "opis_seo": "…", "slug": "…", "okladka": "#39: …"}, {…}, {…}]}
 ```
 
 To wersja AI — nie zmieniaj jej potem. Z niej liczymy, co Kuba poprawił.

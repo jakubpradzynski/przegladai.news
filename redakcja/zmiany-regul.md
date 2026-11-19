@@ -246,3 +246,33 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
 - tagi.md: wieści o IPO → bez tagu (1×); polskie wdrożenie nowego agenta (RTV Euro AGD) → „Nowości i ogłoszenia, Polska” (2×, jak w #42).
 - priorytety.md: duplikaty — przy komunikatach oficjalnych (IPO, gov.pl) źródło pierwotne, przy relacjach prasowych wersja z konkretami (zmiana względem uogólnienia z #43–#44); odrzucone poradniki o harnessie i ogłoszenia vendorów; wzięta pełna lista decyzji z #46; możliwość dorzucenia newsa z ostatniej chwili.
 - wstep.md: zbędne „A” przed kolejnym tematem usunięte (1×).
+
+## 2026-11-15 — posty social #46 (uwaga z czatu: Business Hub)
+
+- social.md, „Rodzaje postów”: post nie musi być opinią Kuby (przy newsach o nowych produktach/funkcjach dostępnych na razie w jednym kraju — zapowiedź i porady: możliwości, jak się przygotować, przyszłość) i nie musi kończyć się pytaniem, gdy byłoby na siłę (na podstawie: prośba Kuby przy poście o Business Hub w ChatGPT).
+
+## 2026-11-17 — posty social #46 (zamknięcie)
+
+- social.md, „Wybór tematów”: Kuba z 7 propozycji wziął 5 i dodał 6 własnych newsów; pominął polecany tekst o QA (2. raz z rzędu pominięty polecany temat) — chętnie bierze praktykę inżynierską z wnioskiem, nowe produkty z „jak się przygotować” i duże newsy biznesowe o dostawcach modeli; opublikował tylko 2 posty (na podstawie: wybór tematów i publikacje w #46).
+- social.md, „Ton i język”: mniej liczb, więcej historii — rozkład procentowy testu zastąpiony opowieścią w poście o SQL (na podstawie: uwaga „zbyt techniczny… za dużo liczb”).
+- social.md, „Obrazki”: posty pogłębione domyślnie `brak` (2. wydanie z rzędu opublikowane bez obrazka); każdy wybieralny rodzaj obrazka musi mieć pełną zawartość (na podstawie: t5 prompt/mem → brak).
+- social-platformy.md: post główny 9:30 (2. raz), pierwszy pogłębiony w niedzielę po południu (2. raz), realnie 2 posty z wydania.
+- .claude/agents/social-autor.md: lista typowych błędów z weryfikacji #46 (przypisanie liczb do raportów, zakresy, przyczynowość, notatki dla Kuby w treści).
+- Narzędzie posty social: zwijanie postów, pole „opublikowane”, uzupełnianie pól przy wyborze infografiki/mema/promptu (bez zmian w regułach).
+
+## 2026-11-19 — preselekcja stron, przegląd #47
+
+- preselekcja.md: z 396 wpisów AI dało 3 „tak” (wszystkie wzięte), 146 „może” (Kuba wziął 8), 247 „nie” (zwinięte, bez decyzji); zgodność „tak” 3/3.
+- preselekcja.md, The Decoder: 0/33 „może” po raz trzeci z rzędu — także duplikaty premier = „nie” (na podstawie: 33 pominięte w #47, 33 w #46, 40 w #45).
+- preselekcja.md, Future Tools News: duplikat agregatora „może” tylko dla premier czołowych modeli i ruchów Big Techu, reszta „nie” (na podstawie: 2 z 46 „może” wziętych w #47).
+- preselekcja.md, OpenAI News: poza premierą i dużym ruchem biznesowym „nie” (na podstawie: 0 z 11 w #47, 0 z 16 w #46).
+- preselekcja.md: nowe — incydenty bezpieczeństwa w czołowych narzędziach AI „może” (Cursor), praktyczne teksty JVM Bloggers o agentach „może” (2/2 wzięte), wątki Mam Startup/XYZ z dużych newsów (Nvidia, Apple, LATO) „może”; zaktualizowana tabela skuteczności stron i przykłady decyzji.
+- Reguły automatyczne bez zmian (brak wzorca pominiętego 5+ razy bez ani jednego wziętego).
+
+## 2026-11-19 — wydanie #47
+
+- priorytety.md, „Kolejność w wydaniu”: domyślnie w grupie malejąco po ocenie, alfabet tylko przy remisie; w selekcji dopisane: 30/30 TOP zachowane (na podstawie: Kuba posortował wszystkie 3 grupy przyciskiem „Posortuj po priorytecie”).
+- narzedzia/lib/repo.py i adminka: `publication_key` i `pubCompare` uwzględniają ocenę malejąco przed tytułem (wersja AI do porównań w dzienniku jest więc już po priorytecie).
+- tagi.md: „Za paywallem” — dopisek tylko przy naprawdę zamkniętym tekście (Reuters z pełnym tekstem bez dopisku; 2× po NYT w #46); tag: poradnik/wideo dla początkujących (AI Second Brain) bez tagu „Bliżej technologii”.
+- opisy.md: „to znak, że” na liście „Nie używać” (usunięte ostatnie zdanie opisu Gemini Robotics 2.5, 2×); dwa przykłady poprawek dopisane.
+- Edycje ocen w admince (pole Ocena) nie są jeszcze logowane do dziennika — jeśli Kuba będzie je zmieniał, podpiąć je pod `ucz-sie`.

@@ -1,0 +1,61 @@
+{
+ "numer": 46,
+ "tematy": [
+  {
+   "id": "t1",
+   "link": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+   "tytul_newsa": "Apple obniża dzienne limity wydatków na narzędzia AI w firmie",
+   "kat": "Apple tnie dzienne limity na narzędzia AI z 300 do 200 dolarów na inżyniera — koniec „tokenmaxxingu”; Kuba ma własne spojrzenie managera na koszt agenta na osobę.",
+   "dlaczego": "Koszty AI w zespołach i budżetowanie to temat pierwszego wyboru Kuby (IPO, prospekt Anthropic), a konkretne kwoty dają dobry kontrast.",
+   "rekomendowany": true
+  },
+  {
+   "id": "t2",
+   "link": "https://highimpactengineering.substack.com/p/we-handed-testing-to-ai-here-is-what",
+   "tytul_newsa": "Jak zespół QA oddał testowanie agentowi AI i co z tego wyszło",
+   "kat": "Zespół QA oddał testowanie agentowi: PR-ów dwa razy więcej, połowa bez review człowieka — automatyzacja jednego etapu odsłania wąskie gardło w następnym.",
+   "dlaczego": "Organizacja pracy z agentami i wąskie gardła to typ tematu, który Kuba wybierał w #45 (Cisco, prawo Brooksa).",
+   "rekomendowany": true
+  },
+  {
+   "id": "t3",
+   "link": "https://www.youtube.com/watch?v=dpY7YzZo4kE",
+   "tytul_newsa": "Czy repozytoria staną się fabrykami oprogramowania? – rozmowa z Mihailem Ericiem",
+   "kat": "Jak uczyć juniorów, gdy zadanie domowe rozwiązuje jeden prompt: studenci muszą zrozumieć obce repozytorium i obronić zmianę przed maintainerem.",
+   "dlaczego": "Rekrutacja i onboarding juniorów to najmocniejszy kąt Kuby (wykładał na UMK, manager); temat, który działa na managerów i deweloperów.",
+   "rekomendowany": true
+  },
+  {
+   "id": "t4",
+   "link": "https://mamstartup.pl/nawet-giganci-dostaja-zadyszki-canva-masowo-zwalnia-ludzi-i-obcina-prognozy-przez-gigantyczne-koszty-ai/",
+   "tytul_newsa": "Canva zwalnia 22% pracowników i obcina prognozę wzrostu przez koszty AI",
+   "kat": "Canva zwalnia 22% załogi (1271 osób) i obcina prognozę wzrostu z 30% do 20% przez koszty AI i konkurencję chatbotów.",
+   "dlaczego": "Duże liczby z biznesu AI, które da się przełożyć na decyzje firm; kontrast: AI jako koszt i jako konkurent własnego produktu.",
+   "rekomendowany": false
+  },
+  {
+   "id": "t5",
+   "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+   "tytul_newsa": "Poprawny SQL od LLM-a to jeszcze nie bezpieczny SQL",
+   "kat": "Poprawny SQL od LLM-a to jeszcze nie bezpieczny SQL: 80 wyciekających wierszy w 900 zapytaniach, uprawnienia muszą działać w kodzie, nie w prompcie.",
+   "dlaczego": "Praktyczny temat dla każdego, kto daje agentowi dostęp do firmowej bazy; konkretne liczby i jasna zasada.",
+   "rekomendowany": false
+  },
+  {
+   "id": "t6",
+   "link": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+   "tytul_newsa": "JetBrains wprowadza Air do swoich IDE – agenci kodujący w jednym miejscu",
+   "kat": "JetBrains Air: gdy agenci piszą kod, wąskim gardłem staje się review — 49% programistów poświęca na nie 4 godziny tygodniowo lub więcej.",
+   "dlaczego": "Narzędzia do kodowania z agentami w praktyce i kontrast produktywności z przeglądem; łączy się z tematem Cambri, więc raczej jedno z dwóch.",
+   "rekomendowany": false
+  },
+  {
+   "id": "t7",
+   "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+   "tytul_newsa": "Polski Bielik 11B v3.1 obsługuje 56 języków, a twórcy szykują model o ponad 100 mld parametrów",
+   "kat": "Bielik 11B v3.1 w 56 językach z wywoływaniem narzędzi i zapowiedź modelu ponad 100 mld parametrów (Bielik Summit 26 listopada).",
+   "dlaczego": "Polska scena AI z konkretem; otwarty model jako realna opcja dla firm, które muszą trzymać dane u siebie.",
+   "rekomendowany": false
+  }
+ ]
+}

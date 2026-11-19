@@ -79,6 +79,13 @@ gdy nadaje wagę faktowi (np. „prezes i dyrektor produktowy firmy”), zwykle 
    Nigdy „Zasubskrybuj koniecznie!”, „Nie przegap!”, „Link w bio 👇👇👇”. Posty wprost o samym newsletterze
    (co jest w wydaniu, co dostaje czytelnik) tylko za zgodą Kuby.
 
+**Nie każdy post to opinia Kuby ani kończy się pytaniem (uwaga z #46, Business Hub).** Przy newsach o nowych produktach i funkcjach,
+zwłaszcza dostępnych na razie w jednym kraju (USA), post może być zapowiedzią i poradą: co to daje, jakie otwiera możliwości, jak się
+przygotować już teraz i co może przynieść przyszłość. Wtedy krok 4 („Stanowisko Kuby”) zastępuje część praktyczna (3–4 konkretne
+przygotowania, najlepiej jako krótka lista „–”), a zdań w rodzaju „Widzę tu przesunięcie…” nie dopisujemy na siłę — tylko gdy to
+naprawdę własne spostrzeżenie. Krok 6 (pytanie na końcu) też jest opcjonalny: gdyby pytanie było doklejone na siłę, post kończy się
+ostatnim zdaniem z praktycznym wnioskiem albo zapowiedzią. Fakty o dostępności (kraj, faza testów) zawsze podajemy dokładnie.
+
 Nie każdy post ma wszystkie kroki 4–6 w osobnych akapitach: stanowisko i „na czym warto się zastanowić” mogą być
 jednym akapitem. Kolejność haczyk → kontekst → fakty → stanowisko → zastanowienie → pytanie zostaje.
 
@@ -104,6 +111,13 @@ W #45 Kuba z 7 propozycji wybrał 4: Lovable (z własną wskazówką o ciągłyc
 o organizacji pracy z agentami i o kosztach; wyłączył polecany generyczny esej o zaufaniu do agentów (t1) i nie wybrał
 tematów e2e, PayU. Wniosek: tematy o organizacji pracy, kosztach i procesie z konkretnym kontrastem (stare vs nowe)
 wygrywają z ogólnymi esejami o zaufaniu do AI.
+
+W #46 Kuba z 7 propozycji wybrał 5 (polecane: limity Apple i uczenie juniorów; niepolecane: SQL od LLM-a, JetBrains Air, Bielik), pominął
+polecany tekst o oddaniu testowania agentowi (QA, 2. raz z rzędu pominięty polecany temat) i zwolnienia w Canvie, a **sam dodał 6 newsów**:
+Business Hub w ChatGPT, eval-driven development, testy jako dane (Fowler), PM-owie w Spotify, roadshow Anthropic i poglądy Amodeia. Wniosek: oprócz
+organizacji pracy i kosztów chętnie bierze **praktykę inżynierską z wnioskiem do zastosowania** (testy, ewaluacje, bezpieczeństwo danych),
+**nowe produkty z pytaniem „jak się przygotować”** i duże newsy biznesowe o dostawcach modeli; zwolnienia i „oddaliśmy etap agentowi” zostawia.
+Opublikował z tego wydania tylko post główny i SQL — nie ma sensu generować kompletu, gdy wybiera 1–2.
 
 Rzadziej polecamy: czyste premiery modeli z samymi benchmarkami (chyba że jest kąt kosztowy
 albo praktyczny), newsy prawne bez wpływu na codzienną pracę, temat, który był postem w poprzednim tygodniu.
@@ -141,6 +155,10 @@ Każda propozycja ma: **kąt** (jedno zdanie: co Kuba ma do powiedzenia) i **dla
   nie 🚀🔥💡🤯 w zestawie.
 - Bez pogrubień Unicode (𝗯𝗼𝗹𝗱) — źle czytają je czytniki ekranu i wyglądają jak spam.
 - Liczby i fakty tylko z artykułu i opisu w wydaniu — niczego nie dopowiadamy.
+- **Mniej liczb, więcej historii (#46, SQL od LLM-a).** Akapit z rozkładem procentowym wyników testu (40/20/15/11,7/6,7%) Kuba uznał za „zbyt
+  techniczny, trudny w czytaniu” — wolał opowiedziane „co robi ten mechanizm” z jednym wnioskiem („ponad połowa wymagała interwencji”).
+  W poście zostawiamy najwyżej 3–4 liczby (haczyk, kluczowy koszt/wynik, jeden wniosek); rozkłady, tabele i listy kategorii
+  zamieniamy na krótką opowieść z przykładem. Techniczne szczegóły implementacji zostają w źródle.
 
 Nie używać (walidator wyłapuje, plus lista z `opisy.md`):
 - „W dzisiejszym świecie”, „W erze AI”, „Nie da się ukryć”, „Zapnijcie pasy”, „To zmienia wszystko”
@@ -178,6 +196,10 @@ Każdy post ma propozycję obrazka; Kuba wybiera, co publikuje (`obrazek.wybrany
 - Infografika pokazuje **sedno dla czytelnika** (kryteria, kroki, porównanie, kluczowa liczba z wniosku), a nie ciekawostkę
   ze źródła (liczba rozmówców, nazwisko). Gdy nie ma dobrego pomysłu, wybierz zdjęcie (`prompt`) — słaba infografika
   jest gorsza niż jej brak.
+- **#46: znów bez obrazka.** Z dwóch opublikowanych postów pogłębiony (SQL) Kuba opublikował bez obrazka (AI proponowało prompt, a po
+  chwili z infografiką „40%” i memem „This Is Fine”; wybrał „brak”), post główny z okładką. To drugie wydanie z rzędu: domyślnie
+  `wybrany` = `brak` dla postów pogłębionych, a prompt, infografika i mem są opcjami do wyboru. Każdy z wybieranych rodzajów musi mieć
+  pełną zawartość (spec infografiki / szablon, link i tekst mema), inaczej narzędzie zgłasza błąd, a wybór niczego nie pokazuje.
 - **Obrazek tylko wtedy, gdy jest naprawdę dobry.** W #45 Kuba odrzucił wszystkie wygenerowane zdjęcia i infografiki (żadne
   go nie przekonało) i zostawił jeden mem — post bez obrazka jest lepszy niż ze słabym. Proponuj jeden–dwa mocne pomysły na
   post (konkretna teza, przedmiot z liczbą z tekstu albo mem), a nie komplet przeciętnych; infografika „lista 3–4 punktów”
@@ -190,14 +212,6 @@ Każdy post ma propozycję obrazka; Kuba wybiera, co publikuje (`obrazek.wybrany
 
 _(uzupełnia `ucz-sie` na podstawie dziennika — etap `social`)_
 
-- #44 (czat, wszystkie posty): seria krótkich haseł („Zadanie: znaleźć błędy. Żadnego odwracania drzewa binarnego
-  na tablicy.”, „Dziś ważniejsze jest, czy umiesz ocenić kod, którego nie pisałeś.”) → Kuba chce haczyka, wstępu
-  o artykule, rozwinięcia i zakończenia; sam napisałby „AI przeniosło dużą część pracy z pisania kodu na czytanie,
-  więc to kluczowa umiejętność” — wniosek z uzasadnieniem zamiast tezy.
-- #44 t4: „Nie kupuję tego w całości. W Notionie tryb offline uchodził za niemożliwy. Złożoność modelu danych była
-  prawdziwa, tylko opór szefa nie, bo nikt go nie sprawdził.” → niezrozumiałe bez artykułu; sedno, które Kuba widzi:
-  nowa osoba ma świeże spojrzenie — manager może je wykorzystać, a z czasem człowiek wchodzi w schemat i przestaje
-  wnosić rzeczy z zewnątrz.
 - #44 w-e6z0d: „Brzmi jak katastrofa, a to chyba najmniej ciekawa liczba w całym dokumencie.” → „Brzmi strasznie,
   ale nie jest to jedyna ciekawa liczba w całym dokumencie.” — łagodniej, bez kategorycznej oceny. Dobrze oceniony:
   prosty akapit „Upraszczając: …” wyjaśniający trudne pojęcie.
@@ -209,4 +223,7 @@ _(uzupełnia `ucz-sie` na podstawie dziennika — etap `social`)_
 - #45 post główny: „Co w Twoich projektach z agentami nadal robisz ręcznie, a co oddajesz agentowi?” → „Czy używałeś/aś e2e w swojej pracy? Jak Tobie się sprawdziło?” — pytanie o doświadczenie z konkretnym narzędziem z wydania, w formie neutralnej płciowo.
 - #45 obrazki: z 4 postów pogłębionych Kuba zostawił obrazek tylko przy jednym (mem „Gru's Plan” przy prawie Brooksa); pozostałe zdjęcia i infografiki odrzucił i opublikuje je bez obrazka — nie wymuszaj obrazka.
 - #45 t4: „Agent to program, który sam planuje kolejne kroki do wykonania.” → „Agent sam planuje kolejne kroki do wykonania.” — definicja krótsza, bez „to program, który”.
+- #46 t5 (SQL od LLM-a, linkedin): środek posta z rozkładem 40/20/15/11,7/6,7% → „zbyt techniczny, trudny w czytaniu… za dużo liczb, za mało opowiedzenia historii”; po przepisaniu Kuba dopisał własne przykłady z praktyki (dashboard w HTML, wątki w kodzie), pogłębił wniosek (review i uczenie AI na przykładach) i zakończył wyzwaniem „jak pokazać wartość tej pracy interesariuszom”.
+- #46 t5 (obrazek): prompt (zapasowo infografika „40%” i mem) → „brak” — opublikowany bez obrazka (2. raz po #45).
+- #46 w-17spo (Business Hub, czat): „Widzę tu przesunięcie… Czy sprawdzasz już…?” → post jako zapowiedź i porady (możliwości, jak się przygotować, przyszłość), bez perspektywy Kuby i bez pytania na końcu — reguła „Nie każdy post to opinia Kuby ani kończy się pytaniem”.
 

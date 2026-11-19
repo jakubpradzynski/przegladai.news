@@ -19,7 +19,7 @@ Post:
      "obrazek": {"wybrany": "okladka|infografika|prompt|mem|brak", "infografika": {spec}, "prompt": "...",
                  "mem": {"szablon": "Drake Hotline Bling", "link": "https://imgflip.com/...", "tekst": "góra: ...\ndół: ..."},
                  "plik": "obrazki/t1.png"},
-     "termin": "2026-11-03 08:30", "publikuj": true, "uwaga_kuby": "", "wynik": {}}
+     "termin": "2026-11-03 08:30", "publikuj": true, "opublikowano": false, "uwaga_kuby": "", "wynik": {}}
 
 Polecenia:
     sprawdz <nr> [--ai]   walidacja postow wedlug redakcja/social*.md
@@ -27,7 +27,7 @@ Polecenia:
     grafiki <nr>          rysuje infografiki ze spec do obrazki/
     eksport <nr>          posty.md (do kopiowania)
     podmien <nr>          podmienia posty w posty.json wersjami z .cache/social/NNN/poprawki/*.json (prosby Kuby);
-                          zachowuje pola Kuby (publikuj, uwaga_kuby, wynik) i NIE rusza posty_ai.json
+                          zachowuje pola Kuby (publikuj, opublikowano, uwaga_kuby, wynik) i NIE rusza posty_ai.json
     weryfikacja <nr>      dolacza wyniki subagenta social-weryfikator (.cache/social/NNN/weryfikacja/*.json)
                           do posty.json (pole "weryfikacja" - nie jest poprawka, dziennik go nie porownuje)
 """
@@ -249,7 +249,7 @@ def cmd_scal(args):
     print('Dołączono: %s' % (', '.join(added) or 'nic nowego'))
 
 
-KUBA_FIELDS = ('publikuj', 'uwaga_kuby', 'wynik')
+KUBA_FIELDS = ('publikuj', 'opublikowano', 'uwaga_kuby', 'wynik')
 
 
 def cmd_podmien(args):
@@ -299,7 +299,7 @@ def cmd_eksport(args):
         if not post.get('publikuj', True):
             continue
         image = post.get('obrazek') or {}
-        lines += ['## %s — %s' % (post.get('termin', 'bez terminu'), post.get('temat') or post['id']), '']
+        lines += ['## %s%s — %s' % ('[OPUBLIKOWANE] ' if post.get('opublikowano') else '', post.get('termin', 'bez terminu'), post.get('temat') or post['id']), '']
         if post.get('link_newsa'):
             lines += ['Źródło: %s' % post['link_newsa'], '']
         facts = (post.get('weryfikacja') or {}).get('fakty', [])

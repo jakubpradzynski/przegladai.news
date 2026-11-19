@@ -114,7 +114,7 @@ Nie używać (walidator je wyłapuje):
 - „Warto zauważyć”, „Nie bez znaczenia jest fakt”, „Co więcej,” na początku zdania, „Ponadto,”
 - „kamień milowy”, „kolejny krok w kierunku”, „przełomowy”, „rewolucyjny”, „kompleksowy”,
   „ewoluujący krajobraz”, „w dynamicznie zmieniającym się świecie”, „game changer”
-- „Opis powstał na podstawie”, „Artykuł omawia”, „Autor omawia kluczowe aspekty”, „W artykule dowiesz się”
+- „to znak, że” (jako zakończenie opisu), „Opis powstał na podstawie”, „Artykuł omawia”, „Autor omawia kluczowe aspekty”, „W artykule dowiesz się”
 - „odgrywa kluczową rolę”, „podkreśla znaczenie”
 - puste pytania retoryczne w stylu „Czy zastanawiałeś się…?” (konkretne pytanie o sytuację czytelnika – patrz „Pytania do czytelnika”)
 - „bez niezależnej weryfikacji”, „typowo marketingowy”, „Informacje pochodzą ze strony producenta”
@@ -143,6 +143,8 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 
 - #46 Opis (Fowler/Thoughtworks): „Matteo Vaccari z Thoughtworks na martinfowler.com przekonuje” → „…z Thoughtworks przekonuje” — nazwa serwisu pomijana (jak nazwa bloga; 1×).
 - #46 Opis (Spotify, 3 PM-owie): usunięte zdanie o najlepszym wyniku roku zespołu modelu (uzgodniony pomiar przed architekturą) — poboczna ilustracja przed ostatnim wątkiem; opis kończy się główną tezą (kolejny raz po #43–#45 skracanie końcówki).
+- #47 Opis (Gemini Robotics 2.5): usunięte ostatnie zdanie „Jeśli śledzisz robotykę, to znak, że roboty ogólnego przeznaczenia wchodzą do fabryk.” — ogólny wniosek „to znak, że…” bez konkretnego działania (2× po #45; dopisane do listy „Nie używać”); opis kończy się na fakcie („Model trafia na razie do partnerów DeepMind.”).
+- #47 Opis (Reuters o Waymo): usunięte „ [Za paywallem]” — pełny tekst Reutersa był czytelny w Chrome (2× po NYT w #46).
 - #46 Opis (NYT o Amodeim): usunięte „ [Za paywallem]” — link był odblokowany (`unlocked_article_code`).
 - #46 Opis (RTV Euro AGD): „krótszym wdrażaniu nowych osób” → „krótszym czasie wdrażania nowych osób” — rzeczownik odczasownikowy rozwinięty, drobna korekta szyku (1×).
 

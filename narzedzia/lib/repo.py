@@ -57,12 +57,16 @@ def publication_group(tags):
 
 
 def publication_key(row):
-    """Grupa, Polska na gorze, reczna kolejnosc z adminki (jesli jest), tytul."""
+    """Grupa, Polska na gorze, reczna kolejnosc z adminki (jesli jest), ocena malejaco, tytul."""
     try:
         manual = float(row.get('Kolejnosc') or '')
     except ValueError:
         manual = float('inf')
-    return publication_group(row.get('Tagi')) + (manual, pl_key(row.get('Tytuł')))
+    try:
+        score = -float(row.get('Ocena') or 0)   # domyslnie wyzszy priorytet wyzej (od #47), potem alfabet
+    except ValueError:
+        score = 0
+    return publication_group(row.get('Tagi')) + (manual, score, pl_key(row.get('Tytuł')))
 
 
 def section_for(tags):

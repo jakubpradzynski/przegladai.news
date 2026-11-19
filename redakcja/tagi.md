@@ -44,7 +44,7 @@ instytucji, rynku lub prawa (Trasti, Żabka Jush, Politechnika Lubelska).
 ### Za paywallem
 **Oznaczenie idzie na koniec opisu jako „ [Za paywallem]”, nie do pola `Tagi`** (Kuba robi tak w Substacku
 od #39 i #45 — 2×). Tag `Za paywallem` nie trafia do `Tagi`. **Wyjątek:** gdy link jest odblokowany (np. NYT z `unlocked_article_code`),
-dopisku nie dajemy — w #46 Kuba usunął „[Za paywallem]” z opisu odblokowanego tekstu NYT (1×).
+dopisku nie dajemy — w #46 Kuba usunął „[Za paywallem]” z opisu odblokowanego tekstu NYT, a w #47 z opisu Reutersa, którego pełny tekst był czytelny w Chrome (2×). **Dopisek tylko wtedy, gdy kluczowa część tekstu jest naprawdę zamknięta** (WSJ z urwanym tekstem, Bloomberg, Pragmatic Engineer); Reuters i NYT, gdy da się przeczytać całość — bez dopisku.
 Treść w całości lub w kluczowej części tylko dla płacących. Typowo: płatne wydania
 The Pragmatic Engineer i Engineering Leadership, WSJ, Forbes, Reuters (część),
 Bloomberg, The Information. Uwaga na pisownię: `Za paywallem` (w #35 była literówka „Za paywałem”).
@@ -80,5 +80,6 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #42 Tagi (EY CEO Outlook, Mam Startup): „Polska” → bez tagu — globalne badanie 1200 prezesów, polski tylko komentarz i język serwisu.
 - #42 Tagi (Politechnika Lubelska, XYZ): „Polska” → „Nowości i ogłoszenia, Polska” — otwarcie centrum dla przemysłu to ogłoszenie.
 - #43 Tagi (Cyberly, XYZ): „Nowości i ogłoszenia, Polska” → „Polska” — przejęcie polskiego startupu przez zagraniczną firmę (bez premiery produktu) to biznes/Polska, nie ogłoszenie produktu.
+- #47 Tagi (Twój AI Second Brain, wideo YouTube): „Bliżej technologii” → bez tagu — poradnik dla początkujących, nie-programistów (organizacja plików i kontekstu), nie materiał inżynierski; podobnie jak „AI Second Brain/poradnik dla początkujących” — bez tagu (1×).
 - #43 Tagi (Vals AI, sześciu agentów o zwrot za bilet): „Bliżej technologii” → bez tagu — eksperyment z agentami opowiedziany jak ciekawostka, a nie materiał inżynierski (1×).
 - #45 Tagi (43 darmowe skille do budowania produktu z agentami, Product Compass): „Nowości i ogłoszenia” → „Bliżej technologii” — zestaw narzędzi dla agentów od autora newslettera to materiał dla ludzi z branży, a nie oficjalna premiera firmy (1×).

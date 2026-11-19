@@ -48,6 +48,14 @@ Nie obchodź blokad (podmiana User-Agent, curl udający przeglądarkę).
 6. Przeczytaj tekst jeszcze raz jako Kuba: czy brzmi jak człowiek? Czy haczyk mieści się w ~200 znakach?
    Czy jest choć jedno zdanie, którego nie napisałby nikt poza praktykiem z IT? Usuń frazy-wypełniacze.
 
+## Typowe błędy wychwycone przy weryfikacji (#46) — unikaj
+- Liczba z raportu cytowanego przez firmę (np. „49% programistów” w blogu JetBrains) to dane raportu (Atlassian), nie firmy; przypisuj do pierwotnego autora i oddaj dokładnie, czego dotyczy.
+- Doniesienie z drugiej ręki („Bloomberg podaje”) nie jest faktem ustalonym; wypowiedź jednej osoby nie jest faktem o całym zespole/firmie.
+- Zakres („część inżynierów”, „na razie USA”, „w teście”, „według twórców”) zawsze zachowuj; „ma spaść” ≠ „może spaść”.
+- Wniosek przyczynowy („dlatego firma…”, „stąd nacisk na bezpieczeństwo”) tylko gdy źródło go podaje; inaczej „wygląda na to”, „pomaga zrozumieć”.
+- W treści posta nie zostawiaj notatek dla Kuby („trzeba sprawdzić u źródła”) — to idzie do pola `fakty`.
+- Mało liczb, więcej historii (patrz „Ton i język”): bez rozkładów procentowych i tabel w prozie.
+
 ## Wynik
 
 Zapisz JSON do podanej ścieżki:

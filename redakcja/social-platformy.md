@@ -48,13 +48,17 @@ _(sekcję edytuje tylko Kuba)_
 
 | Post | Kiedy |
 |---|---|
-| Główny (wstęp) | piątek, dzień wydania, 8:30 |
+| Główny (wstęp) | piątek, dzień wydania, 9:30 (Kuba przesuwa z 8:30 na 9:30 — #45 i #46) |
 | Pogłębiony 1 | wtorek, 8:30 |
 | Pogłębiony 2 | środa, 8:30 |
 | Pogłębiony 3 | czwartek, 8:30 |
 | Kolejne | następne dni robocze albo do decyzji Kuby |
 
 W praktyce (#45) Kuba publikuje ok. trzech postów pogłębionych tygodniowo i zostawia sobie wybór wariantu (np. jeden z dwóch tematów na wtorek), a pierwszy post potrafi pójść już w weekend po wydaniu. Terminy w narzędziu to propozycje — AI daje daty, Kuba układa kolejność.
+
+W #46 Kuba opublikował tylko post główny (piątek 13.11, 9:30 zamiast 8:30 — 2. raz z rzędu) i jeden pogłębiony (SQL) już w niedzielę po południu
+(15.11, 15:00 zamiast czwartku 8:30; w #45 pierwszy pogłębiony poszedł w niedzielę o 12:00). Pozostałe 10 postów zostało nieopublikowane. Pierwszy
+pogłębiony post planuj więc na niedzielę po wydaniu (ok. 12:00–15:00), a kolejne dwa na wt/śr; więcej niż 2–3 propozycji tygodniowo nie ma sensu.
 
 Najlepszy (najmocniejszy haczyk) idzie na wtorek.
 
