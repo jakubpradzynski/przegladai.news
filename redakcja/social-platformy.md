@@ -60,6 +60,8 @@ W #46 Kuba opublikował tylko post główny (piątek 13.11, 9:30 zamiast 8:30 �
 (15.11, 15:00 zamiast czwartku 8:30; w #45 pierwszy pogłębiony poszedł w niedzielę o 12:00). Pozostałe 10 postów zostało nieopublikowane. Pierwszy
 pogłębiony post planuj więc na niedzielę po wydaniu (ok. 12:00–15:00), a kolejne dwa na wt/śr; więcej niż 2–3 propozycji tygodniowo nie ma sensu.
 
+W #47 Kuba opublikuje post główny (piątek 20.11, 9:30 — 3. raz z rzędu) i trzy pogłębione: **niedziela 29.11 o 12:30**, wtorek 24.11 o 8:30 i czwartek 26.11 o 8:30 (AI proponowało pierwszy pogłębiony w niedzielę 22.11 o 12:00 oraz terminy od 24.11 do 3.12; z 10 postów 6 zostaje nieopublikowanych). Czyli: jeden post w niedzielę w okolicy 12:00–12:30, reszta wt–czw o 8:30; **planuj na pierwsze dwa tygodnie tylko 3–4 posty**, nie więcej niż Kuba realnie opublikuje.
+
 Najlepszy (najmocniejszy haczyk) idzie na wtorek.
 
 ## Przykłady poprawek (AI → Kuba)

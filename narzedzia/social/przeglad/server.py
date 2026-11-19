@@ -73,7 +73,7 @@ def check(data):
     phrases = P.banned_phrases()
     out = {}
     for post in (data or {}).get('posty', []):
-        problems, warnings = P.check_post(post, phrases)
+        problems, warnings = P.check_post(post, phrases, images=int(NUMER) >= 47)
         out[post['id']] = {'bledy': problems, 'uwagi': warnings,
                            'x': [P.x_length(t) for t in post.get('x', [])]}
     return out
@@ -109,6 +109,8 @@ class Handler(http.server.BaseHTTPRequestHandler):
             s = state()
             s['kontrola'] = check(s['posty'])
             return self.reply(s)
+        if path == '/api/memy':
+            return self.reply(P.meme_templates())
         if path == '/okladka.jpeg':
             return self.file(os.path.join(repo.issue_dir(NUMER), 'okladka.jpeg'), 'image/jpeg')
         if path.startswith('/obrazki/') and '..' not in path:

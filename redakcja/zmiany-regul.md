@@ -276,3 +276,17 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
 - tagi.md: „Za paywallem” — dopisek tylko przy naprawdę zamkniętym tekście (Reuters z pełnym tekstem bez dopisku; 2× po NYT w #46); tag: poradnik/wideo dla początkujących (AI Second Brain) bez tagu „Bliżej technologii”.
 - opisy.md: „to znak, że” na liście „Nie używać” (usunięte ostatnie zdanie opisu Gemini Robotics 2.5, 2×); dwa przykłady poprawek dopisane.
 - Edycje ocen w admince (pole Ocena) nie są jeszcze logowane do dziennika — jeśli Kuba będzie je zmieniał, podpiąć je pod `ucz-sie`.
+
+## 2026-11-19 — obrazki do postów social #47 (uwaga z czatu)
+
+- social.md, „Obrazki”: każdy post ma zawsze komplet opcji — infografika, prompt po polsku i mem z szablonem z imgflip i gotowym tekstem (zastępuje „domyślnie brak” i „najwyżej jeden mem na tydzień”); prompty po polsku (na podstawie: uwaga Kuby „ikonografiki mają się generować do wszystkich postów, prompty po polsku, mem — szablon i tekst automatycznie”).
+- social-autor.md, posty-social: obowiązkowy komplet obrazków w `posty.json`; `posty.py sprawdz` (od #47) zgłasza brak infografiki, promptu, mema, prompt po angielsku, mem bez szablonu z listy.
+- narzędzia: `narzedzia/social/memy_szablony.json` (111 szablonów z imgflip), w narzędziu wybór szablonu uzupełnia link i miniaturę; podgląd infografiki widoczny zawsze (wcześniej tylko przy wybranej); `grafika.py` przyjmuje `opis` jak `podpis` (autorzy wpisywali `opis` i podpis się nie rysował) i waliduje specyfikację.
+
+## 2026-11-19 — posty social #47 (zamknięcie)
+
+- social.md, „Wybór tematów”: Kuba z 7 propozycji wziął 4 i dodał 5 własnych, ale opublikuje tylko post główny i trzy własne (Lato, LangChain, Devin Apps); wszystkie 4 z propozycji AI odrzucił, w tym 3 polecone — polecaj głównie newsy biznesowe i produktowe z agentowym wątkiem (rundy, nowe produkty znanych firm), min. 2 z 3 polecanych (na podstawie: 2. wydanie z rzędu z odrzuconymi poleconymi praktykami inżynierskimi).
+- social.md, przykłady poprawek: zbędne zastrzeżenie o braku niezależnej weryfikacji (Lato), usunięty poboczny akapit (LangChain), post bez pytania na końcu (Devin Apps, 2.).
+- social.md, „Obrazki”: Kuba użył proponowanych szablonów memów (Distracted Boyfriend, UNO Draw 25 Cards) i zrobił je sam; do posta o Lato wybrał infografikę — tekst mema w jednym krótkim polu.
+- social-platformy.md, „Harmonogram”: post główny 9:30 (3. raz), jeden pogłębiony w niedzielę ok. 12:30, reszta wt–czw 8:30; planować 3–4 posty na dwa tygodnie.
+

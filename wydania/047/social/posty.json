@@ -1,0 +1,1335 @@
+{
+  "numer": 47,
+  "tytul": "Wydanie #47: Włamanie do Cursora, rodzina Gemini 4 i system AI, który wygrał w krzyżówkach",
+  "status": "gotowe",
+  "posty": [
+    {
+      "id": "glowny",
+      "rodzaj": "glowny",
+      "temat": "Wstęp wydania",
+      "link_newsa": "",
+      "tytul_newsa": "",
+      "kat": "Włamanie do Cursora przez dostawcę, Gemini 4 Hydrogen i system Darmok z mistrzostw krzyżówek.",
+      "linkedin": "W marketplace Cursora przez około 11 godzin było złośliwe rozszerzenie Claude Code. Atak zaczął się od klucza dostępu, który ujawnił zewnętrzny dostawca.\n\nCursor opisał to w raporcie po incydencie. Napastnik skopiował z magazynu dane z sesji agentów kodujących, głównie z 2025 roku, a w nich czasem leżały niezamaskowane poświadczenia. Dzięki nim dotarł do wybranych narzędzi firmy. Ślady sesji wyciekły w przypadku mniej niż 0,05% użytkowników bez Privacy Mode.\n\nObok tego dwa wątki z tego tygodnia. Google pokazało Gemini 4 Hydrogen, który według firmy kończy zadania około 2,5 raza szybciej niż Gemini 3.8 Flash. A system Darmok, według autorów pracy, rozwiązał na mistrzostwach w Londynie wszystkie siedem krzyżówek kryptycznych szybciej niż każdy człowiek.\n\nZ historii Cursora wynika dla mnie jedna praktyczna rzecz: do rozmów z agentem trafiają sekrety, więc warto przejrzeć, jakie klucze mają Twoi agenci, i ustalić, kto je rotuje po incydencie ;)\n\nTo i ponad 25 innych newsów z tygodnia zebrałem w 47. wydaniu PrzeglądAI, link w komentarzu.\n\nCzy Twoi agenci mają dostęp do kluczy produkcyjnych?",
+      "komentarz": "Wydanie #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach",
+      "x": [
+        "W marketplace Cursora przez około 11 godzin było złośliwe rozszerzenie Claude Code. Atak zaczął się od klucza dostępu, który ujawnił zewnętrzny dostawca.",
+        "Napastnik skopiował z magazynu dane z sesji agentów kodujących, głównie z 2025 roku. W części z nich leżały niezamaskowane poświadczenia. Ślady sesji wyciekły w przypadku mniej niż 0,05% użytkowników bez Privacy Mode.",
+        "Poza tym: Według Google Gemini 4 Hydrogen kończy zadania około 2,5 raza szybciej niż Gemini 3.8 Flash, a według autorów pracy system Darmok rozwiązał na mistrzostwach w Londynie wszystkie siedem krzyżówek kryptycznych.",
+        "Sprawdź, jakie klucze mają Twoi agenci. To i ponad 25 innych newsów z tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach"
+      ],
+      "obrazek": {
+        "wybrany": "okladka",
+        "plik": "../okladka.jpeg",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "ok. 11 godzin",
+          "podpis": "tyle złośliwe rozszerzenie Claude Code było w marketplace Cursora po włamaniu przez dostawcę",
+          "zrodlo": "Cursor, Security incident update",
+          "styl": "notatka"
+        },
+        "prompt": "Minimalistyczna ilustracja na papierowym tle: pęk kluczy leży na otwartym notesie obok zamkniętego laptopa i kubka kawy, widok z góry, miękkie światło dzienne, wyciszone kolory z jednym fioletowym akcentem, główny motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "mem": {
+          "szablon": "Drake Hotline Bling",
+          "link": "https://imgflip.com/memegenerator/Drake-Hotline-Bling",
+          "podglad": "https://i.imgflip.com/4/30b1gx.jpg",
+          "tekst": "góra: Czytanie logów po fakcie\ndół: Rotowanie kluczy, zanim dostawca napisze maila"
+        },
+        "infografika_plik": "obrazki/glowny.png"
+      },
+      "termin": "2026-11-20 09:30",
+      "fakty": [
+        "złośliwe rozszerzenie Claude Code w marketplace ok. 11 godzin; atak od klucza dostępu ujawnionego przez dostawcę Fireworks; dane z sesji agentów z 2025 roku z niezamaskowanymi poświadczeniami; mniej niż 0,05% użytkowników – opis newsa Cursor (cursor.com/blog/security-incident-update)",
+        "Gemini 4 Hydrogen kończy zadania ok. 2,5 raza szybciej niż Gemini 3.8 Flash – opis newsa (blog.google)",
+        "Darmok: siedem krzyżówek kryptycznych bez błędu i szybciej niż każdy człowiek na Times Crossword Championship w Londynie – opis newsa (arXiv)",
+        "ponad 25 innych newsów – wydanie ma 30 newsów"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[weryfikacja] 0,05% dotyczy użytkowników bez Privacy Mode; „2,5 raza szybciej” to twierdzenie Google; Darmok – według autorów pracy (abstrakt arXiv). [weryfikacja] dane z sesji „głównie z 2025 roku”.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "glowny",
+        "data": "2026-11-19 18:00",
+        "fakty": [
+          {
+            "fakt": "Napastnik skopiował z magazynu dane z sesji agentów kodujących z 2025 roku",
+            "gdzie": "linkedin, x",
+            "status": "rozbieżność",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=limited%20coding%20agent%20traces%2C%20mostly%20from%202025",
+            "cytat": "That bucket contained limited coding agent traces, mostly from 2025, from sessions not in Privacy Mode",
+            "uwaga": "Źródło mówi „mostly from 2025” (głównie z 2025), post pisze „z 2025 roku” bez zastrzeżenia. Poprawka: „głównie z 2025 roku”. Drobna nieścisłość (opis newsa też pomija „głównie”). Jedno źródło pierwotne (Cursor) plus relacje mediów (BleepingComputer, SecurityWeek)."
+          },
+          {
+            "fakt": "W marketplace Cursora przez około 11 godzin było złośliwe rozszerzenie Claude Code",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=It%20was%20available%20for%20approximately%2011%20hours",
+            "cytat": "It was available for approximately 11 hours before we removed it.",
+            "uwaga": "Drugie, niezależne źródło: Thoughtworks (opis w dane.csv, ok. 11 godzin) oraz wcześniej sprawdzone BleepingComputer i SecurityWeek."
+          },
+          {
+            "fakt": "Atak zaczął się od klucza dostępu ujawnionego przez zewnętrznego dostawcę (Fireworks)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=An%20attacker%20obtained%20an%20access%20key%20we%20had%20issued%20to%20Fireworks",
+            "cytat": "The key was exposed by Fireworks",
+            "uwaga": "Drugie źródło: BleepingComputer i SecurityWeek (sprawdzone w pierwszej weryfikacji). Post nie wymienia nazwy Fireworks, co jest poprawne."
+          },
+          {
+            "fakt": "W części danych z sesji leżały niezamaskowane poświadczenia",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=A%20small%20number%20of%20those%20traces%20contained%20credentials",
+            "cytat": "A small number of those traces contained credentials that had not been redacted",
+            "uwaga": "Jedno źródło pierwotne (opis własny firmy), potwierdzone relacjami mediów."
+          },
+          {
+            "fakt": "Dzięki poświadczeniom napastnik dotarł do wybranych narzędzi firmy",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=Starting%20with%20those%20credentials%2C%20the%20attacker%20reached",
+            "cytat": "Starting with those credentials, the attacker reached select SaaS tools used by Cursor.",
+            "uwaga": "Jedno źródło (opis własny firmy). Przyczynowość „dzięki nim” wynika ze źródła."
+          },
+          {
+            "fakt": "Ślady sesji wyciekły w przypadku mniej niż 0,05% użytkowników bez Privacy Mode",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=coding%20agent%20traces%20were%20exposed%20for%20fewer%20than",
+            "cytat": "For users not using Privacy Mode, coding agent traces were exposed for fewer than 0.05% of users.",
+            "uwaga": "Po poprawce post zgadza się ze źródłem (zakres: użytkownicy bez Privacy Mode, ślady sesji). Jedno źródło (Cursor o sobie)."
+          },
+          {
+            "fakt": "Cursor opisał to w raporcie po incydencie",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update",
+            "cytat": "Security incident update",
+            "uwaga": "Wpis na blogu Cursora „Security incident update”."
+          },
+          {
+            "fakt": "Według Google Gemini 4 Hydrogen kończy zadania około 2,5 raza szybciej niż Gemini 3.8 Flash",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+            "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+            "cytat": "finishing tasks 2.5 times faster at its high default setting",
+            "uwaga": "Atrybucja „według Google” jest już w poście. Źródło zawęża liczbę do wysokiego, domyślnego poziomu myślenia (post tego pomija, nie zmienia to sensu). Jedno źródło, marketing firmy o sobie; partnerzy w tym samym wpisie podają 2x–2,8x."
+          },
+          {
+            "fakt": "Darmok według autorów pracy rozwiązał na mistrzostwach w Londynie wszystkie siedem krzyżówek kryptycznych (szybciej niż każdy człowiek)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://arxiv.org/abs/2611.13557",
+            "link": "https://arxiv.org/abs/2611.13557#:~:text=solved%20all%20seven%20championship%20puzzles%20error-free",
+            "cytat": "solved all seven championship puzzles error-free and finished faster than every human competitor in every round",
+            "uwaga": "Abstrakt arXiv potwierdza też 55. Times Crossword Championship w Londynie i brytyjskie krzyżówki kryptyczne. Twierdzenie własne autorów (post to oddaje: „według autorów pracy”), drugiego niezależnego potwierdzenia brak (wcześniej: tylko britbrief.co.uk i artiverse.ca, a Times Crossword Club podaje inny przebieg finału), jedno źródło. W X pominięto „szybciej niż każdy człowiek”, co nie zmienia sensu."
+          },
+          {
+            "fakt": "Ponad 25 innych newsów w 47. wydaniu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "wydania/047/dane.csv",
+            "link": "wydania/047/dane.csv",
+            "cytat": "30 wierszy newsów w dane.csv",
+            "uwaga": "W dane.csv jest 30 newsów, w poście opisano 3, więc „ponad 25 innych” jest poprawne."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "",
+            "link": "",
+            "cytat": "",
+            "uwaga": "LinkedIn i X mówią to samo (11 godzin, 0,05% bez Privacy Mode, 2,5x według Google, Darmok według autorów). Wnioski o sekretach i kluczach to opinia Kuby podana jako opinia. Pytanie końcowe pasuje do głównej tezy. Jedyna drobna uwaga: „z 2025 roku” powinno brzmieć „głównie z 2025 roku”."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t1",
+      "rodzaj": "temat",
+      "temat": "Sekrety w śladach sesji agentów",
+      "link_newsa": "https://cursor.com/blog/security-incident-update",
+      "tytul_newsa": "Cursor opisuje włamanie przez dostawcę – wyciekły ślady sesji agentów i klucze",
+      "kat": "Sekret wklejony do rozmowy z agentem żyje w archiwum dłużej niż zadanie, więc zespół powinien ograniczać skutki zamiast liczyć, że nikt nie wklei.",
+      "linkedin": "Atakujący z jednym kluczem dostępu skopiował z magazynu tylko do odczytu archiwum śladów pracy agentów kodujących Cursora, głównie z 2025 roku. W części z nich leżały niezamaskowane dane uwierzytelniające.\n\nWedług Cursora klucz trafił do zewnętrznego dostawcy, firmy Fireworks, a ta go ujawniła. Skopiowane ślady pochodziły z sesji bez Privacy Mode, czyli trybu, który według Cursora ochronił prompty i kod jego użytkowników. Takich śladów wyciekło w przypadku mniej niż 0,05% użytkowników, a dane uwierzytelniające API ujawniono u mniej niż 0,01% klientów.\n\nDalej poszło już z tym, co atakujący znalazł w archiwum. Dotarł do wybranych narzędzi SaaS firmy i pobrał z nich m.in. zarchiwizowane repozytoria nieprodukcyjne, korespondencję z obsługi klienta oraz dane uwierzytelniające, które użytkownicy sami wysłali do supportu. Zarówno sekret wklejony do zgłoszenia, jak i sekret wklejony do rozmowy z agentem zostawia ślad, który żyje dłużej niż zadanie.\n\nDla mnie to najważniejsza część tej historii. W tej części historii nikt nie przejął samego agenta, tylko to, co po nim zostaje. Rada „nie wklejaj sekretów do rozmowy” jest słuszna, ale w praktyce ktoś kiedyś wklei stack trace razem z plikiem .env. Rozsądniej założyć, że to się zdarzy, i ograniczyć skutki: klucze, które szybko wygasają, agenci bez dostępu do produkcji i skanowanie sekretów w repozytoriach.\n\nNajbardziej konkretny jest chyba sposób, w jaki Cursor to posprzątał. Administratorzy zespołów dostali listy kluczy do rotacji, a Cursor rotował wszystko, co wykryto, zaczynając od najwyższego ryzyka. Warto mieć taką listę u siebie, zanim dostawca napisze maila: gdzie leżą klucze używane przez agentów i kto je wymienia.\n\nCzy w Waszym zespole jest ustalone, czego nie wklejamy do rozmowy z agentem, i czy da się to jakoś egzekwować?",
+      "komentarz": "Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach\nŹródło: https://cursor.com/blog/security-incident-update",
+      "x": [
+        "Atakujący z jednym kluczem skopiował z magazynu tylko do odczytu archiwum śladów pracy agentów kodujących Cursora, głównie z 2025 roku. W części leżały niezamaskowane dane uwierzytelniające.",
+        "Według Cursora klucz trafił do dostawcy, firmy Fireworks, a ta go ujawniła. Ślady z sesji bez Privacy Mode wyciekły u mniej niż 0,05% użytkowników, dane uwierzytelniające API u mniej niż 0,01% klientów.",
+        "Z tym, co było w archiwum, atakujący dotarł do narzędzi SaaS i pobrał m.in. korespondencję z supportu oraz klucze, które użytkownicy sami wysłali w zgłoszeniach.",
+        "W tej części ataku nie przejęto agenta, tylko to, co po nim zostaje. Sekret wklejony do rozmowy żyje dłużej niż zadanie. Zakładam, że ktoś kiedyś wklei, więc lepiej ograniczać skutki: krótko żyjące klucze, agenci bez dostępu do produkcji, skan sekretów.",
+        "Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach"
+      ],
+      "obrazek": {
+        "wybrany": "brak",
+        "prompt": "Minimalistyczna ilustracja w płaskich kolorach na ciepłym papierowym tle: pojedynczy mosiężny klucz leży na otwartym notesie ze spiralą obok zamkniętego laptopa, widok z góry, miękkie światło dzienne, motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "0,05%",
+          "podpis": "tylu użytkowników bez Privacy Mode miało wyciek śladów sesji agentów, według Cursora",
+          "zrodlo": "Cursor, Security incident update",
+          "styl": "notatka"
+        },
+        "mem": {
+          "szablon": "Gru's Plan",
+          "link": "https://imgflip.com/memegenerator/Grus-Plan",
+          "podglad": "https://i.imgflip.com/4/26jxvz.jpg",
+          "tekst": "1: Wkleić stack trace do rozmowy z agentem\n2: Dołączyć przy okazji plik .env\n3: Ślady sesji trafiają do archiwum u dostawcy\n4: Ślady sesji trafiają do archiwum u dostawcy"
+        },
+        "infografika_plik": "obrazki/t1.png"
+      },
+      "termin": "2026-11-22 12:00",
+      "fakty": [
+        "klucz tylko do odczytu, wydany dostawcy Fireworks i przez niego ujawniony; dane z bucketu tylko do odczytu – cursor.com/blog/security-incident-update",
+        "ślady sesji głównie z 2025 r., bez Privacy Mode, część z nieoczyszczonymi danymi uwierzytelniającymi – ten sam wpis",
+        "mniej niż 0,05% użytkowników (ślady sesji) i mniej niż 0,01% klientów (dane uwierzytelniające API) – ten sam wpis",
+        "pobrane z SaaS: zarchiwizowane repozytoria nieprodukcyjne, korespondencja z obsługi klienta, dane uwierzytelniające wysłane do supportu – ten sam wpis",
+        "administratorzy zespołów dostali listy kluczy do rotacji; rotacja zaczęta od najwyższego ryzyka – ten sam wpis",
+        "Privacy Mode: według Cursora prompty i kod nie zostały dotknięte – ten sam wpis",
+        "zdania o stack trace z .env, krótko żyjących kluczach i skanowaniu sekretów to opinia Kuby (krótko żyjące klucze radzi też Thoughtworks w newsie z wydania); skan sekretów u Cursora dotyczył jego repozytoriów"
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] tylko magazyn był read-only; „według Cursora” przy kluczu Fireworks; usunięte „od razu rotował”; sekrety w dwóch różnych miejscach.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t1",
+        "data": "2026-11-19 19:00",
+        "fakty": [
+          {
+            "fakt": "Atakujący z jednym kluczem dostępu skopiował z magazynu tylko do odczytu archiwum śladów sesji agentów kodujących Cursora, głównie z 2025 roku",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=An%20attacker%20obtained%20an%20access%20key%20we%20had%20issued%20to%20Fireworks",
+            "cytat": "copy data from a read-only storage bucket we used to share data with them ... limited coding agent traces, mostly from 2025",
+            "uwaga": "Poprawka z poprzedniej weryfikacji wprowadzona: „read-only” dotyczy magazynu, „głównie z 2025” jest. „Jednym kluczem” zgodne z „an access key” jako punktem wejścia (późniejsze etapy na innych poświadczeniach, post to oddaje). Niezależnie: BleepingComputer, Dark Reading, unite.ai powtarzają opis Cursora (brak własnej weryfikacji)."
+          },
+          {
+            "fakt": "Według Cursora klucz trafił do zewnętrznego dostawcy, firmy Fireworks, a ta go ujawniła",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=The%20key%20was%20exposed%20by%20Fireworks",
+            "cytat": "An attacker obtained an access key we had issued to Fireworks. The key was exposed by Fireworks",
+            "uwaga": "Atrybucja „według Cursora” jest w poście, i słusznie: Fireworks publicznie mówi o incydencie u dostawcy chmury (23.10) i nie potwierdza szczegółów po stronie Cursora. Źródło nazywa Fireworks „third-party training and inference vendor”. Niezależnie: BleepingComputer, Dark Reading, unite.ai powtarzają opis Cursora (brak własnej weryfikacji)."
+          },
+          {
+            "fakt": "Skopiowane ślady pochodziły z sesji bez Privacy Mode",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=limited%20coding%20agent%20traces%2C%20mostly%20from%202025",
+            "cytat": "limited coding agent traces, mostly from 2025, from sessions not in Privacy Mode",
+            "uwaga": "Jedno źródło (Cursor o sobie)."
+          },
+          {
+            "fakt": "W części śladów leżały niezamaskowane dane uwierzytelniające",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=A%20small%20number%20of%20those%20traces%20contained%20credentials%20that%20had%20not%20been%20redacted",
+            "cytat": "A small number of those traces contained credentials that had not been redacted",
+            "uwaga": "Jedno źródło (Cursor o sobie); „w części” = „a small number” OK. Niezależnie: BleepingComputer, Dark Reading, unite.ai powtarzają opis Cursora (brak własnej weryfikacji)."
+          },
+          {
+            "fakt": "Ślady wyciekły w przypadku mniej niż 0,05% użytkowników (bez Privacy Mode); dane uwierzytelniające API u mniej niż 0,01% klientów",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=coding%20agent%20traces%20were%20exposed%20for%20fewer%20than",
+            "cytat": "For users not using Privacy Mode, coding agent traces were exposed for fewer than 0.05% of users ... less than 0.01% of customers had API credentials exposed",
+            "uwaga": "Zakres zgodny ze źródłem. Uwaga: źródło jest nieco niejednoznaczne co do mianownika 0,05% (użytkownicy bez Privacy Mode vs wszyscy); post powtarza sformułowanie źródła. Liczby podaje tylko Cursor. Niezależnie: BleepingComputer, Dark Reading, unite.ai powtarzają opis Cursora (brak własnej weryfikacji)."
+          },
+          {
+            "fakt": "Privacy Mode według Cursora ochronił prompty i kod użytkowników",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=Your%20prompts%20and%20code%20if%20you%20use%20Privacy%20Mode",
+            "cytat": "Prompts and code are not affected for users in Privacy Mode (sekcja „What was not affected”)",
+            "uwaga": "Atrybucja „według Cursora” jest w poście. Jedno źródło (Cursor o sobie)."
+          },
+          {
+            "fakt": "Atakujący dotarł do wybranych narzędzi SaaS firmy",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=Starting%20with%20those%20credentials%2C%20the%20attacker%20reached",
+            "cytat": "Starting with those credentials, the attacker reached select SaaS tools used by Cursor.",
+            "uwaga": "Jedno źródło (Cursor o sobie). Przyczynowość „z tym, co znalazł w archiwum” wynika ze źródła."
+          },
+          {
+            "fakt": "Z SaaS pobrał zarchiwizowane repozytoria nieprodukcyjne, korespondencję z obsługi klienta oraz dane uwierzytelniające wysłane do supportu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=some%20credentials%20users%20had%20sent%20to%20the%20Cursor%20support%20team",
+            "cytat": "select archived non-production Cursor source code repositories ... some credentials users had sent to the Cursor support team",
+            "uwaga": "Jedno źródło (Cursor o sobie); „limited customer support data and email conversations” = „korespondencja z obsługi klienta”."
+          },
+          {
+            "fakt": "Administratorzy zespołów dostali listy kluczy do rotacji",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=emailed%20team%20admins%20a%20list%20of%20the%20specific%20keys%20to%20rotate",
+            "cytat": "we emailed team admins a list of the specific keys to rotate",
+            "uwaga": "Jedno źródło. Źródło dodaje warunek „jeśli dane były ujawnione” (post uogólnia lekko: „dostali” bez warunku; do rozważenia „administratorzy, których klucze ujawniono, dostali”)."
+          },
+          {
+            "fakt": "Cursor rotował wszystko, co wykryto, zaczynając od najwyższego ryzyka",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://cursor.com/blog/security-incident-update",
+            "link": "https://cursor.com/blog/security-incident-update#:~:text=Rotated%20every%20exposed%20Cursor%20credential%20we%20found%2C%20highest%20risk%20first",
+            "cytat": "Rotated every exposed Cursor credential we found, highest risk first.",
+            "uwaga": "Źródło: „każde ujawnione poświadczenie Cursora, jakie znaleźliśmy”. Post: „wszystko, co wykryto” to drobne uogólnienie, ale nie zmienia sensu w kontekście zdania. Jedno źródło."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "",
+            "link": "",
+            "cytat": "",
+            "uwaga": "Podmioty (Cursor, Fireworks, atakujący) nie są pomieszane; liczby mają właściwy zakres (0,05% bez Privacy Mode, 0,01% klientów z API); LinkedIn i X spójne. „Według Cursora” stoi przy kluczu Fireworks i Privacy Mode. Wnioski (stack trace z .env, krótko żyjące klucze, „najważniejsza część”) to opinia Kuby podana jako opinia. „W tej części historii nikt nie przejął samego agenta” jest zawężone (źródło opisuje też złośliwe rozszerzenie w marketplace, ale post o nim świadomie nie mówi). Pytanie końcowe pasuje do tezy."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t2",
+      "rodzaj": "temat",
+      "temat": "Specyfikacja do 10% czasu",
+      "link_newsa": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+      "tytul_newsa": "Jak z AI pracuje doświadczony architekt z XTB",
+      "kat": "Specyfikacja przed kodem ma być krótka i znikać po wdrożeniu, a wiedza dla agentów ma żyć we wspólnej konfiguracji zespołu.",
+      "linkedin": "Doświadczony konsultant zbudował z AI cały moduł migracji w tydzień, a potem większość z niego wyrzucił.\n\nOpowiada o tym architekt i lider zespołu z XTB, który pracuje na regulowanej platformie handlowej, gdzie błędy są drogie. Kod opierał się na założeniach, które były nieaktualne: źle odgadniętego kontraktu gRPC dla jednego endpointu, wzorca zakazanego w zespole od miesięcy i starej nazwy tematu w magistrali zdarzeń. Według architekta problemem nie była AI, tylko brak specyfikacji.\n\nDlatego każda większa praca przechodzi tam przez trzy etapy, zanim powstanie kod: wymagania, projekt i zadania. Praktyczna zasada jest taka, że specyfikacja nie powinna zajmować więcej niż około 10% czasu implementacji. Zwykle to dwie strony i pół dnia pisania. Jeśli wychodzi więcej, to według architekta prawdopodobnie przekombinowany dokument. Leży w repozytorium obok kodu, przechodzi review i jest usuwana po wdrożeniu, bo nieaktualna specyfikacja daje fałszywą pewność, a to gorsze niż brak dokumentu.\n\nPodoba mi się to podejście, bo traktuje specyfikację jak narzędzie do pracy, a nie dokument do archiwum. Rozumiem też logikę usuwania, ale zostawiłbym gdzieś zapis, dlaczego podjęto daną decyzję. Kod pokaże, co zrobiono, a powodów po tygodniu nikt już nie pamięta.\n\nZ perspektywy managera ciekawe jest to, że zespół ma wspólny plik CLAUDE.md, bibliotekę komend i subagentów, na przykład do przeglądu kodu i audytu bezpieczeństwa. Wiedza, której agent potrzebuje, siedzi więc we wspólnej konfiguracji, a nie w głowach poszczególnych osób. To moja interpretacja, bo źródło nie łączy tego z historią o migracji. Warto sprawdzić, ile z takiej wiedzy u nas leży tylko w głowach.\n\nGdzie w Waszym zespole ląduje wiedza „dlaczego tak”, skoro specyfikacja po wdrożeniu znika?",
+      "komentarz": "Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach\nŹródło (fragment książki \"The Multiplier Mindset\", wpis sponsorowany przez Unblocked): https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+      "x": [
+        "Doświadczony konsultant zbudował z AI cały moduł migracji w tydzień, a potem większość wyrzucił. Kod opierał się na nieaktualnych założeniach o kontraktach, wzorcach i nazwach w systemie.",
+        "Architekt z XTB wyciągnął z tego prostą zasadę: każda większa praca przechodzi przez wymagania, projekt i zadania, zanim powstanie kod.",
+        "Zasada praktyczna: specyfikacja nie powinna zajmować więcej niż ok. 10% czasu implementacji. Zwykle to dwie strony i pół dnia pisania. Leży w repozytorium obok kodu i jest usuwana po wdrożeniu, bo nieaktualna daje fałszywą pewność.",
+        "Zespół ma też wspólny CLAUDE.md, komendy i subagentów do review oraz audytu bezpieczeństwa. Wiedza dla agentów jest w konfiguracji, nie w głowach.",
+        "Zostawiłbym tylko zapis, dlaczego podjęto daną decyzję. Gdzie to trzymacie, skoro specyfikacja znika? Więcej w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach"
+      ],
+      "obrazek": {
+        "wybrany": "brak",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "ok. 10%",
+          "podpis": "tyle czasu implementacji powinno zajmować napisanie specyfikacji",
+          "zrodlo": "newsletter.eng-leadership.com",
+          "styl": "notatka"
+        },
+        "prompt": "Minimalistyczna ilustracja w stylu papieru i tuszu: cienki, dwustronicowy zszyty dokument przypięty do tablicy korkowej obok dużo grubszego stosu kartek, róg cienkiego dokumentu lekko zawinięty, miękkie światło dzienne, wyciszone kolory z jednym pomarańczowym akcentem, motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "plik": "obrazki/t2.png",
+        "mem": {
+          "szablon": "Expanding Brain",
+          "link": "https://imgflip.com/memegenerator/Expanding-Brain",
+          "podglad": "https://i.imgflip.com/4/1jwhww.jpg",
+          "tekst": "1: Pisać kod bez specyfikacji\n2: Pisać specyfikację na czterdzieści stron\n3: Specyfikacja na dwie strony i pół dnia\n4: Specyfikacja znika po wdrożeniu, ale powody decyzji zostają zapisane"
+        },
+        "infografika_plik": "obrazki/t2.png"
+      },
+      "termin": "2026-11-24 08:30",
+      "fakty": [
+        "Konsultant zbudował moduł migracji w tydzień i większość odrzucił; przyczyny (kontrakt gRPC, wzorzec async pipe zakazany miesiące wcześniej, zmieniona nazwa tematu EventBus) – artykuł, sekcja o genezie SDD; z tekstu nie wynika wprost, że konsultant był z zespołu XTB, post mówi tylko 'doświadczony konsultant'",
+        "Architekt i lider zespołu z XTB (Jarosław Żołnowski), regulowana platforma handlowa – artykuł/opis w dane.csv",
+        "Specyfikacja do ok. 10% czasu implementacji, zwykle dwie strony i ok. pół dnia, w repozytorium obok kodu, review przy zmianach, usuwana po wdrożeniu, nieaktualna gorsza niż brak – artykuł",
+        "Wspólny CLAUDE.md, biblioteka komend, subagenci (code reviewer, audytor bezpieczeństwa, pisanie testów) – artykuł",
+        "Zdania o zapisie decyzji i wiedzy w głowach to opinia Kuby, nie fakt ze źródła. Tekst to fragment książki The Multiplier Mindset, wpis sponsorowany przez Unblocked; sponsor i jego liczby (83%/48%) pominięte celowo."
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] „ok. 10%” to heurystyka, nie reguła; „kod opierał się na nieaktualnych założeniach” (nie agent); usunięta interpretacja „zastępuje budowanie”. [weryfikacja] kontrakt gRPC dla jednego endpointu; zdanie o CLAUDE.md oznaczone jako interpretacja.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t2",
+        "data": "2026-11-19 19:00",
+        "fakty": [
+          {
+            "fakt": "Źle odgadnięty kontrakt między serwisami (jeden z nieaktualnych założeń w kodzie konsultanta)",
+            "gdzie": "linkedin",
+            "status": "rozbieżność",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=The%20gRPC%20contract%20he%27d%20assumed",
+            "cytat": "The gRPC contract he'd assumed for one endpoint turned out to be wrong.",
+            "uwaga": "Źródło mówi o kontrakcie gRPC dla jednego endpointu i nie precyzuje, że chodzi o kontrakt „między serwisami” (wcześniej wspomina tylko, że mikrofrontendy komunikują się z backendem przez gRPC-web). Poprawka w LinkedIn: „źle odgadniętego kontraktu gRPC dla jednego endpointu” albo „źle założonego kontraktu API”. Wersja X („nieaktualnych założeniach o kontraktach”) jest bezpieczna. Jedno źródło (fragment książki The Multiplier Mindset, relacja samego architekta; wpis sponsorowany przez Unblocked); niezależnego drugiego źródła nie znalazłem."
+          },
+          {
+            "fakt": "Spójność: „Wiedza, której agent potrzebuje, żeby nie wpaść w opisane wyżej pułapki, siedzi we wspólnej konfiguracji”",
+            "gdzie": "linkedin",
+            "status": "rozbieżność",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=The%20team%20shares%20a%20common%20CLAUDE.md%20file",
+            "cytat": "The team shares a common CLAUDE.md file that encodes architectural decisions and constraints",
+            "uwaga": "Źródło opisuje wspólny CLAUDE.md, komendy i subagentów, ale nie łączy ich z incydentem z modułem migracji (nie mówi, że zapobiegają tym konkretnym pułapkom). „Heads” w źródle dotyczy plików skills. To wniosek Kuby podany jako ciąg przyczynowy. Poprawka: „Wiedza o decyzjach i ograniczeniach architektury, której agent potrzebuje, siedzi we wspólnej konfiguracji, a nie w głowach poszczególnych osób” (bez „opisanych wyżej pułapek”) albo „moim zdaniem to właśnie taka wiedza chroniłaby przed pułapkami z tej historii”."
+          },
+          {
+            "fakt": "Doświadczony konsultant zbudował z AI moduł migracji w tydzień, a potem większość wyrzucił",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=By%20Thursday%2C%20he%20was%20deleting%20almost%20everything",
+            "cytat": "By Thursday, he was deleting almost everything he had just built.",
+            "uwaga": "Źródło: „one of our senior consultants”, cały tydzień migracji modułu z AngularJS, w środę gotowy komponent, serwis, testy i szkic MR, „Thanks to AI assistance, the code was flying together”. Jedno źródło (fragment książki The Multiplier Mindset, relacja samego architekta; wpis sponsorowany przez Unblocked); niezależnego drugiego źródła nie znalazłem."
+          },
+          {
+            "fakt": "Kod opierał się na nieaktualnych założeniach: wzorzec zakazany w zespole od miesięcy i stara nazwa tematu w magistrali zdarzeń",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=the%20EventBus%20topic%20he%27d%20subscribed%20to",
+            "cytat": "the EventBus topic he'd subscribed to had been renamed two sprints earlier.",
+            "uwaga": "Wzorzec: „async pipe instead of signals, which we'd banned in new code months earlier”. Sformułowanie posta już nie przypisuje założeń agentowi. Jedno źródło (relacja samego architekta, wpis sponsorowany)."
+          },
+          {
+            "fakt": "Według architekta problemem nie była AI, tylko brak specyfikacji",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=None%20of%20this%20was%20the%20AI%27s%20fault",
+            "cytat": "None of this was the AI's fault. There just wasn't a spec.",
+            "uwaga": "Jedno źródło (relacja samego architekta; wpis sponsorowany przez Unblocked)."
+          },
+          {
+            "fakt": "Architekt i lider zespołu z XTB (Jarosław Żołnowski), regulowana platforma handlowa, gdzie błędy są drogie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=a%20regulated%20trading%20platform%20with%20real%20money",
+            "cytat": "a regulated trading platform with real money flowing through it",
+            "uwaga": "Żołnowski: Team Lead and Architect w XTB. „Błędy są drogie” to parafraza „real money”. Autorem tekstu jest Gregor Ojstersek (to jego newsletter i książka), post słusznie przypisuje opowieść architektowi. Jedno źródło."
+          },
+          {
+            "fakt": "Każda większa praca przechodzi trzy etapy przed kodem: wymagania, projekt, zadania",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=a%20three-phase%20contract%20that%20goes%20Requirements%2C%20Design%2C%20Tasks",
+            "cytat": "a three-phase contract that goes Requirements, Design, Tasks, and that every real piece of work on our platform has to pass through before code gets written",
+            "uwaga": "Jedno źródło (relacja samego architekta; wpis sponsorowany)."
+          },
+          {
+            "fakt": "Specyfikacja nie powinna zajmować więcej niż około 10% czasu implementacji; jeśli więcej, prawdopodobnie przekombinowana",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=If%20your%20spec%20is%20taking%20more%20than%20about%2010%25",
+            "cytat": "If your spec is taking more than about 10% of the time you expect implementation to take, you've probably overengineered it.",
+            "uwaga": "Po poprawce post oddaje heurystykę („około”, „prawdopodobnie”, „praktyczna zasada”); infografika mówi „orientacyjnie”. Jedno źródło (relacja samego architekta; wpis sponsorowany)."
+          },
+          {
+            "fakt": "Zwykle dwie strony i pół dnia pisania",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=Most%20of%20ours%20fit%20on%20two%20pages",
+            "cytat": "Most of ours fit on two pages and take half a day to write.",
+            "uwaga": "Jedno źródło (relacja samego architekta; wpis sponsorowany)."
+          },
+          {
+            "fakt": "Specyfikacja leży w repozytorium obok kodu, przechodzi review i jest usuwana po wdrożeniu, bo nieaktualna daje fałszywą pewność",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=We%20version%20them%20in%20the%20monorepo%20alongside%20the%20code",
+            "cytat": "We version them in the monorepo alongside the code, review them when they change, and delete them when the work ships.",
+            "uwaga": "Fałszywa pewność: „A stale spec is worse than no spec, because it gives you false confidence.” Jedno źródło (relacja samego architekta; wpis sponsorowany)."
+          },
+          {
+            "fakt": "Zespół ma wspólny plik CLAUDE.md, bibliotekę komend i subagentów, np. do przeglądu kodu i audytu bezpieczeństwa",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=The%20team%20shares%20a%20common%20CLAUDE.md%20file",
+            "cytat": "Specialized subagents, a code reviewer, a security auditor, and a test writer",
+            "uwaga": "Komendy: „a command library”. Jedno źródło (relacja samego architekta; wpis sponsorowany)."
+          },
+          {
+            "fakt": "Wiedza dla agentów jest we wspólnej konfiguracji, nie w głowach poszczególnych osób",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+            "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works#:~:text=used%20to%20live%20only%20in%20senior%20engineers%27%20heads",
+            "cytat": "that used to live only in senior engineers' heads",
+            "uwaga": "Źródło mówi to o plikach skills (wiedza domenowa); uogólnienie na wspólną konfigurację dopuszczalne. Jedno źródło (wpis sponsorowany)."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "",
+            "link": "",
+            "cytat": "",
+            "uwaga": "Poprzednie trzy zastrzeżenia (agent jako nosiciel założeń, twarda reguła 10%, „zastępuje budowanie”) są naprawione. LinkedIn i X mówią to samo (10%, dwie strony, pół dnia, XTB). Opinie Kuby oznaczone jako opinie, pytanie pasuje do tezy. Pozostały dwa drobne punkty opisane wyżej: „kontrakt między serwisami” i „pułapki opisane wyżej” w akapicie o CLAUDE.md."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t3",
+      "rodzaj": "temat",
+      "temat": "Koszt pilnowania agentów AI",
+      "link_newsa": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+      "tytul_newsa": "Jak zmierzyć czas, który ludzie tracą na pilnowanie agentów AI",
+      "kat": "Zanim policzysz, ile czasu zaoszczędzi agent, policz pracę człowieka potrzebną do akceptowalnego wyniku, wliczając zadania porzucone.",
+      "linkedin": "Trzy zadania dla agenta, 45 minut pracy człowieka, 6 dolarów i tylko dwa wyniki przyjęte. Prosty rachunek, ale wszystko zależy od tego, przez co go podzielisz.\n\nTo przykład z propozycji metody pomiaru, którą opisał doradca CTO z Singapuru. Liczby są wymyślone na potrzeby wyliczenia, to nie wyniki żadnego badania. Idea jest taka, że koszt liczysz na zadanie biznesowe, razem z podejściami odrzuconymi i porzuconymi, a sumę dzielisz przez zadania przyjęte. W przykładzie wychodzi 22,5 minuty człowieka i 3 dolary na jedno przyjęte zadanie.\n\nReszta zasad też jest rozsądna. Zadanie zostaje jednym zadaniem, nawet gdy agent próbował trzy razy, a nowy czat nie zeruje kosztu. Jeśli w końcu człowiek zrobił to ręcznie, zadanie się liczy, ale z oznaczeniem trybu ukończenia, żeby ratowanie nie wyglądało na udane delegowanie. Brak zapisu czasu to brak danych, a nie zero.\n\nNajbardziej podoba mi się porównanie z grupą, która robi te same zadania bez agenta, przydzielone z góry. Mierzenie sobie ręcznej pracy po fakcie nie działa, bo to samo zadanie robisz już ze znanym rozwiązaniem. Mam jednak zastrzeżenie: taki rejestr to dodatkowa praca, więc na początek wziąłbym jedną klasę zadań, np. poprawki drobnych błędów, a nie całe zespoły.\n\nSzybsze code review też nie musi znaczyć, że agent robi lepszą robotę. Równie dobrze wynik może być łatwiejszy albo sprawdzanie słabsze, a sam stoper tego nie rozróżni. Zanim więc plan zespołu oprzesz na założonym czasie nadzoru, dobrze mieć własne pomiary z jednej klasy zadań.\n\nJak u Ciebie odróżniasz krótsze review, bo wynik jest dobry, od krótszego, bo ktoś sprawdził go po łebkach?",
+      "komentarz": "Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach\nŹródło: https://cutler.sg/blog/2026-10-measure-agent-review-time",
+      "x": [
+        "Trzy zadania dla agenta: 45 minut pracy człowieka, 6 dolarów, dwa wyniki przyjęte. Ile kosztuje jedno przyjęte zadanie? Zależy, przez co podzielisz.",
+        "To przykład z propozycji metody pomiaru (doradca CTO z Singapuru). Liczby są syntetyczne, to arytmetyka, nie badanie. Dzielisz przez przyjęte: 22,5 minuty i 3 dolary na zadanie.",
+        "Porzucone próby i zadania dokończone ręcznie zostają w rachunku. Ręczne przejęcie liczy się jako ukończone, ale z oznaczeniem trybu ukończenia, żeby ratowanie nie wyglądało na udaną delegację.",
+        "Czas pilnowania najlepiej porównać z grupą robiącą te same zadania bez agenta, przydzieloną z góry. Mierzenie sobie ręcznej pracy po fakcie nie działa, bo już znasz rozwiązanie.",
+        "Krótsze review nie musi znaczyć lepszego wyniku. Może być łatwiejszy albo słabiej sprawdzony. Jak to u Ciebie rozróżniasz?\n\nPrzegląd tygodnia: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach"
+      ],
+      "obrazek": {
+        "wybrany": "brak",
+        "infografika": {
+          "rodzaj": "porownanie",
+          "tytul": "Minuty człowieka na zadanie (przykład wyliczeniowy)",
+          "jednostka": " min",
+          "elementy": [
+            {
+              "etykieta": "Na każde rozpoczęte",
+              "wartosc": 15
+            },
+            {
+              "etykieta": "Na każde przyjęte",
+              "wartosc": 22.5,
+              "wyroznij": true
+            }
+          ],
+          "zrodlo": "przykład z propozycji metody pomiaru, liczby syntetyczne",
+          "numer": 47
+        },
+        "prompt": "Minimalistyczna płaska ilustracja na jednolitym złamanej bieli tle: trzy identyczne papierowe karty zadań w rzędzie, dwie oznaczone zielonym haczykiem, jedna przekreślona ołówkiem, obok mały analogowy stoper, prosty rysunek jak z ręki, wyciszone kolory, motyw na środku kadru z zapasem na brzegach, bez tekstu, bez ludzi i robotów, format 3:4.",
+        "plik": "obrazki/t3.png",
+        "mem": {
+          "szablon": "Change My Mind",
+          "link": "https://imgflip.com/memegenerator/Change-My-Mind",
+          "podglad": "https://i.imgflip.com/4/24y43o.jpg",
+          "tekst": "Czas, który człowiek poświęca na pilnowanie agenta, też jest kosztem agenta"
+        },
+        "infografika_plik": "obrazki/t3.png"
+      },
+      "termin": "2026-11-25 08:30",
+      "fakty": [
+        "Trzy zadania, 45 minut człowieka, 6 dolarów, dwa przyjęte, 22,5 min i 3 dolary na przyjęte: przykład z posta, autor sam oznacza go jako 'synthetic arithmetic, not collected data' (propozycja metody, nie eksperyment).",
+        "15 minut i 2 dolary na rozpoczęte zadanie: własna arytmetyka (45/3, 6/3), nie ma tego w źródle.",
+        "Autor: Michael Cutler, doradca CTO z Singapuru (opis z wydania), wpis z 16.10.2026.",
+        "Zasady (zadanie jako jednostka, przejęcie ręczne z adnotacją, brak zapisu = brak danych, losowe przydzielenie do grupy bez agenta, nie mierzyć ręcznej pracy po fakcie): artykuł.",
+        "Szybsze review może wynikać z łatwiejszego wyniku lub słabszego sprawdzenia: zastrzeżenie z artykułu.",
+        "Przykład 'poprawki drobnych błędów' jako klasa zadań: artykuł podaje bounded bug fix jako przykład klasy."
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] usunięte błędne zdanie o dzieleniu przez rozpoczęte (15 min/2 USD); „przejęte ręcznie” → oznaczenie trybu ukończenia.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t3",
+        "data": "2026-11-19 20:00",
+        "fakty": [
+          {
+            "fakt": "Przykład: trzy zadania, 45 minut człowieka, 6 dolarów, dwa przyjęte; 22,5 min i 3 dolary na przyjęte zadanie",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time#:~:text=three%20started%20tasks%20consume%2045%20human%20minutes",
+            "cytat": "three started tasks consume 45 human minutes and $6 in agent/tool charges",
+            "uwaga": "Jedno źródło (blog autora o własnej propozycji); drugiego niezależnego źródła nie ma (poprzednia weryfikacja: WebSearch nie zwrócił wpisu)."
+          },
+          {
+            "fakt": "Liczby w przykładzie są wymyślone (syntetyczne), to nie wyniki badania",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time#:~:text=synthetic%20arithmetic",
+            "cytat": "synthetic arithmetic, not collected data",
+            "uwaga": "Jedno źródło (blog autora o własnej propozycji); drugiego niezależnego źródła nie ma (poprzednia weryfikacja: WebSearch nie zwrócił wpisu)."
+          },
+          {
+            "fakt": "Koszt liczony na zadanie, z odrzuconymi i porzuconymi próbami; suma dzielona przez zadania przyjęte",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time#:~:text=All%22%20includes%20review%20and%20rework",
+            "cytat": "\"All\" includes review and rework on rejected or abandoned tasks.",
+            "uwaga": "Jedno źródło (blog autora o własnej propozycji); drugiego niezależnego źródła nie ma (poprzednia weryfikacja: WebSearch nie zwrócił wpisu)."
+          },
+          {
+            "fakt": "Zadanie zostaje jednym zadaniem mimo trzech prób; nowy czat nie zeruje kosztu",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time#:~:text=A%20rejected%20first%20patch%20followed%20by%20two%20revisions",
+            "cytat": "A rejected first patch followed by two revisions is one task with three attempts.",
+            "uwaga": "Jedno źródło (blog autora o własnej propozycji); drugiego niezależnego źródła nie ma (poprzednia weryfikacja: WebSearch nie zwrócił wpisu)."
+          },
+          {
+            "fakt": "Ręczne przejęcie liczy się, ale z oznaczeniem trybu ukończenia, by ratowanie nie wyglądało na udaną delegację",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time#:~:text=Count%20that%20completed%20task%2C%20but%20label",
+            "cytat": "Count that completed task, but label its completion mode explicitly.",
+            "uwaga": "Jedno źródło (blog autora o własnej propozycji); drugiego niezależnego źródła nie ma (poprzednia weryfikacja: WebSearch nie zwrócił wpisu)."
+          },
+          {
+            "fakt": "Brak zapisu czasu to brak danych, nie zero",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time#:~:text=A%20missed%20timer%20entry",
+            "cytat": "A missed timer entry is missing data.",
+            "uwaga": "Jedno źródło (blog autora o własnej propozycji); drugiego niezależnego źródła nie ma (poprzednia weryfikacja: WebSearch nie zwrócił wpisu)."
+          },
+          {
+            "fakt": "Porównanie z grupą bez agenta przydzieloną z góry; nie mierzyć ręcznej pracy po fakcie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time#:~:text=Avoid%20doing%20a%20task%20with%20an%20agent",
+            "cytat": "Avoid doing a task with an agent and then timing yourself doing it manually.",
+            "uwaga": "Jedno źródło (blog autora o własnej propozycji); drugiego niezależnego źródła nie ma (poprzednia weryfikacja: WebSearch nie zwrócił wpisu)."
+          },
+          {
+            "fakt": "Szybsze review może oznaczać łatwiejszy wynik lub słabsze sprawdzenie; stoper tego nie rozróżni",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time#:~:text=A%20shorter%20review%20can%20mean",
+            "cytat": "A shorter review can mean an easier artifact or a weaker review; the timer cannot distinguish those by itself.",
+            "uwaga": "Jedno źródło (blog autora o własnej propozycji); drugiego niezależnego źródła nie ma (poprzednia weryfikacja: WebSearch nie zwrócił wpisu)."
+          },
+          {
+            "fakt": "Klasa zadań, np. poprawki drobnych błędów (bounded bug fix)",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time#:~:text=Choose%20one%20task%20class",
+            "cytat": "Choose one task class: a bounded bug fix, a source-backed research note, a routine data reconciliation.",
+            "uwaga": "Jedno źródło. Rada początku od jednej klasy jest w źródle; zastrzeżenie o dodatkowej pracy rejestru to opinia Kuby."
+          },
+          {
+            "fakt": "Autor to doradca CTO z Singapuru",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "cytat": "© 2026 Michael Cutler · Singapore",
+            "uwaga": "Strona: Fractional CTO, Singapur. Jedno źródło (strona autora o sobie)."
+          },
+          {
+            "fakt": "Infografika: 15 min na rozpoczęte zadanie (45/3) i 22,5 min na przyjęte",
+            "gdzie": "infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+            "cytat": "",
+            "uwaga": "15 min to własna arytmetyka (źródło jej nie podaje, tekst posta już jej nie zawiera), poprawna; podpis „przykład z propozycji metody, liczby syntetyczne” wystarczy, ale można dodać „15 min: wyliczenie własne”."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "",
+            "link": "",
+            "cytat": "",
+            "uwaga": "Poprawki zadziałały: usunięto błędne zdanie o dzieleniu przez rozpoczęte i cudzysłów „przejęte ręcznie”. LinkedIn i X mają te same liczby (45 min, 6 USD, 22,5 min, 3 USD), opinie Kuby oznaczone jako opinie, przykład jasno syntetyczny, pytanie dotyczy tezy o review."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t7",
+      "rodzaj": "temat",
+      "temat": "Darmok i odporność na najgorszy przypadek",
+      "link_newsa": "https://arxiv.org/abs/2611.13557",
+      "tytul_newsa": "Darmok – system AI, który wygrał mistrzostwa w krzyżówkach kryptycznych",
+      "kat": "Zapasowe ścieżki wyglądają na zbędne w średnim dniu, a o jakości systemu z AI decyduje najgorszy przypadek.",
+      "linkedin": "Według autora pracy system AI o nazwie Darmok rozwiązał wszystkie siedem krzyżówek kryptycznych na mistrzostwach Times Crossword Championship w Londynie bez błędu, a finał zajął mu 6 min 52 s.\n\nTo o ponad 3 minuty szybciej niż ludzki mistrz. Krzyżówki kryptyczne mają podpowiedzi, w których definicja i gra słów ukryte są pod mylącym, zwykłym zdaniem, więc to trudniejszy test niż typowe hasła. W zasadach turnieju siatka z choć jednym błędnym albo pustym polem ląduje za wszystkimi poprawnymi, bez względu na czas.\n\nNajciekawsze jest dla mnie to, jak to zbudowano. Trzy niezależne modele sprawdzają nawzajem swoje odpowiedzi, a litery potwierdzone na przecięciach pomagają ruszyć trudniejsze podpowiedzi. Są też zapasowe ścieżki. W zwykłe dni usunięcie ich prawie nie zmieniało dokładności, więc cały układ mógł wyglądać na przekombinowany. Najbardziej liczyły się dopiero w najgorsze dni z pięciu miesięcy codziennych testów i w finale, gdy główny model mocno zwolnił.\n\nTo częsty mechanizm. Przy przeglądzie kosztów albo uproszczeniu architektury takie elementy wyglądają na pierwszych kandydatów do wycięcia, bo średnio nic nie dają. Tyle że o odbiorze systemu decyduje zwykle jeden zły dzień, a nie średnia. Jeśli to deklaracja jednego autora, trzeba zachować dystans, ale wniosek jest rozsądny również bez niej.\n\nZanim więc uprościmy agenta albo pipeline z AI, dobrze sprawdzić, jak zachowuje się, gdy dostawca modelu odpowiada znacznie wolniej albo wcale. Wtedy okaże się, które zapasowe elementy faktycznie są potrzebne. Warto też mierzyć najgorszy przypadek, a nie samą średnią.\n\nCzy testujesz swoje systemy z AI w warunkach awarii dostawcy modelu, czy dopiero gdy się zdarzy?",
+      "komentarz": "Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach\nŹródło: https://arxiv.org/abs/2611.13557",
+      "x": [
+        "Według autora pracy system AI Darmok rozwiązał wszystkie 7 krzyżówek kryptycznych na mistrzostwach Times Crossword Championship w Londynie bez błędu. Finał: 6 min 52 s, o ponad 3 minuty szybciej niż ludzki mistrz.",
+        "Wynik robi wrażenie, ale ciekawsza jest architektura (według autora pracy): trzy niezależne modele sprawdzają nawzajem swoje odpowiedzi, a są też zapasowe ścieżki, które najbardziej liczyły się, gdy główny model zwalniał.",
+        "W zwykłe dni usunięcie zapasów prawie nie zmieniało dokładności, więc całość mogła wyglądać na przekombinowaną. Najbardziej liczyły się w najgorsze dni testów i w finale, gdy główny model mocno zwolnił.",
+        "W turnieju siatka z jednym błędem ląduje za wszystkimi poprawnymi, bez względu na czas. Podobnie bywa w produkcji: jeden zły dzień zapamiętują wszyscy, średnia nikogo nie obchodzi.",
+        "Zanim uprościsz agenta, sprawdź, co się dzieje, gdy dostawca modelu odpowiada znacznie wolniej. Opis i pełny przegląd tygodnia: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach"
+      ],
+      "obrazek": {
+        "wybrany": "brak",
+        "prompt": "Minimalistyczna ilustracja na papierowym tle: drewniane biurko, na nim w rzędzie trzy identyczne filiżanki kawy, a za nimi mała zapasowa lampa, wyłączona, stoi obok włączonej, miękkie światło dzienne, płaskie wyciszone kolory, motyw na środku kadru z zapasem na brzegach, bez tekstu, bez ludzi i robotów, format 3:4.",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "3 min 13 s",
+          "podpis": "o tyle Darmok był szybszy od ludzkiego mistrza w finale, według autora pracy",
+          "zrodlo": "arXiv 2611.13557",
+          "styl": "notatka"
+        },
+        "mem": {
+          "szablon": "Left Exit 12 Off Ramp",
+          "link": "https://imgflip.com/memegenerator/Left-Exit-12-Off-Ramp",
+          "podglad": "https://i.imgflip.com/4/22bdq6.jpg",
+          "tekst": "prosto: Sprawdzić, co się stanie w najgorszy dzień\nzjazd: Wyciąć zapasowe ścieżki, bo średnio nic nie dają\nauto: Przegląd kosztów"
+        },
+        "infografika_plik": "obrazki/t7.png"
+      },
+      "termin": "2026-11-26 08:30",
+      "fakty": [
+        "Siedem krzyżówek bez błędu, szybciej niż każdy człowiek w każdej rundzie, finał 6 min 52 s, 3 min 13 s przed ludzkim mistrzem, 5 miesięcy codziennej oceny: abstrakt arXiv 2611.13557 (jedyny autor, S. Chatterjee, UT Austin; brak niezależnego źródła, więc post pisze 'według autora pracy').",
+        "Zasada turnieju (siatka z błędem lub pustym polem za wszystkimi bezbłędnymi): abstrakt.",
+        "Zapasy prawie nie zmieniały dokładności w normalnych warunkach, a w najgorsze dni i w finale (poważne spowolnienie głównego modelu) poniosły wynik: abstrakt.",
+        "Akapit „To częsty mechanizm” to ogólna perspektywa managera, nie anegdota; do akceptacji Kuby.",
+        "Nie podano nazw modeli ani szczegółów zapasowych ścieżek (strona to tylko abstrakt) — post ich nie wymienia."
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] zapasowe ścieżki: „najbardziej liczyły się” w najgorsze dni i finale (bez „uratowały”, „zawieszania się”); całość według autora pracy (abstrakt arXiv).",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t7",
+        "data": "2026-11-19 20:00",
+        "fakty": [
+          {
+            "fakt": "Spójność: LinkedIn „Jeśli to deklaracja jednego zespołu”",
+            "gdzie": "linkedin",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://arxiv.org/abs/2611.13557",
+            "link": "https://arxiv.org/abs/2611.13557",
+            "cytat": "Siddhartha Chatterjee, The University of Texas at Austin",
+            "uwaga": "Praca ma jednego autora (S. Chatterjee, UT Austin), nie zespół. Poprawka: „Jeśli to deklaracja jednego autora”. Ponadto w LinkedIn „według autora pracy” stoi tylko przy pierwszym zdaniu; opis architektury (trzy modele, zapasy) też pochodzi z abstraktu autora, co częściowo pokrywa ta uwaga o deklaracji."
+          },
+          {
+            "fakt": "Darmok rozwiązał wszystkie siedem krzyżówek bez błędu na Times Crossword Championship w Londynie (według autora pracy)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://arxiv.org/abs/2611.13557",
+            "link": "https://arxiv.org/abs/2611.13557#:~:text=Darmok%20solved%20all%20seven%20championship%20puzzles%20error-free",
+            "cytat": "Darmok solved all seven championship puzzles error-free and finished faster than every human competitor in every round",
+            "uwaga": "Jedno źródło (abstrakt autora o własnym systemie; brak niezależnego potwierdzenia). Abstrakt: 55. Times Crossword Championship w Londynie. Media (artiverse.ca, britbrief.co.uk) potwierdzają tylko wygraną w finale ok. 3 min nad Liamem Hughesem, nie siedem krzyżówek."
+          },
+          {
+            "fakt": "Finał zajął 6 min 52 s, o ponad 3 minuty (3 min 13 s) szybciej niż ludzki mistrz",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://arxiv.org/abs/2611.13557",
+            "link": "https://arxiv.org/abs/2611.13557",
+            "cytat": "Final: 6m 52s, 3m 13s ahead of the human champion (parafraza abstraktu)",
+            "uwaga": "Jedno źródło (abstrakt autora o własnym systemie; brak niezależnego potwierdzenia). Margines ok. 3 minut potwierdzają niezależnie wtórne serwisy (artiverse.ca, britbrief.co.uk), ale bez 6:52. Link bez fragmentu, bo cytat jest parafrazą."
+          },
+          {
+            "fakt": "Siatka z jednym błędnym lub pustym polem ląduje za wszystkimi bezbłędnymi, bez względu na czas",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://arxiv.org/abs/2611.13557",
+            "link": "https://arxiv.org/abs/2611.13557",
+            "cytat": "a grid with even one wrong or blank square ranks behind all error-free solutions, regardless of speed (parafraza abstraktu)",
+            "uwaga": "Jedno źródło (abstrakt autora o własnym systemie; brak niezależnego potwierdzenia). Zasada turnieju z abstraktu."
+          },
+          {
+            "fakt": "Trzy niezależne modele sprawdzają nawzajem odpowiedzi; potwierdzone litery z przecięć pomagają ruszyć trudniejsze podpowiedzi",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://arxiv.org/abs/2611.13557",
+            "link": "https://arxiv.org/abs/2611.13557",
+            "cytat": "cross-checks clues across three independent models ... verified crossing letters to unlock harder clues (parafraza abstraktu)",
+            "uwaga": "Jedno źródło (abstrakt autora o własnym systemie; brak niezależnego potwierdzenia). britbrief.co.uk wspomina cztery modele w całym systemie; nie weryfikowalne, post trzyma się abstraktu."
+          },
+          {
+            "fakt": "Zapasowe ścieżki: w zwykłe dni usunięcie prawie nie zmieniało dokładności; najbardziej liczyły się w najgorsze dni i w finale, gdy główny model mocno zwolnił",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://arxiv.org/abs/2611.13557",
+            "link": "https://arxiv.org/abs/2611.13557",
+            "cytat": "On the worst days of daily operation, and during a severe slowdown of the primary model in the live Championship Final, the backup paths carried the solve (parafraza abstraktu)",
+            "uwaga": "Jedno źródło (abstrakt autora o własnym systemie; brak niezależnego potwierdzenia). Sformułowanie „najbardziej liczyły się” jest zgodne i ostrożniejsze niż „uratowały”. Poprzednie rozbieżności („zawieszanie się”, „przejmują zadanie”, „uratowały wynik”) usunięte."
+          },
+          {
+            "fakt": "Pięć miesięcy codziennych testów (najgorsze dni z tego okresu)",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://arxiv.org/abs/2611.13557",
+            "link": "https://arxiv.org/abs/2611.13557#:~:text=five-month%20daily%20evaluation%20period",
+            "cytat": "five-month daily evaluation period",
+            "uwaga": "Jedno źródło (abstrakt autora o własnym systemie; brak niezależnego potwierdzenia). "
+          },
+          {
+            "fakt": "Gdy dostawca modelu odpowiada znacznie wolniej albo wcale (rada)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://arxiv.org/abs/2611.13557",
+            "link": "https://arxiv.org/abs/2611.13557",
+            "cytat": "cloud API stalls, timeouts, safety refusals, and reasoning loops (parafraza abstraktu)",
+            "uwaga": "Jako zalecenie Kuby poprawne; abstrakt wymienia zawieszenia API i timeouty jako scenariusze, a w finale „severe slowdown of the primary model”. Post nie twierdzi, że w finale padł dostawca. Skala „kilka razy” usunięta."
+          },
+          {
+            "fakt": "Krzyżówki kryptyczne: definicja i gra słów ukryte pod mylącym zdaniem",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://arxiv.org/abs/2611.13557",
+            "link": "https://arxiv.org/abs/2611.13557",
+            "cytat": "British cryptic crosswords",
+            "uwaga": "Ogólna wiedza o gatunku, poprawna; nie pochodzi z abstraktu."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "",
+            "link": "",
+            "cytat": "",
+            "uwaga": "Poprzednie problemy (zapasowe „modele i kroki”, „uratowały wynik”, „kilka razy wolniej”) naprawione. LinkedIn i X mówią to samo (7 krzyżówek, 6:52, ponad 3 min, trzy modele, zapasy). Wnioski o średniej vs najgorszym dniu to opinia Kuby podana jako opinia, pytanie końcowe pasuje do tezy. Jedyna drobna uwaga to „zespołu” zamiast „autora” (osobny wpis)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "w-7g4bp",
+      "rodzaj": "temat",
+      "temat": "Lato: agenci AI w due diligence",
+      "link_newsa": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+      "tytul_newsa": "Polski startup Lato pozyskuje 4,7 mln dolarów na agentów AI do due diligence",
+      "kat": "Agent AI w pracy o wysokiej stawce jest użyteczny dopiero wtedy, gdy jego wniosek da się prześledzić do źródła.",
+      "linkedin": "Założony przez Polaków startup Lato pozyskał 4,7 mln dolarów na agentów AI, którzy sami dzwonią do klientów i ekspertów spółki, jaką fundusz zamierza kupić.\n\nTo runda seed, prowadzona przez Air Street Capital i Axiom Partners. Lato automatyzuje commercial due diligence, czyli badanie pozycji rynkowej firmy przed inwestycją. Zwykle robią to konsultanci, którzy według Lato biorą za kilka tygodni pracy 300 tys. dolarów i więcej.\n\nAgenci sami szukają rozmówców, prowadzą z nimi rozmowy głosowe i łączą wyniki z danymi funduszu. Firma twierdzi, że skraca proces z tygodni do kilku godzin, a po stu dniach tempo sprzedaży odpowiada rocznym przychodom powyżej 1 mln dolarów. \n\nNajbardziej interesuje mnie jednak coś innego: analiza trafia do klienta razem z nagraniami i transkrypcjami rozmów. Przy decyzji o zakupie spółki nikt nie zaufa wnioskowi „bo tak policzył agent”, skoro ktoś będzie musiał za niego odpowiadać. Dzięki nagraniom wniosek da się prześledzić do konkretnej wypowiedzi.\n\nTo nie usuwa ryzyka. Prawnik cytowany w artykule zwraca uwagę na halucynacje i poufność danych, a inni na błędy w rozmowach agentów z ludźmi, zwłaszcza na początku. Nagrania pozwalają jednak te błędy znaleźć, zamiast ich nie widzieć.\n\nPrzy własnych agentach dobrze ustalić od początku, do czego wynik ma się dać prześledzić i kto na to znajdzie czas. Skrócenie pracy z tygodni do godzin działa tylko wtedy, gdy sprawdzenie wyniku nie zjada całej oszczędności.\n\nCzy w narzędziach AI, z których korzystasz, da się dojść od wyniku do źródła, czy trzeba wierzyć na słowo?",
+      "komentarz": "Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach\nŹródło: https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+      "x": [
+        "Założony przez Polaków startup Lato pozyskał 4,7 mln dolarów na agentów AI, którzy sami dzwonią do klientów i ekspertów spółki, jaką fundusz chce kupić. Robią commercial due diligence, czyli badanie pozycji rynkowej firmy przed inwestycją.",
+        "Konsultanci biorą za takie badanie według Lato 300 tys. dolarów i więcej za kilka tygodni pracy. Firma twierdzi, że jej agenci robią to w kilka godzin. To twierdzenia firmy, których nikt jeszcze niezależnie nie sprawdził.",
+        "Ciekawsze od szybkości: analiza trafia do klienta z nagraniami i transkrypcjami rozmów. Przy decyzji o zakupie spółki nikt nie zaufa wnioskowi „bo agent tak policzył”. Musi być do czego wrócić.",
+        "Nagrania nie usuwają ryzyka halucynacji czy błędów w rozmowach agentów z ludźmi, ale pozwalają je znaleźć. Przy własnych agentach warto zapytać: czy da się prześledzić wynik do źródła i kto ma na to czas?",
+        "Szerzej o tym i ponad 25 innych newsach z tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "prompt": "Minimalistyczna płaska ilustracja: pojedyncza papierowa teczka na zwykłym biurku, obok niej mała stara kaseta magnetofonowa i kilka zszytych wydruków, miękkie światło dzienne, wyciszone kolory z fioletowym akcentem, motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi (albo własne zdjęcie Kuby ze spotkania), format 3:4.",
+        "mem": {
+          "szablon": "Woman Yelling At Cat",
+          "link": "https://imgflip.com/memegenerator/Woman-Yelling-At-Cat",
+          "podglad": "https://i.imgflip.com/4/345v97.jpg",
+          "tekst": "kobieta: Nasz agent robi due diligence w kilka godzin!\nkot: A czy każdy wniosek da się prześledzić do źródła?"
+        },
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "4,7 mln $",
+          "podpis": "zebrał startup Lato założony przez Polaków na agentów AI do due diligence",
+          "zrodlo": "xyz.pl",
+          "styl": "notatka"
+        },
+        "plik": "obrazki/w-7g4bp.png",
+        "infografika_plik": "obrazki/w-7g4bp.png"
+      },
+      "termin": "2026-11-29 12:30",
+      "fakty": [
+        "4,7 mln dolarów, seed prowadzony przez Air Street Capital i Axiom Partners: treść artykułu xyz.pl (URL mówi 47 mln, to błąd w adresie).",
+        "300 tys. dolarów i więcej za kilka tygodni pracy konsultantów: według firmy Lato (artykuł).",
+        "Tygodnie do kilku godzin oraz sprzedaż po 100 dniach odpowiadająca rocznym przychodom powyżej 1 mln dolarów: twierdzenia firmy, niezweryfikowane.",
+        "Nagrania i transkrypcje dołączane do analizy: opis w artykule i dane.csv.",
+        "Ostrzeżenia o halucynacjach i poufności (adwokat Szymon Rozum) oraz o błędach w rozmowach agentów z ludźmi na początku (Łukasz Wierdak, Spire Capital Partners): z artykułu; w poście bez nazwisk.",
+        "Wniosek o prześledzeniu wyniku do źródła i czasie na sprawdzenie to opinia, nie fakt ze źródła."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[weryfikacja] „założony przez Polaków” zamiast „polski”; „tempo sprzedaży” po 100 dniach.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "w-7g4bp",
+        "data": "2026-11-19 13:00",
+        "fakty": [
+          {
+            "fakt": "Lato pozyskało 4,7 mln dolarów w rundzie seed",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "link": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/#:~:text=Startup%20LATO%20pozyska%C5%82%204%2C7%20mln",
+            "cytat": "Startup LATO pozyskał 4,7 mln dolarów w rundzie seed.",
+            "uwaga": "Źródło: artykuł xyz.pl (URL z '47 mln' to błąd w adresie, treść mówi 4,7). Kwoty nie potwierdziłem w drugim źródle (wyszukiwania i YC nie podają kwoty; Dealroom pokazuje tylko 125 tys. USD, dane niepełne) - praktycznie jedno źródło."
+          },
+          {
+            "fakt": "Rundę seed prowadzą Air Street Capital i Axiom Partners",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.ycombinator.com/companies/lato",
+            "link": "https://www.ycombinator.com/companies/lato",
+            "cytat": "wspólnie poprowadziły brytyjski fundusz venture capital Air Street Capital",
+            "uwaga": "Artykuł podaje obu liderów. Drugie źródło: strona YC Lato wymienia Air Street Capital i Axiom Partners wśród backerów (bez zaznaczenia, że prowadzili rundę)."
+          },
+          {
+            "fakt": "Konsultanci biorą według Lato 300 tys. dolarów i więcej za kilka tygodni pracy",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "link": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/#:~:text=zatrudniaj%C4%85%20konsultant%C3%B3w%2C%20kt%C3%B3rzy%20za%20dwa",
+            "cytat": "Później zatrudniają konsultantów, którzy za dwa, trzy tygodnie pracy biorą 300 tys. dolarów lub więcej.",
+            "uwaga": "Źródło mówi 'dwa, trzy tygodnie'; 'kilka tygodni' to OK. Twierdzenie firmy (Staniszewski). W poście YC Lato mowa o ok. 500 tys. dolarów i tygodniach - liczby firmy nie są spójne między materiałami, więc dobrze, że post przypisuje to Lato."
+          },
+          {
+            "fakt": "Firma twierdzi, że skraca proces z tygodni do kilku godzin",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "link": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/#:~:text=LATO%20pozwala%20go%20skr%C3%B3ci%C4%87%2C%20jak",
+            "cytat": "LATO pozwala go skrócić, jak wskazuje firma, do kilku godzin.",
+            "uwaga": "Jedno źródło, materiał firmy o sobie. W tym samym artykule Staniszewski mówi też o odpowiedziach 'w kilka dni zamiast tygodni', a YC Lato pisze o 'days' - 'kilka godzin' jest najbardziej optymistycznym wariantem, post słusznie oznacza to jako twierdzenie firmy."
+          },
+          {
+            "fakt": "Po stu dniach tempo sprzedaży odpowiada rocznym przychodom powyżej 1 mln dolarów",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "link": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/#:~:text=W%20ci%C4%85gu%20stu%20dni%20od%20startu",
+            "cytat": "W ciągu stu dni od startu komercjalizacji tempo sprzedaży osiągnęło poziom odpowiadający przychodom przekraczającym 1 mln dolarów w skali roku.",
+            "uwaga": "Jedno źródło, dane firmy. Post już mówi „tempo sprzedaży” i zaznacza, że to własne dane firmy - poprawione."
+          },
+          {
+            "fakt": "Agenci AI sami szukają rozmówców, prowadzą rozmowy głosowe i łączą wyniki z danymi funduszu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "link": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/#:~:text=samodzielnie%20prowadz%C4%85%20z%20nimi%20rozmowy",
+            "cytat": "samodzielnie prowadzą z nimi rozmowy głosowe",
+            "uwaga": "Artykuł: szukają klientów i ekspertów, prowadzą rozmowy głosowe, łączą z danymi publicznymi i wewnętrznymi funduszu. 'Dzwonią' to parafraza rozmów głosowych - OK. Drugie źródło: YC Lato (agenci 'source and interview hundreds of experts') Uwaga drobna: źródło mówi o klientach, konkurentach i ekspertach z branży; post pisze „klientów i ekspertów spółki” - akceptowalny skrót."
+          },
+          {
+            "fakt": "Lato automatyzuje commercial due diligence, czyli badanie pozycji rynkowej spółki przed inwestycją",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "link": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/#:~:text=automatyzuje%20commercial%20due%20diligence",
+            "cytat": "automatyzuje commercial due diligence",
+            "uwaga": "Opis zgodny z artykułem i opisem w dane.csv; YC: 'commercial diligence'."
+          },
+          {
+            "fakt": "Analiza trafia do klienta wraz z nagraniami i transkrypcjami rozmów",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "link": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/#:~:text=Inwestor%20otrzymuje%20analiz%C4%99%20wraz%20z",
+            "cytat": "Inwestor otrzymuje analizę wraz z nagraniami i transkrypcjami,",
+            "uwaga": "Jedno źródło (artykuł oparty na wypowiedziach firmy); YC mówi o 'traceable reports', co jest spójne."
+          },
+          {
+            "fakt": "Prawnik cytowany w artykule wskazuje na halucynacje i poufność danych",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "link": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/#:~:text=halucynowa%C4%87%20i%20podawa%C4%87%20nieprawdziwe%20informacje",
+            "cytat": "albo halucynować i podawać nieprawdziwe informacje.",
+            "uwaga": "Szymon Rozum, adwokat (White Owl): wyniki trzeba sprawdzać, ryzyko cyberataków i nieuprawnionego wykorzystania poufnych danych, w tym do trenowania modeli. Jedno źródło."
+          },
+          {
+            "fakt": "Inny ekspert wskazuje na błędy w rozmowach agentów z ludźmi, zwłaszcza na początku",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "link": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/#:~:text=zw%C5%82aszcza%20na%20pocz%C4%85tku%20dzia%C5%82alno%C5%9Bci%20rozwi%C4%85zania",
+            "cytat": "zwłaszcza na początku działalności rozwiązania.",
+            "uwaga": "Łukasz Wierdak, partner w Spire Capital Partners. Jedno źródło."
+          },
+          {
+            "fakt": "Lato to startup założony przez Polaków",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "link": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/#:~:text=Startup%20LATO",
+            "cytat": "Startup LATO (Tymek Staniszewski i Tien Chu)",
+            "uwaga": "Poprawione sformułowanie w poście („założony przez Polaków”) zgadza się ze źródłem (artykuł: założyciele znali się z warszawskiego liceum, fundusz Montis VC polski). YC: siedziba w Londynie - post tego nie przeczy."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x, komentarz",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "link": "https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/",
+            "cytat": "",
+            "uwaga": "Po poprawce: LinkedIn i X mają te same liczby i sens; „tempo sprzedaży” i „założony przez Polaków” zgodne ze źródłem; opinie Kuby wyraźnie oddzielone; zastrzeżenie o danych firmy w obu wersjach; „ponad 25 innych newsów” zgodne (wydanie ma 30 newsów). Drobne: „spółki, jaką fundusz zamierza kupić” to interpretacja badania przed inwestycją - akceptowalne."
+          }
+        ]
+      }
+    },
+    {
+      "id": "w-26hw3",
+      "rodzaj": "temat",
+      "temat": "Poppy 1.0: agenci klientów",
+      "link_newsa": "https://sierra.ai/blog/releasing-poppy",
+      "tytul_newsa": "Sierra publikuje Poppy 1.0 – protokół dla osobistych agentów w kontakcie z firmami",
+      "kat": "Zamiast blokować cudzych agentów, firma może dać im jasne reguły: kto to jest i co wolno, a decyzje o pieniądzach zostają po stronie człowieka.",
+      "linkedin": "Sierra opublikowała 13 listopada Poppy 1.0, protokół, w którym agent klienta przedstawia się firmie, zanim cokolwiek kupi. Ma już ponad 100 partnerów, m.in. Meta, Stripe i Shopify.\n\nZ perspektywy sklepu agent był dotąd w praktyce anonimowym ruchem: nie wiadomo, czyj jest, czy ma upoważnienie i co mu wolno. Poppy to zmienia. Agent mówi, kto go przysyła, firma mówi, co może zrobić, a klient przez OAuth kontroluje, co agent może zrobić. Standard UCP obsługuje koszyk i płatność, a Poppy to, co dzieje się przed nimi: tożsamość i uprawnienia.\n\nLista partnerów jest już długa, a pierwsze wdrożenia już działają. Shopify publikuje plik Poppy automatycznie w każdym sklepie, a agent Mety, Muse, szuka go w pierwszej kolejności. W Mercury agent może sprawdzać saldo, transakcje i budżety oraz zlecać przelewy, ale płatność przechodzi przez politykę zatwierdzania konta. Turkish Airlines pozwala agentowi szukać upgrade'ów do klasy biznes, a klient zatwierdza je przed zapłatą. W obu przypadkach agent może dużo, ale decyzja o pieniądzach zostaje po stronie człowieka.\n\nMam wrażenie, że dla firm wybór wyglądał dotąd tak: blokować cudzych agentów albo ich wpuszczać i liczyć, że nic złego się nie stanie. Poppy daje trzecią opcję, czyli jasne reguły. Podoba mi się też, że opiera się na istniejących standardach (MCP, OpenAPI, UCP), a więc na rzeczach, które zespoły w dużej mierze już znają, i można go wdrażać etapami, zaczynając od podstaw. Z drugiej strony to świeża wersja 1.0, a lista dużych nazw jeszcze nie mówi, jak to będzie działać u mniejszych firm.\n\nZanim ktoś u Was zapyta o Poppy, warto rozpisać, co agent klienta mógłby u nas zrobić sam, a co powinno wymagać zgody człowieka: przeglądać ofertę, sprawdzać status zamówienia, zmieniać dane, zwracać pieniądze. Te reguły i tak trzeba będzie kiedyś ustalić, a lepiej zrobić to przed pierwszym agentem na koncie klienta.\n\nCzy Twoja firma ma już zdanie, co wolno cudzemu agentowi, który zaloguje się na konto klienta?",
+      "komentarz": "Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach\nŹródło: https://sierra.ai/blog/releasing-poppy",
+      "x": [
+        "Sierra opublikowała 13 listopada Poppy 1.0: protokół, w którym agent klienta przedstawia się firmie, zanim cokolwiek kupi. Ma ponad 100 partnerów, m.in. Meta, Stripe, Shopify i Walmart.",
+        "Standard UCP obsługuje koszyk i płatność. Poppy to, co dzieje się wcześniej: kto przysłał agenta i co mu wolno. Klient kontroluje dostęp przez OAuth.",
+        "Shopify publikuje plik Poppy w każdym sklepie automatycznie, a Muse od Mety szuka go w pierwszej kolejności. W Mercury agent może zlecić przelew, ale płatność przechodzi przez politykę zatwierdzania konta.",
+        "Dla firm to trzecia opcja obok blokowania i wpuszczania na ślepo: jasne reguły. Warto rozpisać, co agent klienta może zrobić sam, a co wymaga zgody człowieka.",
+        "Ten i ponad 25 innych newsów z tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach"
+      ],
+      "obrazek": {
+        "wybrany": "brak",
+        "prompt": "Minimalistyczna fotografia martwej natury na jasnej drewnianej ladzie recepcji hotelu: trzy zwykłe, nieopisane karty dostępu rozłożone wachlarzem obok papierowego identyfikatora gościa na smyczy, miękkie poranne światło z okna, płytka głębia ostrości, motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "ponad 100",
+          "podpis": "partnerów projektowych Poppy 1.0, m.in. Meta, Stripe i Shopify, według Sierry",
+          "zrodlo": "Sierra, Poppy 1.0",
+          "styl": "notatka"
+        },
+        "mem": {
+          "szablon": "Two Buttons",
+          "link": "https://imgflip.com/memegenerator/Two-Buttons",
+          "podglad": "https://i.imgflip.com/4/1g8my4.jpg",
+          "tekst": "lewy przycisk: Zablokować cudzych agentów\nprawy przycisk: Wpuścić ich na ślepo\npostać: Firma z e-commerce"
+        },
+        "infografika_plik": "obrazki/w-26hw3.png"
+      },
+      "termin": "2026-11-30 08:30",
+      "fakty": [
+        "Poppy 1.0 opublikowany 13.11.2026, ponad 100 partnerów (60 nowych w 1.0), Meta, Stripe, Shopify, Walmart: blog Sierra",
+        "UCP = koszyk i płatność, Poppy = tożsamość i uprawnienia; OAuth; wdrażanie etapami; oparte na MCP, OpenAPI, UCP: blog Sierra",
+        "Shopify publikuje plik automatycznie; Muse szuka Poppy w pierwszej kolejności (opis w wydaniu mówił 'na każdej stronie' — blog: 'w pierwszej kolejności')",
+        "Mercury: saldo, transakcje, budżety, inicjowanie przelewów przez politykę zatwierdzania; Turkish Airlines: upgrade do business zatwierdza klient przed płatnością",
+        "Zdania o 'trzeciej opcji', 'wcześniej anonimowy ruch' i ostrożność wobec mniejszych firm to wnioski Kuby, nie fakty ze źródła"
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] standardy: MCP, OpenAPI, UCP (OAuth = kontrola klienta); wnioski oznaczone jako opinia. [weryfikacja] „skala wdrożeń” → partnerzy projektowi, pierwsze wdrożenia.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "w-26hw3",
+        "data": "2026-11-19 14:00",
+        "fakty": [
+          {
+            "fakt": "Spójność: 'Ma już ponad 100 partnerów' vs 'pierwsze wdrożenia już działają' (zdanie o skali)",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy#:~:text=bringing%20the%20total%20to%20more%20than%20100",
+            "cytat": "60 new companies joined as design partners, bringing the total to more than 100.",
+            "uwaga": "Poprawione zdanie jest zgodne ze źródłem: partnerzy (projektowi) i pierwsze wdrożenia (Shopify, Muse, Mercury, Turkish Airlines) są rozdzielone. Zastrzeżenie: Sierra nie podaje, ilu z 100 partnerów faktycznie wdrożyło Poppy (remio.ai: 'design partner' to nie wdrożenie), więc nie wolno dopisywać 'ponad 100 wdrożeń'. Ostrożniej byłoby 'ponad 100 partnerów projektowych'."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy",
+            "cytat": "",
+            "uwaga": "Przebieg bez problemów. LinkedIn i X zgodne (X dodaje Walmart, prawdziwy partner początkowy). Podmioty poprawne, opinie ('Mam wrażenie', 'Podoba mi się', 'trzecia opcja', 'warto rozpisać') odróżnione od faktów, pytanie końcowe dotyczy tezy. Drobiazg: w X 'Ma ponad 100 partnerów' bez 'projektowych' - akceptowalne."
+          },
+          {
+            "fakt": "Sierra opublikowała Poppy 1.0 13 listopada 2026",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy#:~:text=Published",
+            "cytat": "Published: November 13, 2026",
+            "uwaga": "Blog Sierra: 13.11. Drugie źródło (changelog protokołu wg wyszukiwarki) podaje 14.11 jako datę wersji 1.0; data posta na blogu to 13.11, więc zdanie 'Sierra opublikowała 13 listopada' jest poprawne."
+          },
+          {
+            "fakt": "Ponad 100 partnerów, m.in. Meta, Stripe, Shopify (w X także Walmart)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy#:~:text=bringing%20the%20total%20to%20more%20than%20100",
+            "cytat": "The initial design partners, announced the previous month, were Meta, Genesys, Instinct, NiCE, Rocket, Shopify, Stripe, and Walmart.",
+            "uwaga": "Jedno źródło dla liczby (Sierra, materiał firmowy); remio.ai powtarza 100+. To partnerzy projektowi."
+          },
+          {
+            "fakt": "Agent klienta przedstawia się firmie i dowiaduje się, co mu wolno; działa przed zakupem",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy#:~:text=Poppy%20handles%20what%20happens%20before%20that",
+            "cytat": "Poppy handles what happens before that, when an agent shows up at a store, says who it is, and finds out what it's allowed to do.",
+            "uwaga": "Opis własnego produktu Sierry (materiał firmowy)."
+          },
+          {
+            "fakt": "UCP obsługuje koszyk i płatność; Poppy to tożsamość i uprawnienia",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy#:~:text=UCP%20handles%20the%20shopping%20itself",
+            "cytat": "UCP handles the shopping itself, like finding products, filling a cart, and checking out.",
+            "uwaga": "Jedno źródło (Sierra)."
+          },
+          {
+            "fakt": "Klient przez OAuth kontroluje, co agent może zrobić",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy#:~:text=With%20authentication%20through%20OAuth",
+            "cytat": "With authentication through OAuth, customers control what personal agents can and can't do.",
+            "uwaga": "Jedno źródło (Sierra); remio.ai potwierdza OAuth."
+          },
+          {
+            "fakt": "Poppy opiera się na MCP, OpenAPI i UCP; można wdrażać etapami",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy#:~:text=largely%20built%20with%20existing%20standards",
+            "cytat": "largely built with existing standards like MCP, OpenAPI, and UCP",
+            "uwaga": "Etapy: 'adopt the protocol in stages, starting with the basics'. Zdanie 'zespoły już je znają' to opinia Kuby. Wtórne źródło wymienia też JWT/HTTPS, ale 'w dużej mierze' pokrywa to."
+          },
+          {
+            "fakt": "Shopify publikuje plik Poppy automatycznie w każdym sklepie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy#:~:text=every%20Shopify%20store%20now%20automatically%20publishes",
+            "cytat": "every Shopify store now automatically publishes a Poppy file, so merchants don't need to do any extra implementation.",
+            "uwaga": "Drugie źródło (remio.ai/wyniki wyszukiwania) zgodne."
+          },
+          {
+            "fakt": "Muse (agent Mety) szuka pliku Poppy w pierwszej kolejności",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy#:~:text=automatically%20looks%20for%20Poppy%20first",
+            "cytat": "automatically looks for Poppy first on every site it visits",
+            "uwaga": "Materiał Sierry; demo Muse na Sierra Summit potwierdza wtórne źródło."
+          },
+          {
+            "fakt": "Mercury: agent sprawdza saldo, transakcje, budżety i zleca przelewy; płatność przez politykę zatwierdzania",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy#:~:text=goes%20through%20the%20account%27s%20approval%20policy",
+            "cytat": "goes through the account's approval policy before anything is sent",
+            "uwaga": "Źródło: sprawdzanie sald i transakcji, 'keep budgets and receipts current' (budżety: aktualizowanie, nie tylko sprawdzanie - drobna nieścisłość akceptowalna), inicjowanie płatności lub przelewów."
+          },
+          {
+            "fakt": "Turkish Airlines: agent szuka upgrade'ów do klasy biznes, klient zatwierdza przed zapłatą",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy#:~:text=find%20business-class%20upgrades",
+            "cytat": "Miles&Smiles members can even have their agent find business-class upgrades, which customers approve before paying.",
+            "uwaga": "Jedno źródło (Sierra)."
+          },
+          {
+            "fakt": "Ten i ponad 25 innych newsów z tygodnia w #47",
+            "gdzie": "x",
+            "status": "potwierdzony",
+            "zrodlo": "https://sierra.ai/blog/releasing-poppy",
+            "link": "https://sierra.ai/blog/releasing-poppy",
+            "cytat": "",
+            "uwaga": "dane.csv wydania 47 ma 30 newsów, więc 'ponad 25 innych' jest poprawne."
+          }
+        ]
+      }
+    },
+    {
+      "id": "w-1f6hj",
+      "rodzaj": "temat",
+      "temat": "Genesis AI: dane ważniejsze niż model",
+      "link_newsa": "https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/",
+      "tytul_newsa": "Genesis AI pozyskuje 500 mln dolarów na roboty uczone przez ludzi w rękawicach z czujnikami",
+      "kat": "Założyciel Genesis AI mówi, że architektura to ok. 10% wyniku, a resztę robią dane, więc zespół IT powinien zadbać o zapisywanie własnej wiedzy o pracy.",
+      "linkedin": "Ponad 100 osób na całym świecie nosi dla Genesis AI rękawice z czujnikami siły i kamery na głowie, a ich codzienna praca uczy robota. Firma właśnie zebrała na to 500 mln dolarów w rundzie Series A.\n\nGenesis AI powstało w 2024 roku, a runda seed miała 105 mln dolarów. Prowadzą ją Khosla Ventures, Premji Invest i Eclipse. Startup większość robi sam: model fizycznej AI, dane do jego trenowania i humanoidalnego robota Eno. Robot ma dłonie o takich samych proporcjach jak ludzkie i te same rękawice, więc to, co nagrali ludzie, da się przenieść na maszynę.\n\nNajciekawsze są dla mnie dwie wypowiedzi założyciela. Według niego architektura modelu to około 10% wyniku, a resztę robią dane. Największym problemem jest natomiast sprzęt: dłonie robota wytrzymują dziś tylko kilka tygodni zwykłej pracy. W demo robotyczne ramiona spakowały pudełko i okleiły je taśmą, ale za drugim razem upuściły pudełko i miały kłopot z odklejeniem etykiety.\n\nZgadzam się, że przewaga rzadko leży w samym modelu, bo ten każdy może dziś wynająć. Przewagę daje to, co firma potrafi zebrać o własnej pracy, i to w formie, z której da się uczyć. Tu zbieranie jest oczywiste, bo trzeba kogoś ubrać w rękawice. W zespołach IT takie dane już leżą, tylko mało kto o nie dba: powody decyzji projektowych, rozbiór incydentów, komentarze z review, to, jak naprawdę rozwiązujemy typowe zgłoszenia.\n\nPrzy wdrażaniu AI w zespole dobrze więc zapytać nie tylko „jakiego modelu użyjemy”, ale też „czego uczymy go o naszej pracy i czy to w ogóle jest zapisane”. Dane zbiera się też długo, więc lepiej zacząć, zanim będą potrzebne.\n\nJakie dane o pracy Waszego zespołu byłyby dla agenta najcenniejsze i czy dziś ktoś je w ogóle zapisuje?",
+      "komentarz": "Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach\nŹródło: https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/",
+      "x": [
+        "Ponad 100 osób na świecie nosi dla Genesis AI rękawice z czujnikami siły i kamery na głowie, a ich praca uczy robota. Firma zebrała na to 500 mln dolarów w rundzie Series A.",
+        "Robot Eno ma dłonie o takich samych proporcjach i te same rękawice, więc nagrania ludzi da się przenieść na maszynę. Firma większość robi sama: model, dane i sprzęt. Runda seed miała 105 mln.",
+        "Założyciel szacuje, że architektura modelu to około 10% wyniku, a resztę robią dane. Największy problem to sprzęt: dłonie wytrzymują tylko kilka tygodni zwykłej pracy.",
+        "Przewaga rzadko leży w samym modelu, bo ten każdy może wynająć. Leży w tym, co firma potrafi zebrać o własnej pracy. W zespołach IT te dane już są: decyzje projektowe, rozbiory incydentów, komentarze z review.",
+        "Pytanie do wdrożeń AI: nie tylko „jaki model”, ale „czego uczymy go o naszej pracy i czy to jest zapisane”. Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach"
+      ],
+      "obrazek": {
+        "wybrany": "brak",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "ok. 10%",
+          "podpis": "tyle wyniku daje architektura modelu, resztę dane, według założyciela Genesis AI",
+          "zrodlo": "TechCrunch, Genesis AI",
+          "styl": "notatka"
+        },
+        "prompt": "Minimalistyczna płaska ilustracja: wysłużona skórzana rękawica robocza leży na biurku obok otwartego papierowego notesu pełnego odręcznych list kontrolnych i filiżanki kawy, ciepłe papierowe kolory z jednym akcentem, motyw na środku kadru z zapasem na brzegach, bez tekstu, bez ludzi i robotów, format 3:4.",
+        "plik": "obrazki/w-1f6hj.png",
+        "mem": {
+          "szablon": "Is This A Pigeon",
+          "link": "https://imgflip.com/memegenerator/Is-This-A-Pigeon",
+          "podglad": "https://i.imgflip.com/4/1o00in.jpg",
+          "tekst": "postać: Zespół IT\nmotyl: Rozbiory incydentów i komentarze z review\npodpis: Czy to jest nasza przewaga?"
+        },
+        "infografika_plik": "obrazki/w-1f6hj.png"
+      },
+      "termin": "2026-12-01 08:30",
+      "fakty": [
+        "500 mln USD Series A, Khosla Ventures, Premji Invest, Eclipse; seed 105 mln; firma założona 2024 — TechCrunch 17.11.2026 i opis w dane.csv",
+        "ponad 100 pracowników w rękawicach z czujnikami siły (w artykule też kamery na głowie); dłonie robota o proporcjach ludzkich i te same rękawice — TechCrunch",
+        "architektura ok. 10% wyniku, resztę robią dane — szacunek założyciela Zhou Xiana (post pisze 'według niego' w innym zdaniu: sprawdź sformułowanie)",
+        "dłonie wytrzymują kilka tygodni zwykłej pracy; demo: pudełko spakowane i okleione, za drugim razem upuszczone pudełko i problem z etykietą — TechCrunch",
+        "akapit o danych w zespołach IT to opinia Kuby, nie fakt ze źródła"
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] ponad 100 osób (nie pracowników Genesis AI); „większość robi sama” (nie wszystko); w demo robotyczne ramiona, nie Eno.",
+      "wynik": {}
+    },
+    {
+      "id": "w-fp505",
+      "rodzaj": "temat",
+      "temat": "LangChain: 300 mln i pilnowanie agentów",
+      "link_newsa": "https://www.wsj.com/cio-journal/ai-startup-langchain-more-than-doubles-its-valuation-to-3-billion-f83377ad",
+      "tytul_newsa": "LangChain zbiera 300 mln dolarów przy wycenie 3 mld",
+      "kat": "Pieniądze idą w pilnowanie agentów, nie w ich pisanie, więc ewaluację i monitoring trzeba planować razem z agentem.",
+      "linkedin": "LangChain, twórca platformy do budowy agentów AI, zebrał 300 mln dolarów przy wycenie 3 mld, ponad dwa razy wyższej niż rok temu. Pieniądze mają trafić w LangSmith, czyli narzędzie do pilnowania agentów.\n\nRundę poprowadził CapitalG, fundusz Alphabet. LangSmith służy do monitorowania, oceny i wdrażania agentów w firmach i według LangChain używa go ponad 7 tysięcy organizacji. Szef firmy mówi wprost, że to zachowanie agenta jest tym, co najtrudniej kontrolować.\n\nZwróciłbym uwagę na przykład, który LangChain podaje o Workday: czas wdrożenia nowego agenta miał spaść z pięciu miesięcy do mniej niż jednego dnia. To deklaracja dostawcy, więc traktowałbym ją ostrożnie. Pokazuje jednak, gdzie leży koszt. Wydaje mi się, że w wielu firmach największym kosztem bywa nie zbudowanie prototypu agenta, tylko zgoda na wpuszczenie go na produkcję.\n\nRozumiem, że start-up sprzedający takie narzędzie będzie mówił, że najtrudniejszy jest właśnie ten etap. Mimo to coś w tym jest: im łatwiej pisać agentów, tym więcej ich powstaje, a każdy trzeba potem sprawdzać, mierzyć i pilnować.\n\nPrzy planowaniu kolejnego agenta dobrze od razu wpisać do budżetu i harmonogramu ewaluację oraz monitoring, a nie traktować ich jako dodatek na koniec. Dobrze też zawczasu ustalić, po czym poznamy, że agent po zmianie modelu albo promptu nadal robi to samo, co wcześniej.\n\nJak u Ciebie sprawdza się, czy agent po zmianie modelu nadal działa tak jak przed nią?",
+      "komentarz": "Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach\nŹródło: https://www.wsj.com/cio-journal/ai-startup-langchain-more-than-doubles-its-valuation-to-3-billion-f83377ad\nWpis LangChain o rundzie i TNW: https://thenextweb.com/news/langchain-300m-series-c-3bn-valuation-capitalg-langsmith",
+      "x": [
+        "LangChain zebrał 300 mln dolarów przy wycenie 3 mld, ponad dwa razy wyższej niż rok temu. Rundę poprowadził CapitalG z Alphabet.",
+        "Pieniądze mają trafić w LangSmith, czyli narzędzie do monitorowania, oceny i wdrażania agentów w firmach. Według LangChain używa go ponad 7 tys. organizacji.",
+        "Szef firmy mówi, że najtrudniej kontrolować zachowanie agenta. Według LangChain Workday skrócił wdrożenie nowego agenta z pięciu miesięcy do mniej niż dnia, ale to deklaracja dostawcy.",
+        "Wygląda na to, że koszt agenta nie leży w napisaniu go, tylko w pilnowaniu. Warto zaplanować ewaluację i monitoring od razu, razem z samym agentem.",
+        "Cały przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach"
+      ],
+      "obrazek": {
+        "wybrany": "mem",
+        "infografika": {
+          "rodzaj": "porownanie",
+          "tytul": "Wycena LangChain",
+          "jednostka": " mld $",
+          "elementy": [
+            {
+              "etykieta": "rok temu",
+              "wartosc": 1.25
+            },
+            {
+              "etykieta": "teraz",
+              "wartosc": 3,
+              "wyroznij": true
+            }
+          ],
+          "zrodlo": "TheNextWeb, LangChain",
+          "numer": 47
+        },
+        "prompt": "Minimalistyczna ilustracja w płaskich kolorach na ciepłym papierowym tle: pojedyncza podkładka z długą listą kontrolną z odhaczonymi polami leży obok małego papierowego samolotu, widok z góry, miękkie światło dzienne, motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "plik": "obrazki/w-fp505_mem.jpg",
+        "mem": {
+          "szablon": "UNO Draw 25 Cards",
+          "link": "https://imgflip.com/memegenerator/UNO-Draw-25-Cards",
+          "podglad": "https://i.imgflip.com/4/3lmzyx.jpg",
+          "tekst": "karta: Zaplanować monitoring agenta od pierwszego dnia\nopcja: Dobrać 25 kart nieplanowanych poprawek",
+          "plik": "obrazki/w-fp505_mem.jpg"
+        },
+        "infografika_plik": "obrazki/w-fp505.png"
+      },
+      "termin": "2026-11-24 08:30",
+      "fakty": [
+        "300 mln USD, wycena 3 mld, ponad dwa razy wyższa niż rok temu, CapitalG prowadzi, LangSmith do monitorowania/oceny/wdrażania, szef: kontrola zachowania agenta najtrudniejsza – opis z dane.csv (WSJ, za paywallem, nie czytane)",
+        "poprzednia wycena 1,25 mld (seria B, październik 2025) – TheNextWeb / relacje mediów; użyta tylko w infografice",
+        "ponad 7 000 organizacji używa LangSmith (według LangChain) – TheNextWeb",
+        "Workday: wdrożenie nowego agenta z 5 miesięcy do poniżej dnia, według LangChain – TheNextWeb",
+        "47 forward deployed engineers pracujących z klientami – TheNextWeb (WSJ podaje 435 pracowników, w poście pominięte)",
+        "Do sprawdzenia: WSJ pisze, że inwestorzy mówią o firmach chcących 'posiadać własną inteligencję' – pominięte w poście",
+        "Wnioski o koszcie agenta (prototyp w godziny, miesiące na zgodę na produkcję) to opinia Kuby, nie fakt ze źródła; 'Prototyp powstaje w kilka godzin' – do usunięcia, jeśli Kuba się nie zgadza",
+        "Termin 2.12 to wtorek poza standardowym tygodniem wydania – ustalone przez wywołującego"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[weryfikacja] „mają trafić w LangSmith” (nie „głównie”); cytat Chase’a bez „a nie go zbudować”; teza o prototypie i zgodzie na produkcję jako opinia.",
+      "wynik": {}
+    },
+    {
+      "id": "w-5sbf4",
+      "rodzaj": "temat",
+      "temat": "Devin Apps: prywatne narzędzia od agenta",
+      "link_newsa": "https://devin.ai/blog/devin-apps",
+      "tytul_newsa": "Devin Apps – prywatne aplikacje webowe budowane przez agenta",
+      "kat": "Agent daje małym narzędziom wewnętrznym hosting i logowanie w pakiecie, więc zamiast arkuszy pojawią się aplikacje, które potrzebują właściciela i zasad.",
+      "linkedin": "Devin potrafi teraz zbudować prywatną aplikację webową na podstawie opisu i wystawić ją pod stałym linkiem. Dostęp mają tylko zalogowani użytkownicy Devina, a aplikacje nigdy nie są publiczne.\n\nOpisujesz, czego zespół potrzebuje, na przykład panel administracyjny, dashboard z metrykami albo kolejkę akceptacji. Agent pisze kod i wdraża go na swojej maszynie w chmurze. Kolejne zmiany wchodzą pod tym samym adresem, a gdy nowa wersja się nie uruchomi, dalej działa poprzednia. Dane można odświeżać według harmonogramu, a aplikację udostępnić wybranym osobom, całej organizacji albo firmie.\n\nTwórcy sami zaznaczają, że to narzędzie do zastosowań wewnętrznych, a nie do ruchu produkcyjnego: każda aplikacja działa na jednej maszynie, która usypia, gdy nikt jej nie używa, więc pierwsze otwarcie może zająć kilka sekund. Płaci się za czas, kiedy maszyna jest włączona.\n\nNajciekawsze nie jest dla mnie to, że agent napisze dashboard, bo to potrafi dziś wiele narzędzi. Ciekawsze jest to, że od razu dostajesz hosting, logowanie i wersje. Zwykle właśnie to powodowało, że małe narzędzie nigdy nie powstawało i zostawał arkusz: ktoś musiałby je gdzieś postawić, zabezpieczyć i utrzymywać. Z drugiej strony arkusz nie potrzebuje właściciela, a aplikacja tak. Do tego aplikacje mogą korzystać z Twoich integracji i repozytorium, więc trzeba wiedzieć, do czego mają dostęp.\n\nZanim zespoły zaczną budować takie narzędzia na potęgę, dobrze ustalić trzy rzeczy: jakie dane wolno w nich pokazywać, kto jest ich właścicielem i po czym poznamy, że narzędzie przestało być „małe” i trzeba je przenieść do normalnego procesu.",
+      "komentarz": "Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach\nŹródło: https://devin.ai/blog/devin-apps",
+      "x": [
+        "Devin potrafi zbudować prywatną aplikację webową z opisu i wystawić ją pod stałym linkiem: panel admina, dashboard z metrykami albo kolejkę akceptacji. Kod pisze i wdraża agent na swojej maszynie w chmurze.",
+        "Dostęp mają tylko zalogowani do Devina, a udostępnić można wybranym osobom, organizacji albo całej firmie. Nowe wersje wchodzą pod tym samym adresem, a gdy nowa się nie uruchomi, dalej działa poprzednia.",
+        "Twórcy sami wskazują zastosowania wewnętrzne, nie ruch produkcyjny. Aplikacja działa na jednej maszynie, która usypia, gdy nikt jej nie używa, a płaci się za czas, kiedy jest włączona.",
+        "Największa zmiana: hosting, logowanie i wersje są w pakiecie, więc łatwiej postawić małe narzędzie bez osobnego projektu. Ale aplikacja, w odróżnieniu od arkusza, potrzebuje właściciela i jasnych zasad, jakie dane w niej trzymamy.",
+        "Więcej newsów z tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach"
+      ],
+      "obrazek": {
+        "wybrany": "mem",
+        "prompt": "Minimalistyczna płaska ilustracja: papierowa siatka jak z arkusza kalkulacyjnego leży na biurku obok małego, prostego okna przeglądarki z ikoną kłódki, delikatna faktura papieru, wyciszony beż z jednym akcentem, motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "infografika": {
+          "rodzaj": "lista",
+          "tytul": "Aplikacja od agenta zamiast arkusza: co trzeba ustalić",
+          "punkty": [
+            "Kto jest jej właścicielem",
+            "Jakie dane w niej trzymamy",
+            "Kiedy narzędzie przestaje być małe"
+          ],
+          "zrodlo": "Devin Apps",
+          "styl": "notatka"
+        },
+        "mem": {
+          "szablon": "Distracted Boyfriend",
+          "link": "https://imgflip.com/memegenerator/Distracted-Boyfriend",
+          "podglad": "https://i.imgflip.com/4/1ur9b0.jpg",
+          "tekst": "chłopak: Zespół\ndziewczyna: Wspólny arkusz\nnowa: Prywatna aplikacja od agenta",
+          "plik": "obrazki/w-5sbf4_mem.jpg"
+        },
+        "infografika_plik": "obrazki/w-5sbf4.png",
+        "plik": "obrazki/w-5sbf4_mem.jpg"
+      },
+      "termin": "2026-11-26 08:30",
+      "fakty": [
+        "prywatna aplikacja webowa, stały link, tylko zalogowani do Devina, „Apps are never public” – devin.ai/blog/devin-apps",
+        "przykłady: panel administracyjny, dashboard z metrykami, kolejka akceptacji (opis z dane.csv i artykuł)",
+        "nowa wersja pod tym samym adresem; gdy się nie uruchomi, działa poprzednia; odświeżanie według harmonogramu – artykuł (Deployments, Automations)",
+        "udostępnianie: wybrane osoby, organizacja, cała firma (enterprise) – artykuł",
+        "jedna maszyna na aplikację, hibernacja, pierwsze ładowanie kilka sekund, rozliczanie za czas aktywnej maszyny; zastosowania wewnętrzne, nie ruch produkcyjny – artykuł",
+        "dostęp aplikacji do MCP, integracji i kodu – artykuł (Apps have access to your MCPs, integrations, and codebase)",
+        "Wnioski o właścicielu i danych to opinia Kuby, nie ze źródła; brak liczb"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[weryfikacja] X: „łatwiej postawić małe narzędzie bez osobnego projektu” zamiast „nie wymaga zespołu platformy” (sprzeczne z LinkedInem).",
+      "wynik": {}
+    }
+  ],
+  "_dziennik": [
+    "decyzja:glowny:e8b25a9f",
+    "decyzja:t1:9de74853",
+    "decyzja:t2:bee6fa9a",
+    "decyzja:t3:86f43d0d",
+    "decyzja:t7:638c4292",
+    "decyzja:w-1f6hj:e8cc498f",
+    "decyzja:w-26hw3:860a6531",
+    "decyzja:w-5sbf4:8ba307cf",
+    "decyzja:w-7g4bp:92e673d7",
+    "decyzja:w-fp505:cbfe8dc3",
+    "temat:t1:8d5e3b10",
+    "temat:t2:73d703db",
+    "temat:t3:d57d8b13",
+    "temat:t4:f8527afd",
+    "temat:t5:f59db39e",
+    "temat:t6:9dbd5adc",
+    "temat:t7:5483eb97",
+    "temat:w-1f6hj:7d340437",
+    "temat:w-26hw3:f9546004",
+    "temat:w-5sbf4:f4bc75a9",
+    "temat:w-7g4bp:35c6bd7f",
+    "temat:w-fp505:5c3536f6",
+    "uwaga:glowny:19069ac7",
+    "uwaga:t1:021b7fbb",
+    "uwaga:t2:21502d2e",
+    "uwaga:t3:ddaf2f53",
+    "uwaga:t7:a49bfc7f",
+    "uwaga:w-1f6hj:6978efbb",
+    "uwaga:w-26hw3:3d6cbda8",
+    "uwaga:w-5sbf4:604974de",
+    "uwaga:w-7g4bp:2f1ceee6",
+    "uwaga:w-fp505:fdc5fdb1",
+    "zmiana:w-5sbf4:linkedin:9c3ff55a",
+    "zmiana:w-5sbf4:obrazek:7b7f2d47",
+    "zmiana:w-5sbf4:obrazek_mem:79451df8",
+    "zmiana:w-5sbf4:termin:28782e3f",
+    "zmiana:w-7g4bp:linkedin:0efe344c",
+    "zmiana:w-7g4bp:obrazek:63cdce82",
+    "zmiana:w-7g4bp:termin:916046f2",
+    "zmiana:w-fp505:infografika:28c506ae",
+    "zmiana:w-fp505:linkedin:a417b29a",
+    "zmiana:w-fp505:obrazek:ec9c67f1",
+    "zmiana:w-fp505:obrazek_mem:2cf71ab4",
+    "zmiana:w-fp505:termin:c2c133d5"
+  ]
+}

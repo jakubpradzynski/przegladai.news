@@ -112,7 +112,42 @@ def banned_phrases():
     return phrases
 
 
-def check_post(post, phrases):
+MEMY_FILE = os.path.join(HERE, 'memy_szablony.json')
+
+
+def meme_templates():
+    return repo.read_json(MEMY_FILE, []) or []
+
+
+ENGLISH_RE = re.compile(r'\b(the|with|and|of the|on a|next to|in a|a single|background|lying|seen from)\b', re.I)
+POLISH_CHARS = re.compile('[ąćęłńóśźż]', re.I)
+
+
+def check_images(post):
+    """Od #47 każdy post ma komplet obrazków do wyboru: infografika, prompt po polsku, mem z szablonem i tekstem."""
+    from grafika import validate_spec
+    problems, warnings = [], []
+    image = post.get('obrazek') or {}
+    for p in validate_spec(image.get('infografika') or {}):
+        problems.append('obrazek: ' + p)
+    prompt = (image.get('prompt') or '').strip()
+    if not prompt:
+        problems.append('obrazek: brak promptu do zdjęcia/grafiki (po polsku)')
+    elif not POLISH_CHARS.search(prompt) and len(ENGLISH_RE.findall(prompt)) >= 2:
+        problems.append('obrazek: prompt jest po angielsku - ma być po polsku')
+    mem = image.get('mem') or {}
+    if not (mem.get('szablon') and mem.get('link') and (mem.get('tekst') or '').strip()):
+        problems.append('obrazek: mem bez szablonu, linku albo tekstu (szablon z narzedzia/social/memy_szablony.json)')
+    else:
+        names = {t['nazwa'].lower() for t in meme_templates()}
+        if names and mem['szablon'].lower() not in names:
+            warnings.append('mem: szablon „%s” nie jest na liście imgflip (memy_szablony.json)' % mem['szablon'])
+        if 'imgflip.com' not in mem['link']:
+            problems.append('obrazek: link mema ma prowadzić do szablonu na imgflip.com')
+    return problems, warnings
+
+
+def check_post(post, phrases, images=True):
     problems, warnings = [], []
     li = post.get('linkedin', '')
     if not li.strip():
@@ -149,10 +184,10 @@ def check_post(post, phrases):
         if not tweet.strip():
             problems.append('X wpis %d: pusty' % i)
     image = post.get('obrazek') or {}
-    if image.get('wybrany') == 'infografika' and not image.get('infografika'):
-        problems.append('obrazek: wybrana infografika bez specyfikacji')
-    if image.get('wybrany') == 'mem' and not (image.get('mem') or {}).get('tekst'):
-        problems.append('obrazek: wybrany mem bez tekstu')
+    if images:
+        p, w = check_images(post)
+        problems += p
+        warnings += w
     return problems, warnings
 
 
@@ -169,7 +204,7 @@ def cmd_sprawdz(args):
     phrases = banned_phrases()
     bad = 0
     for post in data['posty']:
-        problems, warnings = check_post(post, phrases)
+        problems, warnings = check_post(post, phrases, images=int(args.numer) >= 47)
         bad += len(problems)
         status = 'OK' if not problems else 'BŁĘDY'
         print('[%s] %s (%s)' % (status, post['id'], post.get('temat', '')))
@@ -183,7 +218,7 @@ def cmd_sprawdz(args):
 
 
 def render_images(numer, data):
-    from grafika import render
+    from grafika import render, validate_spec
     out_dir = paths(numer)['obrazki']
     meta = repo.read_json(os.path.join(repo.issue_dir(numer), 'meta.json'), {}) or {}
     done = []
@@ -194,13 +229,15 @@ def render_images(numer, data):
             image['plik'] = '../okladka.jpeg'
         if image.get('wybrany') == 'mem' and (image.get('mem') or {}).get('plik'):
             image['plik'] = image['mem']['plik']      # gotowy mem zrobiony przez Kube (obrazki/<id>_mem.jpg)
-        if not spec:
+        if not spec or validate_spec(spec):
+            image.pop('infografika_plik', None)
             continue
         spec = dict({'numer': meta.get('numer', numer)}, **spec)
         target = os.path.join(out_dir, '%s.png' % post['id'])
         render(spec, target)
-        if image.get('wybrany') not in ('okladka', 'mem'):
-            image['plik'] = 'obrazki/%s.png' % post['id']
+        image['infografika_plik'] = 'obrazki/%s.png' % post['id']     # podglad zawsze, niezaleznie od wyboru
+        if image.get('wybrany') == 'infografika':
+            image['plik'] = image['infografika_plik']
         done.append(post['id'])
     return done
 

@@ -119,6 +119,8 @@ organizacji pracy i kosztów chętnie bierze **praktykę inżynierską z wnioski
 **nowe produkty z pytaniem „jak się przygotować”** i duże newsy biznesowe o dostawcach modeli; zwolnienia i „oddaliśmy etap agentowi” zostawia.
 Opublikował z tego wydania tylko post główny i SQL — nie ma sensu generować kompletu, gdy wybiera 1–2.
 
+W #47 Kuba z 7 propozycji wybrał 4 (polecone: Cursor, XTB, pomiar pilnowania agentów; niepolecany: Darmok) i **dodał 5 własnych**: Lato, Sierra Poppy, Genesis AI, LangChain, Devin Apps — a **opublikuje tylko post główny i trzy własne** (Lato 4,7 mln $, LangChain 300 mln $, Devin Apps). Wszystkie cztery wybrane z propozycji AI (w tym trzy polecone) odrzucił. Wniosek (2. wydanie z rzędu, że polecone praktyki inżynierskie przegrywają): **polecaj przede wszystkim newsy biznesowe i produktowe z agentowym wątkiem** — rundy finansowania (Lato, LangChain), nowe produkty znanych firm (Devin Apps), duże ruchy dostawców — z krótkim własnym spostrzeżeniem; wąsko techniczne lekcje (incydent bezpieczeństwa, specyfikacje, pomiar czasu, ciekawostka z arXiv) schodzą na pozycje niepolecane. Przy 3 polecanych daj co najmniej 2 newsy biznesowe/produktowe.
+
 Rzadziej polecamy: czyste premiery modeli z samymi benchmarkami (chyba że jest kąt kosztowy
 albo praktyczny), newsy prawne bez wpływu na codzienną pracę, temat, który był postem w poprzednim tygodniu.
 Każda propozycja ma: **kąt** (jedno zdanie: co Kuba ma do powiedzenia) i **dlaczego** (czemu to zadziała u odbiorców).
@@ -184,15 +186,16 @@ Każdy post ma propozycję obrazka; Kuba wybiera, co publikuje (`obrazek.wybrany
   metaforą. Nie używamy: garażu, motocykli i motoryzacji (Kuba nie czuje się „motoryzacyjnie”), remontów i budowy,
   robotów, świecących mózgów, niebieskich hologramów, stylu „3D render”, tekstu na obrazie, ludzi patrzących w kamerę.
   Format **3:4** (Google Flow nie obsługuje 4:5; dostępne są 1:1, 16:9, 9:16, 4:3, 3:4), główny motyw na środku kadru
-  z zapasem na brzegach, żeby dało się przyciąć do 4:5 na LinkedIn. Prompt po angielsku.
-- **mem** (`obrazek.mem`: `szablon`, `link` do szablonu na imgflip.com, `tekst` do pól) — gdy temat dobrze nadaje się
-  na żart (stare vs nowe, plan, który się nie sprawdza, ukryty koszt). Proponujemy sprawdzony, istniejący szablon
+  z zapasem na brzegach, żeby dało się przyciąć do 4:5 na LinkedIn. Prompt **po polsku** (Kuba w #47; generator radzi sobie z polskim opisem, a Kuba nie musi tłumaczyć).
+- **mem** (`obrazek.mem`: `szablon`, `link` do szablonu na imgflip.com, `podglad`, `tekst` do pól) — od #47 **zawsze wypełniony**
+  (szablon wybieramy z `narzedzia/social/memy_szablony.json`, a tekst pisze AI; w narzędziu wybór szablonu z listy sam uzupełnia link
+  i miniaturę). Pasuje żart: stare vs nowe, plan, który się nie sprawdza, ukryty koszt. Proponujemy sprawdzony, istniejący szablon
   (Drake Hotline Bling, Gru's Plan, Always Has Been, Change My Mind…), nigdy własny obraz z tekstem; tekst krótki,
   po polsku, zgodny z faktami z posta. Nie dla poważnych tematów (zwolnienia, wypadki). Mem to propozycja obok
   infografiki lub promptu — `wybrany` zostaje na tym, co lepiej pasuje, a Kuba decyduje. W #45 Kuba wybrał mem „Gru's Plan”
   do posta o prawie Brooksa (plan kończący się większą pracą dla człowieka), zrobił go sam z podanego szablonu i tekstu, a plik
   trafia do `obrazki/<id>_mem.jpg` (`obrazek.mem.plik`). Najwyżej jeden mem na tydzień.
-- Zwykle dajemy infografikę lub prompt, a przy jednym–dwóch postach w tygodniu także propozycję mema; `wybrany` ustawiamy na to, co pasuje bardziej.
+- **Od #47 każdy post (także główny) ma zawsze komplet trzech opcji:** infografikę (narysowaną, z podpisem), prompt po polsku i mem z szablonem z imgflip i gotowym tekstem. Kuba wybiera, a narzędzie pokazuje wszystkie trzy naraz (podgląd infografiki, miniatura szablonu mema). `wybrany` ustawiamy na opcję, która pasuje najlepiej; Kuba zmienia go sam. Poprzednia reguła „najwyżej jeden mem na tydzień” i „domyślnie brak” przestaje obowiązywać (Kuba w #47: obrazki mają się generować do wszystkich postów).
 - Infografika pokazuje **sedno dla czytelnika** (kryteria, kroki, porównanie, kluczowa liczba z wniosku), a nie ciekawostkę
   ze źródła (liczba rozmówców, nazwisko). Gdy nie ma dobrego pomysłu, wybierz zdjęcie (`prompt`) — słaba infografika
   jest gorsza niż jej brak.
@@ -200,6 +203,7 @@ Każdy post ma propozycję obrazka; Kuba wybiera, co publikuje (`obrazek.wybrany
   chwili z infografiką „40%” i memem „This Is Fine”; wybrał „brak”), post główny z okładką. To drugie wydanie z rzędu: domyślnie
   `wybrany` = `brak` dla postów pogłębionych, a prompt, infografika i mem są opcjami do wyboru. Każdy z wybieranych rodzajów musi mieć
   pełną zawartość (spec infografiki / szablon, link i tekst mema), inaczej narzędzie zgłasza błąd, a wybór niczego nie pokazuje.
+- **#47: Kuba użył proponowanych szablonów mema i zrobił je sam na imgflip** (Distracted Boyfriend do Devin Apps — z tekstem AI bez zmian; UNO Draw 25 Cards do LangChain — tekst skrócony do jednego pola na karcie, po angielsku „Plan agent monitoring from day one”), a do posta o Lato wybrał infografikę (liczba 4,7 mln $); pozostałe trzy posty bez obrazka lub tylko z okładką (główny). Czyli: proponowany szablon i krótki tekst się sprawdzają; przy meme z kartą/dwoma polami tekst zwykle wystarcza w jednym (krótkim) polu — nie dopisuj drugiego, rozbudowanego.
 - **Obrazek tylko wtedy, gdy jest naprawdę dobry.** W #45 Kuba odrzucił wszystkie wygenerowane zdjęcia i infografiki (żadne
   go nie przekonało) i zostawił jeden mem — post bez obrazka jest lepszy niż ze słabym. Proponuj jeden–dwa mocne pomysły na
   post (konkretna teza, przedmiot z liczbą z tekstu albo mem), a nie komplet przeciętnych; infografika „lista 3–4 punktów”
@@ -212,11 +216,6 @@ Każdy post ma propozycję obrazka; Kuba wybiera, co publikuje (`obrazek.wybrany
 
 _(uzupełnia `ucz-sie` na podstawie dziennika — etap `social`)_
 
-- #44 w-e6z0d: „Brzmi jak katastrofa, a to chyba najmniej ciekawa liczba w całym dokumencie.” → „Brzmi strasznie,
-  ale nie jest to jedyna ciekawa liczba w całym dokumencie.” — łagodniej, bez kategorycznej oceny. Dobrze oceniony:
-  prosty akapit „Upraszczając: …” wyjaśniający trudne pojęcie.
-- #45 t4, t3: „Pewnie po części dlatego, że modele szybko się zmieniają, ale chyba nie tylko.” → „Po części dlatego, że modele szybko się zmieniają, ale nie tylko.”; „Teraz może być lepiej szybko wypuścić…” → „Teraz łatwiej jest szybko wypuścić…” — bez zastrzeżeń przy uzasadnionych tezach (też „kosztowała” → „kosztowała dużo”, „te pasujące” → „pasujące fragmenty”).
-- #45 t3: „Na czym warto się zastanowić: przed takim eksperymentem dobrze ustalić…” → „Przed takim eksperymentem dobrze ustalić…” — bez etykiety przed wnioskiem; „twórca OpenClawa” → „twórca OpenClaw”; „żeby poszedł na całość” → „żeby „poszedł na całość”” (cytat w cudzysłowie).
 - #45 t6: dopisane „Kiedyś to brzmiało lepiej 😅” po „dziewięciu agentów nie zrobi dziecka w miesiąc” — krótka autoironia z emoji.
 - #45 t2, t4: „mogły stracić pracę” → „mogłyby stracić pracę” (skutek hipotetyczny); „po pierwsze zawęzić…, po drugie…” → „po pierwsze, zawęzić…, po drugie, …” (przecinki).
 - #45 obrazki (czat): garaż z silnikiem motocykla i remont domu odrzucone, podobały się dziewięć kubków (podział pracy) i notes z rozpisaną architekturą; obraz nie musi być realistyczny — może być minimalistyczny, a Kuba chce też propozycji memów.
@@ -227,3 +226,7 @@ _(uzupełnia `ucz-sie` na podstawie dziennika — etap `social`)_
 - #46 t5 (obrazek): prompt (zapasowo infografika „40%” i mem) → „brak” — opublikowany bez obrazka (2. raz po #45).
 - #46 w-17spo (Business Hub, czat): „Widzę tu przesunięcie… Czy sprawdzasz już…?” → post jako zapowiedź i porady (możliwości, jak się przygotować, przyszłość), bez perspektywy Kuby i bez pytania na końcu — reguła „Nie każdy post to opinia Kuby ani kończy się pytaniem”.
 
+
+- #47 w-7g4bp (Lato): usunięte „To jej własne dane, nikt ich niezależnie nie sprawdził.” i „inny ekspert” → „inni” — zastrzeżenie o braku niezależnej weryfikacji zbędne, gdy w zdaniu jest już „firma twierdzi” (zgodne z listą „Nie używać”).
+- #47 w-fp505 (LangChain): usunięty ostatni akapit z dodatkowym szczegółem („LangChain ma 47 inżynierów, którzy pracują u klientów”) — post kończy się główną tezą, bez dorzuconego konkretu pobocznego.
+- #47 w-5sbf4 (Devin Apps): usunięte zakończenie pytaniem „Czy takie narzędzia powinny zostać w zespole… czy trafiać pod opiekę zespołu platformy?” — post może kończyć się ostatnim zdaniem z wnioskiem, bez pytania (2. raz po #46 Business Hub).
