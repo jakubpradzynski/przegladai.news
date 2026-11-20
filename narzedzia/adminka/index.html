@@ -29,6 +29,8 @@
   .meta a { color:var(--muted); word-break:break-all; }
   .score { display:inline-block; min-width:26px; text-align:center; padding:1px 6px; border-radius:10px; font-weight:700; color:#fff; }
   .why { font-style:italic; }
+  input.score-in { width:46px; padding:1px 4px; border-radius:10px; font-weight:700; color:#fff; border:0; text-align:center; font:inherit; font-weight:700; }
+  input.score-in:focus { outline:2px solid var(--accent); outline-offset:1px; }
   .chips { display:flex; flex-wrap:wrap; gap:4px; }
   .chip { border:1px solid var(--line); background:#fff; border-radius:12px; padding:2px 8px; font-size:12px; cursor:pointer; color:var(--muted); }
   .chip.on { color:#fff; border-color:transparent; }
@@ -69,6 +71,7 @@
     <div class="toolbar">
       <button class="primary" id="save">Zapisz selekcję</button>
       <button class="secondary" id="top-only">Zaznacz tylko rekomendacje AI</button>
+      <button class="secondary" id="sort-prio" title="Grupy jak w wydaniu (Nowości, Technologia, Polska, bez tagu; Polska na górze), w grupie malejąco po priorytecie">Posortuj po priorytecie</button>
       <span class="status" id="sel-status"></span>
     </div>
     <div id="sections"></div>
@@ -82,9 +85,9 @@
       <label>Tytuł wydania <span class="hint">wybierz propozycję albo wpisz własny</span></label>
       <div id="proposals"></div>
       <input type="text" id="f-tytul">
-      <label>Wstęp <span class="hint">między „Cześć!” a „Zapraszam do lektury!” — to też tekst do social mediów</span> <span class="len" id="len-wstep"></span></label>
+      <label>Wstęp <span class="hint">między „Cześć!” a „Zapraszam do lektury!” — to też tekst do social mediów; zmienia się razem z wybraną propozycją tytułu (Twoje poprawki każdej wersji są zapamiętane)</span> <span class="len" id="len-wstep"></span></label>
       <textarea id="f-wstep"></textarea>
-      <label>Opis SEO <span class="len" id="len-seo"></span></label>
+      <label>Opis SEO <span class="hint">też zmienia się razem z wybraną propozycją tytułu</span> <span class="len" id="len-seo"></span></label>
       <textarea id="f-seo" style="min-height:60px"></textarea>
       <label>Napis na okładce <button class="secondary" id="cover-preview" style="margin-left:8px;padding:3px 10px">Podgląd</button></label>
       <input type="text" id="f-okladka">
@@ -123,7 +126,7 @@ const tagsOf = r => (r.Tagi || '').split(',').map(t => t.trim()).filter(Boolean)
 const sectionOf = r => tagsOf(r).includes('Nowości i ogłoszenia') ? 'Nowości'
   : tagsOf(r).includes('Bliżej technologii') ? 'Technologia' : 'Pozostałe';
 // Kolejnosc publikacji - ta sama logika co repo.publication_key w Pythonie:
-// grupa (Nowości, Bliżej technologii, tylko Polska, bez tagu), Polska na górze, ręczna kolejność, tytuł.
+// grupa (Nowości, Bliżej technologii, tylko Polska, bez tagu), Polska na górze, ręczna kolejność, ocena malejąco, tytuł.
 const PL = {'ą': 'a~', 'ć': 'c~', 'ę': 'e~', 'ł': 'l~', 'ń': 'n~', 'ó': 'o~', 'ś': 's~', 'ź': 'z~', 'ż': 'z~~'};
 const plKey = t => (t || '').toLowerCase().replace(/[ąćęłńóśźż]/g, c => PL[c]);
 function pubGroup(r) {
@@ -136,7 +139,7 @@ const num = v => { const n = parseFloat(v); return isNaN(n) ? Infinity : n; };
 function pubCompare(a, b) {
   const ga = pubGroup(a), gb = pubGroup(b);
   const ka = plKey(a.Tytuł), kb = plKey(b.Tytuł);
-  return (ga[0] - gb[0]) || (ga[1] - gb[1]) || ((num(a.Kolejnosc) - num(b.Kolejnosc)) || 0) || (ka < kb ? -1 : ka > kb ? 1 : 0);
+  return (ga[0] - gb[0]) || (ga[1] - gb[1]) || ((num(a.Kolejnosc) - num(b.Kolejnosc)) || 0) || ((+b.Ocena || 0) - (+a.Ocena || 0)) || (ka < kb ? -1 : ka > kb ? 1 : 0);
 }
 function subgroupList(r) {
   const key = pubGroup(r).join('-');
@@ -202,7 +205,7 @@ function itemHtml(r, i) {
       <span class="len ${len < 350 || len > 1200 ? 'bad' : ''}">${len} znaków</span>
     </div>
     <div class="meta">
-      <div><span class="score" style="background:${scoreColor(+r.Ocena)}">${r.Ocena || '–'}</span>
+      <div><input type="number" min="1" max="10" step="1" class="score-in" data-i="${i}" data-f="Ocena" value="${esc(r.Ocena)}" title="priorytet (1–10), możesz zmienić" style="background:${scoreColor(+r.Ocena)}">
         ${r.Rekomendacja === 'TOP' ? '<b>TOP</b>' : 'rezerwa'}</div>
       ${r.Wybrany ? (() => { const l = subgroupList(r), p = l.indexOf(r); return `<div class="order">
         <button class="mv" data-i="${i}" data-d="-1" ${p <= 0 ? 'disabled' : ''} title="wyżej w wydaniu">↑</button>
@@ -272,11 +275,27 @@ $('sections').addEventListener('click', e => {
 $('sections').addEventListener('change', e => {
   const t = e.target;
   if (t.classList.contains('pick')) { rows[t.dataset.i].Wybrany = t.checked ? '1' : ''; persist(); render(); }
+  else if (t.dataset.f === 'Ocena') {
+    const n = Math.min(10, Math.max(1, Math.round(parseFloat(t.value))));
+    rows[t.dataset.i].Ocena = isNaN(n) ? '' : String(n);
+    persist(); render();
+  }
   else if (t.dataset.f) { rows[t.dataset.i][t.dataset.f] = t.value; persist(); counters(); }
 });
 $('sections').addEventListener('input', e => { if (e.target.tagName === 'TEXTAREA') autoResize(e.target); });
 
 $('top-only').onclick = () => { rows.forEach(r => r.Wybrany = r.Rekomendacja === 'TOP' ? '1' : ''); persist(); render(); };
+$('sort-prio').onclick = () => {
+  // grupy i podgrupy zostają jak w wydaniu (pubGroup); w każdej wybrane newsy malejąco po priorytecie, remis: alfabetycznie
+  const byGroup = {};
+  rows.filter(r => r.Wybrany).forEach(r => (byGroup[pubGroup(r).join('-')] ||= []).push(r));
+  Object.values(byGroup).forEach(list => {
+    list.sort((a, b) => ((+b.Ocena || 0) - (+a.Ocena || 0)) || (plKey(a.Tytuł) < plKey(b.Tytuł) ? -1 : 1))
+        .forEach((r, k) => r.Kolejnosc = String((k + 1) * 10));
+  });
+  persist(); render();
+  $('sel-status').textContent = 'Posortowano po priorytecie (w obrębie grup jak w wydaniu).';
+};
 $('save').onclick = async () => {
   document.activeElement?.blur();
   freezeOrder();
@@ -287,6 +306,12 @@ $('save').onclick = async () => {
 
 // --- Zakładka "Wydanie" ---
 let formFilled = false;
+let variantsByTitle = {};   // wstęp i SEO wygenerowane (i poprawiane przez Kubę) osobno dla każdej propozycji tytułu
+let currentProposal = null;
+function variantFor(ai, title) {
+  const i = (ai.propozycje_tytulu || []).indexOf(title);
+  return variantsByTitle[title] || (i >= 0 && (ai.warianty || [])[i]) || null;
+}
 let slugTouched = false, coverTouched = false;
 
 function slugify(title) {
@@ -321,15 +346,24 @@ async function pollIssue() {
   $('proposals').innerHTML = (ai.propozycje_tytulu || []).map((p, i) =>
     `<label class="proposal"><input type="radio" name="prop" value="${esc(p)}"> ${esc(p)}</label>`).join('');
   $('f-tytul').value = src.tytul || (ai.propozycje_tytulu || [''])[0];
-  $('f-wstep').value = src.wstep || ai.wstep || '';
-  $('f-seo').value = src.opis_seo || ai.opis_seo || '';
+  const startVariant = variantFor(ai, $('f-tytul').value);
+  $('f-wstep').value = src.wstep || (startVariant && startVariant.wstep) || ai.wstep || '';
+  $('f-seo').value = src.opis_seo || (startVariant && startVariant.opis_seo) || ai.opis_seo || '';
+  currentProposal = (ai.propozycje_tytulu || []).includes($('f-tytul').value) ? $('f-tytul').value : null;
   $('f-okladka').value = src.okladka || ai.okladka || coverOf($('f-tytul').value);
   $('f-slug').value = src.slug || ai.slug || slugify($('f-tytul').value);
   $('f-data').value = src.data || ai.data || d.piatek;
   window.issueNumber = ai.numer || d.nastepny_numer;
   document.querySelectorAll('input[name=prop]').forEach(r => {
     r.checked = r.value === $('f-tytul').value;
-    r.onchange = () => { $('f-tytul').value = r.value; titleChanged(); };
+    r.onchange = () => {
+      // zapamiętaj (ewentualnie poprawiony) wstęp i SEO poprzedniej propozycji, wczytaj te dla nowej
+      if (currentProposal) variantsByTitle[currentProposal] = {wstep: $('f-wstep').value, opis_seo: $('f-seo').value};
+      currentProposal = r.value;
+      const v = variantFor(ai, r.value);
+      if (v) { $('f-wstep').value = v.wstep || ''; $('f-seo').value = v.opis_seo || ''; }
+      $('f-tytul').value = r.value; titleChanged(); lengths();
+    };
   });
   lengths();
 }

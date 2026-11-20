@@ -42,11 +42,30 @@ Nie obchodź blokad (podmiana User-Agent, curl udający przeglądarkę).
    konkretna anegdota tylko z `o-mnie.md`; inaczej sformułuj ogólnie albo jako pytanie.
 4. Napisz tekst LinkedIn według struktury z `social.md`, potem wątek X według `social-platformy.md`
    (osobno napisany, nie pocięty LinkedIn).
-5. Obrazek: specyfikacja infografiki (gdy jest liczba/porównanie/cytat) i prompt do zdjęcia.
-   Sprawdź infografikę: `python3 narzedzia/social/grafika.py '<spec JSON>' .cache/social/test_<id>.png`
-   (błąd = za długi tekst albo znak spoza fontu — popraw).
+5. Obrazki — **zawsze komplet trzech opcji do wyboru** (Kuba wybiera, co publikuje; walidator `posty.py sprawdz`
+   zgłasza błąd, gdy któregoś brakuje):
+   - **infografika** (pole `infografika`) — zawsze wypełniona. Najlepiej `liczba` (pola `liczba` i **`podpis`** — nie `opis`),
+     gdy nie ma mocnej liczby: `lista` (2–4 punkty z „co z tego dla zespołu”) albo `porownanie` / `cytat`.
+     Sprawdź: `python3 narzedzia/social/grafika.py '<spec JSON>' .cache/social/test_<id>.png`
+     (błąd = za długi tekst albo znak spoza fontu — popraw).
+   - **prompt** do zdjęcia/ilustracji — zawsze wypełniony i **po polsku** (zasady w „Obrazki” w `social.md`).
+   - **mem** (`mem`: `szablon`, `link`, `podglad`, `tekst`) — zawsze wypełniony: wybierz **dopasowany szablon z listy
+     `narzedzia/social/memy_szablony.json`** (nazwa dokładnie jak na liście; `link` i `podglad` skopiuj z niej) i napisz
+     gotowy tekst po polsku, jedna linia na pole mema, z etykietą pola („góra: …”, „dół: …”, „1: …”, „lewy przycisk: …”),
+     zgodny z faktami z posta. Przy poważnym temacie (zwolnienia, wypadki) mem ma być łagodny i dotyczyć pracy zespołu,
+     nie ofiar.
+   - `wybrany`: opcja, którą uważasz za najlepszą dla tego posta (`brak` tylko wtedy, gdy żadna nie ma sensu) —
+     pozostałe zostają w pliku jako alternatywy.
 6. Przeczytaj tekst jeszcze raz jako Kuba: czy brzmi jak człowiek? Czy haczyk mieści się w ~200 znakach?
    Czy jest choć jedno zdanie, którego nie napisałby nikt poza praktykiem z IT? Usuń frazy-wypełniacze.
+
+## Typowe błędy wychwycone przy weryfikacji (#46) — unikaj
+- Liczba z raportu cytowanego przez firmę (np. „49% programistów” w blogu JetBrains) to dane raportu (Atlassian), nie firmy; przypisuj do pierwotnego autora i oddaj dokładnie, czego dotyczy.
+- Doniesienie z drugiej ręki („Bloomberg podaje”) nie jest faktem ustalonym; wypowiedź jednej osoby nie jest faktem o całym zespole/firmie.
+- Zakres („część inżynierów”, „na razie USA”, „w teście”, „według twórców”) zawsze zachowuj; „ma spaść” ≠ „może spaść”.
+- Wniosek przyczynowy („dlatego firma…”, „stąd nacisk na bezpieczeństwo”) tylko gdy źródło go podaje; inaczej „wygląda na to”, „pomaga zrozumieć”.
+- W treści posta nie zostawiaj notatek dla Kuby („trzeba sprawdzić u źródła”) — to idzie do pola `fakty`.
+- Mało liczb, więcej historii (patrz „Ton i język”): bez rozkładów procentowych i tabel w prozie.
 
 ## Wynik
 
@@ -59,7 +78,9 @@ Zapisz JSON do podanej ścieżki:
  "komentarz": "Pełny przegląd tygodnia w #44 PrzeglądAI: <url wydania>\nŹródło: <link_newsa>",
  "x": ["wpis 1", "wpis 2", "…", "ostatni wpis z linkiem do wydania"],
  "obrazek": {"wybrany": "infografika", "infografika": {"rodzaj": "liczba", "...": "..."},
-             "prompt": "Realistic photo, ..."},
+             "prompt": "Minimalistyczna ilustracja ... (po polsku)",
+             "mem": {"szablon": "Drake Hotline Bling", "link": "https://imgflip.com/memegenerator/Drake-Hotline-Bling",
+                     "podglad": "https://i.imgflip.com/4/30b1gx.jpg", "tekst": "góra: ...\ndół: ..."}},
  "termin": "2026-11-03 08:30",
  "fakty": ["skąd każda liczba z posta — krótko, do weryfikacji przez Kubę"]}
 ```

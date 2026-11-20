@@ -139,6 +139,10 @@ def cmd_wydanie(_args):
     # slug i napis na okladce same podazaja za wybranym tytulem - to nie sa poprawki
     derived = {'slug': repo.issue_slug(issue, final.get('tytul', '')),
                'okladka': re.sub(r'^\s*Wydanie\s*', '', final.get('tytul', ''))}
+    # wstep i SEO sa generowane osobno dla kazdej propozycji tytulu - porownujemy z wariantem wybranego tytulu
+    variants = ai.get('warianty') or []
+    if final.get('tytul') in proposals and len(variants) == len(proposals):
+        ai = dict(ai, **variants[proposals.index(final['tytul'])])
     for field in ('wstep', 'opis_seo', 'slug', 'okladka'):
         if field in derived and norm(final.get(field)) == norm(derived[field]):
             continue

@@ -1,0 +1,1923 @@
+{
+  "numer": 46,
+  "tytul": "Wydanie #46: CEO Nvidii odchodzi, Business Hub w ChatGPT i roadshow Anthropic przed IPO",
+  "status": "gotowe",
+  "posty": [
+    {
+      "id": "glowny",
+      "rodzaj": "glowny",
+      "temat": "Wstęp wydania",
+      "link_newsa": "",
+      "tytul_newsa": "",
+      "kat": "Odejście szefa Nvidii, Business Hub w ChatGPT i roadshow Anthropic przed IPO.",
+      "linkedin": "Jensen Huang przestał być szefem Nvidii, spółki wartej jeszcze niedawno ponad 4 bln dolarów, którą współzałożył w 1993 roku. Tymczasowo kieruje nią dyrektor finansowa Colette Kress, a zarząd szuka następcy.\n\nOdejście poprzedziły doniesienia o romansach, w tym z kobietą podejrzewaną o powiązania z chińskim wywiadem. Akcje spadły w kilka dni o kilkanaście procent, a Nvidia dostarcza chipy między innymi dla OpenAI i Anthropic.\n\nObok tego dwa wątki z tego tygodnia. OpenAI uruchamia w ChatGPT Business Hub: firmy zgłaszają swoją markę, dodają katalogi produktów z cenami i dostępnością, a zweryfikowani sprzedawcy w USA mogą uruchomić własnego agenta do rozmów z klientami. Anthropic rusza natomiast z roadshow przed IPO i oferuje 825 mln akcji w przedziale 70–78 dolarów.\n\nTo i ponad 25 innych newsów z tygodnia zebrałem w 46. wydaniu PrzeglądAI, link w komentarzu.\n\nCzy sprawdzałeś/aś już, jak Twoja firma wygląda w odpowiedziach ChatGPT?",
+      "komentarz": "Wydanie #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo",
+      "x": [
+        "Jensen Huang przestał być szefem Nvidii, spółki wartej jeszcze niedawno ponad 4 bln dolarów. Tymczasowo kieruje nią dyrektor finansowa Colette Kress, a zarząd szuka następcy. Akcje spadły w kilka dni o kilkanaście procent.",
+        "OpenAI uruchamia w ChatGPT Business Hub: firmy zgłaszają markę i dodają katalogi produktów z cenami i dostępnością. W USA zweryfikowani sprzedawcy mogą też uruchomić własnego agenta do rozmów z klientami.",
+        "Anthropic ruszył z roadshow przed IPO: 825 mln akcji klasy A w przedziale 70–78 dolarów. Papiery mają trafić na Nasdaq pod symbolem ANT.",
+        "To i ponad 25 innych newsów z tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "okladka",
+        "plik": "../okladka.jpeg"
+      },
+      "termin": "2026-11-13 09:30",
+      "fakty": [
+        "Huang przestał być szefem, Colette Kress tymczasowo, zarząd szuka następcy; firma założona w 1993, kapitalizacja ponad 4 bln $, akcje −11% w kilka dni, chipy dla OpenAI i Anthropic – opis newsa o rezygnacji (dane.csv, Guardian 12.11)",
+        "romans z kobietą podejrzewaną o związki z chińskim wywiadem – opis newsa o rezygnacji (Guardian)",
+        "Business Hub: zgłaszanie marki, katalogi z cenami i dostępnością, agenci biznesowi dla zweryfikowanych sprzedawców w USA – opis newsa (openai.com)",
+        "825 mln akcji, przedział 70–78 $, Nasdaq ANT – opis newsa o roadshow (anthropic.com)",
+        "ponad 25 innych newsów – wydanie ma 29 newsów"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[weryfikacja] kapitalizacja Nvidii „jeszcze niedawno” (po czwartkowym spadku poniżej 4 bln), akcje „o kilkanaście procent” (CBS/CNBC: ok. −9,6% pon.–wt. i ok. −10% w czw.), „Odejście poprzedziły doniesienia” zamiast „Powodem są” (źródła nie podają oficjalnej przyczyny).",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "glowny",
+        "data": "2026-11-12 12:00",
+        "fakty": [
+          {
+            "fakt": "Spójność: pytanie na końcu (o wygląd firmy w odpowiedziach ChatGPT) dotyczy Business Hub, a nie głównej tezy posta (odejście Huanga z Nvidii)",
+            "gdzie": "linkedin",
+            "status": "niepotwierdzony",
+            "zrodlo": "",
+            "link": "",
+            "cytat": "",
+            "uwaga": "Pytanie 'Czy sprawdzałeś/aś już, jak Twoja firma wygląda w odpowiedziach ChatGPT?' pasuje do jednego z trzech wątków wstępu, nie do pierwszego i najdłuższego. Uwaga redakcyjna, nie błąd faktu; zdecyduj, czy to zamierzone (post główny jest przeglądem trzech wątków)."
+          },
+          {
+            "fakt": "Huang przestał być szefem Nvidii, Colette Kress (dyrektor finansowa) tymczasowo kieruje spółką, zarząd szuka następcy",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+            "link": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm#:~:text=Jensen%20Huang%20has%20resigned%20as%20President%2C%20Chief%20Executive%20Officer",
+            "cytat": "Jensen Huang has resigned as President, Chief Executive Officer, and a member of the Board, effective immediately.",
+            "uwaga": "Drugie źródło: formularz 8-K Nvidia (pierwotne) + CNBC. Kress zachowuje też funkcję CFO. Guardian (źródło z dane.csv) zablokowany dla WebFetch, treść zweryfikowana przez 8-K, CNBC i Yahoo Finance."
+          },
+          {
+            "fakt": "Nvidia założona w 1993 roku przez Huanga (współzałożyciel)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+            "link": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+            "cytat": "Huang co-founded Nvidia in 1993",
+            "uwaga": "CNBC i Yahoo Finance mówią to samo. Cytat z Yahoo Finance (finance.yahoo.com/markets/stocks/articles/nvidia-shares-fall-10-jensen-143120808.html)."
+          },
+          {
+            "fakt": "Nvidia warta 'jeszcze niedawno ponad 4 bln dolarów'",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+            "link": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+            "cytat": "sending the company's value below $4 trillion in market cap",
+            "uwaga": "CNBC: kapitalizacja spadła poniżej 4 bln, więc 'jeszcze niedawno ponad 4 bln' jest poprawne. Guardian (opis w dane.csv): 'kapitalizację ponad 4 bln dolarów'. Poprawka z poprzedniej rundy działa."
+          },
+          {
+            "fakt": "Akcje spadły w kilka dni o kilkanaście procent",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+            "link": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+            "cytat": "plunged nearly 10% on Thursday",
+            "uwaga": "Guardian (wg dane.csv): 'w ostatnich dniach o ponad 11%'. CNBC: prawie 10% w czwartek 12.11 i ponad 20% w miesiąc; wcześniej 9.11 spadek ok. 5-7% (ABC, SCMP). Łącznie z dwóch dni 'kilkanaście procent' jest uzasadnione, ale żadne źródło, które otworzyłem, nie podaje jednej liczby 'kilkanaście'. Zdanie jest bezpieczne; dokładniejsze byłoby 'o ok. 10% w jeden dzień'."
+          },
+          {
+            "fakt": "Odejście poprzedziły doniesienia o romansach, w tym z kobietą podejrzewaną o powiązania z chińskim wywiadem",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+            "link": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+            "cytat": "U.S. intelligence officials reportedly believe she is \"a spy for China.\"",
+            "uwaga": "CNBC: Huang przyznał się do romansu z Alice Huang (Megaspeed), wg FT; NYT pisał o drugiej relacji (Kimberly Powell, VP Nvidia). Yahoo: zarzuty co do drugiej relacji 'nieudowodnione'. Formuła 'poprzedziły doniesienia' jest poprawna i nie przypisuje przyczynowości; 8-K nie podaje powodu rezygnacji. Guardian zablokowany."
+          },
+          {
+            "fakt": "Nvidia dostarcza chipy między innymi dla OpenAI i Anthropic",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "wydania/046/dane.csv (opis Guardian)",
+            "link": "https://www.theguardian.com/technology/2026/nov/12/nvidia-ceo-jensen-huang-resigns",
+            "cytat": "firma jest kluczowym dostawcą chipów dla OpenAI i Anthropic",
+            "uwaga": "Jedno źródło (opis newsa z dane.csv wg Guardiana; Guardian niedostępny, CNBC i Yahoo tego nie wspominają). Fakt ogólnie znany, niskie ryzyko."
+          },
+          {
+            "fakt": "OpenAI uruchamia w ChatGPT Business Hub: firmy zgłaszają markę, dodają katalogi produktów z cenami i dostępnością",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://openai.com/index/introducing-businesses-chatgpt/",
+            "link": "https://openai.com/index/introducing-businesses-chatgpt/",
+            "cytat": "Firmy mogą teraz zgłosić swoją markę w ChatGPT przez Business Hub, uzupełnić dane i dodać własne katalogi produktów z cenami i dostępnością.",
+            "uwaga": "openai.com zwraca 403; cytat z opisu w dane.csv, nie z samej strony. Inne źródło (Magica) opisywało wcześniej Business Hub jako przeciek ('OpenAI has not announced') i nie potwierdza cen/dostępności w katalogu; to starszy materiał sprzed ogłoszenia. Materiał firmowy, jedno źródło - zweryfikuj ręcznie na stronie OpenAI zdanie o cenach i dostępności."
+          },
+          {
+            "fakt": "Zweryfikowani sprzedawcy w USA mogą uruchomić własnego agenta do rozmów z klientami",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://openai.com/index/introducing-businesses-chatgpt/",
+            "link": "https://openai.com/index/introducing-businesses-chatgpt/",
+            "cytat": "Zweryfikowani sprzedawcy w USA mogą uruchomić Business Agenta, z którym klient prowadzi osobną, oznaczoną rozmowę",
+            "uwaga": "Jak wyżej: oparte na opisie z dane.csv, strona OpenAI niedostępna (403). Magica potwierdza ideę business agenta i weryfikacji własności, nie potwierdza ograniczenia do USA (to przeciek przed ogłoszeniem). Jedno źródło, materiał firmowy."
+          },
+          {
+            "fakt": "Anthropic oferuje 825 mln akcji klasy A w roadshow przed IPO",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch#:~:text=The%20proposed%20offering%20consists%20of%20825%2C000%2C000%20shares",
+            "cytat": "The proposed offering consists of 825,000,000 shares of Class A common stock.",
+            "uwaga": "Źródło pierwotne (Anthropic). Wyszukiwarka nie znalazła niezależnego medium z tą liczbą (starsze doniesienia mówiły o pustych polach w S-1) - jedno źródło."
+          },
+          {
+            "fakt": "Przedział cenowy 70–78 dolarów za akcję",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch#:~:text=The%20initial%20public%20offering%20price%20is%20expected%20to%20be%20between",
+            "cytat": "The initial public offering price is expected to be between $70.00 and $78.00 per share.",
+            "uwaga": "Jedno źródło (Anthropic, pierwotne); niezależnego potwierdzenia nie znalazłem."
+          },
+          {
+            "fakt": "Papiery Anthropic mają trafić na Nasdaq pod symbolem ANT",
+            "gdzie": "x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch",
+            "cytat": "ANT.",
+            "uwaga": "Drugie źródło: roic.ai, investinglive i letsdatascience - Anthropic złożył wniosek o notowanie klasy A na Nasdaq Global Select Market pod symbolem 'ANT'."
+          },
+          {
+            "fakt": "To i ponad 25 innych newsów z tygodnia w 46. wydaniu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "wydania/046/dane.csv",
+            "link": "",
+            "cytat": "",
+            "uwaga": "dane.csv ma 29 newsów, więc 'ponad 25 innych' (28) jest poprawne."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "",
+            "link": "",
+            "cytat": "",
+            "uwaga": "LinkedIn i X mówią to samo (liczby, nazwiska, formuły 'jeszcze niedawno ponad 4 bln', 'kilkanaście procent'). Podmioty poprawne (Huang odszedł, Kress tymczasowo, Anthropic oferuje akcje). Sformułowanie 'poprzedziły doniesienia' nie dodaje przyczynowości. Jedyna uwaga: pytanie końcowe (patrz wpis wyżej). Dodatkowo spadek 'o kilkanaście procent' to suma ok. dwóch sesji, a CNBC podaje ok. 10% w jeden dzień."
+          }
+        ]
+      },
+      "opublikowano": true
+    },
+    {
+      "id": "t1",
+      "rodzaj": "temat",
+      "temat": "Limity budżetu na AI na osobę",
+      "link_newsa": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+      "tytul_newsa": "Apple obniża dzienne limity wydatków na narzędzia AI w firmie",
+      "kat": "Jeden limit na AI dla wszystkich nic nie mówi: budżet ocenia się przez efekty danej osoby, a gdy wydatki rosną bez efektów, pomaga nauka, nie większy limit.",
+      "linkedin": "Apple, jak podaje Bloomberg, obniżył w październiku dzienny limit na narzędzia AI dla części inżynierów z 300 do 200 dolarów, a część limitów może spaść do 100 dolarów.\n\nPoza inżynierią Apple rozważa nawet 25 dolarów dziennie. To zmiana po fali „tokenmaxxingu”, czyli zachęcania pracowników do używania AI jak najwięcej. Gdy przyszły rachunki za tokeny, zaczęło się racjonowanie.\n\nRozumiem, dlaczego firma sięga po jeden limit dla wszystkich: jest prosty i łatwo go pilnować. Tyle że 200 dolarów dziennie oznacza co innego u kogoś, kto świetnie prowadzi agenta, a co innego u kogoś, kto dopiero się uczy. Sama kwota nic więc nie mówi, dopiero wydatek zestawiony z efektem.\n\nDlatego porównywałbym każdą osobę z nią samą sprzed miesiąca, a nie z resztą zespołu. Wydatki warto położyć obok rzeczy, które i tak mierzymy: ile zmian przechodzi review bez dużych poprawek, jak długo trwa zadanie od startu do wdrożenia, ile pracy wraca. Z tego wynikają trzy różne obrazy:\n\n– Ktoś dobija do limitu, a wyniki są dobre i stabilne. Budżet jest za mały i tu warto go podnieść.\n– Ktoś wydaje dużo, a jego zmiany wracają z review albo agent kręci się w kółko na tym samym zadaniu. Dołożenie budżetu tylko podniesie rachunek.\n– Ktoś prawie nie używa agenta. To też nie problem pieniędzy, tylko pytanie, czy nie wie jak, czy mu to nie pasuje.\n\nW dwóch ostatnich przypadkach lepiej zadziała nauka niż pieniądze: wspólne przejrzenie sesji z agentem, parowanie z osobą, która robi to dobrze, albo pokazanie, jak dzielić zadanie na mniejsze i jaki kontekst podać. Taką rozmowę da się przeprowadzić dopiero wtedy, gdy rozmawiamy o efektach, a nie o tym, kto przekroczył limit.\n\nPo czym u Ciebie poznajesz, że ktoś potrzebuje większego budżetu na AI, a nie lepszego wykorzystania tego, który już ma?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+      "x": [
+        "Według Bloomberga Apple obniżył w październiku dzienny limit na narzędzia AI dla części inżynierów z 300 do 200 dolarów. Część limitów może spaść do 100 dolarów, a poza inżynierią rozważa się nawet 25.",
+        "To zmiana po fali „tokenmaxxingu”, czyli zachęcania do używania AI jak najwięcej. Gdy przyszły rachunki za tokeny, zaczęło się racjonowanie.",
+        "Problem jednego limitu dla wszystkich: 200 dolarów dziennie znaczy co innego u kogoś, kto świetnie prowadzi agenta, a co innego u kogoś, kto dopiero się uczy. Sama kwota nic nie mówi.",
+        "Porównuj osobę z nią samą sprzed miesiąca i połóż wydatki obok efektów: ile zmian przechodzi review bez dużych poprawek, ile trwa zadanie, ile pracy wraca.",
+        "Dobija do limitu i dowozi dobrze? Podnieś budżet. Wydaje dużo, a zmiany wracają z review? Pieniądze nie pomogą, pomoże wspólne przejrzenie sesji z agentem albo parowanie z kimś, kto robi to dobrze.",
+        "Po czym u Ciebie poznajesz, że ktoś potrzebuje większego budżetu na AI, a nie lepszego wykorzystania obecnego? Przegląd tygodnia: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist flat illustration, two identical paper envelopes of cash side by side on a plain light desk, next to the left one a neat stack of finished documents, next to the right one a messy pile of crumpled paper, soft natural light, muted palette with a single orange accent, centered composition with generous margins, no text, no people, 3:4",
+        "mem": {
+          "szablon": "Drake Hotline Bling",
+          "link": "https://imgflip.com/memegenerator/Drake-Hotline-Bling",
+          "tekst": "góra (nie): Jeden limit na narzędzia AI dla wszystkich\ndół (tak): Wydatek zestawiony z efektem, osobno dla każdego"
+        }
+      },
+      "termin": "2026-11-17 08:30",
+      "fakty": [
+        "300 do 200 dolarów dziennie dla zespołów inżynierskich w październiku: opis z wydania i TechCrunch (za Bloombergiem)",
+        "część limitów spadnie do 100 dolarów: TechCrunch/Bloomberg",
+        "25 dolarów dziennie poza inżynierią rozważane: TechCrunch/Bloomberg",
+        "tokenmaxxing i racjonowanie tokenów po rachunkach: TechCrunch",
+        "Kryteria oceny budżetu (review, czas zadania, parowanie) to rozumowanie Kuby, nie fakty z artykułu"
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] limity Apple to doniesienie Bloomberga (przez TechCrunch), dotyczą części inżynierów; 100 USD to możliwy dalszy spadek, brak „na osobę”; „koniec tokenmaxxingu” → „zmiana po fali”; „dwa obrazy” → „trzy”.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t1",
+        "data": "2026-11-12 14:00",
+        "fakty": [
+          {
+            "fakt": "Apple obniżył w październiku dzienny limit na narzędzia AI dla części inżynierów z 300 do 200 dolarów (według Bloomberga)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://9to5mac.com/2026/11/04/report-apple-reduces-employees-ai-token-allowances-as-ternus-moves-to-cut-costs/",
+            "link": "https://9to5mac.com/2026/11/04/report-apple-reduces-employees-ai-token-allowances-as-ternus-moves-to-cut-costs/#:~:text=Apple%20quietly%20lowered%20the%20daily%20spending%20cap",
+            "cytat": "Last month, Apple quietly lowered the daily spending cap for some engineers using AI models to $200 from $300.",
+            "uwaga": "Źródło pierwotne: Bloomberg (płatne), sprawdzone przez 9to5Mac (cytuje Bloomberga, 'last month' = październik) i TechCrunch ('In October... from $300 to $200', ogólnie 'engineering teams'). Oba źródła wtórne opierają się na Bloombergu, więc de facto jedno źródło; post poprawnie przypisuje je Bloombergowi i pisze 'części inżynierów'."
+          },
+          {
+            "fakt": "Część limitów może spaść do 100 dolarów dziennie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://9to5mac.com/2026/11/04/report-apple-reduces-employees-ai-token-allowances-as-ternus-moves-to-cut-costs/",
+            "link": "https://9to5mac.com/2026/11/04/report-apple-reduces-employees-ai-token-allowances-as-ternus-moves-to-cut-costs/#:~:text=potentially%20reducing%20their%20daily%20allowances%20to%20as%20little%20as%20%24100",
+            "cytat": "potentially reducing their daily allowances to as little as $100",
+            "uwaga": "TechCrunch: 'some allowances falling to $100 a day'. Sformułowanie 'może spaść' zgodne ze źródłem. Jedno źródło pierwotne (Bloomberg)."
+          },
+          {
+            "fakt": "Poza inżynierią Apple rozważa nawet 25 dolarów dziennie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+            "link": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/#:~:text=Outside%20engineering%2C%20Apple%20is%20reportedly%20weighing",
+            "cytat": "Outside engineering, Apple is reportedly weighing a daily limit as low as $25 a day.",
+            "uwaga": "9to5Mac: 'Apple has considered reducing that limit to as little as $25 for some teams'. Jedno źródło pierwotne (Bloomberg). Drobiazg: 9to5Mac dodaje, że wiele grup poza inżynierią ma już limit 100 USD i 25 USD dotyczy 'some teams'; post tego nie przeczy."
+          },
+          {
+            "fakt": "Tokenmaxxing = zachęcanie pracowników do używania AI jak najwięcej; zmiana po tej fali, gdy przyszły rachunki, zaczęło się racjonowanie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+            "link": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/#:~:text=token%20rationing%20might%20be%20a%20more%20fiscally%20sensible%20approach",
+            "cytat": "token rationing might be a more fiscally sensible approach",
+            "uwaga": "TechCrunch opisuje falę tokenmaxxingu i racjonowanie po rachunkach jako trend branżowy; 9to5Mac definiuje: 'consuming as many AI tokens as possible'. Przyczynowość 'rachunki -> racjonowanie' to ujęcie TechCrunch o branży, nie wypowiedź Apple; Bloomberg/9to5Mac wiążą obniżkę z cięciem kosztów pod CEO Johnem Ternusem. Sformułowanie 'zmiana po fali' jest akceptowalne."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "",
+            "link": "",
+            "cytat": "",
+            "uwaga": "Poprawki zastosowane: przypisanie do Bloomberga, 'część inżynierów', 'może spaść', 'zmiana po fali tokenmaxxingu', 'trzy różne obrazy' (trzy punkty) - wszystko zgodne ze źródłami. LinkedIn i X mówią to samo (300->200, 100, 25). Kryteria, trzy scenariusze i rady to opinia Kuby. Pytanie końcowe dotyczy głównej tezy. Komentarz linkuje TechCrunch jako źródło, co jest uczciwe wobec 'jak podaje Bloomberg'."
+          }
+        ]
+      },
+      "opublikowano": false
+    },
+    {
+      "id": "t3",
+      "rodzaj": "temat",
+      "temat": "Stanford: obrona zmiany przed maintainerem",
+      "link_newsa": "https://www.youtube.com/watch?v=dpY7YzZo4kE",
+      "tytul_newsa": "Czy repozytoria staną się fabrykami oprogramowania? – rozmowa z Mihailem Ericiem",
+      "kat": "Gdy zadanie domowe rozwiązuje jeden prompt, uczymy juniorów tego, co zostaje po agencie: rozumienia cudzego kodu i obrony własnej zmiany.",
+      "linkedin": "Na kursie o agentach kodujących na Stanfordzie zadanie domowe rozwiązuje jeden prompt. Dlatego studenci muszą zrozumieć obce repozytorium open source i obronić swoją zmianę przed maintainerem.\n\nKurs prowadzi Mihail Eric, który na co dzień kieruje AI w startupie Monaco. To druga edycja dziesięciotygodniowego programu: od narzędzi w Claude Code po pracę z kontekstem w dużych bazach kodu. Maintainer to osoba, która utrzymuje projekt i decyduje, czy dana zmiana do niego trafi. Moim zdaniem samo to, że agent wygenerował działający kod, nie powinno wystarczyć.\n\nUważam, że to dobry pomysł, bo sprawdza dokładnie to, czego agent za nas nie zrobi. Żeby obronić zmianę, trzeba wiedzieć, dlaczego kod jest napisany tak, a nie inaczej, jakie ma konsekwencje dla reszty projektu i czemu to rozwiązanie jest lepsze od innych. Kod można wygenerować, ale zrozumienia nie da się zlecić.\n\nTo samo widać w rozmowie po stronie firmy. Monaco samo buduje przestrzenie robocze dla agentów, a code review woli kupić. Eric mówi też, że wąskim gardłem staje się właśnie przegląd kodu. Moim zdaniem skoro agent pisze szybciej, niż da się to przeczytać, rośnie wartość osób, które potrafią ocenić cudzą zmianę.\n\nDla zespołów oznacza to, że onboardingu juniora nie warto już opierać na zadaniach typu „napisz funkcję”. Lepiej dać mu prawdziwy fragment systemu, poprosić o drobną zmianę i zapytać na review, dlaczego zrobił ją właśnie tak.\n\nJakie zadanie dałbyś/abyś juniorowi, którego nie rozwiąże jeden prompt?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://www.youtube.com/watch?v=dpY7YzZo4kE",
+      "x": [
+        "Na kursie o agentach kodujących na Stanfordzie zadanie domowe rozwiązuje jeden prompt. Dlatego studenci muszą zrozumieć obce repozytorium open source i obronić swoją zmianę przed maintainerem.",
+        "Kurs prowadzi Mihail Eric, na co dzień szef AI w startupie Monaco. To druga edycja programu na dziesięć tygodni: od narzędzi w Claude Code po kontekst w dużych bazach kodu.",
+        "Dobry pomysł, bo sprawdza to, czego agent za nas nie zrobi. Żeby obronić zmianę, trzeba wiedzieć, dlaczego kod wygląda tak, a nie inaczej. Kod można wygenerować, zrozumienia nie da się zlecić.",
+        "Monaco samo buduje przestrzenie robocze dla agentów, a code review kupuje. Wąskim gardłem staje się przegląd kodu. Moim zdaniem rośnie więc wartość osób, które umieją ocenić cudzą zmianę.",
+        "Przy onboardingu juniora zamiast „napisz funkcję” lepiej dać fragment prawdziwego systemu, drobną zmianę i pytanie na review: dlaczego tak? Więcej w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist realistic scene, 3:4 portrait: a thick stack of printed code diff pages on a wooden desk, one single page lifted out of the stack with one line circled in pencil, a red pen lying next to it, soft daylight, shallow depth of field, main subject centered with margin around edges, no text, no people (albo własne zdjęcie Kuby z zajęć lub spotkania JUG)"
+      },
+      "termin": "2026-11-18 08:30",
+      "fakty": [
+        "Stanford, druga edycja kursu, studenci rozumieją obce repo open source, proponują zmianę i bronią jej przed maintainerem, bo zadanie domowe rozwiązuje jeden prompt: opis z wydania 46 (dane.csv). Film nie dał się otworzyć (YouTube bez transkryptu).",
+        "Mihail Eric uczy kursu i kieruje AI w Monaco; dziesięciotygodniowy program od Claude Code po kontekst w dużych bazach kodu: opis z dane.csv.",
+        "Monaco buduje przestrzenie robocze agentów, a code review kupuje; wąskie gardło to przegląd kodu: opis z dane.csv.",
+        "Definicja maintainera, wnioski o onboardingu i zdanie „agent pisze szybciej niż ludzie czytają” to interpretacja Kuby, nie fakt z filmu. Do sprawdzenia w filmie, czy maintainer to realna osoba z projektu, czy rola odgrywana na zajęciach."
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] wideo nie otworzyło się — fakty o kursie z opisu w dane.csv i strony kursu; nie wiadomo, czy „maintainer” to realna osoba z projektu, czy rola na zajęciach; zdania o zaliczeniu i o tym, że agent pisze szybciej niż się czyta, oznaczone jako opinia autora.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t3",
+        "data": "2026-11-12 14:00",
+        "fakty": [
+          {
+            "fakt": "Studenci w drugiej edycji kursu współtworzą zmiany w obcym projekcie open source, a zmianę ocenia osoba utrzymująca repozytorium (maintainer jako realna osoba z projektu)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://latent.space/p/cs146s",
+            "link": "https://latent.space/p/cs146s#:~:text=The%20person%20who%20maintains%20the%20repo",
+            "cytat": "The person who maintains the repo reviews the student’s patch.",
+            "uwaga": "Uwaga: nagranie YouTube się nie otwiera; sprawdzone w odcinku Latent Space (wersja tekstowa rozmowy, ten sam materiał co film wg summify.io, adres z id dpY7Yz) i na stronie kursu. Latent Space to podcast, więc to drugie źródło o tej samej rozmowie, nie niezależne. Maintainer to realna osoba z projektu, nie rola na zajęciach. Wcześniej oznaczone jako niepotwierdzone, teraz potwierdzone. Strona kursu themodernsoftware.dev tego nie opisuje (tylko partnerzy open source). Wg summify.io studenci „explain their proposed changes to maintainers”."
+          },
+          {
+            "fakt": "Zadanie domowe z poprzedniej edycji rozwiązuje jeden prompt, dlatego zmiana w drugiej edycji",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://latent.space/p/cs146s",
+            "link": "https://latent.space/p/cs146s#:~:text=Last%20year%E2%80%99s%20homework%20takes%20one%20prompt",
+            "cytat": "Last year’s homework takes one prompt.",
+            "uwaga": "Uwaga: nagranie YouTube się nie otwiera; sprawdzone w odcinku Latent Space (wersja tekstowa rozmowy, ten sam materiał co film wg summify.io, adres z id dpY7Yz) i na stronie kursu. Latent Space to podcast, więc to drugie źródło o tej samej rozmowie, nie niezależne. Źródło mówi o zadaniach z zeszłego roku; post (Dlatego…) zgodny z sensem i opisem z dane.csv. Związek przyczynowy potwierdza też summify.io: „last year's assignments were too easily completed with AI tools”."
+          },
+          {
+            "fakt": "To druga edycja kursu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://latent.space/p/cs146s",
+            "link": "https://latent.space/p/cs146s#:~:text=Second%20time.%20Second%20time.",
+            "cytat": "Second time. Second time.",
+            "uwaga": "Eric odpowiada tak prowadzącemu, który pytał o „third time”. Dodatkowo themodernsoftware.dev: Fall 2026 z odnośnikiem do Fall 2025."
+          },
+          {
+            "fakt": "Monaco samo buduje przestrzenie robocze agentów, a code review kupuje",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://latent.space/p/cs146s",
+            "link": "https://latent.space/p/cs146s#:~:text=You%20buy%20to%20learn%2C%20and%20you%20build%20to%20keep",
+            "cytat": "You buy to learn, and you build to keep.",
+            "uwaga": "Uwaga: nagranie YouTube się nie otwiera; sprawdzone w odcinku Latent Space (wersja tekstowa rozmowy, ten sam materiał co film wg summify.io, adres z id dpY7Yz) i na stronie kursu. Latent Space to podcast, więc to drugie źródło o tej samej rozmowie, nie niezależne. Monaco oceniało narzędzia do code review i zostało przy Devin, a własne przestrzenie robocze agentów zbudowało (Monicoder wg summify.io). Zgodne z postem."
+          },
+          {
+            "fakt": "Eric mówi, że wąskim gardłem staje się przegląd kodu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://latent.space/p/cs146s",
+            "link": "https://latent.space/p/cs146s#:~:text=When%20code%20review%20becomes%20the%20bottleneck",
+            "cytat": "When code review becomes the bottleneck",
+            "uwaga": "Uwaga: nagranie YouTube się nie otwiera; sprawdzone w odcinku Latent Space (wersja tekstowa rozmowy, ten sam materiał co film wg summify.io, adres z id dpY7Yz) i na stronie kursu. Latent Space to podcast, więc to drugie źródło o tej samej rozmowie, nie niezależne. Tytuł sekcji odcinka; summify.io: „Traditional human code review cannot keep pace, becoming a bottleneck”. W poście zdanie o tym, że agent pisze szybciej niż da się czytać, jest oznaczone „Moim zdaniem”, więc to opinia Kuby."
+          },
+          {
+            "fakt": "Kurs trwa dziesięć tygodni, od narzędzi w Claude Code po kontekst w dużych bazach kodu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://latent.space/p/cs146s",
+            "link": "https://latent.space/p/cs146s#:~:text=A%20tour%20of%20the%20ten-week%20syllabus",
+            "cytat": "A tour of the ten-week syllabus",
+            "uwaga": "Uwaga: nagranie YouTube się nie otwiera; sprawdzone w odcinku Latent Space (wersja tekstowa rozmowy, ten sam materiał co film wg summify.io, adres z id dpY7Yz) i na stronie kursu. Latent Space to podcast, więc to drugie źródło o tej samej rozmowie, nie niezależne. Ramy 10 tygodni potwierdzone (summify.io: Week 10 ostatni moduł). Claude Code jest w materiałach odcinka („look inside Claude Code”). Dokładnego zdania o kontekście w dużych bazach nie sprawdzono dosłownie; zgodne z opisem z dane.csv i wcześniejszą wzmianką o context engineering w drugiej edycji."
+          },
+          {
+            "fakt": "Mihail Eric prowadzi kurs o agentach kodujących na Stanfordzie i kieruje AI w startupie Monaco",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://latent.space/p/cs146s",
+            "link": "https://latent.space/p/cs146s#:~:text=leads%20AI%20at%20Monaco",
+            "cytat": "leads AI at Monaco, where his colleagues use coding agents to ship software and investigate outages",
+            "uwaga": "Uwaga: nagranie YouTube się nie otwiera; sprawdzone w odcinku Latent Space (wersja tekstowa rozmowy, ten sam materiał co film wg summify.io, adres z id dpY7Yz) i na stronie kursu. Latent Space to podcast, więc to drugie źródło o tej samej rozmowie, nie niezależne. Instruktor: themodernsoftware.dev („Mihail Eric … INSTRUCTOR”). Monaco: też MLOps Community („Head of AI @ Monaco”), więc kilka źródeł; stanowisko aktualne wg Latent Space."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "",
+            "link": "",
+            "cytat": "",
+            "uwaga": "Po poprawkach: zdania o zaliczeniu i o tempie pisania agenta są oznaczone „Moim zdaniem” (LinkedIn) i w X wpis 4 oddziela tezę o przeglądzie kodu od opinii. LinkedIn i X zgodne (Monaco, dziesięć tygodni, druga edycja, maintainer). Pytanie na końcu pasuje do tezy. Drobiazg: wpis 3 na X („Dobry pomysł…”) bez markera opinii, ale to oczywista opinia. Jedyne zastrzeżenie: link_newsa to film, a weryfikacja oparta na odcinku Latent Space o tej samej rozmowie; Kuba powinien przed publikacją przejrzeć film."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t5",
+      "rodzaj": "temat",
+      "temat": "Bezpieczny SQL od LLM-a",
+      "link_newsa": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+      "tytul_newsa": "Poprawny SQL od LLM-a to jeszcze nie bezpieczny SQL",
+      "kat": "„Zrobione” to nie „dobrze zrobione”: poprawka po AI (tu warstwa uprawnień w kodzie) jest niewidoczna, bo jej efektem jest brak incydentu, więc trzeba ją mierzyć i pokazywać.",
+      "linkedin": "W teście 900 zapytań do bazy z danymi farmaceutycznymi AI zwróciło nawet około 80 wierszy, do których pytający nie miał dostępu.\n\nNarzędzie analityczne, zbudowane na Snowflake Cortex, zamienia pytania w języku naturalnym na SQL. Handlowiec pyta o sprzedaż w „swoich szpitalach” i dostaje dane z całego regionu. Zapytanie jest poprawne i odpowiada na pytanie, tylko nikt nie sprawdził, kto je zadał.\n\nWycieki zniknęły dopiero wtedy, gdy między pytaniem a bazą stanął pilnujący kod. Sprawdza każde zapytanie, zanim trafi do bazy, i w razie potrzeby je poprawia: dopisuje filtr, żeby handlowiec widział tylko swoje szpitale, ukrywa wrażliwe kolumny, a część zapytań blokuje albo oddaje człowiekowi do decyzji. Takie sprawdzanie zajęło w teście około 6,5 ms na zapytanie, więc użytkownik nie odczuje różnicy, a z bazy nie wyciekł już żaden wiersz.\n\nZapisanie reguł w prompcie tego nie załatwiło, bo prompt jest tylko sugestią, a model nie musi się do niej stosować. Nie wystarczyły też zwykłe, statyczne role dostępu, bo nie wiedzą, o co dokładnie ktoś pyta. Jak się okazało, ponad połowa zapytań wymagała jakiejś interwencji.\n\nWidzę tu coś szerszego niż problem z dostępami. Narzędzie generowane przez AI na demo wygląda świetnie: pytasz, po sekundzie masz wynik. Nic się nie psuje, nikt nie dostaje błędu, więc łatwo uznać, że „zrobione” znaczy „dobrze zrobione”. Poprawianie po AI trudno pokazać tak, jak pierwszą wersję, bo jego efektem jest to, że nic złego się nie stało.\n\nTyczy się to nie tylko SQL-a. Wygenerowanie dashboardu dla zebranych danych – krótki prompt, parę minut i mamy ładną, graficzną prezentację w HTML. Tylko czy masz pewność, że dane, które są prezentowane, są poprawne? Generowanie kodu – odpalasz aplikację, działa. Jednocześnie w kodzie widać jawne tworzenie nowych wątków, które przeciążą aplikację, gdy tylko pojawi się na niej ruch.\n\nTo właśnie ta weryfikacja, poprawianie, review, umiejętność odpowiedniego pokierowania AI i nauczanie go na przykładach są kluczowe, aby uzyskać jakościowe wyniki i nabrać efektu kuli śnieżnej, by każde kolejne zadanie było wykonywane coraz bardziej jakościowo przez AI.\nTylko pozostaje jeszcze duże wyzwanie do zaadresowania – jak pokazać wartość tej pracy interesariuszom?\n\nJak u Ciebie pokazuje się wartość pracy, po której nic złego się nie wydarzyło?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+      "x": [
+        "W teście 900 zapytań do bazy z danymi farmaceutycznymi AI zwróciło nawet około 80 wierszy, do których pytający nie miał dostępu. Handlowiec pytał o „swoje szpitale” i dostał dane z całego regionu. Zapytanie było poprawne, tylko nikt nie sprawdził, kto je zadał.",
+        "Wycieki zniknęły dopiero, gdy między pytaniem a bazą stanął pilnujący kod: dopisuje filtry, ukrywa wrażliwe kolumny, a część zapytań blokuje albo oddaje człowiekowi. Kosztowało to około 6,5 ms na zapytanie. Reguły w prompcie nie wystarczyły, bo prompt to tylko sugestia.",
+        "Nie wystarczyły też statyczne role dostępu, bo nie wiedzą, o co dokładnie ktoś pyta. Jak się okazało, ponad połowa zapytań wymagała jakiejś interwencji.",
+        "Takie narzędzie na demo wygląda świetnie: pytasz, po sekundzie masz wynik. Nic się nie psuje i nikt nie dostaje błędu, więc łatwo uznać, że „zrobione” to „dobrze zrobione”. Poprawianie po AI trudno pokazać, bo jego efektem jest to, że nic złego się nie stało.",
+        "Dotyczy to nie tylko SQL-a. Dashboard w HTML z krótkiego promptu wygląda ładnie, ale czy dane są poprawne? Aplikacja po uruchomieniu działa, a w kodzie widać tworzenie nowych wątków, które przeciążą ją, gdy pojawi się ruch.",
+        "Weryfikacja, review i uczenie AI na przykładach decydują o jakości. Wyzwanie: jak pokazać wartość tej pracy interesariuszom? Jak u Ciebie pokazuje się wartość pracy, po której nic złego się nie wydarzyło? Więcej: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "brak",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "40%",
+          "podpis": "zapytań SQL od LLM-a przeszło bez żadnej zmiany. Resztę trzeba było poprawić, zablokować albo oddać człowiekowi.",
+          "zrodlo": "InfoWorld, test 900 zapytań",
+          "numer": 46
+        },
+        "prompt": "Minimalist illustration of a printed spreadsheet page lying on a wooden desk next to a pen, seen from above. Out of about thirty neat rows, exactly three rows are marked with a yellow highlighter, as rows that should not be there. Soft daylight, muted colors, hand-made editorial look, no text, no people, main subject centered with margin on all sides, 3:4.",
+        "plik": "obrazki/t5.png",
+        "mem": {
+          "szablon": "This Is Fine",
+          "link": "https://imgflip.com/memegenerator/This-Is-Fine",
+          "tekst": "góra: Zapytanie wykonało się bez błędu, wynik po sekundzie\ndół (pies w płonącym pokoju): Dane z całego regionu trafiły do jednego handlowca"
+        }
+      },
+      "termin": "2026-11-15 15:00",
+      "fakty": [
+        "900 zapytań, ok. 80 nieautoryzowanych wierszy, 0 wycieków i ok. 6,5 ms na zapytanie: opis w wydania/046/dane.csv i InfoWorld (benchmark na danych syntetycznych).",
+        "Snowflake Cortex, handlowiec i „swoje szpitale”: InfoWorld (przykład autora; narzędzie na danych healthcare).",
+        "40% bez zmian, 20% filtr wiersza, 15% maskowanie kolumn, 11,7% przepisanie joinów, ok. 6,7% do człowieka, ok. 6,7% zablokowane: InfoWorld, rozkład wyników z 900 zapytań.",
+        "Statyczny RBAC nadal wyciekał, „a prompt is a suggestion”: InfoWorld.",
+        "Cześć wniosków (niewidoczność poprawek, mierzenie wycieków) to opinia Kuby wg jego wskazówki, nie fakt ze źródła."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "[weryfikacja] dopisane „syntetycznymi” — benchmark 900 zapytań był na danych syntetycznych; wszystkie liczby z jednego źródła (autor artykułu InfoWorld/IEEE).\n[czat] „Ten tekst mi się podoba ogólnie, tam są ważne wnioski. Natomiast ta sekcja w środku jest dla mnie zbyt techniczna, trudna w czytaniu. Za dużo chyba liczb, za mało opowiedzenia historii.” → środek przepisany jako opowieść (co robi pilnujący kod), bez rozkładu procentowego 40/20/15/11,7/6,7; zostają 900 zapytań, ok. 80 wierszy, 6,5 ms i „ponad połowa wymagała interwencji” (40% bez zmian).\n[czat] „Poprawiłem jeszcze trochę post »Bezpieczny SQL od LLM-a«. Zaktualizuj do niego teraz post na X, żeby było spójnie.” → wątek X przepisany pod jego wersję (dashboard HTML, tworzenie wątków w kodzie, review i uczenie AI na przykładach, wartość pracy dla interesariuszy).",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t5",
+        "data": "2026-11-12 12:00",
+        "fakty": [
+          {
+            "fakt": "Spójność: test na danych syntetycznych",
+            "gdzie": "linkedin, x",
+            "status": "rozbieżność",
+            "zrodlo": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html#:~:text=synthetic%2C%20de-identified",
+            "cytat": "synthetic, de-identified",
+            "uwaga": "Post mówi o „bazie z danymi farmaceutycznymi” i „wyciekach” bez zaznaczenia, że benchmark był na danych syntetycznych, zdeidentyfikowanych (źródło: żadnych realnych rekordów). Dodać np. „w teście na danych syntetycznych”. Autor sam jest twórcą narzędzia i opisuje własną pracę."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "cytat": "",
+            "uwaga": "Podmioty, okresy i liczby spójne między LinkedIn, X i infografiką. Opinie Kuby (widoczność poprawek, „mierzyłbym”) są jako opinie. Pytanie końcowe dotyczy głównej tezy. Uwaga drobna: źródło podaje też liczby napraw (285 filtrów wierszy, 240 maskowań), które nie pokrywają się z 20%/15% (kategorie nie są rozłączne), więc nie zestawiać ich w poście."
+          },
+          {
+            "fakt": "900 zapytań testowych",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html#:~:text=900%20test%20queries",
+            "cytat": "900 test queries",
+            "uwaga": "Jedno źródło (autor InfoWorld opisuje własną pracę, artykuł IEEE ICICNIS 2026 niedostępny w wyszukiwarce; WebSearch nie znalazł niezależnego potwierdzenia). Benchmark syntetyczny."
+          },
+          {
+            "fakt": "Zwykłe text-to-SQL zwróciło do ok. 80 nieautoryzowanych wierszy",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html#:~:text=returned%20up%20to%20about%2080%20unauthorized%20rows",
+            "cytat": "returned up to about 80 unauthorized rows on some queries",
+            "uwaga": "Jedno źródło (autor InfoWorld opisuje własną pracę, artykuł IEEE ICICNIS 2026 niedostępny w wyszukiwarce; WebSearch nie znalazł niezależnego potwierdzenia). Źródło: „na niektórych zapytaniach”, post ma „nawet około 80” - OK."
+          },
+          {
+            "fakt": "Podejście z warstwą polityk: 0 nieautoryzowanych wierszy",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "cytat": "leaked none",
+            "uwaga": "Jedno źródło (autor InfoWorld opisuje własną pracę, artykuł IEEE ICICNIS 2026 niedostępny w wyszukiwarce; WebSearch nie znalazł niezależnego potwierdzenia). "
+          },
+          {
+            "fakt": "Narzut ok. 6,5 ms na zapytanie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html#:~:text=about%206.5%20milliseconds",
+            "cytat": "about 6.5 milliseconds per query",
+            "uwaga": "Jedno źródło (autor InfoWorld opisuje własną pracę, artykuł IEEE ICICNIS 2026 niedostępny w wyszukiwarce; WebSearch nie znalazł niezależnego potwierdzenia). "
+          },
+          {
+            "fakt": "Rozkład: 40% bez zmian, 20% filtr wierszy, 15% maskowanie kolumn, 11,7% przepisane joiny, 6,7% do człowieka, 6,7% zablokowane",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "cytat": "40% ran unchanged; 20% needed a row filter; 15% column masking; 11.7% join rewrite; 6.7% human reviewer; 6.7% blocked",
+            "uwaga": "Jedno źródło (autor InfoWorld opisuje własną pracę, artykuł IEEE ICICNIS 2026 niedostępny w wyszukiwarce; WebSearch nie znalazł niezależnego potwierdzenia). "
+          },
+          {
+            "fakt": "Narzędzie zbudowane na Snowflake Cortex, dane healthcare/pharma",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "cytat": "built on Snowflake Cortex",
+            "uwaga": "Jedno źródło (autor InfoWorld opisuje własną pracę, artykuł IEEE ICICNIS 2026 niedostępny w wyszukiwarce; WebSearch nie znalazł niezależnego potwierdzenia). "
+          },
+          {
+            "fakt": "Przykład handlowca i „swoich szpitali” dostającego dane z całego regionu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "cytat": "every hospital in the region back",
+            "uwaga": "Jedno źródło (autor InfoWorld opisuje własną pracę, artykuł IEEE ICICNIS 2026 niedostępny w wyszukiwarce; WebSearch nie znalazł niezależnego potwierdzenia). Przykład ilustracyjny autora."
+          },
+          {
+            "fakt": "Statyczne role (RBAC) nadal wyciekały, bo nie widzą kontekstu",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "cytat": "can't see context",
+            "uwaga": "Jedno źródło (autor InfoWorld opisuje własną pracę, artykuł IEEE ICICNIS 2026 niedostępny w wyszukiwarce; WebSearch nie znalazł niezależnego potwierdzenia). "
+          },
+          {
+            "fakt": "Prompt jest tylko sugestią",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+            "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html#:~:text=a%20prompt%20is%20a%20suggestion",
+            "cytat": "a prompt is a suggestion, and the model can ignore it, forget it, or misread it",
+            "uwaga": "Jedno źródło (autor InfoWorld opisuje własną pracę, artykuł IEEE ICICNIS 2026 niedostępny w wyszukiwarce; WebSearch nie znalazł niezależnego potwierdzenia). Teza autora, nie wynik pomiaru."
+          }
+        ]
+      },
+      "opublikowano": true
+    },
+    {
+      "id": "t7",
+      "rodzaj": "temat",
+      "temat": "Bielik 11B v3.1 i model 100B",
+      "link_newsa": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+      "tytul_newsa": "Polski Bielik 11B v3.1 obsługuje 56 języków, a twórcy szykują model o ponad 100 mld parametrów",
+      "kat": "Dla firm z wrażliwymi danymi liczy się otwarty model z polskim tokenizerem i narzędziami do agentów, nie sama liczba języków; model 100B+ to na razie zapowiedź.",
+      "linkedin": "Bielik 11B v3.1 rozumie 56 języków zamiast 32, a jego twórcy zapowiadają już model o ponad 100 mld parametrów.\n\nBielik to polski model językowy rozwijany przez Fundację SpeakLeash i Cyfronet AGH. W nowej wersji doszły między innymi chiński, japoński, koreański i arabski, a model przeszedł dodatkowy trening na 500 mld tokenów. Ważniejsza dla mnie jest jednak inna zmiana: Bielik dostał wywoływanie narzędzi i structured output, czyli może zwracać odpowiedź w ustalonym formacie, który da się wczytać w kodzie. Według twórców na T2-bench, czyli wieloetapowych zadaniach obsługi klienta, wypada o 16–45 punktów procentowych lepiej niż wersja 3.0.\n\nObok pojawiło się Bielik-One, cztery modele, które nie piszą tekstu, tylko przypisują dane do kategorii i podają prawdopodobieństwa. Zastosowanie jest bardzo przyziemne: przypisywanie zgłoszeń do odpowiedniej kategorii albo analiza nastroju w opiniach. Do tego model DFlash, który przyspiesza generowanie odpowiedzi.\n\n26 listopada na Bielik Summit twórcy mają pokazać szczegóły multimodalnego modelu o ponad 100 mld parametrów, budowanego od zera na własnej architekturze. To na razie zapowiedź, więc poczekałbym z oceną do konkretów. Wątpliwości w tym samym artykule dotyczą pieniędzy: Bielik jest darmowy, a fundacja opiera się na partnerach, sponsorach i superkomputerach Cyfronetu, więc zdaniem eksperta trudno jej nadążyć za firmami, które zbierają miliardy.\n\nZ perspektywy zespołu, który wdraża AI, to nie jest wyścig na benchmarki. Dla instytucji z wrażliwymi danymi liczy się to, czy model może działać na własnym sprzęcie i czy dobrze radzi sobie z polskim. Według szacunku eksperta polski tokenizer potrzebuje ponad 40% mniej tokenów niż Llama na tym samym tekście, a mniej tokenów to niższy koszt i szybsza odpowiedź. Przed decyzją dobrze sprawdzić model na własnych dokumentach, bo wyniki z testów ogólnych rzadko przekładają się wprost na konkretny proces.\n\nCzy rozważalibyście w swojej firmie otwarty model hostowany u siebie, gdyby dobrze radził sobie z polskim? Co by o tym przesądziło?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+      "x": [
+        "Bielik 11B v3.1 rozumie 56 języków zamiast 32, w tym chiński, japoński i arabski. Twórcy z SpeakLeash zapowiadają już model o ponad 100 mld parametrów.",
+        "Dla mnie ważniejsze niż liczba języków jest wywoływanie narzędzi i structured output. Bielik może działać jako krok w większym systemie, a według twórców na T2-bench (wieloetapowa obsługa klienta) wypada o 16–45 punktów procentowych lepiej niż v3.0.",
+        "Obok powstało Bielik-One: cztery modele, które nie piszą tekstu, tylko przypisują dane do kategorii z prawdopodobieństwem. Przydają się np. do przypisywania zgłoszeń do kategorii.",
+        "Dla instytucji z wrażliwymi danymi liczy się, czy model może działać u nich na miejscu. Polski tokenizer to też mniejszy koszt: według szacunku eksperta ponad 40% mniej tokenów niż Llama na polskim tekście.",
+        "26 listopada na Bielik Summit twórcy pokażą model 100B+. Na razie to zapowiedź, a fundacja opiera się na sponsorach i Cyfronecie, co zdaniem eksperta utrudnia konkurowanie z firmami z miliardami. Czy otwarty polski model trafi u Was do produkcji?\n\nWydanie: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "porownanie",
+          "tytul": "Języki obsługiwane przez Bielika",
+          "jednostka": "",
+          "elementy": [
+            {
+              "etykieta": "Bielik 3.0",
+              "wartosc": 32
+            },
+            {
+              "etykieta": "Bielik 11B v3.1",
+              "wartosc": 56
+            }
+          ],
+          "zrodlo": "SpeakLeash, Cyfronet AGH"
+        },
+        "prompt": "Minimalist flat illustration on a light paper-textured background: a single open notebook seen from above with a hand-drawn grid of 56 small identical dots, 32 of them filled in dark ink and 24 in a single red accent color, a pencil lying beside it, soft natural light, no text, subject centered with generous margins, 3:4",
+        "plik": "obrazki/t7.png"
+      },
+      "termin": "2026-11-20 08:30",
+      "fakty": [
+        "56 języków zamiast 32, chiński/japoński/koreański/arabski, 500 mld tokenów treningu, wywoływanie narzędzi, structured output: artykuł xyz.pl",
+        "T2-bench +16–45 pkt względem v3.0: artykuł xyz.pl",
+        "Bielik-One: cztery modele decyzyjne (klasyfikacja, prawdopodobieństwa; kierowanie zgłoszeń, analiza nastroju); DFlash przyspiesza generowanie: artykuł",
+        "Model 100B+ multimodalny, od zera na własnej architekturze, szczegóły 26.11 na Bielik Summit: artykuł + opis w dane.csv",
+        "Finansowanie (partnerzy, sponsorzy, Cyfronet) i tokenizer >40% mniej tokenów niż Llama: komentarz eksperta w artykule (Albera, allclouds.pl), to opinia/szacunek, nie pomiar",
+        "'Dla urzędu, szpitala, banku liczy się hosting lokalny': teza eksperta z artykułu, opis z wydania mówi o 'dane muszą zostać u ciebie'"
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] T2-bench w punktach procentowych (wynik twórców, tylko z xyz.pl); „>40% mniej tokenów niż Llama” to szacunek eksperta (nie pomiar); Bielik-One przypisuje zgłoszenia do kategorii, nie do zespołu; „instytucje z wrażliwymi danymi” zamiast „urząd, szpital, bank”; opinia o finansowaniu to zdanie eksperta.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t7",
+        "data": "2026-11-12 13:00",
+        "fakty": [
+          {
+            "fakt": "Spójność: wynik T2-bench (+16–45 pp) podany w poście jako fakt, bez wskazania, że to wynik twórców",
+            "gdzie": "linkedin, x",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=o%2016%E2%80%9345%20punkt%C3%B3w%20procentowych%20lepsze%20ni%C5%BC",
+            "cytat": "o 16–45 punktów procentowych lepsze niż wersja 3.0",
+            "uwaga": "Jednostka (punkty procentowe) jest już poprawna. Artykuł podaje wynik z materiałów twórców; nie znalazłem go na karcie HF v3.1 ani w niezależnym źródle. Dopisać „według twórców” (np. „na T2-bench wypada według twórców o 16–45 punktów procentowych lepiej niż wersja 3.0”) w LinkedIn i X."
+          },
+          {
+            "fakt": "Spójność: X podaje finansowanie („fundacja opiera się na sponsorach i superkomputerach Cyfronetu”) bez „zdaniem eksperta”, a LinkedIn z atrybucją",
+            "gdzie": "x",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=rozwija%20go%20fundacja%20dzi%C4%99ki%20partnerom%2C%20mecenasom",
+            "cytat": "rozwija go fundacja dzięki partnerom, mecenasom i superkomputerom Cyfronetu",
+            "uwaga": "Fakt o partnerach i Cyfronecie jest w źródle (rubryka „Zdaniem eksperta”, Andrzej Albera; Cyfronet udostępnił też Helios i Athena). Ocena, że pieniądze są wyzwaniem, jest opinią eksperta. W LinkedIn atrybucja jest poprawna. W X opis tego zdania jest neutralny i nie przedstawia oceny jako faktu, więc to drobiazg; dla spójności można dopisać „zdaniem eksperta”."
+          },
+          {
+            "fakt": "Polski tokenizer: ponad 40% mniej tokenów niż Llama na polskim tekście (szacunek eksperta)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=jego%20polski%20tokenizer%20potrzebuje%20na%20polski",
+            "cytat": "jego polski tokenizer potrzebuje na polski tekst o ponad 40 proc. mniej tokenów niż popularna zagraniczna Llama",
+            "uwaga": "Andrzej Albera (allclouds.pl), rubryka „Zdaniem eksperta”; LinkedIn i X oznaczają to teraz jako szacunek eksperta, spójnie. Jedno źródło, nie pomiar."
+          },
+          {
+            "fakt": "Bielik 11B v3.1 obsługuje 56 języków, poprzednia wersja 32",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=obs%C5%82ugiwa%C5%82%2032%20j%C4%99zyki%2C%20teraz%20radzi%20sobie",
+            "cytat": "obsługiwał 32 języki, teraz radzi sobie z 56",
+            "uwaga": "Drugie źródło: karta HF v3.1 („56 unique languages”) i instalki.pl (pośrednio). Infografika: etykieta „Bielik 3.0” dla 32 — artykuł mówi „poprzednia wersja”, T2-bench porównuje z v3.0; zgodne."
+          },
+          {
+            "fakt": "Nowe języki: chiński, japoński, koreański, arabski",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=w%20tym%20z%20chi%C5%84skim%2C%20japo%C5%84skim%2C%20korea%C5%84skim",
+            "cytat": "w tym z chińskim, japońskim, koreańskim i arabskim",
+            "uwaga": "Drugie źródło: instalki.pl (wymienia te same plus ormiański, azerski, gruziński)."
+          },
+          {
+            "fakt": "Dodatkowy trening na 500 mld tokenów",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=Wersja%203.1%20zosta%C5%82a%20dodatkowo%20wytrenowana%20na",
+            "cytat": "Wersja 3.1 została dodatkowo wytrenowana na 500 mld tokenów",
+            "uwaga": "Drugie źródło: karta HF v3.1 (pretraining 500B tokenów) i instalki.pl."
+          },
+          {
+            "fakt": "Wywoływanie narzędzi i structured output w Bielik 11B v3.1",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=Bielik%203.1%20%C5%82%C4%85czy%20function%20calling%2C%20structured",
+            "cytat": "Bielik 3.1 łączy function calling, structured output i reasoning.",
+            "uwaga": "Drugie źródło: instalki.pl (function calling) i karta HF (format tool_call). Wyjaśnienie structured output w poście jest poprawne."
+          },
+          {
+            "fakt": "T2-bench to wieloetapowa obsługa klienta",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=Pozwala%20to%20Bielikowi%20skuteczniej%20realizowa%C4%87%20wieloetapowe",
+            "cytat": "Pozwala to Bielikowi skuteczniej realizować wieloetapowe zadania",
+            "uwaga": "Opis T2-bench jako benchmarku wieloetapowej obsługi klienta jest ogólnie znany (Sierra, τ²-bench); artykuł podaje wieloetapowe zadania i scenariusze (linie lotnicze, handel, telekomy)."
+          },
+          {
+            "fakt": "Bielik-One: cztery modele decyzyjne zwracające prawdopodobieństwa kategorii zamiast tekstu; kierowanie zgłoszeń do kategorii; analiza sentymentu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=Zamiast%20generowa%C4%87%20tekst%2C%20wskazuje%20prawdopodobie%C5%84stwo%20poszczeg%C3%B3lnych",
+            "cytat": "Zamiast generować tekst, wskazuje prawdopodobieństwo poszczególnych odpowiedzi",
+            "uwaga": "Poprawka zastosowana: w poście „przypisywanie zgłoszeń do kategorii”, bez „zespołu”. Sentyment: „Twórcy wskazują także zastosowania w analizie sentymentu”. Instalki.pl potwierdza rodzinę czterech modeli; reszta z jednego źródła (xyz.pl, wypowiedź K. Wróbla)."
+          },
+          {
+            "fakt": "DFlash przyspiesza generowanie odpowiedzi",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=Jest%20tzw.%20modelem%20draftowym%2C%20wsp%C3%B3%C5%82pracuj%C4%85cym%20z",
+            "cytat": "Jest tzw. modelem draftowym, współpracującym z większym modelem głównym.",
+            "uwaga": "Wcześniejsze DFlash dla v3.0 istnieją (HF, itwiz.pl); sens „przyspiesza generowanie” zgodny."
+          },
+          {
+            "fakt": "Model o ponad 100 mld parametrów, multimodalny, od zera na własnej architekturze (zapowiedź twórców)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=Zaplanowany%20na%2026%20listopada%20Bielik%20Summit",
+            "cytat": "Zaplanowany na 26 listopada Bielik Summit ma przynieść szczegóły prac nad modelem liczącym ponad 100 mld parametrów.",
+            "uwaga": "Jedno źródło (xyz.pl, wypowiedzi S. Kondrackiego); to zapowiedź twórców, post tak ją oznacza."
+          },
+          {
+            "fakt": "26 listopada Bielik Summit",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://superbiz.se.pl/wiadomosci/bielik-summit-premiery-nowych-modeli-od-tworcow-bielikai-aa-rTAe-TD3x-zizQ.html",
+            "link": "https://superbiz.se.pl/wiadomosci/bielik-summit-premiery-nowych-modeli-od-tworcow-bielikai-aa-rTAe-TD3x-zizQ.html#:~:text=BIELIK%20SUMMIT%202026",
+            "cytat": "BIELIK SUMMIT 2026",
+            "uwaga": "Data potwierdzona także przez superbiz.se.pl; powiązanie summitu z modelem 100B+ tylko w xyz.pl (jedno źródło)."
+          },
+          {
+            "fakt": "Bielik rozwijają Fundacja SpeakLeash i Cyfronet AGH; Bielik jest darmowy; fundacja opiera się na partnerach, sponsorach i superkomputerach Cyfronetu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=Akademickim%20Centrum%20Komputerowym%20Cyfronet%20AGH%2C%20kt%C3%B3re",
+            "cytat": "Akademickim Centrum Komputerowym Cyfronet AGH, które udostępniło zasoby superkomputerów Helios i Athena",
+            "uwaga": "Współpraca z Cyfronetem potwierdzona też w cyfronet.pl. W LinkedIn zdanie o trudności nadążenia za firmami zbierającymi miliardy ma atrybucję „zdaniem eksperta” (Albera: „Wyzwaniem Bielika nie jest technologia, tylko pieniądze.”)."
+          },
+          {
+            "fakt": "Instytucje z wrażliwymi danymi: liczy się praca modelu na własnym sprzęcie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/#:~:text=lokalny%20model%20mo%C5%BCna%20uruchomi%C4%87%20we%20w%C5%82asnej",
+            "cytat": "lokalny model można uruchomić we własnej serwerowni, a dane urzędu, szpitala czy banku nie opuszczają budynku.",
+            "uwaga": "Poprawka zastosowana: w poście ogólne „instytucje z wrażliwymi danymi”, jako wniosek Kuby, zgodny z tezą Albery (artykuł wymienia urząd, szpital, bank, post już nie). Jedno źródło."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "całość",
+            "status": "potwierdzony",
+            "zrodlo": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+            "cytat": "",
+            "uwaga": "Poprawki z uwagi Kuby wprowadzone: punkty procentowe, szacunek eksperta w obu tekstach, Bielik-One do kategorii, „instytucje z wrażliwymi danymi”, „zdaniem eksperta” w LinkedIn. Podmioty, liczby (56 vs 32) i okresy zgodne w LinkedIn, X i infografice; 100B+ i Summit oznaczone jako zapowiedź; pytanie końcowe dotyczy głównej tezy. Pozostałe dwie uwagi powyżej (T2-bench „według twórców”, atrybucja finansowania w X) są drobne."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t6",
+      "rodzaj": "temat",
+      "temat": "JetBrains Air i wąskie gardło review",
+      "link_newsa": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+      "tytul_newsa": "JetBrains wprowadza Air do swoich IDE – agenci kodujący w jednym miejscu",
+      "kat": "Gdy agenci piszą kod, wąskim gardłem jest przegląd — zanim dodamy agentów, warto zmierzyć, ile czasu zajmuje review.",
+      "linkedin": "Według raportu Atlassian, który cytuje JetBrains, 49% programistów spędza co najmniej cztery godziny tygodniowo na przeglądaniu wyników AI i poprawianiu promptów.\n\nJetBrains tłumaczy tym wprowadzenie do swoich IDE Air, czyli panelu, w którym uruchamiasz agentów kodujących, śledzisz ich postępy i oceniasz zmiany. Obsługuje m.in. Codex, Claude Code, Copilota i Junie. Firma tłumaczy to prosto: gdy agenci piszą kod, wąskim gardłem staje się jego przegląd.\n\nKażdy agent może pracować na własnym worktree, czyli osobnym katalogu roboczym z własną gałęzią tego samego repozytorium, więc równoległe sesje sobie nie przeszkadzają. Zmiany przeglądasz w IDE, z inspekcjami, testami i debuggerem, a uwagi do konkretnych linii odsyłasz agentowi, podobnie jak komentarze w pull requeście. Do pracy lokalnej płatna subskrypcja JetBrains AI nie jest potrzebna, a Junie w wersji Lite jest na razie darmowy.\n\nPodoba mi się, że narzędzie zaczyna od przeglądu, a nie od kolejnego sposobu na generowanie kodu. Równoległe worktree oznaczają, że kilka zmian naraz czeka na człowieka, więc to on szybko staje się ograniczeniem. Debugger i testy pod ręką skracają sprawdzanie, ale nie zastąpią zrozumienia, co dokładnie zmienił agent.\n\nZanim zespół doda kolejnych agentów, dobrze zmierzyć, ile czasu przegląd zajmuje dziś i czy rośnie po ich wdrożeniu. Inaczej pisanie przyspieszy, a zysk utknie w kolejce do review.\n\nCzy po wejściu agentów do Twojego zespołu przegląd kodu zajmuje więcej czasu? Co Wam pomogło go skrócić?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+      "x": [
+        "Według raportu Atlassian, który cytuje JetBrains, 49% programistów spędza co najmniej cztery godziny tygodniowo na przeglądaniu wyników AI i poprawianiu promptów. Tym JetBrains tłumaczy Air w swoich IDE.",
+        "W Air uruchamiasz m.in. Codex, Claude Code, Copilota i Junie. Każdy agent może pracować na własnym worktree, więc równoległe sesje sobie nie przeszkadzają.",
+        "Zmiany przeglądasz w IDE, z inspekcjami, testami i debuggerem, a uwagi do konkretnych linii odsyłasz agentowi. Do pracy lokalnej płatna subskrypcja JetBrains AI nie jest potrzebna.",
+        "Kilka agentów naraz to kilka zmian czekających na człowieka. Zanim dodacie kolejnych, zmierzcie, ile czasu zajmuje wam review i czy rośnie.",
+        "Ten i ponad 25 innych newsów z tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "naglowek": "Przegląd wyników AI",
+          "liczba": "49%",
+          "podpis": "programistów spędza co najmniej 4 godziny tygodniowo na przeglądaniu wyników AI i poprawianiu promptów",
+          "zrodlo": "Atlassian (cyt. JetBrains)",
+          "styl": "notatka"
+        },
+        "prompt": "Minimalist illustration, flat colors, 3:4: a single desk tray with a tall stack of paper printouts of code diffs, one pencil lying on top, one empty chair, main motif centered with margins, no text, no people looking at camera.",
+        "plik": "obrazki/t6.png"
+      },
+      "termin": "2026-11-23 08:30",
+      "fakty": [
+        "49% programistów, 4 godziny tygodniowo lub więcej na przegląd – opis newsa w wydania/046/dane.csv (źródło: JetBrains; artykuł zwrócił 403, nie zweryfikowano w oryginale, wyszukiwarka nie potwierdziła statystyki)",
+        "Codex, Claude Code, Copilot, Junie; worktree; inspekcje, testy, debugger; uwagi do linii – opis z dane.csv",
+        "Płatna subskrypcja JetBrains AI niepotrzebna, Junie Lite darmowy – opis z dane.csv",
+        "Wyjaśnienie worktree (osobny katalog z własną gałęzią) – dokumentacja JetBrains Air / ogólna wiedza o git"
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] liczba 49% to raport Atlassian State of Developer Experience 2026 cytowany przez JetBrains i dotyczy „przeglądania wyników AI i poprawiania promptów” (sprawdzone na blogu JetBrains w Chrome), nie samego review ani danych JetBrains; infografika poprawiona. Air w wydaniu 2026.3, Junie Lite darmowy, testy/debugger w przeglądzie — potwierdzone na blogu.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "t6",
+        "data": "2026-11-12 13:00",
+        "fakty": [
+          {
+            "fakt": "Według raportu Atlassian (cytowanego przez JetBrains) 49% programistów spędza co najmniej cztery godziny tygodniowo na przeglądaniu wyników AI i poprawianiu promptów",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+            "link": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/#:~:text=49%25%20of%20developers%20now%20spend%20four%20or%20more%20hours",
+            "cytat": "49% of developers now spend four or more hours a week reviewing AI output and correcting prompts (Atlassian State of Developer Experience Report 2026)",
+            "uwaga": "Źródło pierwotne (blog JetBrains) odczytane w przeglądarce przez autora i przekazane w zleceniu; serwer zwraca 403, bez obchodzenia blokady. Post wiernie oddaje sformułowanie JetBrains i poprawnie przypisuje dane Atlassianowi. Uwaga: media wtórne (InfoQ https://infoq.com/news/2026/10/atlassian-devex-2026, networkperspective.io) opisują tę samą liczbę jako 'managing AI tools', a w blogu Atlassiana (atlassian.com/blog/developer/developer-experience-report-2026) 49% nie znalazłem, więc oryginalnego brzmienia pytania w raporcie nie zweryfikowałem. Post jest uczciwy, bo zaznacza, że to JetBrains cytuje raport; zostaw 'cytuje JetBrains' (także w źródle infografiki)."
+          },
+          {
+            "fakt": "JetBrains wprowadziło Air do swoich IDE (wydanie 2026.3, ogólna dostępność)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+            "link": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/#:~:text=we%20shipped%20Air%20in%20JetBrains%20IDEs",
+            "cytat": "we shipped Air in JetBrains IDEs, with the 2026.3 release",
+            "uwaga": "Źródło pierwotne (blog JetBrains) odczytane w przeglądarce przez autora i przekazane w zleceniu; serwer zwraca 403, bez obchodzenia blokady. Wyszukiwarka tylko częściowo: w październiku EAP, w listopadzie wydanie 2026.3 (GoLand 2026.3 z 5.11 wg doniesienia). Jedno źródło dla GA: blog JetBrains."
+          },
+          {
+            "fakt": "JetBrains uzasadnia Air tym, że gdy agenci piszą kod, wąskim gardłem staje się przegląd",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+            "link": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/#:~:text=bottleneck%20moves%20to%20review",
+            "cytat": "bottleneck moves to review",
+            "uwaga": "Źródło pierwotne (blog JetBrains) odczytane w przeglądarce przez autora i przekazane w zleceniu; serwer zwraca 403, bez obchodzenia blokady. Cytat w brzmieniu przekazanym w zleceniu (skrót); nie sprawdziłem pełnego zdania. Jedno źródło (JetBrains o sobie, materiał marketingowy)."
+          },
+          {
+            "fakt": "Junie w wersji Lite jest darmowy",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+            "link": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/#:~:text=Junie%20Lite",
+            "cytat": "Junie Lite darmowy (wg odczytu bloga przekazanego w zleceniu)",
+            "uwaga": "Źródło pierwotne (blog JetBrains) odczytane w przeglądarce przez autora i przekazane w zleceniu; serwer zwraca 403, bez obchodzenia blokady. Wyszukiwarka (strony JetBrains): darmowy dostęp do Junie Lite po zalogowaniu kontem JetBrains, wg strony JetBrains do końca roku i z możliwością zmiany warunków. Rozważ dopisek 'na razie' lub 'do końca roku'. Materiał firmy o sobie."
+          },
+          {
+            "fakt": "Zmiany przeglądasz w IDE, z inspekcjami, testami i debuggerem",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+            "link": "",
+            "cytat": "przegląd z inspekcjami, testami i debuggerem (wg odczytu bloga przekazanego w zleceniu)",
+            "uwaga": "Źródło pierwotne (blog JetBrains) odczytane w przeglądarce przez autora i przekazane w zleceniu; serwer zwraca 403, bez obchodzenia blokady. Dokumentacja https://www.jetbrains.com/help/idea/air-in-jetbrains-ides.html nie wspomina o testach i debuggerze (tylko inspekcje/kontrole), więc te dwa elementy stoją na blogu. Jedno źródło."
+          },
+          {
+            "fakt": "Płatna subskrypcja JetBrains AI nie jest potrzebna",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.jetbrains.com/help/idea/air-in-jetbrains-ides.html",
+            "link": "https://www.jetbrains.com/help/idea/air-in-jetbrains-ides.html#:~:text=does%20not%20require%20a%20JetBrains%20AI%20subscription",
+            "cytat": "does not require a JetBrains AI subscription",
+            "uwaga": "Źródło pierwotne (blog JetBrains) odczytane w przeglądarce przez autora i przekazane w zleceniu; serwer zwraca 403, bez obchodzenia blokady. Dokumentacja: https://www.jetbrains.com/help/idea/air-in-jetbrains-ides.html potwierdza to samo. Zastrzeżenie: wg wyszukiwarki uruchomienia w chmurze wymagają subskrypcji JetBrains AI, a agenci (np. Copilot) własnej autoryzacji. Dla pracy lokalnej zdanie jest OK."
+          },
+          {
+            "fakt": "Air obsługuje m.in. Codex, Claude Code, Copilota i Junie",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.jetbrains.com/help/idea/air-in-jetbrains-ides.html",
+            "link": "https://www.jetbrains.com/help/idea/air-in-jetbrains-ides.html#:~:text=such%20as%20Claude%20Code%20or%20Codex",
+            "cytat": "such as Claude Code or Codex",
+            "uwaga": "Dokumentacja podaje Claude Code i Codex oraz agentów ACP; Copilot (wbudowany) i Junie potwierdza wyszukiwarka (strony jetbrains.com/air/ides, laravel-news.com/jetbrains-air). Sama dokumentacja nie wymienia Copilota ani Junie."
+          },
+          {
+            "fakt": "Każdy agent może pracować na własnym worktree, więc równoległe sesje sobie nie przeszkadzają",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.jetbrains.com/help/idea/air-in-jetbrains-ides.html",
+            "link": "https://www.jetbrains.com/help/idea/air-in-jetbrains-ides.html#:~:text=isolated%20in%20a%20temporary%20worktree",
+            "cytat": "isolated in a temporary worktree",
+            "uwaga": "Dokumentacja mówi o izolacji w tymczasowym worktree; blog (wg zlecenia) też wspomina worktree. 'Nie przeszkadzają sobie' to rozsądny wniosek. Jedno źródło (JetBrains)."
+          },
+          {
+            "fakt": "Uwagi do konkretnych linii odsyłasz agentowi",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.jetbrains.com/help/idea/air-in-jetbrains-ides.html",
+            "link": "",
+            "cytat": "leave notes on diff lines and send them to the agent with your next message",
+            "uwaga": "Parafraza dokumentacji. Porównanie do komentarzy w pull requeście to opis Kuby. Jedno źródło (JetBrains)."
+          },
+          {
+            "fakt": "Worktree to osobny katalog roboczy z własną gałęzią tego samego repozytorium",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://git-scm.com/docs/git-worktree",
+            "link": "",
+            "cytat": "",
+            "uwaga": "Ogólna wiedza o git worktree (https://git-scm.com/docs/git-worktree); definicja poprawna, strony nie czytałem w tej sesji."
+          },
+          {
+            "fakt": "Ponad 25 innych newsów w wydaniu #46",
+            "gdzie": "x",
+            "status": "potwierdzony",
+            "zrodlo": "wydania/046/dane.csv",
+            "link": "",
+            "cytat": "",
+            "uwaga": "dane.csv wydania 46 ma 29 pozycji (30 wierszy z nagłówkiem), czyli ponad 25 innych. Źródło lokalne."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "",
+            "link": "",
+            "cytat": "",
+            "uwaga": "Przeczytane od początku do końca: LinkedIn, X i infografika mówią to samo (49%, 4+ godziny, przegląd wyników AI i poprawianie promptów, źródło Atlassian cyt. JetBrains). Podmioty poprawne (dane Atlassiana, JetBrains cytuje i uzasadnia nim Air; 'tłumaczy tym' zgodne ze źródłem). Opinie Kuby ('Podoba mi się', 'dobrze zmierzyć', 'szybko staje się ograniczeniem') są oznaczone jako opinie. Pytanie końcowe dotyczy tezy. Drobiazg do rozważenia: 'Junie Lite darmowy' bez zastrzeżenia czasowego."
+          }
+        ]
+      }
+    },
+    {
+      "id": "w-17spo",
+      "rodzaj": "temat",
+      "temat": "Business Hub i agenci w ChatGPT",
+      "link_newsa": "https://openai.com/index/introducing-businesses-chatgpt/",
+      "tytul_newsa": "OpenAI wprowadza Business Hub i agentów biznesowych w ChatGPT",
+      "kat": "Business Hub i agenci w ChatGPT to na razie USA, ale już teraz da się przygotować dane, weryfikację i zasady dla agenta.",
+      "linkedin": "Od 10 listopada kwalifikujące się firmy e-commerce i usług online w USA mogą uruchomić w ChatGPT własnego agenta, z którym klient prowadzi osobną, oznaczoną rozmowę o ofercie.\n\nOpenAI nazywa to Business Hub. Firma zgłasza swoją organizację w ChatGPT, a po weryfikacji aktualizuje kluczowe dane i dodaje własne katalogi produktów z cenami i dostępnością. Sklepy Shopify mogą połączyć sklep z Business Hub albo z panelu Shopify, a ich produkty są już zintegrowane z ChatGPT przez Shopify Catalog. Klienci enterprise i reklamodawcy zgłaszają firmę przez przedstawiciela OpenAI.\n\nWarto rozdzielić, co jest dostępne gdzie. Agenci to na razie beta tylko dla kwalifikujących się firm w USA, a sponsorowanie agenta w reklamach ChatGPT to test z wybranymi reklamodawcami, też w USA. Samo zgłoszenie firmy OpenAI opisuje szerzej: jako dostępne dla firm tam, gdzie działa ChatGPT. Firma zobaczy zbiorcze statystyki: liczbę wzmianek, kliknięcia w stronę i wspólne tematy rozmów, w których cytowana jest jej strona. Rozmów użytkowników z agentem OpenAI firmom nie udostępnia.\n\nOpenAI zapowiada rozszerzanie tych funkcji na kolejne rynki i kategorie firm oraz narzędzia dla organizacji o bardziej złożonych potrzebach. Przygotować można się już teraz, bez czekania na datę dla Polski:\n\n– Dane produktowe: ceny i dostępność w jednym, aktualnym źródle, z którego da się je wysyłać do kilku kanałów naraz.\n– Stan obecny: sprawdź, co ChatGPT mówi dziś o Twojej firmie i produktach.\n– Weryfikacja: uporządkowana domena i firmowy e-mail, żeby zgłoszenie nie utknęło na formalnościach.\n– Zasady i odpowiedzialność: co wolno mówić agentowi, kiedy przekazuje rozmowę człowiekowi i kto w firmie odpowiada za ten kanał.\n\nGdy funkcje dotrą do kolejnych rynków, taki start będzie dużo prostszy niż zaczynanie od zera.",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://openai.com/index/introducing-businesses-chatgpt/",
+      "x": [
+        "Od 10 listopada kwalifikujące się firmy e-commerce i usług online w USA mogą uruchomić w ChatGPT własnego agenta. Rozmowa z nim jest oznaczona i osobna od zwykłego czatu.",
+        "Punkt wyjścia to Business Hub: firma zgłasza organizację w ChatGPT, po weryfikacji aktualizuje dane i dodaje katalogi produktów z cenami i dostępnością. Sklepy Shopify mogą połączyć sklep z Hubem.",
+        "Co gdzie: agenci to beta tylko w USA, sponsorowanie agenta w reklamach to test wybranych reklamodawców w USA. Hub ma statystyki zbiorcze: wzmianki, kliknięcia, wspólne tematy rozmów. Bez rozmów użytkowników.",
+        "OpenAI zapowiada kolejne rynki i kategorie firm. Jak się przygotować już teraz: dane produktowe w jednym aktualnym źródle, sprawdzenie, co ChatGPT mówi o firmie, domena i e-mail do weryfikacji, zasady dla agenta.",
+        "Więcej o tym i innych newsach z tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist hand-drawn style illustration on a warm paper background: a small shop front sketched in pencil on the left, and on the right a notebook page with a neat product list showing small price tags and tick marks for availability, no readable text. Main motif centered with generous margins, soft muted colors with one orange accent, 3:4."
+      },
+      "termin": "2026-11-24 08:30",
+      "fakty": [
+        "FAKT (openai.com/index/introducing-businesses-chatgpt, odczytane w przeglądarce przez Kubę 12.11; WebFetch 403): zgłoszenie firmy w Business Hub, aktualizacja danych po weryfikacji, własne katalogi produktów z cenami i dostępnością (self-service product feeds)",
+        "FAKT (to samo źródło): sklepy Shopify mogą połączyć sklep z Business Hub albo z panelu Shopify; produkty ze sklepów Shopify są już zintegrowane z ChatGPT przez Shopify Catalog; klienci enterprise i reklamodawcy zgłaszają firmę przez przedstawiciela OpenAI",
+        "FAKT (to samo źródło): statystyki zbiorcze z progami prywatności: liczba wzmianek, kliknięcia w stronę, discovery topics; OpenAI nie udostępnia firmom rozmów użytkowników ani rozmów z agentem",
+        "FAKT (to samo źródło): agent biznesowy: osobna, oznaczona rozmowa; beta od 10 listopada dla kwalifikujących się firm e-commerce i usług online w USA; sponsorowanie agenta w reklamach to test z wybranymi reklamodawcami w USA",
+        "FAKT (to samo źródło): OpenAI zapowiada rozszerzanie Business w ChatGPT i agentów na kolejne rynki i kategorie firm oraz narzędzia dla bardziej złożonych organizacji",
+        "DO SPRAWDZENIA PRZEZ KUBĘ: czy zgłoszenie firmy w Business Hub działa już w Polsce. OpenAI pisze o firmach „located where ChatGPT is available”; w poście podane ostrożnie (cytat po angielsku, bez twierdzenia). Można też usunąć to zdanie",
+        "PORADY (wniosek autora, nie fakt ze źródła): dane produktowe w jednym źródle, sprawdzenie co ChatGPT mówi o firmie, domena i firmowy e-mail, zasady dla agenta i właściciel kanału",
+        "Brak liczb poza datą 10 listopada; „#46” to numer wydania"
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] ograniczenie do USA i e-commerce dotyczy tylko agentów (profile szersze); statystyki „zobaczy” (część analityk jeszcze niewdrożona); sponsorowanie „w teście”; „porównanie produktów” zamiast „dwóch”. Źródło pierwotne (openai.com, help.openai.com) zwraca 403 — fakty z relacji mediów (letsdatascience, Gulf News, explainx, TNW).\n[czat] „Spróbuj mi trochę poprawić ten »Business Hub i agenci w ChatGPT«. Z racji tego, że to jest tylko w USA, a dopiero w Polsce - może nakieruj to bardziej na to jakie to możliwości niesie, jak ewentualnie można się na to przygotować itd. Nie musisz tak bardzo zawsze skupiać się na tym by to była moja perspektywa np. »Widzę tu przesunięcie«. Czasami też chodzi o jakieś porady, nowości, przyszłość itd. Nie zawsze też musi być pytanie na koniec, nie zawsze to dawaj, gdy jest na siłę.” → post przepisany jako zapowiedź i porady (bez „widzę tu…”, bez pytania na końcu).\n[weryfikacja] do sprawdzenia przez Kubę przed publikacją: czy zgłoszenie firmy w Business Hub działa już dla firm w Polsce (OpenAI pisze ogólnie: „located where ChatGPT is available”) — w poście zostawione ogólne sformułowanie, bez twierdzenia o Polsce.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "w-17spo",
+        "data": "2026-11-15 12:00",
+        "fakty": [
+          {
+            "fakt": "Spójność: porady w liście „–” (dane produktowe w jednym źródle, sprawdzenie, co ChatGPT mówi o firmie, domena i e-mail, zasady dla agenta) to wnioski autora",
+            "gdzie": "linkedin, x",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies",
+            "link": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies#:~:text=Existing%20enterprise%20customers%20and%20advertisers",
+            "cytat": "(brak w źródłach)",
+            "uwaga": "Porady są wnioskiem autora, nie faktem ze źródła; w poście podane jako rekomendacje („Przygotować można się…”), nie jako twierdzenia OpenAI — OK. Jedyne dotykające faktów: „e-mail firmowy i domena do weryfikacji” — spójne z help center OpenAI (phone, business email, website domain or Shopify, Persona), wg letsdatascience. Nie wymaga poprawki."
+          },
+          {
+            "fakt": "Beta agentów biznesowych od 10 listopada 2026 dla kwalifikujących się firm e-commerce i usług online w USA",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies",
+            "link": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies#:~:text=Business%20Agents%20are%20available%20only%20to%20eligible%20eCommerce%20and%20online%20service%20businesses%20in%20the%20United%20States",
+            "cytat": "Business Agents are available only to eligible eCommerce and online service businesses in the United States",
+            "uwaga": "Źródło pierwotne openai.com daje 403 (nie obchodzone); sprawdzone w relacjach mediów. Data 10.11: aicatchup „introduced Businesses in ChatGPT in beta on November 10, 2026”, letsdatascience (za The Verge) „announced on November 10”. Dostępność dla USA podana dokładnie; trzy relacje zgodne, ale wszystkie to wtórne wersje komunikatu OpenAI."
+          },
+          {
+            "fakt": "Business Hub (zgłoszenie firmy) dostępny dla firm tam, gdzie działa ChatGPT; agenci tylko USA",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies",
+            "link": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies#:~:text=Business%20Hub%20is%20launching%20globally%20for%20eligible%20businesses%20wherever%20ChatGPT%20is%20available",
+            "cytat": "Business Hub is launching globally for eligible businesses wherever ChatGPT is available",
+            "uwaga": "Dokładnie oddane: LinkedIn rozdziela zgłoszenie (szerzej) i agentów (USA), bez twierdzenia o Polsce. Drugie źródło: aicatchup „Any eligible business located where ChatGPT is available can claim their business”. X nie wspomina o szerszej dostępności Huba, ale niczego nie przeczy (pomija nuans). Czy działa w Polsce — nie ustalono w mediach."
+          },
+          {
+            "fakt": "Rozmowa z agentem jest oznaczona i osobna od zwykłego czatu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://letsdatascience.com/news/openai-launches-verified-business-agents-in-chatgpt-beta-a88f185a",
+            "link": "https://letsdatascience.com/news/openai-launches-verified-business-agents-in-chatgpt-beta-a88f185a#:~:text=chats%20with%20Business%20Agents%20will%20be%20clearly%20labeled%20and%20kept%20separate",
+            "cytat": "chats with Business Agents will be clearly labeled and kept separate from the user's main ChatGPT conversation",
+            "uwaga": "Drugie źródło: wyniki wyszukiwania (IT Brief, t2online) — to samo."
+          },
+          {
+            "fakt": "Firma zgłasza organizację w ChatGPT, po weryfikacji aktualizuje dane, dodaje własne katalogi produktów z cenami i dostępnością",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies",
+            "link": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies#:~:text=They%20can%20also%20add%20self-service%20product%20feeds%20with%20pricing%20and%20availability",
+            "cytat": "They can also add self-service product feeds with pricing and availability",
+            "uwaga": "LinkedIn „kluczowe dane” — źródło pierwotne (wg Kuby) tak mówi; w relacjach mediów nie sprawdzono słowa „kluczowe”, nieistotne. Weryfikacja: letsdatascience (za The Verge) „claim their organization and get verified through a feature called Business Hub”."
+          },
+          {
+            "fakt": "Sklepy Shopify mogą połączyć sklep z Business Hub albo z panelu Shopify; produkty Shopify już zintegrowane z ChatGPT przez Shopify Catalog",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies",
+            "link": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies#:~:text=Shopify%20merchants%20can%20connect%20their%20store%20through%20Business%20Hub%20or%20the%20Shopify%20admin%20system",
+            "cytat": "Shopify merchants can connect their store through Business Hub or the Shopify admin system to streamline verification",
+            "uwaga": "Zintegrowanie przez Shopify Catalog: wyniki wyszukiwania cytują OpenAI „Eligible products from Shopify merchants are already integrated into ChatGPT through the Shopify Catalog”. Uwaga: źródło mówi, że połączenie służy usprawnieniu weryfikacji; w poście nie ma tego celu, ale też nie ma twierdzenia sprzecznego. Sklep Shopify nie jest wymagany do zgłoszenia — post tego nie sugeruje."
+          },
+          {
+            "fakt": "Klienci enterprise i reklamodawcy zgłaszają firmę przez przedstawiciela OpenAI",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies",
+            "link": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies#:~:text=Existing%20enterprise%20customers%20and%20advertisers%20can%20work%20through%20their%20company%20representative",
+            "cytat": "Existing enterprise customers and advertisers can work through their company representative to claim their business.",
+            "uwaga": "Drugie źródło: aicatchup, to samo."
+          },
+          {
+            "fakt": "Statystyki zbiorcze: liczba wzmianek, kliknięcia w stronę, wspólne tematy rozmów (discovery topics)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies",
+            "link": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies#:~:text=These%20aggregated%20insights%20include%20the%20number%20of%20mentions%20a%20business%20receives",
+            "cytat": "These aggregated insights include the number of mentions a business receives, website clicks and discovery topics",
+            "uwaga": "Dwie niedokładności stylistyczne, nie błędy: (1) aicatchup — statystyki tylko „when there are enough conversations or interactions to meet certain thresholds”; post pisze „Firma zobaczy” bez progu (Kuba w uwaga_kuby wspominał też, że część analityk jeszcze niewdrożona — nie potwierdzone w mediach). Można złagodzić: „Firma zobaczy (po przekroczeniu progów prywatności) …”. (2) „w których cytowana jest jej strona” — źródło: discovery topics „where it appears”; „cytowana jest jej strona” to lekkie doprecyzowanie, lepiej „w których pojawia się firma”."
+          },
+          {
+            "fakt": "OpenAI nie udostępnia firmom rozmów użytkowników z agentem",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies",
+            "link": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies#:~:text=Businesses%20do%20not%20get%20access%20to%20individual%20user%20conversations%20or%20Business%20Agent%20chats",
+            "cytat": "Businesses do not get access to individual user conversations or Business Agent chats",
+            "uwaga": "Jedno źródło (IT Brief); pozostałe relacje tego nie powtarzają."
+          },
+          {
+            "fakt": "Sponsorowanie agenta w reklamach ChatGPT to test z wybranymi reklamodawcami w USA",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify",
+            "link": "https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify#:~:text=OpenAI%20is%20testing%20Sponsored%20Agents%20with%20select%20advertisers%20in%20the%20United%20States",
+            "cytat": "OpenAI is testing Sponsored Agents with select advertisers in the United States.",
+            "uwaga": "TNW (16.09.2026) potwierdza test z wybranymi reklamodawcami w USA. IT Brief przy premierze z 10.11 pisze tylko „Businesses can sponsor their Business Agent and use it as the destination for ChatGPT ads” bez słowa o teście, więc status testu pochodzi z TNW (starsze źródło) i oświadczenia Kuby z odczytu openai.com; warto zachować sformułowanie „test”. Wątek X i LinkedIn spójne."
+          },
+          {
+            "fakt": "OpenAI zapowiada rozszerzanie funkcji na kolejne rynki i kategorie firm oraz narzędzia dla bardziej złożonych organizacji",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies",
+            "link": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies#:~:text=It%20plans%20to%20widen%20access%20over%20time%20to%20more%20markets%20and%20categories",
+            "cytat": "It plans to widen access over time to more markets and categories",
+            "uwaga": "Drugie źródło: letsdatascience „more types of business expected over time” (tylko kategorie). Część o „narzędziach dla organizacji o bardziej złożonych potrzebach” nie znaleziona w mediach, opiera się wyłącznie na odczycie Kuby z openai.com — jedno źródło."
+          },
+          {
+            "fakt": "Spójność: LinkedIn a wątek X",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies",
+            "link": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies#:~:text=Business%20Agents%20are%20available%20only%20to%20eligible%20eCommerce",
+            "cytat": "(nie dotyczy)",
+            "uwaga": "Daty, zakres USA, test sponsorowania, brak dostępu do rozmów, kolejne rynki: te same w obu. Poprzednia rozbieżność (X bez „test”) naprawiona — post 3/5 mówi „sponsorowanie agenta w reklamach to test wybranych reklamodawców w USA”. Różnica: X nie podaje, że samo zgłoszenie firmy jest szersze niż USA — pominięcie, nie sprzeczność."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies",
+            "link": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies#:~:text=Business%20Agents%20are%20available%20only%20to%20eligible%20eCommerce",
+            "cytat": "(nie dotyczy)",
+            "uwaga": "Dostępność USA vs. inne kraje podana dokładnie (agenci i sponsorowanie: USA; zgłoszenie firmy: „tam, gdzie działa ChatGPT”, bez twierdzenia o Polsce). Opinie/porady oddzielone od faktów. Brak pytania na końcu zgodnie z prośbą. Drobne uwagi: próg prywatności statystyk i „cytowana jest jej strona” (patrz wyżej). Tytuł „#46” w komentarzu to numer wydania."
+          }
+        ]
+      }
+    },
+    {
+      "id": "w-1uugl",
+      "rodzaj": "temat",
+      "temat": "Eval-driven development dla agentów",
+      "link_newsa": "https://www.langchain.com/blog/what-is-eval-driven-development",
+      "tytul_newsa": "Czym jest eval-driven development, czyli TDD dla agentów AI",
+      "kat": "Ewale pisane przed zmianą łapią regresje, które ukrywa średni wynik — TDD dla agentów, z jednym zachowaniem naraz.",
+      "linkedin": "Po dodaniu agentowi narzędzia do zgłoszeń IT jego średni wynik w testach wzrósł, ale na pytanie „jak połączyć się z VPN?” zaczął zakładać zgłoszenie zamiast szukać w dokumentacji.\n\nTaki przykład pokazuje LangChain, opisując eval-driven development, czyli odpowiednik TDD dla agentów AI. Agent od wewnętrznej dokumentacji miał dwa narzędzia: wyszukiwanie w dokumentach firmy i w internecie. Dodano trzecie, create_ticket. Miało zakładać zgłoszenie, gdy ktoś zgłasza awarię (np. VPN się nie łączy), ale nie przy pytaniu, jak coś zrobić.\n\nSchemat jest taki jak w TDD. Najpierw opisujesz jedno zachowanie tak, żeby dało się je ocenić na „przeszło / nie przeszło”: kiedy ma się włączać, co agent ma zrobić, czego nie i które dotychczasowe zachowania muszą dalej działać. Potem piszesz ewal, czyli zestaw przykładów z oczekiwanym wynikiem (tu: czy agent wywołał właściwe narzędzie), i sprawdzasz, że na starej wersji nie przechodzi. Dopiero wtedy wprowadzasz zmianę. W przykładzie ślad działania agenta, czyli zapis każdego wywołania modelu i narzędzia, pokazał, że opis nowego narzędzia był za szeroki i pasował do każdej wzmianki o VPN. Po zawężeniu go do próśb, które wymagają działania IT, przeszły wszystkie przypadki.\n\nPodoba mi się to, bo zna to każdy, kto zmieniał prompt „na wyczucie”: jeden przypadek się poprawia, drugi psuje i nikt tego nie widzi. W zwykłym kodzie łapią to testy, bo ten sam kod daje ten sam wynik. Agent odpowiada za każdym razem trochę inaczej i sam wybiera kroki, więc potrzeba oceny na wielu przykładach. Średnia też potrafi oszukać: w tym przykładzie rosła, choć jeden przypadek przestał działać. Dlatego regresje warto sprawdzać przypadek po przypadku i trzymać osobny zbiór przykładów, którego nie używasz przy poprawkach, bo inaczej agent uczy się pod własne testy. Przy okazji: tekst pochodzi od firmy, która sprzedaje do tego własne narzędzia, ale sam pomysł ich nie wymaga.\n\nZanim zespół zmieni prompt albo da agentowi nowe narzędzie, dobrze spisać jedno oczekiwane zachowanie i zebrać mały zestaw prawdziwych pytań z logów. Samo „odpowiedź jest pomocna” to jeszcze nie miara, której da się pilnować.\n\nCzy ewal pisany przed zmianą ma szansę stać się dla agentów tym, czym testy jednostkowe dla zwykłego kodu?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://www.langchain.com/blog/what-is-eval-driven-development",
+      "x": [
+        "Po dodaniu agentowi narzędzia do zgłoszeń IT jego średni wynik w testach wzrósł. A na pytanie „jak połączyć się z VPN?” zaczął zakładać zgłoszenie zamiast szukać w dokumentacji.",
+        "Taki przykład pokazuje LangChain, opisując eval-driven development, czyli TDD dla agentów. Najpierw opisujesz jedno zachowanie tak, żeby dało się je ocenić „przeszło / nie przeszło”. Potem piszesz ewal, czyli zestaw przykładów z oczekiwanym wynikiem.",
+        "Ewal musi na starej wersji nie przechodzić. Dopiero potem wprowadzasz zmianę. Ewal pisany dopiero po poprawce łatwo dopasować do wyniku, więc niewiele sprawdza.",
+        "W przykładzie ślad działania agenta, czyli zapis wywołań modelu i narzędzi, pokazał, że opis nowego narzędzia był za szeroki i pasował do każdej wzmianki o VPN. Po zawężeniu przeszły wszystkie przypadki.",
+        "Średnia potrafi oszukać: rosła, choć jeden przypadek przestał działać. Warto sprawdzać regresje przypadek po przypadku i trzymać osobny zbiór przykładów, którego nie używasz przy poprawkach.",
+        "Zanim zmienisz prompt albo dasz agentowi nowe narzędzie, spisz jedno oczekiwane zachowanie i zbierz prawdziwe pytania z logów. Więcej w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist flat illustration, top-down view of a plain paper sheet with a column of ten identical rows, nine with a neat green tick and one with a red cross, hand-drawn marker style on warm off-white paper, a pencil lying beside it, main motif centered with generous margins, no text, no people, 3:4 format",
+        "mem": {
+          "szablon": "Surprised Pikachu",
+          "link": "https://imgflip.com/memegenerator/Surprised-Pikachu",
+          "tekst": "góra: Dodałem agentowi narzędzie i średni wynik w testach wzrósł\ndół (zdziwiony Pikachu): Agent zakłada zgłoszenie, gdy ktoś pyta, jak połączyć się z VPN"
+        }
+      },
+      "termin": "2026-11-25 08:30",
+      "fakty": [
+        "Przykład z VPN, create_ticket, średni wynik wzrósł, ślad wskazał zbyt szeroki opis narzędzia, po zawężeniu przeszły wszystkie przypadki: sekcja Worked Example artykułu LangChain.",
+        "Dwa narzędzia (search_docs, web_search) plus create_ticket: artykuł.",
+        "Spec pass/fail, ewal przed zmianą, potwierdzenie że na starej wersji nie przechodzi, zbiór walidacyjny, sprawdzanie przypadek po przypadku, LLM nie wymagany: artykuł.",
+        "Uwaga o własnych produktach LangChain (LangSmith) to ocena z lektury artykułu, nie cytat.",
+        "Brak liczb w poście poza #46 i opisanym przykładem."
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] zdanie o pisaniu ewali po poprawce złagodzone — źródło mówi tylko, że ewal ma powstać przed zmianą.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "w-1uugl",
+        "data": "2026-11-12 12:00",
+        "fakty": [
+          {
+            "fakt": "Ewal pisany po poprawce przechodzi z założenia (przyczynowość)",
+            "gdzie": "x",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development#:~:text=Write%20it%20first%20and%20confirm%20it%20fails",
+            "cytat": "Common mistakes: writing evals after the fix (wg streszczenia źródła)",
+            "uwaga": "Źródło wymienia pisanie ewali po poprawce jako błąd i każe pisać ewal najpierw, ale sformułowania „przechodzą z założenia” nie znalazłem. Wnioskowanie Kuby; zmiękczyć („łatwo wtedy napisać test pod gotową poprawkę”) albo oznaczyć jako opinię. jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu."
+          },
+          {
+            "fakt": "Średni wynik wzrósł, ale pytanie o VPN zaczęło zakładać zgłoszenie zamiast szukać w dokumentacji",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development#:~:text=now%20files%20a%20ticket%20instead%20of%20searching%20the%20docs",
+            "cytat": "But \"How do I connect to the VPN?\" now files a ticket instead of searching the docs.",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu."
+          },
+          {
+            "fakt": "Agent miał narzędzia search_docs i web_search (dokumenty firmy, internet), dodano create_ticket",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "cytat": "internal docs agent with search_docs and web_search tools, and a create_ticket tool",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu. Cytat parafrazowany z odpowiedzi WebFetch, nie dosłowny; link bez fragmentu."
+          },
+          {
+            "fakt": "create_ticket ma zakładać zgłoszenie przy awarii, nie przy pytaniu „jak coś zrobić”",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "cytat": "spec: when to file a ticket (broken things) and when not to (how-to questions)",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu. Przykład „VPN się nie łączy” jako awaria to ilustracja Kuby w nawiasie („np.”); dosłownego sformułowania nie potwierdziłem."
+          },
+          {
+            "fakt": "Schemat: spec jednego zachowania (kiedy, co tak, czego nie, co ma dalej działać) oceniane przeszło/nie przeszło",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development#:~:text=EDD%20works%20on%20one%20behavior%20at%20a%20time",
+            "cytat": "EDD works on one behavior at a time.",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu."
+          },
+          {
+            "fakt": "Ewal (zestaw przykładów z oczekiwanym wynikiem) pisze się przed zmianą i musi na starej wersji nie przechodzić",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development#:~:text=Write%20it%20first%20and%20confirm%20it%20fails%20on",
+            "cytat": "Write it first and confirm it fails on the current broken version.",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu."
+          },
+          {
+            "fakt": "Ślad (trace) to zapis każdego wywołania modelu i narzędzia",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development#:~:text=A%20trace%20is%20a%20record%20of%20one%20run",
+            "cytat": "A trace is a record of one run of your agent, including every model call and tool call.",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu."
+          },
+          {
+            "fakt": "Ślad pokazał, że opis narzędzia był za szeroki i pasował do każdej wzmianki o VPN",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development#:~:text=The%20trace%20shows%20us%20that%20the%20tool%20description%20is%20too%20broad",
+            "cytat": "The trace shows us that the tool description is too broad",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu."
+          },
+          {
+            "fakt": "Po zawężeniu opisu (do próśb wymagających działania IT) przeszły wszystkie przypadki",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development#:~:text=A%20tighter%20tool%20description%20gets%20every%20example%20passing",
+            "cytat": "A tighter tool description gets every example passing.",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu."
+          },
+          {
+            "fakt": "Regresje sprawdzać przypadek po przypadku, nie po samej średniej",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development#:~:text=Review%20each%20example%20before%20you%20decide%20to%20keep",
+            "cytat": "Review each example before you decide to keep a change.",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu."
+          },
+          {
+            "fakt": "Trzymać osobny zbiór (held-out) niewykorzystywany przy poprawkach, bo grozi przeuczenie pod własne testy",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development#:~:text=keep%20a%20held-out%20set%20of%20examples%20you%20don",
+            "cytat": "To check for this, keep a held-out set of examples you don't look at while iterating.",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu."
+          },
+          {
+            "fakt": "Dobrze zebrać prawdziwe pytania z logów (rzeczywiste uruchomienia agenta)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development#:~:text=One%20of%20the%20best%20sources%20for%20inputs%20is%20real%20agent%20runs",
+            "cytat": "One of the best sources for inputs is real agent runs.",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu."
+          },
+          {
+            "fakt": "„Odpowiedź jest pomocna” to nie miara, której da się pilnować",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development#:~:text=is%20not%20a%20well-defined%20metric",
+            "cytat": "\"The response is helpful\" is not a well-defined metric.",
+            "uwaga": "Źródło: nie jest dobrze zdefiniowaną metryką; parafraza Kuby OK. jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu."
+          },
+          {
+            "fakt": "Tekst pochodzi od firmy sprzedającej własne narzędzia (LangChain/LangSmith); pomysł ich nie wymaga",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "cytat": "Artykuł na blogu LangChain; jakość oceny: kod lub LLM-as-judge, bez wymogu konkretnego narzędzia",
+            "uwaga": "To ocena Kuby oparta na tym, że LangChain sprzedaje LangSmith (znany fakt, nie sprawdzany osobno w tym przebiegu); w poście ujęta jako uwaga autora, nie fakt ze źródła. Poprawne."
+          },
+          {
+            "fakt": "Agent odpowiada za każdym razem trochę inaczej i sam wybiera kroki (niedeterminizm)",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "cytat": "Agents are non-deterministic, so they need flexible scoring (wg streszczenia źródła)",
+            "uwaga": "jedno źródło (artykuł LangChain; przykład jest autorski, brak niezależnego odpowiednika). Tekst firmy o własnym podejściu. Cytat parafrazowany; „sam wybiera kroki” to dopowiedzenie Kuby, zgodne z sensem."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "link": "https://www.langchain.com/blog/what-is-eval-driven-development",
+            "cytat": "",
+            "uwaga": "Przebieg spójności: LinkedIn i X mają te same fakty i sens; podmioty (LangChain opisuje, agent wykonuje) poprawne; ocena o firmie i rady na końcu to opinie Kuby, nie fakty; pytanie końcowe dotyczy głównej tezy. Jedyna uwaga: zdanie z X o testach po poprawce (wyżej). Brak liczb i dat do weryfikacji poza numerem wydania. Artykuł z 9.11.2026, autor Divya Santhanam."
+          }
+        ]
+      }
+    },
+    {
+      "id": "w-49p6y",
+      "rodzaj": "temat",
+      "temat": "Testy jako dane dla agentów",
+      "link_newsa": "https://martinfowler.com/articles/tests-as-data.html",
+      "tytul_newsa": "Testy jako dane – jak dać agentom AI kontrakt, którego nie osłabią",
+      "kat": "Gdy AI pisze kod i testy, testy przestają być niezależnym sprawdzianem; kontrakt powinien być zapisany jako dane, których agent nie osłabi po cichu.",
+      "linkedin": "Na początku 2026 roku 26 programistów z firmy mocno zainwestowanej w agentów kodujących zwykle odpowiadało, że nie ufa testom, bo AI refaktoryzuje jednocześnie kod i testy do niego.\n\nRozmawiał z nimi Matteo Vaccari z Thoughtworks. Cytuje też raporty branżowe: według Faros AI przy wysokiej adopcji AI błędów na pull request było o 28,7% więcej, a w badaniu CloudBees wśród 213 liderów technologicznych 81% zgłosiło więcej problemów na produkcji, które wiąże z kodem od AI. Testy pisane przez AI zwykle potwierdzają to, co kod robi dziś, razem z jego błędami.\n\nJego pomysł to testy klienta zapisane jako dane. W pliku jest tylko nazwa przypadku, wejście i oczekiwany wynik, na przykład w tabeli, a nie kod z mockami. Taką tabelę łatwo przejrzeć, od razu widać w niej brakujące przypadki, a każda zmiana wyraźnie wychodzi w diffie. Pliki z oczekiwaniami można ustawić jako tylko do odczytu albo pilnować w CI, a jakość testów sprawdzać testami mutacyjnymi, czyli celowo psuć kod i patrzeć, czy testy to wyłapią.\n\nPodoba mi się tu odwrócenie ról: skoro kod pisze AI, programista staje się jego klientem i to on powinien napisać, co ma działać. Podobne podejście, Fit i Specification by Example, było znane od lat, ale nie przyjęło się, bo prawdziwi klienci nie chcieli pisać tabel. Dziś klientem jest deweloper, a AI tanio zbuduje narzędzie do uruchamiania takich testów. Zastrzeżenie jest jedno: agent nadal może zmienić sam runner, a przy prototypach cała ta maszynerka się nie opłaci.\n\nPrzed wdrożeniem warto sprawdzić, czy agent w ogóle ma prawo zapisu do testów, które go pilnują, i czy zmiana w nich wymaga zatwierdzenia przez człowieka.\n\nCzy w Twoim zespole agent może edytować testy, które sprawdzają jego własny kod?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://martinfowler.com/articles/tests-as-data.html",
+      "x": [
+        "26 programistów z firmy mocno stawiającej na agentów AI zwykle mówi, że nie ufa testom. Powód: AI refaktoryzuje jednocześnie kod i testy do niego.",
+        "Według Faros AI przy wysokiej adopcji AI błędów na pull request było o 28,7% więcej. W badaniu CloudBees 81% z 213 liderów zgłosiło więcej problemów na produkcji, które wiąże z kodem od AI.",
+        "Pomysł Matteo Vaccariego z Thoughtworks: testy jako dane. Tabela z nazwą przypadku, wejściem i oczekiwanym wynikiem zamiast kodu z mockami. Zmiany widać w diffie, a luki w przypadkach od razu w tabeli.",
+        "Pliki z testami można ustawić jako tylko do odczytu albo pilnować w CI, a ich jakość sprawdzać testami mutacyjnymi. Agent nadal może zmienić runner, a przy prototypach to przerost formy.",
+        "Czy w Twoim zespole agent może edytować testy, które sprawdzają jego kod?\n\nPrzegląd tygodnia: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "prompt": "Minimalist flat illustration on a plain warm paper background: a single neat table drawn like a notebook page with rows of ticked cells, and one small padlock clipped to its corner; muted palette with one orange accent, hand-drawn feel, no text, no people, main motif centered with generous margins, 3:4",
+        "infografika": {
+          "rodzaj": "liczba",
+          "naglowek": "Testy pisane przez AI",
+          "liczba": "81%",
+          "podpis": "z 213 liderów technologicznych zgłosiło więcej problemów na produkcji, które wiąże z kodem od AI",
+          "zrodlo": "CloudBees, ankieta wśród liderów",
+          "styl": "notatka"
+        },
+        "plik": "obrazki/w-49p6y.png",
+        "mem": {
+          "szablon": "Expanding Brain",
+          "link": "https://imgflip.com/memegenerator/Expanding-Brain",
+          "tekst": "1: Testy pisze człowiek po napisaniu kodu\n2: Testy pisze AI po napisaniu kodu\n3: AI pisze kod i testy do niego jednocześnie\n4: Testy jako dane, tylko do odczytu, napisane przed zmianą"
+        }
+      },
+      "termin": "2026-11-26 08:30",
+      "fakty": [
+        "26 programistów, rozmowy na początku 2026: artykuł Vaccariego (sekcja o problemie), 'AI refactors both existing code and existing tests'",
+        "Faros AI +28,7% błędów na PR; CloudBees 213 liderów, 81% więcej problemów produkcyjnych: raporty cytowane w artykule",
+        "Testy AI potwierdzają obecną implementację, razem z błędami: cytat z artykułu",
+        "Tabele, read-only, CI, testy mutacyjne, Fit/Specification by Example i uwaga Jamesa Shore'a o braku tabel pisanych przez klientów: artykuł",
+        "Runner można zmienić, prototypy nie uzasadniają maszynerii: sekcja caveats artykułu",
+        "Pole 'Zakończenie' i wnioski dla zespołu to opinie Kuby, nie fakty ze źródła"
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] 26 rozmówców „zwykle odpowiadało” (artykuł: „invariably”, nie wprost wszyscy); Faros AI — wyższy odsetek błędów przy wysokiej adopcji AI (nie ogólny wzrost); CloudBees — problemy, które liderzy wiążą z kodem od AI (ankieta, materiał firmy). Większość z jednego źródła (artykuł Vaccariego).",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "w-49p6y",
+        "data": "2026-11-14 12:00",
+        "fakty": [
+          {
+            "fakt": "Spójność: Faros AI +28,7% błędów na PR podane bez kontekstu (źródło: wysoka vs niska adopcja AI w tych samych organizacjach)",
+            "gdzie": "linkedin, x",
+            "status": "rozbieżność",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=bugs%20per%20pull%20request%20rose%2028.7%25",
+            "cytat": "bugs per pull request rose 28.7%",
+            "uwaga": "Post: 'liczba błędów na pull request wzrosła o 28,7%'. Faros porównuje organizacje/zespoły o wysokiej i niskiej adopcji AI (+28,7% przy wysokiej), a nie ogólny wzrost w czasie; strona Faros w nagłówku zaokrągla do +28%. Poprawka: 'przy wysokiej adopcji AI liczba błędów na PR była wyższa o 28,7% (Faros AI, raport 2026)'. Źródło Faros: https://www.faros.ai/research/ai-acceleration-whiplash"
+          },
+          {
+            "fakt": "Spójność: CloudBees 81% - post pomija, że chodzi o problemy przypisywane kodowi generowanemu przez AI i o ankietę z deklaracjami",
+            "gdzie": "linkedin, x",
+            "status": "rozbieżność",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=increased%20production%20issues%20were%20reported%20by%2081%25%20of%20the%20respondents",
+            "cytat": "81% have experienced an increase in production issues attributable to AI-generated code",
+            "uwaga": "Post: '81% zgłosiło więcej problemów na produkcji' - brak związku z AI, a to sedno. CloudBees: 81% doświadczyło wzrostu problemów produkcyjnych przypisywanych kodowi AI (deklaracje, błąd ±8% przy 95% ufności). Poprawka: '81% zgłosiło więcej problemów na produkcji, które wiąże z kodem od AI'. Drugie źródło: komunikat CloudBees https://www.cloudbees.com/newsroom/enterprise-technology-leaders-report-production-failures-from-ai-generated-code"
+          },
+          {
+            "fakt": "Spójność: '26 programistów powiedziało, że nie ufa testom' - w artykule odpowiedź 'invariably' na pytanie o zaufanie; 'na początku 2026' dotyczy rozmów, nie raportów",
+            "gdzie": "linkedin, x",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=I%20don%27t%20trust%20our%20tests%20that%20much",
+            "cytat": "the developers invariably answered",
+            "uwaga": "Sens zgodny (artykuł: 'I don't trust our tests that much!', developers 'invariably' odpowiadali tak samo), ale wprost nie stwierdza, że wszyscy 26. Zdanie 'powiedziało' można złagodzić do 'zwykle odpowiadało'. Jedno źródło (autor o własnych rozmowach), nie do niezależnej weryfikacji."
+          },
+          {
+            "fakt": "Rozmowy z 26 programistami na początku 2026, firma mocno zainwestowana w agentów kodujących",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=In%20early%202026%2C%20I%20conducted%20interviews%20with%2026%20developers",
+            "cytat": "In early 2026, I conducted interviews with 26 developers",
+            "uwaga": "Jedno źródło (autor o własnych rozmowach)."
+          },
+          {
+            "fakt": "Powód braku zaufania: AI refaktoryzuje jednocześnie kod i testy",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=refactors%20both%20existing%20code%20and%20existing%20tests",
+            "cytat": "refactors both existing code and existing tests",
+            "uwaga": "Jedno źródło."
+          },
+          {
+            "fakt": "Autor: Matteo Vaccari z Thoughtworks",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=Matteo%20Vaccari",
+            "cytat": "Matteo Vaccari, Technical Principal with Thoughtworks Italia",
+            "uwaga": "Artykuł na martinfowler.com; afiliacja Thoughtworks (Italia) wg stopki. Opublikowany 11.11.2026."
+          },
+          {
+            "fakt": "Faros AI: raport cytowany w artykule (bugs per PR +28,7%)",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.faros.ai/research/ai-acceleration-whiplash",
+            "link": "https://www.faros.ai/research/ai-acceleration-whiplash#:~:text=bugs%20per%20pull%20request%20rose%2028.7%25",
+            "cytat": "+28.7% bugs per PR",
+            "uwaga": "Liczba zgodna w artykule i na stronie Faros (zob. wpis Spójność o kontekście). Drugie źródło: strona Faros (https://www.faros.ai/research/ai-acceleration-whiplash); to materiał własny firmy."
+          },
+          {
+            "fakt": "CloudBees: ankieta wśród 213 liderów technologicznych",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.cloudbees.com/newsroom/enterprise-technology-leaders-report-production-failures-from-ai-generated-code",
+            "link": "https://www.cloudbees.com/newsroom/enterprise-technology-leaders-report-production-failures-from-ai-generated-code#:~:text=survey%20of%20213%20enterprise%20tech%20leaders",
+            "cytat": "The study included 213 enterprise technology leaders",
+            "uwaga": "Drugie źródło niezależne od artykułu: komunikat CloudBees (badanie TrendCandy); materiał własny firmy."
+          },
+          {
+            "fakt": "CloudBees: 81% zgłosiło więcej problemów produkcyjnych",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.cloudbees.com/newsroom/enterprise-technology-leaders-report-production-failures-from-ai-generated-code",
+            "link": "https://www.cloudbees.com/newsroom/enterprise-technology-leaders-report-production-failures-from-ai-generated-code#:~:text=81%25%20have%20experienced%20an%20increase%20in%20production%20issues",
+            "cytat": "81% have experienced an increase in production issues attributable to AI-generated code",
+            "uwaga": "Zgodne w artykule i komunikacie CloudBees (zob. wpis Spójność o brakującym kontekście AI)."
+          },
+          {
+            "fakt": "Testy pisane przez AI zwykle potwierdzają to, co kod robi dziś, razem z błędami",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=the%20AI%20will%20write%20tests%20that%20confirm%20the%20current%20implementation",
+            "cytat": "most often, the AI will write tests that confirm the current implementation, including any bugs it may contain",
+            "uwaga": "Jedno źródło (opinia autora). Post podaje to jako fakt, w artykule to teza autora; 'zwykle' = 'most often', OK."
+          },
+          {
+            "fakt": "Testy jako dane: tabela z nazwą przypadku, wejściem i oczekiwanym wynikiem zamiast kodu z mockami",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=every%20row%20should%20be%20a%20stateless%20operation",
+            "cytat": "every row should be a stateless operation, with input and expected output",
+            "uwaga": "Jedno źródło. Mocki: artykuł mówi, że testy z mockami łamią się przy zmianie implementacji. 'Nazwa przypadku' jako osobna kolumna to doprecyzowanie posta, niewykluczone w artykule."
+          },
+          {
+            "fakt": "Pliki z oczekiwaniami: tylko do odczytu lub kontrola w CI",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=making%20them%20read-only%20in%20a%20way%20that%20the%20agent%20cannot%20bypass",
+            "cytat": "making them read-only in a way that the agent cannot bypass",
+            "uwaga": "Jedno źródło; artykuł: read-only 'w sposób, którego agent nie obejdzie' albo sprawdzanie w CI zmienionych plików."
+          },
+          {
+            "fakt": "Testy mutacyjne: celowo psuje się kod produkcyjny i sprawdza, czy test to wykryje",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=we%20inject%20intentional%20faults%20in%20production%20code",
+            "cytat": "we inject intentional faults in production code, and see if any test breaks",
+            "uwaga": "Jedno źródło; definicja zgodna ze standardową."
+          },
+          {
+            "fakt": "Fit i Specification by Example znane od lat, nie przyjęły się, bo klienci nie chcieli pisać tabel",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=most%20customers%20did%20not%20want%20to%20write%20the%20test%20tables",
+            "cytat": "most customers did not want to write the test tables",
+            "uwaga": "Artykuł przytacza uwagę Jamesa Shore'a, że większość klientów nie chciała pisać tabel (post bezosobowo, OK). Fit z ok. 2002, Specification by Example 2004/2011 - 'od lat' zgodne. Teza 'nie przyjęły się' to uogólnienie posta; artykuł mówi tylko o niechęci klientów. Jedno źródło."
+          },
+          {
+            "fakt": "Dziś klientem jest deweloper, a AI tanio zbuduje narzędzie do uruchamiania testów",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=when%20AI%20writes%20the%20code%2C%20developers%20become%20its%20customers",
+            "cytat": "when AI writes the code, developers become its customers",
+            "uwaga": "Jedno źródło; AI i runnery: 'The same AI makes it easy to write test runners'."
+          },
+          {
+            "fakt": "Zastrzeżenia: agent może zmienić runner; przy prototypach się nie opłaca",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://martinfowler.com/articles/tests-as-data.html",
+            "link": "https://martinfowler.com/articles/tests-as-data.html#:~:text=The%20test%20runner%20is%20code%2C%20and%20could%20be%20unexpectedly%20modified",
+            "cytat": "The test runner is code, and could be unexpectedly modified.",
+            "uwaga": "Prototypy: artykuł mówi, że prototypy generuje się szybko bez dbania o testy; 'przerost formy' w X to parafraza. Jedno źródło."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "",
+            "link": "",
+            "cytat": "",
+            "uwaga": "Przebieg wykrył dwa problemy z kontekstem liczb (Faros, CloudBees) opisane wyżej. LinkedIn i X zgodne co do liczb. Opinie Kuby (podoba mi się, odwrócenie ról, rada przed wdrożeniem) odróżnione od faktów; pytanie końcowe dotyczy głównej tezy. Uwaga: pole 'fakty' w posty.json wspomina uwagę Jamesa Shore'a - w poście bez nazwiska, więc OK."
+          }
+        ]
+      }
+    },
+    {
+      "id": "w-1c2hm",
+      "rodzaj": "temat",
+      "temat": "Spotify: miara sukcesu przed architekturą",
+      "link_newsa": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+      "tytul_newsa": "Trzy oblicza pracy PM-a przy AI w Spotify",
+      "kat": "Przy produktach z AI zachowania nie da się zapisać w specyfikacji, więc pierwszą pracą zespołu jest wspólna definicja dobrego wyniku i ewaluacje.",
+      "linkedin": "Zdaniem jednej z autorek tekstu ze Spotify współpraca nad wspólnym modelem rekomendacji zadziałała, bo najpierw uzgodniono sposób mierzenia sukcesu, a dopiero potem architekturę.\n\nSpotify opisało na blogu inżynierskim pracę AI product managera z trzech perspektyw: badań, modelu bazowego rekomendacji i doświadczenia użytkownika w aplikacji. Model bazowy to model językowy zaprojektowany tak, żeby odwoływać się do prawdziwych pozycji w Spotify. Jego klientami są wewnętrzne zespoły produktowe, a każdy z nich ma własną roadmapę, własne metryki i własną definicję dobrej rekomendacji.\n\nDo tego każdy zespół ma już zoptymalizowany system, więc wspólny model musi najpierw dorównać mu pod względem jakości, opóźnień i kosztu. Zachowania takiego modelu nie da się zapisać w kodzie, bo powstaje w treningu. Zostają dwie dźwignie: dane treningowe i ewaluacje, czyli zestawy testów sprawdzające, czy odpowiedzi są dobre. Testy offline pokazują, jak model się zachowuje, a metryki online, jak wpływa to na użytkownika.\n\nTrzecia perspektywa jest najbliżej użytkownika. Gdy ktoś napisze w rozmowie „nie o to mi chodziło”, to sygnał dla doświadczenia w aplikacji, dla modelu, a może i dla danych treningowych. Dlatego zespół buduje sposoby wykrywania takich sygnałów na dużą skalę i odsyłania ich w głąb systemu.\n\nWidzę tu przesunięcie, które przy produktach z AI dotyczy też deweloperów: dawniej specyfikacja mówiła, co system ma zrobić, a tu opisuje się, co znaczy „dobrze”, i dopiero to da się testować. Po części wynika to z tego, że model jest probabilistyczny, ale nie tylko. W Spotify dochodzi jeszcze kilka zespołów z różnymi definicjami dobrej rekomendacji, więc bez wspólnej miary spór o jakość szybko staje się sporem o gust.\n\nPrzed budową funkcji z AI dobrze ustalić, kto pisze definicję „dobrego wyniku”, na jakich prawdziwych przypadkach ją sprawdzamy i po czym poznamy, że model nie pogorszył się po zmianie.\n\nKto w Twoim zespole odpowiada za definicję dobrego wyniku funkcji z AI: product manager, deweloperzy, a może nikt konkretny?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+      "x": [
+        "Zdaniem jednej z autorek tekstu ze Spotify współpraca nad wspólnym modelem rekomendacji zadziałała, bo najpierw uzgodniono sposób mierzenia sukcesu, a dopiero potem architekturę.",
+        "Model bazowy rekomendacji ma wielu wewnętrznych klientów. Każdy zespół ma swoją roadmapę, metryki i definicję dobrej rekomendacji, a do tego własny, już zoptymalizowany system, który model musi najpierw dorównać.",
+        "Zachowania modelu nie da się zapisać w kodzie, bo powstaje w treningu. Zostają dane treningowe i ewaluacje, czyli testy sprawdzające, czy odpowiedzi są dobre. Offline pokazują zachowanie, metryki online wpływ na użytkownika.",
+        "W rozmowie z aplikacją „nie o to mi chodziło” to sygnał dla doświadczenia, modelu i potencjalnie danych. Zespół buduje sposoby wykrywania takich sygnałów na dużą skalę.",
+        "Moim zdaniem przy funkcjach z AI pierwsza jest definicja dobrego wyniku, a dopiero potem architektura. Kto w Twoim zespole ją pisze?\n\nPełne wydanie: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist illustration, flat hand-drawn style, soft paper texture. Centered: a sheet of paper with a short handwritten-style checklist drawn as empty checkbox squares and lines (no readable text), placed next to a rough pencil sketch of a block diagram that is crossed out lightly; one checkbox highlighted with a single orange marker circle. Muted beige background, plenty of empty space around the motif, 3:4 format, no people, no text."
+      },
+      "termin": "2026-11-27 08:30",
+      "fakty": [
+        "Zgoda co do miary sukcesu przed architekturą: sekcja Divity Vohry w artykule (współpraca zadziałała, bo zespoły uzgodniły metryki sukcesu przed architekturą)",
+        "Model bazowy to model językowy zaprojektowany, by odwoływać się do prawdziwych pozycji w Spotify; klienci to wewnętrzne zespoły z własną roadmapą, metrykami i definicją dobrej rekomendacji: artykuł (Vohra)",
+        "Zespoły mają zoptymalizowane systemy, wspólny model musi spełnić wymagania jakości, opóźnień i kosztu: artykuł (Vohra)",
+        "Dwie dźwignie (dane treningowe i ewaluacje), offline vs online: artykuł (Vohra)",
+        "Sygnał „that is not what I meant” i wykrywanie na dużą skalę: artykuł (Corona)",
+        "Brak liczb w artykule; fragment o probabilistyczności i sporze o gust to opinia Kuby"
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] otwarcie przepisane na wypowiedź Divity Vohry („współpraca zadziałała, bo najpierw uzgodniliśmy sposób mierzenia sukcesu, a dopiero potem architekturę”) zamiast ogólnego faktu o zespołach Spotify; „potencjalnie danych”. Artykuł bez liczb, wszystko z jednego źródła.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "w-1c2hm",
+        "data": "2026-11-14 12:00",
+        "fakty": [
+          {
+            "fakt": "Spójność: „zespoły dogadały się co do wspólnego modelu rekomendacji dopiero wtedy, gdy najpierw uzgodniły miarę sukcesu” (otwarcie LinkedIn i pierwszy tweet)",
+            "gdzie": "linkedin, x",
+            "status": "rozbieżność",
+            "zrodlo": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles#:~:text=The%20collaboration%20worked%20because%20we%20agreed",
+            "cytat": "The collaboration worked because we agreed on how we would measure success before we agreed on the architecture.",
+            "uwaga": "Źródło (Vohra) mówi, że współpraca zadziałała, bo najpierw uzgodniono sposób mierzenia sukcesu, przed architekturą. Nie mówi, że zespoły „dogadały się co do wspólnego modelu” ani że stało się to „dopiero wtedy”; to zaostrzenie i uogólnienie jednej wypowiedzi autorki o własnej pracy. Poprawka: „Zdaniem Divity Vohry z Spotify współpraca przy modelu bazowym zadziałała, bo najpierw uzgodniono sposób mierzenia sukcesu, a dopiero potem architekturę.” Przypisać wypowiedź Vohrze, nie „zespołom w Spotify”. Jedno źródło (blog Spotify, tekst autorski; wyszukiwanie WebSearch nie znalazło niezależnego omówienia artykułu). "
+          },
+          {
+            "fakt": "Spotify opisało pracę AI PM z trzech perspektyw: badań, modelu bazowego rekomendacji i doświadczenia w aplikacji (trzech Principal PM-ów)",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "cytat": "Tech Research, AI Foundation, Sessions (Personalization)",
+            "uwaga": "Artykuł z 9 listopada 2026, trzech autorów: Lindström (research), Vohra (AI Foundation), Corona (Sessions). Jedno źródło (blog Spotify, tekst autorski; wyszukiwanie WebSearch nie znalazło niezależnego omówienia artykułu). "
+          },
+          {
+            "fakt": "Model bazowy to model językowy zbudowany pod rekomendacje, odwołujący się do prawdziwych pozycji w Spotify",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles#:~:text=a%20language%20model%20that%20is%20purpose-built",
+            "cytat": "a language model that is purpose-built for recommendations, designed to reference real items on Spotify",
+            "uwaga": "Jedno źródło (blog Spotify, tekst autorski; wyszukiwanie WebSearch nie znalazło niezależnego omówienia artykułu). "
+          },
+          {
+            "fakt": "Klienci modelu to wewnętrzne zespoły produktowe z własną roadmapą, metrykami i definicją dobrej rekomendacji",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles#:~:text=They%20have%20their%20own%20roadmaps%20and%20metrics",
+            "cytat": "They have their own roadmaps and metrics, and the same model needs to serve different definitions of a good recommendation.",
+            "uwaga": "Źródło: „własne roadmapy i metryki”, a „różne definicje dobrej rekomendacji” musi obsłużyć ten sam model; „własna definicja” per zespół to dopuszczalna parafraza. Jedno źródło (blog Spotify, tekst autorski; wyszukiwanie WebSearch nie znalazło niezależnego omówienia artykułu). "
+          },
+          {
+            "fakt": "Każdy zespół ma już zoptymalizowany system; wspólny model musi najpierw spełnić wymagania jakości, opóźnień i kosztu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles#:~:text=Each%20team%20already%20has%20a%20system%20optimized",
+            "cytat": "Our first task is to show that the shared model can meet that experience's requirements for quality, latency, and cost.",
+            "uwaga": "Źródło: model ma spełnić wymagania danego doświadczenia; „dorównać zoptymalizowanemu systemowi” to nieco swobodniejsza parafraza, ale zgodna z sensem. Jedno źródło (blog Spotify, tekst autorski; wyszukiwanie WebSearch nie znalazło niezależnego omówienia artykułu). "
+          },
+          {
+            "fakt": "Zachowania modelu nie da się zapisać w kodzie, bo powstaje w treningu; dwie dźwignie: dane treningowe i ewaluacje",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles#:~:text=behavior%20is%20learned%20through%20training%20rather",
+            "cytat": "Here, behavior is learned through training rather than specified directly in code.",
+            "uwaga": "Dwie dźwignie w źródle: „what you teach the model and how you check what it learned” (czego uczysz model i jak sprawdzasz, czego się nauczył), tj. dane i ewaluacje. Jedno źródło (blog Spotify, tekst autorski; wyszukiwanie WebSearch nie znalazło niezależnego omówienia artykułu). "
+          },
+          {
+            "fakt": "Testy offline pokazują zachowanie modelu, metryki online wpływ na doświadczenie użytkownika",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles#:~:text=Offline%20evals%20help%20us%20understand%20model",
+            "cytat": "Offline evals help us understand model behavior, while online metrics show how that translates into the user experience.",
+            "uwaga": "Jedno źródło (blog Spotify, tekst autorski; wyszukiwanie WebSearch nie znalazło niezależnego omówienia artykułu). "
+          },
+          {
+            "fakt": "Użytkownik pisze „nie o to mi chodziło” w rozmowie: sygnał dla doświadczenia, modelu i potencjalnie danych treningowych; zespół buduje mechanizmy wykrywania na dużą skalę i odsyłania w głąb systemu",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles#:~:text=build%20mechanisms%20that%20detect%20that%20signal",
+            "cytat": "The job is to build mechanisms that detect that signal at scale, interpret it, and pass it back through the collaboration chain.",
+            "uwaga": "To sekcja Corony (warstwa doświadczenia), nie Vohry. Źródło mówi „potentially the training data”; post w LinkedIn: „a może i dane treningowe” (OK), w X: „sygnał dla doświadczenia, modelu i danych” bez „może”: lekkie zaostrzenie. Zdanie źródła ma formę „that is not what I meant”. Jedno źródło (blog Spotify, tekst autorski; wyszukiwanie WebSearch nie znalazło niezależnego omówienia artykułu). "
+          },
+          {
+            "fakt": "Brak liczb w artykule; „kilka zespołów”, „spór o jakość staje się sporem o gust”, „po części wynika z probabilistyczności modelu”, „widzę tu przesunięcie”",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "cytat": "",
+            "uwaga": "Fragmenty o probabilistyczności, sporze o gust i przesunięciu specyfikacja→definicja „dobrze” to opinie Kuby, w poście sformułowane jako własne („Widzę tu…”, „Po części wynika…”). Uwaga: „model jest probabilistyczny” jest podane jako fakt ogólny, nie ze źródła, ale poprawny i jako komentarz autora akceptowalny."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+            "cytat": "",
+            "uwaga": "Poza zastrzeżeniem w pierwszym wpisie: LinkedIn i X zgodne; podmioty (Vohra vs Corona) poprawne, choć post nie wymienia autorów, a przypisuje wszystko „Spotify”; pytanie końcowe dotyczy tezy posta; opinie Kuby wyraźnie oznaczone („Widzę tu”, „Moim zdaniem”). Sugestia: w X dodać „może” przy danych treningowych."
+          }
+        ]
+      }
+    },
+    {
+      "id": "w-1x762",
+      "rodzaj": "temat",
+      "temat": "IPO Anthropic: kto sprzedaje akcje",
+      "link_newsa": "https://www.anthropic.com/news/roadshow-launch",
+      "tytul_newsa": "Anthropic rozpoczyna roadshow przed IPO – akcje po 70–78 dolarów",
+      "kat": "Prawie cała oferta IPO to nowe akcje firmy, a dostawca modeli rozliczany na giełdzie to dla zespołów powód, by ocenić uzależnienie od jednego dostawcy.",
+      "linkedin": "Z 825 mln akcji, które Anthropic oferuje w IPO, 801 mln sprzedaje sama firma. Dotychczasowi akcjonariusze wystawiają tylko około 23,6 mln.\n\nRóżnica jest ważna, bo to dwa różne rodzaje sprzedaży. Gdy akcje sprzedaje firma, pieniądze trafiają do niej. Gdy sprzedają je wcześniejsi inwestorzy, pieniądze idą do nich, a w komunikacie jest wprost napisane, że Anthropic nie dostanie z tego żadnych wpływów. Tutaj prawie cała oferta to więc nowe akcje, a nie okazja dla pierwszych inwestorów, żeby wyjść z inwestycji.\n\nDo tego dochodzi opcja dla organizatorów oferty (m.in. Goldman Sachs i Morgan Stanley). Mają 30 dni, żeby dokupić do 123,75 mln dodatkowych akcji, więc przy dużym popycie oferta może jeszcze urosnąć. Cena ma być w przedziale 70–78 dolarów, a papiery mają trafić na Nasdaq pod symbolem ANT. W komunikacie nie ma natomiast informacji, na co firma przeznaczy zebrane pieniądze.\n\nDla mnie ciekawsze od samej liczby jest to, co się zmienia po stronie klientów. Dostawca modeli, na którym ktoś oparł produkt albo narzędzia zespołu, zaczyna być rozliczany z wyników na giełdzie. Nie wiem, jak to przełoży się na ceny i limity, ale presja na marże prawdopodobnie będzie większa niż u firmy finansowanej głównie przez prywatnych inwestorów.\n\nDlatego warto sprawdzić, jak mocno Wasz kod i procesy są związane z jednym dostawcą. Jeśli zmiana modelu albo cennika oznacza tygodnie poprawek, to jest ryzyko, które lepiej opisać, zanim ktoś o nie zapyta. Przynajmniej jeden drugi model przetestowany na waszych zadaniach daje spokojniejszą rozmowę o budżecie.\n\nCzy macie opisane, jak szybko dałoby się przełączyć projekt na innego dostawcę modeli?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://www.anthropic.com/news/roadshow-launch",
+      "x": [
+        "Z 825 mln akcji w IPO Anthropic aż 801 mln sprzedaje sama firma. Dotychczasowi akcjonariusze wystawiają około 23,6 mln, a z ich sprzedaży Anthropic nie dostanie żadnych wpływów.",
+        "Czyli to głównie emisja nowych akcji, a nie wyjście wcześniejszych inwestorów. Cena ma być w przedziale 70–78 dolarów, a papiery mają trafić na Nasdaq pod symbolem ANT.",
+        "Organizatorzy oferty (m.in. Goldman Sachs i Morgan Stanley) mają dodatkowo 30 dni na dokupienie do 123,75 mln akcji. Przy dużym popycie oferta może więc jeszcze urosnąć.",
+        "Dla zespołów IT to sygnał, że dostawca modeli zacznie być rozliczany z wyników na giełdzie. Nie wiem, jak wpłynie to na ceny, ale warto wiedzieć, jak szybko przełączycie się na innego dostawcę.",
+        "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "801 z 825 mln",
+          "podpis": "akcji w IPO Anthropic sprzedaje sama firma, reszta to akcje dotychczasowych akcjonariuszy",
+          "zrodlo": "komunikat Anthropic o starcie roadshow, 10.11.2026",
+          "numer": 46
+        },
+        "prompt": "Minimalist illustration on a plain off-white background: a single tall stack of coins next to a very small stack of coins, slightly uneven and hand-drawn in muted ink style, soft shadows, one thin arrow-free composition, no text, no people, main subject centered with generous margins, 3:4",
+        "plik": "obrazki/w-1x762.png"
+      },
+      "termin": "2026-11-30 08:30",
+      "fakty": [
+        "825 mln akcji klasy A, w tym 801 351 354 od Anthropic i 23 648 646 od dotychczasowych akcjonariuszy (ok. 23,6 mln) — komunikat Anthropic z 10.11.2026",
+        "'Anthropic will not receive any proceeds from the sale of shares by the selling stockholders' — komunikat",
+        "opcja 30 dni na dokupienie do 123 750 000 akcji dla underwriterów (Goldman Sachs, Morgan Stanley) — komunikat",
+        "przedział 70–78 USD, Nasdaq, ticker ANT — komunikat",
+        "brak informacji o przeznaczeniu środków — komunikat tego nie zawiera (potwierdzone przy czytaniu)",
+        "opinie o presji na marże i ryzyku jednego dostawcy to stanowisko Kuby, nie fakt ze źródła"
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] Nasdaq „mają trafić” (rejestracja SEC jeszcze nie weszła w życie); opcja 123,75 mln dla organizatorów oferty ogółem (m.in. GS i MS), termin 30 dni tylko w komunikacie Anthropic; arytmetyka 801 351 354 + 23 648 646 = 825 mln potwierdzona.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "w-1x762",
+        "data": "2026-11-14 12:00",
+        "fakty": [
+          {
+            "fakt": "Spójność: Nasdaq ANT podane jako pewne („papiery trafią na Nasdaq”)",
+            "gdzie": "linkedin, x",
+            "status": "rozbieżność",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch",
+            "cytat": "Anthropic has applied to list its Class A common stock on the Nasdaq Global Select Market under the symbol \"ANT.\"",
+            "uwaga": "Źródło: firma złożyła wniosek o notowanie, a rejestracja SEC nie weszła jeszcze w życie. Poprawić: „papiery mają trafić na Nasdaq pod symbolem ANT” / „Anthropic ubiega się o notowanie”."
+          },
+          {
+            "fakt": "Spójność: opcja 30 dni przypisana Goldman Sachs i Morgan Stanley („organizatorzy oferty, czyli GS i MS”)",
+            "gdzie": "linkedin, x",
+            "status": "rozbieżność",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch#:~:text=a%2030-day%20option%20to%20purchase%20up%20to%20an%20additional",
+            "cytat": "a 30-day option to purchase up to an additional 123,750,000 shares",
+            "uwaga": "Komunikat przypisuje opcję underwriterom ogółem; GS i MS występują tylko jako adresy po prospekt (media: wiodące banki spośród ok. 22 underwriterów, unite.ai/ppc.land, wtórne). Poprawić: „organizatorzy oferty (m.in. Goldman Sachs i Morgan Stanley)” lub „wiodące banki, Goldman Sachs i Morgan Stanley”."
+          },
+          {
+            "fakt": "825 mln akcji klasy A w ofercie IPO",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch#:~:text=801%2C351%2C354%20shares%20are%20being%20offered%20by%20Anthropic",
+            "cytat": "The total offering is 825,000,000 Class A shares (801,351,354 by Anthropic; 23,648,646 by certain existing stockholders)",
+            "uwaga": "Arytmetyka: 801 351 354 + 23 648 646 = 825 000 000. jedno źródło pierwotne (komunikat firmy); drugie: RTTNews https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx i inne media (zgodne). "
+          },
+          {
+            "fakt": "801 mln akcji (801 351 354) sprzedaje Anthropic",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch#:~:text=801%2C351%2C354%20shares%20are%20being%20offered%20by%20Anthropic",
+            "cytat": "801,351,354 shares are being offered by Anthropic",
+            "uwaga": "Zaokrąglenie 801,35 -> 801 mln poprawne. Udział ok. 97,1%, więc „prawie cała oferta” zgadza się. jedno źródło pierwotne (komunikat firmy); drugie: RTTNews https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx i inne media (zgodne). "
+          },
+          {
+            "fakt": "Dotychczasowi akcjonariusze sprzedają ok. 23,6 mln akcji (23 648 646)",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch#:~:text=23%2C648%2C646%20shares%20are%20being%20offered%20by%20certain",
+            "cytat": "23,648,646 shares are being offered by certain existing stockholders",
+            "uwaga": "Zaokrąglenie 23,65 -> „około 23,6 mln” dopuszczalne (dokładniej 23,6 lub 23,65). jedno źródło pierwotne (komunikat firmy); drugie: RTTNews https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx i inne media (zgodne). "
+          },
+          {
+            "fakt": "Anthropic nie dostanie wpływów ze sprzedaży akcji przez akcjonariuszy",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch#:~:text=Anthropic%20will%20not%20receive%20any%20proceeds%20from",
+            "cytat": "Anthropic will not receive any proceeds from the sale of shares by the selling stockholders.",
+            "uwaga": "Komunikat firmy o sobie; jedno źródło pierwotne (komunikat firmy); drugie: RTTNews https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx i inne media (zgodne). "
+          },
+          {
+            "fakt": "Opcja 30 dni na dokupienie do 123,75 mln akcji; oferta może urosnąć",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch#:~:text=a%2030-day%20option%20to%20purchase%20up%20to%20an%20additional",
+            "cytat": "a 30-day option to purchase up to an additional 123,750,000 shares of its Class A common stock",
+            "uwaga": "123,75 mln = 15% z 825 mln (standardowa opcja greenshoe). RTTNews potwierdza 123,75 mln (bez terminu 30 dni). Wniosek „może urosnąć przy dużym popycie” to rozsądna interpretacja, nie cytat. Zob. wpis o Goldman/MS."
+          },
+          {
+            "fakt": "Przedział ceny 70–78 USD za akcję",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch#:~:text=The%20initial%20public%20offering%20price%20is%20expected",
+            "cytat": "The initial public offering price is expected to be between $70.00 and $78.00 per share.",
+            "uwaga": "Potwierdzone też przez RTTNews, ABC7 i inne media. Dwa źródła."
+          },
+          {
+            "fakt": "Nasdaq, symbol ANT",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch#:~:text=applied%20to%20list",
+            "cytat": "Anthropic has applied to list on the Nasdaq Global Select Market under the symbol \"ANT.\"",
+            "uwaga": "Fakt zgodny ze źródłem (potwierdzony przez media); problem sformułowania w osobnym wpisie Spójność. Dwa źródła."
+          },
+          {
+            "fakt": "Goldman Sachs i Morgan Stanley to banki oferty",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch#:~:text=Goldman%20Sachs%20%26%20Co.%20LLC",
+            "cytat": "Goldman Sachs & Co. LLC, Attention: Prospectus Department",
+            "uwaga": "Komunikat wymienia je tylko jako źródła prospektu; rolę wiodących banków potwierdzają media (unite.ai, techjacksolutions, wtórne; nie sprawdzono S-1/A na EDGAR)."
+          },
+          {
+            "fakt": "Komunikat nie podaje, na co firma przeznaczy pieniądze",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch",
+            "cytat": "Anthropic will not receive any proceeds from the sale of shares by the selling stockholders.",
+            "uwaga": "Sprawdzone na stronie źródła: brak informacji o przeznaczeniu środków; RTTNews też nie podaje. Twierdzenie dotyczy komunikatu, nie S-1/A (tam zwykle jest sekcja Use of Proceeds, ale nie weryfikowano) — zostawić sformułowanie „w komunikacie”."
+          },
+          {
+            "fakt": "Komunikat z 10.11.2026 (infografika, źródło)",
+            "gdzie": "infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch",
+            "cytat": "Nov 10, 2026",
+            "uwaga": "Data na stronie źródła; media z 10.11.2026 zgodne."
+          },
+          {
+            "fakt": "Spójność: opinie o rozliczaniu z wyników, presji na marże i ryzyku jednego dostawcy",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch",
+            "cytat": "",
+            "uwaga": "Sformułowane jako opinia Kuby („Dla mnie…”, „Nie wiem…”, „prawdopodobnie”), nie przedstawione jako fakt ze źródła."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x, infografika",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch",
+            "cytat": "",
+            "uwaga": "Liczby i sens LinkedIn, X i infografiki zgodne (825/801/23,6 mln, 70–78 USD, 123,75 mln, 30 dni); pytanie końcowe dotyczy tezy o zależności od dostawcy. Do poprawy tylko dwa wpisy powyżej (Nasdaq jako pewnik, opcja przypisana GS/MS)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "w-1dyiz",
+      "rodzaj": "temat",
+      "temat": "Skąd poglądy Amodeia na AI",
+      "link_newsa": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html?unlocked_article_code=1.OVE.0w5Y.yvhWxuXOa-LL&smid=url-share",
+      "tytul_newsa": "Skąd biorą się poglądy Dario Amodeia na AI",
+      "kat": "Wartości założyciela dostawcy modeli wpływają na to, jak działa jego produkt, więc przy wyborze dostawcy warto je znać.",
+      "linkedin": "Reporterzy New York Timesa rozmawiali z ponad dwoma tuzinami osób z otoczenia Dario Amodeia: kolegami ze szkoły, wykładowcami i współpracownikami. Chcieli ustalić, skąd biorą się poglądy szefa Anthropic na AI.\n\nZ tych rozmów wynikają dwie idee. Pierwsza to przekonanie, że rozumowanie matematyczne może zmienić los ludzkości, druga to obawa, że AI trzeba zbudować bezpiecznie. W tle pojawiają się książka „The Singularity Is Near” Raya Kurzweila, o której Amodei rozmawiał z kolegą na Princetonie w 2007 roku, oraz blogi Accelerating Future i Overcoming Bias, na których pisano o tym, że AI może zagrozić ludzkości. Był też GiveWell, organizacja związana z efektywnym altruizmem, czyli szukaniem sposobów, by dobro, które robimy, było jak największe.\n\nTekst ukazał się, gdy Anthropic szykuje się do jednego z największych debiutów giełdowych, więc pasuje do niego dobrze. Dla firmy, która tak mocno stawia na bezpieczeństwo, ten tekst pomaga zrozumieć, skąd to się bierze: wygląda na to, że nie jest to wyłącznie hasło z prezentacji, tylko także efekt tego, jak myśli jej założyciel.\n\nWidzę tu praktyczną rzecz dla zespołów. Wybierając dostawcę modeli, porównujemy ceny, jakość i limity, ale rzadko zadajemy pytanie, czym ci ludzie się kierują. Od tego może zależeć, co firma zablokuje, czego odmówi modelowi i jak szybko zmieni zasady. Przy dużym wdrożeniu dobrze więc przeczytać nie tylko cennik, ale też to, jak dostawca opisuje swoje podejście do bezpieczeństwa.\n\nCzy przy wyborze dostawcy AI patrzysz też na to, jakie wartości stoją za jego produktami, czy decyduje głównie jakość i cena?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html?unlocked_article_code=1.OVE.0w5Y.yvhWxuXOa-LL&smid=url-share",
+      "x": [
+        "Reporterzy New York Timesa rozmawiali z ponad dwoma tuzinami osób z otoczenia Dario Amodeia: kolegami ze szkoły, wykładowcami, współpracownikami. Pytanie: skąd biorą się jego poglądy na AI.",
+        "Wyszły dwie idee: rozumowanie matematyczne może zmienić los ludzkości i AI trzeba zbudować bezpiecznie. W tle m.in. blogi Overcoming Bias i Accelerating Future oraz forum GiveWell.",
+        "Tekst wychodzi, gdy Anthropic szykuje jeden z największych debiutów giełdowych. Ten tekst pomaga zrozumieć, skąd bierze się nacisk firmy na bezpieczeństwo: wygląda na to, że to nie tylko prezentacja dla inwestorów.",
+        "Dla zespołów: wybierając dostawcę modeli, porównujemy ceny i jakość, a rzadko pytamy, czym kierują się ludzie za produktem. A to wpływa na to, czego model odmówi i jak zmieni zasady.",
+        "Czy przy wyborze dostawcy AI patrzysz też na jego wartości? Więcej newsów z tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist flat illustration, 3:4, a single open notebook on a wooden desk with two hand-drawn arrows converging from a stack of three old paperback books on the left toward one small sealed envelope on the right, soft daylight, muted palette, no text, main motif centered with margin around edges"
+      },
+      "termin": "2026-12-01 08:30",
+      "fakty": [
+        "ponad dwadzieścia osób z otoczenia (koledzy ze szkoły, wykładowcy, współpracownicy), dwie idee, IPO: opis w wydania/046/dane.csv",
+        "Princeton 2007, The Singularity Is Near, blogi Accelerating Future i Overcoming Bias, forum GiveWell, racjonalizm i efektywny altruizm: wstęp artykułu NYT (widoczny fragment); autor Kurzweil i definicje ruchów to wiedza ogólna, do weryfikacji",
+        "Czy Amodei 'czytał' te materiały: wstęp jest widoczny tylko we fragmencie, Kuba powinien potwierdzić sformułowanie 'czytane na Princetonie'; przypisanie blogów/GiveWell do racjonalizmu/EA to moje uporządkowanie"
+      ],
+      "publikuj": false,
+      "uwaga_kuby": "[weryfikacja] NYT dostępny tylko we fragmencie (reszta z omówień wtórnych): rok 2007 tylko przy Kurzweilu i rozmowie na Princetonie, „ponad dwa tuziny” zamiast „ponad dwudziestu”, usunięta definicja racjonalizmu i zdania przyczynowe zmienione na „wygląda na to”/„może zależeć”.",
+      "wynik": {},
+      "weryfikacja": {
+        "id": "w-1dyiz",
+        "data": "2026-11-14 12:00",
+        "fakty": [
+          {
+            "fakt": "Spójność: 'czytane na Princetonie w 2007 roku' odniesione do wszystkich czterech pozycji (książka, dwa blogi, forum GiveWell)",
+            "gdzie": "linkedin",
+            "status": "rozbieżność",
+            "zrodlo": "https://www.bizpacreview.com/2026/11/05/mind-merging-with-machines-by-2040-was-reportedly-once-the-plan-of-ai-billionaire-headed-for-wall-street-1666430/",
+            "link": "https://www.bizpacreview.com/2026/11/05/mind-merging-with-machines-by-2040-was-reportedly-once-the-plan-of-ai-billionaire-headed-for-wall-street-1666430/",
+            "cytat": "",
+            "uwaga": "Wtórne omówienia NYT wiążą rok 2007 z rozmową o książce Kurzweila (Princeton, doktorant fizyki). Forum GiveWell: jedno omówienie podaje, że trafił tam w 2008 (przez blog Tylera Cowena), a wpis gościnny na blogu GiveWell jest z 3 czerwca 2010 (jako 'graduate student in physics at Princeton'). Poprawka: 'w czasie doktoratu na Princetonie (około 2007 r.) czytał/śledził...' bez roku przy GiveWell, albo przypisać 2007 tylko książce. Pełnego tekstu NYT nie udało się sprawdzić (paywall; pobranie repostu zablokowane przez system), więc sformułowanie 'czytane w 2007' jest niepotwierdzone wprost."
+          },
+          {
+            "fakt": "Spójność: 'dla firmy ... to nie jest wyłącznie hasło z prezentacji, tylko coś, co wynika z tego, jak myśli jej założyciel' / X: 'nacisk firmy na bezpieczeństwo ma więc źródło w tym, jak myśli jej założyciel'",
+            "gdzie": "linkedin, x",
+            "status": "rozbieżność",
+            "zrodlo": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html",
+            "link": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html",
+            "cytat": "",
+            "uwaga": "To wniosek, a nie ustalenie NYT, podane w poście jako fakt przyczynowy ('więc'). Źródło mówi o korzeniach poglądów Amodeia, nie o przyczynie polityki firmy ani nie przeciwstawia jej prezentacji dla inwestorów. Poprawka: 'Wygląda na to, że...' / 'Moim zdaniem...' albo 'artykuł pomaga zrozumieć, skąd w firmie nacisk na bezpieczeństwo'."
+          },
+          {
+            "fakt": "Spójność: 'Pierwsze dwa wiążą się z racjonalizmem' – niejednoznaczne i częściowo wiedza ogólna",
+            "gdzie": "linkedin",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html",
+            "link": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html",
+            "cytat": "",
+            "uwaga": "W kolejności zdania 'pierwsze dwa' to książka Kurzweila i Accelerating Future, a nie dwa blogi. Kurzweil to transhumanizm/singularyzm, nie racjonalizm; Accelerating Future (Anissimov) to raczej środowisko singularyzmu/transhumanizmu, Overcoming Bias to rdzeń racjonalizmu. Nie znalazłem źródła, które przypisuje te pozycje do racjonalizmu w ten sposób; to uporządkowanie autora. Poprawka: 'blogi ... związane ze środowiskiem racjonalistów i transhumanistów' albo ograniczyć do Overcoming Bias, a GiveWell do efektywnego altruizmu. Widoczny fragment NYT wymienia je tylko jako lektury."
+          },
+          {
+            "fakt": "Definicja racjonalizmu: ruch, który chce podejmować decyzje przez ścisłe rozumowanie",
+            "gdzie": "linkedin",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html",
+            "link": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html",
+            "cytat": "",
+            "uwaga": "Definicja z wiedzy ogólnej, nie ze źródła; nie sprawdzono w NYT (paywall). Jest uproszczona (racjonalizm w sensie społeczności LessWrong/Overcoming Bias: poprawianie myślenia i unikanie błędów poznawczych); sens akceptowalny, ale nie potwierdzony. Zalecam ostrożniejsze 'ruch skupiony na jasnym, opartym na dowodach myśleniu'."
+          },
+          {
+            "fakt": "Dwie idee: rozumowanie matematyczne może zmienić los ludzkości oraz AI trzeba zbudować bezpiecznie",
+            "gdzie": "linkedin, x",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html",
+            "link": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html",
+            "cytat": "",
+            "uwaga": "Wtórne omówienia piszą o 'dwóch splecionych ideach', obie oparte na przekonaniu o mocy rozumowania matematycznego; nie znalazłem sformułowania drugiej idei dokładnie jak w poście. Opis w dane.csv (przygotowany z widocznego fragmentu NYT) zgodny z postem, ale to jedno źródło. Sprawdzić z pełnym tekstem NYT."
+          },
+          {
+            "fakt": "Spójność: całość",
+            "gdzie": "linkedin, x",
+            "status": "niepotwierdzony",
+            "zrodlo": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "link": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "cytat": "",
+            "uwaga": "Problem metodologiczny: pełnego tekstu NYT nie udało się odczytać (paywall, WebFetch niedostępny; pobranie repostu dnyuz zablokował system uprawnień, nie obchodziłem blokady). Wnioski opierają się na wtórnych omówieniach z wyszukiwarki. Zanim Kuba opublikuje, powinien sam porównać trzy miejsca: 'w 2007' przy GiveWell/blogach, 'pierwsze dwa wiążą się z racjonalizmem', sformułowanie dwóch idei."
+          },
+          {
+            "fakt": "Definicja efektywnego altruizmu: szukanie sposobów, by dobro było jak największe; GiveWell jako jego przykład",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "link": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "cytat": "GiveWell, an organization that aimed to maximize the effectiveness of charitable giving",
+            "uwaga": "Jedno źródło wtórne opisuje GiveWell jako organizację dążącą do maksymalizacji skuteczności datków ('aimed to maximize the effectiveness of charitable giving'), co zgadza się z definicją; sama nazwa 'efektywny altruizm' w fragmencie NYT niepotwierdzona, ale powiązanie GiveWell-EA jest powszechnie znane. Jedno źródło wtórne."
+          },
+          {
+            "fakt": "Amodei w 2007 był doktorantem fizyki na Princetonie i czytał 'The Singularity Is Near' Raya Kurzweila",
+            "gdzie": "linkedin",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.bizpacreview.com/2026/11/05/mind-merging-with-machines-by-2040-was-reportedly-once-the-plan-of-ai-billionaire-headed-for-wall-street-1666430/",
+            "link": "https://www.bizpacreview.com/2026/11/05/mind-merging-with-machines-by-2040-was-reportedly-once-the-plan-of-ai-billionaire-headed-for-wall-street-1666430/",
+            "cytat": "The Singularity Is Near (Ray Kurzweil)",
+            "uwaga": "Wtórne omówienia NYT (repost dnyuz, BizPacReview, TechFlow): doktorant fizyki na Princetonie, rozmowa z przyjacielem Colinem Heckmanem o książce Kurzweila w 2007. Dwa wtórne źródła; oryginał NYT niedostępny. Autorstwo Kurzweila potwierdza wiedza ogólna."
+          },
+          {
+            "fakt": "Blogi Accelerating Future i Overcoming Bias oraz forum GiveWell jako lektury/tło poglądów Amodeia",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "link": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "cytat": "had delved into the online forums of GiveWell",
+            "uwaga": "Repost NYT (przez wyszukiwarkę) mówi, że był pochłonięty obscure blogami Accelerating Future i Overcoming Bias oraz zgłębiał fora GiveWell. Niezależnie wpis gościnny Amodeia na blogu GiveWell (2010). Oryginału NYT nie otwarto."
+          },
+          {
+            "fakt": "Reporterzy NYT rozmawiali z ponad dwudziestoma osobami: koledzy ze szkoły, wykładowcy, współpracownicy",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "link": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "cytat": "more than two dozen people",
+            "uwaga": "Wtórne omówienia: 'more than two dozen people' (ponad 24), więc 'ponad dwudziestoma' jest prawdziwe, ale zaniżone; dokładniej 'ponad dwoma tuzinami'. Wymienieni: koledzy, przyjaciele, nauczyciele, współpracownicy; sam Amodei odmówił wywiadu. Opis w dane.csv zgodny."
+          },
+          {
+            "fakt": "Anthropic szykuje jeden z największych debiutów giełdowych; tekst NYT ukazał się 5 listopada 2026",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://www.anthropic.com/news/roadshow-launch",
+            "link": "https://www.anthropic.com/news/roadshow-launch",
+            "cytat": "",
+            "uwaga": "Roadshow przed IPO (Anthropic: 825 mln akcji, 70-78 USD, Nasdaq: ANT) opisane w dane.csv i na anthropic.com/news/roadshow-launch; data NYT z adresu URL i repostu dnyuz (2026-11-05). Wtórne omówienia NYT mówią o profilu 'na progu IPO'."
+          },
+          {
+            "fakt": "Spójność: LinkedIn kontra X",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "link": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "cytat": "",
+            "uwaga": "Liczby i sens zgodne; X pomija Kurzweila i Princeton, co jest dopuszczalnym skrótem. Na X zdanie o 'racjonalizmie i efektywnym altruizmie' jest zbiorcze, bez przypisania blogów do ruchów, więc problem z przypisaniem dotyczy tylko LinkedIna."
+          },
+          {
+            "fakt": "Spójność: pytanie na końcu dotyczy tezy posta",
+            "gdzie": "linkedin, x",
+            "status": "potwierdzony",
+            "zrodlo": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "link": "https://dnyuz.com/2026/11/05/the-making-of-dario-amodei/",
+            "cytat": "",
+            "uwaga": "Pytanie o wartości dostawcy przy wyborze pasuje do tezy praktycznej posta. Zdania o dostawcach (limity, blokady, zmiany zasad) to opinie Kuby, nie ustalenia NYT; w tekście są zapisane jako opinie ('Widzę tu...'), poza zdaniem 'Od tego zależy, co firma zablokuje...' podanym jako fakt – lepiej 'może zależeć'."
+          }
+        ]
+      }
+    }
+  ],
+  "_dziennik": [
+    "decyzja:glowny:e7f7f586",
+    "decyzja:t1:190012a4",
+    "decyzja:t3:27f741f1",
+    "decyzja:t5:73177188",
+    "decyzja:t6:ba2300ae",
+    "decyzja:t7:eed51eb6",
+    "decyzja:w-17spo:420e0762",
+    "decyzja:w-1c2hm:9221181c",
+    "decyzja:w-1dyiz:3c0949d1",
+    "decyzja:w-1uugl:33051326",
+    "decyzja:w-1x762:3dd15ae4",
+    "decyzja:w-49p6y:3cad688d",
+    "temat:t1:aafc3974",
+    "temat:t2:1af2f7d9",
+    "temat:t3:092a92ee",
+    "temat:t4:2abc6a15",
+    "temat:t5:2ed30f36",
+    "temat:t6:10bc49ca",
+    "temat:t7:d9b51ce7",
+    "temat:w-17spo:e05f49bd",
+    "temat:w-1c2hm:1247744e",
+    "temat:w-1dyiz:a143f5f5",
+    "temat:w-1uugl:1c48d885",
+    "temat:w-1x762:adc82ea6",
+    "temat:w-49p6y:16efb800",
+    "uwaga:glowny:05c5dea1",
+    "uwaga:t1:0704898f",
+    "uwaga:t3:9cff809f",
+    "uwaga:t5:eff35dc4",
+    "uwaga:t6:3cf07b70",
+    "uwaga:t7:22b6aaac",
+    "uwaga:w-17spo:f274b358",
+    "uwaga:w-1c2hm:81e061a4",
+    "uwaga:w-1dyiz:d126940d",
+    "uwaga:w-1uugl:58b0046b",
+    "uwaga:w-1x762:59c48cca",
+    "uwaga:w-49p6y:df57e73f",
+    "wskazowka:t1:d19fd276",
+    "wskazowka:t5:456ca0ae",
+    "zmiana:glowny:termin:d46ba57e",
+    "zmiana:t5:linkedin:88772ea6",
+    "zmiana:t5:obrazek:c1084dcb",
+    "zmiana:t5:termin:76cea82e",
+    "zmiana:t5:x:b175de06",
+    "zmiana:w-17spo:linkedin:521af2ec",
+    "zmiana:w-17spo:x:9c838285",
+    "zmiana:w-49p6y:obrazek:46e496ab"
+  ]
+}

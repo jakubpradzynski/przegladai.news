@@ -42,8 +42,10 @@ Link i tytuł newsa przepisz dokładnie z `dane.csv`.
 
 **Post główny** — napisz sam (bez subagenta) według „Rodzaje postów” w `social.md`, na bazie `wstep`
 z `meta.json`, i zapisz do `.cache/social/<NNN>/robocze/glowny.json` w formacie z `.claude/agents/social-autor.md`,
-z `"id": "glowny"`, `"rodzaj": "glowny"`, `"temat": "Wstęp wydania"`, `"obrazek": {"wybrany": "okladka"}`
-(+ opcjonalnie infografika z najmocniejszą liczbą tygodnia), `"termin"`: data wydania z `meta.json`, 08:30.
+z `"id": "glowny"`, `"rodzaj": "glowny"`, `"temat": "Wstęp wydania"`, `"obrazek": {"wybrany": "okladka", ...}`
+oraz **kompletem opcji jak przy każdym poście**: infografika z najmocniejszą liczbą tygodnia, prompt po polsku i mem
+(szablon z `narzedzia/social/memy_szablony.json` + tekst po polsku) — `posty.py sprawdz` zgłasza błąd, gdy któregoś brakuje;
+`"termin"`: data wydania z `meta.json`, 09:30 (Kuba przesuwa z 8:30).
 Potem:
 
 ```bash
@@ -74,6 +76,7 @@ until ls .cache/social/<NNN>/zadania/ 2>/dev/null | grep -q '\.json$' || grep -q
 Obsłuż wszystkie pliki w kolejności nazw, każdy usuń dopiero po obsłużeniu, i wróć do czekania:
 
 **`"rodzaj": "generuj"`** — lista tematów `{id, link, tytul_newsa, kat, wskazowka, z_propozycji_ai}`.
+Każdy autor dostaje w prompcie przypomnienie: komplet obrazków (infografika, prompt po polsku, mem z szablonem z `memy_szablony.json`) jest obowiązkowy — opisane w `.claude/agents/social-autor.md`.
 Terminy: według harmonogramu z `social-platformy.md` — kolejne wolne dni wt/śr/czw po dacie wydania
 (sprawdź terminy zajęte w `posty.json`; tematy polecane dostają najwcześniejsze), dalsze — kolejne dni robocze.
 Uruchom **równolegle** po jednym subagencie `social-autor` na temat (jedna wiadomość, wiele wywołań Agent).

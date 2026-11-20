@@ -1,0 +1,105 @@
+{
+  "tematy": [
+    "t1",
+    "t3",
+    "t5",
+    "t7",
+    "t6",
+    "w-17spo",
+    "w-1uugl",
+    "w-49p6y",
+    "w-1c2hm",
+    "w-1x762",
+    "w-1dyiz"
+  ],
+  "szczegoly": [
+    {
+      "id": "t1",
+      "z_propozycji_ai": true,
+      "link": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+      "tytul_newsa": "Apple obniża dzienne limity wydatków na narzędzia AI w firmie",
+      "kat": "Apple tnie dzienne limity na narzędzia AI z 300 do 200 dolarów na inżyniera — koniec „tokenmaxxingu”; Kuba ma własne spojrzenie managera na koszt agenta na osobę.",
+      "wskazowka": "Jak weryfikować czy dany budżet dla danej osoby jest odpowiedni, skoro każdy ma inne umiejętności? Kiedy to zbyt mały budżet na AI jest problemem a kiedy powinno się popracować nad umiejętnoścami z zakresu AI pracownika i jak?"
+    },
+    {
+      "id": "t3",
+      "z_propozycji_ai": true,
+      "link": "https://www.youtube.com/watch?v=dpY7YzZo4kE",
+      "tytul_newsa": "Czy repozytoria staną się fabrykami oprogramowania? – rozmowa z Mihailem Ericiem",
+      "kat": "Jak uczyć juniorów, gdy zadanie domowe rozwiązuje jeden prompt: studenci muszą zrozumieć obce repozytorium i obronić zmianę przed maintainerem.",
+      "wskazowka": ""
+    },
+    {
+      "id": "t5",
+      "z_propozycji_ai": true,
+      "link": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+      "tytul_newsa": "Poprawny SQL od LLM-a to jeszcze nie bezpieczny SQL",
+      "kat": "Poprawny SQL od LLM-a to jeszcze nie bezpieczny SQL: 80 wyciekających wierszy w 900 zapytaniach, uprawnienia muszą działać w kodzie, nie w prompcie.",
+      "wskazowka": "Bardzo istotny problem, gdy ludzie uważają, że \"zrobione\" = \"dobrze zrobione\". I że dużym problemem jest teraz pokazanie jak istotne i jaką wartość daje poprawianie po AI bo często te rzeczy nie są widoczne tak jak \"pierwsze zrobienie\"."
+    },
+    {
+      "id": "t7",
+      "z_propozycji_ai": true,
+      "link": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+      "tytul_newsa": "Polski Bielik 11B v3.1 obsługuje 56 języków, a twórcy szykują model o ponad 100 mld parametrów",
+      "kat": "Bielik 11B v3.1 w 56 językach z wywoływaniem narzędzi i zapowiedź modelu ponad 100 mld parametrów (Bielik Summit 26 listopada).",
+      "wskazowka": ""
+    },
+    {
+      "id": "t6",
+      "z_propozycji_ai": true,
+      "link": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+      "tytul_newsa": "JetBrains wprowadza Air do swoich IDE – agenci kodujący w jednym miejscu",
+      "kat": "JetBrains Air: gdy agenci piszą kod, wąskim gardłem staje się review — 49% programistów poświęca na nie 4 godziny tygodniowo lub więcej.",
+      "wskazowka": ""
+    },
+    {
+      "id": "w-17spo",
+      "z_propozycji_ai": false,
+      "link": "https://openai.com/index/introducing-businesses-chatgpt/",
+      "tytul_newsa": "OpenAI wprowadza Business Hub i agentów biznesowych w ChatGPT",
+      "kat": "",
+      "wskazowka": ""
+    },
+    {
+      "id": "w-1uugl",
+      "z_propozycji_ai": false,
+      "link": "https://www.langchain.com/blog/what-is-eval-driven-development",
+      "tytul_newsa": "Czym jest eval-driven development, czyli TDD dla agentów AI",
+      "kat": "",
+      "wskazowka": ""
+    },
+    {
+      "id": "w-49p6y",
+      "z_propozycji_ai": false,
+      "link": "https://martinfowler.com/articles/tests-as-data.html",
+      "tytul_newsa": "Testy jako dane – jak dać agentom AI kontrakt, którego nie osłabią",
+      "kat": "",
+      "wskazowka": ""
+    },
+    {
+      "id": "w-1c2hm",
+      "z_propozycji_ai": false,
+      "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+      "tytul_newsa": "Trzy oblicza pracy PM-a przy AI w Spotify",
+      "kat": "",
+      "wskazowka": ""
+    },
+    {
+      "id": "w-1x762",
+      "z_propozycji_ai": false,
+      "link": "https://www.anthropic.com/news/roadshow-launch",
+      "tytul_newsa": "Anthropic rozpoczyna roadshow przed IPO – akcje po 70–78 dolarów",
+      "kat": "",
+      "wskazowka": ""
+    },
+    {
+      "id": "w-1dyiz",
+      "z_propozycji_ai": false,
+      "link": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html?unlocked_article_code=1.OVE.0w5Y.yvhWxuXOa-LL&smid=url-share",
+      "tytul_newsa": "Skąd biorą się poglądy Dario Amodeia na AI",
+      "kat": "",
+      "wskazowka": ""
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "numer": 46,
+  "tytul": "Wydanie #46: CEO Nvidii odchodzi, Business Hub w ChatGPT i roadshow Anthropic przed IPO",
+  "posty": [
+    {
+      "id": "glowny",
+      "rodzaj": "glowny",
+      "temat": "Wstęp wydania",
+      "link_newsa": "",
+      "tytul_newsa": "",
+      "kat": "Odejście szefa Nvidii, Business Hub w ChatGPT i roadshow Anthropic przed IPO.",
+      "linkedin": "Jensen Huang przestał być szefem Nvidii, spółki wartej jeszcze niedawno ponad 4 bln dolarów, którą współzałożył w 1993 roku. Tymczasowo kieruje nią dyrektor finansowa Colette Kress, a zarząd szuka następcy.\n\nOdejście poprzedziły doniesienia o romansach, w tym z kobietą podejrzewaną o powiązania z chińskim wywiadem. Akcje spadły w kilka dni o kilkanaście procent, a Nvidia dostarcza chipy między innymi dla OpenAI i Anthropic.\n\nObok tego dwa wątki z tego tygodnia. OpenAI uruchamia w ChatGPT Business Hub: firmy zgłaszają swoją markę, dodają katalogi produktów z cenami i dostępnością, a zweryfikowani sprzedawcy w USA mogą uruchomić własnego agenta do rozmów z klientami. Anthropic rusza natomiast z roadshow przed IPO i oferuje 825 mln akcji w przedziale 70–78 dolarów.\n\nTo i ponad 25 innych newsów z tygodnia zebrałem w 46. wydaniu PrzeglądAI, link w komentarzu.\n\nCzy sprawdzałeś/aś już, jak Twoja firma wygląda w odpowiedziach ChatGPT?",
+      "komentarz": "Wydanie #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo",
+      "x": [
+        "Jensen Huang przestał być szefem Nvidii, spółki wartej jeszcze niedawno ponad 4 bln dolarów. Tymczasowo kieruje nią dyrektor finansowa Colette Kress, a zarząd szuka następcy. Akcje spadły w kilka dni o kilkanaście procent.",
+        "OpenAI uruchamia w ChatGPT Business Hub: firmy zgłaszają markę i dodają katalogi produktów z cenami i dostępnością. W USA zweryfikowani sprzedawcy mogą też uruchomić własnego agenta do rozmów z klientami.",
+        "Anthropic ruszył z roadshow przed IPO: 825 mln akcji klasy A w przedziale 70–78 dolarów. Papiery mają trafić na Nasdaq pod symbolem ANT.",
+        "To i ponad 25 innych newsów z tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "okladka",
+        "plik": "../okladka.jpeg"
+      },
+      "termin": "2026-11-13 08:30",
+      "fakty": [
+        "Huang przestał być szefem, Colette Kress tymczasowo, zarząd szuka następcy; firma założona w 1993, kapitalizacja ponad 4 bln $, akcje −11% w kilka dni, chipy dla OpenAI i Anthropic – opis newsa o rezygnacji (dane.csv, Guardian 12.11)",
+        "romans z kobietą podejrzewaną o związki z chińskim wywiadem – opis newsa o rezygnacji (Guardian)",
+        "Business Hub: zgłaszanie marki, katalogi z cenami i dostępnością, agenci biznesowi dla zweryfikowanych sprzedawców w USA – opis newsa (openai.com)",
+        "825 mln akcji, przedział 70–78 $, Nasdaq ANT – opis newsa o roadshow (anthropic.com)",
+        "ponad 25 innych newsów – wydanie ma 29 newsów"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t1",
+      "rodzaj": "temat",
+      "temat": "Limity budżetu na AI na osobę",
+      "link_newsa": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+      "tytul_newsa": "Apple obniża dzienne limity wydatków na narzędzia AI w firmie",
+      "kat": "Jeden limit na AI dla wszystkich nic nie mówi: budżet ocenia się przez efekty danej osoby, a gdy wydatki rosną bez efektów, pomaga nauka, nie większy limit.",
+      "linkedin": "Apple, jak podaje Bloomberg, obniżył w październiku dzienny limit na narzędzia AI dla części inżynierów z 300 do 200 dolarów, a część limitów może spaść do 100 dolarów.\n\nPoza inżynierią Apple rozważa nawet 25 dolarów dziennie. To zmiana po fali „tokenmaxxingu”, czyli zachęcania pracowników do używania AI jak najwięcej. Gdy przyszły rachunki za tokeny, zaczęło się racjonowanie.\n\nRozumiem, dlaczego firma sięga po jeden limit dla wszystkich: jest prosty i łatwo go pilnować. Tyle że 200 dolarów dziennie oznacza co innego u kogoś, kto świetnie prowadzi agenta, a co innego u kogoś, kto dopiero się uczy. Sama kwota nic więc nie mówi, dopiero wydatek zestawiony z efektem.\n\nDlatego porównywałbym każdą osobę z nią samą sprzed miesiąca, a nie z resztą zespołu. Wydatki warto położyć obok rzeczy, które i tak mierzymy: ile zmian przechodzi review bez dużych poprawek, jak długo trwa zadanie od startu do wdrożenia, ile pracy wraca. Z tego wynikają trzy różne obrazy:\n\n– Ktoś dobija do limitu, a wyniki są dobre i stabilne. Budżet jest za mały i tu warto go podnieść.\n– Ktoś wydaje dużo, a jego zmiany wracają z review albo agent kręci się w kółko na tym samym zadaniu. Dołożenie budżetu tylko podniesie rachunek.\n– Ktoś prawie nie używa agenta. To też nie problem pieniędzy, tylko pytanie, czy nie wie jak, czy mu to nie pasuje.\n\nW dwóch ostatnich przypadkach lepiej zadziała nauka niż pieniądze: wspólne przejrzenie sesji z agentem, parowanie z osobą, która robi to dobrze, albo pokazanie, jak dzielić zadanie na mniejsze i jaki kontekst podać. Taką rozmowę da się przeprowadzić dopiero wtedy, gdy rozmawiamy o efektach, a nie o tym, kto przekroczył limit.\n\nPo czym u Ciebie poznajesz, że ktoś potrzebuje większego budżetu na AI, a nie lepszego wykorzystania tego, który już ma?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+      "x": [
+        "Według Bloomberga Apple obniżył w październiku dzienny limit na narzędzia AI dla części inżynierów z 300 do 200 dolarów. Część limitów może spaść do 100 dolarów, a poza inżynierią rozważa się nawet 25.",
+        "To zmiana po fali „tokenmaxxingu”, czyli zachęcania do używania AI jak najwięcej. Gdy przyszły rachunki za tokeny, zaczęło się racjonowanie.",
+        "Problem jednego limitu dla wszystkich: 200 dolarów dziennie znaczy co innego u kogoś, kto świetnie prowadzi agenta, a co innego u kogoś, kto dopiero się uczy. Sama kwota nic nie mówi.",
+        "Porównuj osobę z nią samą sprzed miesiąca i połóż wydatki obok efektów: ile zmian przechodzi review bez dużych poprawek, ile trwa zadanie, ile pracy wraca.",
+        "Dobija do limitu i dowozi dobrze? Podnieś budżet. Wydaje dużo, a zmiany wracają z review? Pieniądze nie pomogą, pomoże wspólne przejrzenie sesji z agentem albo parowanie z kimś, kto robi to dobrze.",
+        "Po czym u Ciebie poznajesz, że ktoś potrzebuje większego budżetu na AI, a nie lepszego wykorzystania obecnego? Przegląd tygodnia: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist flat illustration, two identical paper envelopes of cash side by side on a plain light desk, next to the left one a neat stack of finished documents, next to the right one a messy pile of crumpled paper, soft natural light, muted palette with a single orange accent, centered composition with generous margins, no text, no people, 3:4",
+        "mem": {
+          "szablon": "Drake Hotline Bling",
+          "link": "https://imgflip.com/memegenerator/Drake-Hotline-Bling",
+          "tekst": "góra (nie): Jeden limit na narzędzia AI dla wszystkich\ndół (tak): Wydatek zestawiony z efektem, osobno dla każdego"
+        }
+      },
+      "termin": "2026-11-17 08:30",
+      "fakty": [
+        "300 do 200 dolarów dziennie dla zespołów inżynierskich w październiku: opis z wydania i TechCrunch (za Bloombergiem)",
+        "część limitów spadnie do 100 dolarów: TechCrunch/Bloomberg",
+        "25 dolarów dziennie poza inżynierią rozważane: TechCrunch/Bloomberg",
+        "tokenmaxxing i racjonowanie tokenów po rachunkach: TechCrunch",
+        "Kryteria oceny budżetu (review, czas zadania, parowanie) to rozumowanie Kuby, nie fakty z artykułu"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t3",
+      "rodzaj": "temat",
+      "temat": "Stanford: obrona zmiany przed maintainerem",
+      "link_newsa": "https://www.youtube.com/watch?v=dpY7YzZo4kE",
+      "tytul_newsa": "Czy repozytoria staną się fabrykami oprogramowania? – rozmowa z Mihailem Ericiem",
+      "kat": "Gdy zadanie domowe rozwiązuje jeden prompt, uczymy juniorów tego, co zostaje po agencie: rozumienia cudzego kodu i obrony własnej zmiany.",
+      "linkedin": "Na kursie o agentach kodujących na Stanfordzie zadanie domowe rozwiązuje jeden prompt. Dlatego studenci muszą zrozumieć obce repozytorium open source i obronić swoją zmianę przed maintainerem.\n\nKurs prowadzi Mihail Eric, który na co dzień kieruje AI w startupie Monaco. To druga edycja dziesięciotygodniowego programu: od narzędzi w Claude Code po pracę z kontekstem w dużych bazach kodu. Maintainer to osoba, która utrzymuje projekt i decyduje, czy dana zmiana do niego trafi. Moim zdaniem samo to, że agent wygenerował działający kod, nie powinno wystarczyć.\n\nUważam, że to dobry pomysł, bo sprawdza dokładnie to, czego agent za nas nie zrobi. Żeby obronić zmianę, trzeba wiedzieć, dlaczego kod jest napisany tak, a nie inaczej, jakie ma konsekwencje dla reszty projektu i czemu to rozwiązanie jest lepsze od innych. Kod można wygenerować, ale zrozumienia nie da się zlecić.\n\nTo samo widać w rozmowie po stronie firmy. Monaco samo buduje przestrzenie robocze dla agentów, a code review woli kupić. Eric mówi też, że wąskim gardłem staje się właśnie przegląd kodu. Moim zdaniem skoro agent pisze szybciej, niż da się to przeczytać, rośnie wartość osób, które potrafią ocenić cudzą zmianę.\n\nDla zespołów oznacza to, że onboardingu juniora nie warto już opierać na zadaniach typu „napisz funkcję”. Lepiej dać mu prawdziwy fragment systemu, poprosić o drobną zmianę i zapytać na review, dlaczego zrobił ją właśnie tak.\n\nJakie zadanie dałbyś/abyś juniorowi, którego nie rozwiąże jeden prompt?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://www.youtube.com/watch?v=dpY7YzZo4kE",
+      "x": [
+        "Na kursie o agentach kodujących na Stanfordzie zadanie domowe rozwiązuje jeden prompt. Dlatego studenci muszą zrozumieć obce repozytorium open source i obronić swoją zmianę przed maintainerem.",
+        "Kurs prowadzi Mihail Eric, na co dzień szef AI w startupie Monaco. To druga edycja programu na dziesięć tygodni: od narzędzi w Claude Code po kontekst w dużych bazach kodu.",
+        "Dobry pomysł, bo sprawdza to, czego agent za nas nie zrobi. Żeby obronić zmianę, trzeba wiedzieć, dlaczego kod wygląda tak, a nie inaczej. Kod można wygenerować, zrozumienia nie da się zlecić.",
+        "Monaco samo buduje przestrzenie robocze dla agentów, a code review kupuje. Wąskim gardłem staje się przegląd kodu. Moim zdaniem rośnie więc wartość osób, które umieją ocenić cudzą zmianę.",
+        "Przy onboardingu juniora zamiast „napisz funkcję” lepiej dać fragment prawdziwego systemu, drobną zmianę i pytanie na review: dlaczego tak? Więcej w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist realistic scene, 3:4 portrait: a thick stack of printed code diff pages on a wooden desk, one single page lifted out of the stack with one line circled in pencil, a red pen lying next to it, soft daylight, shallow depth of field, main subject centered with margin around edges, no text, no people (albo własne zdjęcie Kuby z zajęć lub spotkania JUG)"
+      },
+      "termin": "2026-11-18 08:30",
+      "fakty": [
+        "Stanford, druga edycja kursu, studenci rozumieją obce repo open source, proponują zmianę i bronią jej przed maintainerem, bo zadanie domowe rozwiązuje jeden prompt: opis z wydania 46 (dane.csv). Film nie dał się otworzyć (YouTube bez transkryptu).",
+        "Mihail Eric uczy kursu i kieruje AI w Monaco; dziesięciotygodniowy program od Claude Code po kontekst w dużych bazach kodu: opis z dane.csv.",
+        "Monaco buduje przestrzenie robocze agentów, a code review kupuje; wąskie gardło to przegląd kodu: opis z dane.csv.",
+        "Definicja maintainera, wnioski o onboardingu i zdanie „agent pisze szybciej niż ludzie czytają” to interpretacja Kuby, nie fakt z filmu. Do sprawdzenia w filmie, czy maintainer to realna osoba z projektu, czy rola odgrywana na zajęciach."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t5",
+      "rodzaj": "temat",
+      "temat": "Bezpieczny SQL od LLM-a",
+      "link_newsa": "https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+      "tytul_newsa": "Poprawny SQL od LLM-a to jeszcze nie bezpieczny SQL",
+      "kat": "„Zrobione” to nie „dobrze zrobione”: poprawka po AI (tu warstwa uprawnień w kodzie) jest niewidoczna, bo jej efektem jest brak incydentu, więc trzeba ją mierzyć i pokazywać.",
+      "linkedin": "W teście 900 zapytań do bazy z syntetycznymi danymi farmaceutycznymi zwykłe text-to-SQL zwróciło nawet około 80 wierszy, do których pytający nie miał dostępu.\n\nNarzędzie analityczne, zbudowane na Snowflake Cortex, zamienia pytania w języku naturalnym na SQL. Handlowiec pyta o sprzedaż w „swoich szpitalach” i dostaje dane z całego regionu. Zapytanie jest poprawne i odpowiada na pytanie, tylko nikt nie sprawdził, kto je zadał.\n\nWycieki zniknęły dopiero z warstwą w kodzie, która przepisuje i waliduje SQL przed wykonaniem: 0 nieautoryzowanych wierszy przy narzucie około 6,5 ms na zapytanie. Samo zapisanie reguł w prompcie nie wystarcza, bo prompt jest tylko sugestią. Statyczne role też nadal wyciekały, bo nie widzą kontekstu pytania. Ta warstwa miała zresztą sporo roboty: bez zmian przeszło tylko 40% zapytań, w 20% dopisała filtr wierszy, w 15% zamaskowała kolumny, a w 11,7% przepisała joiny. Około 6,7% poszło do człowieka, a kolejne 6,7% zostało zablokowane.\n\nWidzę tu coś szerszego niż SQL. Takie narzędzie na demo wygląda świetnie: pytasz, po sekundzie masz tabelę. Wyciek niczego nie psuje, nikt nie dostaje błędu, więc łatwo uznać, że „zrobione” znaczy „dobrze zrobione”. Poprawianie po AI trudno pokazać tak, jak pierwszą wersję, bo jego efektem jest to, że nic się nie stało.\n\nDlatego zamiast samej dokładności odpowiedzi mierzyłbym też to, co poprawka wyłapała: ile zapytań trzeba było zmienić, ile zablokować i ile wierszy by wyciekło. Dopiero wtedy ta praca jest widoczna dla osób, które decydują o budżecie i terminach.\n\nJak u Ciebie pokazuje się wartość pracy, po której nic złego się nie wydarzyło?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://www.infoworld.com/article/4244721/your-llm-writes-good-sql-thats-not-the-same-as-safe-sql.html",
+      "x": [
+        "W teście 900 zapytań do bazy z syntetycznymi danymi farmaceutycznymi zwykłe text-to-SQL zwróciło nawet około 80 wierszy, do których pytający nie miał dostępu.",
+        "Handlowiec pyta o sprzedaż w „swoich szpitalach” i dostaje dane z całego regionu. Zapytanie jest poprawne i odpowiada na pytanie, tylko nikt nie sprawdził, kto pytał.",
+        "Podejście z politykami dostępu, które przepisuje SQL w kodzie przed wykonaniem, nie wyciekło ani jednego wiersza. Koszt to około 6,5 ms na zapytanie. Reguły w prompcie to tylko sugestia.",
+        "Warstwa miała sporo pracy: bez zmian przeszło 40% zapytań, 20% dostało filtr wierszy, 15% maskowanie kolumn, a 11,7% przepisane joiny.",
+        "Takie narzędzie świetnie wygląda na demo, a wyciek nie wywala błędu. Łatwo uznać, że „zrobione” to „dobrze zrobione”. Poprawianie po AI trudno pokazać, bo jego efektem jest to, że nic się nie stało.",
+        "Mierzyłbym więc nie tylko dokładność, ale i to, co poprawka wyłapała: ile zapytań zmieniono, ile zablokowano, ile wierszy by wyciekło. Więcej w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "40%",
+          "podpis": "zapytań SQL od LLM-a przeszło bez żadnej zmiany. Resztę trzeba było poprawić, zablokować albo oddać człowiekowi.",
+          "zrodlo": "InfoWorld, test 900 zapytań",
+          "numer": 46
+        },
+        "prompt": "Minimalist illustration of a printed spreadsheet page lying on a wooden desk next to a pen, seen from above. Out of about thirty neat rows, exactly three rows are marked with a yellow highlighter, as rows that should not be there. Soft daylight, muted colors, hand-made editorial look, no text, no people, main subject centered with margin on all sides, 3:4.",
+        "plik": "obrazki/t5.png",
+        "mem": {
+          "szablon": "This Is Fine",
+          "link": "https://imgflip.com/memegenerator/This-Is-Fine",
+          "tekst": "góra: Zapytanie wykonało się bez błędu, wynik po sekundzie\ndół (pies w płonącym pokoju): Dane z całego regionu trafiły do jednego handlowca"
+        }
+      },
+      "termin": "2026-11-19 08:30",
+      "fakty": [
+        "900 zapytań, ok. 80 nieautoryzowanych wierszy, 0 wycieków i ok. 6,5 ms na zapytanie: opis w wydania/046/dane.csv i InfoWorld (benchmark na danych syntetycznych).",
+        "Snowflake Cortex, handlowiec i „swoje szpitale”: InfoWorld (przykład autora; narzędzie na danych healthcare).",
+        "40% bez zmian, 20% filtr wiersza, 15% maskowanie kolumn, 11,7% przepisanie joinów, ok. 6,7% do człowieka, ok. 6,7% zablokowane: InfoWorld, rozkład wyników z 900 zapytań.",
+        "Statyczny RBAC nadal wyciekał, „a prompt is a suggestion”: InfoWorld.",
+        "Cześć wniosków (niewidoczność poprawek, mierzenie wycieków) to opinia Kuby wg jego wskazówki, nie fakt ze źródła."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t7",
+      "rodzaj": "temat",
+      "temat": "Bielik 11B v3.1 i model 100B",
+      "link_newsa": "https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+      "tytul_newsa": "Polski Bielik 11B v3.1 obsługuje 56 języków, a twórcy szykują model o ponad 100 mld parametrów",
+      "kat": "Dla firm z wrażliwymi danymi liczy się otwarty model z polskim tokenizerem i narzędziami do agentów, nie sama liczba języków; model 100B+ to na razie zapowiedź.",
+      "linkedin": "Bielik 11B v3.1 rozumie 56 języków zamiast 32, a jego twórcy zapowiadają już model o ponad 100 mld parametrów.\n\nBielik to polski model językowy rozwijany przez Fundację SpeakLeash i Cyfronet AGH. W nowej wersji doszły między innymi chiński, japoński, koreański i arabski, a model przeszedł dodatkowy trening na 500 mld tokenów. Ważniejsza dla mnie jest jednak inna zmiana: Bielik dostał wywoływanie narzędzi i structured output, czyli może zwracać odpowiedź w ustalonym formacie, który da się wczytać w kodzie. Według twórców na T2-bench, czyli wieloetapowych zadaniach obsługi klienta, wypada o 16–45 punktów procentowych lepiej niż wersja 3.0.\n\nObok pojawiło się Bielik-One, cztery modele, które nie piszą tekstu, tylko przypisują dane do kategorii i podają prawdopodobieństwa. Zastosowanie jest bardzo przyziemne: przypisywanie zgłoszeń do odpowiedniej kategorii albo analiza nastroju w opiniach. Do tego model DFlash, który przyspiesza generowanie odpowiedzi.\n\n26 listopada na Bielik Summit twórcy mają pokazać szczegóły multimodalnego modelu o ponad 100 mld parametrów, budowanego od zera na własnej architekturze. To na razie zapowiedź, więc poczekałbym z oceną do konkretów. Wątpliwości w tym samym artykule dotyczą pieniędzy: Bielik jest darmowy, a fundacja opiera się na partnerach, sponsorach i superkomputerach Cyfronetu, więc zdaniem eksperta trudno jej nadążyć za firmami, które zbierają miliardy.\n\nZ perspektywy zespołu, który wdraża AI, to nie jest wyścig na benchmarki. Dla instytucji z wrażliwymi danymi liczy się to, czy model może działać na własnym sprzęcie i czy dobrze radzi sobie z polskim. Według szacunku eksperta polski tokenizer potrzebuje ponad 40% mniej tokenów niż Llama na tym samym tekście, a mniej tokenów to niższy koszt i szybsza odpowiedź. Przed decyzją dobrze sprawdzić model na własnych dokumentach, bo wyniki z testów ogólnych rzadko przekładają się wprost na konkretny proces.\n\nCzy rozważalibyście w swojej firmie otwarty model hostowany u siebie, gdyby dobrze radził sobie z polskim? Co by o tym przesądziło?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://xyz.pl/bielik-rusza-po-europe-polski-model-ai-obsluguje-56-jezykow-a-jego-tworcy-szykuja-nowa-wersje/",
+      "x": [
+        "Bielik 11B v3.1 rozumie 56 języków zamiast 32, w tym chiński, japoński i arabski. Twórcy z SpeakLeash zapowiadają już model o ponad 100 mld parametrów.",
+        "Dla mnie ważniejsze niż liczba języków jest wywoływanie narzędzi i structured output. Bielik może działać jako krok w większym systemie, a według twórców na T2-bench (wieloetapowa obsługa klienta) wypada o 16–45 punktów procentowych lepiej niż v3.0.",
+        "Obok powstało Bielik-One: cztery modele, które nie piszą tekstu, tylko przypisują dane do kategorii z prawdopodobieństwem. Przydają się np. do przypisywania zgłoszeń do kategorii.",
+        "Dla instytucji z wrażliwymi danymi liczy się, czy model może działać u nich na miejscu. Polski tokenizer to też mniejszy koszt: według szacunku eksperta ponad 40% mniej tokenów niż Llama na polskim tekście.",
+        "26 listopada na Bielik Summit twórcy pokażą model 100B+. Na razie to zapowiedź, a fundacja opiera się na sponsorach i Cyfronecie, co zdaniem eksperta utrudnia konkurowanie z firmami z miliardami. Czy otwarty polski model trafi u Was do produkcji?\n\nWydanie: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "porownanie",
+          "tytul": "Języki obsługiwane przez Bielika",
+          "jednostka": "",
+          "elementy": [
+            {
+              "etykieta": "Bielik 3.0",
+              "wartosc": 32
+            },
+            {
+              "etykieta": "Bielik 11B v3.1",
+              "wartosc": 56
+            }
+          ],
+          "zrodlo": "SpeakLeash, Cyfronet AGH"
+        },
+        "prompt": "Minimalist flat illustration on a light paper-textured background: a single open notebook seen from above with a hand-drawn grid of 56 small identical dots, 32 of them filled in dark ink and 24 in a single red accent color, a pencil lying beside it, soft natural light, no text, subject centered with generous margins, 3:4",
+        "plik": "obrazki/t7.png"
+      },
+      "termin": "2026-11-20 08:30",
+      "fakty": [
+        "56 języków zamiast 32, chiński/japoński/koreański/arabski, 500 mld tokenów treningu, wywoływanie narzędzi, structured output: artykuł xyz.pl",
+        "T2-bench +16–45 pkt względem v3.0: artykuł xyz.pl",
+        "Bielik-One: cztery modele decyzyjne (klasyfikacja, prawdopodobieństwa; kierowanie zgłoszeń, analiza nastroju); DFlash przyspiesza generowanie: artykuł",
+        "Model 100B+ multimodalny, od zera na własnej architekturze, szczegóły 26.11 na Bielik Summit: artykuł + opis w dane.csv",
+        "Finansowanie (partnerzy, sponsorzy, Cyfronet) i tokenizer >40% mniej tokenów niż Llama: komentarz eksperta w artykule (Albera, allclouds.pl), to opinia/szacunek, nie pomiar",
+        "'Dla urzędu, szpitala, banku liczy się hosting lokalny': teza eksperta z artykułu, opis z wydania mówi o 'dane muszą zostać u ciebie'"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t6",
+      "rodzaj": "temat",
+      "temat": "JetBrains Air i wąskie gardło review",
+      "link_newsa": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+      "tytul_newsa": "JetBrains wprowadza Air do swoich IDE – agenci kodujący w jednym miejscu",
+      "kat": "Gdy agenci piszą kod, wąskim gardłem jest przegląd — zanim dodamy agentów, warto zmierzyć, ile czasu zajmuje review.",
+      "linkedin": "Według raportu Atlassian, który cytuje JetBrains, 49% programistów spędza co najmniej cztery godziny tygodniowo na przeglądaniu wyników AI i poprawianiu promptów.\n\nJetBrains tłumaczy tym wprowadzenie do swoich IDE Air, czyli panelu, w którym uruchamiasz agentów kodujących, śledzisz ich postępy i oceniasz zmiany. Obsługuje m.in. Codex, Claude Code, Copilota i Junie. Firma tłumaczy to prosto: gdy agenci piszą kod, wąskim gardłem staje się jego przegląd.\n\nKażdy agent może pracować na własnym worktree, czyli osobnym katalogu roboczym z własną gałęzią tego samego repozytorium, więc równoległe sesje sobie nie przeszkadzają. Zmiany przeglądasz w IDE, z inspekcjami, testami i debuggerem, a uwagi do konkretnych linii odsyłasz agentowi, podobnie jak komentarze w pull requeście. Do pracy lokalnej płatna subskrypcja JetBrains AI nie jest potrzebna, a Junie w wersji Lite jest na razie darmowy.\n\nPodoba mi się, że narzędzie zaczyna od przeglądu, a nie od kolejnego sposobu na generowanie kodu. Równoległe worktree oznaczają, że kilka zmian naraz czeka na człowieka, więc to on szybko staje się ograniczeniem. Debugger i testy pod ręką skracają sprawdzanie, ale nie zastąpią zrozumienia, co dokładnie zmienił agent.\n\nZanim zespół doda kolejnych agentów, dobrze zmierzyć, ile czasu przegląd zajmuje dziś i czy rośnie po ich wdrożeniu. Inaczej pisanie przyspieszy, a zysk utknie w kolejce do review.\n\nCzy po wejściu agentów do Twojego zespołu przegląd kodu zajmuje więcej czasu? Co Wam pomogło go skrócić?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+      "x": [
+        "Według raportu Atlassian, który cytuje JetBrains, 49% programistów spędza co najmniej cztery godziny tygodniowo na przeglądaniu wyników AI i poprawianiu promptów. Tym JetBrains tłumaczy Air w swoich IDE.",
+        "W Air uruchamiasz m.in. Codex, Claude Code, Copilota i Junie. Każdy agent może pracować na własnym worktree, więc równoległe sesje sobie nie przeszkadzają.",
+        "Zmiany przeglądasz w IDE, z inspekcjami, testami i debuggerem, a uwagi do konkretnych linii odsyłasz agentowi. Do pracy lokalnej płatna subskrypcja JetBrains AI nie jest potrzebna.",
+        "Kilka agentów naraz to kilka zmian czekających na człowieka. Zanim dodacie kolejnych, zmierzcie, ile czasu zajmuje wam review i czy rośnie.",
+        "Ten i ponad 25 innych newsów z tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "naglowek": "Przegląd wyników AI",
+          "liczba": "49%",
+          "podpis": "programistów spędza co najmniej 4 godziny tygodniowo na przeglądaniu wyników AI i poprawianiu promptów",
+          "zrodlo": "Atlassian (cyt. JetBrains)",
+          "styl": "notatka"
+        },
+        "prompt": "Minimalist illustration, flat colors, 3:4: a single desk tray with a tall stack of paper printouts of code diffs, one pencil lying on top, one empty chair, main motif centered with margins, no text, no people looking at camera.",
+        "plik": "obrazki/t6.png"
+      },
+      "termin": "2026-11-23 08:30",
+      "fakty": [
+        "49% programistów, 4 godziny tygodniowo lub więcej na przegląd – opis newsa w wydania/046/dane.csv (źródło: JetBrains; artykuł zwrócił 403, nie zweryfikowano w oryginale, wyszukiwarka nie potwierdziła statystyki)",
+        "Codex, Claude Code, Copilot, Junie; worktree; inspekcje, testy, debugger; uwagi do linii – opis z dane.csv",
+        "Płatna subskrypcja JetBrains AI niepotrzebna, Junie Lite darmowy – opis z dane.csv",
+        "Wyjaśnienie worktree (osobny katalog z własną gałęzią) – dokumentacja JetBrains Air / ogólna wiedza o git"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "w-17spo",
+      "rodzaj": "temat",
+      "temat": "Business Hub i agenci w ChatGPT",
+      "link_newsa": "https://openai.com/index/introducing-businesses-chatgpt/",
+      "tytul_newsa": "OpenAI wprowadza Business Hub i agentów biznesowych w ChatGPT",
+      "kat": "Widoczność firmy w asystencie AI zależy od jakości i utrzymania danych produktowych, więc to temat także dla IT, nie tylko marketingu.",
+      "linkedin": "Od 10 listopada zweryfikowani sprzedawcy w USA mogą uruchomić w ChatGPT własnego agenta, z którym klient prowadzi osobną, oznaczoną rozmowę o ofercie.\n\nOpenAI nazywa to Business Hub: firma zgłasza swoją markę, uzupełnia dane i wgrywa katalogi produktów z cenami i dostępnością. W zamian zobaczy zbiorcze statystyki, ile razy ChatGPT ją wspomniał i ile kliknięć z tego przyszło. Weryfikacja idzie przez telefon, firmowy e-mail, domenę albo Shopify, a przed publikacją zmian trzeba jeszcze potwierdzić tożsamość.\n\nAgent pojawia się w odpowiedzi, która i tak już wspomina daną firmę. Klient może dopytać o ofertę albo poprosić o porównanie produktów. Firma ustawia instrukcje agenta i może go sponsorować w reklamach ChatGPT, na razie w teście z wybranymi reklamodawcami w USA. Beta agentów jest na razie tylko dla e-commerce i usług online w USA.\n\nWidzę tu przesunięcie. W wyszukiwarce o widoczność walczyło się treściami i SEO, a tutaj liczy się to, jak dobre i aktualne dane firma poda asystentowi. Katalog z cenami i dostępnością to w praktyce kolejny interfejs do systemu, który ktoś musi utrzymywać. Jednocześnie ta sama platforma pokazuje statystyki, sprzedaje reklamy i decyduje, kiedy agent się pojawi, więc firma uzależnia się od niej tak jak wcześniej od Google.\n\nDobrze sprawdzić, czy dane o cenach i dostępności leżą w jednym miejscu, skąd da się je wysyłać do kilku kanałów naraz, i kto odpowiada za to, co asystent mówi o ofercie.\n\nCzy sprawdzasz już, co ChatGPT mówi o produktach Twojej firmy? I kto u Was powinien się tym zajmować: marketing czy zespół IT?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://openai.com/index/introducing-businesses-chatgpt/",
+      "x": [
+        "Od 10 listopada zweryfikowani sprzedawcy w USA mogą uruchomić w ChatGPT własnego agenta. Klient prowadzi z nim osobną, oznaczoną rozmowę o ofercie firmy.",
+        "Wszystko zaczyna się od Business Hub: firma zgłasza markę, wgrywa katalogi produktów z cenami i dostępnością, a w zamian zobaczy, ile razy ChatGPT ją wspomniał i ile kliknięć z tego było.",
+        "Agent pojawia się tylko w odpowiedzi, która i tak już wspomina firmę. Można go też sponsorować w reklamach ChatGPT, na razie w teście. Beta agentów: e-commerce i usługi online w USA.",
+        "Dla zespołów IT to znaczy tyle, że katalog z cenami i dostępnością staje się kolejnym interfejsem do utrzymania. A widoczność zależy od jednej platformy, jak wcześniej od Google.",
+        "Szerzej o tym i ok. 30 innych newsach z tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist hand-drawn style illustration on a warm paper background: a small shop front sketched in pencil on the left, and on the right a notebook page with a neat product list showing small price tags and tick marks for availability, no readable text. Main motif centered with generous margins, soft muted colors with one orange accent, 3:4."
+      },
+      "termin": "2026-11-24 08:30",
+      "fakty": [
+        "Od 10 listopada, weryfikacja przez telefon/e-mail/domenę/Shopify, tożsamość przed publikacją zmian, agent tylko w odpowiedzi wspominającej firmę, instrukcje agenta, etykieta i osobna rozmowa, porównania produktów, beta tylko e-commerce i usługi online w USA: relacja letsdatascience.com (openai.com zwraca 403) https://letsdatascience.com/news/openai-launches-verified-business-agents-in-chatgpt-beta-a88f185a",
+        "Katalogi z cenami i dostępnością, statystyki wspomnień i kliknięć, sprzedawcy zweryfikowani w USA, sponsorowanie agenta w reklamach: opis z wydania 046/dane.csv",
+        "Zdanie o uzależnieniu od platformy i o interfejsie do utrzymania to opinia Kuby, nie fakt ze źródła",
+        "Brak liczb poza datą 10 listopada"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "w-1uugl",
+      "rodzaj": "temat",
+      "temat": "Eval-driven development dla agentów",
+      "link_newsa": "https://www.langchain.com/blog/what-is-eval-driven-development",
+      "tytul_newsa": "Czym jest eval-driven development, czyli TDD dla agentów AI",
+      "kat": "Ewale pisane przed zmianą łapią regresje, które ukrywa średni wynik — TDD dla agentów, z jednym zachowaniem naraz.",
+      "linkedin": "Po dodaniu agentowi narzędzia do zgłoszeń IT jego średni wynik w testach wzrósł, ale na pytanie „jak połączyć się z VPN?” zaczął zakładać zgłoszenie zamiast szukać w dokumentacji.\n\nTaki przykład pokazuje LangChain, opisując eval-driven development, czyli odpowiednik TDD dla agentów AI. Agent od wewnętrznej dokumentacji miał dwa narzędzia: wyszukiwanie w dokumentach firmy i w internecie. Dodano trzecie, create_ticket. Miało zakładać zgłoszenie, gdy ktoś zgłasza awarię (np. VPN się nie łączy), ale nie przy pytaniu, jak coś zrobić.\n\nSchemat jest taki jak w TDD. Najpierw opisujesz jedno zachowanie tak, żeby dało się je ocenić na „przeszło / nie przeszło”: kiedy ma się włączać, co agent ma zrobić, czego nie i które dotychczasowe zachowania muszą dalej działać. Potem piszesz ewal, czyli zestaw przykładów z oczekiwanym wynikiem (tu: czy agent wywołał właściwe narzędzie), i sprawdzasz, że na starej wersji nie przechodzi. Dopiero wtedy wprowadzasz zmianę. W przykładzie ślad działania agenta, czyli zapis każdego wywołania modelu i narzędzia, pokazał, że opis nowego narzędzia był za szeroki i pasował do każdej wzmianki o VPN. Po zawężeniu go do próśb, które wymagają działania IT, przeszły wszystkie przypadki.\n\nPodoba mi się to, bo zna to każdy, kto zmieniał prompt „na wyczucie”: jeden przypadek się poprawia, drugi psuje i nikt tego nie widzi. W zwykłym kodzie łapią to testy, bo ten sam kod daje ten sam wynik. Agent odpowiada za każdym razem trochę inaczej i sam wybiera kroki, więc potrzeba oceny na wielu przykładach. Średnia też potrafi oszukać: w tym przykładzie rosła, choć jeden przypadek przestał działać. Dlatego regresje warto sprawdzać przypadek po przypadku i trzymać osobny zbiór przykładów, którego nie używasz przy poprawkach, bo inaczej agent uczy się pod własne testy. Przy okazji: tekst pochodzi od firmy, która sprzedaje do tego własne narzędzia, ale sam pomysł ich nie wymaga.\n\nZanim zespół zmieni prompt albo da agentowi nowe narzędzie, dobrze spisać jedno oczekiwane zachowanie i zebrać mały zestaw prawdziwych pytań z logów. Samo „odpowiedź jest pomocna” to jeszcze nie miara, której da się pilnować.\n\nCzy ewal pisany przed zmianą ma szansę stać się dla agentów tym, czym testy jednostkowe dla zwykłego kodu?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://www.langchain.com/blog/what-is-eval-driven-development",
+      "x": [
+        "Po dodaniu agentowi narzędzia do zgłoszeń IT jego średni wynik w testach wzrósł. A na pytanie „jak połączyć się z VPN?” zaczął zakładać zgłoszenie zamiast szukać w dokumentacji.",
+        "Taki przykład pokazuje LangChain, opisując eval-driven development, czyli TDD dla agentów. Najpierw opisujesz jedno zachowanie tak, żeby dało się je ocenić „przeszło / nie przeszło”. Potem piszesz ewal, czyli zestaw przykładów z oczekiwanym wynikiem.",
+        "Ewal musi na starej wersji nie przechodzić. Dopiero potem wprowadzasz zmianę. Ewal pisany dopiero po poprawce łatwo dopasować do wyniku, więc niewiele sprawdza.",
+        "W przykładzie ślad działania agenta, czyli zapis wywołań modelu i narzędzi, pokazał, że opis nowego narzędzia był za szeroki i pasował do każdej wzmianki o VPN. Po zawężeniu przeszły wszystkie przypadki.",
+        "Średnia potrafi oszukać: rosła, choć jeden przypadek przestał działać. Warto sprawdzać regresje przypadek po przypadku i trzymać osobny zbiór przykładów, którego nie używasz przy poprawkach.",
+        "Zanim zmienisz prompt albo dasz agentowi nowe narzędzie, spisz jedno oczekiwane zachowanie i zbierz prawdziwe pytania z logów. Więcej w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist flat illustration, top-down view of a plain paper sheet with a column of ten identical rows, nine with a neat green tick and one with a red cross, hand-drawn marker style on warm off-white paper, a pencil lying beside it, main motif centered with generous margins, no text, no people, 3:4 format",
+        "mem": {
+          "szablon": "Surprised Pikachu",
+          "link": "https://imgflip.com/memegenerator/Surprised-Pikachu",
+          "tekst": "góra: Dodałem agentowi narzędzie i średni wynik w testach wzrósł\ndół (zdziwiony Pikachu): Agent zakłada zgłoszenie, gdy ktoś pyta, jak połączyć się z VPN"
+        }
+      },
+      "termin": "2026-11-25 08:30",
+      "fakty": [
+        "Przykład z VPN, create_ticket, średni wynik wzrósł, ślad wskazał zbyt szeroki opis narzędzia, po zawężeniu przeszły wszystkie przypadki: sekcja Worked Example artykułu LangChain.",
+        "Dwa narzędzia (search_docs, web_search) plus create_ticket: artykuł.",
+        "Spec pass/fail, ewal przed zmianą, potwierdzenie że na starej wersji nie przechodzi, zbiór walidacyjny, sprawdzanie przypadek po przypadku, LLM nie wymagany: artykuł.",
+        "Uwaga o własnych produktach LangChain (LangSmith) to ocena z lektury artykułu, nie cytat.",
+        "Brak liczb w poście poza #46 i opisanym przykładem."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "w-49p6y",
+      "rodzaj": "temat",
+      "temat": "Testy jako dane dla agentów",
+      "link_newsa": "https://martinfowler.com/articles/tests-as-data.html",
+      "tytul_newsa": "Testy jako dane – jak dać agentom AI kontrakt, którego nie osłabią",
+      "kat": "Gdy AI pisze kod i testy, testy przestają być niezależnym sprawdzianem; kontrakt powinien być zapisany jako dane, których agent nie osłabi po cichu.",
+      "linkedin": "Na początku 2026 roku 26 programistów z firmy mocno zainwestowanej w agentów kodujących zwykle odpowiadało, że nie ufa testom, bo AI refaktoryzuje jednocześnie kod i testy do niego.\n\nRozmawiał z nimi Matteo Vaccari z Thoughtworks. Cytuje też raporty branżowe: według Faros AI przy wysokiej adopcji AI błędów na pull request było o 28,7% więcej, a w badaniu CloudBees wśród 213 liderów technologicznych 81% zgłosiło więcej problemów na produkcji, które wiąże z kodem od AI. Testy pisane przez AI zwykle potwierdzają to, co kod robi dziś, razem z jego błędami.\n\nJego pomysł to testy klienta zapisane jako dane. W pliku jest tylko nazwa przypadku, wejście i oczekiwany wynik, na przykład w tabeli, a nie kod z mockami. Taką tabelę łatwo przejrzeć, od razu widać w niej brakujące przypadki, a każda zmiana wyraźnie wychodzi w diffie. Pliki z oczekiwaniami można ustawić jako tylko do odczytu albo pilnować w CI, a jakość testów sprawdzać testami mutacyjnymi, czyli celowo psuć kod i patrzeć, czy testy to wyłapią.\n\nPodoba mi się tu odwrócenie ról: skoro kod pisze AI, programista staje się jego klientem i to on powinien napisać, co ma działać. Podobne podejście, Fit i Specification by Example, było znane od lat, ale nie przyjęło się, bo prawdziwi klienci nie chcieli pisać tabel. Dziś klientem jest deweloper, a AI tanio zbuduje narzędzie do uruchamiania takich testów. Zastrzeżenie jest jedno: agent nadal może zmienić sam runner, a przy prototypach cała ta maszynerka się nie opłaci.\n\nPrzed wdrożeniem warto sprawdzić, czy agent w ogóle ma prawo zapisu do testów, które go pilnują, i czy zmiana w nich wymaga zatwierdzenia przez człowieka.\n\nCzy w Twoim zespole agent może edytować testy, które sprawdzają jego własny kod?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://martinfowler.com/articles/tests-as-data.html",
+      "x": [
+        "26 programistów z firmy mocno stawiającej na agentów AI zwykle mówi, że nie ufa testom. Powód: AI refaktoryzuje jednocześnie kod i testy do niego.",
+        "Według Faros AI przy wysokiej adopcji AI błędów na pull request było o 28,7% więcej. W badaniu CloudBees 81% z 213 liderów zgłosiło więcej problemów na produkcji, które wiąże z kodem od AI.",
+        "Pomysł Matteo Vaccariego z Thoughtworks: testy jako dane. Tabela z nazwą przypadku, wejściem i oczekiwanym wynikiem zamiast kodu z mockami. Zmiany widać w diffie, a luki w przypadkach od razu w tabeli.",
+        "Pliki z testami można ustawić jako tylko do odczytu albo pilnować w CI, a ich jakość sprawdzać testami mutacyjnymi. Agent nadal może zmienić runner, a przy prototypach to przerost formy.",
+        "Czy w Twoim zespole agent może edytować testy, które sprawdzają jego kod?\n\nPrzegląd tygodnia: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist flat illustration on a plain warm paper background: a single neat table drawn like a notebook page with rows of ticked cells, and one small padlock clipped to its corner; muted palette with one orange accent, hand-drawn feel, no text, no people, main motif centered with generous margins, 3:4",
+        "infografika": {
+          "rodzaj": "liczba",
+          "naglowek": "Testy pisane przez AI",
+          "liczba": "81%",
+          "podpis": "z 213 liderów technologicznych zgłosiło więcej problemów na produkcji, które wiąże z kodem od AI",
+          "zrodlo": "CloudBees, ankieta wśród liderów",
+          "styl": "notatka"
+        },
+        "plik": "obrazki/w-49p6y.png",
+        "mem": {
+          "szablon": "Expanding Brain",
+          "link": "https://imgflip.com/memegenerator/Expanding-Brain",
+          "tekst": "1: Testy pisze człowiek po napisaniu kodu\n2: Testy pisze AI po napisaniu kodu\n3: AI pisze kod i testy do niego jednocześnie\n4: Testy jako dane, tylko do odczytu, napisane przed zmianą"
+        }
+      },
+      "termin": "2026-11-26 08:30",
+      "fakty": [
+        "26 programistów, rozmowy na początku 2026: artykuł Vaccariego (sekcja o problemie), 'AI refactors both existing code and existing tests'",
+        "Faros AI +28,7% błędów na PR; CloudBees 213 liderów, 81% więcej problemów produkcyjnych: raporty cytowane w artykule",
+        "Testy AI potwierdzają obecną implementację, razem z błędami: cytat z artykułu",
+        "Tabele, read-only, CI, testy mutacyjne, Fit/Specification by Example i uwaga Jamesa Shore'a o braku tabel pisanych przez klientów: artykuł",
+        "Runner można zmienić, prototypy nie uzasadniają maszynerii: sekcja caveats artykułu",
+        "Pole 'Zakończenie' i wnioski dla zespołu to opinie Kuby, nie fakty ze źródła"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "w-1c2hm",
+      "rodzaj": "temat",
+      "temat": "Spotify: miara sukcesu przed architekturą",
+      "link_newsa": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+      "tytul_newsa": "Trzy oblicza pracy PM-a przy AI w Spotify",
+      "kat": "Przy produktach z AI zachowania nie da się zapisać w specyfikacji, więc pierwszą pracą zespołu jest wspólna definicja dobrego wyniku i ewaluacje.",
+      "linkedin": "Zdaniem jednej z autorek tekstu ze Spotify współpraca nad wspólnym modelem rekomendacji zadziałała, bo najpierw uzgodniono sposób mierzenia sukcesu, a dopiero potem architekturę.\n\nSpotify opisało na blogu inżynierskim pracę AI product managera z trzech perspektyw: badań, modelu bazowego rekomendacji i doświadczenia użytkownika w aplikacji. Model bazowy to model językowy zaprojektowany tak, żeby odwoływać się do prawdziwych pozycji w Spotify. Jego klientami są wewnętrzne zespoły produktowe, a każdy z nich ma własną roadmapę, własne metryki i własną definicję dobrej rekomendacji.\n\nDo tego każdy zespół ma już zoptymalizowany system, więc wspólny model musi najpierw dorównać mu pod względem jakości, opóźnień i kosztu. Zachowania takiego modelu nie da się zapisać w kodzie, bo powstaje w treningu. Zostają dwie dźwignie: dane treningowe i ewaluacje, czyli zestawy testów sprawdzające, czy odpowiedzi są dobre. Testy offline pokazują, jak model się zachowuje, a metryki online, jak wpływa to na użytkownika.\n\nTrzecia perspektywa jest najbliżej użytkownika. Gdy ktoś napisze w rozmowie „nie o to mi chodziło”, to sygnał dla doświadczenia w aplikacji, dla modelu, a może i dla danych treningowych. Dlatego zespół buduje sposoby wykrywania takich sygnałów na dużą skalę i odsyłania ich w głąb systemu.\n\nWidzę tu przesunięcie, które przy produktach z AI dotyczy też deweloperów: dawniej specyfikacja mówiła, co system ma zrobić, a tu opisuje się, co znaczy „dobrze”, i dopiero to da się testować. Po części wynika to z tego, że model jest probabilistyczny, ale nie tylko. W Spotify dochodzi jeszcze kilka zespołów z różnymi definicjami dobrej rekomendacji, więc bez wspólnej miary spór o jakość szybko staje się sporem o gust.\n\nPrzed budową funkcji z AI dobrze ustalić, kto pisze definicję „dobrego wyniku”, na jakich prawdziwych przypadkach ją sprawdzamy i po czym poznamy, że model nie pogorszył się po zmianie.\n\nKto w Twoim zespole odpowiada za definicję dobrego wyniku funkcji z AI: product manager, deweloperzy, a może nikt konkretny?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles",
+      "x": [
+        "Zdaniem jednej z autorek tekstu ze Spotify współpraca nad wspólnym modelem rekomendacji zadziałała, bo najpierw uzgodniono sposób mierzenia sukcesu, a dopiero potem architekturę.",
+        "Model bazowy rekomendacji ma wielu wewnętrznych klientów. Każdy zespół ma swoją roadmapę, metryki i definicję dobrej rekomendacji, a do tego własny, już zoptymalizowany system, który model musi najpierw dorównać.",
+        "Zachowania modelu nie da się zapisać w kodzie, bo powstaje w treningu. Zostają dane treningowe i ewaluacje, czyli testy sprawdzające, czy odpowiedzi są dobre. Offline pokazują zachowanie, metryki online wpływ na użytkownika.",
+        "W rozmowie z aplikacją „nie o to mi chodziło” to sygnał dla doświadczenia, modelu i potencjalnie danych. Zespół buduje sposoby wykrywania takich sygnałów na dużą skalę.",
+        "Moim zdaniem przy funkcjach z AI pierwsza jest definicja dobrego wyniku, a dopiero potem architektura. Kto w Twoim zespole ją pisze?\n\nPełne wydanie: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist illustration, flat hand-drawn style, soft paper texture. Centered: a sheet of paper with a short handwritten-style checklist drawn as empty checkbox squares and lines (no readable text), placed next to a rough pencil sketch of a block diagram that is crossed out lightly; one checkbox highlighted with a single orange marker circle. Muted beige background, plenty of empty space around the motif, 3:4 format, no people, no text."
+      },
+      "termin": "2026-11-27 08:30",
+      "fakty": [
+        "Zgoda co do miary sukcesu przed architekturą: sekcja Divity Vohry w artykule (współpraca zadziałała, bo zespoły uzgodniły metryki sukcesu przed architekturą)",
+        "Model bazowy to model językowy zaprojektowany, by odwoływać się do prawdziwych pozycji w Spotify; klienci to wewnętrzne zespoły z własną roadmapą, metrykami i definicją dobrej rekomendacji: artykuł (Vohra)",
+        "Zespoły mają zoptymalizowane systemy, wspólny model musi spełnić wymagania jakości, opóźnień i kosztu: artykuł (Vohra)",
+        "Dwie dźwignie (dane treningowe i ewaluacje), offline vs online: artykuł (Vohra)",
+        "Sygnał „that is not what I meant” i wykrywanie na dużą skalę: artykuł (Corona)",
+        "Brak liczb w artykule; fragment o probabilistyczności i sporze o gust to opinia Kuby"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "w-1x762",
+      "rodzaj": "temat",
+      "temat": "IPO Anthropic: kto sprzedaje akcje",
+      "link_newsa": "https://www.anthropic.com/news/roadshow-launch",
+      "tytul_newsa": "Anthropic rozpoczyna roadshow przed IPO – akcje po 70–78 dolarów",
+      "kat": "Prawie cała oferta IPO to nowe akcje firmy, a dostawca modeli rozliczany na giełdzie to dla zespołów powód, by ocenić uzależnienie od jednego dostawcy.",
+      "linkedin": "Z 825 mln akcji, które Anthropic oferuje w IPO, 801 mln sprzedaje sama firma. Dotychczasowi akcjonariusze wystawiają tylko około 23,6 mln.\n\nRóżnica jest ważna, bo to dwa różne rodzaje sprzedaży. Gdy akcje sprzedaje firma, pieniądze trafiają do niej. Gdy sprzedają je wcześniejsi inwestorzy, pieniądze idą do nich, a w komunikacie jest wprost napisane, że Anthropic nie dostanie z tego żadnych wpływów. Tutaj prawie cała oferta to więc nowe akcje, a nie okazja dla pierwszych inwestorów, żeby wyjść z inwestycji.\n\nDo tego dochodzi opcja dla organizatorów oferty (m.in. Goldman Sachs i Morgan Stanley). Mają 30 dni, żeby dokupić do 123,75 mln dodatkowych akcji, więc przy dużym popycie oferta może jeszcze urosnąć. Cena ma być w przedziale 70–78 dolarów, a papiery mają trafić na Nasdaq pod symbolem ANT. W komunikacie nie ma natomiast informacji, na co firma przeznaczy zebrane pieniądze.\n\nDla mnie ciekawsze od samej liczby jest to, co się zmienia po stronie klientów. Dostawca modeli, na którym ktoś oparł produkt albo narzędzia zespołu, zaczyna być rozliczany z wyników na giełdzie. Nie wiem, jak to przełoży się na ceny i limity, ale presja na marże prawdopodobnie będzie większa niż u firmy finansowanej głównie przez prywatnych inwestorów.\n\nDlatego warto sprawdzić, jak mocno Wasz kod i procesy są związane z jednym dostawcą. Jeśli zmiana modelu albo cennika oznacza tygodnie poprawek, to jest ryzyko, które lepiej opisać, zanim ktoś o nie zapyta. Przynajmniej jeden drugi model przetestowany na waszych zadaniach daje spokojniejszą rozmowę o budżecie.\n\nCzy macie opisane, jak szybko dałoby się przełączyć projekt na innego dostawcę modeli?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://www.anthropic.com/news/roadshow-launch",
+      "x": [
+        "Z 825 mln akcji w IPO Anthropic aż 801 mln sprzedaje sama firma. Dotychczasowi akcjonariusze wystawiają około 23,6 mln, a z ich sprzedaży Anthropic nie dostanie żadnych wpływów.",
+        "Czyli to głównie emisja nowych akcji, a nie wyjście wcześniejszych inwestorów. Cena ma być w przedziale 70–78 dolarów, a papiery mają trafić na Nasdaq pod symbolem ANT.",
+        "Organizatorzy oferty (m.in. Goldman Sachs i Morgan Stanley) mają dodatkowo 30 dni na dokupienie do 123,75 mln akcji. Przy dużym popycie oferta może więc jeszcze urosnąć.",
+        "Dla zespołów IT to sygnał, że dostawca modeli zacznie być rozliczany z wyników na giełdzie. Nie wiem, jak wpłynie to na ceny, ale warto wiedzieć, jak szybko przełączycie się na innego dostawcę.",
+        "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "801 z 825 mln",
+          "podpis": "akcji w IPO Anthropic sprzedaje sama firma, reszta to akcje dotychczasowych akcjonariuszy",
+          "zrodlo": "komunikat Anthropic o starcie roadshow, 10.11.2026",
+          "numer": 46
+        },
+        "prompt": "Minimalist illustration on a plain off-white background: a single tall stack of coins next to a very small stack of coins, slightly uneven and hand-drawn in muted ink style, soft shadows, one thin arrow-free composition, no text, no people, main subject centered with generous margins, 3:4",
+        "plik": "obrazki/w-1x762.png"
+      },
+      "termin": "2026-11-30 08:30",
+      "fakty": [
+        "825 mln akcji klasy A, w tym 801 351 354 od Anthropic i 23 648 646 od dotychczasowych akcjonariuszy (ok. 23,6 mln) — komunikat Anthropic z 10.11.2026",
+        "'Anthropic will not receive any proceeds from the sale of shares by the selling stockholders' — komunikat",
+        "opcja 30 dni na dokupienie do 123 750 000 akcji dla underwriterów (Goldman Sachs, Morgan Stanley) — komunikat",
+        "przedział 70–78 USD, Nasdaq, ticker ANT — komunikat",
+        "brak informacji o przeznaczeniu środków — komunikat tego nie zawiera (potwierdzone przy czytaniu)",
+        "opinie o presji na marże i ryzyku jednego dostawcy to stanowisko Kuby, nie fakt ze źródła"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "w-1dyiz",
+      "rodzaj": "temat",
+      "temat": "Skąd poglądy Amodeia na AI",
+      "link_newsa": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html?unlocked_article_code=1.OVE.0w5Y.yvhWxuXOa-LL&smid=url-share",
+      "tytul_newsa": "Skąd biorą się poglądy Dario Amodeia na AI",
+      "kat": "Wartości założyciela dostawcy modeli wpływają na to, jak działa jego produkt, więc przy wyborze dostawcy warto je znać.",
+      "linkedin": "Reporterzy New York Timesa rozmawiali z ponad dwoma tuzinami osób z otoczenia Dario Amodeia: kolegami ze szkoły, wykładowcami i współpracownikami. Chcieli ustalić, skąd biorą się poglądy szefa Anthropic na AI.\n\nZ tych rozmów wynikają dwie idee. Pierwsza to przekonanie, że rozumowanie matematyczne może zmienić los ludzkości, druga to obawa, że AI trzeba zbudować bezpiecznie. W tle pojawiają się książka „The Singularity Is Near” Raya Kurzweila, o której Amodei rozmawiał z kolegą na Princetonie w 2007 roku, oraz blogi Accelerating Future i Overcoming Bias, na których pisano o tym, że AI może zagrozić ludzkości. Był też GiveWell, organizacja związana z efektywnym altruizmem, czyli szukaniem sposobów, by dobro, które robimy, było jak największe.\n\nTekst ukazał się, gdy Anthropic szykuje się do jednego z największych debiutów giełdowych, więc pasuje do niego dobrze. Dla firmy, która tak mocno stawia na bezpieczeństwo, ten tekst pomaga zrozumieć, skąd to się bierze: wygląda na to, że nie jest to wyłącznie hasło z prezentacji, tylko także efekt tego, jak myśli jej założyciel.\n\nWidzę tu praktyczną rzecz dla zespołów. Wybierając dostawcę modeli, porównujemy ceny, jakość i limity, ale rzadko zadajemy pytanie, czym ci ludzie się kierują. Od tego może zależeć, co firma zablokuje, czego odmówi modelowi i jak szybko zmieni zasady. Przy dużym wdrożeniu dobrze więc przeczytać nie tylko cennik, ale też to, jak dostawca opisuje swoje podejście do bezpieczeństwa.\n\nCzy przy wyborze dostawcy AI patrzysz też na to, jakie wartości stoją za jego produktami, czy decyduje głównie jakość i cena?",
+      "komentarz": "Pełny przegląd tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo\nŹródło: https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html?unlocked_article_code=1.OVE.0w5Y.yvhWxuXOa-LL&smid=url-share",
+      "x": [
+        "Reporterzy New York Timesa rozmawiali z ponad dwoma tuzinami osób z otoczenia Dario Amodeia: kolegami ze szkoły, wykładowcami, współpracownikami. Pytanie: skąd biorą się jego poglądy na AI.",
+        "Wyszły dwie idee: rozumowanie matematyczne może zmienić los ludzkości i AI trzeba zbudować bezpiecznie. W tle m.in. blogi Overcoming Bias i Accelerating Future oraz forum GiveWell.",
+        "Tekst wychodzi, gdy Anthropic szykuje jeden z największych debiutów giełdowych. Ten tekst pomaga zrozumieć, skąd bierze się nacisk firmy na bezpieczeństwo: wygląda na to, że to nie tylko prezentacja dla inwestorów.",
+        "Dla zespołów: wybierając dostawcę modeli, porównujemy ceny i jakość, a rzadko pytamy, czym kierują się ludzie za produktem. A to wpływa na to, czego model odmówi i jak zmieni zasady.",
+        "Czy przy wyborze dostawcy AI patrzysz też na jego wartości? Więcej newsów z tygodnia w #46 PrzeglądAI: https://przegladai.substack.com/p/wydanie-46-ceo-nvidii-odchodzi-business-hub-w-chatgpt-i-roadshow-anthropic-przed-ipo"
+      ],
+      "obrazek": {
+        "wybrany": "prompt",
+        "prompt": "Minimalist flat illustration, 3:4, a single open notebook on a wooden desk with two hand-drawn arrows converging from a stack of three old paperback books on the left toward one small sealed envelope on the right, soft daylight, muted palette, no text, main motif centered with margin around edges"
+      },
+      "termin": "2026-12-01 08:30",
+      "fakty": [
+        "ponad dwadzieścia osób z otoczenia (koledzy ze szkoły, wykładowcy, współpracownicy), dwie idee, IPO: opis w wydania/046/dane.csv",
+        "Princeton 2007, The Singularity Is Near, blogi Accelerating Future i Overcoming Bias, forum GiveWell, racjonalizm i efektywny altruizm: wstęp artykułu NYT (widoczny fragment); autor Kurzweil i definicje ruchów to wiedza ogólna, do weryfikacji",
+        "Czy Amodei 'czytał' te materiały: wstęp jest widoczny tylko we fragmencie, Kuba powinien potwierdzić sformułowanie 'czytane na Princetonie'; przypisanie blogów/GiveWell do racjonalizmu/EA to moje uporządkowanie"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    }
+  ]
+}

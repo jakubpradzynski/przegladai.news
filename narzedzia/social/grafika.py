@@ -157,7 +157,7 @@ def render_liczba(spec, draw):
         f, lines, _ = fit(spec['liczba'], width - 30, 1, range(220, 129, -6), 'num')
     except SystemExit:
         f, lines, _ = fit(spec['liczba'], width - 30, 2, range(180, 89, -6), 'num')
-    sub_f, sub_lines, _ = fit(spec.get('podpis', ''), width, 5, range(54, 33, -2), 'text')
+    sub_f, sub_lines, _ = fit(spec.get('podpis') or spec.get('opis', ''), width, 5, range(54, 33, -2), 'text')
     cap = f.getbbox('0H')[3] - f.getbbox('0H')[1]
     step = cap * 1.4
     block = cap + (len(lines) - 1) * step + 90 + len(sub_lines) * line_height(sub_f, 1.1)
@@ -225,6 +225,36 @@ def render_cytat(spec, draw):
 
 RENDERERS = {'liczba': render_liczba, 'porownanie': render_porownanie,
              'lista': render_lista, 'cytat': render_cytat}
+
+
+def validate_spec(spec):
+    """Lista problemow ze specyfikacja (puste pola, zle klucze) - zanim zacznie sie rysowanie."""
+    if not isinstance(spec, dict) or not spec:
+        return ['brak specyfikacji infografiki']
+    kind = spec.get('rodzaj')
+    if kind not in RENDERERS:
+        return ['nieznany rodzaj infografiki: %s (dostępne: %s)' % (kind, ', '.join(RENDERERS))]
+    problems = []
+    if kind == 'liczba':
+        if not str(spec.get('liczba', '')).strip():
+            problems.append('infografika „liczba”: puste pole "liczba"')
+        if not (spec.get('podpis') or spec.get('opis') or '').strip():
+            problems.append('infografika „liczba”: puste pole "podpis" (co ta liczba znaczy)')
+    elif kind == 'porownanie':
+        items = spec.get('elementy') or []
+        if not str(spec.get('tytul', '')).strip():
+            problems.append('infografika „porownanie”: puste pole "tytul"')
+        if len(items) < 2 or any('wartosc' not in e for e in items):
+            problems.append('infografika „porownanie”: potrzeba co najmniej 2 elementów z "etykieta" i "wartosc"')
+    elif kind == 'lista':
+        points = spec.get('punkty') or []
+        if not str(spec.get('tytul', '')).strip():
+            problems.append('infografika „lista”: puste pole "tytul"')
+        if not 2 <= len(points) <= 4:
+            problems.append('infografika „lista”: potrzeba 2–4 punktów')
+    elif kind == 'cytat' and not str(spec.get('cytat', '')).strip():
+        problems.append('infografika „cytat”: puste pole "cytat"')
+    return problems
 
 
 def render(spec, out_path):

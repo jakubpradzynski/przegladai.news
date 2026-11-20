@@ -1,0 +1,61 @@
+{
+  "numer": 47,
+  "tematy": [
+    {
+      "id": "t1",
+      "link": "https://cursor.com/blog/security-incident-update",
+      "tytul_newsa": "Cursor opisuje włamanie przez dostawcę – wyciekły ślady sesji agentów i klucze",
+      "kat": "Sekrety wklejane do rozmów z agentem zostają w logach sesji i po incydencie u dostawcy lądują w cudzych rękach — Kuba jako manager ma własne zdanie, jak zespół powinien o tym myśleć.",
+      "dlaczego": "Praktyka inżynierska z wnioskiem do zastosowania (bezpieczeństwo danych) to temat, który Kuba bierze od #46; do tego konkretna historia z godzinami i procentami.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t2",
+      "link": "https://newsletter.eng-leadership.com/p/how-an-experienced-architect-works",
+      "tytul_newsa": "Jak z AI pracuje doświadczony architekt z XTB",
+      "kat": "Specyfikacja ma zajmować najwyżej 10% czasu implementacji i znika po wdrożeniu — Kuba porównuje to z własnym spojrzeniem managera na pracę zespołu z agentami.",
+      "dlaczego": "Organizacja pracy z agentami w regulowanej, polskiej firmie, z konkretnymi liczbami; wprost o tym, co manager może wdrożyć od poniedziałku.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t3",
+      "link": "https://cutler.sg/blog/2026-10-measure-agent-review-time",
+      "tytul_newsa": "Jak zmierzyć czas, który ludzie tracą na pilnowanie agentów AI",
+      "kat": "Zanim policzysz, ile czasu zaoszczędzi agent, policz, ile pracy człowieka kosztuje dojście do akceptowalnego wyniku — Kuba o tym, jak to zmierzyć w swoim zespole.",
+      "dlaczego": "Koszty i produktywność z agentami to jeden z tematów pierwszego wyboru Kuby, a ten tekst daje konkretną metodę pomiaru.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t4",
+      "link": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+      "tytul_newsa": "Kalifornia pozywa OpenAI za incydenty z „zbuntowanymi” agentami",
+      "kat": "Pierwszy pozew regulatora o „zbuntowanego agenta” może wyznaczyć standard odpowiedzialności dla firm, które testują agentów w prawdziwej sieci.",
+      "dlaczego": "Duży news o dostawcy modeli z wnioskiem dla zespołów, ale prawny — rzadziej wybierany przez Kubę.",
+      "rekomendowany": false
+    },
+    {
+      "id": "t5",
+      "link": "https://openai.com/pl-PL/index/introducing-chatgpt-wallet/",
+      "tytul_newsa": "OpenAI uruchamia Portfel ChatGPT – płatności agentów bez dostępu do danych karty",
+      "kat": "Zapowiedź i porady: agenci zaczynają płacić za zakupy (na razie Pro w USA) — co to otwiera i jak firma może się już przygotować.",
+      "dlaczego": "Nowy produkt z pytaniem „jak się przygotować” — format, który zadziałał przy Business Hub w #46.",
+      "rekomendowany": false
+    },
+    {
+      "id": "t6",
+      "link": "https://www.decodingai.com/p/build-durable-secure-long-running-agents",
+      "tytul_newsa": "Jak zbudować agenta kodującego, który bezpiecznie pracuje całą noc",
+      "kat": "Ograniczenia kosztów, rund i kluczy powinny leżeć poza agentem, w zwykłym kodzie — przykładowa noc kosztowała 75 dolarów i nie przekroczyła progu jakości.",
+      "dlaczego": "Koszt i kontrola agentów, ale tekst wąsko techniczny od mało znanego autora (takie Kuba pomija).",
+      "rekomendowany": false
+    },
+    {
+      "id": "t7",
+      "link": "https://arxiv.org/abs/2611.13557",
+      "tytul_newsa": "Darmok – system AI, który wygrał mistrzostwa w krzyżówkach kryptycznych",
+      "kat": "Trzy niezależne modele sprawdzają nawzajem swoje odpowiedzi, a zapasowe ścieżki przejmują zadanie — jakość systemu zależy od odporności na najgorszy przypadek.",
+      "dlaczego": "Zaskakująca historia z lekkim wnioskiem o budowaniu systemów z agentami; ciekawostka z tytułu wydania.",
+      "rekomendowany": false
+    }
+  ]
+}
