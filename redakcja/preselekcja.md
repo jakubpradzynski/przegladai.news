@@ -60,7 +60,7 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   EmbeddingGemma 2, raport a16z, ogłoszenie Trumpa). Premiery i stanowiska relacjonowane przez ten agregator
   to „może”; „tak” tylko gdy brak źródła pierwotnego w partii i `data.csv`. W #47 Kuba wziął tylko 2 z 46 „może” (Gemini 4 Neon, GPT-6.2 Astra and Sol — duplikaty premier
   czołowych modeli, oryginał GPT-6.2 też wziął) i pominął 44. **Duplikat Future Tools = „może” tylko dla premiery modelu czołowego laboratorium albo ruchu
-  Big Techu; pozostałe wpisy (drobne launche, wtyczki, benchmarki, ciekawostki) = „nie”, z powodem „agregator, drobne”.**
+  Big Techu; pozostałe wpisy (drobne launche, wtyczki, benchmarki, ciekawostki) = „nie”, z powodem „agregator, drobne”.** W #48 Kuba wziął 2 z 16 „może”: przejście Thariqa z Anthropic do OpenAI i premierę Claude Ship (produkt czołowego labu) — przejścia kluczowych osób między czołowymi labami i premiery produktów czołowych labów (nie tylko modeli) zostają „może”.
 - Partnerstwa technologiczne, umowy chmurowe/infrastrukturalne i narzędzia open source firm
   (The Decoder: OpenAI + Synopsys, DeepSeek + Huawei, Anthropic–Akamai — pominięte #40, mimo wysokiej kwoty).
 - Ogłoszenia inicjatyw badawczych/biznesowych bez konkretnego produktu („Anthropic is setting up
@@ -88,7 +88,7 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
 
 - OpenAI News poza dużymi premierami i ruchami biznesowymi: w #45 Kuba pominął 16 z 16 wpisów ocenionych „może” (case study
   klientów, wewnętrzny security sprint, Model Spec, lobbing, granty), wziął tylko Images 2.6 („tak”). Case study klienta,
-  bezpieczeństwo/programy wewnętrzne i polityka bez nowego produktu = „nie” (w #47 znów 0 z 11 „może” wziętych, razem 0 z 27 w dwóch przeglądach — wpisy
+  bezpieczeństwo/programy wewnętrzne i polityka bez nowego produktu = „nie” (w #47 znów 0 z 11 „może” wziętych, w #48 0 z 3 „może” i 0 z 13 „nie” — razem 0 z 30 w trzech przeglądach — wpisy
   poza premierą modelu/produktu i dużym ruchem biznesowym dawaj „nie”); „może” tylko gdy to wyjaśnienie praktyki
   albo stanowisko lidera (jak „What FDE means at OpenAI”).
 - Polskie źródła (Mam Startup, Nowy Marketing): w #45 Kuba wziął 4 z 14 „może” — mObywatel z AI, PayU + Visa (agenci AI
@@ -98,7 +98,7 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   Mam Startup: RTV Euro AGD + Gemini, Canva zwalnia przez koszty AI; Nowy Marketing: spór o AI w reklamie Diora;
   XYZ: Bielik 56 języków. Utwierdza to regułę „polskie wdrożenia, polityka i głośne incydenty z AI = może”.
   Gdy ten sam news jest w gov.pl i Mam Startup, oba zostają „może” (Kuba wziął oba). W #47 z Mam Startup wziął 2 z 8 „może”: Nvidia z prognozami po odejściu
-  Huanga i Apple z aplikacją badawczą AI w zdrowiu (duplikat agregatora) — wątki z dużych newsów, o których pisze też świat, zostają „może”; XYZ: LATO 4,7 mln $ (wzięty).
+  Huanga i Apple z aplikacją badawczą AI w zdrowiu (duplikat agregatora) — wątki z dużych newsów, o których pisze też świat, zostają „może”; XYZ: LATO 4,7 mln $ (wzięty). W #48 z Mam Startup wziął 2 z 8 „może”: raport o kosztach środowiskowych AI (woda) i scoring kredytowy AI w Krakowskim Banku Spółdzielczym — raporty o wpływie AI i pierwsze wdrożenia AI w polskich instytucjach finansowych zostają „może”; 6 pozostałych pominął, a 42 „nie” (bez AI) — żaden wzięty.
 - Narzędzia agentowe dużych vendorów w wersji GA i ogólne lekcje o ewaluacji (JetBrains „IDEs Transformed for the Agentic
   Era – With Air”, LangChain „What Is Eval-Driven Development?” — AI „może”, Kuba wziął #46) zostają „może”; reszta wpisów
   JetBrains i LangChain (9–10 „nie” na stronę) nadal „nie”.
@@ -119,7 +119,7 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   (Saudi Aramco 49% Humain, 2,6 mld $ — AI „tak”, Kuba pominął #45) to „może”. W #45 z 41 wpisów The Decoder Kuba wziął 1
   (przejęcie Pierre przez OpenAI, AI: „może”) i pominął 40 „może”: W #46 powtórka: z 33 wpisów The Decoder ocenionych „może” Kuba wziął 0. **The Decoder bez dużego ruchu biznesowego czołowej firmy
   (badania, nowe modele i funkcje mniejszych firm, drobne zmiany cen i limitów) = „nie”**, z powodem „agregator, drobne”.
-  Przejęcia przez OpenAI/Anthropic/Google/Meta zostają „może”. **W #47 trzeci przegląd z rzędu: 0 z 33 „może” wziętych** — także duplikaty
+  Przejęcia przez OpenAI/Anthropic/Google/Meta zostają „może”. **W #47 trzeci przegląd z rzędu: 0 z 33 „może” wziętych, w #48 czwarty: 0 z 15 „może” (i 0 z 35 „nie”) — ruchy kadrowe, stanowiska i głośne wątki (Riemann) też „nie”** — także duplikaty
   premier, które Decoder relacjonuje po źródle pierwotnym: dla Decodera duplikat = „nie” („agregator, duplikat”), wyjątek reguły o duplikatach agregatora dotyczy tylko Future Tools.
 - Przed „tak” dla newsa o IPO Anthropic sprawdź, czy temat jest już w partii/`data.csv` z innego źródła
   (S-1 z anthropic.com i Future Tools — AI „tak”, Kuba pominął #44): drugi i kolejny wpis o tym samym to „nie” (duplikat).
@@ -136,7 +136,7 @@ _(miejsce na Twoje uwagi — AI tej sekcji nie zmienia)_
   granty regionalne („Supporting Thailand’s next generation of AI startups”).
 - Komentarze giełdowe i finansowe bez nowej informacji o AI (CNBC: „Cisco stock sinks…”, wywiady
   z analitykami w „Closing Bell”).
-- The Information: 0 z 144 wziętych (20 nowych w każdym z 4 ostatnich przeglądów, 7 „może” w #45 — wszystkie pominięte).
+- The Information: 0 z 165 wziętych (20 nowych w każdym z 5 ostatnich przeglądów, „może” w #45 i #48 — wszystkie pominięte).
   Domyślnie „nie”; „może” tylko przy wyjątkowym temacie AI o czołowym laboratorium, bez duplikatu w innym źródle.
 - Wpisy osobiste i przeglądy linków autorów („Fragments: …”, „Social Media Engagement”).
 - Treści spoza AI (ICEYE: satelity, JVM Bloggers: Java bez AI, Datadog bez AI).
@@ -170,36 +170,32 @@ potwierdzonych wieloma decyzjami Kuby.
 
 ## Skuteczność stron (historia)
 
-Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), stan z `zarzadzaj.py lista`, 2026-11-19 (po przeglądzie #47):
+Ile wpisów ze strony trafiło do wydań (link albo ten sam temat), stan z `zarzadzaj.py lista`, 2026-11-26 (po przeglądzie #48):
 
 | Strona | Wzięte / wpisy | Komentarz |
 |---|---|---|
 | Addy Osmani | 8/10 | prawie wszystko — domyślnie „tak” |
 | Martin Fowler | 12/44 | artykuły tak, „Fragments” i osobiste nie |
-| OpenAI News | 18/260 | tylko duże premiery i stanowiska; case study, granty, regiony — nie |
-| Future Tools News | 79/943 | agregator, największe źródło tematów; brać duże newsy, drobne launche — nie; w przeglądzie 8.10 premiery i stanowiska („tak”) pominięte, a „może” (plugin, raport rynku, polityka) wzięte — wszystko tu „może” |
+| OpenAI News | 18/276 | tylko duże premiery i stanowiska; case study, granty, regiony — nie |
+| Future Tools News | 81/975 | agregator, największe źródło tematów; brać duże newsy, drobne launche — nie; w przeglądzie 8.10 premiery i stanowiska („tak”) pominięte, a „może” (plugin, raport rynku, polityka) wzięte — wszystko tu „może” |
 | Anthropic News | 4/35, Research 1/41 | premiery modeli tak, reszta może |
 | Google for Developers | 4/51 | premiery modeli i narzędzi AI; nowa funkcja SDK bez premiery — może |
 | Google Antigravity | 4/12 | premiery modeli w Antigravity, o ile ten sam model nie ma już wpisu ze źródła pierwotnego |
-| The Decoder | 18/484 | agregator; bierze tylko konkretne duże newsy biznesowe (IPO, Meta–Nvidia, emisja akcji), premiery modeli, stanowiska i spekulacje o rundach — może (4 „tak” pominięte w #44); w #45 wzięty 1 z 41 (przejęcie Pierre), więc bez dużego ruchu czołowej firmy — nie |
+| The Decoder | 18/534 | agregator; bierze tylko konkretne duże newsy biznesowe (IPO, Meta–Nvidia, emisja akcji), premiery modeli, stanowiska i spekulacje o rundach — może (4 „tak” pominięte w #44); w #45 wzięty 1 z 41 (przejęcie Pierre), więc bez dużego ruchu czołowej firmy — nie |
 | AIOAI.pl | 4/71 | polski agregator; duże tematy |
-| GitHub Blog | 3/70 | ewaluacja i code review z AI tak; własne case studies/rewrite bez przenośnej lekcji, Copilot for Beginners, raporty — nie |
+| GitHub Blog | 3/78 | ewaluacja i code review z AI tak; własne case studies/rewrite bez przenośnej lekcji, Copilot for Beginners, raporty — nie |
 | Lovable | 5/38 | przejęcia i rundy tak, partnerstwa bez zmiany biznesowej — nie |
-| XYZ Technologia | 9/63 | polskie wywiady, startupy i wdrożenia AI — może; w #43 wzięte 4 z 6 „może” |
-| Mam Startup | 14/235 | polski agregator startupów i biznesu, prawie nic o AI — domyślnie „nie” (47 „nie” w #44, żaden nie wzięty), polskie tematy AI „może” (3 z 9 wziętych w #45: mObywatel, PayU + Visa, Wonderful; 1 z 10 w #44) |
-| CNBC AI (1/129), Ministerstwo Cyfryzacji (1/44) | 1 | pojedyncze trafienia (koszty obrony przed AI; PLLuM w sądzie); reszta „nie”/„może” |
+| XYZ Technologia | 9/73 | polskie wywiady, startupy i wdrożenia AI — może; w #43 wzięte 4 z 6 „może” |
+| Mam Startup | 16/285 | polski agregator startupów i biznesu, prawie nic o AI — domyślnie „nie” (47 „nie” w #44, żaden nie wzięty), polskie tematy AI „może” (3 z 9 wziętych w #45: mObywatel, PayU + Visa, Wonderful; 1 z 10 w #44) |
+| CNBC AI (1/157), Ministerstwo Cyfryzacji (2/55) | 1 | pojedyncze trafienia (koszty obrony przed AI; PLLuM w sądzie); reszta „nie”/„może” |
 | Manus, ElevenLabs, ElevenLabs Product, Netflix (LLM-as-a-Judge), Simon Couch, Ashpreet Bedi | 1–2 na stronę | rundy, premiery modeli u nich, teksty techniczne |
-| LangChain (3/149), JVM Bloggers (5/79) | 2–3 | posty inżynierskie o budowie agentów (LangChain), polskie teksty o AI w programowaniu (JVM) — „może”; reszta „nie” |
-| Stack Overflow AI, JetBrains, Google Workspace Updates, Google Innovation & AI, Cursor (poza premierami modeli), ICEYE, Viktor, Datadog, LeadDev, The Batch, Perplexity, The Information (0/145) | 0 | domyślnie „nie” lub „może” przy wyjątkowym temacie; JetBrains developer diary (bez premiery) — może, nie tak |
+| LangChain (4/158), JVM Bloggers (5/92) | 2–3 | posty inżynierskie o budowie agentów (LangChain), polskie teksty o AI w programowaniu (JVM) — „może”; reszta „nie” |
+| Stack Overflow AI, JetBrains, Google Workspace Updates, Google Innovation & AI, Cursor (poza premierami modeli), ICEYE, Viktor, Datadog, LeadDev, The Batch, Perplexity, The Information (0/165) | 0 | domyślnie „nie” lub „może” przy wyjątkowym temacie; JetBrains developer diary (bez premiery) — może, nie tak |
 
 ## Przykłady decyzji Kuby (AI → Kuba)
 
 _(uzupełnia `ucz-sie` na podstawie `dziennik/strony_wybory.jsonl`)_
 
-- Nowy Marketing AI: „Oszukiwał platformy streamingowe przy pomocy AI. Został skazany na 18 miesięcy więzienia” — AI: może, Kuba: wzięty — głośny incydent z AI, nawet z polskiego portalu marketingowego.
-- Lovable: „How we built Lovable, and why we keep rebuilding it” i Future Tools: „Karpathy Builds HackerTube With Claude in 2 Hours” — AI: może, Kuba: wzięty — lekcje twórców o budowie z AI.
-- Future Tools News: „Amazon's Alexa for Shopping…” i „OpenAI Launches GPT-6 Cyber…” (duplikat openai.com) — AI: może, Kuba: wzięty (#46) — agregator zawsze „może”; nowy agent zakupowy i duplikat premiery bywają brane (Kuba bierze też oryginał z openai.com).
-- The Decoder: 33 wpisy „może” — Kuba pominął wszystkie (#46) — bez dużego ruchu czołowej firmy to „nie”.
 - Mam Startup / Ministerstwo Cyfryzacji / Nowy Marketing / XYZ: Polska–Korea (AI), RTV Euro AGD + Gemini, Canva + koszty AI, spór o AI w reklamie Diora, Bielik — AI: może, Kuba: wzięty (#46).
 - JetBrains „IDEs Transformed for the Agentic Era – With Air”, LangChain „What Is Eval-Driven Development?” — AI: może, Kuba: wzięty (#46).
 - Martin Fowler (2), Lovable „The Radish AI team joins Lovable”, OpenAI „GPT-6 Cyber” — AI: tak, Kuba: wzięty (#46) — wszystkie 4 „tak” trafione.
@@ -211,3 +207,7 @@ _(uzupełnia `ucz-sie` na podstawie `dziennik/strony_wybory.jsonl`)_
 - JVM Bloggers: „Claude Code Review With Specialist Agents”, „The Harness Model v2” — AI: może, Kuba: wzięty (#47) — praktyczne teksty o agentach.
 - Mam Startup / XYZ: Nvidia po odejściu Huanga, Apple Health AI, LATO 4,7 mln $ — AI: może, Kuba: wzięty (#47); pozostałe 6 „może” z Mam Startup pominięte.
 - Anthropic News „Anthropic prices initial public offering”, OpenAI „GPT-6.2 Astra and Sol”, Martin Fowler „Generated Glossary” — AI: tak, Kuba: wzięty (#47) — wszystkie 3 „tak” trafione.
+- The Decoder: 50 wpisów (15 „może”) — Kuba pominął wszystkie (#48, 4. raz z rzędu) — bez dużego ruchu biznesowego czołowej firmy to „nie”, także stanowiska i ruchy kadrowe.
+- Future Tools News: „Anthropic Veteran Thariq Joins OpenAI…”, „Anthropic Launches Claude Ship…” — AI: może, Kuba: wzięty (#48); pozostałe 14 „może” pominięte — przejście kluczowej osoby między czołowymi labami i premiera produktu czołowego labu to „może”.
+- Mam Startup: „Sztuczna inteligencja zużywa mniej wody niż mleko migdałowe…”, „Sztuczna inteligencja oceni zdolność kredytową. Krakowski Bank Spółdzielczy…” — AI: może, Kuba: wzięty (#48) — raport o kosztach środowiskowych AI i pierwsze w Europie wdrożenie scoringu AI w banku; 6 pozostałych „może” pominiętych.
+- LangChain „How to build a knowledge factory for AI agents” — AI: może, Kuba: wzięty (#48) — własny harness agentów z lekcją zostaje „może”; pozostałych 7 wpisów LangChain „nie” słusznie.

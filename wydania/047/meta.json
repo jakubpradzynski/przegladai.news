@@ -5,5 +5,6 @@
   "data": "2026-11-20",
   "wstep": "Cursor opisał włamanie: wszystko zaczęło się od klucza dostępu u zewnętrznego dostawcy, a atakujący na około 11 godzin podmienił w marketplace rozszerzenie Claude Code na złośliwe. Google pokazało Gemini 4 Hydrogen, który kończy zadania około 2,5 raza szybciej niż Gemini 3.8 Flash. A z ciekawostek: system Darmok rozwiązał na mistrzostwach w Londynie wszystkie siedem krzyżówek kryptycznych szybciej niż każdy człowiek. Przy okazji proponuję przejrzeć klucze, które mają Twoi agenci ;)",
   "opis_seo": "Włamanie do Cursora przez dostawcę, Gemini 4 Hydrogen 2,5 raza szybszy i Darmok z mistrzostw krzyżówek – przegląd newsów AI tego tygodnia.",
-  "okladka": "#47: Włamanie do Cursora, rodzina Gemini 4 i system AI, który wygrał w krzyżówkach"
+  "okladka": "#47: Włamanie do Cursora, rodzina Gemini 4 i system AI, który wygrał w krzyżówkach",
+  "porownano_z_substackiem": true
 }

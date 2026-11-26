@@ -151,7 +151,8 @@
             "uwaga": "LinkedIn i X mówią to samo (11 godzin, 0,05% bez Privacy Mode, 2,5x według Google, Darmok według autorów). Wnioski o sekretach i kluczach to opinia Kuby podana jako opinia. Pytanie końcowe pasuje do głównej tezy. Jedyna drobna uwaga: „z 2025 roku” powinno brzmieć „głównie z 2025 roku”."
           }
         ]
-      }
+      },
+      "opublikowano": true
     },
     {
       "id": "t1",
@@ -826,7 +827,7 @@
         "plik": "obrazki/w-7g4bp.png",
         "infografika_plik": "obrazki/w-7g4bp.png"
       },
-      "termin": "2026-11-29 12:30",
+      "termin": "2026-11-22 10:30",
       "fakty": [
         "4,7 mln dolarów, seed prowadzony przez Air Street Capital i Axiom Partners: treść artykułu xyz.pl (URL mówi 47 mln, to błąd w adresie).",
         "300 tys. dolarów i więcej za kilka tygodni pracy konsultantów: według firmy Lato (artykuł).",
@@ -951,7 +952,8 @@
             "uwaga": "Po poprawce: LinkedIn i X mają te same liczby i sens; „tempo sprzedaży” i „założony przez Polaków” zgodne ze źródłem; opinie Kuby wyraźnie oddzielone; zastrzeżenie o danych firmy w obu wersjach; „ponad 25 innych newsów” zgodne (wydanie ma 30 newsów). Drobne: „spółki, jaką fundusz zamierza kupić” to interpretacja badania przed inwestycją - akceptowalne."
           }
         ]
-      }
+      },
+      "opublikowano": true
     },
     {
       "id": "w-26hw3",
@@ -1176,7 +1178,7 @@
       "link_newsa": "https://www.wsj.com/cio-journal/ai-startup-langchain-more-than-doubles-its-valuation-to-3-billion-f83377ad",
       "tytul_newsa": "LangChain zbiera 300 mln dolarów przy wycenie 3 mld",
       "kat": "Pieniądze idą w pilnowanie agentów, nie w ich pisanie, więc ewaluację i monitoring trzeba planować razem z agentem.",
-      "linkedin": "LangChain, twórca platformy do budowy agentów AI, zebrał 300 mln dolarów przy wycenie 3 mld, ponad dwa razy wyższej niż rok temu. Pieniądze mają trafić w LangSmith, czyli narzędzie do pilnowania agentów.\n\nRundę poprowadził CapitalG, fundusz Alphabet. LangSmith służy do monitorowania, oceny i wdrażania agentów w firmach i według LangChain używa go ponad 7 tysięcy organizacji. Szef firmy mówi wprost, że to zachowanie agenta jest tym, co najtrudniej kontrolować.\n\nZwróciłbym uwagę na przykład, który LangChain podaje o Workday: czas wdrożenia nowego agenta miał spaść z pięciu miesięcy do mniej niż jednego dnia. To deklaracja dostawcy, więc traktowałbym ją ostrożnie. Pokazuje jednak, gdzie leży koszt. Wydaje mi się, że w wielu firmach największym kosztem bywa nie zbudowanie prototypu agenta, tylko zgoda na wpuszczenie go na produkcję.\n\nRozumiem, że start-up sprzedający takie narzędzie będzie mówił, że najtrudniejszy jest właśnie ten etap. Mimo to coś w tym jest: im łatwiej pisać agentów, tym więcej ich powstaje, a każdy trzeba potem sprawdzać, mierzyć i pilnować.\n\nPrzy planowaniu kolejnego agenta dobrze od razu wpisać do budżetu i harmonogramu ewaluację oraz monitoring, a nie traktować ich jako dodatek na koniec. Dobrze też zawczasu ustalić, po czym poznamy, że agent po zmianie modelu albo promptu nadal robi to samo, co wcześniej.\n\nJak u Ciebie sprawdza się, czy agent po zmianie modelu nadal działa tak jak przed nią?",
+      "linkedin": "LangChain, twórca platformy do budowy agentów AI, zebrał 300 mln dolarów przy wycenie 3 mld, ponad dwa razy wyższej niż rok temu. Pieniądze mają trafić do LangSmith, czyli narzędzia do pilnowania agentów.\n\nRundę poprowadził CapitalG, fundusz Alphabet. LangSmith służy do monitorowania, oceny i wdrażania agentów w firmach i według LangChain używa go ponad 7 tysięcy organizacji. Szef firmy mówi wprost, że to zachowanie agenta jest tym, co najtrudniej kontrolować.\n\nZwróciłbym uwagę na przykład, który LangChain podaje o Workday: czas wdrożenia nowego agenta miał spaść z pięciu miesięcy do mniej niż jednego dnia. To deklaracja dostawcy, więc traktowałbym ją ostrożnie. Pokazuje jednak, gdzie leży koszt. W wielu firmach największym kosztem nie jest zbudowanie prototypu agenta, tylko zgoda na wpuszczenie go na produkcję, a następnie kontrolowanie go.\n\nOczywiście start-up sprzedający takie narzędzie będzie mówił, że najtrudniejszy jest właśnie ten etap. Mimo to coś w tym jest: im łatwiej pisać agentów, tym więcej ich powstaje, a każdego trzeba potem sprawdzać, mierzyć i pilnować.\n\nPrzy planowaniu kolejnego agenta dobrze od razu wpisać do budżetu i harmonogramu ewaluację oraz monitoring, a nie traktować ich jako dodatek na koniec. Dobrze też zawczasu ustalić, po czym poznamy, czy agent po zmianie modelu albo promptu nadal robi to samo, co wcześniej.\n\nJak u Ciebie sprawdza się, czy agent po zmianie modelu nadal działa tak jak przed nią?",
       "komentarz": "Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-do-cursora-rodzina-gemini-4-i-system-ai-ktory-wygral-w-krzyzowkach\nŹródło: https://www.wsj.com/cio-journal/ai-startup-langchain-more-than-doubles-its-valuation-to-3-billion-f83377ad\nWpis LangChain o rundzie i TNW: https://thenextweb.com/news/langchain-300m-series-c-3bn-valuation-capitalg-langsmith",
       "x": [
         "LangChain zebrał 300 mln dolarów przy wycenie 3 mld, ponad dwa razy wyższej niż rok temu. Rundę poprowadził CapitalG z Alphabet.",
@@ -1216,7 +1218,7 @@
         },
         "infografika_plik": "obrazki/w-fp505.png"
       },
-      "termin": "2026-11-24 08:30",
+      "termin": "2026-11-25 20:00",
       "fakty": [
         "300 mln USD, wycena 3 mld, ponad dwa razy wyższa niż rok temu, CapitalG prowadzi, LangSmith do monitorowania/oceny/wdrażania, szef: kontrola zachowania agenta najtrudniejsza – opis z dane.csv (WSJ, za paywallem, nie czytane)",
         "poprzednia wycena 1,25 mld (seria B, październik 2025) – TheNextWeb / relacje mediów; użyta tylko w infografice",
@@ -1229,7 +1231,8 @@
       ],
       "publikuj": true,
       "uwaga_kuby": "[weryfikacja] „mają trafić w LangSmith” (nie „głównie”); cytat Chase’a bez „a nie go zbudować”; teza o prototypie i zgodzie na produkcję jako opinia.",
-      "wynik": {}
+      "wynik": {},
+      "opublikowano": true
     },
     {
       "id": "w-5sbf4",
@@ -1325,11 +1328,14 @@
     "zmiana:w-5sbf4:termin:28782e3f",
     "zmiana:w-7g4bp:linkedin:0efe344c",
     "zmiana:w-7g4bp:obrazek:63cdce82",
+    "zmiana:w-7g4bp:termin:1011086a",
     "zmiana:w-7g4bp:termin:916046f2",
     "zmiana:w-fp505:infografika:28c506ae",
+    "zmiana:w-fp505:linkedin:84fcc681",
     "zmiana:w-fp505:linkedin:a417b29a",
     "zmiana:w-fp505:obrazek:ec9c67f1",
     "zmiana:w-fp505:obrazek_mem:2cf71ab4",
+    "zmiana:w-fp505:termin:16cd4fe1",
     "zmiana:w-fp505:termin:c2c133d5"
   ]
 }

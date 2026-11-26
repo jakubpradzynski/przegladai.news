@@ -1,0 +1,463 @@
+{
+  "numer": 48,
+  "tytul": "Wydanie #48: Hipoteza Riemanna, Claude Ship i powrót Huanga do Nvidii",
+  "posty": [
+    {
+      "id": "glowny",
+      "rodzaj": "glowny",
+      "temat": "Wstęp wydania",
+      "link_newsa": "",
+      "tytul_newsa": "",
+      "kat": "Dowód hipotezy Riemanna z Claude, agent Claude Ship do review kodu i powrót Huanga do Nvidii.",
+      "linkedin": "Matematyk z Anthropic ogłosił, że z pomocą Claude udowodnił hipotezę Riemanna, czyli najsłynniejszy nierozwiązany problem matematyki, za który Clay Mathematics Institute oferuje milion dolarów.\n\nDowód zapisano w języku Lean, który mechanicznie sprawdza każdy krok rozumowania, i niezależnie skompilował go między innymi matematyk z MIT. Samą matematykę eksperci będą jednak analizować jeszcze długo, więc na razie to twierdzenie, a nie potwierdzony wynik.\n\nBliżej codziennej pracy: Anthropic pokazało Claude Ship, agenta, który prowadzi pull request od review, przez poprawki, do decyzji o zatwierdzeniu. Jeden z jego elementów reaguje na nieprzechodzące testy i uwagi z review, ale sam niczego nie zatwierdza. O zatwierdzeniu decyduje druga część według polityki zapisanej w repozytorium: rutynowe zmiany może przepuścić sama, resztę oddaje człowiekowi. W zespole Claude Code liczba scalonych PR-ów wzrosła od czerwca do września ponad dwukrotnie, a odsetek cofniętych zmian spadł o ponad 40% (dane firmy).\n\nW Nvidii z kolei Jensen Huang wraca na stanowisko prezesa i CEO po wcześniejszej rezygnacji. Zarząd uznał, że powrót nie stwarza zagrożenia dla bezpieczeństwa narodowego, ale niezależne śledztwo wciąż trwa ;)\n\nTo i ponad 25 innych newsów z tygodnia zebrałem w najnowszym wydaniu PrzeglądAI, link w komentarzu.\n\nCzy pozwoliłbyś/pozwoliłabyś agentowi samodzielnie zatwierdzać rutynowe zmiany w kodzie?",
+      "komentarz": "Wydanie #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii",
+      "x": [
+        "Matematyk z Anthropic ogłosił, że z pomocą Claude udowodnił hipotezę Riemanna, najsłynniejszy nierozwiązany problem matematyki. Dowód zapisano w języku Lean, który mechanicznie sprawdza każdy krok.",
+        "Eksperci będą analizować samą matematykę jeszcze długo, więc na razie to twierdzenie, a nie potwierdzony wynik. Wynik skompilował niezależnie m.in. matematyk z MIT.",
+        "Anthropic pokazało też Claude Ship, agenta, który prowadzi pull request od review do decyzji o zatwierdzeniu. W zespole Claude Code liczba scalonych PR-ów wzrosła od czerwca do września ponad dwukrotnie (dane firmy).",
+        "Jensen Huang wraca na stanowisko prezesa i CEO Nvidii po rezygnacji, choć niezależne śledztwo wciąż trwa. Pełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii"
+      ],
+      "obrazek": {
+        "wybrany": "okladka",
+        "plik": "../okladka.jpeg",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "ponad 2×",
+          "podpis": "tyle razy wzrosła liczba scalonych pull requestów w zespole Claude Code od czerwca do września, według Anthropic",
+          "zrodlo": "Anthropic, Introducing Claude Ship",
+          "styl": "notatka"
+        },
+        "prompt": "Minimalistyczna ilustracja na papierowym tle: stos identycznych teczek z dokumentami na drewnianym biurku, obok niego pieczątka i mały kałamarz z tuszem, widok z góry, miękkie światło dzienne, wyciszone kolory z jednym fioletowym akcentem, główny motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "mem": {
+          "szablon": "Tuxedo Winnie The Pooh",
+          "link": "https://imgflip.com/memegenerator/Tuxedo-Winnie-The-Pooh",
+          "podglad": "https://i.imgflip.com/4/2ybua0.jpg",
+          "tekst": "góra: Ręczne przeglądanie każdego pull requesta\ndół: Polityka zatwierdzania w repozytorium i tryb obserwacji na start"
+        },
+        "infografika_plik": "obrazki/glowny.png"
+      },
+      "termin": "2026-11-27 09:30",
+      "fakty": [
+        "Matematyk z Anthropic ogłosił dowód hipotezy Riemanna z pomocą Claude; zapis w Lean; niezależnie skompilował m.in. matematyk z MIT; Clay Mathematics Institute oferuje milion dolarów (Scientific American)",
+        "Claude Ship: element reagujący na CI i uwagi z review sam niczego nie zatwierdza; decyzję podejmuje Claude Approvals według polityki z repozytorium; w zespole Claude Code scalonych PR-ów ponad 2× więcej od czerwca do września, cofnięte zmiany spadły o ponad 40% (claude.com, według firmy)",
+        "Nvidia: zarząd jednogłośnie przywrócił Jensena Huanga na prezesa, CEO i członka zarządu; powrót nie stwarza zagrożenia dla bezpieczeństwa narodowego; niezależna komisja nadal bada doniesienia (nvidianews.nvidia.com)",
+        "w wydaniu ponad 25 newsów (30 w dane.csv)"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t1",
+      "rodzaj": "temat",
+      "temat": "IPO Anthropic na Nasdaq",
+      "link_newsa": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "tytul_newsa": "Anthropic debiutuje na Nasdaq – największe IPO w historii",
+      "kat": "Dostawca modeli jest już spółką publiczną; zespoły powinny liczyć koszt AI na zadanie i mieć plan na zmianę dostawcy.",
+      "linkedin": "Anthropic zadebiutował na Nasdaq z ceną emisyjną 83 dolarów za akcję, co wyceniło firmę na ok. 1,5 bln dolarów, a pierwsze notowanie otworzyło się o 34% wyżej.\n\nFirma zebrała 81,3 mld dolarów, czyli więcej niż SpaceX przy czerwcowym debiucie (ok. 75 mld). Akcje notowane są pod symbolem ANT, a w ciągu dnia wartość rynkowa sięgała około 2 bln dolarów.\n\nCiekawe jest też tło. Debiut wypadł w dzień spadków na szerokim rynku (S&P 500 spadł o około 2%), a kurs Anthropic zakończył dzień ok. 17% powyżej ceny emisyjnej, choć oddał część porannego wzrostu. Wygląda na to, że inwestorzy chcieli tych akcji bardziej, niż bali się ogólnej nerwowości.\n\nDla zespołów IT liczy się dla mnie co innego niż sam rekord. Większość z nas widzi Anthropic jako pozycję na fakturze albo w cenniku API, a nie jako spółkę z kursem akcji. Dostawca modeli, na których opieramy narzędzia, jest teraz spółką publiczną i będzie rozliczany z wyników. Nie wiem, czy przełoży się to na ceny, i nie chcę udawać, że wiem. Z jednej strony tak duży kapitał daje miejsce na inwestycje w moc obliczeniową, z drugiej spółka z giełdy może mocniej pilnować marż.\n\nDlatego warto znać swój koszt AI na poziomie zadania, a nie tylko faktury na koniec miesiąca, i mieć plan, jak przełączyć się na innego dostawcę bez przepisywania połowy systemu. Nie dlatego, że coś się stanie, tylko żeby zmiana cennika nie była niespodzianką w budżecie.\n\nCzy u Ciebie koszty narzędzi AI są liczone na zespół, na zadanie, czy dopiero z faktury?",
+      "komentarz": "Pełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii\nŹródło: https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "x": [
+        "Anthropic zadebiutował na Nasdaq (symbol ANT). Cena emisyjna 83 dolary za akcję wyceniła firmę na ok. 1,5 bln dolarów, a pierwsze notowanie otworzyło się o 34% wyżej.",
+        "Firma zebrała 81,3 mld dolarów, czyli więcej niż SpaceX przy czerwcowym debiucie (ok. 75 mld). W ciągu dnia wartość rynkowa sięgała około 2 bln dolarów.",
+        "Debiut wypadł w dzień spadków na szerokim rynku (S&P 500 około minus 2%), a kurs Anthropic zakończył dzień ok. 17% powyżej ceny emisyjnej, choć oddał część porannego wzrostu.",
+        "Dla zespołów: dostawca modeli jest teraz spółką publiczną. Warto liczyć koszt AI na zadanie, nie tylko z faktury, i mieć plan na zmianę dostawcy, żeby cennik nie zaskoczył budżetu.",
+        "Ten i kilkadziesiąt innych newsów z tygodnia w 48. wydaniu PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "porownanie",
+          "tytul": "Kwota zebrana w debiucie giełdowym",
+          "jednostka": " mld $",
+          "elementy": [
+            {
+              "etykieta": "SpaceX (czerwiec, ok.)",
+              "wartosc": 75
+            },
+            {
+              "etykieta": "Anthropic",
+              "wartosc": 81.3,
+              "wyroznij": true
+            }
+          ],
+          "zrodlo": "Nasdaq, opis newsa z wydania #48",
+          "styl": "notatka",
+          "numer": 48
+        },
+        "prompt": "Minimalistyczna ilustracja w płaskich kolorach na ciepłym papierowym tle: dwie identyczne szklane skarbonki stoją obok siebie, jedna wypełniona monetami trochę wyżej niż druga, widok z przodu, miękkie światło, motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "mem": {
+          "szablon": "Two Buttons",
+          "link": "https://imgflip.com/memegenerator/Two-Buttons",
+          "podglad": "https://i.imgflip.com/4/1g8my4.jpg",
+          "tekst": "lewy przycisk: Liczyć koszt AI na zadanie\nprawy przycisk: Czekać na fakturę na koniec miesiąca"
+        },
+        "infografika_plik": "obrazki/t1.png",
+        "plik": "obrazki/t1.png"
+      },
+      "termin": "2026-11-29 12:00",
+      "fakty": [
+        "Cena 83 USD, wycena 1,5 bln USD, otwarcie +34%, wartość do ok. 2 bln USD w ciągu dnia, 81,3 mld USD zebrane, SpaceX 75 mld w czerwcu, S&P 500 ok. -0,9%: z opisu newsa w dane.csv wydania 48; artykuł nasdaq.com nie otworzył się (timeout 2x), potwierdzenie pierwszych liczb (83 USD, 34%, 81,3 mld brutto z 980 mln akcji) w relacjach mediów (WebSearch: TechRepublic, Fox Business, TechCrunch).",
+        "81,3 mld to według mediów wartość brutto oferty; część akcji sprzedali dotychczasowi akcjonariusze, a media podają też osobne prywatne plasowanie, więc to nie jest ustalone jako wpływ netto firmy.",
+        "Zdanie 'inwestorzy chcieli tych akcji bardziej...' to interpretacja; wniosek 'popyt przewyższał ostrożność' w opisie z wydania pochodzi od redakcji, nie ze źródła.",
+        "Część o cenach, marżach i planie zmiany dostawcy to opinia Kuby, nie fakt ze źródła."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t2",
+      "rodzaj": "temat",
+      "temat": "Sierra: wycena 30 mld i wyniki",
+      "link_newsa": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+      "tytul_newsa": "Sierra podwaja wycenę do 30 mld dolarów w pół roku",
+      "kat": "Rozliczanie za wyniki zamiast licencji (według Sierry) napędza wzrost; w kupowaniu narzędzi AI kluczowe staje się uzgodnienie, co jest wynikiem i kto go mierzy.",
+      "linkedin": "Wycena Sierry urosła z ok. 15 do 30 mld dolarów w pół roku, a roczny przychód firmy (run-rate) podwoił się w pięć miesięcy, do 400 mln dolarów.\n\nSierra buduje agentów AI do obsługi klienta, a współzałożył ją były współprezes Salesforce. Właśnie zebrała 1,75 mld dolarów, rundę prowadziły Greenoaks i Lightspeed. Run-rate to przychód przeliczony na rok z obecnego tempa, więc to nie jest suma, która już wpłynęła na konto. Klientem jest prawie połowa firm z Fortune 50, m.in. HSBC i Wells Fargo. Na tym tle Decagon jest wyceniany na 4,5 mld dolarów, a Parloa na 3 mld.\n\nNajciekawszy jest dla mnie powód, który podaje sama firma: według niej wzrost napędza rozliczanie za wyniki, a nie za licencje. Płacisz więc za efekt, a nie za dostęp do narzędzia. Źródło nie opisuje, co dokładnie jest tym „wynikiem” i jak liczone są stawki, więc tego nie zgaduję.\n\nZ perspektywy kupującego to zmienia rozmowę z dostawcą. Przy licencji ryzyko, że narzędzie się nie przyjmie, zostaje po Twojej stronie. Przy rozliczeniu za wynik część tego ryzyka przechodzi na dostawcę, ale dopiero gdy obie strony uzgodnią, co jest wynikiem i kto go mierzy. Rozwiązana sprawa bez człowieka? Klient, który nie wrócił z tym samym problemem w tydzień? Od tej definicji zależy i rachunek, i to, czy dostawcy będzie się opłacało robić to dobrze, czy tylko ładnie w statystykach. Oczywiście to wciąż twierdzenie firmy, a nie niezależny pomiar.\n\nJeśli rozważacie takiego agenta, warto zacząć od ustalenia, po czym poznamy, że sprawa została załatwiona, i czy mamy te dane u siebie, a nie tylko w panelu dostawcy.\n\nCzy w Waszej firmie kupilibyście narzędzie AI z płatnością za wynik, a nie za licencję? Co byłoby dla Was tym wynikiem?",
+      "komentarz": "Pełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii\nŹródło: https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+      "x": [
+        "Wycena Sierry, startupu z agentami AI do obsługi klienta, urosła z ok. 15 do 30 mld dolarów w pół roku. Roczny przychód (run-rate) podwoił się w pięć miesięcy, do 400 mln dolarów.",
+        "Firma zebrała 1,75 mld dolarów, rundę prowadziły Greenoaks i Lightspeed. Klientem jest prawie połowa firm z Fortune 50, m.in. HSBC i Wells Fargo. Decagon ma wycenę 4,5 mld, Parloa 3 mld.",
+        "Według Sierry wzrost napędza rozliczanie za wyniki, a nie za licencje. Źródło nie mówi, co dokładnie jest rozliczanym wynikiem ani jakie są stawki, więc to na razie twierdzenie firmy.",
+        "Przy takim modelu ryzyko częściowo przechodzi na dostawcę, ale dopiero gdy ustalicie, co jest wynikiem i kto go mierzy. Rozwiązana sprawa bez człowieka? Klient, który nie wrócił w tydzień?",
+        "Przed zakupem warto uzgodnić, po czym poznamy, że sprawa jest załatwiona, i czy te dane mamy u siebie, a nie tylko w panelu dostawcy. Więcej w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "2 x w pół roku",
+          "podpis": "tyle razy urosła wycena Sierry: z ok. 15 do 30 mld dolarów",
+          "zrodlo": "TechCrunch, 23.11.2026",
+          "styl": "notatka"
+        },
+        "prompt": "Minimalistyczna ilustracja na papierowym tle: dwie identyczne kartki z umową leżą obok siebie na biurku, na jednej przy punkcie „licencja” widnieje pusta rubryka, na drugiej pole wyboru z odhaczonym haczykiem ołówkiem, obok kubek kawy i długopis, widok z góry, miękkie światło dzienne, wyciszone kolory z jednym zielonym akcentem, główny motyw na środku kadru z zapasem na brzegach, bez tekstu poza krótkimi polami formularza, bez ludzi, format 3:4.",
+        "mem": {
+          "szablon": "Two Buttons",
+          "link": "https://imgflip.com/memegenerator/Two-Buttons",
+          "podglad": "https://i.imgflip.com/4/1g8my4.jpg",
+          "tekst": "lewy przycisk: Płacić za licencję i liczyć, że zespół z niej skorzysta\nprawy przycisk: Płacić za wynik, tylko najpierw ustalić, co jest wynikiem"
+        },
+        "infografika_plik": "obrazki/t2.png",
+        "plik": "obrazki/t2.png"
+      },
+      "termin": "2026-12-01 08:30",
+      "fakty": [
+        "Wycena 30 mld $ vs 15 mld $ sprzed ok. pół roku, run-rate podwojony do 400 mln $ w 5 miesięcy, runda 1,75 mld $ (Series F), prowadzą Greenoaks i Lightspeed: TechCrunch 23.11.2026.",
+        "Prawie połowa Fortune 50 jako klienci, m.in. HSBC i Wells Fargo; Decagon 4,5 mld $, Parloa 3 mld $: TechCrunch.",
+        "Współzałożyciel to były współprezes Salesforce: opis z wydania #48 (w artykule TechCrunch nie sprawdzone).",
+        "Wzrost napędzany rozliczaniem za wyniki to twierdzenie firmy; artykuł nie opisuje mechanizmu ani stawek, więc post tego nie zgaduje. Wyjaśnienie run-rate to definicja ogólna.",
+        "Przykłady definicji wyniku (sprawa bez człowieka, brak powrotu w tydzień) to hipotetyczne pytania autora, nie fakty ze źródła."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "w-52g9u",
+      "rodzaj": "temat",
+      "temat": "Claude Ship a własne agenty",
+      "link_newsa": "https://claude.com/resources/articles/introducing-claude-ship",
+      "tytul_newsa": "Anthropic prezentuje Claude Ship – agenta od review, poprawek i zatwierdzania pull requestów",
+      "kat": "Claude Ship zdejmuje z autora cykl PR (CI, konflikty, uwagi), a o zatwierdzeniu decyduje polityka z repozytorium — ale własny agent daje elastyczność, za którą płaci się utrzymaniem.",
+      "linkedin": "W Claude Ship plik w repozytorium ustala, ilu osób musi zatwierdzić zmianę: w przykładzie z dokumentacji kod rozliczeń wymaga dwóch osób, a dane testowe jednej.\n\nTo trzy agenty do pull requestów na GitHubie. Code Review szuka błędów, PR Steward poprawia to, co zgłoszono, a Claude Approvals sprawdza, kto jeszcze musi zatwierdzić zmianę. Steward jest zaprojektowany tak, żeby niczego nie zatwierdzać ani nie scalać. Code Review jest dostępny ogólnie, Steward i Approvals są w becie na planach Team i Enterprise.\n\nPrzy ręcznej pracy cały cykl trzyma autor: otwiera PR, czeka na CI, odpowiada na komentarze, rozwiązuje konflikty z główną gałęzią. PR Steward przejmuje to w sesji w chmurze: poprawia nieprzechodzące testy, wciąga zmiany z gałęzi bazowej przy konfliktach i odpowiada na drobne uwagi z review. Gdy prośba jest duża albo dotyczy designu, odpisuje komentarzem zamiast pushować. Po każdym pushu opisuje, co zmienił i jak to cofnąć, a autor może w tym czasie zacząć kolejną zmianę.\n\nTak to widzę: własny agent, na przykład w GitHub Actions, daje pełną kontrolę nad promptem, wyzwalaczem i uprawnieniami, ale całe utrzymanie zostaje po naszej stronie: limity kosztów, ślad tego, co agent zrobił, reguły, kiedy ma się zatrzymać. Ship zamienia to na ustawienia organizacji i politykę w pliku `.claude/approvals.yml`, kosztem elastyczności: tylko GitHub, tylko Team i Enterprise, bez organizacji z Zero Data Retention.\n\nSama dokumentacja ostrzega, że przy auto-merge albo merge queue i polityce niewymagającej człowieka zmiana może wejść bez niczyjego udziału. Anthropic zaleca zacząć od trybu obserwacji, w którym check pokazuje tylko, co polityka by zdecydowała (też jest płatny).\n\nZanim wybierzemy między gotowym rozwiązaniem a własnym, warto sprawdzić, ile naszej specyfiki da się zapisać jako reguły: ścieżki, wielkość zmiany, ocena ryzyka. Jeśli większość, gotowiec może wystarczyć.\n\nJak rozróżniałbyś/rozróżniałabyś w swoim repozytorium zmiany, które wymagają człowieka, od rutynowych: po ścieżkach, wielkości zmiany czy ryzyku?",
+      "komentarz": "Pełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii\nŹródło: https://claude.com/resources/articles/introducing-claude-ship\nDokumentacja: https://code.claude.com/docs/en/claude-ship",
+      "x": [
+        "W Claude Ship plik .claude/approvals.yml w repozytorium ustala, ilu osób musi zatwierdzić zmianę. W przykładzie z dokumentacji kod rozliczeń wymaga dwóch osób, a dane testowe jednej.",
+        "To trzy agenty do PR-ów na GitHubie: Code Review szuka błędów, PR Steward poprawia, Claude Approvals pilnuje, kto musi zatwierdzić. Steward nie zatwierdza ani nie scala. Steward i Approvals są w becie (Team, Enterprise).",
+        "Różnica wobec ręcznej pracy: PR Steward w chmurze poprawia nieprzechodzące testy, rozwiązuje konflikty i odpowiada na drobne uwagi z review. Po każdym pushu opisuje, co zmienił i jak to cofnąć. Autor może zacząć następną zmianę.",
+        "Tak to widzę: własny agent w GitHub Actions daje pełną kontrolę, ale utrzymanie zostaje po Twojej stronie: limity, uprawnienia, ślad działań. Ship wymienia to na ustawienia i politykę w pliku, kosztem elastyczności: tylko GitHub, tylko Team i Enterprise.",
+        "Dokumentacja ostrzega: przy auto-merge i polityce bez człowieka zmiana może wejść bez niczyjego udziału. Anthropic zaleca start w trybie obserwacji. Po czym odróżniasz zmiany rutynowe od tych dla człowieka?\n\nPrzegląd tygodnia w #48: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "lista",
+          "tytul": "Co PR Steward robi za autora",
+          "punkty": [
+            "Poprawia nieprzechodzące testy CI",
+            "Rozwiązuje konflikty z gałęzią bazową",
+            "Odpowiada na drobne uwagi z review",
+            "Opisuje zmianę i jak ją cofnąć"
+          ],
+          "zrodlo": "Anthropic, dokumentacja Claude Ship",
+          "styl": "notatka"
+        },
+        "prompt": "Minimalistyczna ilustracja w płaskich kolorach na ciepłym papierowym tle: jedna kartka z listą rozpisaną odręcznie, z trzema pozycjami odhaczonymi, a czwarta pusta, obok niej jeden pieczątkowy stempel leżący na boku, widok z góry, miękkie światło, motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "mem": {
+          "szablon": "Two Buttons",
+          "link": "https://imgflip.com/memegenerator/Two-Buttons",
+          "podglad": "https://i.imgflip.com/4/1g8my4.jpg",
+          "tekst": "lewy przycisk: Skonfigurować gotowego agenta do PR-ów\nprawy przycisk: Napisać własnego agenta w GitHub Actions"
+        },
+        "infografika_plik": "obrazki/w-52g9u.png",
+        "plik": "obrazki/w-52g9u.png"
+      },
+      "termin": "2026-12-02 08:30",
+      "fakty": [
+        "Przykład kod rozliczeń 2 osoby / dane testowe 1 osoba po Code Review: code.claude.com/docs/en/approvals.md (billing code, test fixtures).",
+        "Trzy agenty, Steward nie zatwierdza ani nie scala, Code Review GA, Steward i Approvals beta, Team i Enterprise, tylko GitHub, brak dla ZDR/HIPAA/CMEK: claude-ship (docs i artykuł).",
+        "PR Steward: cloud session, failing checks, konflikty, uwagi z review, duże/designowe prośby tylko odpowiedź bez pusha: docs pr-steward.md. 'Opisuje co zmienił i jak cofnąć' po każdym pushu: artykuł claude.com.",
+        "Plik .claude/approvals.yml, warunki (liczba zmienionych linii, ścieżki, klasyfikator ryzyka): docs approvals.md.",
+        "Ostrzeżenie o auto-merge/merge queue bez zatwierdzenia człowieka: docs claude-ship i approvals.md ('Merges without human review'). Tryb obserwacji zalecany i płatny: artykuł i docs.",
+        "Porównanie z własnym agentem (utrzymanie po stronie zespołu) to opinia/rozumowanie autora, nie fakt ze źródła; docs wymieniają GitHub Actions jako własne CI z Claude Code.",
+        "Brak liczb o wzroście PR-ów w poście (są w poście głównym)."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t6",
+      "rodzaj": "temat",
+      "temat": "Scoring kredytowy AI w KBS",
+      "link_newsa": "https://mamstartup.pl/sztuczna-inteligencja-oceni-zdolnosc-kredytowa-krakowski-bank-spoldzielczy-pionierem-w-europie/",
+      "tytul_newsa": "Krakowski Bank Spółdzielczy wdroży scoring kredytowy oparty na AI",
+      "kat": "Pierwszy bank z AI do oceny zdolności kredytowej to wdrożenie, które warto obserwować przez pryzmat AI Act (system wysokiego ryzyka, prawo do wyjaśnienia decyzji).",
+      "linkedin": "Krakowski Bank Spółdzielczy zapowiada, że jako pierwsza instytucja finansowa w Europie wdroży scoring Hitachi oparty na AI. Wynikiem jest liczba od 0 do 1, czyli szansa, że klient spłaci w terminie.\n\nSystem powstał we współpracy z polskim oddziałem Hitachi i wcześniej działał w Japonii. Na początek obsłuży pożyczki gotówkowe, później kredyty hipoteczne. Algorytm bierze m.in. kwotę, okres spłaty i staż pracy, a przy odmowie ma wskazać czynniki, które o niej zdecydowały. Start produkcyjny bank planuje na koniec przyszłego roku, czyli 2027. Hitachi mówi też o zaawansowanych rozmowach z bankami komercyjnymi.\n\nCiekawie robi się przy AI Act. Ocena zdolności kredytowej osób fizycznych jest w nim na liście systemów wysokiego ryzyka (wyjątkiem są systemy do wykrywania oszustw finansowych). Po zmianach z lipca 2026 wymogi dla takich systemów mają zacząć obowiązywać od 2 grudnia 2027, czyli mniej więcej wtedy, gdy bank planuje ruszyć z produkcją.\n\nDla systemów wysokiego ryzyka AI Act daje osobie, której dotyczy decyzja, prawo do jasnego wyjaśnienia roli systemu i głównych czynników wyniku. Zapowiedź, że system wskaże powody odmowy, brzmi więc dobrze. Twórcy mówią też, że jest w pełni dostosowany do prawa unijnego i krajowego, ale to ich deklaracja, a wymogi dla systemów wysokiego ryzyka dopiero zaczną się stosować. W relacji pada również, że klient nie musi wiedzieć, że analizuje go AI, i ciekawi mnie, jak to się będzie układać z obowiązkami informacyjnymi.\n\nSzczerze mówiąc, to wdrożenie warto obserwować właśnie pod tym kątem: pierwszy bank, kolejne mogą być większe, a pierwsze doświadczenia pokażą, jak wygląda wyjaśnienie decyzji w praktyce, a nie na slajdzie. Jeśli budujesz albo kupujesz system, który ocenia ludzi (kredyt, rekrutacja), dobrze już teraz zapytać dostawcę, jak wyjaśni pojedynczą decyzję i co zostaje po niej w logach.\n\nCzy wyjaśnienie w stylu „zdecydowały te trzy czynniki” wystarczy klientowi, żeby zrozumieć odmowę?",
+      "komentarz": "Pełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii\nŹródło: https://mamstartup.pl/sztuczna-inteligencja-oceni-zdolnosc-kredytowa-krakowski-bank-spoldzielczy-pionierem-w-europie/\nAI Act, załącznik III pkt 5(b): https://artificialintelligenceact.eu/annex/3/ ; art. 86: https://artificialintelligenceact.eu/article/86/",
+      "x": [
+        "Krakowski Bank Spółdzielczy zapowiada, że jako pierwsza instytucja finansowa w Polsce i w Europie wdroży system scoringowy Hitachi oparty na AI. Wynik to liczba od 0 do 1: szansa na terminową spłatę.",
+        "Na początek pożyczki gotówkowe, później hipoteczne. Algorytm bierze m.in. kwotę, okres spłaty i staż pracy. Przy odmowie ma wskazać czynniki, które o niej zdecydowały. Start produkcyjny: koniec 2027.",
+        "W AI Act ocena zdolności kredytowej osób fizycznych jest na liście systemów wysokiego ryzyka (wyjątek: wykrywanie oszustw). Po zmianach z lipca 2026 wymogi mają obowiązywać od 2 grudnia 2027.",
+        "Dla takich systemów osoba, której dotyczy decyzja, ma prawo do wyjaśnienia roli systemu i głównych czynników. Twórcy mówią, że system jest w pełni zgodny z prawem UE i krajowym, ale to ich deklaracja.",
+        "Warto obserwować, jak to wyjaśnienie będzie wyglądać w praktyce. Kto buduje lub kupuje system oceniający ludzi, niech już teraz zapyta dostawcę, jak wyjaśni pojedynczą decyzję i co zapisuje w logach.",
+        "Pełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "2 grudnia 2027",
+          "podpis": "od tej daty mają obowiązywać wymogi AI Act dla systemów wysokiego ryzyka, także do oceny zdolności kredytowej",
+          "zrodlo": "AI Act, załącznik III; zmiany z lipca 2026",
+          "styl": "notatka"
+        },
+        "prompt": "Minimalistyczna ilustracja w płaskich kolorach na ciepłym papierowym tle: papierowy formularz wniosku o pożyczkę leży na biurku, obok niego skala narysowana jako prosty suwak od 0 do 1 z zaznaczonym punktem i długopis, widok z góry, miękkie światło dzienne, wyciszone kolory z jednym granatowym akcentem, motyw na środku kadru z zapasem na brzegach, bez tekstu, bez ludzi, format 3:4.",
+        "mem": {
+          "szablon": "Two Buttons",
+          "link": "https://imgflip.com/memegenerator/Two-Buttons",
+          "podglad": "https://i.imgflip.com/4/1g8my4.jpg",
+          "tekst": "lewy przycisk: Scoring AI już na pożyczkach gotówkowych\nprawy przycisk: Wyjaśnienie odmowy zgodne z AI Act"
+        },
+        "infografika_plik": "obrazki/t6.png",
+        "plik": "obrazki/t6.png"
+      },
+      "termin": "2026-12-02 20:00",
+      "fakty": [
+        "KBS pierwszy w Polsce i Europie, system AT/PRC od polskiego oddziału Hitachi, wcześniej w Japonii: mamstartup.pl (relacja z wypowiedzi KBS i Hitachi, bez niezależnej weryfikacji).",
+        "Wynik 0-1 = prawdopodobieństwo terminowej spłaty; zmienne m.in. kwota, okres spłaty, staż pracy: mamstartup.pl.",
+        "Pożyczki gotówkowe najpierw, hipoteczne później; produkcyjny start planowany na koniec przyszłego roku (artykuł z 24.11.2026, więc koniec 2027).",
+        "Przy odmowie system ma wskazać czynniki: mamstartup.pl; 'zaawansowane negocjacje' Hitachi z bankami komercyjnymi: ten sam artykuł.",
+        "Twórcy: system 'w pełni dostosowany do wymogów prawodawstwa unijnego i krajowego'; klient nie musi wiedzieć, że dane analizuje AI: artykuł (artykuł nie wspomina o AI Act).",
+        "AI Act, załącznik III pkt 5(b): systemy do oceny zdolności kredytowej osób fizycznych lub ustalenia scoringu, z wyjątkiem wykrywania oszustw finansowych: artificialintelligenceact.eu/annex/3/. Klasyfikacja KBS/AT/PRC jako high-risk to wniosek z tego zapisu, nie ocena regulatora.",
+        "Art. 86 AI Act: prawo do jasnych i merytorycznych wyjaśnień roli systemu AI i głównych czynników decyzji dla osoby, której dotyczy decyzja podjęta przez podmiot stosujący system z załącznika III (z pewnymi wyjątkami): artificialintelligenceact.eu/article/86/. Warto sprawdzić brzmienie po omnibusie.",
+        "2 grudnia 2027 dla załącznika III: AI Omnibus (rozporządzenie (UE) 2026/1744, Dz.Urz. 24.07.2026, w życie 27.07.2026) wg White & Case, Lewis Silkin, Orrick, Garrigues; Deloitte; nie sprawdzano tekstu w Dzienniku Urzędowym.",
+        "Zdanie 'mniej więcej wtedy, gdy bank planuje ruszyć' to porównanie dat Kuby; 'koniec 2027' vs 2.12.2027.",
+        "Stanowisko, pytanie o obowiązki informacyjne i pytania do dostawcy (wyjaśnienie decyzji, logi): opinia, nie fakt ze źródła."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t4",
+      "rodzaj": "temat",
+      "temat": "Wehikuł czasu dla internetu",
+      "link_newsa": "https://epochal.com/blog/introducing-epochal",
+      "tytul_newsa": "Epochal: byli twórcy xAI budują „wehikuł czasu” dla internetu i uczą AI przewidywać",
+      "kat": "Możliwość obejrzenia dowolnej strony z konkretnej minuty w przeszłości otwiera nowe zastosowania: od testów agentów po odtwarzanie, co widział człowiek lub system w danym momencie.",
+      "linkedin": "Firma Epochal zaindeksowała ponad bilion stron internetu z ostatnich 30 lat, z dokładnością do minuty.\n\nFirmę założyli m.in. przez członków zespołu założycielskiego xAI. Pierwszy produkt nazywa się Time Portal i działa jak piaskownica: agent może w niej przeglądać internet dokładnie tak, jak wyglądał w wybranym dniu z przeszłości. Nie chodzi więc o pojedyncze zrzuty stron, tylko o całą sieć cofniętą do konkretnego momentu, po której agent może przeglądać strony i wyszukiwać informacje.\n\nTwórcy mają konkretny cel. Chcą uczyć modele podejmowania decyzji na wiedzy, którą ktoś miał przed wynikiem, a nie z wiedzą, jak historia się skończyła. Przy ocenie prognoz to bardzo ważne, bo model wytrenowany na danych z późniejszych lat potrafi odpowiedzieć „trafnie” tylko dlatego, że zna odpowiedź. Według twórców Time Portal ma to rozwiązać: agent widzi tylko to, co dało się wtedy znaleźć.\n\nMnie najbardziej podoba się to, że sam pomysł jest szerszy niż prognozy. Możliwość obejrzenia strony z konkretnego momentu w przeszłości jest przydatna zawsze, gdy trzeba ustalić, co ktoś mógł wiedzieć w danej chwili: jak wyglądała dokumentacja, zanim zmieniono API, co obiecywała strona konkurenta przed zmianą cennika, jakie informacje były publiczne w dniu decyzji. To moje pomysły na zastosowania, a nie opis tego, co dziś oferuje produkt.\n\nZespoły, które budują agentów, mogłyby wreszcie sprawdzać ich prognozy na przeszłości, gdzie wynik już znamy, i oceniać, czy agent trafił rozsądnym rozumowaniem, a nie przez przypadek. Przed takim testem dobrze ustalić, po czym poznamy, że agent nie „podglądnął” odpowiedzi w innym miejscu.\n\nDo jakiej decyzji w Waszej pracy chcielibyście wrócić z widokiem sieci sprzed miesiąca albo roku?",
+      "komentarz": "Pełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii\nŹródło: https://epochal.com/blog/introducing-epochal",
+      "x": [
+        "Firma Epochal zaindeksowała ponad bilion stron internetu z 30 lat, z dokładnością do minuty.",
+        "Pierwszy produkt, Time Portal, to piaskownica: agent przegląda sieć dokładnie tak, jak wyglądała w wybranym dniu z przeszłości. Firmę założyli m.in. członkowie zespołu założycielskiego xAI.",
+        "Cel: uczyć modele decyzji na wiedzy sprzed wyniku. Model wytrenowany na późniejszych danych może przewidzieć coś trafnie tylko dlatego, że zna zakończenie historii.",
+        "Widzę tu zastosowania szerzej niż prognozy: sprawdzić, jak wyglądała dokumentacja przed zmianą API albo co było publiczne w dniu decyzji. To moje pomysły, nie opis oferty.\n\nPełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "ponad bilion",
+          "podpis": "stron internetu z 30 lat, z dokładnością do minuty - tyle zaindeksował Epochal",
+          "zrodlo": "Epochal"
+        },
+        "prompt": "Minimalistyczna ilustracja w ciepłych, papierowych kolorach: stary kalendarz ścienny z oderwanymi kartkami, a na jego środku otwarty laptop, z którego ekranu wystaje stos wydrukowanych stron internetowych. Główny motyw na środku kadru z zapasem na brzegach, bez tekstu, bez ludzi, format 3:4.",
+        "mem": {
+          "szablon": "Always Has Been",
+          "link": "https://imgflip.com/memegenerator/Always-Has-Been",
+          "podglad": "https://i.imgflip.com/4/46e43q.jpg",
+          "tekst": "1: Czyli możemy sprawdzić, co agent wiedział przed wynikiem?\n2: Zawsze tak miało być, z dokładnością do minuty"
+        },
+        "infografika_plik": "obrazki/t4.png",
+        "plik": "obrazki/t4.png"
+      },
+      "termin": "2026-12-03 08:30",
+      "fakty": [
+        "[weryfikacja] Cały artykuł epochal.com/blog/introducing-epochal odczytano w Chrome (WebFetch zwraca tylko tytuł): „indexed over a trillion pages … 30 years of history, with granularity down to the minute”; Time Portal to „time gated sandbox”, w którym agent może „search and browse the Internet exactly as it existed on a past date”; założyciele m.in. Guodong Zhang, Zihang Dai, Manuel Kroiss z zespołu założycielskiego xAI; cel: uczyć na punktowych problemach z przeszłości, bez wiedzy o tym, jak historia się skończyła.",
+        "Zastosowania (dokumentacja przed zmianą API, cennik konkurenta, decyzja) to własne pomysły, w poście oznaczone jako takie."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "t7",
+      "rodzaj": "temat",
+      "temat": "Uber i 5 tysięcy skilli agentów",
+      "link_newsa": "https://x.com/ubereng/status/2125008806249930999?a=k2tu-eTcykp4pWh21as",
+      "tytul_newsa": "Uber ocenia milion wywołań agentowych skilli miesięcznie: jak zarządza 5 tysiącami skilli",
+      "kat": "Tekst Ubera pokazuje, jak firma zarządza skillami agentów jak kodem (Git, linter, ewaluacje), a wiele z tego da się przełożyć na prywatne używanie AI.",
+      "linkedin": "Rok temu Uber miał w firmie jeden skill dla agentów AI, a dziś ma ich ponad 5000, a w jednym miesiącu agenci wywołali je ponad milion razy.\n\nSkill to plik Markdown, który uczy agenta jednej konkretnej pracy, na przykład zapytań do hurtowni danych albo przeglądu pull requesta. Uber opisał na swoim blogu inżynierskim, jak tym zarządza. Skille leżą we wspólnym repozytorium Git, więc każdy ma właściciela, review i historię zmian. Zespół może opublikować własny skill po jednej akceptacji i przejściu CI, a każdą zmianę w tych najpopularniejszych sprawdza zespół platformy.\n\nNajbardziej interesuje mnie jakość. Linter wymaga ponumerowanych kroków, w każdym konkretnego polecenia i sprawdzenia wyniku przed następnym krokiem, a do tego sekcji z obsługą błędów. Do testów Uber używa głównie prawdziwych promptów i ocenia nie tylko wynik, ale też to, czy agent użył właściwych narzędzi we właściwej kolejności. Jest też ablacja: te same prompty uruchamia się ze skillem i bez niego, a ślepy sędzia wybiera lepszą odpowiedź. Dla skilla do zapytań w hurtowni wygrał on w 87% takich porównań.\n\nPodoba mi się też, że agenci sami zgłaszają „papercuts”, czyli drobne problemy napotkane przy skillu: co próbowali zrobić, czego się spodziewali i co poszło nie tak. W trzy miesiące zebrały się tysiące zgłoszeń, a setki już naprawiono.\n\nZapoznałbym się z tym tekstem w całości, bo pokazuje, jak firma naprawdę pracuje z agentami, a wiele da się przełożyć na prywatne używanie AI. Po pierwsze, własne instrukcje i pliki w rodzaju CLAUDE.md warto trzymać z historią zmian. Po drugie, co jakiś czas sprawdzić, czy instrukcja coś daje, czyli uruchomić to samo zadanie z nią i bez niej, bo Uber zauważa, że przy nowszych modelach nadmiar instrukcji może szkodzić. Po trzecie, każdą wpadkę AI zapisać jako przypadek do ponownego sprawdzenia.\n\nW zespole zadałbym sobie podobne pytanie jeszcze zanim skilli zrobi się dużo: kto za który odpowiada i po czym poznamy, że przestał działać.\n\nCzy Twój zespół ma już wspólne skille albo instrukcje dla agentów i kto za nie odpowiada?",
+      "komentarz": "Pełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii\nŹródło: https://www.uber.com/us/en/blog/optimizing-ubers-agent-skills/ (wątek Ubera na X: https://x.com/ubereng/status/2125008806249930999)",
+      "x": [
+        "W październiku 2025 Uber miał jeden skill dla agentów AI. Dziś ma ich ponad 5000, a w jednym miesiącu agenci wywołali je ponad milion razy. Skill to plik Markdown, który uczy agenta jednej konkretnej pracy.",
+        "Skille leżą we wspólnym repozytorium Git, więc każdy ma właściciela, review i historię. Zespół publikuje własny po jednej akceptacji i przejściu CI, a zmiany w tych najpopularniejszych sprawdza zespół platformy.",
+        "Jakość pilnuje linter: ponumerowane kroki, konkretne polecenia, sprawdzenie wyniku przed następnym krokiem i sekcja z obsługą błędów. Do tego ablacja: te same prompty ze skillem i bez, a ślepy sędzia wybiera lepszą odpowiedź. Skill do zapytań w hurtowni wygrał w 87% porównań.",
+        "Agenci sami zgłaszają „papercuts”, czyli drobne problemy ze skillem. W trzy miesiące zebrały się tysiące zgłoszeń, a setki naprawiono.",
+        "Do własnego użytku: trzymaj instrukcje z historią zmian, sprawdzaj, czy coś dają (to samo zadanie z nią i bez), a każdą wpadkę AI zapisuj jako test na później. Więcej w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "5000+",
+          "podpis": "skilli agentów w Uberze, od jednego w październiku 2025",
+          "zrodlo": "uber.com/blog",
+          "styl": "notatka"
+        },
+        "prompt": "Minimalistyczna płaska ilustracja: stos kilkudziesięciu identycznych kartek z numerowaną listą kroków, jedna kartka wysunięta na wierzch z odhaczonymi punktami i zielonym znacznikiem, obok mały notes z kółkiem i ołówkiem, miękkie światło dzienne, wyciszone kolory z jednym akcentem, motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "mem": {
+          "szablon": "Gru's Plan",
+          "link": "https://imgflip.com/memegenerator/Grus-Plan",
+          "podglad": "https://i.imgflip.com/4/26jxvz.jpg",
+          "tekst": "1: Napisać skill dla agenta\n2: Dodać linter i ewaluacje\n3: Odkryć, że część instrukcji tylko szkodzi\n4: Odkryć, że część instrukcji tylko szkodzi"
+        },
+        "infografika_plik": "obrazki/t7.png",
+        "plik": "obrazki/t7.png"
+      },
+      "termin": "2026-12-03 20:00",
+      "fakty": [
+        "Jeden skill w październiku 2025, ponad 5000 w rok, ponad 1 mln wywołań w jednym miesiącu: blog Ubera (uber.com/us/en/blog/optimizing-ubers-agent-skills/). Artykuł na X był za paywallem (402), treść potwierdzona na blogu.",
+        "Skill = plik Markdown uczący agenta jednego workflow: opis z wydania i podsumowania bloga.",
+        "Repozytorium Git (właściciel, review, historia); domena: jedna akceptacja peer + CI; core: zespół platformy przegląda każdą zmianę: blog Ubera.",
+        "Linter: ponumerowane kroki, konkretne polecenie i sprawdzenie wyniku, sekcja obsługi błędów: blog Ubera.",
+        "Ewaluacje: głównie ok. 80% prawdziwych promptów oceniane po trajektorii (właściwe narzędzia we właściwej kolejności); ablacja ze ślepym sędzią; wygrana skilla do zapytań w hurtowni w 87% porównań: blog Ubera (liczby Ubera, nie niezależne).",
+        "Papercuts: tysiące zgłoszeń w trzy miesiące, setki naprawione: blog Ubera.",
+        "Nadmiar instrukcji może szkodzić przy rozwoju modeli: blog Ubera (testy usuwania pojedynczych słów). Rady dla życia prywatnego i pytanie o właściciela skilli to opinia Kuby/AI, nie fakt ze źródła.",
+        "Mem: tekst jest żartem; kroki 3 i 4 celowo to ta sama linia (format Gru's Plan)."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "w-1lkhu",
+      "rodzaj": "temat",
+      "temat": "OpenWorks: AI dla małych firm",
+      "link_newsa": "https://openai.com/openworks/",
+      "tytul_newsa": "OpenAI uruchamia OpenWorks – bezpłatne wsparcie AI dla małych firm w USA",
+      "kat": "Wdrażanie AI w małej firmie zależy bardziej od kogoś, kto pokaże pierwszy konkretny przypadek, niż od dostępu do narzędzia — co z tego może przygotować polska mała firma.",
+      "linkedin": "OpenAI płaci lokalnym specjalistom do 8 tys. dolarów miesięcznie za to, że za darmo pomagają małym firmom wdrażać AI. Pilotaż programu OpenWorks działa na razie w 20 miejscowościach w USA.\n\nPartnerem może być osoba z umiejętnościami technicznymi albo firma konsultingowa. Poświęca dni w miesiącu na pracę z lokalnymi firmami i prowadzi miesięczny warsztat. Firma po drugiej stronie, np. restauracja, sklep czy mała produkcja, dostaje indywidualną pomoc i trzy miesiące ChatGPT Business za darmo. Program wyklucza firmy SaaS oraz finansowane przez venture capital, więc celuje w klasyczny, niezależny biznes.\n\nEfekty są zwyczajne, ale konkretne. Sklep z prezentami w Fargo zbudował z ChatGPT panel magazynowy połączony z narzędziami, których już używał, a według właściciela zlecenie takiego systemu kosztowałoby około 50 tys. dolarów. W firmie Sign Badgers sprawdzanie cen dostawców skróciło się z godzin do 15–20 minut. Inna mała firma dopasowywała zamówienia do dokumentów wysyłki i w ten sposób wyłapała błędy w fakturach dostawców.\n\nNajciekawsze jest dla mnie to, że OpenAI poza trzema miesiącami ChatGPT Business opłaca też człowieka, który siądzie obok właściciela. Moim zdaniem małej firmie zwykle nie brakuje dostępu do ChatGPT, tylko czasu i kogoś, kto pokaże, od czego zacząć.\n\nTo na razie pilotaż tylko w USA, ale przygotować się do takiej pomocy można już teraz:\n– wybrać jedno powtarzalne zadanie, np. sprawdzanie cen u dostawców albo dopasowywanie zamówień do dokumentów,\n– zmierzyć, ile godzin tygodniowo zajmuje dziś, żeby mieć do czego porównać,\n– ustalić, jakich danych firmy nie wklejamy do narzędzi, np. danych klientów,\n– znaleźć kogoś, kto usiądzie z właścicielem na kilka godzin, np. znajomego programistę albo lokalną firmę IT.\n\nCzy w Polsce taką rolę mogliby przejąć lokalni programiści i software house'y?",
+      "komentarz": "Pełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii\nŹródło: https://openai.com/openworks/",
+      "x": [
+        "OpenAI płaci lokalnym specjalistom do 8 tys. dolarów miesięcznie, żeby za darmo pomagali małym firmom wdrażać AI. Program OpenWorks działa na razie w pilotażu w 20 miejscowościach w USA.",
+        "Partner (informatyk albo firma konsultingowa) poświęca dni w miesiącu na pracę z lokalnymi firmami i prowadzi warsztat. Firma dostaje pomoc 1:1 i trzy miesiące ChatGPT Business za darmo. Bez firm SaaS i tych z funduszy VC.",
+        "Efekty są przyziemne: sprawdzanie cen dostawców w jednej firmie skróciło się z godzin do 15–20 minut, a sklep z prezentami zbudował panel magazynowy, który według właściciela kosztowałby w zleceniu ok. 50 tys. dolarów.",
+        "Moim zdaniem małej firmie zwykle nie brakuje dostępu do ChatGPT, tylko czasu i kogoś, kto pokaże, od czego zacząć. OpenAI opłaca właśnie takiego człowieka.",
+        "To na razie tylko USA, ale można się przygotować: wybrać jedno powtarzalne zadanie, zmierzyć, ile zajmuje, ustalić, jakich danych nie wklejamy do narzędzi, i znaleźć kogoś, kto usiądzie z właścicielem na kilka godzin.",
+        "Pełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "liczba",
+          "liczba": "15–20 min",
+          "podpis": "tyle zajmuje sprawdzanie cen dostawców w firmie Sign Badgers z OpenWorks, wcześniej godziny",
+          "zrodlo": "OpenAI, OpenWorks",
+          "styl": "notatka"
+        },
+        "prompt": "Minimalistyczna ilustracja na papierowym tle: drewniana lada małego sklepu, na niej otwarty zeszyt z odręczną listą cen dostawców, obok kalkulator i filiżanka kawy, druga filiżanka po drugiej stronie lady jakby ktoś właśnie usiadł obok, widok z góry, miękkie światło dzienne, wyciszone kolory z jednym zielonym akcentem, główny motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "mem": {
+          "szablon": "Two Buttons",
+          "link": "https://imgflip.com/memegenerator/Two-Buttons",
+          "podglad": "https://i.imgflip.com/4/1g8my4.jpg",
+          "tekst": "lewy przycisk: Zlecić panel magazynowy za 50 tys. dolarów\nprawy przycisk: Poprosić lokalnego informatyka o kilka dni z ChatGPT\npostać: Właściciel małego sklepu"
+        },
+        "infografika_plik": "obrazki/w-1lkhu.png",
+        "plik": "obrazki/w-1lkhu.png"
+      },
+      "termin": "2026-12-07 08:30",
+      "fakty": [
+        "Do 8 tys. $ miesięcznie dla partnera, kilka dni w miesiącu pracy z lokalnymi firmami i miesięczny warsztat: openai.com/openworks",
+        "Pilotaż w 20 'communities' (strona mówi o społecznościach/lokalnych wspólnotach, lista miast m.in. Chicago, Fargo, Charleston, Nowy Jork) – post pisze 'miejscowościach'; tylko niezależne małe firmy w USA; wykluczone SaaS, venture-backed i private equity (strona), opis wydania wymienia SaaS i VC",
+        "Trzy miesiące ChatGPT Business za darmo i wsparcie 1:1 – strona",
+        "Tiny Things (Fargo): panel magazynowy, właściciel szacuje ok. 50 tys. $ przy zleceniu; Sign Badgers: ceny z godzin do 15–20 min (Codex i ChatGPT); Black Paper Party: dopasowanie zamówień do dokumentów wysyłki, błędy w fakturach dostawców – strona",
+        "Nie twierdzę nic o programach w Polsce; porady (zadanie, pomiar, dane, pomocnik) to opinia autora, nie z OpenAI; zdanie o zespołach platformowych/championach to ogólna uwaga, nie ze źródła"
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    },
+    {
+      "id": "w-xru66",
+      "rodzaj": "temat",
+      "temat": "Ślad wodny AI (raport Enverus)",
+      "link_newsa": "https://mamstartup.pl/sztuczna-inteligencja-zuzywa-mniej-wody-niz-mleko-migdalowe-czy-gra-w-golfa-nowy-raport-rzuca-swiatlo-na-koszty-srodowiskowe-ai/",
+      "tytul_newsa": "AI zużywa mniej wody niż mleko migdałowe czy golf – raport Enverus",
+      "kat": "Raport Enverus stawia 1,9 galona wody na 25 dolarów AI obok 308 galonów w mleku migdałowym, ale to średnia z wydatków, z wodą pośrednią z elektrowni, więc przy pytaniach o ślad AI trzeba rozróżniać, co dokładnie jest liczone.",
+      "linkedin": "Według raportu Enverus abonament na AI za 25 dolarów miesięcznie to około 1,9 galona wody, czyli mniej więcej 7 litrów. Za tyle samo pieniędzy w mleku migdałowym jest jej 308 galonów.\n\nEnverus to firma analityczna z branży energii. W raporcie porównała ślad wodny usług AI z innymi wydatkami, zawsze w przeliczeniu na 25 dolarów miesięcznie: wejścia na pole golfowe wychodzą na 679 galonów, a prąd w domu na około 31. To porównanie wydatków, a nie liczby zapytań do chatbota, więc nie mówi, ile wody pochłania jedna rozmowa.\n\nWażne jest też, co wchodzi w te 1,9 galona. Liczba obejmuje wodę zużytą przy chłodzeniu serwerów i tę, która jest potrzebna do wyprodukowania prądu dla centrów danych. Około 90% wody związanej z działaniem modeli zużywają elektrownie, a nie same serwerownie. Raport podaje też, że zużycie wody na akr w kampusie dużego centrum danych jest zbliżone do przeciętnego pola golfowego w USA. Dyrektor ds. badań nad transformacją energetyczną w Enverus mówi, że rezygnacja z jednego latte na mleku migdałowym tygodniowo da większy efekt niż rezygnacja z chatbotów.\n\nRozumiem, dlaczego te liczby się przyjmują, bo dobrze wprowadzają proporcje do debaty, w której często mówi się o wodzie bez żadnej skali. Jednocześnie to dane jednej firmy i uśrednione w przeliczeniu na wydatek, a artykuł nie opisuje pełnej metodologii. Nie mówią też nic o tym, jak wygląda to w konkretnym regionie, gdzie jedno centrum danych może mocno obciążyć lokalne zasoby. Ślad wodny AI nie jest więc zerowy, ale często leży gdzie indziej, niż zakłada dyskusja o serwerowniach.\n\nJeśli ktoś w firmie zapyta o środowiskowy koszt AI, dobrze mieć w głowie dwa rozróżnienia: woda bezpośrednia czy też ta ukryta w prądzie oraz średnia na wydatek czy lokalny wpływ konkretnej inwestycji. Odpowiedź zależy od tego, o co dokładnie pytamy.\n\nCzy w Twojej firmie ktoś liczy ślad środowiskowy narzędzi AI, a jeśli tak, to co wchodzi do tego rachunku?",
+      "komentarz": "Pełny przegląd tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii\nŹródło: https://mamstartup.pl/sztuczna-inteligencja-zuzywa-mniej-wody-niz-mleko-migdalowe-czy-gra-w-golfa-nowy-raport-rzuca-swiatlo-na-koszty-srodowiskowe-ai/",
+      "x": [
+        "Abonament na AI za 25 dolarów miesięcznie to według raportu Enverus około 1,9 galona wody (ok. 7 litrów). Mleko migdałowe za tyle samo pieniędzy: 308 galonów. Wejścia na pole golfowe: 679.",
+        "To porównanie wydatków, nie liczby zapytań do chatbota. Liczba 1,9 galona łączy wodę z chłodzenia serwerów i wodę potrzebną do wytworzenia prądu dla centrów danych.",
+        "Około 90% wody związanej z działaniem modeli zużywają według raportu elektrownie, nie same serwerownie. Zużycie wody na akr w kampusie dużego centrum danych jest zbliżone do pola golfowego w USA.",
+        "Zastrzeżenia: to dane jednej firmy analitycznej, a opis, który czytałem, nie podaje pełnej metodologii. Średnia na wydatek nie mówi też, jak obciążone jest konkretne miejsce, w którym stoi centrum danych.",
+        "Gdy ktoś w firmie zapyta o ślad wodny AI, dopytaj: bezpośredni czy z prądem, średnia czy lokalnie? Więcej newsów z tygodnia w #48 PrzeglądAI: https://przegladai.substack.com/p/wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii"
+      ],
+      "obrazek": {
+        "wybrany": "infografika",
+        "infografika": {
+          "rodzaj": "porownanie",
+          "tytul": "Woda na 25 dolarów miesięcznie",
+          "jednostka": " gal.",
+          "elementy": [
+            {
+              "etykieta": "Subskrypcja AI",
+              "wartosc": 1.9
+            },
+            {
+              "etykieta": "Mleko migdałowe",
+              "wartosc": 308
+            },
+            {
+              "etykieta": "Wejścia na golfa",
+              "wartosc": 679
+            }
+          ],
+          "zrodlo": "Enverus, Data Center Water Use"
+        },
+        "prompt": "Minimalistyczna ilustracja na jasnym papierowym tle: mała szklanka wody stoi obok wysokiego dzbanka mleka migdałowego i dużej konewki, widok z przodu, miękkie światło, wyciszone kolory z jednym niebieskim akcentem, główny motyw na środku kadru z zapasem na brzegach, bez tekstu i bez ludzi, format 3:4.",
+        "mem": {
+          "szablon": "Drake Hotline Bling",
+          "link": "https://imgflip.com/memegenerator/Drake-Hotline-Bling",
+          "podglad": "https://i.imgflip.com/4/30b1gx.jpg",
+          "tekst": "góra: Pytać, ile wody zużywa chatbot\ndół: Pytać, czy liczymy też wodę z elektrowni i jak to wygląda lokalnie"
+        },
+        "infografika_plik": "obrazki/w-xru66.png",
+        "plik": "obrazki/w-xru66.png"
+      },
+      "termin": "2026-12-08 08:30",
+      "fakty": [
+        "Wszystkie liczby (1,9 galona, 308 galonów mleka migdałowego, 679 golfa, ok. 31 prąd domowy, ok. 90% wody w elektrowniach, kampus ~ przeciętne pole golfowe w USA) z mamstartup.pl (WebFetch) przytaczającego raport Enverus 'Data Center Water Use | Setting the Record Straight'; oryginalnego raportu nie sprawdzono, wyszukiwanie go nie znalazło.",
+        "Przeliczenie 1,9 galona na ok. 7 litrów: galon amerykański 3,785 l — moje przeliczenie.",
+        "Cytat o latte: Ryan Luther, Enverus (artykuł nie mówi, czy to jego analiza czy streszczenie raportu); w poście sparafrazowany jako 'dyrektor ds. badań nad transformacją energetyczną'.",
+        "Zastrzeżenia (porównanie wydatkowe, 1,9 gal. łączy wodę bezpośrednią i pośrednią, brak pełnej metodologii i informacji o finansowaniu/recenzji) wg artykułu mamstartup; 'dane jednej firmy' i uwaga o lokalnym obciążeniu to moja ostrożna opinia, nie z raportu.",
+        "Prąd domowy 31 gal. zakłada sieć w całości gazową (nie użyto w poście)."
+      ],
+      "publikuj": true,
+      "uwaga_kuby": "",
+      "wynik": {}
+    }
+  ]
+}

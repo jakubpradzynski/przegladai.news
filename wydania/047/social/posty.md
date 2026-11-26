@@ -1,6 +1,6 @@
 # Posty social — Wydanie #47: Włamanie do Cursora, rodzina Gemini 4 i system AI, który wygrał w krzyżówkach
 
-## 2026-11-20 09:30 — Wstęp wydania
+## [OPUBLIKOWANE] 2026-11-20 09:30 — Wstęp wydania
 
 Weryfikacja faktów: 10/11 potwierdzone — DO SPRAWDZENIA: Napastnik skopiował z magazynu dane z sesji agentów kodujących z 2025 roku
 
@@ -42,7 +42,7 @@ Wydanie #47 PrzeglądAI: https://przegladai.substack.com/p/wydanie-47-wlamanie-d
 
 ---
 
-## 2026-11-29 12:30 — Lato: agenci AI w due diligence
+## [OPUBLIKOWANE] 2026-11-22 10:30 — Lato: agenci AI w due diligence
 
 Źródło: https://xyz.pl/polacy-ze-startupu-lato-maja-47-mln-dolarow-na-rozwoj-i-platforme-ai-za-ktora-klienci-gotowi-sa-placic/
 
@@ -91,22 +91,22 @@ Pełny przegląd tygodnia w #47 PrzeglądAI: https://przegladai.substack.com/p/w
 
 ---
 
-## 2026-11-24 08:30 — LangChain: 300 mln i pilnowanie agentów
+## [OPUBLIKOWANE] 2026-11-25 20:00 — LangChain: 300 mln i pilnowanie agentów
 
 Źródło: https://www.wsj.com/cio-journal/ai-startup-langchain-more-than-doubles-its-valuation-to-3-billion-f83377ad
 
 ### LinkedIn / Facebook / Substack Notes
 
 ```text
-LangChain, twórca platformy do budowy agentów AI, zebrał 300 mln dolarów przy wycenie 3 mld, ponad dwa razy wyższej niż rok temu. Pieniądze mają trafić w LangSmith, czyli narzędzie do pilnowania agentów.
+LangChain, twórca platformy do budowy agentów AI, zebrał 300 mln dolarów przy wycenie 3 mld, ponad dwa razy wyższej niż rok temu. Pieniądze mają trafić do LangSmith, czyli narzędzia do pilnowania agentów.
 
 Rundę poprowadził CapitalG, fundusz Alphabet. LangSmith służy do monitorowania, oceny i wdrażania agentów w firmach i według LangChain używa go ponad 7 tysięcy organizacji. Szef firmy mówi wprost, że to zachowanie agenta jest tym, co najtrudniej kontrolować.
 
-Zwróciłbym uwagę na przykład, który LangChain podaje o Workday: czas wdrożenia nowego agenta miał spaść z pięciu miesięcy do mniej niż jednego dnia. To deklaracja dostawcy, więc traktowałbym ją ostrożnie. Pokazuje jednak, gdzie leży koszt. Wydaje mi się, że w wielu firmach największym kosztem bywa nie zbudowanie prototypu agenta, tylko zgoda na wpuszczenie go na produkcję.
+Zwróciłbym uwagę na przykład, który LangChain podaje o Workday: czas wdrożenia nowego agenta miał spaść z pięciu miesięcy do mniej niż jednego dnia. To deklaracja dostawcy, więc traktowałbym ją ostrożnie. Pokazuje jednak, gdzie leży koszt. W wielu firmach największym kosztem nie jest zbudowanie prototypu agenta, tylko zgoda na wpuszczenie go na produkcję, a następnie kontrolowanie go.
 
-Rozumiem, że start-up sprzedający takie narzędzie będzie mówił, że najtrudniejszy jest właśnie ten etap. Mimo to coś w tym jest: im łatwiej pisać agentów, tym więcej ich powstaje, a każdy trzeba potem sprawdzać, mierzyć i pilnować.
+Oczywiście start-up sprzedający takie narzędzie będzie mówił, że najtrudniejszy jest właśnie ten etap. Mimo to coś w tym jest: im łatwiej pisać agentów, tym więcej ich powstaje, a każdego trzeba potem sprawdzać, mierzyć i pilnować.
 
-Przy planowaniu kolejnego agenta dobrze od razu wpisać do budżetu i harmonogramu ewaluację oraz monitoring, a nie traktować ich jako dodatek na koniec. Dobrze też zawczasu ustalić, po czym poznamy, że agent po zmianie modelu albo promptu nadal robi to samo, co wcześniej.
+Przy planowaniu kolejnego agenta dobrze od razu wpisać do budżetu i harmonogramu ewaluację oraz monitoring, a nie traktować ich jako dodatek na koniec. Dobrze też zawczasu ustalić, po czym poznamy, czy agent po zmianie modelu albo promptu nadal robi to samo, co wcześniej.
 
 Jak u Ciebie sprawdza się, czy agent po zmianie modelu nadal działa tak jak przed nią?
 ```

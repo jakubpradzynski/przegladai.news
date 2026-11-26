@@ -1,0 +1,78 @@
+{
+  "tematy": [
+    "t1",
+    "t2",
+    "t4",
+    "t6",
+    "t7",
+    "w-52g9u",
+    "w-1lkhu",
+    "w-xru66"
+  ],
+  "szczegoly": [
+    {
+      "id": "t1",
+      "z_propozycji_ai": true,
+      "link": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "tytul_newsa": "Anthropic debiutuje na Nasdaq – największe IPO w historii",
+      "kat": "Cena 83 dolary, wycena 1,5 bln i 81,3 mld zebranych — Kuba przekłada liczby z IPO na to, co znaczą dla budżetów AI i wyceny narzędzi w zespołach.",
+      "wskazowka": ""
+    },
+    {
+      "id": "t2",
+      "z_propozycji_ai": true,
+      "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+      "tytul_newsa": "Sierra podwaja wycenę do 30 mld dolarów w pół roku",
+      "kat": "Rozliczanie za wyniki zamiast licencji napędza wzrost agentów do obsługi klienta — Kuba ocenia, co to zmienia w kupowaniu narzędzi AI przez firmy.",
+      "wskazowka": ""
+    },
+    {
+      "id": "t4",
+      "z_propozycji_ai": true,
+      "link": "https://epochal.com/blog/introducing-epochal",
+      "tytul_newsa": "Epochal: byli twórcy xAI budują „wehikuł czasu” dla internetu i uczą AI przewidywać",
+      "kat": "Agent przeglądający internet z wybranego dnia z przeszłości — Kuba o tym, jak testować prognozy agentów bez „przecieku” wiedzy o tym, jak historia się skończyła.",
+      "wskazowka": "To bym się chyba skupił przede wszystkim na tym właśnie wehikule czasu dla internetu, czyli dla tym, że można podejrzeć każdą każdą stronę tam z konkretnego momentu w czasie i to przeglądać."
+    },
+    {
+      "id": "t6",
+      "z_propozycji_ai": true,
+      "link": "https://mamstartup.pl/sztuczna-inteligencja-oceni-zdolnosc-kredytowa-krakowski-bank-spoldzielczy-pionierem-w-europie/",
+      "tytul_newsa": "Krakowski Bank Spółdzielczy wdroży scoring kredytowy oparty na AI",
+      "kat": "Pierwsze takie wdrożenie w Polsce i Europie w banku spółdzielczym — Kuba o tym, jak banki powinny pokazywać klientowi, skąd bierze się decyzja kredytowa.",
+      "wskazowka": "Może tutaj coś warto wskazać pod kątem AI Actu i na przykład tego, tego, że taki scoring kredytowy oparty na AI, jakie gdzieś tam może być, jak może być postrzegany właśnie w kontekście AI Act i jakie może mieć konsekwencje, że to może być jakiś przykład takiego wdrożenia, które warto właśnie obserwować też pod tym kątem, jako pierwsze i tak dalej."
+    },
+    {
+      "id": "t7",
+      "z_propozycji_ai": true,
+      "link": "https://x.com/ubereng/status/2125008806249930999?a=k2tu-eTcykp4pWh21as",
+      "tytul_newsa": "Uber ocenia milion wywołań agentowych skilli miesięcznie: jak zarządza 5 tysiącami skilli",
+      "kat": "Od jednego skilla w październiku 2025 do ponad 5 tysięcy w rok — Kuba o tym, jak zarządzać skillami agentów jak kodem: repozytorium, linter, ewaluacje.",
+      "wskazowka": "Tu myślę, że warto wskazać to jako po prostu tekst, który jest bardzo kompleksowy, pokazuje jak ta firma działa, warto się z nim zapoznać, bo można też to sobie pewne rzeczy przekuć do podejścia w prywatnym życiu, w prywatnym użyciu AI."
+    },
+    {
+      "id": "w-52g9u",
+      "z_propozycji_ai": false,
+      "link": "https://claude.com/resources/articles/introducing-claude-ship",
+      "tytul_newsa": "Anthropic prezentuje Claude Ship – agenta od review, poprawek i zatwierdzania pull requestów",
+      "kat": "Tu można pewnie, tutaj by było fajnie pewnie wskazać jaka tutaj jest różnica w stosunku do takiego, że samemu się to robi jakby, jak ja na przykład, nie wiem, tworzę właśnie po requesta, robię review, tworzę poprawki i tak dalej, to jak tutaj to wygląda i czym to się różni od robienia jakichś customowych agentów itd.",
+      "wskazowka": ""
+    },
+    {
+      "id": "w-1lkhu",
+      "z_propozycji_ai": false,
+      "link": "https://openai.com/openworks/",
+      "tytul_newsa": "OpenAI uruchamia OpenWorks – bezpłatne wsparcie AI dla małych firm w USA",
+      "kat": "To może być ciekawe pod kątem właśnie skalowania tego na mniejsze firmy, a nie tylko na duże. Pytanie, czy można tutaj coś z tego wyciągnąć dla polskich małych firm.",
+      "wskazowka": ""
+    },
+    {
+      "id": "w-xru66",
+      "z_propozycji_ai": false,
+      "link": "https://mamstartup.pl/sztuczna-inteligencja-zuzywa-mniej-wody-niz-mleko-migdalowe-czy-gra-w-golfa-nowy-raport-rzuca-swiatlo-na-koszty-srodowiskowe-ai/",
+      "tytul_newsa": "AI zużywa mniej wody niż mleko migdałowe czy golf – raport Enverus",
+      "kat": "",
+      "wskazowka": ""
+    }
+  ]
+}

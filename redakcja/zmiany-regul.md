@@ -290,3 +290,33 @@ Spisane z analizy wydań #29–#38: tytuły, opisy, tagi, priorytety, wstęp, SE
 - social.md, „Obrazki”: Kuba użył proponowanych szablonów memów (Distracted Boyfriend, UNO Draw 25 Cards) i zrobił je sam; do posta o Lato wybrał infografikę — tekst mema w jednym krótkim polu.
 - social-platformy.md, „Harmonogram”: post główny 9:30 (3. raz), jeden pogłębiony w niedzielę ok. 12:30, reszta wt–czw 8:30; planować 3–4 posty na dwa tygodnie.
 
+
+## 2026-11-25 — posty social #47 (dopiski po zamknięciu)
+
+- social.md, przykłady poprawek: LangChain — usunięte „wydaje mi się” i „rozumiem, że” (wnioski wprost, spokojnie), na podstawie 1. poprawki tekstu.
+- social-platformy.md, „Harmonogram”: terminy bliżej wydania — niedziela 10:30, wieczór 20:00; pierwszy pogłębiony w weekend po wydaniu, bez planowania poza 2 tygodnie (na podstawie: 2 zmiany terminu).
+
+## 2026-11-26 — przegląd stron przed wydaniem #48
+
+- preselekcja.md: AI nie dało żadnego „tak” i Kuba wziął tylko 5 ze 73 „może” (0 z 243 „nie” — reguły automatyczne bez zmian). The Decoder: 0 z 50 po raz czwarty z rzędu — doprecyzowano, że ruchy kadrowe, stanowiska i głośne wątki też „nie”. OpenAI News: 0 z 16, w trzech przeglądach 0 z 30 — wzmocniono „nie” (na podstawie: 3 przeglądy bez wziętych).
+- preselekcja.md: Future Tools — przejścia kluczowych osób między czołowymi labami i premiery produktów czołowych labów (Thariq → OpenAI, Claude Ship) zostają „może”; Mam Startup — raport o wpływie AI (woda) i scoring AI w banku zostają „może”; LangChain — harness agentów z lekcją („knowledge factory”) „może” (na podstawie: 5 wziętych „może”).
+- preselekcja.md: tabela „Skuteczność stron” odświeżona, przykłady decyzji zaktualizowane (najstarsze 4 usunięte).
+
+## 2026-11-26 — wydanie #47 (porównanie z opublikowanym postem)
+
+- Bez zmian reguł: 3 wpisy z `dziennik.py substack 47` to artefakty formatu Substacka (doklejone „Zasubskrybuj teraz” we wstępie, znacznik „[22 min]” w opisie wideo przy pustym polu Czas), nie poprawki Kuby.
+
+## 2026-11-26 — wydanie #48
+
+- wstep.md: przykład — rada na końcu wstępu dotycząca tylko jednego z trzech tematów wycięta, wstęp kończy się „;)” (na podstawie: 1× usunięte zdanie, razem z #42 puenta AI zbędna).
+- tagi.md: przykład Chrome DevTools dla agentów („Nowości” → „Bliżej technologii”) potwierdza regułę o narzędziach developerskich; usunięty najstarszy przykład (#39 paywall, już jest regułą).
+- priorytety.md, „Czego się nauczyliśmy z selekcji”: #48 — z rezerwy lekkie wpisy (woda, 100+ narzędzi), odrzucone OpenAI o perplexity i pozew o Groka; kolejność: największy news pierwszy w każdej grupie (na podstawie: 2 z rezerwy, 2 odrzucone z TOP, zmiany kolejności w 4 grupach).
+- seo.md: bez zmian — opis SEO w wydaniu został z wariantu innego tytułu (Nasdaq zamiast Huanga), więc to raczej pomyłka w adminie niż poprawka stylu; obserwować, czy się powtórzy.
+
+## 2026-11-26 — posty social #48
+
+- social.md, „Rodzaje postów” (zakończenie): pytanie na końcu tylko w poście głównym i przy otwartej tezie; post pogłębiony zakończony radą dla zespołu bez pytania (na podstawie: 3× usunięte albo nieobecne pytanie — Business Hub #46, Devin Apps #47, scoring KBS #48).
+- social.md, „Ton i język”: bez zdań o tym, czym tekst nie jest („To moje pomysły…”, „nikt niezależnie nie sprawdził”) — 2× usunięte (Lato #47, Epochal #48); „przepisy obowiązują”, a nie „zaczną się stosować” (KBS).
+- social.md, „Wybór tematów”: #48 — z 7 propozycji wybrane 5 i 3 dodane własne; do publikacji idą KBS (AI Act), Epochal, Uber i woda, a polecone IPO i Sierra nie (3. wydanie z rzędu, że polecone przegrywają); wskazówki dyktowane luźno traktujemy jako kąt merytoryczny.
+- social.md, przykłady: dodane 4 z #48, usunięte 5 najstarszych (#45).
+- social-platformy.md, o-mnie.md: bez zmian (terminy bez przesunięć względem propozycji; brak nawiązań osobistych).

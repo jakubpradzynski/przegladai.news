@@ -1,0 +1,61 @@
+{
+  "numer": 48,
+  "tematy": [
+    {
+      "id": "t1",
+      "link": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "tytul_newsa": "Anthropic debiutuje na Nasdaq – największe IPO w historii",
+      "kat": "Cena 83 dolary, wycena 1,5 bln i 81,3 mld zebranych — Kuba przekłada liczby z IPO na to, co znaczą dla budżetów AI i wyceny narzędzi w zespołach.",
+      "dlaczego": "Duże liczby z biznesu AI, które da się przełożyć na decyzje firm, to temat pierwszego wyboru od #44; IPO to największy news finansowy tygodnia.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t2",
+      "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+      "tytul_newsa": "Sierra podwaja wycenę do 30 mld dolarów w pół roku",
+      "kat": "Rozliczanie za wyniki zamiast licencji napędza wzrost agentów do obsługi klienta — Kuba ocenia, co to zmienia w kupowaniu narzędzi AI przez firmy.",
+      "dlaczego": "Runda finansowania z konkretnymi liczbami (400 mln przychodu, 30 mld wyceny) i wyraźnym wątkiem agentowym — typ newsa, który Kuba chętnie dodaje.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t3",
+      "link": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=13s",
+      "tytul_newsa": "Jak jeden zespół SpaceXSI skaluje agentów kodujących do 11 tysięcy pull requestów miesięcznie",
+      "kat": "11 tysięcy PR-ów miesięcznie przy 0,5% cofnięć bierze się z fundamentów bazy kodu, nie z lepszego modelu — Kuba jako manager o tym, co trzeba mieć, zanim agent zacznie pisać.",
+      "dlaczego": "Duże liczby z agentami kodującymi i konkretny wniosek dla zespołów; dotyka wprost kosztów i jakości, tematów, które Kuba wybiera.",
+      "rekomendowany": true
+    },
+    {
+      "id": "t4",
+      "link": "https://epochal.com/blog/introducing-epochal",
+      "tytul_newsa": "Epochal: byli twórcy xAI budują „wehikuł czasu” dla internetu i uczą AI przewidywać",
+      "kat": "Agent przeglądający internet z wybranego dnia z przeszłości — Kuba o tym, jak testować prognozy agentów bez „przecieku” wiedzy o tym, jak historia się skończyła.",
+      "dlaczego": "Nowy produkt startupu z doświadczonym zespołem i zaskakującym pomysłem; dobra historia z konkretem (bilion stron, 30 lat).",
+      "rekomendowany": false
+    },
+    {
+      "id": "t5",
+      "link": "https://calif.io/java4shell",
+      "tytul_newsa": "Java4Shell – luka w OpenJDK, którą Codex znalazł w godzinę",
+      "kat": "Godzina pracy agenta i poniżej 200 dolarów w tokenach wystarczyły do znalezienia i wykorzystania luki — Kuba o tym, jak zmienia się tempo łatania podatności.",
+      "dlaczego": "Liczby kosztu i czasu z bezpieczeństwa; praktyczny wniosek (aktualizacja Javy), ale wąsko techniczny, więc niepolecany.",
+      "rekomendowany": false
+    },
+    {
+      "id": "t6",
+      "link": "https://mamstartup.pl/sztuczna-inteligencja-oceni-zdolnosc-kredytowa-krakowski-bank-spoldzielczy-pionierem-w-europie/",
+      "tytul_newsa": "Krakowski Bank Spółdzielczy wdroży scoring kredytowy oparty na AI",
+      "kat": "Pierwsze takie wdrożenie w Polsce i Europie w banku spółdzielczym — Kuba o tym, jak banki powinny pokazywać klientowi, skąd bierze się decyzja kredytowa.",
+      "dlaczego": "Polska scena AI z konkretem; przy polskich wdrożeniach Kuba bierze część tematów.",
+      "rekomendowany": false
+    },
+    {
+      "id": "t7",
+      "link": "https://x.com/ubereng/status/2125008806249930999?a=k2tu-eTcykp4pWh21as",
+      "tytul_newsa": "Uber ocenia milion wywołań agentowych skilli miesięcznie: jak zarządza 5 tysiącami skilli",
+      "kat": "Od jednego skilla w październiku 2025 do ponad 5 tysięcy w rok — Kuba o tym, jak zarządzać skillami agentów jak kodem: repozytorium, linter, ewaluacje.",
+      "dlaczego": "Skala i praktyka dużego zespołu inżynierskiego; wąsko techniczny, więc niepolecany.",
+      "rekomendowany": false
+    }
+  ]
+}

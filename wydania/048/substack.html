@@ -1,0 +1,143 @@
+<meta charset="utf-8">
+<div style="position: sticky; top: 0; background: #fff; padding: 10px 0; border-bottom: 1px solid #ddd; margin-bottom: 16px; font-family: sans-serif;">
+<button id="kopiuj" style="background: #5b2a86; color: #fff; border: 0; border-radius: 6px; padding: 8px 16px; font-size: 14px; cursor: pointer;">📋 Kopiuj treść do Substacka</button>
+<span id="kopiuj-status" style="margin-left: 10px; color: #555; font-size: 13px;">Tytuł, podtytuł i SEO są w bloku metadanych na dole.</span>
+</div>
+<script>
+document.getElementById('kopiuj').onclick = async function () {
+  var el = document.getElementById('tresc'), status = document.getElementById('kopiuj-status');
+  try {
+    await navigator.clipboard.write([new ClipboardItem({
+      'text/html': new Blob([el.innerHTML], {type: 'text/html'}),
+      'text/plain': new Blob([el.innerText], {type: 'text/plain'})
+    })]);
+    status.textContent = 'Skopiowano — wklej w edytorze Substacka (Cmd+V).';
+  } catch (e) {
+    var range = document.createRange(); range.selectNodeContents(el);
+    var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    document.execCommand('copy'); sel.removeAllRanges();
+    status.textContent = 'Skopiowano (tryb zapasowy) — wklej w edytorze Substacka.';
+  }
+};
+</script>
+<h1>Wydanie #48: Hipoteza Riemanna, Claude Ship i powrót Huanga do Nvidii</h1>
+<div id="tresc">
+<p>Cześć!</p>
+<p>Matematyk z Anthropic twierdzi, że z pomocą Claude udowodnił hipotezę Riemanna, a dowód sprawdził mechanicznie język Lean – eksperci będą go jednak analizować jeszcze długo. Anthropic pokazało też Claude Ship, agenta, który prowadzi pull request od review po decyzję o zatwierdzeniu. W Nvidii z kolei Jensen Huang wraca na stanowisko prezesa, choć niezależne śledztwo wciąż trwa ;)</p>
+<p>Zapraszam do lektury!</p>
+<hr>
+<h3><a href="https://mamstartup.pl/sztuczna-inteligencja-oceni-zdolnosc-kredytowa-krakowski-bank-spoldzielczy-pionierem-w-europie/">Krakowski Bank Spółdzielczy wdroży scoring kredytowy oparty na AI</a></h3>
+<p>Krakowski Bank Spółdzielczy zapowiada, że jako pierwszy w Polsce i w Europie użyje do oceny zdolności kredytowej systemu AI od polskiego oddziału Hitachi. System wcześniej działał w Japonii, m.in. przy finansowaniu zakupów w sieci handlowej. Na początek obsłuży pożyczki gotówkowe, a później kredyty hipoteczne. Algorytm bierze m.in. kwotę, okres spłaty i staż pracy, a wynikiem jest liczba od 0 do 1 – szansa na terminową spłatę. Przy odmowie ma wskazać czynniki, które o niej zdecydowały. Hitachi mówi o zaawansowanych rozmowach z komercyjnymi bankami, więc podobne systemy mogą szybko trafić do większych graczy.</p>
+<p><strong><span data-color="#1555e2" style="color: rgb(21, 85, 226);">[Nowości i ogłoszenia]</span></strong> <strong><span data-color="#ff0000" style="color: rgb(255, 0, 0);">[Polska]</span></strong></p>
+<hr>
+<h3><a href="https://xyz.pl/dzieje-sie/grupa-cyber_folks-pokazala-asystenta-ai-dla-wlascicieli-sklepow-wkrotce-dostepny-na-platformie-shoper-2762?pnespid=WOQg8VAE8DUTyVmY4sqJDUJRvwwn3_t7s1gQGrMAbZfKQ.yGYj8.WCVzDDKvlijCsKrUJeipsQ">cyber_Folks pokazuje głosowego asystenta AI dla właścicieli sklepów internetowych</a></h3>
+<p>Grupa cyber_Folks zaprezentowała nową wersję asystenta robo_Folks, z którym właściciel sklepu rozmawia głosem zamiast klikać w panel. Asystent sam wykrywa problemy, proponuje rozwiązania i wykonuje zlecone zadania. Moduł głosowy powstał z ElevenLabs, a mówi głosem znanym z nawigacji samochodowej. Pierwsze sklepy na platformie Shoper dostaną go tuż przed Black Friday, potem PrestaShop i Sylius. Dotychczasowy czat odbył w trzecim kwartale około 27 tysięcy rozmów. To przykład, jak polskie platformy e-commerce zamieniają panele administracyjne na agenta.</p>
+<p><strong><span data-color="#1555e2" style="color: rgb(21, 85, 226);">[Nowości i ogłoszenia]</span></strong> <strong><span data-color="#ff0000" style="color: rgb(255, 0, 0);">[Polska]</span></strong></p>
+<hr>
+<h3><a href="https://claude.com/resources/articles/introducing-claude-ship">Anthropic prezentuje Claude Ship – agenta od review, poprawek i zatwierdzania pull requestów</a></h3>
+<p>Claude Ship prowadzi pull request przez cały proces: review, poprawki i decyzję o zatwierdzeniu. PR Steward reaguje na nieprzechodzące testy CI, konflikty i uwagi z review, ale sam niczego nie zatwierdza ani nie scala. Claude Approvals stosuje politykę zapisaną w repozytorium: rutynowe zmiany może przepuścić sam, a resztę oddaje człowiekowi. Na początek da się go włączyć w trybie samej obserwacji. W zespole Claude Code liczba scalonych PR-ów wzrosła ponad dwukrotnie od czerwca do września, a odsetek cofniętych zmian spadł o ponad 40%. Jeśli review to wąskie gardło w twoim zespole, warto zacząć od trybu obserwacji i sprawdzić, ile decyzji agent podjąłby tak jak ludzie.</p>
+<p><strong><span data-color="#1555e2" style="color: rgb(21, 85, 226);">[Nowości i ogłoszenia]</span></strong></p>
+<hr>
+<h3><a href="https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/">Sierra podwaja wycenę do 30 mld dolarów w pół roku</a></h3>
+<p>Sierra, startup z agentami AI do obsługi klienta, współzałożony przez byłego współprezesa Salesforce, zebrała 1,75 mld dolarów przy wycenie 30 mld. Poprzednia runda sprzed sześciu miesięcy wyceniała firmę na 15 mld, więc wartość podwoiła się w pół roku. Roczny przychód (run-rate) także podwoił się w pięć miesięcy, do 400 mln dolarów. Klientem jest prawie połowa firm z Fortune 50, m.in. HSBC i Wells Fargo. Na tle konkurencji to wielka skala: Decagon jest wyceniany na 4,5 mld, a Parloa na 3 mld. Sierra rozlicza się za wyniki, a nie za licencje, i to według firmy napędza wzrost.</p>
+<p><strong><span data-color="#1555e2" style="color: rgb(21, 85, 226);">[Nowości i ogłoszenia]</span></strong></p>
+<hr>
+<h3><a href="https://www.engadget.com/2325684/anthropic-softens-its-data-retention-policy-for-mythos-and-fable-model-use/">Anthropic pozwala firmom trzymać dane z modeli Mythos i Fable na własnych serwerach</a></h3>
+<p>Anthropic łagodzi wymóg, który zniechęcał firmy do modeli Mythos i Fable. Od czerwca firma przechowywała prompty i odpowiedzi przez 30 dni, żeby wykrywać nadużycia, a klienci biznesowi nie chcieli oddawać tych danych. Nowy system Enterprise Frontier Safeguards, na razie we wczesnej wersji, pozwala trzymać je u siebie. Anthropic robi tylko okresowe, 15-minutowe kontrole pod kątem cyberataków, a przy problemie alarmuje klienta i nie widzi samych danych. To odpowiedź na politykę zerowego przechowywania danych, którą OpenAI ogłosiło w sierpniu. Dla firm z wrażliwymi danymi znika główna przeszkoda we wdrożeniu tych modeli.</p>
+<p><strong><span data-color="#1555e2" style="color: rgb(21, 85, 226);">[Nowości i ogłoszenia]</span></strong></p>
+<hr>
+<h3><a href="https://epochal.com/blog/introducing-epochal">Epochal: byli twórcy xAI budują „wehikuł czasu” dla internetu i uczą AI przewidywać</a></h3>
+<p>Nowa firma Epochal, założona m.in. przez członków zespołu założycielskiego xAI, pokazała pierwszy produkt: Time Portal. To piaskownica, w której agent może przeglądać internet dokładnie tak, jak wyglądał w wybranym dniu z przeszłości. Firma zaindeksowała ponad bilion stron z 30 lat, z dokładnością do minuty. Cel to uczyć modele podejmowania decyzji na wiedzy sprzed wyniku, a nie z wiedzą, jak historia się skończyła. Dla twórców agentów to narzędzie do testów prognoz bez przecieku przyszłości.</p>
+<p><strong><span data-color="#1555e2" style="color: rgb(21, 85, 226);">[Nowości i ogłoszenia]</span></strong></p>
+<hr>
+<h3><a href="https://openai.com/openworks/">OpenAI uruchamia OpenWorks – bezpłatne wsparcie AI dla małych firm w USA</a></h3>
+<p>OpenAI buduje w USA sieć partnerów OpenWorks, którzy bezpłatnie pomagają małym firmom wdrażać AI. Partner, czyli osoba z umiejętnościami technicznymi albo firma konsultingowa, poświęca kilka dni w miesiącu na pracę z lokalnymi firmami i warsztaty, a OpenAI płaci mu do 8 tys. dolarów miesięcznie. Mała firma dostaje indywidualną pomoc i trzy miesiące ChatGPT Business za darmo. Pilotaż działa w 20 miastach. Efekty są prozaiczne: panel do zarządzania tysiącem produktów w sklepie albo automatyczne sprawdzanie cen dostawców, które skraca zadanie z godzin do 15–20 minut. Program wyklucza firmy SaaS i finansowane przez venture capital, więc celuje w klasyczny mały biznes.</p>
+<p><strong><span data-color="#1555e2" style="color: rgb(21, 85, 226);">[Nowości i ogłoszenia]</span></strong></p>
+<hr>
+<h3><a href="https://z.ai/blog/glm-5.4">Z.ai prezentuje GLM-5.4, pierwszy flagowy model z architekturą „loop transformer”</a></h3>
+<p>Chińskie Z.ai pokazało GLM-5.4, model, w którym te same warstwy sieci są przetwarzane dwa razy, więc głębiej rozumuje bez dokładania parametrów. Firma twierdzi, że dorównuje modelom o 2–3 bilionach parametrów, choć sam ma 750 mld. Autorzy chwalą się szybkością do 200 tokenów na sekundę i nastawieniem na kodowanie, w tym generowanie wideo, gier i modeli 3D. Przyznają też wadę: model wpada w zbyt długie „maratony myślenia”. Wagi mają trafić do open source po testach bezpieczeństwa, a API wkrótce.</p>
+<p><strong><span data-color="#1555e2" style="color: rgb(21, 85, 226);">[Nowości i ogłoszenia]</span></strong></p>
+<hr>
+<h3><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/">Genie 4 dostępny w Project Genie – światy generowane z dźwiękiem i edycją w trakcie sesji</a></h3>
+<p>Google udostępnia Genie 4, model generujący interaktywne światy, subskrybentom Google AI Ultra w aplikacji Project Genie. W trakcie sesji można zmieniać świat poleceniami tekstowymi, np. pogodę czy postacie, a model dodaje dźwięk dopasowany do sceny. Pojawiła się też galeria, w której można publikować i remiksować cudze światy. Starszy Genie 3 dostał sesje do 3 minut zamiast 60 sekund. Wciąż jest to wczesny model badawczy, a całość ma znak wodny SynthID. To raczej pokaz kierunku niż narzędzie do pracy, ale pokazuje, dokąd idą modele światów.</p>
+<p><strong><span data-color="#1555e2" style="color: rgb(21, 85, 226);">[Nowości i ogłoszenia]</span></strong></p>
+<hr>
+<h3><a href="https://lethain.com/small-changes/">Jak szybciej zatwierdzać małe pull requesty, gdy review blokuje zespół</a></h3>
+<p>Inżynierowie w Imprint scalają średnio cztery razy więcej pull requestów niż dwa lata temu, a mediana czasu przeglądu wzrosła z 33 do 77 minut. Will Larson, znany autor o zarządzaniu inżynierią, opisuje eksperyment small-change. PR dostaje szybkie zatwierdzenie, jeśli ma poniżej 1000 linii, bot AI nie zgłosił poważnych uwag, a autor scalił w tym serwisie co najmniej 10 zmian. Wyłączone są biblioteki współdzielone i wrażliwe ścieżki, np. obsługa pieniędzy. Na razie kwalifikuje się około 10% zmian, a wdrożenie zajęło dwa dni. Mimo większej liczby zmian incydentów jest o 42% mniej. Jeśli twój zespół tonie w review, to gotowa lista kryteriów do przetestowania.</p>
+<p><strong><span data-color="#bf9000" style="color: rgb(191, 144, 0);">[Bliżej technologii]</span></strong></p>
+<hr>
+<h3><a href="https://calif.io/java4shell">Java4Shell – luka w OpenJDK, którą Codex znalazł w godzinę</a></h3>
+<p>Badacze z firmy Calif ujawnili lukę w dekoderze Base64 w OpenJDK. Pozwala ona bez logowania zapisywać i czytać pamięć serwera, a w efekcie zdalnie wykonać kod. Błąd siedzi w zoptymalizowanej procedurze dla procesorów z AVX-512. Agent Codex znalazł go w około godzinę, a działający exploit powstał w kolejne dwie, za mniej niż 200 dolarów w tokenach. Podatne w domyślnej konfiguracji były m.in. Keycloak, Jira, Jenkins i Artifactory. Oracle wydał już poprawkę, więc zaktualizuj Javę. Jeśli nie możesz, uruchom JVM z flagą -XX:-UseBASE64Intrinsics.</p>
+<p><strong><span data-color="#bf9000" style="color: rgb(191, 144, 0);">[Bliżej technologii]</span></strong></p>
+<hr>
+<h3><a href="https://www.theregister.com/security/2026/11/18/microsofts-official-python-agent-framework-hijacked-to-distribute-malware/5310858">Oficjalny pakiet Microsoft agent-framework w PyPI zainfekowany malware kradnącym dane logowania</a></h3>
+<p>Atakujący przejął oficjalny pakiet Microsoft agent-framework dla Pythona w PyPI i opublikował wersje 1.26.1 i 1.26.2 z malware. Pakiet ma blisko 200 tysięcy pobrań miesięcznie. Szkodliwy kod nie wymaga importowania pakietu, wystarczy, że jest zainstalowany w środowisku. Kradnie zmienne środowiskowe i sekrety do Azure, Gita, Dockera czy Hugging Face, a w środowiskach CI próbuje pozyskać też nowe tokeny z GitHub Actions i Azure DevOps. Jeśli masz te wersje, załóż kompromitację i zrotuj wszystkie sekrety, które były dostępne w środowisku. Bezpieczna jest wersja 1.26.0.</p>
+<p><strong><span data-color="#bf9000" style="color: rgb(191, 144, 0);">[Bliżej technologii]</span></strong></p>
+<hr>
+<h3><a href="https://x.com/ubereng/status/2125008806249930999?a=k2tu-eTcykp4pWh21as">Uber ocenia milion wywołań agentowych skilli miesięcznie: jak zarządza 5 tysiącami skilli</a></h3>
+<p>Uber opisuje, jak zarządza skillami agentów, czyli plikami Markdown, które uczą agenta jednej pracy. Wspólne repozytorium urosło od jednego skilla w październiku 2025 do ponad 5 tysięcy, a agenci wywołują je ponad milion razy w miesiącu. Firma pokazuje dystrybucję przez Git, linter z regułami dobrego skilla oraz ewaluacje: LLM-as-judge, ocenę trajektorii agenta i testy ablacyjne, w których skill usuwa się i porównuje odpowiedzi. Dla zespołów wdrażających agentów w firmie to rzadki przykład skali i konkretnych praktyk jakości.</p>
+<p><strong><span data-color="#bf9000" style="color: rgb(191, 144, 0);">[Bliżej technologii]</span></strong></p>
+<hr>
+<h3><a href="https://developer.chrome.com/docs/devtools/agents?hl=pl">Chrome DevTools dla agentów – przeglądarka, którą agent AI potrafi testować i debugować</a></h3>
+<p>Google pokazuje zestaw narzędzi, dzięki którym agent AI sam sprawdza w Chrome kod, który napisał. Potrafi połączyć się z żywą sesją, emulować urządzenia i ścieżki użytkownika, uruchomić audyt Lighthouse oraz szukać wycieków pamięci. Działa to przez CLI, bez narzutu MCP, a w Claude Code i Codexie instaluje się wtyczką. Google podaje, że jedna z firm skróciła ręczny audyt wydajności o 92%. Dla zespołów front-endowych to sposób, by agent zamykał pętlę: napisał, sprawdził w przeglądarce, poprawił.</p>
+<p><strong><span data-color="#bf9000" style="color: rgb(191, 144, 0);">[Bliżej technologii]</span></strong></p>
+<hr>
+<h3><a href="https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=13s">Jak jeden zespół SpaceXSI skaluje agentów kodujących do 11 tysięcy pull requestów miesięcznie</a></h3>
+<p>Lauren Tan z zespołu Grok Bot w SpaceXSI opowiada, jak agenci kodujący produkują tam 11 tysięcy pull requestów miesięcznie przy cofnięciach na poziomie około 0,5%. Sekret to nie lepszy model, tylko fundamenty: architektura wymuszana regułami lint zamiast komentarzy, automatyczne testy i weryfikacja w czasie działania, a przy krytycznych fragmentach nawet formalna weryfikacja. Zespół świadomie wydaje tokeny na sprawdzanie kodu, a nie tylko na jego pisanie. Wniosek dla zespołów: zanim pomyślisz o „fabryce oprogramowania” z agentów, zadbaj o jakość bazy kodu.</p>
+<p><strong><span data-color="#bf9000" style="color: rgb(191, 144, 0);">[Bliżej technologii]</span></strong> <strong><span>[17 min]</span></strong></p>
+<hr>
+<h3><a href="https://www.linkedin.com/blog/engineering/ai/where-agents-meet-the-browser-building-a-browser-native-agent">Jak LinkedIn zbudował agenta AI działającego w przeglądarce</a></h3>
+<p>Inżynierowie LinkedIna zbudowali asystenta w rozszerzeniu Chrome, który łączy pracę w kilku narzędziach naraz, na przykład zamienia wątek o incydencie na ticket z linkami do źródeł. Agent czyta stronę przez drzewo dostępności, a nie zrzuty ekranu, i po każdej akcji wysyła tylko zmienione fragmenty, co oszczędza tokeny. Model działa przez lokalny backend i zatwierdzone endpointy firmowe, a dane z pól z hasłami i kartami są usuwane przed wysłaniem. Użytkownik widzi każdy klik agenta. Jeśli planujesz agenta do pracy w narzędziach firmowych, to dobry przegląd decyzji o bezpieczeństwie i kosztach.</p>
+<p><strong><span data-color="#bf9000" style="color: rgb(191, 144, 0);">[Bliżej technologii]</span></strong></p>
+<hr>
+<h3><a href="https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering">Jak LLM przyspiesza inżynierię wsteczną – od aparatów Sony po firmware syntezatorów</a></h3>
+<p>Autor pokazuje, jak agent AI analizuje pliki binarne z użyciem Ghidry i radare2 i zapisuje ustalenia w plikach Markdown. Dzięki temu nie gubi kontekstu po kompakcji i można mu przekazać zadanie dalej. Gdy agent krąży w kółko, pomaga skill z pętlą: hipoteza, eksperyment, zapis wyniku w tabeli. Efekty to protokoły aparatów Sony Alpha, własne firmware do syntezatorów i sterownik drukarki dla macOS. Doświadczenie człowieka nadal jest potrzebne, żeby rozpoznać ślepy zaułek. Wpis zebrał 317 punktów na Hacker News.</p>
+<p><strong><span data-color="#bf9000" style="color: rgb(191, 144, 0);">[Bliżej technologii]</span></strong></p>
+<hr>
+<h3><a href="https://github.com/HKUDS/CLI-Anything">CLI-Anything – generowanie interfejsów CLI dla dowolnych programów, żeby obsługiwali je agenci AI</a></h3>
+<p>Projekt open source, który w agencie kodującym, np. Claude Code, Cursorze czy Codexie, generuje z kodu źródłowego programu interfejs wiersza poleceń. Agent dostaje wtedy wygodny sposób na sterowanie aplikacją, wraz z wyjściem w JSON. W katalogu CLI-Hub są już gotowe narzędzia m.in. do GIMP-a, Blendera, LibreOffice czy OBS. Repozytorium ma około 66 tysięcy gwiazdek, więc to jeden z najgłośniejszych projektów na GitHubie. Jeśli chcesz, żeby agent obsługiwał program bez API, możesz zacząć od gotowego CLI z katalogu.</p>
+<p><strong><span data-color="#bf9000" style="color: rgb(191, 144, 0);">[Bliżej technologii]</span></strong></p>
+<hr>
+<h3><a href="https://github.com/GoogleChrome/modern-web-guidance-src">Google udostępnia Modern Web Guidance – aktualną wiedzę o webie dla agentów kodujących</a></h3>
+<p>Zespoły Chrome, Edge, Firefoxa i MDN przygotowały zestaw skilli, które uczą asystentów kodowania nowoczesnej platformy webowej. Obejmuje 269 funkcji przeglądarek i 206 przypadków użycia, od CSS po dostępność i wbudowane AI. Przewodniki są odchudzone z tego, co modele już wiedzą, więc zużywają mało tokenów. Narzędzie potrafi też przeskanować kod i wskazać przestarzałe wzorce, które da się zastąpić natywnymi rozwiązaniami przeglądarki. Instalacja to jedno polecenie `npx modern-web-guidance@latest install`.</p>
+<p><strong><span data-color="#bf9000" style="color: rgb(191, 144, 0);">[Bliżej technologii]</span></strong></p>
+<hr>
+<h3><a href="https://uxdesign.cc/ai-is-the-new-old-design-material-0e7f83540c9a">Projektanci powinni uruchamiać modele, a nie tylko rysować ekrany z AI</a></h3>
+<p>Autor, projektant z doświadczeniem w legal techu, przekonuje, że model AI to nowy materiał, którego projektant uczy się tylko przez pracę z nim, tak jak kiedyś z HTML-em. Mockup pokazuje jedną, najlepszą odpowiedź modelu, a produkt to cały rozrzut odpowiedzi. Radzi więc napisać kilka linijek kodu, wysłać ten sam prompt 50 razy i zaprojektować ekran pod najgorsze odpowiedzi. Porażki warto zapisywać jako zestaw testów dla inżynierów, który działa po każdej zmianie modelu. Jeśli projektujesz funkcje z LLM-em, ten tekst daje gotową praktykę na najbliższy review.</p>
+<p><strong><span data-color="#bf9000" style="color: rgb(191, 144, 0);">[Bliżej technologii]</span></strong></p>
+<hr>
+<h3><a href="https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/">Matematyk z Anthropic twierdzi, że z pomocą Claude udowodnił hipotezę Riemanna</a></h3>
+<p>Levent Alpöge, matematyk z Anthropic, ogłosił dowód hipotezy Riemanna – najsłynniejszego nierozwiązanego problemu matematyki, dotyczącego rozkładu liczb pierwszych. Postawiono go w 1859 roku, a Clay Mathematics Institute oferuje za rozwiązanie milion dolarów. Dowód powstał we współpracy z Claude i został zapisany w języku Lean, który mechanicznie sprawdza każdy krok rozumowania. Niezależnie skompilował go m.in. matematyk z MIT, ale samą matematykę eksperci będą analizować jeszcze długo. Wynik nie ma na razie zastosowań praktycznych.</p>
+<hr>
+<h3><a href="https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director">Nvidia przywraca Jensena Huanga na stanowisko prezesa i CEO</a></h3>
+<p>Zarząd Nvidii jednogłośnie przywrócił Jensena Huanga na stanowisko prezesa, CEO i członka zarządu. Dotąd firmą kierowała tymczasowo dyrektor finansowa Colette Kress. Zarząd twierdzi, że rozmawiał z przedstawicielami władz USA na wysokim szczeblu i uznał, że powrót nie stwarza zagrożenia dla bezpieczeństwa narodowego. Niezależna komisja nadal bada doniesienia o próbie wpływu zagranicznego wywiadu. Nvidia powołała też komitet ds. bezpieczeństwa narodowego i kontroli eksportu oraz szuka nowego szefa compliance. Dla inwestorów to powrót stabilnego przywództwa u głównego dostawcy chipów dla AI, choć śledztwo wciąż trwa.</p>
+<hr>
+<h3><a href="https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq">Anthropic debiutuje na Nasdaq – największe IPO w historii</a></h3>
+<p>Anthropic zadebiutował na Nasdaq pod symbolem ANT. Cena emisyjna wyniosła 83 dolary za akcję i wyceniła firmę na 1,5 bln dolarów. Papiery otworzyły się 34% wyżej, a w ciągu dnia wartość rynkowa sięgała około 2 bln dolarów. Firma zebrała 81,3 mld dolarów, czyli więcej niż SpaceX przy czerwcowym debiucie (75 mld). Debiut wypadł w dzień spadków na szerokim rynku (S&amp;P 500 około minus 0,9%), a mimo to kurs szedł w górę. Wniosek dla inwestorów: popyt na akcje czołowego laboratorium AI przewyższał ostrożność rynku.</p>
+<hr>
+<h3><a href="https://sparktoro.com/blog/we-analyzed-11800-chatgpt-prompts-from-12000-users-to-answer-how-do-americans-use-ai-tools-in-2026/">ChatGPT to głównie aplikacja konsumencka, a nie wyszukiwarka – analiza 118 tysięcy promptów</a></h3>
+<p>SparkToro przeanalizował ponad 118 tysięcy promptów od 12 tysięcy Amerykanów, zbieranych w 2026 roku. Najczęstsze tematy to obrazy i design (16%) oraz informacje i rozrywka (14%). Tylko 6,9% promptów dotyczyło researchu marek przed zakupem, a w wyszukiwaniach Google autor szacuje, że takich zapytań jest około 16 razy więcej. Marka pojawiała się w 12% odpowiedzi. Wniosek autora: ChatGPT to doradca i narzędzie kreatywne, a o widoczność w AI opłaca się dbać najpierw w Google AI Overviews i Bingu. Panel jest młodszy i częściej mobilny, więc dane nie obejmują użycia przez API.</p>
+<hr>
+<h3><a href="https://a90.com/experiments/same-advice/">Modele AI dają ten sam „losowy” wybór – eksperyment na 65 modelach</a></h3>
+<p>Autor zadał 65 modelom z 30 firm codzienne pytania ponad 127 tysięcy razy i sprawdził, czy odpowiedzi się różnią. Prawie nie: na prośbę o jedną książkę, która zmieni życie, 73 na 100 odpowiedzi to „Człowiek w poszukiwaniu sensu”, a o inwestycji 10 tysięcy dolarów 98% poleca fundusz indeksowy. Wymyślone postacie miały najczęściej 34 lata. Pomaga podanie szczegółów o sobie albo prośba o listę dziesięciu opcji. Samo „bądź oryginalny” nie działa. Jeśli generujesz dane testowe albo pomysły przez LLM, dostaniesz powtarzalny, wspólny dla wielu modeli wynik.</p>
+<hr>
+<h3><a href="https://www.rameznaam.com/p/the-most-important-charts-in-ai-are">Najważniejsze wykresy o tempie rozwoju AI zawyżają jej realne możliwości</a></h3>
+<p>Znane prognozy, jak wykres METR o długości zadań wykonywanych przez agentów czy scenariusz AI 2027, przewidują wielokrotnie więcej, niż pokazują nowe dane wewnętrzne OpenAI i Google. Agenci z 80-procentową skutecznością wykonują zadania trwające około 9–16 minut, a prognozy sugerowały 30–40 razy więcej. Według autora ten dystans rośnie, a nie maleje. Jego wniosek: AI jest na razie wzmacniaczem badaczy, a nie napędem lawinowego samodoskonalenia. Krytykuje też Anthropic za brak porównywalnych, szczegółowych danych.</p>
+<hr>
+<h3><a href="https://mamstartup.pl/sztuczna-inteligencja-zuzywa-mniej-wody-niz-mleko-migdalowe-czy-gra-w-golfa-nowy-raport-rzuca-swiatlo-na-koszty-srodowiskowe-ai/">AI zużywa mniej wody niż mleko migdałowe czy golf – raport Enverus</a></h3>
+<p>Według raportu firmy analitycznej Enverus ślad wodny korzystania z AI jest dużo mniejszy, niż sugeruje debata o centrach danych. W przeliczeniu na 25 dolarów miesięcznie usługi AI to około 1,9 galona wody, a mleko migdałowe ponad 300, wejścia na pole golfowe prawie 700. Około 90% wody związanej z działaniem modeli zużywają elektrownie produkujące prąd, a nie same serwerownie. Kampus hiperskalowego centrum danych zużywa wodę na poziomie przeciętnego pola golfowego w USA. Autor raportu przekonuje, że większy efekt da zmiana nawyków żywieniowych niż rezygnacja z chatbotów.</p>
+<hr>
+<h3><a href="https://newsletter.aicollective.com/p/understand-how-agentic-ai-might-be-regulated-look-healthcare">Ochrona zdrowia pokazuje, jak mogą wyglądać zewnętrzne audyty agentów AI</a></h3>
+<p>Medycyna może pierwsza wypracować sposób sprawdzania, czy AI jest bezpieczne, a ten model da się przenieść na inne branże. Przykładem jest Utah, gdzie AI firmy Doctronic odnawia recepty na leki przewlekłe. Po sporach ze stanową izbą lekarską stan wyznaczył sześciu niezależnych ewaluatorów, m.in. ze Stanfordu. Testują narzędzie przed startem, audytują próbki żywych decyzji i raportują stanowi, a wcześniej opierano się na danych samej firmy. Większość przepisów w USA wciąż każe firmom oceniać się samym. Jeśli budujesz agentów w regulowanej branży, licz się z audytami z zewnątrz.</p>
+<hr>
+<h3><a href="https://www.axios.com/2026/11/23/openrouter-minimax-china-customer-data">OpenRouter ostrzega: rozmowy klientów mogły trafić do osoby trzeciej po przekierowaniu do MiniMax</a></h3>
+<p>OpenRouter, popularny pośrednik w dostępie do modeli AI, wysłał klientom e-mail z ostrzeżeniem. Prywatne rozmowy użytkowników kilku usług mogły zostać ujawnione nieznanej osobie trzeciej, po tym jak zapytania trafiły do chińskiej firmy MiniMax. Axios przypomina, że amerykańscy urzędnicy od dawna obawiają się, że chińskie modele open source używane w biznesie mogą narażać wrażliwe dane na dostęp Pekinu. Dla zespołów, które korzystają z agregatorów API, to powód, żeby sprawdzić, dokąd naprawdę trafiają ich prompty. [Za paywallem]</p>
+<hr>
+<h3><a href="https://www.youtube.com/watch?v=H9V-ASirX-M">Przetestowałem 100+ narzędzi AI – które warto znać w 2026</a></h3>
+<p>Mikołaj Abramczuk, twórca polskiego kanału o AI, pokazuje ponad 20 narzędzi, których używa na co dzień przy pracy z Claude Code i Codexem. Lista obejmuje bramkę do modeli OpenRouter, hosting Vercel, generowanie grafik w Fal.ai, dyktowanie głosem w Wispr Flow, notatki ze spotkań w Granoli i scraping w Firecrawl. Osobne bloki to analityka i wysyłka maili oraz publikowanie w social mediach. Dobry przegląd, jeśli budujesz własne projekty z agentami i szukasz sprawdzonych dodatków do codziennego zestawu.</p>
+<p><strong><span>[16 min]</span></strong></p>
+<hr>
+<p>To tyle na dzisiaj.<br><strong>Dzięki, że jesteś ze mną!</strong></p>
+<p>Udanego tygodnia,<br><em>Kuba</em></p>
+</div>
+<div style="margin-top: 48px; padding: 20px 24px; background-color: #f5f5f5; border: 1px solid #ddd; border-radius: 6px; font-size: 13px; line-height: 1.7;"><p style="margin: 0 0 12px 0; font-size: 15px; font-weight: bold;">📋 Metadane Substack (nie kopiować do posta)</p><p><strong>Tytuł:</strong> Wydanie #48: Hipoteza Riemanna, Claude Ship i powrót Huanga do Nvidii</p><p><strong>Opis SEO</strong> (128 znaków)<strong>:</strong> Claude i hipoteza Riemanna, agent Claude Ship do review kodu oraz debiut Anthropic na Nasdaq – przegląd newsów AI tego tygodnia.</p><p><strong>URL posta:</strong> wydanie-48-hipoteza-riemanna-claude-ship-i-powrot-huanga-do-nvidii</p><p><strong>Data publikacji:</strong> 27.11.2026 (piątek)</p><p><strong>Okładka:</strong> wydania/048/okladka.jpeg</p><p><strong>Na końcu posta:</strong> dodaj przycisk „Udostępnij” z podpisem „Jeżeli newsletter Ci się podoba, będę wdzięczny za jego udostępnienie.”</p><p><strong>Tekst do social mediów:</strong> Matematyk z Anthropic twierdzi, że z pomocą Claude udowodnił hipotezę Riemanna, a dowód sprawdził mechanicznie język Lean – eksperci będą go jednak analizować jeszcze długo. Anthropic pokazało też Claude Ship, agenta, który prowadzi pull request od review po decyzję o zatwierdzeniu. W Nvidii z kolei Jensen Huang wraca na stanowisko prezesa, choć niezależne śledztwo wciąż trwa ;)</p></div>

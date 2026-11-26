@@ -62,8 +62,11 @@ pogłębiony post planuj więc na niedzielę po wydaniu (ok. 12:00–15:00), a k
 
 W #47 Kuba opublikuje post główny (piątek 20.11, 9:30 — 3. raz z rzędu) i trzy pogłębione: **niedziela 29.11 o 12:30**, wtorek 24.11 o 8:30 i czwartek 26.11 o 8:30 (AI proponowało pierwszy pogłębiony w niedzielę 22.11 o 12:00 oraz terminy od 24.11 do 3.12; z 10 postów 6 zostaje nieopublikowanych). Czyli: jeden post w niedzielę w okolicy 12:00–12:30, reszta wt–czw o 8:30; **planuj na pierwsze dwa tygodnie tylko 3–4 posty**, nie więcej niż Kuba realnie opublikuje.
 
+Ostatnie poprawki terminów w #47: Lato z czwartku 27.11 na **niedzielę 22.11 o 10:30** (po wydaniu), LangChain ze środy 2.12 8:30 na **środę 25.11 o 20:00** — Kuba publikuje też wieczorem. Nie proponuj terminów po 2. tygodniu; pierwszy pogłębiony weekend po wydaniu (10:30–12:30), kolejne w tygodniu 8:30 albo ok. 20:00.
+
 Najlepszy (najmocniejszy haczyk) idzie na wtorek.
 
 ## Przykłady poprawek (AI → Kuba)
 
 _(uzupełnia `ucz-sie` na podstawie dziennika — etap `social`: pola `x`, `komentarz`, `termin`)_
+- #47 w-7g4bp, w-fp505 (termin): 27.11 8:30 → 22.11 10:30 (niedziela) oraz 2.12 8:30 → 25.11 20:00 — terminy zbliżone do wydania, także wieczorne.

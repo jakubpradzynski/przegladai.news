@@ -72,8 +72,6 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #46 Tagi (Anthropic roadshow przed IPO): „Nowości i ogłoszenia” → bez tagu — wieści o IPO to biznes/rynek, nie premiera produktu (jak pozostałe wpisy o IPO w grupie „Bez tagu”; 1×).
 - #46 Tagi (RTV Euro AGD, Mam Startup): „Polska” → „Nowości i ogłoszenia, Polska” — wdrożenie nowego agenta w sieci sklepów to ogłoszenie, jak otwarcie centrum w #42 (2×; polskie wdrożenie produktu = „Nowości i ogłoszenia, Polska”).
 
-- #39 Tagi (WSJ, AI Force): „Za paywallem” → brak tagu, a na końcu opisu dopisane „[Za paywallem]” — w Substacku
-  Kuba przeniósł oznaczenie paywalla z tagu do opisu (1×; powtórzone w #45 → reguła „Za paywallem” zmieniona: dopisek w opisie, bez tagu).
 - #41 Tagi (EmbeddingGemma 2, Google): „Bliżej technologii” → „Nowości i ogłoszenia” — premiera modelu z bloga Google to ogłoszenie, nawet gdy jest developerska i techniczna (1×; przy powtórce: oficjalne premiery modeli z blogów firm zawsze „Nowości”).
 - #41 Tagi (Nolla Derm): „Nowości i ogłoszenia” → bez tagu — materiał z marketingowej strony firmy (AI w medycynie) to ciekawostka, nie oficjalna premiera (1×).
 - #42 Tagi (Decisions API, aioai.pl): „Bliżej technologii, Polska” → „Nowości i ogłoszenia” — premiera API OpenAI to ogłoszenie, a polskie omówienie zagranicznego tematu nie jest „Polską” (2× jak EmbeddingGemma 2 w #41).
@@ -83,3 +81,4 @@ _(uzupełnia `ucz-sie` na podstawie dziennika)_
 - #47 Tagi (Twój AI Second Brain, wideo YouTube): „Bliżej technologii” → bez tagu — poradnik dla początkujących, nie-programistów (organizacja plików i kontekstu), nie materiał inżynierski; podobnie jak „AI Second Brain/poradnik dla początkujących” — bez tagu (1×).
 - #43 Tagi (Vals AI, sześciu agentów o zwrot za bilet): „Bliżej technologii” → bez tagu — eksperyment z agentami opowiedziany jak ciekawostka, a nie materiał inżynierski (1×).
 - #45 Tagi (43 darmowe skille do budowania produktu z agentami, Product Compass): „Nowości i ogłoszenia” → „Bliżej technologii” — zestaw narzędzi dla agentów od autora newslettera to materiał dla ludzi z branży, a nie oficjalna premiera firmy (1×).
+- #48 Tagi (Chrome DevTools dla agentów, Google): „Nowości i ogłoszenia” → „Bliżej technologii” — narzędzie czysto developerskie (CLI, audyt Lighthouse, wtyczka do Claude Code) to materiał dla ludzi z branży, nawet gdy ogłasza je Google; reguła „ogłoszenia narzędzi developerskich z technicznym materiałem = Bliżej technologii” (jak ADK dla Kotlina, Antigravity Custom Agents), 1×.
