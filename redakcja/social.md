@@ -69,7 +69,7 @@ gdy nadaje wagę faktowi (np. „prezes i dyrektor produktowy firmy”), zwykle 
    sobie zadać, mały następny krok. Piszemy to wprost, jako samo zdanie
    („Przed takim eksperymentem dobrze ustalić, po czym poznamy, że to działa.”), **bez etykiety**: ani „wniosek dla
    managerów”, ani „coś wartego uwagi dla managerów”, ani „Na czym warto się zastanowić:” (tę ostatnią Kuba też usunął w #45).
-6. **Zakończenie** — jedno konkretne pytanie, które dotyczy głównej tezy posta (nie wątku pobocznego): o doświadczenie
+6. **Zakończenie** — (**od #48: tylko w poście głównym i gdy teza jest otwarta; post pogłębiony zakończony konkretną radą dla zespołu kończy się tą radą, bez pytania — Kuba usunął pytanie w Devin Apps #47 i w scoringu KBS #48, a w Business Hub #46 go nie było**) jedno konkretne pytanie, które dotyczy głównej tezy posta (nie wątku pobocznego): o doświadczenie
    czytelnika, o to, jak coś jest u niego oceniane albo weryfikowane, lub o konkretną technikę („Czy techniki znane od lat,
    jak strangler pattern, wzmocnione AI mogą dać dobre efekty przy przepisywaniu kodu?”). Unikamy płytkiego „czy
    u Ciebie ktoś sprawdza…”. Humor tylko suchy, jedno zdanie, najwyżej jedno emoji.
@@ -121,6 +121,8 @@ Opublikował z tego wydania tylko post główny i SQL — nie ma sensu generowa�
 
 W #47 Kuba z 7 propozycji wybrał 4 (polecone: Cursor, XTB, pomiar pilnowania agentów; niepolecany: Darmok) i **dodał 5 własnych**: Lato, Sierra Poppy, Genesis AI, LangChain, Devin Apps — a **opublikuje tylko post główny i trzy własne** (Lato 4,7 mln $, LangChain 300 mln $, Devin Apps). Wszystkie cztery wybrane z propozycji AI (w tym trzy polecone) odrzucił. Wniosek (2. wydanie z rzędu, że polecone praktyki inżynierskie przegrywają): **polecaj przede wszystkim newsy biznesowe i produktowe z agentowym wątkiem** — rundy finansowania (Lato, LangChain), nowe produkty znanych firm (Devin Apps), duże ruchy dostawców — z krótkim własnym spostrzeżeniem; wąsko techniczne lekcje (incydent bezpieczeństwa, specyfikacje, pomiar czasu, ciekawostka z arXiv) schodzą na pozycje niepolecane. Przy 3 polecanych daj co najmniej 2 newsy biznesowe/produktowe.
 
+W #48 Kuba z 7 propozycji wybrał 5 (polecone: IPO Anthropic i Sierra; niepolecane: Epochal, scoring KBS, Uber), pominął polecany tekst o SpaceXSI (11 tys. PR-ów) oraz Java4Shell i **dodał 3 własne**: Claude Ship, OpenWorks, wodę z raportu Enverus. Opublikuje post główny oraz cztery pogłębione: **KBS (z jego wskazówką o AI Act), Epochal (z wskazówką o „wehikule czasu”), Uber (jako kompleksowy tekst do przełożenia na użytek prywatny) i wodę** — oba polecone newsy biznesowe (IPO, Sierra) wybrał, ale nie opublikuje (IPO było tematem #47). Wniosek (3. wydanie z rzędu, że polecone przegrywają): przy newsach o IPO i rundach sprawdź, czy temat nie był już w poprzednim wydaniu; z propozycji wygrywają **polska scena z wątkiem prawnym (AI Act)**, **nowy produkt z zaskakującym pomysłem (Epochal)**, **kompleksowy tekst dużej firmy z przełożeniem na użytek prywatny** i **ciekawostka z liczbami (woda)**. Własne tematy Kuby podaje luźno, dyktując — jego „kąt” to wskazówka merytoryczna, nie gotowy tekst.
+
 Rzadziej polecamy: czyste premiery modeli z samymi benchmarkami (chyba że jest kąt kosztowy
 albo praktyczny), newsy prawne bez wpływu na codzienną pracę, temat, który był postem w poprzednim tygodniu.
 Każda propozycja ma: **kąt** (jedno zdanie: co Kuba ma do powiedzenia) i **dlaczego** (czemu to zadziała u odbiorców).
@@ -149,6 +151,8 @@ Każda propozycja ma: **kąt** (jedno zdanie: co Kuba ma do powiedzenia) i **dla
 - Fakty w czasie zwykłym, skutki hipotetyczne w trybie przypuszczającym („osoby używające AI za mało mogłyby stracić
   pracę”). Przecinki przy „po pierwsze, …, po drugie, …” i we wtrąceniach („wzmocnione AI, mogą dać…”).
 - Do czytelnika w formie neutralnej płciowo: „używałeś/aś”, „Jak Tobie się sprawdziło?” albo konstrukcja bez rodzaju.
+- **Bez zdań o tym, czym tekst nie jest** (#47 Lato, #48 Epochal — 2×): „To jej własne dane, nikt ich niezależnie nie sprawdził.”, „To moje pomysły na zastosowania, a nie opis tego, co dziś oferuje produkt.” — Kuba je usuwa. Wystarcza „według firmy”, „twórcy deklarują” albo tryb przypuszczający przy własnych pomysłach.
+- **Przepisy „obowiązują”, a nie „zaczną się stosować”** (#48 KBS): „wymogi dla systemów wysokiego ryzyka dopiero zaczną obowiązywać”.
 - Konkret zamiast ogólnika: „pasujące fragmenty” zamiast „te pasujące”, „przynajmniej tak dobrze jak starsza wersja”
   zamiast „tak samo”, „kosztowała dużo” zamiast „kosztowała”.
 - Krótka autoironia z emoji po żartobliwym porównaniu pasuje do stylu Kuby („…dziewięciu agentów nie zrobi dziecka
@@ -216,11 +220,6 @@ Każdy post ma propozycję obrazka; Kuba wybiera, co publikuje (`obrazek.wybrany
 
 _(uzupełnia `ucz-sie` na podstawie dziennika — etap `social`)_
 
-- #45 t6: dopisane „Kiedyś to brzmiało lepiej 😅” po „dziewięciu agentów nie zrobi dziecka w miesiąc” — krótka autoironia z emoji.
-- #45 t2, t4: „mogły stracić pracę” → „mogłyby stracić pracę” (skutek hipotetyczny); „po pierwsze zawęzić…, po drugie…” → „po pierwsze, zawęzić…, po drugie, …” (przecinki).
-- #45 obrazki (czat): garaż z silnikiem motocykla i remont domu odrzucone, podobały się dziewięć kubków (podział pracy) i notes z rozpisaną architekturą; obraz nie musi być realistyczny — może być minimalistyczny, a Kuba chce też propozycji memów.
-- #45 post główny: „Co w Twoich projektach z agentami nadal robisz ręcznie, a co oddajesz agentowi?” → „Czy używałeś/aś e2e w swojej pracy? Jak Tobie się sprawdziło?” — pytanie o doświadczenie z konkretnym narzędziem z wydania, w formie neutralnej płciowo.
-- #45 obrazki: z 4 postów pogłębionych Kuba zostawił obrazek tylko przy jednym (mem „Gru's Plan” przy prawie Brooksa); pozostałe zdjęcia i infografiki odrzucił i opublikuje je bez obrazka — nie wymuszaj obrazka.
 - #45 t4: „Agent to program, który sam planuje kolejne kroki do wykonania.” → „Agent sam planuje kolejne kroki do wykonania.” — definicja krótsza, bez „to program, który”.
 - #46 t5 (SQL od LLM-a, linkedin): środek posta z rozkładem 40/20/15/11,7/6,7% → „zbyt techniczny, trudny w czytaniu… za dużo liczb, za mało opowiedzenia historii”; po przepisaniu Kuba dopisał własne przykłady z praktyki (dashboard w HTML, wątki w kodzie), pogłębił wniosek (review i uczenie AI na przykładach) i zakończył wyzwaniem „jak pokazać wartość tej pracy interesariuszom”.
 - #46 t5 (obrazek): prompt (zapasowo infografika „40%” i mem) → „brak” — opublikowany bez obrazka (2. raz po #45).
@@ -230,3 +229,8 @@ _(uzupełnia `ucz-sie` na podstawie dziennika — etap `social`)_
 - #47 w-7g4bp (Lato): usunięte „To jej własne dane, nikt ich niezależnie nie sprawdził.” i „inny ekspert” → „inni” — zastrzeżenie o braku niezależnej weryfikacji zbędne, gdy w zdaniu jest już „firma twierdzi” (zgodne z listą „Nie używać”).
 - #47 w-fp505 (LangChain): usunięty ostatni akapit z dodatkowym szczegółem („LangChain ma 47 inżynierów, którzy pracują u klientów”) — post kończy się główną tezą, bez dorzuconego konkretu pobocznego.
 - #47 w-5sbf4 (Devin Apps): usunięte zakończenie pytaniem „Czy takie narzędzia powinny zostać w zespole… czy trafiać pod opiekę zespołu platformy?” — post może kończyć się ostatnim zdaniem z wnioskiem, bez pytania (2. raz po #46 Business Hub).
+- #47 w-fp505 (LangChain, 2. edycja): „Wydaje mi się, że w wielu firmach…” → „W wielu firmach…” oraz „Rozumiem, że start-up… będzie mówił” → „Oczywiście start-up… będzie mówił” — bez „wydaje mi się” / „rozumiem, że”; tezę mówimy wprost, ale spokojnie. Wnioski dopisane na końcu zdania („…a następnie kontrolowanie go”).
+- #48 t6 (scoring KBS): usunięte zakończenie pytaniem („Czy wyjaśnienie w stylu „zdecydowały te trzy czynniki” wystarczy klientowi…?”) i „zaczną się stosować” → „zaczną obowiązywać” — post kończy się radą do dostawców, bez pytania (3. raz po #46 i #47).
+- #48 t4 (Epochal): usunięte „To moje pomysły na zastosowania, a nie opis tego, co dziś oferuje produkt.” — zbędne zastrzeżenie o własnych pomysłach (2. raz po Lato #47).
+- #48 post główny: „od review, przez poprawki, do decyzji o zatwierdzeniu” → „…, przez poprawki, aż do decyzji o zatwierdzeniu” — drobne słowo mówione dla rytmu zdania; pojedyncza poprawka.
+- #48 wybór: z 4 postów polecanych/pogłębionych do publikacji poszły KBS, Epochal, Uber i woda; IPO, Sierra, Claude Ship i OpenWorks zostają nieopublikowane (patrz „Wybór tematów”).
